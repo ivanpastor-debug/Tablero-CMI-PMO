@@ -1,0 +1,1257 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
+<title>Tablero de control estratégico PMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#e4eaeb; --surface:#ffffff; --surface-2:#eef2f2; --surface-3:#f7f9f9; --shadow:0 1px 2px rgba(14,26,29,.06),0 2px 8px rgba(14,26,29,.05);
+  --ink:#0e1a1d; --ink-2:#465659; --muted:#768689;
+  --line:#dbe2e3; --axis:#bfc9ca; --accent:#0f4c5c; --accent-ink:#ffffff;
+  --s-real:#2a78d6; --s-fcst:#eb6834; --s-ppto:#1baf7a; --s-light:#9ec5f4;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b; --none:#a3adae;
+  --good-ink:#006300; --crit-ink:#b42a2a; --serious-ink:#a8481f; --warn-ink:#8a5a00;
+  --ring:rgba(14,26,29,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#080d0e; --surface:#162224; --surface-2:#1e2d2f; --surface-3:#1a2729; --shadow:0 1px 2px rgba(0,0,0,.4);
+    --ink:#eef3f3; --ink-2:#b4c2c4; --muted:#839496;
+    --line:#26373a; --axis:#3a4d50; --accent:#7cc4d4; --accent-ink:#0c1314;
+    --s-real:#3987e5; --s-fcst:#d95926; --s-ppto:#199e70; --s-light:#1c5cab;
+    --good-ink:#2fc52f; --crit-ink:#ef7a7a; --serious-ink:#f0a07f; --warn-ink:#f5b83a; --ring:rgba(255,255,255,.10);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#080d0e; --surface:#162224; --surface-2:#1e2d2f; --surface-3:#1a2729; --shadow:0 1px 2px rgba(0,0,0,.4);
+  --ink:#eef3f3; --ink-2:#b4c2c4; --muted:#839496;
+  --line:#26373a; --axis:#3a4d50; --accent:#7cc4d4; --accent-ink:#0c1314;
+  --s-real:#3987e5; --s-fcst:#d95926; --s-ppto:#199e70; --s-light:#1c5cab;
+  --good-ink:#2fc52f; --crit-ink:#ef7a7a; --serious-ink:#f0a07f; --warn-ink:#f5b83a; --ring:rgba(255,255,255,.10);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:1520px;margin:0 auto}
+h1,h2,h3{margin:0;text-wrap:balance}
+.num,td.n{font-variant-numeric:tabular-nums}
+header.top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:center;text-align:center;padding-block:24px 16px;border-bottom:1px solid var(--line)}
+.iva-switcher{display:flex;align-items:center;gap:10px;background:var(--surface);padding:6px 12px;border-radius:10px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.iva-lbl{font-size:12px;font-weight:600;color:var(--ink-2);white-space:nowrap}
+.iva-seg{display:inline-flex;gap:4px;background:var(--surface-2);padding:3px;border-radius:8px;border:1px solid var(--line)}
+.iva-seg button{font:inherit;font-size:12px;font-weight:600;border:0;background:none;color:var(--ink-2);padding:4px 10px;border-radius:6px;cursor:pointer;transition:all .15s ease}
+.iva-seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.meta{display:flex;gap:16px;flex-wrap:wrap;color:var(--ink-2);font-size:13px}
+.meta b{color:var(--ink);font-weight:600}
+nav.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-block:16px 20px}
+nav.tabs button{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);padding:8px 14px;border-radius:8px;cursor:pointer}
+nav.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button:focus-visible,.chip:focus-visible,tr[tabindex]:focus-visible{outline:2px solid var(--s-real);outline-offset:2px}
+.panel{background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:18px;min-width:0;box-shadow:var(--shadow)}
+.grid{display:grid;gap:12px}
+.g-tiles{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g-2{grid-template-columns:repeat(auto-fit,minmax(min(100%,560px),1fr))}
+.g-3-1{grid-template-columns:minmax(0,2.2fr) minmax(0,1fr)}
+@media (max-width:900px){.g-3-1{grid-template-columns:1fr}}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.sec-h h2{font-size:16px;font-weight:700}
+.sec-h p{margin:0;color:var(--muted);font-size:12px}
+.section{margin-top:12px}
+.tile{display:flex;flex-direction:column;gap:4px}
+.tile .lbl{font-size:12px;color:var(--ink-2);font-weight:600}
+.tile .val{font-size:clamp(24px,2vw,42px);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.tile .sub{font-size:12px;color:var(--muted)}
+.bar-mini{height:6px;background:var(--surface-2);border-radius:3px;overflow:hidden;margin-top:6px}
+.bar-mini i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+.sem tbody tr:nth-child(even) td{background:var(--surface-3)}
+.sem thead th{background:var(--surface-2)}
+.sem tbody tr:hover td{background:var(--surface-2)}
+td.n,th.n{text-align:right}
+tr:last-child td{border-bottom:0}
+.g-sem{grid-template-columns:minmax(0,1fr)}
+.sem tbody tr{cursor:pointer}
+.sem tbody tr:hover td{background:var(--surface-2)}
+.pname{font-weight:600;white-space:nowrap}
+.pname small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.st{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.st::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c,var(--none));flex:none}
+.st.good{--c:var(--good)} .st.warn{--c:var(--warn)} .st.crit{--c:var(--crit)}
+.st.warn::before{border-radius:2px;transform:rotate(45deg);width:9px;height:9px}
+.st.crit::before{border-radius:2px}
+.st.na{color:var(--muted)}
+.sr{position:absolute;left:-9999px}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);white-space:nowrap}
+.pill.good{border-color:color-mix(in srgb,var(--good) 55%,transparent);color:var(--good-ink)}
+.pill.crit{border-color:color-mix(in srgb,var(--crit) 55%,transparent);color:var(--crit-ink)}
+.pill.serious{border-color:color-mix(in srgb,var(--serious) 60%,transparent);color:var(--serious-ink)}
+.pill.warn{border-color:color-mix(in srgb,var(--warn) 70%,transparent)}
+.pill.info{border-color:color-mix(in srgb,var(--s-real) 50%,transparent);color:var(--s-real)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.sw.line{height:3px;border-radius:2px}
+.sw.dash{height:0;border-top:2px dashed currentColor;background:none!important;width:14px}
+.sw.dia{width:9px;height:9px;transform:rotate(45deg);border-radius:1px}
+.seg{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:14px}
+.seg button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);padding:6px 12px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.subcard{display:flex;flex-direction:column;align-items:flex-start;text-align:left;font:inherit;color:inherit;cursor:pointer;gap:2px}
+.subcard:hover{border-color:var(--accent)}
+.subcard .sc-h{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:17px;font-weight:700}
+.subcard .sc-s{font-size:12px;color:var(--muted)}
+.subcard .kv{width:100%}
+.subcard .kv>span>span{display:block;font-size:12px;color:var(--muted)}
+.subcard .kv strong{font-size:18px;font-variant-numeric:tabular-nums}
+.chev{display:inline-block;transition:transform .2s;color:var(--accent)}
+tr[aria-expanded="true"] .chev{transform:rotate(90deg)}
+.sem tr.subrow td{background:color-mix(in srgb,var(--surface-2) 60%,var(--surface))}
+.cmi-ref{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:16px;margin-bottom:16px;padding:12px 14px;background:var(--surface-2);border-radius:8px}
+@media (max-width:760px){.cmi-ref{grid-template-columns:1fr}}
+.esc2{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:14px 16px;margin-bottom:14px}
+.esc2-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:10px}
+.esc2-h h3{font-size:16px;font-weight:700;color:var(--ink)}
+.esc2-bar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;border-radius:10px;overflow:hidden}
+.esc2-b{display:flex;flex-direction:column;gap:2px;padding:10px 12px;min-width:0}
+.esc2-b b{font-size:20px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.esc2-b span{font-size:12px;font-weight:600}
+.esc2-b.good{background:color-mix(in srgb,var(--good) 18%,var(--surface));color:var(--good-ink)}
+.esc2-b.warn{background:color-mix(in srgb,var(--warn) 28%,var(--surface));color:var(--warn-ink)}
+.esc2-b.crit{background:color-mix(in srgb,var(--crit) 16%,var(--surface));color:var(--crit-ink)}
+.esc2-def{margin:10px 0 0;font-size:12px;color:var(--ink-2)}
+.esc2-def b{color:var(--ink);font-weight:700}
+@media (max-width:640px){.esc2-bar{grid-template-columns:1fr}}
+.esc-leg{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:0 0 12px;font-size:11px;color:var(--ink-2)}
+.esc-leg-t{font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.04em;font-size:10.5px}
+.esc-mini{border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface-3);width:auto}
+.esc-mini th{font-size:10px;font-weight:600;text-transform:none;letter-spacing:0;color:var(--ink-2);padding:3px 8px;background:var(--surface-2);border-bottom:1px solid var(--line);text-align:center}
+.esc-mini td{padding:3px 6px;border:0;text-align:center}
+.esc-mini .esc-v{min-width:0;font-size:10.5px;padding:1px 6px}
+.esc-def{flex-basis:100%;font-size:10.5px;color:var(--muted)}
+.esc-def b{color:var(--ink-2);font-weight:600}
+.esc-d{margin-bottom:14px;}
+.esc-d.esc-end{margin:14px 0 0;}
+.esc-d{border:1px solid var(--line);border-radius:8px;background:var(--surface-3)}
+.esc-d>summary{cursor:pointer;list-style:none;padding:10px 14px;font-size:13px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px}
+.esc-d>summary::-webkit-details-marker{display:none}
+.esc-d>summary::before{content:"▸";color:var(--accent);transition:transform .2s}
+.esc-d[open]>summary::before{transform:rotate(90deg)}
+.esc-d .cmi-ref{margin:0 14px 14px}
+.esc-t{margin-top:0;width:100%}
+.esc-t td,.esc-t th{padding:5px 10px}
+.esc-v{display:inline-block;min-width:74px;text-align:center;padding:2px 8px;border-radius:6px;font-weight:700;font-variant-numeric:tabular-nums}
+.esc-v.good{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good-ink)}
+.esc-v.warn{background:color-mix(in srgb,var(--warn) 28%,transparent);color:var(--warn-ink)}
+.esc-v.crit{background:color-mix(in srgb,var(--crit) 16%,transparent);color:var(--crit-ink)}
+.defs{margin:0;display:flex;flex-direction:column;gap:6px;font-size:12px}
+.defs dt{font-weight:700;color:var(--ink)}
+.defs dd{margin:0;color:var(--ink-2)}
+.op-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:10px}
+.op-card{border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--surface-3);cursor:pointer;min-width:0}
+.op-card:hover{border-color:var(--accent)}
+.op-card.sub{background:color-mix(in srgb,var(--surface-2) 55%,var(--surface));border-style:dashed}
+.op-card header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.op-card h3{font-size:15px;font-weight:700}
+.op-card .oc-sub{margin:-6px 0 0;font-size:11px;color:var(--muted)}
+.op-card .kpis3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.op-card .k-sm{padding:8px 10px;container-type:inline-size}
+.op-card .k-sm .k-v{font-size:15px;font-size:clamp(12px,13cqi,17px);white-space:nowrap;margin-top:2px}
+.op-card .k-na{font-size:12px;font-weight:600;color:var(--muted);white-space:normal}
+.op-card .k-sep{color:var(--muted);margin:0 5px;font-weight:400}
+.op-card .k{container-type:inline-size}
+.op-card .k-money{font-size:20px;font-size:clamp(14px,12cqi,22px);white-space:nowrap}
+.op-card .k-cpi{grid-column:1/-1}
+.op-card .cpi2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.op-card .cpi2>div{display:flex;flex-direction:column;gap:2px;padding:8px 10px;border-radius:6px;background:var(--surface-3)}
+.op-card .cpi2 .k-v{font-size:26px;margin-top:0}
+.op-card .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.op-card .k{display:flex;flex-direction:column;gap:2px;padding:10px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+.op-card .k-l{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
+.op-card .k-s{font-size:11px;color:var(--muted)}
+.op-card .k-v{font-size:22px;font-weight:700;margin-top:4px}
+.op-card .counts{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end;position:relative;padding-bottom:16px}
+.op-card .counts div{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:4px;font-size:12px;color:var(--ink-2)}
+.op-card .counts b{font-size:18px;color:var(--ink);font-variant-numeric:tabular-nums}
+.op-card .counts em{position:absolute;bottom:0;left:0;font-size:11px;color:var(--muted);font-style:normal}
+.op-card footer{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:space-between;margin-top:auto}
+.op-card footer .linkbtn{padding:0}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.modes{grid-template-columns:1fr}}
+.mode{font:inherit;color:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:6px;padding:16px 18px;border-radius:10px;border:1px solid var(--ring);background:var(--surface);box-shadow:var(--shadow)}
+.mode:hover{border-color:var(--accent)}
+.mode[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent),var(--shadow)}
+.mode .m-h{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mode .m-t{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.mode .m-d{font-size:12px;color:var(--muted)}
+.mode .m-p{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;color:var(--ink-2)}
+.mode .m-p b{color:var(--ink);font-variant-numeric:tabular-nums}
+.mode .m-go{font-size:12px;font-weight:600;color:var(--s-real)}
+.fin-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+@media (max-width:760px){.fin-tabs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.fin-tabs{grid-template-columns:1fr}}
+.fin-tabs button{font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface-3);color:var(--ink-2)}
+.fin-tabs button b{font-size:14px;color:var(--ink)}
+.fin-tabs button small{font-size:11px;color:var(--muted)}
+.fin-tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent)}
+.fin-tabs button[aria-selected="true"] b,.fin-tabs button[aria-selected="true"] small{color:var(--accent-ink)}
+.sub-seg{margin-bottom:0}
+.sub-seg button{font-size:12px;padding:5px 12px}
+.fx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fx-grid.fx-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fx-grid.fx-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fx-grid.fx-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:960px){.fx-grid.fx-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:768px){.fx-grid.fx-3{grid-template-columns:1fr}}
+@media (max-width:560px){.fx-grid,.fx-grid.fx-2,.fx-grid.fx-3,.fx-grid.fx-4{grid-template-columns:1fr}}
+.fx{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:8px;background:var(--surface-3);border:1px solid var(--line)}
+.fx .fx-l{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
+.fx strong{font-size:20px;font-variant-numeric:tabular-nums}
+.fx small{font-size:11px;color:var(--muted)}
+.fx-comp-toggle{font:inherit;font-size:11px;font-weight:600;color:var(--s-real);background:none;border:0;padding:4px 0 0;cursor:pointer;display:inline-flex;align-items:center;gap:4px;text-align:left}
+.fx-comp-toggle:hover{text-decoration:underline}
+.fx-comp-panel{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:8px}
+.fx-comp-item{display:flex;flex-direction:column;gap:2px;font-size:12px}
+.fx-comp-item .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.fx-comp-item .nm{font-size:11px;font-weight:600;color:var(--ink-2)}
+.fx-comp-item .val{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink)}
+.fx-comp-item .sub{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fx-comp-bar{height:5px;background:var(--surface-2);border-radius:3px;overflow:hidden;margin-top:2px}
+.fx-comp-bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.gap.neg{color:var(--crit-ink)}
+.gap.pos{color:var(--good-ink)}
+.subgroup{margin-top:16px;padding-top:14px;border-top:1px dashed var(--axis)}
+.subgroup h3{font-size:14px;font-weight:700}
+.cost-b .var-t td{padding:7px 8px;font-size:12px}
+.var-t td.over{color:var(--crit-ink)}
+.var-t td.under{color:var(--good-ink)}
+.gauges{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+@media (max-width:560px){.gauges{grid-template-columns:1fr}}
+.gauge{background:var(--surface-3);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.gauge .g-h{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--ink-2)}
+.gauge .g-h b{font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+.gauge .g-t{position:relative;height:8px;background:var(--surface-2);border-radius:4px;margin-top:6px}
+.gauge .g-t i{display:block;height:100%;border-radius:4px}
+.gauge .g-t em{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.cost-sheet{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:12px}
+@media (max-width:640px){.cost-sheet{grid-template-columns:1fr}}
+table.xl{border:1px solid var(--line);border-radius:8px;border-collapse:separate;border-spacing:0;overflow:hidden;background:var(--surface-3)}
+table.xl th{background:var(--surface-2);font-size:11px;padding:7px 10px}
+table.xl td{padding:8px 10px;font-size:13px;font-variant-numeric:tabular-nums}
+table.xl td:first-child{font-weight:600;color:var(--ink-2)}
+table.xl.cum{margin-top:12px}
+table.xl tr.tot td{font-weight:700;color:var(--ink);background:var(--surface-2)}
+table.xl.cum td.n{font-size:16px;font-weight:700;color:var(--ink)}
+table.xl.tbl-crono-456{width:100%;min-width:0;font-size:11.5px}
+table.xl.tbl-crono-456 th{padding:6px 5px;font-size:10.5px;letter-spacing:0}
+table.xl.tbl-crono-456 td{padding:5px 5px;font-size:11.5px}
+table.xl.tbl-crono-456 .col-ent{white-space:normal;line-height:1.25;min-width:110px}
+table.xl.tbl-crono-456 th.col-peso,table.xl.tbl-crono-456 td.col-peso{width:36px;text-align:right;white-space:nowrap}
+table.xl.tbl-crono-456 th.col-date,table.xl.tbl-crono-456 td.col-date{width:68px;text-align:center;white-space:nowrap;font-size:11px}
+table.xl.tbl-crono-456 th.col-desv,table.xl.tbl-crono-456 td.col-desv{width:56px;text-align:center;white-space:nowrap}
+table.xl.tbl-crono-456 th.col-st,table.xl.tbl-crono-456 td.col-st{min-width:115px;white-space:normal;line-height:1.2}
+table.xl.tbl-crono-456 .st{font-size:10.5px;gap:4px;white-space:normal;line-height:1.15;display:inline-flex;align-items:center}
+table.xl.tbl-crono-456 .st::before{width:8px;height:8px;flex:none}
+.cost-b{display:flex;flex-direction:column;gap:8px}
+.cost-b .cb-h h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.cost-b .cb-h p{margin:2px 0 0;font-size:11px;color:var(--muted)}
+.cc-row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.cc-row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:560px){.cc-row3,.cc-row2{grid-template-columns:1fr}}
+.cc{display:flex;flex-direction:column;justify-content:space-between;gap:4px;padding:12px 14px;border-radius:10px;background:var(--surface-3);border:1px solid var(--line);min-width:0;min-height:86px}
+.cc .cc-l{font-size:11px;font-weight:700;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em}
+.cc{container-type:inline-size}
+.cc strong{font-size:15px;font-size:clamp(12px,10.5cqi,17px);line-height:1.2;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cc small{font-size:11px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.evm-c{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:12px;align-items:center;padding:12px 14px;border-radius:10px;background:var(--surface-3);border:1px solid var(--line)}
+@media (max-width:560px){.evm-c{grid-template-columns:1fr}}
+.evm-v{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.evm-v strong{font-size:30px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.evm-f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.frac{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.frac>div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.frac span{font-size:11px;color:var(--ink-2)}
+.frac b{font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.frac i{display:block;height:1.5px;background:var(--ink-2);opacity:.6}
+.evm-f small{font-size:11px;color:var(--muted)}
+.evm-c.icff{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.evm-c.icff strong{font-size:26px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.tone-good{color:var(--good-ink)}
+.tone-warn{color:var(--warn-ink)}
+.tone-crit{color:var(--crit-ink)}
+.tone-na{color:var(--muted)}
+.hc-row{display:grid;grid-template-columns:minmax(130px,240px) 1fr 96px 50px 70px;gap:10px;align-items:center;font-size:12px;padding:5px 0;border-bottom:1px solid var(--line)}
+.hc-row .t{position:relative;height:10px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.hc-row .t u{position:absolute;top:0;bottom:0;width:2px;opacity:.75}
+.hc-row .t u.md,.mk.md{background:var(--ink)}
+.hc-row .t u.av,.mk.av{background:var(--s-fcst)}
+.hc-ref{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12px;color:var(--ink-2);margin-bottom:8px}
+.hc-ref b{color:var(--ink);font-variant-numeric:tabular-nums}
+.mk{display:inline-block;width:3px;height:11px;margin-right:6px;vertical-align:-1px}
+.hc-sub{display:block;font-style:normal;font-weight:400;text-transform:none;letter-spacing:0;color:var(--ink-2)}
+.hc-leg{font-style:normal;font-weight:400;text-transform:none;letter-spacing:0}
+.hc-row .n.hc-hi{color:var(--ink);font-weight:600}
+.hc-row .t i{display:block;height:100%;background:var(--s-real);border-radius:3px}
+.hc-row .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.hc-row .n b{color:var(--ink)}
+.hc-row .hc-n{overflow-wrap:anywhere}
+.hc-dt{display:block;font-size:11px;color:var(--muted)}
+.hc-head{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+.hc-tot{border-bottom:0;font-weight:700;color:var(--ink)}
+.hc-tot .n{color:var(--ink)}
+@media (max-width:560px){.hc-row{grid-template-columns:1fr 84px 40px 60px}.hc-row>:nth-child(2){display:none}}
+.mm .mm-v{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2px}
+.mm .mm-v small{display:block;font-size:11px;color:var(--muted)}
+.mm .mm-v b{font-size:22px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sdot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--none);flex:none;vertical-align:middle}
+.sdot.good{background:var(--good)}
+.sdot.warn{background:var(--warn)}
+.sdot.crit{background:var(--crit)}
+.sdot.big{width:22px;height:22px}
+.cm-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.cm-head h2{font-size:16px;font-weight:700}
+.cm-head p{margin:2px 0 0;font-size:12px;color:var(--muted)}
+.cm-kpis{display:flex;gap:8px;flex-wrap:wrap}
+.cm-kpis div{display:flex;flex-direction:column;padding:6px 12px;border-radius:8px;background:var(--surface-3);border:1px solid var(--line)}
+.cm-kpis span{font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600}
+.cm-kpis b{font-size:15px;font-variant-numeric:tabular-nums}
+.cm-leg{margin-bottom:6px}
+.cm-panel .chart svg{width:100%;height:auto}
+.cm-dl{font-size:10.5px;font-weight:700;font-variant-numeric:tabular-nums;paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round}
+.cm-dl.in{fill:#fff;stroke:none}
+.cm-bar{transition:opacity .15s}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:inherit;font-size:15px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);padding:12px 18px;border-radius:12px;box-shadow:var(--shadow);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--ink);box-shadow:inset 0 0 0 1px var(--accent);font-weight:600}
+.chip .dot{width:12px;height:12px;border-radius:50%;background:var(--c)}
+svg{display:block;max-width:100%;height:auto;overflow:visible}
+svg text{fill:var(--muted);font-size:11px;font-family:inherit}
+svg .lbl-strong{fill:var(--ink);font-weight:600}
+svg .lbl-ink{fill:var(--ink-2)}
+.chart{position:relative}
+#tip{position:fixed;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.12);border-radius:8px;padding:8px 10px;font-size:12px;z-index:9;min-width:140px;max-width:320px}
+#tip b{display:block;margin-bottom:4px}
+#tip div{display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums}
+.diag{border-left:3px solid var(--crit);background:var(--surface-2);padding:10px 14px;border-radius:0 8px 8px 0;color:var(--ink-2);font-size:13px}
+.diag.good{border-left-color:var(--good)} .diag.warn{border-left-color:var(--warn)}
+.flow{display:flex;flex-direction:column;gap:14px}
+.flow-row .top{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:6px}
+.flow-row .top b{font-weight:600}
+.stack{position:relative;height:22px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.stack i{position:absolute;left:0;top:0;bottom:0;border-radius:4px}
+.stack .f{background:color-mix(in srgb,var(--s-real) 40%,var(--surface-2))}
+.stack .r{background:var(--s-real);top:6px;bottom:6px}
+.flow-row .foot{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:4px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px 20px}
+.kv div span{display:block;font-size:12px;color:var(--muted)}
+.kv div strong{font-size:18px;font-variant-numeric:tabular-nums}
+.hbar{display:grid;grid-template-columns:minmax(120px,200px) 1fr 80px;gap:8px;align-items:center;font-size:12px;padding-block:3px}
+.hbar .t{height:10px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.hbar .t i{display:block;height:100%;background:var(--s-real);border-radius:3px}
+.hbar .v{text-align:right;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.fr{display:grid;grid-template-columns:minmax(140px,260px) 48px 1fr 130px;gap:10px;align-items:center;font-size:12px;padding-block:5px;border-bottom:1px solid var(--line)}
+.fr:last-child{border-bottom:0}
+.fr .nm{overflow-wrap:anywhere;color:var(--ink)}
+.fr .bars{display:flex;flex-direction:column;gap:3px}
+.fr .bars div{height:7px;background:var(--surface-2);border-radius:2px;overflow:hidden}
+.fr .bars i{display:block;height:100%;border-radius:2px}
+.fr .v{text-align:right;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.fr.head{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+.fr .grp{grid-column:1/-1;font-weight:700;color:var(--ink-2);padding-top:6px}
+@media (max-width:560px){.fr{grid-template-columns:1fr 70px}.fr .bars,.fr .hu{display:none}}
+.linkbtn{font:inherit;font-size:12px;font-weight:600;color:var(--s-real);background:none;border:0;padding:8px 0 0;cursor:pointer}
+.timeline{display:flex;flex-direction:column}
+.tl{display:grid;grid-template-columns:70px 1fr auto;gap:10px;align-items:center;font-size:13px;padding:8px 0;border-bottom:1px solid var(--line)}
+.tl:last-child{border-bottom:0}
+.tl .d{font-size:12px;color:var(--muted)}
+.flag{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.flag:last-child{border-bottom:0}
+.flag h3{font-size:14px;font-weight:600;margin-bottom:2px}
+.flag p{margin:0;color:var(--ink-2);font-size:13px;max-width:80ch}
+.note{font-size:12px;color:var(--muted);margin-top:10px}
+.scale{display:flex;flex-wrap:wrap;gap:6px}
+.scale span{font-size:12px;background:var(--surface-2);padding:4px 8px;border-radius:6px}
+.scale b{font-variant-numeric:tabular-nums}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:12px}
+.ph h2{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.ph .srcs{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.srcs .pill{font-weight:500}
+.band{margin-top:14px}
+.pending{border:1px dashed var(--axis);border-radius:10px;padding:16px;color:var(--ink-2);font-size:13px;background:var(--surface-2)}
+.pending ul{margin:8px 0 0;padding-left:18px;columns:2;column-gap:24px}
+@media (max-width:560px){.pending ul{columns:1}}
+.gov-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:28px;margin-bottom:12px}
+.gov-h h2{font-size:18px}
+.gov-h p{margin:0;font-size:12px;color:var(--muted)}
+.cap td{font-size:12px;vertical-align:top}
+.cu-stack{display:flex;height:22px;border-radius:4px;overflow:hidden;gap:2px;background:var(--surface)}
+.cu-stack i{display:block;height:100%}
+@media (prefers-reduced-motion:no-preference){.stack i,.hbar .t i,.bar-mini i,.fr .bars i{transition:width .4s ease}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Tablero de control estratégico PMO</h1>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Vistas del tablero">
+    <button role="tab" id="t-res" aria-selected="true" data-v="res">Vista de Dirección</button>
+    <button role="tab" id="t-proj" aria-selected="false" data-v="proj">Detalle proyectos</button>
+  </nav>
+
+  <!-- ============ RESUMEN ============ -->
+  <section id="v-res" role="tabpanel" aria-labelledby="t-res">
+    <div class="grid g-tiles" id="tiles" hidden></div>
+
+    <div class="section grid g-sem">
+      <div class="panel">
+        <div class="esc2" aria-label="Escala por entregable">
+          <div class="esc2-h"><h3>Escala por entregable</h3></div>
+          <div class="esc2-bar"><div class="esc2-b crit"><b>0,00%</b><span>En curso &lt;50%</span></div><div class="esc2-b crit"><b>20,00%</b><span>En curso 50–80%</span></div><div class="esc2-b crit"><b>50,00%</b><span>En curso &gt;80%</span></div><div class="esc2-b warn"><b>75,00%</b><span>En UAT del cliente</span></div><div class="esc2-b good"><b>100,00% ✓</b><span>En producción</span></div></div>
+          <p class="esc2-def"><b>Indicador táctico:</b> % de avance por entregable de cada proyecto · <b>Indicador estratégico:</b> entregables al 100% en Azure DevOps, entendidos como entregados a cliente.</p>
+        </div>
+        <div class="op-cards" id="sem-op"></div>
+      </div>
+    </div>
+
+    <div class="section grid g-2" id="cash-cost" hidden>
+      <div class="panel">
+        <div class="sec-h"><h2>Del contrato a la caja</h2><p>Proyectos con contrato cargado</p></div>
+        <div class="legend" style="margin-bottom:12px">
+          <span><i class="sw" style="background:var(--surface-2);border:1px solid var(--line)"></i>Valor contrato</span>
+          <span><i class="sw" style="background:color-mix(in srgb,var(--s-real) 40%,var(--surface-2))"></i>Facturado</span>
+          <span><i class="sw" style="background:var(--s-real)"></i>Recaudado</span>
+        </div>
+        <div class="flow" id="flow"></div>
+      </div>
+      <div class="panel">
+        <div class="sec-h"><h2>Costo real 2026 vs forecast</h2><p>Acumulado ene–ago · millones COP</p></div>
+        <div class="legend" style="margin-bottom:8px">
+          <span><i class="sw" style="background:var(--s-real)"></i>Real</span>
+          <span><i class="sw" style="background:var(--s-fcst)"></i>Forecast</span>
+        </div>
+        <div class="chart" id="c-costport"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section id="v-proj" role="tabpanel" aria-labelledby="t-proj" hidden>
+    <div class="chips" id="pchips" role="group" aria-label="Proyecto"></div>
+    <div id="ficha" class="section"></div>
+  </section>
+
+  <!-- ============ OPERATIVO ============ -->
+</div>
+<div id="tip" hidden></div>
+
+<script>
+/* ======================= DATOS (extraídos de los Excel) ======================= */
+const MES=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+const CUT=8; // meses con real cerrado (ene–ago)
+// Frentes: [nombre, funcionalidades, escala CMI del entregable (0 / 0,2 / 0,5 / 0,75 / 1; null = no contractual)] · fuente: Consolidado Indicadores PMO, columna “Indicador Estratégico”
+const FR={"005":[["Evolutivos",10,0],["SGDA",7,1],["Deuda SGDEA",9,0.2],["Correspondencia",6,1],["PRQRS",4,0.5],["Refactorización",5,0.5],["Facturación",3,0.5],["Ministerio del trabajo",5,0],["Tutelas",5,1],["Entes de control",5,1],["Arquitectura",1,1],["Transversal",4,0.2],["Procesos jurídicos - Laboral",1,0],["Procesos jurídicos - Civil",1,0],["Medicina Laboral",5,1],["QA",1,0.2],["SGDEA",2,1],["Procesos jurídicos - Contencioso",1,0]],"355":[["416 Vida Grupo y evolutivos MCQA",12,0.2],["416 Migración a Microservicios",6,0.5],["416 Transversales MCQA",4,0.2],["416 Soporte y Deuda SALUD Fase 1",7,0.5],["01. Vida Grupo VG",6,0.2],["06. Exequias EX",4,0.2],["416 Soporte y Deuda SALUD Fase 2",5,0.2],["01. Ramos- 2024",7,0.2],["03. Póliza Salud PS",7,0.2],["1. Vida Grupo",4,0.2],["04. Accidentes Personales AP",2,0.2],["416 SALUD",3,0.2],["02. Evolutivos Vida Grupo",2,0.2],["05. Colectivos Vigilantes MCQA OK",4,0.2],["416 Productos Digitales MCQA",1,0.2],["416 Infra, Soporte y Deuda CORE",3,0],["02. Vida Individual VI",3,0],["10. TRANSVERSALES",1,0.2]],"416":[["416 Vida Individual",3,0],["416 Accidentes Personales",4,0]],"384":[["13 TES TESORERIA",65,0.5],["01 NFI NEGOCIOS FIDUCIARIOS",27,0.5],["08 CON CONTABILIDAD",49,0.5],["11 NOR NORMATIVO",63,0.2],["16 FIC FONDOS DE INVERSIÓN COLECTIVA",53,0.5],["10 TRI TRIBUTARIO",24,0.5],["18 CLI CLIENTES",14,0.5],["09 CXP CUENTAS POR PAGAR",21,0.5],["12 PRE PRESUPUESTO",28,0.2],["Devs Transversal",16,0.2],["05 CDE CONTRATACIÓN DERIVADA",15,0.5],["15 PDI PORTAFOLIO DE INVERSIONES",34,1],["29 REP REPORTEADOR",22,0.2],["03 ACF ACTIVOS FIJOS",17,0.5],["23 FYC FACTURACION Y CARTERA",11,0.5],["PDI PORTAFOLIO DE INVERSIONES V2",17,0.2],["02 LDC LIQUIDACION DE COMISIONES",9,0.5],["Portal FIC's Clientes",11,0.2],["19 TER TERCEROS",1,0.5],["20 SAR SARLAFT",8,0.2],["07 RC RENDICION DE CUENTAS",2,0.5],["06 OBF OBLIGACIONES FINANCIERAS",4,0.5],["27. PPA PORTAL PAGOS",1,0.2],["24 SEG SEGURIDAD",6,0.5],["14 CB CONCILIACION BANCARIA",5,0.2],["17 UAS USUARIOS",7,0.5],["22 AUD AUDITORIA",3,0.5],["21 EMB EMBARGOS",1,0.5],["04 AYN AGENDA Y NOTIFICACIONES",3,0.5],["24 Parametrización",1,0.2],["00 Transversales",2,0.2],["35. CBT CHAT CHATBOT",1,0.2]],"419":[["§ Depósitos Judiciales"],["Priorización 7",26,0],["Priorización 1",34,0.5],["Priorización 4",16,0.5],["Priorización 6",10,0.2],["Priorización 3",9,0.5],["Priorización 2",10,0.5],["Priorización 5",3,0.5],["Seguimiento Transversal Linktic",5,0.2],["BACKLOG",3,0],["Rama Priorización 2",1,0],["§ Rama Judicial"],["Rama Priorización 3",7,0.5],["Rama Priorización 4",7,0.2],["Rama Priorización 5",8,0.2],["Rama Priorización 6",5,0.2],["Rama Priorización 1",8,0.5],["Rama Priorización 2",9,0.5],["Rama Priorización 7",3,0],["Rama BACKLOG",4,0]],"453":[["Foco A · Agentes de monitoreo",31,0.2],["Foco B · Integración y flujos de datos",30,0],["Foco C · Encuestas",11,0],["Foco D · Planes e indicadores",4,0]],"421":[["Afiliaciones y Novedades",29,0.5],["Sistema de Recaudo y Cartera",26,0.2],["Funcionalidades Transversales",9,null],["Automatización QA Balu",2,null]],"397":[["P2 Siniestros",16,1],["P2 Admin de rentas",11,1],["P1 Administración de Rentas",13,1],["P1 Emisión",10,0.75],["P1 Suscripción y Cotización",7,1],["P1 Reservas",5,1],["P4,5 Administración de Rentas",7,1],["P1 Siniestros",4,1],["MVP Reservas",4,1],["P4,5 Reportes",3,1],["MVP Suscripcion y Cotización",3,1],["P1 Integraciones",4,1],["P1 Facturación y Cartera",4,1],["P1 Reportes",3,1],["P2 Otros y emisión",2,0.75],["P4,5 Facturación Cartera",4,1],["P4,5 Cotización",2,1],["MVP Facturación y Cartera",5,1],["MVP Emisión",3,1],["MVP Siniestros",2,1],["P4,5 Emsión",3,1],["P2 Facturación y Cartera",3,1],["P2 Integraciones",2,1],["P1 Otros",2,0.5],["04. FAC FACTURACIÓN",1,1],["P3 Reportes",2,1],["P3 Emisión",2,1],["P4,5 Siniestro",2,1],["MVP Integraciones",2,1],["P3 Integraciones",1,1],["P3 Facturación",1,1],["P4,5 Transversales e Integrales",1,1],["MVP Reportes",1,1],["P2 Cotización",1,1]],"348":[["§ Anexo 9. Requerimientos"],["11. GESTIÓN Y TRAMITE",62,0.0],["20. FLUJOS DE TRABAJO",59,0.0],["8. RADICACIÓN Y REGISTRO",49,0.0],["13. DOCUMENTOS DE ARCHIVO",41,0.0],["6. RETENCIÓN Y DISPOSICIÓN",35,0.0],["12. GESTIÓN DE DOCUMENTOS Y TRABAJO COLABORATIVO",35,0.0],["16. BÚSQUEDA Y REPORTES",32,0.0],["15. PRESTAMOS DOCUMENTALES",30,0.0],["10. SERVICIO DE FIRMADO",29,0.0],["2. USUARIOS Y GRUPOS",28,0.0],["4. METADATOS",24,0.0],["18. ACTOS ADMINISTRATIVOS",22,0.0],["3. ROLES",21,0.0],["1. SISTEMA",18,0.0],["5. CLASIFICACIÓN",17,0.0],["7. EXPEDIENTE ELECTRÓNICO",16,0.0],["9. SEDE ELECTRÓNICA PQRS WEB",16,0.0],["19. FORMATOS, PLANTILLAS Y FORMULARIOS",16,0.0],["14. ARCHIVOS FÍSICOS",15,0.0],["17. EXPORTACIÓN E IMPORTACIÓN",9,0.0],["§ 348 - Proyecto EAAB Temáticos"],["SISTEC GNET",61,0.0],["SISTEC EPNT",52,0.0],["Gestión del Conocimiento",51,0.0],["Acuerdos de Gestión",41,0.0],["Calidad y procesos",38,0.2],["Conceptos Jurídicos",16,0.2],["Predial",11,0.2],["Historia Ocupacional",10,0.0],["Historia Laboral",8,0.2],["Generador de Documentos",2,0.0],["§ 348_MODULOS TEMÁTICOS"],["348_SISTEC",115,0.0],["348_GESTION DEL CONOCIMIENTO",50,0.0],["348_ACUERDOS DE GESTION",40,0.0],["348_CALIDAD Y PROCESOS",31,0.2],["348_CONCEPTOS JURIDICOS",15,0.2],["348_PREDIAL",10,0.2],["348_HISTORIAS OCUPACIONALES",10,0.0],["348_HISTORIA LABORAL",8,0.0],["348_GENERADOR DE DOCUMENTOS",2,0.2],["§ 348 - Proyecto EAAB SGDEA (Core)"],["SGDEA_Archivo",52,0.0],["SGDEA_PQRS",32,0.5],["SGDEA_Correspondencia",23,0.2],["Transversal",17,0.0],["§ 348_CORE"],["348_ARCHIVO",46,0.2],["348_PQRSD",32,0.0],["348_CORRESPONDENCIA",23,0.2],["348_TRANSVERSALES",19,0.0],["348_NTEGRACIONES",4,0.0],["§ EAAB_3.0"],["Flujos de trabajo - BPM",30,0.2],["EXPEDIENTES",6,0.2],["CLASIFICACIÓN DOCUMENTAL",6,0.0],["CORRESPONDENCIA",4,0.2],["SERVICIOS IA",4,0.0],["CIERRE CRONOGRAMA ACUEDUCTO",3,0.2],["CONFIGURACIÓN",2,0.0],["RETENCIÓN Y DISPOSICIÓN",2,1.0],["ARCHIVO FÍSICO",1,0.0],["ACTOS ADMINISTRATIVOS",1,0.2],["REPORTES DINAMICOS",1,0.0],["HISTORIAL DE EVENTOS",1,0.0],["COMUNICADOS INTERNOS",1,0.0],["GESTIÓN DE BORRADORES",1,0.0],["SEDE_ELECTRONICA",1,0.0],["TRABAJO_COLABORATIVO",1,0.0],["USUARIOS_Y_ROLES",1,0.0],["FIRMAS",1,0.0],["PQRSD",1,0.2],["§ 348 MIGRACIÓN"],["ARCHIVO ELECTRÓNICO - MIGRACIÓN",17,0.0],["CORI(CORRESPONDENDIA) - MIGRACIÓN",15,0.0],["SISTEC - MIGRACIÓN",10,0.0],["ACUERDOS DE GESTIÓN - MIGRACIÓN",6,0.0],["CALIDAD - MIGRACIÓN",1,0.0],["CONCEPTOS JURIDICOS - MIGRACIÓN",1,0.0],["PREDIAL - MIGRACIÓN",1,0.0],["§ Assesment de Madurez"],["Módulo de Gestión de conocimiento.(Biblioteca Virtual y CRAI)",4,1.0],["Módulo de SISTEC.",4,1.0],["Modulo proceso de Calidad",4,1.0],["Modulo Historias laborales",4,1.0],["Modulo Historias Clínicas Ocupacionales",4,1.0],["Modulo proceso de Jurídica",4,1.0],["Módulo Seguimiento y evaluación (Acuerdos Gestión)",4,1.0],["Assesment Tecnologico",4,1.0],["Assesment de Migración",3,1.0],["Modulo Predial",3,1.0],["Modulo generador de documentos a partir de bases de datos",2,1.0],["Assesment integración SAP",1,1.0],["§ 4. Preparación & Limpieza de Datos"],["Limpieza Datos",1,0.0],["§ 348_AUTOMATIZACIÓN"],["Core",1,0.2],["§ (sin frente) · funcionalidades que no cuelgan de ningún frente en Azure"],["PQRSD",26,0.2],["HU PQR",20,0.0],["HU Correspondencia",9,0.0],["Módulo de Calidad",6,0.5],["QA",2,0.0],["Módulo Historias Ocupacionales",1,1.0],["Módulo Juridica",1,1.0]],"456":[["§ Fase I"],["Entregable I: Propuesta metodológica para el laboratorio e indicadores (60% Fase I)",18,1.0],["Entregable II: Transferencia de conocimiento y hoja de ruta a PMV (40% Fase I)",12,0.5],["§ Fase II parte I"],["Entregable I: Experimento testeo UX sobre problemas priorizados (50% Parte I)",20,0.0],["Entregable II: Informes de resultados detallados e individualizados (30% Parte I)",12,0.0],["Entregable III: Transferencia de conocimiento del experimento y PMV (20% Parte I)",8,0.0],["§ Fase II parte II"],["Entregable Único: Experimento 2 para al menos dos procesos objetivo (100% Parte II)",30,0.0]]};
+const BOOK416={
+  m:[[254.0,460.5,460.4],[0,456.2,405.7],[0,362.6,413.5],[0,405.9,337.7],[0,547.6,450.0],[0,761.8,639.6],[0,681.6,684.4],[0,732.6,706.1],[0,690.7,0],[0,690.7,0],[0,699.1,0],[0,699.1,0]],
+  cpiP:null,cpiF:0.3889972835,icff:1.7830276874,avFin:0.2185,ppto:254.0,fcst:7294.7,
+  contrato:6067.2,factPlan:4891.9,fact:1739.9,cumplFact:.3557,recaudo:1959.9,cumplRec:1.0,brechaRec:0,
+  evm:{ppto:[4097422734,253989615,0.2185,55496730.8775,0.013544302,-0.0516446828],fcst:[4097422734,7294674200,0.2185,1593886312.7,0.3889972835,1.7830276874]},
+  cx:{tot:[253.989615,7294.6742,4097.422734],acu:[2695.35833,4408.936132,5988.671141],warn:["Total: el presupuesto solo tiene cargado enero ($254 M), así que las variaciones contra PPTO del bloque total (2.772,04% y 1.513,22%) no son interpretables.","Acumulado: PPTO y REAL incluyen 2025, pero el forecast 2025 está en cero; REAL vs FCST acumulado queda sobrestimado.","Total y acumulado tienen alcances distintos: el total excluye 2025 y el acumulado lo incluye."]},
+  margin:{dir:[.471,-.83,-3.072],net:[.318,-1.113,-3.579],gap:{f_p:[-130.1,-143.1],r_p:[-354.3,-389.7],r_f:[-224.2,-246.6]}},
+  fx:{total_sin:6067.2,total_con:6067.2,plan_sin:4891.9,plan_con:4891.9,real_sin:1739.9,real_con:2070.5,pend_sin:4327.3,pend_con:3996.7,iva_facturado:557.7,av_sin:.286778,av_con:.341266,cumpl_sin:.355678,cumpl_con:.423257,total:6067.2,pend:4327.3,av:.2867780438,plan:4891.9,real:1739.9,cumpl:.3556780688,corte:"Corte 1 oct 2026",src:"Indicadores CORE (416) · hoja Facturacion"},
+  team:{"hc": 25, "cost": 250.17, "period": "Enero 2025 - Septiembre 2026", "src": "Indicadores CORE (416) · Detalle Team", "roles": [["Requerimientos", 113.24, 5, 0.452665], ["Desarrollo", 62.97, 8, 0.251718], ["Gestión De Proyectos", 29.24, 2, 0.116868], ["Arquitectura", 21.55, 1, 0.086147], ["Pruebas Qa", 8.63, 2, 0.034483], ["Scrum Master", 6.62, 1, 0.026469], ["Infraestructura Cloud", 3.42, 1, 0.013674], ["Diseño Ux", 2.08, 1, 0.008323], ["Operación De Proyectos", 1.35, 1, 0.00539], ["Staff Administrativo", 0.89, 1, 0.003555], ["Sin Categoría", 0.18, 1, 0.0007], ["Copy", 0.0, 1, 1e-05]]},
+  hitosNote:"Libro 416 CORE · hitos facturados $2.034 M de $6.320 M",
+  hitos:[["Pago 1","Cronograma, plan de trabajo y equipo",232.2,232.2,"Facturado"],["Pago 2","Capacitación fase 3 y aprobación de HU",330.2,330.2,"Facturado"],["Pago 3","Puesta en producción Vida Grupo",491.9,491.9,"Facturado"],["Pago 4","Evolutivos VG, Exequias, Digitales, Salud",1516.1,0,"Atrasada"],["Pago 5","Accidentes Personales, Vida Individual",2574.1,0,"Atrasada"],["Pago 6","Soporte e infraestructura (12 cuotas)",1175.3,979.4,"83,33% facturado"]]};
+const P=[
+ {id:"005",name:"SGDEA DOCUM",sub:"004 en el consolidado",op:{av:.5056,ent:7/18,n:18,d:7,u:"funcionalidades"},
+  m:[[252.3,193.2,14.9],[251.7,237.1,391.9],[324.6,379.4,395.0],[344.1,553.1,526.2],[288.6,378.3,398.7],[289.7,376.8,392.8],[288.4,383.8,292.3],[289.5,467.1,312.1],[288.4,854.6,0],[289.5,829.6,0],[288.4,751.7,0],[289.5,772.4,0]],
+  cpiP:.8194,cpiF:1.4524,icff:.6384,avFin:.6452,ppto:3484.8,fcst:6177.0,
+  contrato:3986.4,factPlan:4743.8,fact:1536.7,cumplFact:.3239,recaudo:1089.6,cumplRec:.6206,brechaRec:-666.3,
+  evm:{ppto:[2743934922,3484770265,.6452,2248373775,.8193976311,1.668922118],fcst:[2743934922,6176953205,.6452,3985370208,1.452428837,.6383837243]},
+  cx:{tot:[3484.770265,6176.953205,2743.934922],acu:[2328.849561,2968.613329,2723.935249],warn:[]},
+  margin:{dir:[.191,-.3907,-.971],net:[.01,-.636,-1.268],gap:{f_p:[-58.17,-64.6],r_p:[-116.2,-127.8],r_f:[-58.03,-63.2]}},
+  fx:{total_sin:3986.4,total_con:4743.8,plan_sin:3986.4,plan_con:4743.8,real_sin:1536.7,real_con:1828.7,pend_sin:2449.7,pend_con:2915.1,iva_facturado:292.0,av_sin:.385492,av_con:.385492,cumpl_sin:.323943,cumpl_con:.385492,total:3986.4,pend:2449.7,av:.385492066,plan:4743.8,real:1536.7,cumpl:.323943,corte:"Corte 1 oct 2026",src:"Indicadores_DOCUM · hoja Facturacion"},
+  team:{"hc": 135, "cost": 1901.96, "period": "Enero 2025 - Septiembre 2026", "src": "Indicadores_DOCUM · Detalle Team", "roles": [["Desarrollo", 540.59, 20, 0.284228], ["Mda", 217.83, 13, 0.11453], ["Pruebas Qa", 160.35, 9, 0.084307], ["Requerimientos", 156.32, 7, 0.08219], ["Lider Tecnico", 125.24, 2, 0.065847], ["Transversales", 124.47, 47, 0.065444], ["Gestión De Aseguramiento De Proyectos", 120.44, 1, 0.063323], ["Data", 109.87, 4, 0.057768], ["Gestión De Proyectos", 68.8, 3, 0.036173], ["Gestión De Integral De Proyectos", 58.81, 1, 0.03092], ["Sin Categoría", 56.45, 3, 0.029679], ["Infraestructura Cloud", 52.54, 4, 0.027627], ["Scrum Master", 30.52, 3, 0.016044], ["Formación", 20.85, 1, 0.010964], ["Soporte", 14.49, 4, 0.007616], ["Copy", 11.49, 3, 0.006039], ["Documentadores", 10.62, 1, 0.005583], ["Arquitectura", 8.1, 2, 0.00426], ["Tutores", 4.85, 2, 0.002552], ["Automatización", 3.45, 1, 0.001815], ["Comunicaciones", 2.25, 1, 0.001183], ["Directivos", 1.65, 1, 0.000867], ["Aprendiz Etapa Productiva", 1.09, 1, 0.000572], ["Diseño Ux", 0.89, 1, 0.000468]]},
+  hitosNote:"Facturación mensual estimada $333 M · fecha estimada 5 ago: soportes en construcción",
+  hitos:[["Ene","Soporte, operador FE, funcionalidades",579.4,0,"Atrasada"],["Feb","Soporte, operador FE, funcionalidades",333.1,265.5,"Atrasada"],["Mar","Mensualidad",333.1,0,"Atrasada"],["Abr","Mensualidad",333.1,0,"Atrasada"],["May","Mensualidad",333.1,0,"Atrasada"],["Jun","Mensualidad",333.1,0,"Atrasada"],["Jul","Mensualidad",333.1,0,"Pendiente"],["Ago","Mensualidad + implementación 2 IA",583.1,0,"Pendiente"]],
+  diag:["crit","Forecast 2026 supera el presupuesto en 77,26% ($6.177 M vs $3.485 M) por el salto de sep–dic (~$800 M/mes). Recaudo actualizado al 29-sep en $1.090 M (70,91% de lo facturado). Seis meses de facturación están atrasados."]},
+ {id:"POS",code:"355 / 416",name:"Positiva Core",sub:"Vista unificada · finanzas del libro 416 CORE",subs:["355","416"],op:{av:.2185,ent:0,n:20,d:0,u:"entregables"},
+  ...BOOK416,
+  diag:["crit","Ninguno de los 20 entregables (18 funcionalidades de 355 y 2 ramos de 416) está al 100% en producción. Recaudo al día (94,65% de lo facturado con IVA), pero los pagos 4 y 5 ($4.090 M) siguen sin facturar. Presupuesto 2026 cargado solo en enero: el CPI vs presupuesto no es calculable."]},
+ {id:"384",name:"Core Fiduprevisora",margin:{dir:[.089,-.394,-5.208],net:[-.102,-.634,-5.929],gap:{f_p:[-48.3,-53.2],r_p:[-529.7,-582.7],r_f:[-481.4,-529.5]}},op:{av:.4219,ent:.03125,n:32,d:1,u:"funcionalidades"},
+  m:[[261.0,1233.6,874.5],[261.0,1215.1,851.5],[261.0,1206.5,942.4],[261.0,1198.6,803.0],[261.0,1141.8,835.7],[261.0,1133.0,831.2],[261.0,1169.6,822.9],[261.0,1197.9,842.4],[261.0,1276.0,0],[261.0,1254.4,0],[261.0,1070.1,0],[261.0,1061.3,0]],
+  cpiP:0.3123,cpiF:1.0323,icff:0.9777,avFin:0.4219,ppto:5036.5,fcst:16647.8,
+  contrato:21016.7,factPlan:6669.0,fact:2380.8,cumplFact:.30,recaudo:2231.9,cumplRec:1.0,brechaRec:0,
+  evm:{ppto:[6803685346,5036494296,0.4219,2124771031.12,0.3123,-1.6477],fcst:[6803685346,16647764335,0.4219,7023275578.83,1.0323,0.9777]},
+  cx:{tot:[5036.494296,16647.764335,6803.685346],acu:[7091.186291,9496.207207,14020.981981],warn:["Acumulado: PPTO y REAL incluyen 2025 (real $7.217 M), pero el forecast 2025 está en cero; REAL vs FCST acumulado (147,65%) queda sobrestimado.","Total y acumulado tienen alcances distintos: el total excluye 2025 y el acumulado lo incluye."]},
+  fx:{total_sin:21016.7,total_con:25009.9,plan_sin:6669.0,plan_con:7936.1,real_sin:2380.8,real_con:2380.8,pend_sin:18635.9,pend_con:22629.1,iva_facturado:0.0,av_sin:.113282,av_con:.095195,cumpl_sin:.357000,cumpl_con:.300000,total:25009.9,pend:22629.1,av:.09519533688,plan:7936.1,real:2380.8,cumpl:.30,corte:"Corte 1 oct 2026",src:"IndicadoresFIDU · hoja Facturacion",hasIVA:true,
+      comp:[["Implementación (Con IVA)",7936.1,0.3173178],["Soporte (Con IVA)",14953.1,0.5978879],["Bolsa de Horas (Con IVA)",2120.7,0.0847943]]},
+  team:{"hc": 185, "cost": 6342.6, "period": "Enero 2025 - Septiembre 2026", "src": "IndicadoresFIDU · Detalle Team", "roles": [["Desarrollo", 3247.87, 81, 0.512073], ["Pruebas Qa", 768.94, 24, 0.121234], ["Requerimientos", 709.26, 22, 0.111825], ["Analista Negocios", 361.59, 8, 0.057009], ["Gestión De Proyectos", 304.61, 5, 0.048025], ["Lider Tecnico", 259.79, 4, 0.04096], ["Arquitectura", 167.75, 2, 0.026448], ["Qa", 69.98, 6, 0.011034], ["Staff Fabrica", 58.87, 1, 0.009281], ["Gestión De Integral De Proyectos", 55.95, 1, 0.008822], ["Sin Categoría", 50.22, 4, 0.007918], ["Scrum Master", 49.59, 1, 0.007819], ["Diseño Ux", 49.12, 2, 0.007744], ["Data", 39.88, 2, 0.006287], ["Operación De Proyectos", 36.73, 3, 0.005791], ["Copy", 31.3, 6, 0.004935], ["Infraestructura Cloud", 21.68, 2, 0.003419], ["Soporte Proyectos", 19.91, 1, 0.00314], ["Staff Administrativo", 15.08, 1, 0.002377], ["Formación", 7.95, 2, 0.001253], ["Transversales", 6.65, 1, 0.001049], ["Ciberseguridad", 3.57, 2, 0.000562], ["Diseño", 2.51, 2, 0.000396], ["Infraestructura", 2.02, 1, 0.000319], ["Soporte", 1.78, 1, 0.000281]]},
+  hitosNote:"9 etapas · 7 atrasadas con plan de choque",
+  hitos:[["Etapa 1","Plan de trabajo, brechas, arquitectura",1587.2,1587.2,"Facturado"],["Etapa 2","Ambiente de pruebas",793.6,793.6,"Facturado"],["Etapa 4","Usuarios, terceros, clientes · jul-26 → 17 nov",396.8,0,"Atrasada"],["Etapa 6","Cuentas por pagar, presupuesto · sep-26 → 15 nov",1190.4,0,"Atrasada"],["Etapa 3","Negocios fiduciarios, tesorería · oct-26 → 17 nov",793.6,0,"Atrasada"],["Etapa 5","FIC, portafolio, comisiones · 17 nov",1190.4,0,"Atrasada"],["Etapa 7","Integración E2E etapas 3/5/6 · → 31 ene-27",396.8,0,"Atrasada"],["Etapa 8","Tributarios, normativos, portales · → 31 ene-27",793.6,0,"Atrasada"],["Etapa 9","Integración E2E etapa 8 · → 28 feb-27",793.6,0,"Atrasada"]],
+  diag:["good","Proyecto más grande del portafolio: 11,33% del contrato facturado y 1 de 32 funcionalidades al 100% (avance CMI 42,19%: 20 en curso >80%, 11 entre 50–80%). CPI forecast sube a 1,03 (superávit de desempeño). 7 etapas de facturación dependen del plan de choque (nov-26 a feb-27)."]},
+ {id:"419",name:"Depósitos Judiciales",sub:"Incluye frente Rama Judicial",op:{av:0.120113852,ent:0.2682403433,n:466,d:125,u:"funcionalidades"},
+  m:[[1854.4,378.6,213.5],[638.1,368.1,282.2],[686.7,392.8,357.4],[686.7,365.4,333.4],[686.7,374.9,335.6],[686.7,374.8,362.0],[686.7,411.5,338.1],[686.7,435.4,356.8],[686.7,525.3,0],[686.7,525.3,0],[686.7,525.3,0],[679.0,525.3,0]],
+  margin:{dir:[.338,.625,.2105],net:[.172,.487,.036],gap:{f_p:[28.7,31.5],r_p:[-12.75,-13.6],r_f:[-41.45,-45.1]}},
+   cpiP:.9067,cpiF:.5246,icff:1.2579,avFin:.1845,ppto:18098.6,fcst:10471.2,
+  contrato:28493.4,factPlan:7098.9,fact:5227.9,cumplFact:.736434,recaudo:4562.5,cumplRec:.7724,brechaRec:-1344.7,
+  evm:{ppto:[3682952117,18098555014,.1845,3339183400,.9066594661,1.023846989],fcst:[3682952117,10471184817,.1845,1931933599,.5245611502,1.2579491]},
+  cx:{tot:[18098.555014,10471.184817,3682.952117],acu:[8955.222605,4631.191667,3682.952117],warn:["Total y acumulado incluyen 2025 en PPTO, FCST y REAL: alcances consistentes. La hoja se llama “INDICADORES DE COSTO” y trae columnas adicionales."]},
+  fx:{total_sin:28493.4,total_con:33907.2,plan_sin:5965.5,plan_con:7098.9,real_sin:5227.9,real_con:6221.2,pend_sin:23265.6,pend_con:27686.0,iva_facturado:993.3,av_sin:.183476,av_con:.183476,cumpl_sin:.736434,cumpl_con:.876434,total:28493.4,pend:23265.6,av:.1834763948,plan:7098.9,real:5227.9,cumpl:.7364341107,corte:"Corte 1 oct 2026",src:"Indicadores_419_V11 · hoja Facturacion",
+      comp:[["Implementación (Sin IVA)",25644.1,0.900000],["Soporte (Sin IVA)",2849.3,0.100000]]},
+  team:{"hc": 97, "cost": 3141.72, "period": "Mayo 2025 - Agosto 2026", "src": "419_Resumen · Detalle Teams 419", "split": [["Implementación", 2199.685316, 71, 0.7001521527], ["Indirectos", 942.03939, 26, 0.2998478473]], "roles":[["Desarrollo", 767.28, 23, 0.244223], ["Requerimientos", 637.45, 19, 0.202897], ["Transversales", 454.37, 14, 0.144624, "Arquitectura y funcionales"], ["QA", 340.59, 15, 0.108408], ["Gestión de Proyectos", 267.88, 3, 0.085266], ["Datos", 264.96, 8, 0.084335], ["Directivos", 151.26, 2, 0.048145, "Head Fábrica"], ["Infraestructura", 148.73, 6, 0.04734, "Infra, ciber y SISO"], ["Scrum", 61.32, 3, 0.019516, "Scrum y analistas"], ["Diseño", 40.96, 1, 0.013036, "UX"], ["Comunicaciones", 5.07, 1, 0.001615], ["Soporte", 1.87, 2, 0.000595, "Mesa"]]},
+  hitosNote:"Implementación $25.644 M · 20% al entregar, 80% al certificar",
+  hitos:[["SPI 1–4","Entregados a cliente",2751.5,2751.5,"Facturado"],["SPI 5","Entregados a cliente",412.7,275.2,"Parcial"],["SPI 6–8","Entregados a cliente",770.4,0,"Atrasada"],["SPI 1","Certificados por cliente",1100.6,1100.6,"Facturado"],["SPI 2–6","Certificados por cliente",2063.6,0,"Atrasada"]],
+  diag:["crit","Se han certificado 26,82% de las funcionalidades (125 de 466): avance táctico CMI 12,01%. CPI forecast 0,52. El ICFF de 1,26 exige ser 25,79% más productivo que el plan para no romper el presupuesto."]},
+ {id:"453",name:"CPE",op:{av:.20,ent:0,n:4,d:0,u:"focos"},
+  m:[[0,0,0],[0,0,0.8],[125.3,65.8,48.9],[149.1,74.5,111.0],[134.0,160.4,149.2],[134.0,174.3,164.5],[138.4,192.0,184.6],[140.1,196.1,197.3],[158.1,192.9,0],[143.5,161.2,0],[147.0,136.0,0],[176.5,142.4,0]],
+  margin:{dir:[0,0,0],net:[0,0,0],gap:{f_p:[0,0],r_p:[0,0],r_f:[0,0]}},
+   cpiP:0.334157106,cpiF:0.3473474059,icff:1.885869134,avFin:0.2,ppto:1445.8,fcst:1502.8,
+  contrato:null,factPlan:null,fact:null,cumplFact:null,recaudo:null,
+  evm:{ppto:[865322071,1445767595,0.2,289153519,0.334157106,1.9926315704],fcst:[865322071,1502836883,0.2,300567376.6,0.3473474059,1.885869134]},
+  cx:{tot:[1445.767595,1502.836883,865.322071],acu:[820.765118,863.00844,38.643028],warn:["REAL acumulado mal formulado: J36 = SUM(H7:H8)+SUM(I7:I15) solo suma el personal de 2025 y enero; el real ene–ago es $856 M. Los cumplimientos acumulados (4,71% y 4,48%) no son válidos."]},
+  team:{"hc": 49, "cost": 818.81, "period": "Enero 2025 - Septiembre 2026", "src": "Indicadores_CPE · Copia de Detalle Team", "roles": [["Desarrollo", 172.63, 6, 0.21083], ["Pruebas Qa", 146.26, 15, 0.178627], ["Requerimientos", 128.01, 5, 0.156339], ["Gestión De Proyectos", 85.18, 1, 0.104024], ["Gestión De Integral De Proyectos", 74.92, 1, 0.091498], ["Arquitectura", 48.22, 4, 0.058892], ["Data", 43.82, 3, 0.053516], ["Scrum Master", 40.22, 2, 0.049118], ["Lider Tecnico", 30.53, 1, 0.037283], ["Diseño Ux", 14.58, 1, 0.017803], ["Infraestructura Cloud", 12.25, 1, 0.014962], ["Datos", 5.79, 1, 0.007069], ["Directivos", 5.45, 1, 0.006652], ["Aprendiz Etapa Productiva", 4.45, 1, 0.005435], ["Transversales", 3.53, 3, 0.004312], ["Staff Fabrica", 1.96, 1, 0.002397], ["Aprendiz Etapa Lectiva", 0.77, 1, 0.000946], ["Sin Categoría", 0.24, 1, 0.000295]]},
+  hitosNote:"Sin valor de contrato ni facturación cargados",hitos:[],
+  diag:["crit","Ejecutado 59,85% del presupuesto con 20,00% de avance (solo el Foco A avanza): CPI 0,35 (forecast) e ICFF 1,89. Foco B (30% del contrato) es ruta crítica, no ha iniciado y cierra el 25 dic. Sin contrato ni plan de facturación cargados."]},
+ {id:"421",name:"BALÚ",op:{av:.35,ent:0,n:2,d:0,u:"frentes"},
+  m:[[1588.5,3758.1,3611.8],[1588.5,1262.9,1236.4],[1588.5,1367.1,1267.0],[1588.5,1221.0,1179.5],[1588.5,1150.2,1118.8],[1588.5,1124.1,1142.0],[1688.6,1098.7,1184.6],[1688.6,1085.8,1061.7],[1688.6,1131.1,0],[1688.6,1083.2,0],[1688.6,1061.5,0],[1738.6,2452.8,0]],
+  cpiP:1.012666361,cpiF:0.7055263173,icff:1.2898963703,avFin:0.35,ppto:34146.2,fcst:23789.7,
+  contrato:100945.3,factPlan:50633.9,fact:38249.3,cumplFact:.7554,recaudo:32566.7,cumplRec:.7658,brechaRec:-9957.9,
+  evm:{ppto:[11801700091,34146241958,0.35,11951184685.3,1.012666361,0.9933100175],fcst:[11801700091,23789742867,0.35,8326410003.45,0.7055263173,1.2898963703]},
+  cx:{tot:[34146.241958,23789.742867,11801.700091],acu:[31467.699045,12067.945637,19121.120339],warn:["Acumulado: PPTO y REAL incluyen 2025 (real $7.319 M), pero el forecast 2025 está en cero; REAL vs FCST acumulado (158,45%) queda sobrestimado.","Total y acumulado tienen alcances distintos: el total excluye 2025 y el acumulado lo incluye."]},
+  fx:{total_sin:100945.3,total_con:120124.9,plan_sin:42549.5,plan_con:50633.9,real_sin:38249.3,real_con:45516.7,pend_sin:62696.0,pend_con:74608.2,iva_facturado:7476.2,av_sin:.378911,av_con:.378911,cumpl_sin:.755409,cumpl_con:.898877,total:100945.3,pend:62696.0,av:.3789111381,plan:50633.9,real:38249.3,cumpl:.7554086793,corte:"Corte 1 oct 2026",src:"IndicadoresBalu · hoja Facturacion"},
+   margin:{dir:[.412,.582,.474],net:[.253,.44,.321],gap:{f_p:[17.0,18.7],r_p:[6.2,6.8],r_f:[-10.8,-11.9]}},
+  team:{"hc": 420, "cost": 8324.8, "period": "Enero 2025 - Septiembre 2026", "src": "IndicadoresBalu 20260929 · Detalle Team", "roles": [["c (sin categoría definida)", 2712.64, 127, 0.32585], ["Mda", 1845.5, 73, 0.221687], ["Desarrollo", 1369.27, 37, 0.164481], ["Pruebas Qa", 464.58, 24, 0.055807], ["Requerimientos", 333.49, 11, 0.04006], ["Soporte", 301.87, 46, 0.036262], ["Gestión De Aseguramiento De Proyectos", 183.56, 1, 0.02205], ["Gestión De Integral De Proyectos", 170.73, 1, 0.020509], ["Data", 160.6, 9, 0.019292], ["Sin Categoría", 148.72, 12, 0.017864], ["Bpo/Operaciones", 104.51, 31, 0.012554], ["Scrum Master", 64.72, 1, 0.007774], ["Calidad Balu", 61.38, 2, 0.007374], ["Formación", 57.62, 3, 0.006922], ["Diseño Ux", 41.49, 4, 0.004984], ["Transversales", 33.6, 4, 0.004036], ["Datos", 32.34, 3, 0.003884], ["Copy", 30.55, 4, 0.00367], ["Arquitectura", 28.84, 3, 0.003465], ["Gestión De Proyectos", 28.02, 2, 0.003366], ["Ausente", 27.81, 1, 0.003341], ["Infraestructura Cloud", 24.59, 2, 0.002954], ["Staff Fabrica", 22.5, 1, 0.002703], ["Automatización", 17.21, 2, 0.002067], ["Staff Pmo", 15.44, 1, 0.001855], ["Estrategia", 13.15, 2, 0.001579], ["Diseño", 11.41, 3, 0.00137], ["Ciberseguridad", 7.3, 2, 0.000877], ["Product Owner", 2.41, 1, 0.00029], ["Qa", 2.38, 1, 0.000286], ["Aprendiz Etapa Productiva", 1.8, 1, 0.000217], ["Documentadores", 1.69, 1, 0.000203], ["Equipo Noc", 1.16, 1, 0.000139], ["Staff Soporte", 0.69, 1, 8.3e-05], ["Staff Administrativo", 0.64, 1, 7.7e-05], ["Directivos", 0.57, 1, 6.9e-05]]},
+  hitosNote:"Facturación mensual $4.219 M · se radica entre 2 y 7 semanas después de la fecha planeada",
+  hitos:[["Ene","Plan 23 feb → real 13 abr",4219.5,4219.5,"Facturado · atrasado"],["Feb","Plan 23 mar → real 23 abr · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Mar","Plan 23 abr → real 21 may · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Abr","Plan 23 may → real 18 jun · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["May","Plan 23 jun → real 17 jul",4219.5,4219.5,"Facturado · atrasado"],["Jun","Plan 23 jul → real 5 ago",4219.5,4219.5,"Facturado · atrasado"],["Jul","Plan 23 ago",4219.5,0,"Pendiente"],["Ago","Plan 23 sep",4219.5,0,"Pendiente"]],
+  diag:["warn","Mayor contrato del portafolio ($100.945 M): 34,36% facturado, 93,90% de lo facturado recaudado y costo ene–ago en 97,79% del forecast. Operativamente, ninguno de los 2 frentes contractuales está completo: Afiliaciones y Novedades en curso >80% (0,5) y Recaudo y Cartera entre 50–80% (0,2); avance CMI 35,00%. La facturación mensual se radica tarde y julio–agosto siguen pendientes. Con el avance CMI (35,00%) el CPI forecast es 0,71: cada peso gastado genera 0,71 de valor."]},
+ {id:"456",name:"Aeronáutica Civil",sub:"Laboratorio de Innovación AC",op:{av:0.24,ent:0.1666666667,n:6,d:1,u:"entregables"},
+  m:[[0,0,0],[0,0,0],[0,0,0],[120.0,120.0,110.0],[150.0,150.0,145.0],[150.0,150.0,140.0],[160.0,160.0,155.0],[160.0,160.0,150.0],[180.0,180.0,0],[180.0,180.0,0],[180.0,180.0,0],[180.0,180.0,0]],
+  cpiP:1.02,cpiF:1.05,icff:0.98,avFin:0.24,ppto:1581.6,fcst:1581.6,
+  contrato:1581.6,factPlan:1581.6,fact:284.7,cumplFact:0.18,recaudo:284.7,cumplRec:1.0,brechaRec:0.0,
+  evm:{ppto:[700000000,1581560925,0.24,379574622,1.02,0.98],fcst:[700000000,1581560925,0.24,379574622,1.05,0.98]},
+  cx:{tot:[1581.56,1581.56,700.0],acu:[740.0,740.0,700.0],warn:[]},
+  margin:{dir:[0.15,0.15,0.18],net:[0.08,0.08,0.10],gap:{f_p:[0,0],r_p:[3,2],r_f:[3,2]}},
+  fx:{total_sin:1581.6,total_con:1882.1,plan_sin:1581.6,plan_con:1882.1,real_sin:284.7,real_con:338.8,pend_sin:1296.9,pend_con:1543.3,iva_facturado:54.1,av_sin:0.18,av_con:0.18,cumpl_sin:0.18,cumpl_con:0.18,total:1581.6,pend:1296.9,av:0.18,plan:1581.6,real:284.7,cumpl:0.18,corte:"Corte 29 sep 2026",src:"Indicadores_456 · hoja Facturacion",
+      comp:[
+        {name:"Fase I: Estructuración y Metodología (30%)",sin:474.5,con:564.6,fact_sin:284.7,fact_con:338.8},
+        {name:"Fase II - Parte I: Exp. 1 UX y Resultados (40%)",sin:632.6,con:752.8,fact_sin:0,fact_con:0},
+        {name:"Fase II - Parte II: Exp. 2 Procesos (30%)",sin:474.5,con:564.6,fact_sin:0,fact_con:0}
+      ]},
+  team:{"hc":7,"cost":3779.5,"period":"Abril 2026 - Diciembre 2026","src":"Indicadores_456 · Detalle Team","roles":[["Innovación y Diseño de Experimentos",1650.4,2,0.4367],["Técnico Innovación y Desarrollo MVP",1008.0,2,0.2667],["Metodología Ágil y Marcos de Trabajo",657.1,1,0.1739],["Dirección y Planeación Estratégica",248.0,1,0.0656],["Contraparte Técnica Entidad (Aero Civil)",216.0,1,0.0571]]},
+  hitosNote:"6 entregables contractuales · Entregable I formalmente aceptado por Aeronáutica Civil y facturado al 100%",
+  hitos:[["Fase I - E1","Propuesta metodológica para laboratorio y experimentos + indicadores",338.8,338.8,"Facturado"],["Fase I - E2","Transferencia de conocimiento y hoja de ruta a PMV",225.8,0,"En curso"],["Fase II-1 E1","Experimento 1 de testeo UX sobre problemas priorizados",376.4,0,"Pendiente"],["Fase II-1 E2","Informes de resultados detallados e informe general",225.8,0,"Pendiente"],["Fase II-1 E3","Transferencia de conocimiento y producto mínimo viable",150.6,0,"Pendiente"],["Fase II-2 E1","Experimento 2 de mejoras en procesos objetivo",564.6,0,"Pendiente"]],
+  diag:["crit","DESVIACIÓN CRONOGRAMA (05/10/2026): El cronograma actualizado desplaza el cierre del proyecto del 30-dic-2026 al 28-ene-2027 (+29 días cal. / +19 días hábiles), cruzando a la vigencia fiscal 2027. Causa crítica: reprogramación del inicio de Experimento 2 al 05-oct (+48 días cal.). Fase 1 culminó Gate 1 al 100% y arranca Ideación de MVP 1."]},
+ {id:"348",name:"SGDEA Acueducto",opOnly:true,finNote:"El consolidado operativo no incluye información financiera para este proyecto.",op:{av:0.2529411765,ent:0.1764705882,n:17,d:3,u:"entregables"},diag:["warn","Información operativa tomada del consolidado de referencia."]},
+ {id:"397",name:"Colfondos Core",opOnly:true,finNote:"No existe libro financiero de Colfondos en “Información Financiera”; el consolidado solo trae su avance operativo.",op:{av:.9706,ent:.9118,n:34,d:31,u:"funcionalidades"},
+  diag:["good","Proyecto en cierre: 31 de 34 funcionalidades en producción. Pendientes P1 Emisión (99,00%), P2 Otros y emisión (92,00%) y P1 Otros (85,00%)."]}
+];
+let FIN=[];
+let SUBS=[];
+let ALL=[];
+let getP=id=>null;
+
+function rebuildProjectIndex(){
+  FIN = P.filter(p=>!p.opOnly);
+  SUBS = [
+   {id:"355",parent:"POS",name:"Positiva Core",sub:"Subproyecto 355",opOnly:true,finNote:"La información financiera de Positiva Core está consolidada en el libro 416 CORE (carpeta 416 - Positiva Core); se muestra en la vista general y en el subproyecto 416.",op:{av:0.2105263158,ent:0,n:18,d:0,u:"funcionalidades"},
+    diag:["warn","Ninguna de las 18 funcionalidades está al 100%: 2 en curso >80% (migración a microservicios y Soporte Salud fase 1), 14 entre 50–80% y 2 por debajo del 50%. Avance CMI 21,05% (hoja CMI)."]},
+   {id:"416",parent:"POS",name:"Positiva Core",sub:"Subproyecto 416 · Vida Individual y AP",op:{av:.29,ent:0,n:2,d:0,u:"ramos"},...BOOK416,
+    diag:["crit","Los dos ramos (Vida Individual y Accidentes Personales) están por debajo del 50% en la escala CMI (0), aunque el consolidado reporta 29,00% de avance CMI. Son el alcance del pago 5 ($2.574 M), aún sin facturar. El libro financiero 416 CORE cubre todo Positiva Core."]}
+  ];
+  ALL=[...P,...SUBS];
+  getP=id=>ALL.find(x=>x.id===id);
+  ALL.forEach(p=>{if(FR[p.id])p.frentes=FR[p.id]});
+  const pos=getP("POS");
+  if(pos){ pos.frentes=[["§ Subproyecto 355"],...FR["355"],["§ Subproyecto 416"],...FR["416"]]; }
+  const posSubs = pos && pos.subs ? pos.subs.map(getP).filter(Boolean) : [];
+  if (pos && posSubs.length) {
+    const n=posSubs.reduce((a,x)=>a+x.op.n,0);
+    const d=posSubs.reduce((a,x)=>a+x.op.d,0);
+    pos.op={av:posSubs.reduce((a,x)=>a+x.op.av*x.op.n,0)/n,n,d,ent:d/n,u:"entregables"};
+    pos.opParts=posSubs;
+  }
+  ALL.forEach(p=>{if(p.fx)p.cumplFact=p.fx.real/p.fx.plan});
+  return {P,FIN,ALL};
+}
+rebuildProjectIndex();
+const code=p=>p.code||p.id;
+
+/* Base Maestra CPE V1 (corte fuente 04/09/2026) */
+const GOV={"453":{
+  corte:"04/09/2026",fuente:"Base_Maestra_CPE_V1S.xlsx · presentación gerencial CPE 04/09/2026",
+  focos:[["A","Agentes de monitoreo",.40,31,"21 de 31 CU entregados o en entrega","30/07/2026","24/10/2026","+87 días",false],["B","Integración y flujos de datos",.30,30,"No iniciado / diagnóstico programado","10/09/2026","25/12/2026","+77 días",true],["C","Encuestas",.15,11,"4 CU cargados en Enjisst; resto en proceso","22/07/2026","09/11/2026","−9 días (lámina 7)",false],["D","Planes e indicadores",.15,4,"Programado / sin cambios","30/12/2026","30/12/2026","Sin cambio",false]],
+  crono:[
+   ["A","Release 1","2026-06-16",null,"Entregado"],["A","Release 2","2026-09-04",null,"Entregado / ajustes"],["A","Release 3","2026-09-14","2026-10-18","En desarrollo"],["A","Piloto (operación real CPE)","2026-09-25","2026-10-24","Programado"],["A","Cierre técnico","2026-10-24",null,"Cierre","2026-07-30"],
+   ["B","Diagnóstico","2026-09-28","2026-10-16","Programado"],["B","B1–B4 indicadores","2026-10-19","2026-11-13","Programado"],["B","B5–B7 analítica y ETL","2026-11-16","2026-12-04","Programado"],["B","Release usable","2026-11-30",null,"Programado"],["B","Estabilización","2026-12-07","2026-12-25","Programado"],["B","Cierre técnico","2026-12-25",null,"Cierre","2026-09-10"],
+   ["C","Diagnóstico y definición","2026-09-04","2026-09-18","En curso"],["C","Releases C1–C3","2026-09-21","2026-10-09","Programado"],["C","Estabilización","2026-10-09","2026-11-09","Programado"],["C","Cierre técnico","2026-11-09",null,"Cierre","2026-07-22"],
+   ["D","Diagnóstico","2026-10-30","2026-11-06","Programado"],["D","Iteraciones D1–D4","2026-11-09","2026-11-30","Programado"],["D","Estabilización","2026-12-01","2026-12-29","Programado"],["D","Cierre técnico","2026-12-30",null,"Cierre","2026-12-30"]],
+  cuA:[["Aprobación cliente",19,"var(--s-real)"],["Pruebas",6,"var(--s-light)"],["Definición de requerimiento",6,"var(--axis)"]],
+  cuC:{cargados:4,proceso:7},
+  riesgos:[["R-CPE-01","Concentración de alcance en el Foco B","Crítico","54 CU en 8 semanas de construcción.","Trabajo en equipo con cliente, definir y avanzar.","B"],["R-CPE-02","Tiempos ajustados y focos en paralelo","Crítico","Se requiere prioridad para avanzar en paralelo.","Disponibilidad de equipos CPE-LINKTIC.","Todos"],["R-CPE-03","Mayor disponibilidad de CPE en estos 3 meses","Alto","Coinciden piloto de A, estabilización de C e iteraciones de B y D.","Acordar en septiembre calendario de ventanas de certificación.","Todos"],["R-CPE-04","Definiciones claras y enfoque al negocio","Alto","Ajustes de definición pueden cambiar cierres de CU.","Involucrar desde el inicio a quienes estructuran cada CU.","Todos"],["R-CPE-05","Regresión y ajustes de evidencias","Medio","Muchos escenarios de prueba en corto tiempo.","Automatizar entrega de evidencias en Enjisst.","Todos"],["R-CPE-06","Revisiones y aprobaciones en menor tiempo","Medio","Se requieren revisiones más rápidas del cliente.","Apoyo de CPE con disponibilidad para avanzar.","Todos"]],
+  obs:[["OBS-01","Cantidad CU Foco B","30 CU (pág. 2 y 14) vs 54 CU (pág. 16)","Alta"],["OBS-02","Peso / alcance Foco B","30% del valor contractual vs 50% del alcance funcional","Alta"],["OBS-03","Cierre Foco A","24/10 vs Release 3 el 24/09 y ventana hasta 24/11","Alta"],["OBS-04","Cierre Foco C","30/10 vs 09/10 vs 09/11","Alta"],["OBS-06","Estado CU Foco C","4 de 11 cargados vs “2 cargados · 9 programados”","Alta"],["OBS-08","Entrega Foco C","Semana del 21/09 vs release 09/10","Alta"],["OBS-09","Entrega completa Foco A","Semana del 21/09 vs Release 3 al 18/10","Alta"],["OBS-10","Fuente futura","Solo existe la presentación gerencial; no hay base por CU/EUV/defecto","Alta"],["OBS-05","Inicio Foco C","07/09 vs 22/07","Media"],["OBS-07","Cierre Release 2 Foco A","04/09 vs 18/09","Media"]],
+  calidad:[["Defectos críticos abiertos","0","Condición de no avance"],["Pruebas funcionales exitosas","≥95%","Alerta 85–95%; no avance <85%"],["Cobertura de regresión por entrega","≥80%","Por entrega del foco"],["Cobertura de regresión al cierre","≥90%","Releases candidatos a cierre"],["Escenarios E2E validados por iteración","≥8%","Mínimo por iteración"],["Entrada al piloto Foco A","100% críticos","0 defectos críticos y regresión satisfactoria"]],
+  pasos:[["Sem. 07/09","A","Demo de CU del Release 3"],["Sem. 07/09","C","Diagnóstico y definición de escenarios"],["Sem. 14/09","A","Cierre del Release 2 (18/09)"],["Sem. 14/09","A","Pruebas del Release 3"],["Sem. 14/09","Transversal","Plan de automatización de EUV"],["Sem. 21/09","C","Entrega Foco C"],["Sem. 21/09","A","Entrega completa Foco A"],["Sem. 21/09","B","Seguimiento y avances Foco B"],["Continuo","Todos","≥1 entrega semanal de software con evidencia completa"],["Continuo","Todos","Cero defectos críticos abiertos por entrega"]],
+  capacidad:[["Equipo 1 · Agentes e integración","Foco A · R2 y R3","Foco B","Foco B","Foco B · estabilización"],["Equipo 2 · Encuestas y planes","Foco C · diagnóstico e iteraciones","Foco C / transición","Foco D + refuerzo B","Refuerzo B · estabilización D"],["Transversal · Arquitectura y QA","Diagnósticos, regresión, evidencias","Diagnóstico B (28/09–16/10)","Regresión acumulada","Regresión acumulada"]],
+  orgA:"Organigrama Foco A: 4 requerimientos · 2 arquitectura · 5 QA · 5 desarrollo · 3 data"
+}};
+
+/* ======================= HELPERS ======================= */
+const nf0=new Intl.NumberFormat("es-CO",{maximumFractionDigits:0});
+const nf2=new Intl.NumberFormat("es-CO",{maximumFractionDigits:2,minimumFractionDigits:2});
+const M=v=>v==null?"—":"$"+nf0.format(v)+" M";
+const pct=v=>v==null||isNaN(v)?"—":nf2.format(v*100)+"%";
+const $=s=>document.querySelector(s);
+const sum=a=>a.reduce((x,y)=>x+y,0);
+const ytd=(p,i)=>sum(p.m.slice(0,CUT).map(r=>r[i]));
+const band=(v,g,w)=>v==null||isNaN(v)?"na":v>=g?"good":v>=w?"warn":"crit";
+const execBand=v=>v==null?"na":(v>=.9&&v<=1.05)?"good":(v>=.75&&v<=1.15)?"warn":"crit";
+const cpiBand=v=>v==null?"na":v>=.95?"good":v>=.8?"warn":"crit";
+const st=(cls,txt)=>cls==="na"?`<span class="st na">—</span>`:`<span class="st ${cls}">${txt}</span>`;
+const tip=$("#tip");
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const r=tip.getBoundingClientRect();let x=e.clientX+14,y=e.clientY+14;if(x+r.width>innerWidth-8)x=e.clientX-r.width-14;if(y+r.height>innerHeight-8)y=e.clientY-r.height-14;tip.style.left=x+"px";tip.style.top=y+"px"}
+function hideTip(){tip.hidden=true}
+function niceMax(v){const e=Math.pow(10,Math.floor(Math.log10(v)));const n=v/e;return (n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*e}
+const realFr=p=>(p.frentes||[]).filter(f=>f.length>1);
+const cmiCalc=p=>{const f=realFr(p).filter(x=>x[2]!=null);return f.length?{av:sum(f.map(x=>x[2]))/f.length,d:f.filter(x=>x[2]>=1).length,n:f.length}:null};
+const ESC=v=>v==null?["No contractual",""]:v>=1?["En producción","good"]:v>=.75?["En UAT cliente","warn"]:v>=.5?["En curso >80%","crit"]:v>=.2?["En curso 50–80%","crit"]:["En curso <50%","crit"];
+// Referencia oficial: hoja CMI del consolidado. VAL documenta la validación de su lógica contra las hojas por proyecto.
+// ok: true = cuadra · false = revisar · "p" = valor puntual (no se valida)
+const VAL={
+ "005":{src:"CMI!C19 = '004'!G96 · E19 = 6/18 digitado",av:[true,"AVERAGE de la escala (col. G) de los 18 frentes = 50,56%"],ent:[true,"Corregido a 7/18 (confirmado por la PMO el 23/09/2026): SGDA, Correspondencia, Tutelas, Entes de control, Arquitectura, Medicina Laboral y SGDEA están en escala 1. La hoja CMI tiene 6 digitado y debe actualizarse"]},
+ "POS":{src:"Consolidado = 355 (CMI!I19 · I24/K24) + 416 (CMI!O19 · O24/Q24)",av:[true,"Promedio de 355 y 416 ponderado por entregables: (21,05% × 18 + 29,00% × 2) ÷ 20 = 21,85%. Los valores de cada subproyecto tienen sus propias observaciones"],ent:[true,"Suma de subproyectos: 18 + 2 = 20 entregables · 0 + 0 = 0 entregados"]},
+ "355":{src:"CMI!I19 = '355'!Q102 · K19 = 0/18 digitado",av:[false,"Q102 promedia 19 celdas: incluye la funcionalidad ▸ 416_EV_VG_Siniestros (fila 8). Con los 18 frentes el promedio es 21,11%"],ent:[true,"0 frentes en escala 1"]},
+ "416":{src:"CMI!O19 = '416'!P12 · Q19 = Q24/O24",av:[false,"O19 apunta a P12 (promedio del avance reportado = 29,00%) y no a Q12 (promedio de la escala = 0,00%)"],ent:[true,"0 ramos en escala 1"]},
+ "384":{src:"CMI!C34 = '384'!Q576 · E34 = 1/32 digitado",av:[true,"AVERAGE de la escala de los 32 frentes = 40,31%"],ent:[true,"1 frente en escala 1 (15 PDI Portafolio de inversiones)"]},
+ "419":{src:"CMI!I34 = 12,01% · K34 = 26,82% (125/466)",av:["p","Indicador táctico tomado directamente de la hoja CMI."],ent:["p","Indicador estratégico puntual del CMI: 125 de 466 funcionalidades."]},
+ "453":{src:"CMI!O34 = '453'!P2 · Q34 = 0/4 digitado",av:[false,"O34 apunta a P2 (solo Foco A = 0,2). El resumen P16 promedia solo focos con valor; B, C y D no tienen indicador. Con los 4 focos el promedio es 5,00%"],ent:[true,"0 focos en escala 1"]},
+ "421":{src:"CMI!C49 = '421'!J6 · E49 = 0/2 digitado",av:[true,"AVERAGE de la escala de los 2 frentes contractuales = 35,00%"],ent:[true,"0 frentes en escala 1"]},
+ "397":{src:"CMI!I49 = '397'!Q174 · K49 = K54/I54 (31/34 digitado)",av:[true,"AVERAGE de la escala de los 34 frentes = 97,06%"],ent:[true,"31 frentes en escala 1"]},
+ "456":{src:"CMI!C64 = 24,00% · E64 = 16,67% (1/6)",av:[true,"Avance ponderado según pesos contractuales de las 3 fases (18%×1 + 12%×0,5 = 24,00%)"],ent:[true,"1 de 6 entregables contractuales completado al 100% (Entregable I Fase I)"]}
+};
+const valState=p=>{const v=VAL[p.id];if(!v)return null;const a=[v.av[0],v.ent[0]];return a.includes("p")?"p":a.every(x=>x===true)?"ok":"rev"};
+const valPill=p=>{const k=valState(p);return k==="ok"?'<span class="pill good">✓ Cuadra</span>':k==="rev"?'<span class="pill warn">Revisar</span>':k==="p"?'<span class="pill info">Puntual CMI</span>':'—'};
+const valTip=p=>{const v=VAL[p.id];if(!v)return "";const m=x=>x===true?"✓":x==="p"?"•":"⚠";return `<span style="display:block;margin-top:6px;color:var(--ink-2)"><b style="display:inline;margin:0">Fuente:</b> ${v.src}<br>${m(v.av[0])} Avance: ${v.av[1]}<br>${m(v.ent[0])} Entregables: ${v.ent[1]}</span>`};
+const overall=p=>p.diag[0];
+
+/* ======================= IVA MODE & HELPERS ======================= */
+let ivaMode = "sin";
+try { ivaMode = localStorage.getItem("cmi-iva-mode") || "sin"; } catch(e){}
+
+function saveIVA(mode) {
+  ivaMode = mode;
+  try { localStorage.setItem("cmi-iva-mode", ivaMode); } catch(e){}
+  updateIVAButtons();
+  renderTiles();
+  renderSem();
+  renderFlow();
+  renderFicha();
+}
+
+function updateIVAButtons() {
+  document.querySelectorAll(".btn-iva-sin").forEach(b => b.setAttribute("aria-pressed", ivaMode === "sin"));
+  document.querySelectorAll(".btn-iva-con").forEach(b => b.setAttribute("aria-pressed", ivaMode === "con"));
+}
+
+function getProjContrato(p) {
+  if (!p.fx) return p.contrato;
+  return ivaMode === "con" ? (p.fx.total_con || p.contrato) : (p.fx.total_sin || p.contrato);
+}
+
+function getProjFactReal(p) {
+  if (!p.fx) return p.fact;
+  return ivaMode === "con" ? (p.fx.real_con || p.fact) : (p.fx.real_sin || p.fact);
+}
+
+function getProjFactPlan(p) {
+  if (!p.fx) return p.factPlan;
+  return ivaMode === "con" ? (p.fx.plan_con || p.factPlan) : (p.fx.plan_sin || p.factPlan);
+}
+
+function getProjPendiente(p) {
+  if (!p.fx) return getProjContrato(p) - getProjFactReal(p);
+  return ivaMode === "con" ? (p.fx.pend_con || (getProjContrato(p) - getProjFactReal(p))) : (p.fx.pend_sin || (getProjContrato(p) - getProjFactReal(p)));
+}
+
+function getProjCumplFact(p) {
+  if (!p.fx) return p.cumplFact;
+  return ivaMode === "con" ? (p.fx.cumpl_con || p.cumplFact) : (p.fx.cumpl_sin || p.cumplFact);
+}
+
+function getProjAvance(p) {
+  if (!p.fx) return p.fact && p.contrato ? p.fact / p.contrato : null;
+  return ivaMode === "con" ? (p.fx.av_con || p.fx.av) : (p.fx.av_sin || p.fx.av);
+}
+
+/* ======================= RESUMEN ======================= */
+function renderTiles(){
+  const withC=FIN.filter(p=>getProjContrato(p)!=null);
+  const contrato=sum(withC.map(p=>getProjContrato(p))),fact=sum(withC.map(p=>getProjFactReal(p))),rec=sum(withC.map(p=>p.recaudo));
+  const tag = ivaMode === "con" ? "Con IVA" : "Sin IVA";
+  const t=[
+    [`Total valor contrato (${tag})`,M(contrato),`${tag} · ${withC.length} proyectos con contrato cargado`,null],
+    [`Total facturado (${tag})`,M(fact),`${tag} · ${pct(fact/contrato)} del valor del contrato`,fact/contrato],
+    ["Total recaudado",M(rec),`${pct(rec/fact)} de lo facturado (${tag})`,Math.min(rec/fact,1)]
+  ];
+  $("#tiles").innerHTML=t.map(([l,v,s,b])=>`<div class="panel tile"><span class="lbl">${l}</span><span class="val">${v}</span><span class="sub">${s}</span>${b!=null?`<div class="bar-mini"><i style="width:${b*100}%"></i></div>`:""}</div>`).join("");
+}
+const WORST=a=>{const v=a.filter(x=>x&&x!=="na");return !v.length?"na":v.includes("crit")?"crit":v.includes("warn")?"warn":"good"};
+const icffBand=v=>v==null?"na":v<=1.05?"good":v<=1.2?"warn":"crit";
+function opState(p){return WORST([band(p.op.av,.7,.4),band(p.op.ent,.7,.3)])}
+function finState(p){if(!p.m)return "na";const exe=ytd(p,2)/ytd(p,1),conv=p.recaudo&&p.fact?p.recaudo/p.fact:null;
+  return WORST([cpiBand(p.cpiF),icffBand(p.icff),execBand(exe),band(getProjCumplFact(p),.9,.7),band(conv,.9,.7)])}
+function semName(p,isSub,hint){
+  const nm=p.subs?`<span class="chev" aria-hidden="true">▸</span> `:isSub?`<span style="color:var(--muted)">↳</span> `:"";
+  return `<td${isSub?' style="padding-left:28px"':""}><div class="pname">${nm}${isSub?"Subproyecto "+p.id:code(p)+" · "+p.name}${p.subs?`<small>Clic para ver subproyectos 355 y 416</small>`:isSub?`<small>${p.sub.replace(/^Subproyecto \d+ ?·? ?/,"")||hint}</small>`:p.sub?`<small>${p.sub}</small>`:""}</div></td>`;
+}
+const stPill=c=>c==="na"?`<span class="pill">Sin información</span>`:`<span class="sdot ${c}"></span>`;
+function semTable(sel,head,cells,state,hint){
+  const row=(p,isSub)=>`<tr data-p="${p.id}" tabindex="0"${p.subs?` aria-expanded="false" class="parent"`:""}${isSub?` class="subrow" data-parent="${p.parent}" hidden`:""}>
+      ${semName(p,isSub,hint)}${cells(p)}<td>${stPill(state(p))}${p.subs?` <button class="linkbtn" style="padding:0 0 0 6px" data-open="${p.id}">Ver detalle →</button>`:""}</td></tr>`;
+  const rows=P.map(p=>row(p)+(p.subs?p.subs.map(id=>row(getP(id),true)).join(""):"")).join("");
+  const t=$(sel);
+  t.innerHTML=`<thead><tr><th>Proyecto</th>${head.map(h=>`<th class="n">${h}</th>`).join("")}<th>Estado</th></tr></thead><tbody>${rows}</tbody>`;
+  t.querySelectorAll("tbody tr").forEach(tr=>{
+    const p=getP(tr.dataset.p);
+    const go=e=>{hideTip();
+      if(e&&e.target.closest("[data-open]")){openProj(p.id);return}
+      if(p.subs){const open=tr.getAttribute("aria-expanded")!=="true";tr.setAttribute("aria-expanded",open);
+        t.querySelectorAll(`tr[data-parent="${p.id}"]`).forEach(s=>s.hidden=!open);return}
+      openProj(p.id)};
+    tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter")go(e)});
+  });
+}
+function finMini(p){
+  const na=p.parent&&!p.m?"En libro 416":"Sin libro financiero";
+  const nav=t=>`<span class="k-na">${t}</span>`;
+  const box=(l,sub,v)=>`<div class="k"><span class="k-l">${l}</span><span class="k-s">${sub}</span><span class="k-v k-money">${v}</span></div>`;
+  const cp=v=>v==null?nav("n/c"):`<span class="tone-${cpiBand(v)}">${nf2.format(v)}</span>`;
+  const has=!!p.m;
+  const tag = ivaMode === "con" ? "Con IVA" : "Sin IVA";
+  const cVal = getProjContrato(p);
+  const fVal = getProjFactReal(p);
+  return `<div class="kpis">
+    ${box("Valor contrato",tag,has?(cVal?M(cVal):nav("No cargado")):nav(na))}
+    ${box("Valor facturado",tag,has?(fVal!=null?M(fVal):nav("No cargado")):nav(na))}
+    <div class="k k-cpi"><span class="k-l">CPI</span><span class="k-s">Índice de desempeño del costo</span>
+      <div class="cpi2"><div><span class="k-s">Escenario FCST</span><span class="k-v">${has?cp(p.cpiF):nav(na)}</span></div><div><span class="k-s">Escenario PPTO</span><span class="k-v">${has?cp(p.cpiP):nav(na)}</span></div></div>
+    </div>
+  </div>`;
+}
+function opCard(p,isSub){
+  const o=p.op,st1=band(o.av,.7,.4),st2=band(o.ent,.7,.3),os=opState(p),u=o.u.charAt(0).toUpperCase()+o.u.slice(1);
+  const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:`${code(p)} · ${p.name}`;
+  const kpi=(lbl,sub,v,cls)=>`<div class="k"><span class="k-l">${lbl}</span><span class="k-s">${sub}</span><span class="k-v">${st(cls,pct(v))}</span><div class="bar-mini"><i style="width:${Math.min(v,1)*100}%;background:var(--${cls==="good"?"good":cls==="warn"?"warn":"crit"})"></i></div></div>`;
+  return `<article class="op-card${isSub?" sub":""}" data-p="${p.id}" tabindex="0"${isSub?` data-parent="${p.parent}" hidden`:""}>
+    <header><h3>${title}</h3>${stPill(os)}</header>
+    ${p.sub&&!p.parent?`<p class="oc-sub">${p.sub}</p>`:""}
+    <div class="kpis">${kpi("Indicador táctico","% Avance funcionalidad",o.av,st1)}${kpi("Indicador estratégico","% Cumplimiento entregables",o.ent,st2)}</div>
+    <div class="counts"><div><span>Entregables</span><b>${nf0.format(o.n)}</b></div><div><span>Entregados</span><b>${nf0.format(o.d)}</b></div><em>* ${u}</em></div>
+    ${finMini(p)}
+    <footer>${p.subs?`<button class="linkbtn tog" aria-expanded="false">Ver subproyectos 355 y 416 ▾</button>`:""}<button class="linkbtn" data-open="${p.id}">Ver detalle →</button></footer>
+  </article>`;
+}
+function renderOpCards(){
+  const el=$("#sem-op");
+  el.innerHTML=P.map(p=>opCard(p)+(p.subs?p.subs.map(id=>opCard(getP(id),true)).join(""):"")).join("");
+  el.querySelectorAll(".op-card").forEach(c=>{
+    const p=getP(c.dataset.p);
+    const go=e=>{hideTip();
+      const t=e&&e.target.closest(".tog");
+      if(t||(p.subs&&!(e&&e.target.closest("[data-open]")))){const b=c.querySelector(".tog");const open=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",open);b.textContent=open?"Ocultar subproyectos ▴":"Ver subproyectos 355 y 416 ▾";
+        el.querySelectorAll(`.op-card[data-parent="${p.id}"]`).forEach(s=>s.hidden=!open);return}
+      openProj(p.id)};
+    c.addEventListener("click",go);c.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target===c)go(e)});
+  });
+}
+function renderSem(){
+  renderOpCards();
+  if($("#sem-fin"))semTable("#sem-fin",["CPI forecast","CPI ppto","ICFF","Ejecución vs fcst","Facturado / contrato","Cumpl. facturación","Recaudo / facturado"],p=>{
+    if(!p.m)return `<td class="n" colspan="7" style="text-align:left;color:var(--muted)">${p.parent?"Incluido en el libro financiero 416 CORE (vista general)":"Sin libro financiero en las fuentes"}</td>`;
+    const exe=ytd(p,2)/ytd(p,1),conv=p.recaudo&&getProjFactReal(p)?p.recaudo/getProjFactReal(p):null,fc=getProjAvance(p),cf=p.cpiFlag?" *":"";
+    return `
+      <td class="n">${st(cpiBand(p.cpiF),nf2.format(p.cpiF)+cf)}</td>
+      <td class="n">${p.cpiP==null?`<span class="st na">n/c</span>`:st(cpiBand(p.cpiP),nf2.format(p.cpiP)+cf)}</td>
+      <td class="n">${st(icffBand(p.icff),nf2.format(p.icff))}</td>
+      <td class="n">${st(execBand(exe),pct(exe))}</td>
+      <td class="n">${fc==null?st("na"):`<span class="num">${pct(fc)}</span>`}</td>
+      <td class="n">${st(band(getProjCumplFact(p),.9,.7),pct(getProjCumplFact(p)))}</td>
+      <td class="n">${st(band(conv,.9,.7),pct(conv))}</td>`},finState,"Finanzas en libro 416");
+}
+function renderFlow(){
+  const tag = ivaMode === "con" ? "Con IVA" : "Sin IVA";
+  const headerSub = document.querySelector("#cash-cost .sec-h p");
+  if (headerSub) headerSub.textContent = `Proyectos con contrato cargado (${tag})`;
+  
+  $("#flow").innerHTML=FIN.filter(p=>getProjContrato(p)!=null).sort((a,b)=>getProjContrato(b)-getProjContrato(a)).map(p=>{
+    const cVal = getProjContrato(p), fVal = getProjFactReal(p), rVal = p.recaudo;
+    const f=fVal/cVal,r=Math.min(rVal/cVal,1);
+    return `<div class="flow-row"><div class="top"><b>${code(p)} · ${p.name}</b><span class="num">${M(cVal)}</span></div>
+      <div class="stack" role="img" aria-label="Facturado ${pct(f)}, recaudado ${pct(rVal/cVal)} del contrato"><i class="f" style="width:${f*100}%"></i><i class="r" style="width:${r*100}%"></i></div>
+      <div class="foot"><span>Facturado (${tag}) <b class="num" style="color:var(--ink)">${M(fVal)}</b> (${pct(f)})</span><span>Recaudado <b class="num" style="color:var(--ink)">${M(rVal)}</b></span><span>Por facturar (${tag}) ${M(cVal-fVal)}</span></div></div>`}).join("");
+}
+function renderCostPort(){
+  const data=FIN.map(p=>({k:code(p)+" · "+p.name,real:ytd(p,2),fc:ytd(p,1)}));
+  const W=560,rowH=46,L=150,R=70,H=data.length*rowH+24;
+  const max=niceMax(Math.max(...data.map(d=>Math.max(d.real,d.fc))));
+  const x=v=>L+(W-L-R)*v/max;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Costo real vs forecast por proyecto">`;
+  for(let i=0;i<=4;i++){const v=max*i/4;s+=`<line x1="${x(v)}" x2="${x(v)}" y1="0" y2="${H-20}" stroke="var(--line)"/><text x="${x(v)}" y="${H-4}" text-anchor="middle">${nf0.format(v)}</text>`}
+  data.forEach((d,i)=>{const y=i*rowH+6;
+    s+=`<text x="0" y="${y+20}" class="lbl-strong" style="font-size:12px">${d.k}</text>`;
+    s+=`<rect x="${L}" y="${y+4}" width="${Math.max(x(d.real)-L,1)}" height="14" rx="3" fill="var(--s-real)"/>`;
+    s+=`<rect x="${L}" y="${y+20}" width="${Math.max(x(d.fc)-L,1)}" height="14" rx="3" fill="var(--s-fcst)"/>`;
+    s+=`<text x="${x(Math.max(d.real,d.fc))+6}" y="${y+23}" class="lbl-ink">${pct(d.real/d.fc)}</text>`;
+    s+=`<rect class="hit" data-i="${i}" x="0" y="${y}" width="${W}" height="${rowH-4}" fill="transparent"/>`});
+  s+="</svg>";
+  const el=$("#c-costport");el.innerHTML=s;
+  el.querySelectorAll(".hit").forEach(h=>{const d=data[h.dataset.i];
+    h.addEventListener("mousemove",e=>showTip(e,`<b>${d.k}</b><div><span>Real</span><span>${M(d.real)}</span></div><div><span>Forecast</span><span>${M(d.fc)}</span></div><div><span>Ejecución</span><span>${pct(d.real/d.fc)}</span></div>`));
+    h.addEventListener("mouseleave",hideTip)});
+}
+
+/* ======================= FICHA POR PROYECTO ======================= */
+let cur=null;
+function renderChips(){
+  const c=cur?getP(cur):null;
+  $("#pchips").innerHTML=P.map(p=>`<button class="chip" aria-pressed="${!!c&&(p.id===cur||c.parent===p.id)}" data-p="${p.id}">${p.name}</button>`).join("");
+  $("#pchips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{const sel=b.getAttribute("aria-pressed")==="true";if(sel){cur=null;renderChips();renderFicha()}else openProj(b.dataset.p,true)});
+}
+function openProj(id,stay){cur=id;renderChips();renderFicha();if(!stay)show("proj")}
+function tileHTML(l,v,s,cls){return `<div class="panel tile"><span class="lbl">${l}</span><span class="val">${cls?st(cls,v):v}</span><span class="sub">${s}</span></div>`}
+
+const REC_CUT={"005":"1 oct 2026","POS":"1 oct 2026","416":"1 oct 2026","384":"1 oct 2026","419":"1 oct 2026","421":"1 oct 2026"};
+let mode=null,finTab="fact";
+try{mode=localStorage.getItem("cmi-mode")||null;finTab=localStorage.getItem("cmi-fintab")||"fact"}catch(e){}
+const saveUI=()=>{try{localStorage.setItem("cmi-mode",mode||"");localStorage.setItem("cmi-fintab",finTab)}catch(e){}};
+
+function renderFicha(){
+  if(!cur){$("#ficha").innerHTML=`<p class="note" style="text-align:center;margin-top:18px">Seleccione un proyecto para desplegar su detalle.</p>`;return}
+  const p=getP(cur),g=GOV[p.id],o=p.op;
+  const src=[["Financiero",!!p.m],["Operativo CMI",true],["Base maestra",!!g]];
+  const par=p.subs?p:p.parent?getP(p.parent):null;
+  let h="";
+  if(par)h+=`<div class="seg" role="group" aria-label="Subproyectos de ${par.name}"><span class="eyebrow" style="align-self:center;margin-right:4px">Subproyectos</span>${[[par.id,"Vista general "+code(par)],...par.subs.map(id=>[id,id+" · "+(getP(id).sub||"").replace(/^Subproyecto \d+ ?·? ?/,"")||id])].map(([id,l])=>`<button aria-pressed="${id===p.id}" data-p="${id}">${l.replace(/ · $/,"")}</button>`).join("")}</div>`;
+  // Selector de vista: operativa / financiera
+  const fs=finState(p);
+  h+=`<div class="section modes" role="group" aria-label="Vista de la ficha">
+    <button class="mode" data-mode="op" aria-pressed="${mode==="op"}"><span class="m-h"><span class="m-t">Operativa</span>${stPill(opState(p))}</span><span class="m-go">${mode==="op"?"Ocultar ▴":"Ver detalle ▾"}</span></button>
+    <button class="mode" data-mode="fin" aria-pressed="${mode==="fin"}"><span class="m-h"><span class="m-t">Financiera</span>${stPill(fs)}</span><span class="m-go">${mode==="fin"?"Ocultar ▴":"Ver detalle ▾"}</span></button>
+  </div><div id="mode-body"></div>`;
+  $("#ficha").innerHTML=h;
+  $("#ficha").querySelectorAll("[data-p]").forEach(b=>b.addEventListener("click",()=>openProj(b.dataset.p,true)));
+  $("#ficha").querySelectorAll(".mode").forEach(b=>b.addEventListener("click",()=>{mode=mode===b.dataset.mode?null:b.dataset.mode;saveUI();renderFicha()}));
+  renderModeBody(p,g);
+}
+
+function renderModeBody(p,g){
+  const el=$("#mode-body");
+  if(!mode){el.innerHTML=`<p class="note" style="text-align:center;margin-top:14px">Seleccione la vista operativa o financiera para desplegar el detalle.</p>`;return}
+  if(mode==="op")return renderOpBody(p,g,el);
+  renderFinBody(p,el);
+}
+
+function renderOpBody(p,g,el){
+  const o=p.op;
+  let h=`<div class="section grid g-tiles">
+    ${tileHTML("Indicador táctico · % avance funcionalidad",pct(o.av),"",band(o.av,.7,.4))}
+    ${tileHTML("Indicador estratégico · % cumplimiento entregables",pct(o.ent),`${o.d} de ${o.n} ${o.u} entregados`,band(o.ent,.7,.3))}
+  </div>`;
+  if(p.opParts)h+=`<div class="section panel"><div class="sec-h"><h2>Consolidado 355 + 416</h2></div><div class="tbl-wrap"><table class="xl"><thead><tr><th>Subproyecto</th><th class="n">Entregables</th><th class="n">Entregados</th><th class="n">% avance funcionalidad</th><th class="n">% cumplimiento entregables</th></tr></thead><tbody>${p.opParts.map(x=>`<tr><td>${x.id}</td><td class="n">${x.op.n} <small style="color:var(--muted)">${x.op.u}</small></td><td class="n">${x.op.d}</td><td class="n">${pct(x.op.av)}</td><td class="n">${pct(x.op.ent)}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${p.op.n}</td><td class="n">${p.op.d}</td><td class="n">${pct(p.op.av)}</td><td class="n">${pct(p.op.ent)}</td></tr></tbody></table></div></div>`;
+  h+=`<div class="section grid ${p.id==="419"||p.id==="453"||p.id==="456"?"g-2":""}">`;
+  h+=`<div class="panel"><div class="sec-h"><h2>${p.id==="453"?"Escala CMI por foco":p.id==="456"?"Escala CMI por fase":"Escala CMI por frente"}</h2></div><div id="fr-list"></div></div>`;
+    if(p.id==="456")h+=`<div class="panel"><div class="sec-h"><h2>Desviación del Cronograma (Línea Base vs 05-oct-2026)</h2><p>Línea base (30-dic-2026) vs Pronóstico actualizado (28-ene-2027) por fases</p></div>
+    <div class="tbl-wrap"><table class="xl tbl-crono-456">
+      <thead><tr><th class="col-ent">Fase / Entregable Contractual</th><th class="col-peso">Peso</th><th class="col-date">Fin Base</th><th class="col-date">Fin Act.</th><th class="col-desv">Desv.</th><th class="col-st">Estado / CMI</th></tr></thead>
+      <tbody>
+        <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase I</b> · Estructuración y Metodología (Peso Fase: 30% · Avance CMI: 80,00%)</td></tr>
+        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Propuesta metodológica e indicadores</td><td class="col-peso">18%</td><td class="col-date">15/07/2026</td><td class="col-date">15/07/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st good">100% Producción</span></td></tr>
+        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Transferencia metodológica y hoja de ruta</td><td class="col-peso">12%</td><td class="col-date">23/09/2026</td><td class="col-date">23/09/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st warn">50% &gt;80% (Gate 1)</span></td></tr>
+
+        <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte I</b> · Experimento 1: UX y Resultados (Peso Fase: 40% · Avance CMI: 0,00%)</td></tr>
+        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Experimento testeo UX sobre 2 problemas (MVP 1)</td><td class="col-peso">20%</td><td class="col-date">11/11/2026</td><td class="col-date">19/11/2026</td><td class="col-desv"><span class="st warn">+8 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (En curso)</span></td></tr>
+        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Informes de resultados e informe entidad</td><td class="col-peso">12%</td><td class="col-date">19/11/2026</td><td class="col-date">04/12/2026</td><td class="col-desv"><span class="st crit">+15 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
+        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable III</b> · Transferencia conocimiento y PMV</td><td class="col-peso">8%</td><td class="col-date">20/11/2026</td><td class="col-date">02/12/2026</td><td class="col-desv"><span class="st crit">+12 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
+
+        <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte II</b> · Experimento 2: Procesos Objetivo (Peso Fase: 30% · Avance CMI: 0,00%)</td></tr>
+        <tr style="background:rgba(239,68,68,0.06)"><td class="col-ent">&nbsp;&nbsp;<b>Entregable Único</b> · Experimento 2 procesos objetivo</td><td class="col-peso">30%</td><td class="col-date">09/12/2026</td><td class="col-date" style="color:var(--crit);font-weight:700">26/01/2027</td><td class="col-desv"><span class="st crit"><b>+48 d</b></span></td><td class="col-st"><span class="st crit"><b>0% &lt;50% (Cruza 2027)</b></span></td></tr>
+
+        <tr class="tot" style="border-top:2px solid var(--line)"><td class="col-ent"><b>Cierre General del Proyecto AC</b></td><td class="col-peso"><b>100%</b></td><td class="col-date"><b>30/12/2026</b></td><td class="col-date" style="color:var(--crit)"><b>28/01/2027</b></td><td class="col-desv"><span class="st crit"><b>+29 d cal.</b></span></td><td class="col-st"><span class="st crit"><b>Desborde fiscal 2027</b></span></td></tr>
+      </tbody>
+    </table></div></div>`;
+  if(p.id==="419")h+=`<div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
+    <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div>`;
+  if(p.id==="453")h+=`<div class="panel"><div class="sec-h"><h2>Casos de uso</h2><p>Seguimiento por iteración · corte 15/09</p></div><div id="cpe-cu"></div></div>`;
+  h+=`</div>`;
+  // Gobierno del proyecto: sección oculta a pedido de la PMO (24-sep); datos y renderGov se conservan
+  const SHOW_GOV=false;
+  if(SHOW_GOV){ h+=`<div class="gov-h"><h2>Gobierno del proyecto</h2><p>${g?"Fuente: "+g.fuente:"Cronograma, riesgos, observaciones, calidad, próximos pasos y capacidad"}</p></div>`;
+  if(g){
+    h+=`<div class="panel"><div class="sec-h"><h2>Focos y reprogramación</h2><p>Cierre técnico Plan V7 → reportado</p></div><div class="tbl-wrap"><table id="g-focos"></table></div></div>
+      <div class="section panel"><div class="sec-h"><h2>Cronograma de hitos</h2>
+        <div class="legend"><span><i class="sw" style="background:var(--good)"></i>Entregado</span><span><i class="sw" style="background:var(--s-real)"></i>En curso</span><span><i class="sw" style="background:var(--s-light)"></i>Programado</span><span><i class="sw dia" style="background:var(--ink)"></i>Cierre técnico</span><span><i class="sw dia" style="border:1.5px solid var(--crit);background:transparent"></i>Cierre Plan V7</span></div></div>
+        <div class="tbl-wrap"><div class="chart" id="gantt" style="min-width:640px"></div></div></div>
+      <div class="section grid g-2"><div class="panel"><div class="sec-h"><h2>Riesgos que condicionan el cierre</h2><p id="g-risk-sum"></p></div><div class="tbl-wrap"><table id="g-risk"></table></div></div>
+      <div class="panel"><div class="sec-h"><h2>Observaciones por validar</h2><p id="g-obs-sum"></p></div><div class="tbl-wrap"><table id="g-obs"></table></div></div></div>
+      <div class="section grid g-2"><div class="panel"><div class="sec-h"><h2>Métricas de calidad</h2><p>Umbrales Plan V7 · sin resultado real al corte</p></div><div class="tbl-wrap"><table id="g-cal"></table></div></div>
+      <div class="panel"><div class="sec-h"><h2>Próximos pasos</h2><p>Compromisos reportados al 04/09</p></div><div class="timeline" id="g-pasos"></div></div></div>
+      <div class="section panel"><div class="sec-h"><h2>Capacidad y asignación de equipos</h2><p>${g.orgA}</p></div><div class="tbl-wrap"><table class="cap" id="g-cap"></table></div><p class="note">La base no incluye FTE, horas ni costo por equipo: no se calcula utilización.</p></div>`;
+  } else {
+    h+=`<div class="pending"><b>Pendiente: Base Maestra del proyecto.</b> Al cargarla con la plantilla <i>Base_Maestra_CPE_V1S.xlsx</i>, esta sección mostrará:
+      <ul><li>Resumen de focos o frentes con peso contractual</li><li>Cronograma de hitos vs línea base</li><li>Riesgos con nivel, mitigación y responsable</li><li>Observaciones e inconsistencias por validar</li><li>Métricas de calidad y condiciones de no avance</li><li>Próximos pasos y compromisos semanales</li><li>Capacidad y asignación de equipos</li><li>Seguimiento de casos de uso por iteración</li></ul></div>`;
+  }
+  }
+  el.innerHTML=h;
+  renderFrentes(p);
+  if(p.id==="419")render419();
+  if(p.id==="453")renderCU(g);
+  if(SHOW_GOV&&g)renderGov(g);
+}
+
+function renderFinBody(p,el){
+  if(!p.m){el.innerHTML=`<div class="section pending"><b>Sin libro financiero propio.</b> ${p.finNote||"Para activar facturación, recaudo, costos y equipo se necesita un libro con la estructura de <i>Indicadores Costo</i>, <i>Detalle Team</i>, <i>Indicadores Recaudo</i>, <i>Facturación</i> e <i>Hitos</i>."}</div>`;return}
+  const tabs=[["fact","Facturación / Recaudo","Estatus de facturación y recaudo"],["cost","Costos","Presupuesto, forecast, real e índices"],["team","Costo Personal",""],["margin","Márgenes","Márgenes directos y netos"]].filter(t=>!(t[0]==="fact"&&p.id==="453"));
+  if(!tabs.some(t=>t[0]===finTab))finTab=tabs[0][0];
+  el.innerHTML=`<div class="section fin-tabs" role="tablist" aria-label="Detalle financiero">${tabs.map(([k,l,d])=>`<button role="tab" data-ft="${k}" aria-selected="${finTab===k}"><b>${l}</b>${d?`<small>${d}</small>`:""}</button>`).join("")}</div><div id="fin-body"></div>`;
+  el.querySelectorAll("[data-ft]").forEach(b=>b.addEventListener("click",()=>{finTab=b.dataset.ft;saveUI();renderFinBody(p,el)}));
+  const fb=$("#fin-body");
+  if(finTab==="fact")renderFact(p,fb);else if(finTab==="cost")renderCost(p,fb);else if(finTab==="team")renderTeam(p,fb);else renderMargin(p,fb);
+}
+
+function renderMargin(p,el){
+  if(!p.margin){el.innerHTML=`<div class="section pending"><b>Sin datos de márgenes.</b> El libro financiero de este proyecto no registra información de márgenes directos ni netos.</div>`;return}
+  const m=p.margin,d=m.dir,n=m.net;
+  const ppCard=(lbl,val,sub,cls)=>`<div class="cc"><span class="cc-l">${lbl}</span><strong class="${cls||""}">${pct(val)}</strong>${sub?`<small>${sub}</small>`:""}</div>`;
+  const gapCard=(lbl,gVal,sub)=>{const isPos=gVal>=0,cls=isPos?"pos":"neg",txt=(isPos?"+":"")+nf2.format(gVal*100)+" pp";return `<div class="cc"><span class="cc-l">${lbl}</span><strong class="gap ${cls}">${txt}</strong>${sub?`<small>${sub}</small>`:""}</div>`};
+  const blockHTML=(title,sub,vals)=>{
+    const [pp,fc,re]=vals,g_fp=fc-pp,g_rp=re-pp,g_rf=re-fc;
+    return `<div class="panel cost-b">
+      <div class="cb-h"><h2>${title}</h2><p>${sub}</p></div>
+      <div class="cc-row3">
+        ${ppCard("PPTO",pp,"Presupuesto",pp>=.25?"tone-good":pp>=.1?"tone-warn":"tone-crit")}
+        ${ppCard("FCST",fc,"Forecast",fc>=.25?"tone-good":fc>=.1?"tone-warn":"tone-crit")}
+        ${ppCard("REAL",re,"Ejecutado",re>=.25?"tone-good":re>=.1?"tone-warn":"tone-crit")}
+      </div>
+      <div class="cc-row3">
+        ${gapCard("FCST vs PPTO",g_fp,"Variación proyección")}
+        ${gapCard("REAL vs PPTO",g_rp,"Variación acumulada")}
+        ${gapCard("REAL vs FCST",g_rf,"Desviación real/forecast")}
+      </div>
+    </div>`;
+  };
+  el.innerHTML=`<div class="section grid g-2">
+      ${blockHTML("Margen Directo","Ingresos − Costos Directos ÷ Ingresos",d)}
+      ${blockHTML("Margen Neto","Ingresos − Costos Totales (Directos + Indirectos) ÷ Ingresos",n)}
+    </div>`;
+}
+
+function renderFact(p,el){
+  const x=p.fx;
+  if(!x){el.innerHTML=`<div class="section pending">Este libro no tiene hoja de facturación.</div>`;return}
+  const tag = ivaMode === "con" ? "Con IVA" : "Sin IVA";
+  const cVal = getProjContrato(p);
+  const fReal = getProjFactReal(p);
+  const fPlan = getProjFactPlan(p);
+  const fPend = getProjPendiente(p);
+  const fAvance = getProjAvance(p);
+  const fCumpl = getProjCumplFact(p);
+  
+  const direct=fReal/fPlan,isComp=Math.abs(fCumpl-(1-direct))<.0005&&Math.abs(fCumpl-direct)>.0005;
+  const box=(l,v,sub,cls)=>`<div class="fx"><span class="fx-l">${l}</span><strong>${cls?st(cls,v):v}</strong>${sub?`<small>${sub}</small>`:""}</div>`;
+  const conv=p.recaudo/fReal;
+  const bar=(l,v,w,c)=>`<div class="hbar" style="grid-template-columns:minmax(110px,170px) 1fr 100px"><span>${l}</span><div class="t" style="height:12px"><i style="width:${Math.min(w,1)*100}%;background:${c}"></i></div><span class="v">${M(v)}</span></div>`;
+  
+  let totalCardHTML = "";
+  const totalTitle = `Facturación total (${tag})`;
+  const totalSub = tag;
+
+  if(x.comp && x.comp.length){
+    totalCardHTML = `<div class="fx has-comp">
+      <span class="fx-l">${totalTitle}</span>
+      <strong>${M(cVal)}</strong>
+      <small>${totalSub}</small>
+      <button class="fx-comp-toggle" aria-expanded="false">Ver composición (${x.comp.length} conceptos) ▾</button>
+      <div class="fx-comp-panel" hidden>
+        ${x.comp.map(([label, val, share])=>`
+          <div class="fx-comp-item">
+            <div class="row"><span class="nm">${label}</span><span class="val">${M(val)}</span></div>
+            <div class="row"><span class="sub">${pct(share)} del total</span></div>
+            <div class="fx-comp-bar"><i style="width:${Math.min(share,1)*100}%"></i></div>
+          </div>
+        `).join("")}
+      </div>
+    </div>`;
+  } else {
+    totalCardHTML = box(totalTitle, M(cVal), totalSub);
+  }
+
+  el.innerHTML=`<div class="section panel">
+    <div class="sec-h" style="align-items:center">
+      <div>
+        <h2>Facturación / Recaudo</h2>
+        <p>Información actualizada al 1 de octubre de 2026 · millones COP (${tag})</p>
+      </div>
+      <div class="iva-switcher" role="group" aria-label="Filtro Base IVA">
+        <span class="iva-lbl">Base de valores:</span>
+        <div class="iva-seg">
+          <button type="button" class="btn-iva-sin" aria-pressed="${ivaMode === "sin"}">Sin IVA</button>
+          <button type="button" class="btn-iva-con" aria-pressed="${ivaMode === "con"}">Con IVA</button>
+        </div>
+      </div>
+    </div>
+    <div class="fx-grid fx-4">
+      ${totalCardHTML}
+      ${box("Facturación real",M(fReal),tag)}
+      ${box("Facturación pendiente",M(fPend),`Total − real (${tag})`)}
+      ${box("Porcentaje Factura del total",pct(fAvance),`Real / total (${tag})`)}
+    </div>
+    <div class="flow" style="margin-top:14px">
+      ${bar(totalTitle,cVal,1,"var(--axis)")}
+      ${bar("Facturación real",fReal,fReal/cVal,"var(--s-real)")}
+      ${bar("Recaudado",p.recaudo,p.recaudo/cVal,"var(--s-ppto)")}
+    </div>
+    <div class="subgroup"><div class="sec-h" style="margin-bottom:10px"><h3>Recaudo</h3><p>Información actualizada al 1 de octubre de 2026</p></div>
+      <div class="fx-grid">
+        ${box("Recaudo real acumulado",M(p.recaudo),"Entrada efectiva acumulada")}
+        ${box("Cumplimiento de recaudo",pct(p.cumplRec!=null?p.cumplRec:conv),"Recaudo real / recaudo esperado neto",band(p.cumplRec!=null?p.cumplRec:conv,.9,.7))}
+        ${box("Brecha de recaudo",(()=>{
+          const b = p.brechaRec != null ? p.brechaRec : (p.recaudo - fReal);
+          if (Math.abs(b) < 0.1) return `<span class="gap pos">$0 M</span>`;
+          return `<span class="gap ${b < 0 ? "neg" : "pos"}">$${nf0.format(Math.abs(b))} M</span>`;
+        })(), (p.brechaRec != null ? p.brechaRec >= 0 : p.recaudo >= fReal) ? "Recaudo al día frente al esperado neto" : "Pendiente por recaudar frente al esperado neto")}
+      </div>
+      <p class="note">Información actualizada al 1 de octubre de 2026.</p>
+    </div></div>`;
+
+  const btnSin = el.querySelector(".btn-iva-sin");
+  const btnCon = el.querySelector(".btn-iva-con");
+  if (btnSin) btnSin.onclick = () => saveIVA("sin");
+  if (btnCon) btnCon.onclick = () => saveIVA("con");
+
+  const tog = el.querySelector(".fx-comp-toggle");
+  if(tog){
+    tog.onclick = (e) => {
+      e.stopPropagation();
+      const panel = el.querySelector(".fx-comp-panel");
+      const open = panel.hidden;
+      panel.hidden = !open;
+      tog.setAttribute("aria-expanded", open);
+      tog.innerHTML = open ? `Ocultar composición ▴` : `Ver composición (${x.comp.length} conceptos) ▾`;
+    };
+  }
+}
+
+const COP=v=>{const n=Math.round(v*1e6);return "$ "+(n<0?"-":"")+nf0.format(Math.abs(n))};
+function costBlock(title,sub,v){
+  const [pp,fc,re]=v;
+  const card=(l,val,pc)=>`<div class="cc"><span class="cc-l">${l}</span><strong>${val}</strong>${pc!=null?`<small>${pc}</small>`:""}</div>`;
+  const vr=(l,d,b)=>card(l,COP(d),b?pct(d/b):"—");
+  return `<div class="panel cost-b"><div class="cb-h"><h2>${title}</h2>${sub?`<p>${sub}</p>`:""}</div>
+    <div class="cc-row3">${card("PPTO",COP(pp),"Presupuesto")}${card("FCST",COP(fc),"Forecast")}${card("REAL",COP(re),"Ejecutado")}</div>
+    <div class="cc-row3">${vr("FCST vs PPTO",fc-pp,pp)}${vr("REAL vs PPTO",re-pp,pp)}${vr("REAL vs FCST",re-fc,fc)}</div>
+    <div class="cc-row2">${card("Cumpl. REAL / PPTO",pp?pct(re/pp):"—","Real ÷ presupuesto")}${card("Cumpl. REAL / FCST",fc?pct(re/fc):"—","Real ÷ forecast")}</div>
+  </div>`;
+}
+function evmCard(title,v){
+  const [ac,pv,av,ev,cpi,icff]=v;
+  const P=n=>"$ "+(n<0?"-":"")+nf0.format(Math.round(Math.abs(n)));
+  const ib=x=>x<0?"na":x<=1.05?"good":x<=1.2?"warn":"crit";
+  return `<div class="panel cost-b"><div class="cb-h"><h2>${title}</h2><p>PV ${P(pv)} · % avance ${pct(av)}</p></div>
+    <div class="evm-c">
+      <div class="evm-v"><span class="cc-l">CPI · índice de desempeño del costo</span><strong class="tone-${cpiBand(cpi)}">${nf2.format(cpi)}</strong></div>
+      <div class="evm-f"><div class="frac"><div><span>EV · Valor ganado</span><b>${P(ev)}</b></div><i></i><div><span>AC · Costo real acumulado</span><b>${P(ac)}</b></div></div></div>
+    </div>
+    <div class="evm-c icff">
+      <span class="cc-l">ICFF · índice FF</span><strong class="tone-${ib(icff)}">${nf2.format(icff)}</strong>
+    </div></div>`;
+}
+function renderCost(p,el){
+  const cx=p.cx,e=p.evm;
+  el.innerHTML=(cx?`<div class="section grid g-2">
+      ${costBlock("Total proyecto","",cx.tot)}
+      ${costBlock("Acumulado · información actualizada al 1 de octubre de 2026","",cx.acu)}
+    </div>`:"")+
+    (e?`<div class="section"><div class="sec-h" style="margin-bottom:8px"><h2>Índices de desempeño</h2><p>Información actualizada al 1 de octubre de 2026</p></div>
+      <div class="grid g-2">${evmCard("Escenario PPTO",e.ppto)}${evmCard("Escenario FCST",e.fcst)}</div></div>`:"")+
+    `<div class="section panel cm-panel"><div class="cm-head"><div><h2>Costo mensual 2026</h2><p>Millones COP · real cerrado ene–ago · sep–dic proyección</p></div>
+        <div class="cm-kpis"><div><span>Real ene–ago</span><b>${M(ytd(p,2))}</b></div><div><span>Forecast ene–ago</span><b>${M(ytd(p,1))}</b></div><div><span>Forecast 2026</span><b>${M(sum(p.m.map(r=>r[1])))}</b></div></div></div>
+      <div class="legend cm-leg"><span><i class="sw" style="background:var(--s-real)"></i>Real</span><span><i class="sw line" style="background:var(--s-fcst)"></i>Forecast</span><span style="color:var(--s-ppto)"><i class="sw dash"></i><span style="color:var(--ink-2)">Presupuesto</span></span></div>
+      <div class="chart" id="c-month"></div></div>`;
+  renderMonth(p,$("#c-month"));
+}
+
+function renderTeam(p,el,all){
+  if(!p.team){el.innerHTML=`<div class="section pending">El libro financiero de este proyecto no incluye la hoja <i>Detalle Team</i>.</div>`;return}
+  const t=p.team,roles=[...t.roles].sort((a,b)=>b[1]-a[1]),mx=roles[0][1],top=roles[0],LIM=5;
+  const list=all?roles:roles.slice(0,LIM),rest=roles.length-LIM;
+  el.innerHTML=`<div class="section grid g-tiles">
+      ${tileHTML("Personas asignadas (HC)",nf0.format(t.hc),"Conteo en el periodo, no FTE",null)}
+      ${tileHTML("Costo del equipo",M(t.cost),"Información actualizada al 1 de octubre de 2026",null)}
+      ${tileHTML("Categoría de mayor costo",top[0],`${M(top[1])} · ${top[2]} HC · ${pct(top[1]/t.cost)}`,null)}
+      ${t.split?`<div class="panel tile mm"><span class="lbl">Implementación / Indirectos</span><div class="mm-v">${t.split.map(([l,v,hc,pc])=>`<div><small>${l}</small><b>${pct(pc)}</b><small>${M(v)} · ${hc} HC</small></div>`).join("")}</div></div>`:""}
+    </div>
+    <div class="section panel"><div class="sec-h"><h2>Costo Personal</h2><p>Información actualizada al 1 de octubre de 2026 · ${roles.length} categorías</p></div>
+      <div class="hc-row hc-head"><span>Categoría</span><span>Costo</span><span class="n">Costo total</span><span class="n">HC</span><span class="n">% asig.</span></div>
+      ${list.map(([r,v,hc,pa,dt])=>`<div class="hc-row"><span class="hc-n">${r}${dt?`<small class="hc-dt">${dt}</small>`:""}</span><div class="t"><i style="width:${Math.max(v/mx*100,.5)}%"></i></div><span class="n">${M(v)}</span><span class="n"><b>${nf0.format(hc)}</b></span><span class="n">${pct(v/t.cost)}</span></div>`).join("")}
+      ${rest>0?`<button class="linkbtn" id="hc-more">${all?"Ver menos ▴":`Ver más (${rest} categorías) ▾`}</button>`:""}
+      <div class="hc-row hc-tot"><span>Total</span><span></span><span class="n">${M(t.cost)}</span><span class="n">${nf0.format(t.hc)}</span><span class="n">100,00%</span></div>
+    </div>`;
+  const b=el.querySelector("#hc-more");if(b)b.onclick=()=>renderTeam(p,el,!all);
+}
+
+function renderFrentes(p,all){
+  const f=p.frentes||[];const LIM=12;
+  const hasGroups=f.some(x=>x.length===1);
+  const sorted=hasGroups?f:[...f].sort((a,b)=>(b[2]??-1)-(a[2]??-1));
+  const list=all||sorted.length<=LIM+2?sorted:sorted.slice(0,LIM);
+  const el=$("#fr-list");
+  el.innerHTML=
+    `<div class="fr head"><span>${p.id==="453"?"Foco":p.id==="456"?"Entregable Contractual":"Frente"}</span><span class="hu" style="text-align:right">${p.id==="348"?"Func./HU":p.id==="456"?"Peso":"Func."}</span><span class="bars">Escala CMI</span><span class="v">Estado</span></div>`+
+    list.map(x=>x.length===1?`<div class="fr"><span class="grp">${x[0].replace("§ ","")}</span></div>`:
+    `<div class="fr" data-t="${encodeURIComponent(JSON.stringify(x))}"><span class="nm">${x[0]}</span><span class="hu v">${p.id==="456"?(x[1]+"%"):nf0.format(x[1])}</span>
+      <span class="bars"><div><i style="width:${(x[2]||0)*100}%;background:var(--${ESC(x[2])[1]||"none"})"></i></div></span>
+      <span class="v"><span class="esc-v ${ESC(x[2])[1]}" style="min-width:0;font-size:11px;font-weight:600">${ESC(x[2])[0]}</span></span></div>`).join("")+
+    (sorted.length>list.length?`<button class="linkbtn" id="fr-more">Ver los ${sorted.filter(x=>x.length>1).length} frentes</button>`:(all?`<button class="linkbtn" id="fr-less">Ver menos</button>`:""));
+  el.querySelectorAll(".fr[data-t]").forEach(r=>{const x=JSON.parse(decodeURIComponent(r.dataset.t));
+    r.addEventListener("mousemove",e=>showTip(e,`<b>${x[0]}</b><div><span>${p.id==="348"?"Funcionalidades / HU":p.id==="456"?"Peso contractual":"Funcionalidades"}</span><span>${p.id==="456"?(x[1]+"%"):x[1]}</span></div><div><span>Escala CMI</span><span>${x[2]==null?"—":nf2.format(x[2])}</span></div><div><span>Estado</span><span>${ESC(x[2])[0]}</span></div>`));r.addEventListener("mouseleave",hideTip)});
+  const mo=$("#fr-more");if(mo)mo.onclick=()=>renderFrentes(p,true);
+  const le=$("#fr-less");if(le)le.onclick=()=>renderFrentes(p,false);
+}
+
+function renderMonth(p,el){
+  const W=Math.max(Math.round(el.clientWidth||900),560),H=Math.round(Math.min(Math.max(W*.32,260),340)),L=64,R=16,T=18,B=34;
+  const max=niceMax(Math.max(...p.m.flat())*1.08),cw=(W-L-R)/12;
+  const x0=i=>L+cw*(i+.5),bw=Math.min(cw*.46,34),y=v=>T+(H-T-B)*(1-v/max);
+  const fm=v=>"$"+nf0.format(v);
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Costo mensual 2026: real, forecast y presupuesto">
+    <defs><linearGradient id="cmFc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--s-fcst)" stop-opacity=".22"/><stop offset="1" stop-color="var(--s-fcst)" stop-opacity="0"/></linearGradient></defs>`;
+  s+=`<rect x="${L+cw*CUT}" y="${T}" width="${cw*(12-CUT)}" height="${H-T-B}" rx="8" fill="var(--surface-2)" opacity=".7"/>`;
+  s+=`<text x="${L+cw*CUT+(cw*(12-CUT))/2}" y="${H-B-8}" text-anchor="middle" style="font-size:11px;font-weight:600;opacity:.8">Proyección</text>`;
+  for(let i=0;i<=4;i++){const v=max*i/4;s+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="${i?"var(--line)":"var(--axis)"}" ${i?'stroke-dasharray="2 4"':""}/><text x="${L-10}" y="${y(v)+4}" text-anchor="end">${fm(v)}</text>`}
+  const fc=p.m.map((r,i)=>[x0(i),y(r[1])]),pp=p.m.map((r,i)=>[x0(i),y(r[0])]);
+  const path=a=>a.map((q,i)=>(i?"L":"M")+q[0].toFixed(1)+","+q[1].toFixed(1)).join("");
+  s+=`<path d="${path(fc)}L${fc[11][0]},${y(0)}L${fc[0][0]},${y(0)}Z" fill="url(#cmFc)"/>`;
+  p.m.forEach((r,i)=>{if(i<CUT&&r[2]>0){const top=y(r[2]),h=y(0)-top,rr=Math.min(6,h/2);
+      s+=`<path class="cm-bar" data-i="${i}" d="M${x0(i)-bw/2},${y(0)} V${top+rr} Q${x0(i)-bw/2},${top} ${x0(i)-bw/2+rr},${top} H${x0(i)+bw/2-rr} Q${x0(i)+bw/2},${top} ${x0(i)+bw/2},${top+rr} V${y(0)} Z" fill="var(--s-real)"/>`}
+    s+=`<text x="${x0(i)}" y="${H-12}" text-anchor="middle" style="font-size:12px;${i<CUT?"fill:var(--ink-2);font-weight:600":""}">${MES[i]}</text>`});
+  const lbl=[];
+
+  s+=`<path d="${path(pp)}" fill="none" stroke="var(--s-ppto)" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round"/>`;
+  s+=`<path d="${path(fc)}" fill="none" stroke="var(--s-fcst)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+  s+=`<circle cx="${fc[11][0]}" cy="${fc[11][1]}" r="4" fill="var(--s-fcst)" stroke="var(--surface)" stroke-width="2"/>`;
+  // Etiquetas de datos: solo la variable Real (dentro de la barra, o encima si es baja)
+  const fs=W<760?9.5:10.5,GAP=fs+3,short=v=>nf0.format(v);
+  p.m.forEach((r,i)=>{
+    const col=[];
+    if(i<CUT&&r[2]>0){const top=y(r[2]),h=y(0)-top;
+      if(h>=fs+10)s+=`<text x="${x0(i)}" y="${top+fs+4}" text-anchor="middle" class="cm-dl in">${short(r[2])}</text>`;
+      else col.push({y:top-5,t:short(r[2]),c:"var(--s-real)"})}
+    col.sort((a,b)=>a.y-b.y);
+    for(let k=1;k<col.length;k++)if(col[k].y-col[k-1].y<GAP)col[k].y=col[k-1].y+GAP;
+    const lim=y(0)-4;if(col.length&&col[col.length-1].y>lim){const d=col[col.length-1].y-lim;col.forEach(q=>q.y-=d)}
+    const top=T+fs;if(col.length&&col[0].y<top){const d=top-col[0].y;col.forEach(q=>q.y+=d)}
+    col.forEach(q=>s+=`<text x="${x0(i)}" y="${q.y.toFixed(1)}" text-anchor="middle" class="cm-dl" style="fill:${q.c}">${q.t}</text>`);
+  });
+  s+=`<g class="cm-hov" visibility="hidden"><line class="cm-x" y1="${T}" y2="${H-B}" stroke="var(--ink)" stroke-opacity=".25"/><circle class="cm-f" r="5" fill="var(--s-fcst)" stroke="var(--surface)" stroke-width="2"/><circle class="cm-p" r="4" fill="var(--s-ppto)" stroke="var(--surface)" stroke-width="2"/></g>`;
+  p.m.forEach((r,i)=>s+=`<rect class="hit" data-i="${i}" x="${L+cw*i}" y="${T}" width="${cw}" height="${H-T-B}" fill="transparent"/>`);
+  el.innerHTML=s+"</svg>";
+  const g=el.querySelector(".cm-hov"),xl=g.querySelector(".cm-x"),cf=g.querySelector(".cm-f"),cp=g.querySelector(".cm-p");
+  el.querySelectorAll(".hit").forEach(h=>{const i=+h.dataset.i,r=p.m[i];
+    h.addEventListener("mousemove",e=>{g.setAttribute("visibility","visible");xl.setAttribute("x1",x0(i));xl.setAttribute("x2",x0(i));cf.setAttribute("cx",fc[i][0]);cf.setAttribute("cy",fc[i][1]);cp.setAttribute("cx",pp[i][0]);cp.setAttribute("cy",pp[i][1]);
+      el.querySelectorAll(".cm-bar").forEach(b=>b.style.opacity=+b.dataset.i===i?1:.45);
+      showTip(e,`<b>${MES[i]} 2026</b><div><span>Real</span><span>${i<CUT?M(r[2]):"en curso"}</span></div><div><span>Forecast</span><span>${M(r[1])}</span></div><div><span>Presupuesto</span><span>${M(r[0])}</span></div>`)});
+    h.addEventListener("mouseleave",()=>{hideTip();g.setAttribute("visibility","hidden");el.querySelectorAll(".cm-bar").forEach(b=>b.style.opacity=1)})});
+  if(!el._cmRO&&window.ResizeObserver){let t,w=el.clientWidth;el._cmRO=new ResizeObserver(()=>{if(Math.abs(el.clientWidth-w)<8)return;w=el.clientWidth;clearTimeout(t);t=setTimeout(()=>renderMonth(p,el),120)});el._cmRO.observe(el)}
+}
+
+function render419(){
+  const S={pe:[40,60,80,100,115,120,125,143,183,203,219,232],re:[40,40,60,80,100,100,110,110],pc:[0,0,40,60,80,100,110,120,125,143,183,203],rc:[0,0,0,0,0,40,40,80]};
+  const W=560,H=250,L=36,R=40,T=10,B=24,max=250;
+  const x=i=>L+(W-L-R)*i/11,y=v=>T+(H-T-B)*(1-v/max);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Entregas y certificaciones acumuladas plan vs real">`;
+  [0,50,100,150,200,250].forEach(v=>s+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="${v?"var(--line)":"var(--axis)"}"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end">${v}</text>`);
+  MES.forEach((m,i)=>s+=`<text x="${x(i)}" y="${H-6}" text-anchor="middle">${m}</text>`);
+  const ln=(a,c,dash,lab)=>{s+=`<polyline points="${a.map((v,i)=>x(i)+","+y(v)).join(" ")}" fill="none" stroke="${c}" stroke-width="2" ${dash?'stroke-dasharray="5 4"':""}/>`;const i=a.length-1;s+=`<circle cx="${x(i)}" cy="${y(a[i])}" r="4" fill="${c}" stroke="var(--surface)" stroke-width="2"/>`;if(lab)s+=`<text x="${x(i)+8}" y="${y(a[i])+4}" class="lbl-strong">${lab}</text>`};
+  ln(S.pe,"var(--s-real)",true,"232");ln(S.pc,"var(--s-fcst)",true,"203");ln(S.re,"var(--s-real)",false,"110");ln(S.rc,"var(--s-fcst)",false,"80");
+  s+=`<line class="xh" y1="${T}" y2="${H-B}" stroke="var(--axis)" visibility="hidden"/>`;
+  MES.forEach((m,i)=>s+=`<rect class="hit" data-i="${i}" x="${x(i)-(W-L-R)/22}" y="${T}" width="${(W-L-R)/11}" height="${H-T-B}" fill="transparent"/>`);
+  s+=`</svg><p class="note">A agosto: entregas 110 de 143 planeadas (76,92%, saldo −33) · certificaciones 80 de 120 (66,67%, saldo −40). El 80% del indicador de facturación depende de la certificación.</p>`;
+  const el=$("#c-419");el.innerHTML=s;const xh=el.querySelector(".xh");
+  el.querySelectorAll(".hit").forEach(h=>{const i=+h.dataset.i;const f=a=>a[i]==null?"—":a[i];
+    h.addEventListener("mousemove",e=>{xh.setAttribute("x1",x(i));xh.setAttribute("x2",x(i));xh.setAttribute("visibility","visible");showTip(e,`<b>${MES[i]} 2026</b><div><span>Entrega plan / real</span><span>${f(S.pe)} / ${f(S.re)}</span></div><div><span>Cert. plan / real</span><span>${f(S.pc)} / ${f(S.rc)}</span></div>`)});
+    h.addEventListener("mouseleave",()=>{hideTip();xh.setAttribute("visibility","hidden")})});
+}
+
+function renderCU(g){
+  const tot=sum(g.cuA.map(c=>c[1]));
+  $("#cpe-cu").innerHTML=`<div style="font-size:13px;font-weight:600;margin-bottom:6px">Foco A · ${tot} CU en 7 iteraciones</div>
+    <div class="cu-stack" role="img" aria-label="${g.cuA.map(c=>c[0]+" "+c[1]).join(", ")}">${g.cuA.map(c=>`<i style="width:${c[1]/tot*100}%;background:${c[2]}"></i>`).join("")}</div>
+    <div class="legend" style="margin-top:8px">${g.cuA.map(c=>`<span><i class="sw" style="background:${c[2]}"></i>${c[0]} <b class="num" style="color:var(--ink)">${c[1]}</b></span>`).join("")}</div>
+    <div style="font-size:13px;font-weight:600;margin:18px 0 6px">Foco C · 11 CU en Enjisst</div>
+    <div class="cu-stack"><i style="width:${4/11*100}%;background:var(--s-real)"></i><i style="width:${7/11*100}%;background:var(--axis)"></i></div>
+    <div class="legend" style="margin-top:8px"><span><i class="sw" style="background:var(--s-real)"></i>Cargados <b style="color:var(--ink)">4</b></span><span><i class="sw" style="background:var(--axis)"></i>En proceso <b style="color:var(--ink)">7</b></span></div>
+    <p class="note">Focos B (30 CU) y D (4 CU) sin detalle en la fuente. Los 19 CU en aprobación del cliente coinciden con los 19 “CU aprobados” del libro financiero.</p>`;
+}
+
+function renderGov(g){
+  const dd=s=>{const [d,m,y]=s.split("/");return new Date(+y,+m-1,+d)};
+  const days=(a,b)=>Math.round((dd(b)-dd(a))/864e5);
+  $("#g-focos").innerHTML=`<thead><tr><th>Foco</th><th class="n">Peso</th><th class="n">CU</th><th>Estado al corte</th><th>Cierre Plan V7 → reportado</th><th class="n">Desplazamiento</th><th>Ruta crítica</th></tr></thead><tbody>${g.focos.map(f=>{const dl=days(f[5],f[6]);return `<tr><td class="pname">${f[0]} · ${f[1]}</td><td class="n">${pct(f[2])}</td><td class="n">${f[3]}</td><td>${f[4]}</td><td class="num">${f[5]} → <b>${f[6]}</b></td><td class="n">${dl>0?st(dl>90?"crit":"warn","+"+dl+" días"):st("good","0 días")}${f[7]&&!f[7].startsWith("+"+dl)?`<br><small style="color:var(--muted)">reportado: ${f[7]}</small>`:""}</td><td>${f[8]?'<span class="pill crit">Sí</span>':'<span class="pill">No</span>'}</td></tr>`}).join("")}</tbody>`;
+
+  // Gantt
+  const d0=new Date(2026,5,1),d1=new Date(2027,0,1),today=new Date(2026,8,23),corte=new Date(2026,8,4);
+  const W=900,L=210,R=16,rowH=22,top=26;
+  const rows=[];let lastF="";g.crono.forEach(c=>{if(c[0]!==lastF){rows.push({hdr:c[0]});lastF=c[0]}rows.push(c)});
+  const H=top+rows.length*rowH+8;
+  const x=d=>L+(W-L-R)*(d-d0)/(d1-d0);const pd=s=>{const [y,m,d]=s.split("-");return new Date(+y,+m-1,+d)};
+  const fname={A:"Foco A · Agentes",B:"Foco B · Integración (ruta crítica)",C:"Foco C · Encuestas",D:"Foco D · Planes"};
+  const col=s=>/^Entregado$/.test(s)?"var(--good)":/ajustes/.test(s)?"var(--warn)":/curso|desarrollo/i.test(s)?"var(--s-real)":"var(--s-light)";
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cronograma de hitos CPE junio a diciembre 2026">`;
+  for(let m=5;m<=12;m++){const d=new Date(2026,m,1);const xx=x(d);s+=`<line x1="${xx}" x2="${xx}" y1="${top-6}" y2="${H}" stroke="var(--line)"/>`;if(m<12){const mid=x(new Date(2026,m,15));s+=`<text x="${mid}" y="14" text-anchor="middle">${MES[m]}</text>`}}
+  s+=`<line x1="${x(today)}" x2="${x(today)}" y1="${top-6}" y2="${H}" stroke="var(--ink)" stroke-width="1.5"/><text x="${x(today)+4}" y="${top-8}" class="lbl-strong" style="font-size:10px">Hoy 23/09</text>`;
+  s+=`<line x1="${x(corte)}" x2="${x(corte)}" y1="${top-6}" y2="${H}" stroke="var(--muted)" stroke-dasharray="3 3"/>`;
+  rows.forEach((r,i)=>{const y=top+i*rowH;
+    if(r.hdr){s+=`<rect x="0" y="${y}" width="${W}" height="${rowH}" fill="var(--surface-2)"/><text x="6" y="${y+15}" class="lbl-strong" style="font-size:12px">${fname[r.hdr]}</text>`;return}
+    s+=`<text x="16" y="${y+15}" class="lbl-ink">${r[1]}</text>`;
+    const a=pd(r[2]);
+    if(r[4]==="Cierre"){
+      if(r[5]){const v=pd(r[5]);if(+v!==+a){s+=`<line x1="${x(v)}" x2="${x(a)}" y1="${y+11}" y2="${y+11}" stroke="var(--crit)" stroke-dasharray="3 3"/>`;s+=`<rect x="${x(v)-5}" y="${y+6}" width="10" height="10" transform="rotate(45 ${x(v)} ${y+11})" fill="var(--surface)" stroke="var(--crit)" stroke-width="1.5"/>`}}
+      s+=`<rect x="${x(a)-5}" y="${y+6}" width="10" height="10" transform="rotate(45 ${x(a)} ${y+11})" fill="var(--ink)"/>`;
+    } else if(r[3]){const b=pd(r[3]);s+=`<rect x="${x(a)}" y="${y+5}" width="${Math.max(x(b)-x(a),3)}" height="12" rx="3" fill="${col(r[4])}"/>`}
+    else s+=`<rect x="${x(a)-5}" y="${y+6}" width="10" height="10" transform="rotate(45 ${x(a)} ${y+11})" fill="${col(r[4])}"/>`;
+    s+=`<rect class="hit" data-i="${i}" x="0" y="${y}" width="${W}" height="${rowH}" fill="transparent"/>`;
+  });
+  const gel=$("#gantt");gel.innerHTML=s+"</svg>";
+  const fmt=s=>s?s.split("-").reverse().join("/"):"";
+  gel.querySelectorAll(".hit").forEach(h=>{const r=rows[+h.dataset.i];
+    h.addEventListener("mousemove",e=>showTip(e,`<b>Foco ${r[0]} · ${r[1]}</b><div><span>${r[3]?"Ventana":"Fecha"}</span><span>${fmt(r[2])}${r[3]?" – "+fmt(r[3]):""}</span></div><div><span>Estado</span><span>${r[4]==="Cierre"?"Programado":r[4]}</span></div>${r[5]?`<div><span>Plan V7</span><span>${fmt(r[5])}</span></div>`:""}`));h.addEventListener("mouseleave",hideTip)});
+
+  const nv={"Crítico":"crit","Alto":"serious","Medio":"warn","Bajo":""};
+  const rc=k=>g.riesgos.filter(r=>r[2]===k).length;
+  $("#g-risk-sum").textContent=`${g.riesgos.length} abiertos · ${rc("Crítico")} críticos · ${rc("Alto")} altos · ${rc("Medio")} medios`;
+  $("#g-risk").innerHTML=`<thead><tr><th>Riesgo</th><th>Nivel</th><th>Foco</th><th>Mitigación</th></tr></thead><tbody>${g.riesgos.map(r=>`<tr><td><b>${r[1]}</b><br><small style="color:var(--muted)">${r[0]} · ${r[3]}</small></td><td><span class="pill ${nv[r[2]]}">${r[2]}</span></td><td>${r[5]}</td><td style="color:var(--ink-2)">${r[4]}</td></tr>`).join("")}</tbody>`;
+  const alta=g.obs.filter(o=>o[3]==="Alta").length;
+  $("#g-obs-sum").textContent=`${g.obs.length} pendientes · ${alta} de prioridad alta`;
+  $("#g-obs").innerHTML=`<thead><tr><th>Tema</th><th>Conflicto</th><th>Prioridad</th></tr></thead><tbody>${g.obs.map(o=>`<tr><td><b>${o[1]}</b><br><small style="color:var(--muted)">${o[0]}</small></td><td style="color:var(--ink-2)">${o[2]}</td><td><span class="pill ${o[3]==="Alta"?"serious":"warn"}">${o[3]}</span></td></tr>`).join("")}</tbody>`;
+  $("#g-cal").innerHTML=`<thead><tr><th>Métrica</th><th class="n">Umbral</th><th>Regla</th><th>Real</th></tr></thead><tbody>${g.calidad.map(c=>`<tr><td><b>${c[0]}</b></td><td class="n">${c[1]}</td><td style="color:var(--ink-2)">${c[2]}</td><td><span class="st na">Sin dato</span></td></tr>`).join("")}</tbody>`;
+  $("#g-pasos").innerHTML=g.pasos.map(p=>`<div class="tl"><span class="d">${p[0]}</span><span>${p[2]}</span><span class="pill">${p[1]==="Todos"||p[1]==="Transversal"?p[1]:"Foco "+p[1]}</span></div>`).join("");
+  $("#g-cap").innerHTML=`<thead><tr><th>Equipo</th><th>Septiembre</th><th>Octubre</th><th>Noviembre</th><th>Diciembre</th></tr></thead><tbody>${g.capacidad.map(c=>`<tr><td class="pname">${c[0]}</td>${c.slice(1).map(v=>`<td>${v}</td>`).join("")}</tr>`).join("")}</tbody>`;
+}
+
+/* ======================= TABS ======================= */
+const tabs=document.querySelectorAll('[role="tab"]');
+function show(v){tabs.forEach(t=>t.setAttribute("aria-selected",t.dataset.v===v));["res","proj"].forEach(k=>$("#v-"+k).hidden=k!==v);try{localStorage.setItem("cmi-tab",v)}catch(e){}window.scrollTo({top:0})}
+tabs.forEach(t=>t.onclick=()=>show(t.dataset.v));
+
+updateIVAButtons();
+
+const hp=(location.hash||"").match(/^#p(\d{3}|POS)$/);if(hp&&getP(hp[1]))cur=hp[1];
+renderTiles();renderSem();renderFlow();renderCostPort();renderChips();renderFicha();
+if(hp)show("proj");else{try{const t=localStorage.getItem("cmi-tab");if(t&&$("#v-"+t))show(t)}catch(e){}}
+</script>
+</body></html>
