@@ -80,3 +80,17 @@ git commit -m "descripcion del cambio"
 git push origin main
 ```
 GitHub Pages detectará el commit y actualizará la web pública automáticamente en ~30 segundos.
+
+---
+
+## 7. Registro de Integración Financiera y Vercel (07-oct-2026)
+* **Proyecto 348 (SGDEA Acueducto):**
+  - Incorporación del libro oficial `Indicadores 348.xlsx` (`Información Financiera/348 - Acueducto/`).
+  - Habilitadas las 4 dimensiones financieras: Facturación/Recaudo ($11.031 M Sin IVA / $13.127 M Con IVA, facturado $3.517 M / $4.185 M, recaudo $3.853 M), Costos (PPTO $527 M vs FCST $2.874 M vs Real $1.641 M, CPI fcst 0,61, ICFF 1,51), Costo Personal (49 HC, costo $1.235 M liderado por Desarrollo con 42,13%) y Márgenes (directo real -203,5%, neto real -243,9%).
+  - 348 entra plenamente a la lista `FIN` y suma a los totales del portafolio.
+* **Proyecto 456 (Aeronáutica Civil):**
+  - Reemplazo de preliminares por el libro oficial completo `Indicadores456.xlsx` (`Información Financiera/456- Aeronautica/`).
+  - Costos reales actualizados ($346,8 M total, acumulado $273,3 M), curva mensual 2026 ajustada a los datos reales/forecast (Marzo $9,8 M, Abril $25 M, etc.), CPI fcst 0,79, ICFF 1,17, Equipo de 9 HC ($326,6 M), Márgenes completos (directo real -21,8%, neto real -44,0%) y recaudo neto al día ($296,9 M).
+* **Ajuste de Vercel (`vercel.json`):**
+  - Configuración optimizada con `$schema`, `cleanUrls`, reglas SPA de reescritura hacia `/index.html` y encabezados `Cache-Control: public, max-age=0, must-revalidate` para despliegues instantáneos.
+
