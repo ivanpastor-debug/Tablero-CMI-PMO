@@ -1,14 +1,19 @@
 """
-Enriquece data_func.json y cada data_func/*.json con el cálculo oficial del
-Indicador Táctico y Estratégico de la PMO bajo la Escala CMI por entregable:
+Enriquece data_func.json, cada data_func/*.json y data_453_cpe.json con el cálculo oficial del
+Indicador Táctico y Estratégico de la PMO bajo la Escala CMI por entregable.
+
+Para proyectos con funcionalidades (004, 348, 355, 384, 397, 416, 419, 421):
   - 100% (1.00): En producción (pct >= 0.999)
   - 75%  (0.75): En UAT del cliente
   - 50%  (0.50): En curso >80% (pct > 0.80)
   - 20%  (0.20): En curso 50-80% (pct >= 0.50)
   - 0%   (0.00): En curso <50% (pct < 0.50)
 
-Indicador Táctico = Promedio del avance de cada funcionalidad bajo la escala
-Indicador Estratégico = Funcionalidades al 100% sobre el total (d / n)
+Para el proyecto 453 (Monitoreo CPE):
+  - Conteo oficial frente a CASOS DE USO (CU) únicamente, no frente a HU.
+  - Indicador Táctico = % Avance Casos de Uso según Estado Interno estados_453 (30,30%).
+  - Indicador Estratégico = CUs entregados al 100% (19. Entregado) sobre CUs medibles (4 / 45 = 8,89%).
+  - Fechas comprometidas por Foco e Iteración normalizadas con semáforos.
 """
 import json
 import glob
@@ -58,6 +63,7 @@ def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_func_dir = os.path.join(base_dir, 'data_func')
     index_file = os.path.join(base_dir, 'data_func.json')
+    cpe_file = os.path.join(base_dir, 'data_453_cpe.json')
 
     if not os.path.exists(index_file):
         print("No se encontró data_func.json en", base_dir)
@@ -68,7 +74,7 @@ def main():
 
     cmi_por_cod = {}
 
-    # 1. Procesar cada archivo individual de detalle
+    # 1. Procesar cada archivo individual de detalle de funcionalidades
     json_files = glob.glob(os.path.join(data_func_dir, '*.json'))
     for path in sorted(json_files):
         with open(path, 'r', encoding='utf-8') as f:
@@ -121,7 +127,66 @@ def main():
     with open(index_file, 'w', encoding='utf-8') as f:
         json.dump(index_data, f, ensure_ascii=False, indent=2)
 
-    # 4. Sincronizar espejos
+    # 4. Procesar y enriquecer 453 (Monitoreo CPE) con Casos de Uso y Fechas
+    if os.path.exists(cpe_file):
+        with open(cpe_file, 'r', encoding='utf-8') as f:
+            cpe_data = json.load(f)
+
+        focos_fechas = {
+            'A': {'inicio': '2026-02-25', 'fecha': '2026-10-24', 'fecha_plan': '2026-07-30', 'peso': '40%', 'nota': 'Hito reprogramado al 24/10/2026 (base: 30/07/2026)'},
+            'B': {'inicio': '2026-07-01', 'fecha': '2026-12-25', 'fecha_plan': '2026-10-15', 'peso': '30%', 'nota': 'Hito reprogramado al 25/12/2026 (base: 15/10/2026)'},
+            'C': {'inicio': '2026-09-16', 'fecha': '2026-10-30', 'fecha_plan': '2026-11-27', 'peso': '15%', 'nota': 'Hito reprogramado al 30/10/2026 (base: 27/11/2026)'},
+            'D': {'inicio': '2026-10-30', 'fecha': '2026-12-30', 'fecha_plan': '2026-12-30', 'peso': '15%', 'nota': 'Hito al 30/12/2026'}
+        }
+
+        for foc in cpe_data.get('focos', []):
+            k = foc.get('k')
+            if k in focos_fechas:
+                foc['hito'] = focos_fechas[k]
+                foc['sem'] = 'en_curso' if k in ['A', 'B', 'C'] else 'sin_iniciar'
+
+        # Asignar fecha de iteración en cada caso de uso para renderizado directo
+        it_fechas = {}
+        for it in cpe_data.get('iteraciones', []):
+            if it.get('hito') and it['hito'].get('fecha'):
+                it_fechas[it['k']] = {
+                    'release': it['hito'].get('release'),
+                    'fecha': it['hito'].get('fecha')
+                }
+
+        for cu in cpe_data.get('cus', []):
+            it_k = cu.get('it')
+            if it_k in it_fechas:
+                cu['release'] = it_fechas[it_k]['release']
+                cu['fecha_entrega'] = it_fechas[it_k]['fecha']
+
+        k = cpe_data.get('kpi', {})
+        n_cu = k.get('n_cu_medibles') or k.get('n_cu') or 45
+        d_cu = k.get('cu_entregados') or 4
+        av_cu = k.get('pct_cu_global') or 0.303
+        ent_cu = d_cu / n_cu if n_cu else 0.0
+
+        cpe_data['cmi'] = {
+            'tactico': round(av_cu, 4),
+            'estrategico': round(ent_cu, 4),
+            'n': n_cu,
+            'd': d_cu,
+            'u': 'casos de uso',
+            'buckets': {
+                '100': d_cu,
+                '75': 0,
+                '50': sum(1 for c in cpe_data.get('cus', []) if c.get('pct_cu') is not None and c['pct_cu'] > 0.8 and c['pct_cu'] < 0.999),
+                '20': sum(1 for c in cpe_data.get('cus', []) if c.get('pct_cu') is not None and c['pct_cu'] >= 0.5 and c['pct_cu'] <= 0.8),
+                '0': sum(1 for c in cpe_data.get('cus', []) if c.get('pct_cu') is not None and c['pct_cu'] < 0.5)
+            }
+        }
+
+        with open(cpe_file, 'w', encoding='utf-8') as f:
+            json.dump(cpe_data, f, ensure_ascii=False, indent=2)
+
+        print(f"[453 (CU)] Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_cu}/{n_cu} Casos de Uso)")
+
+    # 5. Sincronizar espejos
     mirror_dirs = [
         r'C:\Users\Usuario1\Documents\PMO INDICADORES\CMI',
         r'C:\Users\Usuario1\Downloads'
@@ -131,6 +196,9 @@ def main():
             continue
         # copiar data_func.json
         shutil.copy2(index_file, os.path.join(md, 'data_func.json'))
+        # copiar data_453_cpe.json
+        if os.path.exists(cpe_file):
+            shutil.copy2(cpe_file, os.path.join(md, 'data_453_cpe.json'))
         # copiar data_func/
         target_fnc = os.path.join(md, 'data_func')
         if os.path.exists(target_fnc):

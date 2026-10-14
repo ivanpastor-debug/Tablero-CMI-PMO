@@ -601,7 +601,7 @@ const P=[
   hitosNote:"Implementación $25.644 M · 20% al entregar, 80% al certificar",
   hitos:[["SPI 1–4","Entregados a cliente",2751.5,2751.5,"Facturado"],["SPI 5","Entregados a cliente",412.7,275.2,"Parcial"],["SPI 6–8","Entregados a cliente",770.4,0,"Atrasada"],["SPI 1","Certificados por cliente",1100.6,1100.6,"Facturado"],["SPI 2–6","Certificados por cliente",2063.6,0,"Atrasada"]],
   diag:["crit","Se han certificado 26,82% de las funcionalidades (125 de 466): avance táctico CMI 12,01%. CPI forecast 0,52. El ICFF de 1,26 exige ser 25,79% más productivo que el plan para no romper el presupuesto."]},
- {id:"453",name:"CPE",op:{av:.20,ent:0,n:4,d:0,u:"focos"},
+ {id:"453",name:"CPE",op:{av:.303,ent:4/45,n:45,d:4,u:"casos de uso",isCU:true},
   m:[[0,0,0],[0,0,0.8],[125.3,65.8,48.9],[149.1,74.5,111.0],[134.0,160.4,149.2],[134.0,174.3,164.5],[138.4,192.0,184.6],[140.1,196.1,197.3],[158.1,192.9,0],[143.5,161.2,0],[147.0,136.0,0],[176.5,142.4,0]],
   margin:{dir:[0,0,0],net:[0,0,0],gap:{f_p:[0,0],r_p:[0,0],r_f:[0,0]}},
    cpiP:0.334157106,cpiF:0.3473474059,icff:1.885869134,avFin:0.2,ppto:1445.8,fcst:1502.8,
@@ -852,11 +852,13 @@ function opCard(p,isSub){
   const o=p.op,st1=band(o.av,.7,.4),st2=band(o.ent,.7,.3),os=opState(p),u=o.u.charAt(0).toUpperCase()+o.u.slice(1);
   const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:`${code(p)} · ${p.name}`;
   const kpi=(lbl,sub,v,cls)=>`<div class="k"><span class="k-l">${lbl}</span><span class="k-s">${sub}</span><span class="k-v">${st(cls,pct(v))}</span><div class="bar-mini"><i style="width:${Math.min(v,1)*100}%;background:var(--${cls==="good"?"good":cls==="warn"?"warn":"crit"})"></i></div></div>`;
-  const azTag = o.isAzure ? `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="Calculado en vivo a partir de las funcionalidades de Azure DevOps">Azure</span>` : "";
+  const azTag = (o.isAzure || p.id === "453") ? `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="${p.id==='453'?'Medición oficial frente a Casos de Uso (estados_453)':'Calculado en vivo a partir de las funcionalidades de Azure DevOps'}">${p.id==="453"?"Azure · CU":"Azure"}</span>` : "";
+  const subTac = p.id === "453" ? "% Avance casos de uso" : "% Avance funcionalidad";
+  const subEst = p.id === "453" ? "% Cumplimiento casos de uso" : "% Cumplimiento entregables";
   return `<article class="op-card${isSub?" sub":""}" data-p="${p.id}" tabindex="0"${isSub?` data-parent="${p.parent}" hidden`:""}>
     <header><div style="display:flex;align-items:center;gap:6px"><h3>${title}</h3>${azTag}</div>${stPill(os)}</header>
     ${p.sub&&!p.parent?`<p class="oc-sub">${p.sub}</p>`:""}
-    <div class="kpis">${kpi("Indicador táctico","% Avance funcionalidad",o.av,st1)}${kpi("Indicador estratégico","% Cumplimiento entregables",o.ent,st2)}</div>
+    <div class="kpis">${kpi("Indicador táctico",subTac,o.av,st1)}${kpi("Indicador estratégico",subEst,o.ent,st2)}</div>
     <div class="counts"><div><span>Entregables</span><b>${nf0.format(o.n)}</b></div><div><span>Entregados</span><b>${nf0.format(o.d)}</b></div><em>* ${u}</em></div>
     ${finMini(p)}
     <footer>${p.subs?`<button class="linkbtn tog" aria-expanded="false">Ver subproyectos 355 y 416 ▾</button>`:""}<button class="linkbtn" data-open="${p.id}">Ver detalle →</button></footer>
@@ -965,9 +967,10 @@ function renderModeBody(p,g){
 
 function renderOpBody(p,g,el){
   const o=p.op;
+  const isCU = p.id === "453" || o.isCU;
   let h=`<div class="section grid g-tiles" id="op-tiles-top">
-    ${tileHTML("Indicador táctico · % avance funcionalidad",pct(o.av),o.isAzure?`Medición en vivo Azure DevOps (${o.n} func)`:"",band(o.av,.7,.4))}
-    ${tileHTML("Indicador estratégico · % cumplimiento entregables",pct(o.ent),o.isAzure?`<b>${o.d}</b> de <b>${o.n}</b> ${o.u} al 100% en Azure`:`${o.d} de ${o.n} ${o.u} entregados`,band(o.ent,.7,.3))}
+    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : "Indicador táctico · % avance funcionalidad", pct(o.av), isCU ? `Medición por Estado Interno (${o.n} CUs medibles)` : o.isAzure ? `Medición en vivo Azure DevOps (${o.n} func)` : "", band(o.av,.7,.4))}
+    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : "Indicador estratégico · % cumplimiento entregables", pct(o.ent), isCU ? `<b>${o.d}</b> de <b>${o.n}</b> Casos de Uso entregados (100%)` : o.isAzure ? `<b>${o.d}</b> de <b>${o.n}</b> ${o.u} al 100% en Azure` : `${o.d} de ${o.n} ${o.u} entregados`, band(o.ent,.7,.3))}
   </div>`;
   if(p.opParts)h+=`<div class="section panel"><div class="sec-h"><h2>Consolidado 355 + 416</h2></div><div class="tbl-wrap"><table class="xl"><thead><tr><th>Subproyecto</th><th class="n">Entregables</th><th class="n">Entregados</th><th class="n">% avance funcionalidad</th><th class="n">% cumplimiento entregables</th></tr></thead><tbody>${p.opParts.map(x=>`<tr><td>${x.id}</td><td class="n">${x.op.n} <small style="color:var(--muted)">${x.op.u}</small></td><td class="n">${x.op.d}</td><td class="n">${pct(x.op.av)}</td><td class="n">${pct(x.op.ent)}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${p.op.n}</td><td class="n">${p.op.d}</td><td class="n">${pct(p.op.av)}</td><td class="n">${pct(p.op.ent)}</td></tr></tbody></table></div></div>`;
   h+=`<div class="section grid ${p.id==="419"||p.id==="453"||p.id==="456"?"g-2":""}">`;
@@ -993,7 +996,7 @@ function renderOpBody(p,g,el){
     </table></div></div>`;
   if(p.id==="419")h+=`<div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
     <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div>`;
-  if(p.id==="453")h+=`<div class="panel"><div class="sec-h"><h2>Casos de uso</h2><p>Seguimiento por iteración · corte 15/09</p></div><div id="cpe-cu"></div></div>`;
+  if(p.id==="453")h+=`<div class="panel"><div class="sec-h"><h2>Casos de uso</h2><p>Hitos de entrega por iteración (Releases) · corte 01-oct-2026</p></div><div id="cpe-cu"></div></div>`;
   h+=`</div>`;
   // Gobierno del proyecto: sección oculta a pedido de la PMO (24-sep); datos y renderGov se conservan
   const SHOW_GOV=false;
@@ -1219,14 +1222,14 @@ function renderFrentes(p,all){
   const list=all||sorted.length<=LIM+2?sorted:sorted.slice(0,LIM);
   const el=$("#fr-list");
   el.innerHTML=
-    `<div class="fr head"><span>${p.id==="453"?"Foco":p.id==="456"?"Entregable Contractual":"Frente"}</span><span class="hu" style="text-align:right">${p.id==="348"?"Func./HU":p.id==="456"?"Peso":"Func."}</span><span class="bars">Escala CMI</span><span class="v">Estado</span></div>`+
+    `<div class="fr head"><span>${p.id==="453"?"Foco":p.id==="456"?"Entregable Contractual":"Frente"}</span><span class="hu" style="text-align:right">${p.id==="348"?"Func./HU":p.id==="456"?"Peso":p.id==="453"?"Casos de Uso":"Func."}</span><span class="bars">Escala CMI</span><span class="v">Estado</span></div>`+
     list.map(x=>x.length===1?`<div class="fr"><span class="grp">${x[0].replace("§ ","")}</span></div>`:
     `<div class="fr" data-t="${encodeURIComponent(JSON.stringify(x))}"><span class="nm">${x[0]}</span><span class="hu v">${p.id==="456"?(x[1]+"%"):nf0.format(x[1])}</span>
       <span class="bars"><div><i style="width:${(x[2]||0)*100}%;background:var(--${ESC(x[2])[1]||"none"})"></i></div></span>
       <span class="v"><span class="esc-v ${ESC(x[2])[1]}" style="min-width:0;font-size:11px;font-weight:600">${ESC(x[2])[0]}</span></span></div>`).join("")+
     (sorted.length>list.length?`<button class="linkbtn" id="fr-more">Ver los ${sorted.filter(x=>x.length>1).length} frentes</button>`:(all?`<button class="linkbtn" id="fr-less">Ver menos</button>`:""));
   el.querySelectorAll(".fr[data-t]").forEach(r=>{const x=JSON.parse(decodeURIComponent(r.dataset.t));
-    r.addEventListener("mousemove",e=>showTip(e,`<b>${x[0]}</b><div><span>${p.id==="348"?"Funcionalidades / HU":p.id==="456"?"Peso contractual":"Funcionalidades"}</span><span>${p.id==="456"?(x[1]+"%"):x[1]}</span></div><div><span>Escala CMI</span><span>${x[2]==null?"—":nf2.format(x[2])}</span></div><div><span>Estado</span><span>${ESC(x[2])[0]}</span></div>`));r.addEventListener("mouseleave",hideTip)});
+    r.addEventListener("mousemove",e=>showTip(e,`<b>${x[0]}</b><div><span>${p.id==="348"?"Funcionalidades / HU":p.id==="456"?"Peso contractual":p.id==="453"?"Casos de Uso":"Funcionalidades"}</span><span>${p.id==="456"?(x[1]+"%"):x[1]}</span></div><div><span>Escala CMI</span><span>${x[2]==null?"—":nf2.format(x[2])}</span></div><div><span>Estado</span><span>${ESC(x[2])[0]}</span></div>`));r.addEventListener("mouseleave",hideTip)});
   const mo=$("#fr-more");if(mo)mo.onclick=()=>renderFrentes(p,true);
   const le=$("#fr-less");if(le)le.onclick=()=>renderFrentes(p,false);
 }
@@ -1296,8 +1299,31 @@ function render419(){
 }
 
 function renderCU(g){
+  const el = $("#cpe-cu");
+  if (!el) return;
+  if (CPE453 && CPE453.iteraciones) {
+    const its = CPE453.iteraciones.filter(i => i.hito);
+    el.innerHTML = `
+      <div style="font-size:13px;font-weight:700;margin-bottom:8px">Hitos de entrega por iteración (Releases)</div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        ${its.map(i => {
+          const sem = CPE_SEM[i.sem] || CPE_SEM.sin_hito;
+          return `<div style="display:flex;justify-content:space-between;align-items:center;background:var(--surface-2);padding:6px 10px;border-radius:6px;border:1px solid var(--line);font-size:12px">
+            <div><b>${esc(i.n)}</b> <span class="muted">· Release ${esc(i.hito.release || '')} (${i.n_cu || 0} CU · ${i.n_hu || 0} HU)</span></div>
+            <div style="display:flex;align-items:center;gap:6px">
+              <span class="num" style="font-weight:700">📅 ${i.hito.fecha}</span>
+              <span class="abadge" style="background:${sem[0]}">${sem[1]}</span>
+            </div>
+          </div>`;
+        }).join("")}
+      </div>
+      <p class="note" style="margin-top:8px">Fechas contractuales según <code>HITOS_453_20260909.csv</code> · 45 CUs medibles distribuidos en las iteraciones.</p>
+    `;
+    return;
+  }
+  if (!g) return;
   const tot=sum(g.cuA.map(c=>c[1]));
-  $("#cpe-cu").innerHTML=`<div style="font-size:13px;font-weight:600;margin-bottom:6px">Foco A · ${tot} CU en 7 iteraciones</div>
+  el.innerHTML=`<div style="font-size:13px;font-weight:600;margin-bottom:6px">Foco A · ${tot} CU en 7 iteraciones</div>
     <div class="cu-stack" role="img" aria-label="${g.cuA.map(c=>c[0]+" "+c[1]).join(", ")}">${g.cuA.map(c=>`<i style="width:${c[1]/tot*100}%;background:${c[2]}"></i>`).join("")}</div>
     <div class="legend" style="margin-top:8px">${g.cuA.map(c=>`<span><i class="sw" style="background:${c[2]}"></i>${c[0]} <b class="num" style="color:var(--ink)">${c[1]}</b></span>`).join("")}</div>
     <div style="font-size:13px;font-weight:600;margin:18px 0 6px">Foco C · 11 CU en Enjisst</div>
@@ -1485,7 +1511,7 @@ function calcCmiFromFeatures(feats) {
 }
 
 function applyLiveFuncCmi() {
-  if (!FUNC || !FUNC.proyectos) return;
+  if (!FUNC && !CPE453) return;
 
   const keyMap = {
     "005": "004",
@@ -1499,43 +1525,61 @@ function applyLiveFuncCmi() {
     "348": "348"
   };
 
-  ALL.forEach(p => {
-    const k = keyMap[p.id];
-    if (k && FUNC.proyectos[k] && FUNC.proyectos[k].cmi) {
-      const c = FUNC.proyectos[k].cmi;
-      if (!p.opExcel) p.opExcel = { ...p.op };
-      p.op = {
-        av: c.tactico,
-        ent: c.estrategico,
-        n: c.n,
-        d: c.d,
-        u: c.u || "funcionalidades",
-        cmi: c,
-        isAzure: true
-      };
-    }
-  });
-
-  const pos = getP("POS");
-  if (pos && pos.subs) {
-    const s355 = getP("355");
-    const s416 = getP("416");
-    if (s355 && s416) {
-      pos.opParts = [s355, s416];
-      if (FUNC.proyectos["POS"] && FUNC.proyectos["POS"].cmi) {
-        const c = FUNC.proyectos["POS"].cmi;
-        if (!pos.opExcel) pos.opExcel = { ...pos.op };
-        pos.op = {
+  if (FUNC && FUNC.proyectos) {
+    ALL.forEach(p => {
+      const k = keyMap[p.id];
+      if (k && FUNC.proyectos[k] && FUNC.proyectos[k].cmi) {
+        const c = FUNC.proyectos[k].cmi;
+        if (!p.opExcel) p.opExcel = { ...p.op };
+        p.op = {
           av: c.tactico,
           ent: c.estrategico,
           n: c.n,
           d: c.d,
-          u: "funcionalidades",
+          u: c.u || "funcionalidades",
           cmi: c,
           isAzure: true
         };
       }
+    });
+
+    const pos = getP("POS");
+    if (pos && pos.subs) {
+      const s355 = getP("355");
+      const s416 = getP("416");
+      if (s355 && s416) {
+        pos.opParts = [s355, s416];
+        if (FUNC.proyectos["POS"] && FUNC.proyectos["POS"].cmi) {
+          const c = FUNC.proyectos["POS"].cmi;
+          if (!pos.opExcel) pos.opExcel = { ...pos.op };
+          pos.op = {
+            av: c.tactico,
+            ent: c.estrategico,
+            n: c.n,
+            d: c.d,
+            u: "funcionalidades",
+            cmi: c,
+            isAzure: true
+          };
+        }
+      }
     }
+  }
+
+  const p453 = getP("453");
+  if (p453 && CPE453 && CPE453.cmi) {
+    const c = CPE453.cmi;
+    if (!p453.opExcel) p453.opExcel = { ...p453.op };
+    p453.op = {
+      av: c.tactico,
+      ent: c.estrategico,
+      n: c.n,
+      d: c.d,
+      u: c.u || "casos de uso",
+      cmi: c,
+      isAzure: true,
+      isCU: true
+    };
   }
 
   renderOpCards();
@@ -1554,9 +1598,10 @@ function updateTopOpTiles(cmi, subLabel) {
   const av = cmi.tactico != null ? cmi.tactico : cmi.av;
   const ent = cmi.estrategico != null ? cmi.estrategico : cmi.ent;
   const n = cmi.n, d = cmi.d, u = cmi.u || "funcionalidades";
+  const isCU = cur === "453" || u === "casos de uso";
   el.innerHTML = `
-    ${tileHTML("Indicador táctico · % avance funcionalidad", pct(av), subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
-    ${tileHTML("Indicador estratégico · % cumplimiento entregables", pct(ent), `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
+    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : "Indicador táctico · % avance funcionalidad", pct(av), isCU ? `Medición por Estado Interno (${n} CUs medibles)` : subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
+    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : "Indicador estratégico · % cumplimiento entregables", pct(ent), isCU ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)` : `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
   `;
 }
 
@@ -2075,10 +2120,11 @@ function cpeChipsFoco(C) {
   const chips = claves.map(k => {
     const f = FO[k];
     const [col, lbl] = CPE_SEM[(f && f.sem) || "sin_hito"] || CPE_SEM.sin_hito;
+    const planTxt = (f && f.hito && f.hito.fecha_plan && f.hito.fecha_plan !== f.hito.fecha) ? ` (base ${f.hito.fecha_plan})` : "";
     const fecha = f && f.hito && (f.hito.fecha || f.hito.inicio)
-      ? ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.inicio
-        ? " · desde " + f.hito.inicio : ""}${f.hito.nota ? " · " + esc(f.hito.nota) : ""}">${
-        f.hito.inicio ? f.hito.inicio + " → " : ""}${f.hito.fecha || "?"}</span>` : "";
+      ? ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.fecha_plan ? ' · Base: ' + f.hito.fecha_plan : ''}${f.hito.inicio
+        ? " · desde " + f.hito.inicio : ""}${f.hito.nota ? " · " + esc(f.hito.nota) : ""}">📅 ${
+        f.hito.inicio ? f.hito.inicio + " → " : ""}${f.hito.fecha || "?"}${planTxt}</span>` : "";
     const pctBadge = f && f.pct_cu != null
       ? ` <span class="abadge" style="background:#0284c7" title="Avance promedio por Estado Interno de CU">${Math.round(f.pct_cu * 100)}% CU</span>` : "";
     return chip(k, "Foco " + k + (f && f.n ? " · " + esc(f.n) : ""), cAct[k] || 0, hAct[k] || 0,
@@ -2089,17 +2135,22 @@ function cpeChipsFoco(C) {
   const huerfanos = (C.focos || []).filter(f => f.hito && !claves.includes(f.k));
   const chipsHuerfanos = huerfanos.map(f => {
     const [col, lbl] = CPE_SEM[f.sem] || CPE_SEM.sin_hito;
+    const planTxt = (f.hito && f.hito.fecha_plan && f.hito.fecha_plan !== f.hito.fecha) ? ` (base ${f.hito.fecha_plan})` : "";
     const badge = ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.nota
-      ? " · " + esc(f.hito.nota) : ""}">${f.hito.inicio ? f.hito.inicio + " → " : ""}${
-      f.hito.fecha || "?"}</span>`;
+      ? " · " + esc(f.hito.nota) : ""}">📅 ${f.hito.inicio ? f.hito.inicio + " → " : ""}${
+      f.hito.fecha || "?"}${planTxt}</span>`;
     return chip(f.k, "Foco " + f.k + (f.n ? " · " + esc(f.n) : ""), 0, 0,
       `comprometido para ${f.hito.fecha || "?"} (${lbl}) · sin HU activas`, badge);
   }).join("");
 
+  const hintFechas = C.focos_epoca
+    ? `<div class="hint" style="margin:4px 0 0 2px">Fechas comprometidas por foco según <b>${esc(C.focos_epoca)}</b> (Línea Base vs Reprogramada) · Hitos de entrega de iteraciones según <b>${esc(C.hitos_epoca || 'HITOS_453')}</b>.</div>`
+    : "";
+
   return `<div class="rchips" style="margin:8px 0 0">
     ${chip("__all__", "Todos los focos", nCu, nHu, "casos de uso con al menos una HU con foco")}
     ${chips}${chipsHuerfanos}
-  </div>`;
+  </div>${hintFechas}`;
 }
 
 function cpeBodyHtml(C) {
@@ -2120,9 +2171,14 @@ function cpeBodyHtml(C) {
     const pctCu = vsCu.length ? vsCu.reduce((a, b) => a + b, 0) / vsCu.length : null;
 
     const [col, lbl] = CPE_SEM[(F && F.sem) || "sin_hito"] || CPE_SEM.sin_hito;
-    const hito = F && F.hito
-      ? `<span class="abadge" style="background:${col}">${F.hito.fecha}</span>`
-      : `<span class="muted">${k === CPE_SIN_FOCO ? "no aplica" : lbl}</span>`;
+    let hito = "";
+    if (F && F.hito) {
+      const planTxt = (F.hito.fecha_plan && F.hito.fecha_plan !== F.hito.fecha) ? `<br><small class="muted" style="font-size:11px">Base: ${F.hito.fecha_plan}</small>` : "";
+      const rangoTxt = F.hito.inicio ? `${F.hito.inicio} → ` : "";
+      hito = `<span class="abadge" style="background:${col}" title="${esc(lbl)}${F.hito.nota ? ' · ' + esc(F.hito.nota) : ''}">📅 ${rangoTxt}${F.hito.fecha}</span>${planTxt}`;
+    } else {
+      hito = `<span class="muted">${k === CPE_SIN_FOCO ? "no aplica" : lbl}</span>`;
+    }
     const abierto = CPE_FOC.has(k);
     const nota = k === CPE_SIN_FOCO
       ? ` <span class="hint">· casos de uso sin ninguna HU: no hay foco que heredar</span>` : "";
@@ -2136,7 +2192,7 @@ function cpeBodyHtml(C) {
       </tr>` + (abierto ? cpeDetalleFoco(C, k, R, cuIdx) : "");
     }).join("");
   return `<div class="dwrap" style="max-height:70vh"><table class="dtbl"><thead><tr>
-      <th>Foco</th><th>Hito del foco</th><th class="num">Casos de Uso</th><th class="num">% Avance CU (Interno)</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
+      <th>Foco</th><th>Hito del foco (Fechas)</th><th class="num">Casos de Uso</th><th class="num">% Avance CU (Interno)</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
     </tr></thead><tbody>${filas}</tbody></table></div>`;
 }
 
@@ -2170,7 +2226,7 @@ function cpeDetalleFoco(C, focoK, R, cuIdx) {
 
     const [col, lbl] = CPE_SEM[I.sem] || CPE_SEM.sin_hito;
     const hito = I.hito
-      ? `<span class="abadge" style="background:${col}">${esc(I.hito.release || "—")} · ${I.hito.fecha}</span>`
+      ? `<span class="abadge" style="background:${col}" title="Release ${esc(I.hito.release || '')} · ${lbl}">Rel. ${esc(I.hito.release || "—")} · 📅 ${I.hito.fecha}</span>`
       : `<span class="muted">${lbl}</span>`;
     const ck = focoK + "||" + I.k;
     const abierta = CPE_IT === ck;
@@ -2185,14 +2241,14 @@ function cpeDetalleFoco(C, focoK, R, cuIdx) {
   }).join("");
   return `<tr><td colspan="6" style="padding:0">
     <table class="dtbl" style="margin:0"><thead><tr>
-      <th>Iteración</th><th>Hito de entrega</th><th class="num">Casos de Uso</th><th class="num">% Avance CU</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
+      <th>Iteración</th><th>Hito de entrega (Fecha)</th><th class="num">Casos de Uso</th><th class="num">% Avance CU</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
     </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
 }
 
 function cpeDetalleIt(I, cuIdx, ramaHus) {
   const C = CPE453;
   const ids = [...I.cus].map(i => cuIdx[i]).filter(Boolean).sort((a, b) => a.t.localeCompare(b.t));
-  if (!ids.length) return `<tr><td colspan="7" class="hint">Sin casos de uso en esta iteración.</td></tr>`;
+  if (!ids.length) return `<tr><td colspan="8" class="hint">Sin casos de uso en esta iteración.</td></tr>`;
   const porCu = {};
   I.hus.forEach(h => { if (h.cu) (porCu[h.cu] = porCu[h.cu] || []).push(h); });
   const filas = ids.map(c => {
@@ -2210,10 +2266,14 @@ function cpeDetalleIt(I, cuIdx, ramaHus) {
     const pctCuCell = c.pct_cu != null
       ? `<b>${Math.round(c.pct_cu * 1000) / 10}%</b>`
       : `<span class="muted">—</span>`;
+    const fechaCol = c.fecha_entrega
+      ? `<span class="abadge" style="background:var(--surface-3);color:var(--ink);border:1px solid var(--line);font-size:11px" title="Release ${esc(c.release || '')} · Iteración: ${esc(c.itn || '')}">📅 ${c.fecha_entrega}${c.release ? ' <small class="muted">(Rel. ' + esc(c.release) + ')</small>' : ''}</span>`
+      : (c.itn ? `<span class="muted" style="font-size:11px">${esc(c.itn)}</span>` : `<span class="muted">—</span>`);
 
     return `<tr class="rclk" onclick="event.stopPropagation();cpeSelCu(${_qa(c.i)})">
         <td style="padding-left:26px"><span class="corner">${abierto ? "▾" : "▸"}</span> <code>${esc(c.i)}</code></td>
         <td>${esc(c.t)}${disperso}${nota}</td>
+        <td>${fechaCol}</td>
         <td>${esc(c.e)}</td>
         <td>${badgeEi}</td>
         <td class="num">${pctCuCell}</td>
@@ -2223,13 +2283,13 @@ function cpeDetalleIt(I, cuIdx, ramaHus) {
   }).join("");
   return `<tr><td colspan="6" style="padding:0">
     <table class="dtbl" style="margin:0"><thead><tr>
-      <th>ID CU</th><th>Caso de uso</th><th>Estado Azure</th><th>Estado interno (estados_453)</th><th class="num">% Avance CU</th><th class="num">HU terminadas</th><th class="num">% Avance HUs</th>
+      <th>ID CU</th><th>Caso de uso</th><th>Iteración / Fecha</th><th>Estado Azure</th><th>Estado interno (estados_453)</th><th class="num">% Avance CU</th><th class="num">HU terminadas</th><th class="num">% Avance HUs</th>
     </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
 }
 
 function cpeDetalleCu(c, hus) {
   const hs = (hus || []).slice().sort((a, b) => (b.v || 0) - (a.v || 0));
-  if (!hs.length) return `<tr><td colspan="7" class="hint" style="padding-left:40px">
+  if (!hs.length) return `<tr><td colspan="8" class="hint" style="padding-left:40px">
       Sin HU de este caso de uso en esta iteración.</td></tr>`;
   const filas = hs.map(h => `<tr>
       <td style="padding-left:52px"><code>${esc(h.i)}</code></td>
@@ -2238,7 +2298,7 @@ function cpeDetalleCu(c, hus) {
       <td>${esc(h.r || "—")}</td>
       <td class="num">${h.v == null ? '<span class="muted">omitida</span>' : "<b>" + Math.round(h.v * 100) + "%</b>"}</td>
     </tr>`).join("");
-  return `<tr><td colspan="7" style="padding:0">
+  return `<tr><td colspan="8" style="padding:0">
     <table class="dtbl" style="margin:0"><thead><tr>
       <th>ID HU</th><th>Historia de usuario</th><th>Estado</th><th>Responsable</th><th class="num">% avance</th>
     </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
@@ -2285,6 +2345,7 @@ function cpeSelCu(i) {
 function cpe453Card(C) {
   if (!C) return "";
   const k = C.kpi;
+  const cmi = C.cmi;
   const stat = (v, l, c) => `<div class="fst"><div class="fstv" style="color:${c}">${v}</div><div class="fstl">${l}</div></div>`;
   const pctCuG = k.pct_cu_global == null ? "—" : (Math.round(k.pct_cu_global * 1000) / 10) + "%";
   const pctHuG = k.pct_hu_global == null ? (k.pct_global == null ? "—" : Math.round(k.pct_global * 100) + "%") : Math.round(k.pct_hu_global * 100) + "%";
@@ -2292,11 +2353,56 @@ function cpe453Card(C) {
   const faltaHito = C.iteraciones && C.iteraciones.every(i => !i.hito);
   return `<div class="card fade" style="margin-top:18px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
-      <h3 style="margin:0;font-size:16px;font-weight:700">🗂 Foco → Iteración → Caso de Uso → HU</h3>
+      <div style="display:flex;align-items:center;gap:10px">
+        <h3 style="margin:0;font-size:16px;font-weight:700">🗂 Foco → Iteración → Caso de Uso → HU</h3>
+        <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:700;color:var(--good);padding:2px 8px;border-radius:4px">Medición por Casos de Uso (estados_453)</span>
+      </div>
     </div>
-    <div class="hint">El proyecto 453 (Monitoreo CPE) expone <b>dos métricas de avance</b>:
-      <b>(1) % Avance por Casos de Uso</b> (calculado desde su estado interno <code>estados_453</code> según Homologación V2)
-      y <b>(2) % Avance por HU's atadas</b> (avance histórico de construcción ponderado por etapa) · corte ${C.corte || "01-Oct-2026"}. Clic en cada nivel para desplegar.</div>
+    <div class="hint">El proyecto 453 (Monitoreo CPE) mide sus indicadores estratégicos y tácticos frente a <b>Casos de Uso (CU)</b>:
+      <b>(1) Indicador Táctico</b> (% Avance por CU desde su estado interno <code>estados_453</code>)
+      y <b>(2) Indicador Estratégico</b> (CUs entregados formalmente al 100% en producción).
+      También expone el avance de construcción de las <b>HU's atadas</b> · corte ${C.corte || "01-Oct-2026"}. Clic en cada nivel para desplegar.</div>
+
+    ${cmi ? `
+    <div style="margin:14px 0 10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:15px">🎯</span>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · Indicadores Táctico y Estratégico (Medición por CU)</b>
+            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">Casos de Uso (estados_453)</span>
+          </div>
+          <p class="hint" style="margin:3px 0 0 24px">
+            Ponderación de <b>${cmi.n}</b> casos de uso medibles evaluados bajo la <b>Escala CMI por entregable</b> (${cmi.d} entregados al 100%)
+          </p>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
+          <div style="text-align:right">
+            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Táctico</span>
+            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.tactico,.7,.4)})">${pct(cmi.tactico)}</div>
+            <span class="hint" style="font-size:10px">% avance casos de uso</span>
+          </div>
+          <div style="width:1px;height:28px;background:var(--line)"></div>
+          <div style="text-align:left">
+            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Estratégico</span>
+            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.estrategico,.7,.3)})">${pct(cmi.estrategico)}</div>
+            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> CU entregados</span>
+          </div>
+        </div>
+      </div>
+      ${cmi.buckets ? `
+      <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">Distribución en Escala:</span>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;flex:1">
+          <span class="rchip" style="font-size:11px;padding:2px 8px" title="En producción / Entregado formalmente (19. Entregado)"><b>${cmi.buckets["100"] || 0}</b> a 100% ✓</span>
+          <span class="rchip" style="font-size:11px;padding:2px 8px" title="En UAT del cliente"><b>${cmi.buckets["75"] || 0}</b> a 75%</span>
+          <span class="rchip" style="font-size:11px;padding:2px 8px" title="En curso &gt;80%"><b>${cmi.buckets["50"] || 0}</b> a 50%</span>
+          <span class="rchip" style="font-size:11px;padding:2px 8px" title="En curso 50-80%"><b>${cmi.buckets["20"] || 0}</b> a 20%</span>
+          <span class="rchip" style="font-size:11px;padding:2px 8px" title="En curso &lt;50%"><b>${cmi.buckets["0"] || 0}</b> a 0%</span>
+        </div>
+      </div>` : ""}
+    </div>` : ""}
+
     <div class="fstrip">
       ${stat(k.n_cu + ` <span style="font-size:11px;font-weight:normal;opacity:0.8">(${k.n_cu_medibles || k.n_cu} medibles)</span>`, "Casos de Uso", "var(--ink)")}
       ${stat(pctCuG, "% Avance por CU (Estado Interno)", "#38bdf8")}

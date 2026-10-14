@@ -137,4 +137,29 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Script `enrich_func_cmi.py`: enriquece `data_func.json` y los JSON de `data_func/` con el bloque precalculado `cmi`.
   - Integrado en `sync_funcionalidades.py` para recalcular y sincronizar automáticamente con las carpetas espejo en cada actualización.
 
+---
+
+## 10. Registro de Homologación de Casos de Uso (CU) e Hitos Temporales en 453 (14-oct-2026)
+* **Medición Oficial Exclusiva por Casos de Uso (CU) para Proyecto 453:**
+  - El proyecto 453 (Monitoreo CPE) no mide sus indicadores frente a Historias de Usuario (HU), sino exclusivamente frente a **Casos de Uso (CU)**:
+    - **Total CUs medibles:** 45 CUs (de 49 totales; 4 CU están en levantamiento o excluidos de la medición activa).
+    - **CUs entregados formalmente:** 4 CUs en estado interno `19. Entregado` (100% de avance).
+    - **Indicador Táctico:** **30,30%** (calculado a partir del promedio del Estado Interno `estados_453` de los 45 CUs medibles).
+    - **Indicador Estratégico:** **8,89%** (4 / 45 Casos de Uso entregados al cliente al 100%).
+  - **Identidad visual en la interfaz:**
+    - Tarjeta del portafolio con badge `Azure · CU` y subtítulos específicos: `% Avance casos de uso` y `% Cumplimiento casos de uso`, con unidad `* Casos de uso`.
+    - Tiles superiores con desglose: `Medición por Estado Interno (45 CUs medibles)` y `4 de 45 Casos de Uso entregados (100%)`.
+    - Banner Ejecutivo CMI PMO especializado dentro de la ficha de 453 con la distribución de CUs en la escala de entregables.
+* **Integración Completa de Fechas Contractuales:**
+  - **Nivel Focos:** Incorporación de fechas de Línea Base vs Reprogramadas (`focos_fechas` según `FOCOS_453_20260909.csv`):
+    - Foco A: Inicio `2026-02-25` → Reprog `2026-10-24` (Base `2026-07-30`, +87d).
+    - Foco B: Inicio `2026-07-01` → Reprog `2026-12-25` (Base `2026-10-15`, +77d).
+    - Foco C: Inicio `2026-09-16` → Reprog `2026-10-30` (Base `2026-11-27`, -9d).
+    - Foco D: Inicio `2026-10-30` → Fecha `2026-12-30` (Base `2026-12-30`, 0d).
+    - Visualización en chips y en la tabla jerárquica con semáforos de cumplimiento.
+  - **Nivel Iteraciones:** Integración de fechas de hito por release según `HITOS_453_20260909.csv` (Iteraciones 1 a 7 con releases 1, 2 y 3).
+  - **Nivel Casos de Uso:** Nueva columna `Iteración / Fecha` en la tabla de detalle con insignias visuales (ej. `📅 2026-06-02 (Rel. 3)`), vinculando cada CU a la fecha de entrega de su release.
+  - **Panel de Supervisión Superior (`#cpe-cu`):** Actualización a hitos de releases por iteración con sus fechas contractuales, CU/HU componentes y semáforos en tiempo real.
+
+
 
