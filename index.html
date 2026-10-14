@@ -1677,9 +1677,7 @@ function fncCsv(cod) {
       + (k.n_feature || 0) + " funcionalidades · " + (k.n_hu || 0) + " HU",
     "# Una fila por HU, con su funcionalidad y su frente al lado.",
   ];
-  const csv = "﻿" + enc.concat([FNC_CSV_COLS.join(";")]).concat(filas).join("
-
-");
+  const csv = "\ufeff" + enc.concat([FNC_CSV_COLS.join(";")]).concat(filas).join("\r\n");
   dlBajar(new Blob([csv], { type: "text/csv;charset=utf-8" }),
     "Funcionalidades_por_frente_" + (C.codigo || cod) + "_" + (C.corte || "") + ".csv");
 }
