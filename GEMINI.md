@@ -116,3 +116,25 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Manejo amigable para aperturas locales bajo `file://` con aviso informativo que redirige a GitHub Pages.
   - Script auxiliar `sync_funcionalidades.py` para refrescar los datos desde el repositorio local `Tableros` en cualquier momento.
 
+---
+
+## 9. Registro de Alimentación Dinámica de Indicadores CMI desde Azure DevOps (14-oct-2026)
+* **Cálculo Oficial PMO por Funcionalidad:**
+  - Los indicadores operativos se calculan dinámicamente usando las funcionalidades (`features`) con HU activas de Azure DevOps, evaluadas bajo la **Escala por entregable PMO**:
+    - `100,00% ✓`: En producción (`pct >= 0.999`)
+    - `75,00%`: En UAT del cliente
+    - `50,00%`: En curso >80% (`pct > 0.80`)
+    - `20,00%`: En curso 50–80% (`pct >= 0.50`)
+    - `0,00%`: En curso <50% (`pct < 0.50`)
+  - **Indicador Táctico:** Promedio aritmético del valor asignado a cada funcionalidad bajo la escala.
+  - **Indicador Estratégico:** Cantidad de funcionalidades al 100% (en producción) sobre la cantidad total de funcionalidades (`d / n`).
+* **Visualización y Reactividad en la Interfaz:**
+  - **Tarjetas del Portafolio (`#sem-op`):** Muestran los indicadores calculados con el distintivo verde `Azure` en el encabezado.
+  - **Tiles Superiores de la Ficha Operativa (`#op-tiles-top`):** Presentan los indicadores táctico y estratégico con el conteo exacto de funcionalidades y el desglose de entregadas al 100%.
+  - **Banner Ejecutivo CMI en el Desglose Funcional:** Incorpora el resumen oficial con doble indicador y la distribución visual de funcionalidades en los 5 cubos de la escala (100%, 75%, 50%, 20%, 0%).
+  - **Conmutación Dinámica:** Al cambiar de variante o subproyecto (ej. 355 vs 416 en Positiva, o Consolidado vs DEP vs RAMA en 419), los tiles superiores y el panel CMI recalculan y actualizan los valores en tiempo real.
+* **Módulos de Automatización:**
+  - Script `enrich_func_cmi.py`: enriquece `data_func.json` y los JSON de `data_func/` con el bloque precalculado `cmi`.
+  - Integrado en `sync_funcionalidades.py` para recalcular y sincronizar automáticamente con las carpetas espejo en cada actualización.
+
+

@@ -52,6 +52,12 @@ def main():
                 print(f"  -> {folder}/ ({len(os.listdir(target))} archivos)")
 
     print("Sincronización completada con éxito.")
+    try:
+        import enrich_func_cmi
+        print("Ejecutando enriquecimiento CMI de indicadores...")
+        enrich_func_cmi.main()
+    except Exception as e:
+        print(f"Aviso: No se pudo ejecutar el enriquecimiento CMI: {e}")
 
 if __name__ == "__main__":
     main()

@@ -1,1 +1,373 @@
-{"generado":"2026-10-06 17:13","proyectos":{"004":{"corte":"2026-09-25","archivo":"HU_004_20260925.csv","kpi":{"n_hu":399,"n_hu_activas":345,"hu_sin_feature":18,"n_feature":82,"n_epic":19,"n_feature_con_hu":77,"feature_sin_hu":5,"hu_omitidas":0,"pct_global":0.6677,"term_global":190,"feature_sin_frente":2,"hu_sin_frente":3,"feature_100_sin_cerrar":37,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"384":{"corte":"2026-09-25","archivo":"HU_384_20260925.csv","kpi":{"n_hu":6329,"n_hu_activas":5278,"hu_sin_feature":17,"n_feature":661,"n_epic":33,"n_feature_con_hu":543,"feature_sin_hu":118,"hu_omitidas":0,"pct_global":0.8538,"term_global":2541,"feature_sin_frente":2,"hu_sin_frente":4,"feature_100_sin_cerrar":150,"feature_estado_ajeno":0,"feature_removido_con_hu":4}},"397":{"corte":"2026-09-25","archivo":"HU_397_20260925.csv","kpi":{"n_hu":229,"n_hu_activas":229,"hu_sin_feature":9,"n_feature":137,"n_epic":35,"n_feature_con_hu":137,"feature_sin_hu":0,"hu_omitidas":0,"pct_global":0.9965,"term_global":223,"feature_sin_frente":1,"hu_sin_frente":1,"feature_100_sin_cerrar":111,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"355":{"corte":"2026-09-25","archivo":"HU_355_20260925.csv","kpi":{"n_hu":1216,"n_hu_activas":1117,"hu_sin_feature":87,"n_feature":81,"n_epic":18,"n_feature_con_hu":80,"feature_sin_hu":1,"hu_omitidas":0,"pct_global":0.6548,"term_global":419,"feature_sin_frente":0,"hu_sin_frente":0,"feature_100_sin_cerrar":6,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"416":{"corte":"2026-09-25","archivo":"HU_416_20260925.csv","kpi":{"n_hu":241,"n_hu_activas":241,"hu_sin_feature":0,"n_feature":7,"n_epic":2,"n_feature_con_hu":7,"feature_sin_hu":0,"hu_omitidas":0,"pct_global":0.2788,"term_global":0,"feature_sin_frente":0,"hu_sin_frente":0,"feature_100_sin_cerrar":0,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"421":{"corte":"2026-09-25","archivo":"HU_421_20260925.csv","kpi":{"n_hu":1127,"n_hu_activas":953,"hu_sin_feature":4,"n_feature":67,"n_epic":4,"n_feature_con_hu":66,"feature_sin_hu":1,"hu_omitidas":0,"pct_global":0.808,"term_global":528,"feature_sin_frente":0,"hu_sin_frente":0,"feature_100_sin_cerrar":9,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"419-DEP":{"corte":"2026-09-30","archivo":"HU_419-DEP_20260930.csv","kpi":{"n_hu":940,"n_hu_activas":842,"hu_sin_feature":28,"n_feature":136,"n_epic":10,"n_feature_con_hu":117,"feature_sin_hu":19,"hu_omitidas":0,"pct_global":0.6733,"term_global":218,"feature_sin_frente":0,"hu_sin_frente":0,"feature_100_sin_cerrar":1,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"419-RAMA":{"corte":"2026-09-30","archivo":"HU_419-RAMA_20260930.csv","kpi":{"n_hu":307,"n_hu_activas":306,"hu_sin_feature":9,"n_feature":51,"n_epic":8,"n_feature_con_hu":51,"feature_sin_hu":0,"hu_omitidas":0,"pct_global":0.7904,"term_global":68,"feature_sin_frente":0,"hu_sin_frente":0,"feature_100_sin_cerrar":0,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"348":{"corte":"2026-09-25","archivo":"HU_348_20260925.csv","kpi":{"n_hu":1658,"n_hu_activas":1650,"hu_sin_feature":30,"n_feature":95,"n_epic":11,"n_feature_con_hu":95,"feature_sin_hu":0,"hu_omitidas":0,"pct_global":0.3405,"term_global":133,"feature_sin_frente":7,"hu_sin_frente":65,"feature_100_sin_cerrar":3,"feature_estado_ajeno":0,"feature_removido_con_hu":0}},"419":{"corte":"2026-09-30","archivo":"Consolidado 419 (DEP + RAMA)","kpi":{"n_hu":1247,"n_hu_activas":1148,"hu_sin_feature":37,"n_feature":187,"n_epic":18,"n_feature_con_hu":168,"feature_sin_hu":19,"hu_omitidas":0,"pct_global":0.7045,"term_global":286,"feature_sin_frente":0,"hu_sin_frente":0,"feature_100_sin_cerrar":1,"feature_estado_ajeno":0,"feature_removido_con_hu":0}}}}
+{
+  "generado": "2026-10-06 17:13",
+  "proyectos": {
+    "004": {
+      "corte": "2026-09-25",
+      "archivo": "HU_004_20260925.csv",
+      "kpi": {
+        "n_hu": 399,
+        "n_hu_activas": 345,
+        "hu_sin_feature": 18,
+        "n_feature": 82,
+        "n_epic": 19,
+        "n_feature_con_hu": 77,
+        "feature_sin_hu": 5,
+        "hu_omitidas": 0,
+        "pct_global": 0.6677,
+        "term_global": 190,
+        "feature_sin_frente": 2,
+        "hu_sin_frente": 3,
+        "feature_100_sin_cerrar": 37,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.6052,
+        "estrategico": 0.5584,
+        "n": 77,
+        "d": 43,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 43,
+          "75": 0,
+          "50": 6,
+          "20": 3,
+          "0": 25
+        }
+      }
+    },
+    "384": {
+      "corte": "2026-09-25",
+      "archivo": "HU_384_20260925.csv",
+      "kpi": {
+        "n_hu": 6329,
+        "n_hu_activas": 5278,
+        "hu_sin_feature": 17,
+        "n_feature": 661,
+        "n_epic": 33,
+        "n_feature_con_hu": 543,
+        "feature_sin_hu": 118,
+        "hu_omitidas": 0,
+        "pct_global": 0.8538,
+        "term_global": 2541,
+        "feature_sin_frente": 2,
+        "hu_sin_frente": 4,
+        "feature_100_sin_cerrar": 150,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 4
+      },
+      "cmi": {
+        "tactico": 0.5414,
+        "estrategico": 0.2855,
+        "n": 543,
+        "d": 155,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 155,
+          "75": 0,
+          "50": 226,
+          "20": 130,
+          "0": 32
+        }
+      }
+    },
+    "397": {
+      "corte": "2026-09-25",
+      "archivo": "HU_397_20260925.csv",
+      "kpi": {
+        "n_hu": 229,
+        "n_hu_activas": 229,
+        "hu_sin_feature": 9,
+        "n_feature": 137,
+        "n_epic": 35,
+        "n_feature_con_hu": 137,
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.9965,
+        "term_global": 223,
+        "feature_sin_frente": 1,
+        "hu_sin_frente": 1,
+        "feature_100_sin_cerrar": 111,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.9869,
+        "estrategico": 0.9781,
+        "n": 137,
+        "d": 134,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 134,
+          "75": 0,
+          "50": 2,
+          "20": 1,
+          "0": 0
+        }
+      }
+    },
+    "355": {
+      "corte": "2026-09-25",
+      "archivo": "HU_355_20260925.csv",
+      "kpi": {
+        "n_hu": 1216,
+        "n_hu_activas": 1117,
+        "hu_sin_feature": 87,
+        "n_feature": 81,
+        "n_epic": 18,
+        "n_feature_con_hu": 80,
+        "feature_sin_hu": 1,
+        "hu_omitidas": 0,
+        "pct_global": 0.6548,
+        "term_global": 419,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 6,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.2625,
+        "estrategico": 0.075,
+        "n": 80,
+        "d": 6,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 6,
+          "75": 0,
+          "50": 14,
+          "20": 40,
+          "0": 20
+        }
+      }
+    },
+    "416": {
+      "corte": "2026-09-25",
+      "archivo": "HU_416_20260925.csv",
+      "kpi": {
+        "n_hu": 241,
+        "n_hu_activas": 241,
+        "hu_sin_feature": 0,
+        "n_feature": 7,
+        "n_epic": 2,
+        "n_feature_con_hu": 7,
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.2788,
+        "term_global": 0,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 0,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.0286,
+        "estrategico": 0.0,
+        "n": 7,
+        "d": 0,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 0,
+          "75": 0,
+          "50": 0,
+          "20": 1,
+          "0": 6
+        }
+      }
+    },
+    "421": {
+      "corte": "2026-09-25",
+      "archivo": "HU_421_20260925.csv",
+      "kpi": {
+        "n_hu": 1127,
+        "n_hu_activas": 953,
+        "hu_sin_feature": 4,
+        "n_feature": 67,
+        "n_epic": 4,
+        "n_feature_con_hu": 66,
+        "feature_sin_hu": 1,
+        "hu_omitidas": 0,
+        "pct_global": 0.808,
+        "term_global": 528,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 9,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.5348,
+        "estrategico": 0.2879,
+        "n": 66,
+        "d": 19,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 19,
+          "75": 0,
+          "50": 27,
+          "20": 14,
+          "0": 6
+        }
+      }
+    },
+    "419-DEP": {
+      "corte": "2026-09-30",
+      "archivo": "HU_419-DEP_20260930.csv",
+      "kpi": {
+        "n_hu": 940,
+        "n_hu_activas": 842,
+        "hu_sin_feature": 28,
+        "n_feature": 136,
+        "n_epic": 10,
+        "n_feature_con_hu": 117,
+        "feature_sin_hu": 19,
+        "hu_omitidas": 0,
+        "pct_global": 0.6733,
+        "term_global": 218,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 1,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.4906,
+        "estrategico": 0.3675,
+        "n": 117,
+        "d": 43,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 43,
+          "75": 0,
+          "50": 22,
+          "20": 17,
+          "0": 35
+        }
+      }
+    },
+    "419-RAMA": {
+      "corte": "2026-09-30",
+      "archivo": "HU_419-RAMA_20260930.csv",
+      "kpi": {
+        "n_hu": 307,
+        "n_hu_activas": 306,
+        "hu_sin_feature": 9,
+        "n_feature": 51,
+        "n_epic": 8,
+        "n_feature_con_hu": 51,
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.7904,
+        "term_global": 68,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 0,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.5333,
+        "estrategico": 0.3333,
+        "n": 51,
+        "d": 17,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 17,
+          "75": 0,
+          "50": 18,
+          "20": 6,
+          "0": 10
+        }
+      }
+    },
+    "348": {
+      "corte": "2026-09-25",
+      "archivo": "HU_348_20260925.csv",
+      "kpi": {
+        "n_hu": 1658,
+        "n_hu_activas": 1650,
+        "hu_sin_feature": 30,
+        "n_feature": 95,
+        "n_epic": 11,
+        "n_feature_con_hu": 95,
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.3405,
+        "term_global": 133,
+        "feature_sin_frente": 7,
+        "hu_sin_frente": 65,
+        "feature_100_sin_cerrar": 3,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.2084,
+        "estrategico": 0.1579,
+        "n": 95,
+        "d": 15,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 15,
+          "75": 0,
+          "50": 2,
+          "20": 19,
+          "0": 59
+        }
+      }
+    },
+    "419": {
+      "corte": "2026-09-30",
+      "archivo": "Consolidado 419 (DEP + RAMA)",
+      "kpi": {
+        "n_hu": 1247,
+        "n_hu_activas": 1148,
+        "hu_sin_feature": 37,
+        "n_feature": 187,
+        "n_epic": 18,
+        "n_feature_con_hu": 168,
+        "feature_sin_hu": 19,
+        "hu_omitidas": 0,
+        "pct_global": 0.7045,
+        "term_global": 286,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 1,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.5036,
+        "estrategico": 0.3571,
+        "n": 168,
+        "d": 60,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 60,
+          "75": 0,
+          "50": 40,
+          "20": 23,
+          "0": 45
+        }
+      }
+    },
+    "POS": {
+      "corte": "2026-09-25",
+      "archivo": "Consolidado Positiva Core (355 + 416)",
+      "cmi": {
+        "tactico": 0.2437,
+        "estrategico": 0.069,
+        "n": 87,
+        "d": 6,
+        "u": "funcionalidades",
+        "buckets": {
+          "100": 6,
+          "75": 0,
+          "50": 14,
+          "20": 41,
+          "0": 26
+        }
+      }
+    }
+  }
+}
