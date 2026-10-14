@@ -94,3 +94,25 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
 * **Ajuste de Vercel (`vercel.json`):**
   - Configuración optimizada con `$schema`, `cleanUrls`, reglas SPA de reescritura hacia `/index.html` y encabezados `Cache-Control: public, max-age=0, must-revalidate` para despliegues instantáneos.
 
+---
+
+## 8. Registro de Integración Desglose Funcional & HUs de Azure DevOps (14-oct-2026)
+* **Desglose Jerárquico en la Vista Operativa:**
+  - Incorporada la sección interactiva desplegable `🗂 Funcionalidades por frente · qué HU componen cada una` para todos los proyectos con work items en Azure (005/004, 348, 355, 384, 397, 416, 419, 421):
+    - Árbol jerárquico: **Frente (Epic) → Funcionalidad (Feature) → Historias de Usuario (HU)**.
+    - Columnas detalladas: Estado en Azure / Etapa, Responsable, Funcionalidades con HU, HU activas, HU en producción, Barra de avance ponderado y % exacto.
+    - Truncado a 60 HU con botón "Ver todas", alertas de funcionalidades al 100% sin cerrar en Azure y botón para **Descargar CSV completo**.
+    - Conmutadores específicos integrados: selector de subproyectos en POS (355 vs 416) y filtros de variantes en 419 (Consolidado vs DEP vs RAMA).
+* **Componente Especializado 453 (Monitoreo CPE):**
+  - Incorporado el árbol interactivo `🗂 Foco → Iteración → Caso de Uso → HU`:
+    - Conmutador metodológico: **⚡ Por ejecución** (HU en su propia iteración real) vs **🎯 Por compromiso** (HU en la iteración de su Caso de Uso).
+    - Chips interactivos de filtro por Foco (Todos, Foco A, B, C, D) con hitos comprometidos y semáforos.
+    - Doble métrica de avance: por Estado Interno de Casos de Uso (`estados_453`) y por HU atadas en Azure.
+* **456 (Aeronáutica):**
+  - Conserva su supervisión contractual de 2 columnas (Escala CMI por fase + Desviación del Cronograma) sin alteraciones.
+* **Tubería de Datos y Rendimiento:**
+  - Datos estáticos servidos en GitHub Pages: `data_func.json`, carpeta `data_func/*.json` y `data_453_cpe.json`.
+  - Carga diferida asíncrona (Lazy loading): el `index.html` descarga únicamente el JSON del proyecto seleccionado (~50ms).
+  - Manejo amigable para aperturas locales bajo `file://` con aviso informativo que redirige a GitHub Pages.
+  - Script auxiliar `sync_funcionalidades.py` para refrescar los datos desde el repositorio local `Tableros` en cualquier momento.
+

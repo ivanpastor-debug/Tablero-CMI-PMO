@@ -426,6 +426,40 @@ svg .lbl-ink{fill:var(--ink-2)}
 .cu-stack{display:flex;height:22px;border-radius:4px;overflow:hidden;gap:2px;background:var(--surface)}
 .cu-stack i{display:block;height:100%}
 @media (prefers-reduced-motion:no-preference){.stack i,.hbar .t i,.bar-mini i,.fr .bars i{transition:width .4s ease}}
+
+/* ==========================================================================
+   DESGLOSE FUNCIONAL Y HUs (AZURE DEVOPS) & MONITOREO CPE (453)
+   ========================================================================== */
+.fstrip{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 14px}
+.fst{flex:1;min-width:130px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-align:center;box-shadow:var(--shadow)}
+.fstv{font-size:22px;font-weight:700;line-height:1.1;font-family:"Plus Jakarta Sans","JetBrains Mono",sans-serif}
+.fstl{font-size:11.5px;color:var(--muted);margin-top:4px;font-weight:500}
+.fnct{border-collapse:collapse;width:100%;table-layout:fixed;font-size:12.5px;margin-top:6px}
+.fnct th,.fnct td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fnct thead th{position:sticky;top:0;z-index:2;background:var(--surface-2);color:var(--muted);font-size:11px;font-weight:700;text-align:left;letter-spacing:.03em;border-bottom:1px solid var(--line);text-transform:uppercase}
+.fnct th.num,.fnct td.num{text-align:right;font-variant-numeric:tabular-nums;font-family:"Plus Jakarta Sans","JetBrains Mono",sans-serif}
+.fnct tr.fnce td{background:var(--surface-2);border-bottom:1px solid var(--line);font-weight:600}
+.fnct tbody tr:hover td{background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
+.fnct tr.fnch td{background:var(--surface-3);font-size:12px;color:var(--ink-2)}
+.fnct tr.fnch:hover td{background:color-mix(in srgb,var(--accent) 12%,var(--surface-2))}
+.rchips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.rchip{display:inline-flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:12px;color:var(--muted);cursor:pointer;transition:all .15s ease;user-select:none}
+.rchip:hover{border-color:var(--accent);color:var(--ink);transform:translateY(-1px)}
+.rchip.on{border-color:var(--accent);background:var(--accent);color:var(--accent-ink);box-shadow:0 2px 8px color-mix(in srgb,var(--accent) 30%,transparent)}
+.rchip.on b{color:var(--accent-ink)}
+.rchip b{color:var(--ink);font-size:13px}
+.dwrap{overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.dtbl{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;white-space:nowrap;min-width:100%}
+.dtbl th,.dtbl td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left}
+.dtbl thead th{position:sticky;top:0;background:var(--surface-2);color:var(--muted);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.4px;z-index:2;border-bottom:1px solid var(--line)}
+.dtbl th.num,.dtbl td.num{text-align:right;font-variant-numeric:tabular-nums;font-family:"Plus Jakarta Sans","JetBrains Mono",sans-serif}
+.dtbl tbody tr.rclk{cursor:pointer;transition:background .15s}
+.dtbl tbody tr.rclk:hover{background:color-mix(in srgb,var(--accent) 6%,var(--surface))}
+.dtbl tr.rdetail td{background:var(--surface-3);font-size:12px;color:var(--muted)}
+.abadge{display:inline-block;min-width:40px;text-align:center;padding:2px 8px;border-radius:6px;font-weight:700;font-size:11px;color:#fff}
+.hint{font-size:12px;color:var(--muted);margin-bottom:8px;line-height:1.4}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:3px 8px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
+
 </style>
 
 <div class="wrap">
@@ -978,6 +1012,7 @@ function renderOpBody(p,g,el){
       <ul><li>Resumen de focos o frentes con peso contractual</li><li>Cronograma de hitos vs línea base</li><li>Riesgos con nivel, mitigación y responsable</li><li>Observaciones e inconsistencias por validar</li><li>Métricas de calidad y condiciones de no avance</li><li>Próximos pasos y compromisos semanales</li><li>Capacidad y asignación de equipos</li><li>Seguimiento de casos de uso por iteración</li></ul></div>`;
   }
   }
+  h += renderFncSection(p);
   el.innerHTML=h;
   renderFrentes(p);
   if(p.id==="419")render419();
@@ -1393,5 +1428,735 @@ setupSearch();
 const hp=(location.hash||"").match(/^#p(\d{3}|POS)$/);if(hp&&getP(hp[1]))cur=hp[1];
 renderTiles();renderSem();renderFlow();renderCostPort();renderChips();renderFicha();
 if(hp)show("proj");else{try{const t=localStorage.getItem("cmi-tab");if(t&&$("#v-"+t))show(t)}catch(e){}}
+
+/* ==========================================================================
+   DESGLOSE FUNCIONAL Y HISTORIAS DE USUARIO (AZURE DEVOPS) & 453 CPE
+   ========================================================================== */
+const esc = s => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const _qa = (v) => "'" + String(v).split("'").join("&#39;").split('"').join("&quot;") + "'";
+
+let FUNC = null, CPE453 = null, FUNC_DET = {}, _fncPend = {};
+let FNC_ABIERTO = new Set();
+let FNC_HU = new Set();
+let FNC_TODAS = new Set();
+let FNC_COD = null;
+const FNC_SIN_FRENTE = "_sin_frente";
+const FNC_MAX_HU = 60;
+
+const fncMeta = (cod) => (FUNC && FUNC.proyectos) ? (FUNC.proyectos[cod] || null) : null;
+const fncDet = (cod) => FUNC_DET[cod] || null;
+
+let _funcInitPromise = null;
+function ensureFuncIndex() {
+  if (_funcInitPromise) return _funcInitPromise;
+  _funcInitPromise = Promise.all([
+    fetch("data_func.json").then(r => r.ok ? r.json() : null).then(j => { FUNC = j; }).catch(() => { FUNC = null; }),
+    fetch("data_453_cpe.json").then(r => r.ok ? r.json() : null).then(j => { CPE453 = j; }).catch(() => { CPE453 = null; })
+  ]);
+  return _funcInitPromise;
+}
+ensureFuncIndex();
+
+function getFncCodeForProj(p) {
+  if (!p) return null;
+  const id = p.id;
+  if (id === "005") return "004";
+  if (id === "POS") return "355";
+  if (id === "456") return null;
+  if (id === "453") return "453";
+  return id;
+}
+
+function fncLoad(cod) {
+  if (!cod || FUNC_DET[cod] || _fncPend[cod]) return;
+  _fncPend[cod] = fetch(`data_func/${encodeURIComponent(cod)}.json`)
+    .then(r => r.ok ? r.json() : null)
+    .then(j => { FUNC_DET[cod] = j || { epics: [], features: [], hus: [], kpi: {} }; })
+    .catch(() => { FUNC_DET[cod] = { epics: [], features: [], hus: [], kpi: {} }; })
+    .finally(() => {
+      delete _fncPend[cod];
+      const b = document.getElementById("fncBody");
+      if (b && FNC_COD === cod) b.innerHTML = fncBody(FUNC_DET[cod]);
+    });
+}
+
+function fncRepintar() {
+  const b = document.getElementById("fncBody");
+  const C = fncDet(FNC_COD);
+  if (b && C) b.innerHTML = fncBody(C);
+}
+
+function fncToggle(id) {
+  if (FNC_ABIERTO.has(id)) FNC_ABIERTO.delete(id); else FNC_ABIERTO.add(id);
+  fncRepintar();
+}
+
+function fncToggleHu(id) {
+  if (FNC_HU.has(id)) { FNC_HU.delete(id); FNC_TODAS.delete(id); } else FNC_HU.add(id);
+  fncRepintar();
+}
+
+function fncVerTodas(id) {
+  FNC_TODAS.add(id);
+  fncRepintar();
+}
+
+function fncChangeSub(cod) {
+  FNC_COD = cod;
+  FNC_ABIERTO = new Set();
+  FNC_HU = new Set();
+  FNC_TODAS = new Set();
+  const c = document.getElementById("op-func-container");
+  if (c) c.innerHTML = funcCard(cod);
+}
+
+const fncPct = (v) => v == null ? "—" : Math.round(v * 100) + "%";
+const fncCol = (v) => v == null ? "var(--muted)" : v >= 0.999 ? "var(--good)"
+  : v >= 0.6 ? "#38bdf8" : v >= 0.3 ? "#f59e0b" : "#fb7185";
+
+function fncBarra(v) {
+  if (v == null) return "";
+  const p = Math.round(v * 100);
+  return `<div style="height:6px;background:var(--line);border-radius:4px;overflow:hidden;min-width:60px">
+    <div style="height:100%;width:${p}%;background:${fncCol(v)}"></div></div>`;
+}
+
+const FNC_COLS = [
+  { t: "Frente → Funcionalidad → HU", w: null, ay: "El árbol tal como cuelga en Azure: Frente (Epic) → Funcionalidad (Feature) → HU. Clic en una fila para desplegar el nivel de abajo." },
+  { t: "Estado", w: "168px", ay: "Estado de la funcionalidad en Azure. En las filas de HU, la ETAPA en que está la HU." },
+  { t: "Responsable", w: "172px", ay: "Solo en las filas de HU: a quién está asignada." },
+  { t: "Func.", w: "58px", n: 1, ay: "Cuántas funcionalidades tiene el frente con HU." },
+  { t: "HU", w: "52px", n: 1, ay: "HU activas que componen la fila." },
+  { t: "En prod.", w: "76px", n: 1, ay: "De esas HU, cuántas están EN PRODUCCIÓN." },
+  { t: "Avance", w: "110px", ay: "Avance ponderado por etapa." },
+  { t: "%", w: "64px", n: 1, ay: "El mismo avance ponderado en porcentaje." },
+];
+
+const fncTd = (c, html, extra) =>
+  `<td class="${FNC_COLS[c].n ? "num" : ""}"${extra || ""}>${html}</td>`;
+
+function fncBody(C) {
+  if (!C || !C.epics) return `<div class="hint" style="padding:16px;text-align:center">Sin datos de funcionalidades disponibles.</div>`;
+  const porEpic = {};
+  (C.features || []).forEach(f => { (porEpic[f.ep] = porEpic[f.ep] || []).push(f); });
+  const huDe = {};
+  (C.hus || []).forEach(h => { if (h.f) (huDe[h.f] = huDe[h.f] || []).push(h); });
+
+  const filas = C.epics.map(e => {
+    const fs = (porEpic[e.i] || []).filter(f => f.n).sort((a, b) => b.n - a.n);
+    if (!fs.length) return "";
+    const abierto = FNC_ABIERTO.has(e.i);
+    const sinFrente = e.i === FNC_SIN_FRENTE;
+
+    const hijas = !abierto ? "" : fs.map(f => {
+      const verHu = FNC_HU.has(f.i);
+      const desfase = f.pct != null && f.pct >= 0.999 && !String(f.e).startsWith("4");
+      const removida = String(f.e).toUpperCase().startsWith("X");
+      const todas = FNC_TODAS.has(f.i);
+      const lista = (huDe[f.i] || []).sort((a, b) => (b.v || 0) - (a.v || 0));
+      const corte = todas ? lista : lista.slice(0, FNC_MAX_HU);
+      const hu = !verHu ? "" : corte.map(h => `<tr class="fnch">
+          ${fncTd(0, `<span style="padding-left:52px;color:var(--muted);font-variant-numeric:tabular-nums">${esc(h.i)}</span>
+            &nbsp;${esc(h.t)}${h.a ? "" : ` <span class="hint">· fuera de medición</span>`}`,
+    ` title="${esc(h.i)} · ${esc(h.t)}"`)}
+          ${fncTd(1, `<span style="color:var(--muted)">${esc(h.e)}</span>`, ` title="${esc(h.e)}"`)}
+          ${fncTd(2, `<span style="color:var(--muted)">${esc(h.r)}</span>`, ` title="${esc(h.r)}"`)}
+          ${fncTd(3, "")}
+          ${fncTd(4, "")}
+          ${fncTd(5, "")}
+          ${fncTd(6, fncBarra(h.v))}
+          ${fncTd(7, `<span style="color:${fncCol(h.v)}">${fncPct(h.v)}</span>`)}
+        </tr>`).join("")
+        + ((verHu && lista.length > corte.length)
+          ? `<tr class="fnch">
+               ${fncTd(0, `<span style="padding-left:52px" class="hint">se muestran
+                 ${corte.length} de ${lista.length} HU${lista.length > f.n
+       ? ` (${f.n} activas + ${lista.length - f.n} fuera de la medición)` : ""}
+                 · <a href="javascript:void(0)" style="color:var(--accent);font-weight:600"
+                 onclick="event.stopPropagation();fncVerTodas('${f.i}')">ver todas (${lista.length})</a></span>`)}
+               ${FNC_COLS.slice(1).map((_, j) => fncTd(j + 1, "")).join("")}
+             </tr>`
+          : "");
+
+      return `<tr style="cursor:pointer" onclick="fncToggleHu('${f.i}')">
+        ${fncTd(0, `<span style="padding-left:26px">${verHu ? "▾" : "▸"} ${esc(f.t)}</span>`,
+    ` title="${esc(f.t)}"`)}
+        ${fncTd(1, `<span style="color:var(--muted)">${esc(f.e)}</span>${desfase
+      ? ` <span class="hint" style="color:#f59e0b">· al 100% sin cerrar</span>` : ""}${removida
+        ? ` <span class="hint" style="color:#fb7185">· removida con HU vivas</span>` : ""}`,
+    ` title="${esc(f.e)}"`)}
+        ${fncTd(2, "")}
+        ${fncTd(3, "")}
+        ${fncTd(4, f.n)}
+        ${fncTd(5, f.term)}
+        ${fncTd(6, fncBarra(f.pct))}
+        ${fncTd(7, `<span style="color:${fncCol(f.pct)}">${fncPct(f.pct)}</span>`)}
+      </tr>${hu}`;
+    }).join("");
+
+    return `<tr class="fnce" style="cursor:pointer" onclick="fncToggle('${e.i}')">
+      ${fncTd(0, `<b>${abierto ? "▾" : "▸"} ${esc(e.t)}</b>${sinFrente
+      ? ` <span class="hint">· funcionalidades que no cuelgan de ningún frente en Azure</span>` : ""}`,
+    ` title="${esc(e.t)}"`)}
+      ${fncTd(1, "")}
+      ${fncTd(2, "")}
+      ${fncTd(3, fs.length)}
+      ${fncTd(4, e.n)}
+      ${fncTd(5, e.term)}
+      ${fncTd(6, fncBarra(e.pct))}
+      ${fncTd(7, `<b style="color:${fncCol(e.pct)}">${fncPct(e.pct)}</b>`)}
+    </tr>${hijas}`;
+  }).join("");
+
+  return `<div style="overflow-x:auto"><table class="fnct">
+    <colgroup>${FNC_COLS.map(c => `<col${c.w ? ` style="width:${c.w}"` : ""}>`).join("")}</colgroup>
+    <thead><tr>${FNC_COLS.map(c =>
+    `<th class="${c.n ? "num" : ""}" title="${esc(c.ay)}">${esc(c.t)}</th>`).join("")}</tr></thead>
+    <tbody>${filas}</tbody></table></div>`;
+}
+
+function dlBajar(blob, filename) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+}
+
+const FNC_CSV_COLS = [
+  "Frente_ID", "Frente", "Funcionalidad_ID", "Funcionalidad", "Estado_Funcionalidad",
+  "HU_Activas", "HU_En_Produccion", "Avance_Funcionalidad",
+  "HU_ID", "HU_Titulo", "Etapa_HU", "Estado_HU", "Responsable",
+  "Cuenta_En_Medicion", "Avance_HU", "En_Produccion"
+];
+
+function fncCsv(cod) {
+  const C = fncDet(cod);
+  if (!C) {
+    alert("El detalle del proyecto aún se está cargando. Por favor intente en un momento.");
+    return;
+  }
+  const q = (v) => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+  const num = (v) => v == null ? "" : String(v).replace(".", ",");
+  const porHu = new Map();
+  (C.hus || []).forEach(h => {
+    const k = h.f || "";
+    if (!porHu.has(k)) porHu.set(k, []);
+    porHu.get(k).push(h);
+  });
+  const epT = new Map((C.epics || []).map(e => [e.i, e.t]));
+  const filaHu = (f, h) => [
+    f ? (f.ep || "") : "", f ? (f.ept || epT.get(f.ep) || "") : "",
+    f ? f.i : "", f ? f.t : "", f ? f.e : "",
+    f ? f.n : "", f ? f.term : "", f ? num(f.pct) : "",
+    h ? h.i : "", h ? h.t : "", h ? h.e : "", h ? h.p : "", h ? h.r : "",
+    h ? (h.a ? "si" : "no") : "", h ? num(h.v) : "",
+    h ? (h.p === "EN PRODUCCIÓN" ? "si" : "no") : "",
+  ].map(q).join(";");
+
+  const finAl = (f) => (f.ep === FNC_SIN_FRENTE ? 1 : 0);
+  const feats = (C.features || []).slice().sort((a, b) =>
+    finAl(a) - finAl(b)
+    || String(a.ept || "").localeCompare(String(b.ept || ""), "es")
+    || String(a.t || "").localeCompare(String(b.t || ""), "es"));
+  const filas = [];
+  feats.forEach(f => {
+    const hs = (porHu.get(f.i) || []).slice()
+      .sort((a, b) => String(a.i).localeCompare(String(b.i), "es", { numeric: true }));
+    if (!hs.length) filas.push(filaHu(f, null));
+    else hs.forEach(h => filas.push(filaHu(f, h)));
+  });
+  (porHu.get("") || []).forEach(h => filas.push(filaHu(null, h)));
+
+  const k = C.kpi || {};
+  const enc = [
+    "# Funcionalidades por frente · qué HU componen cada una · proyecto " + (C.codigo || cod),
+    "# Corte " + (C.corte || "") + " · " + (k.n_epic || 0) + " frentes · "
+      + (k.n_feature || 0) + " funcionalidades · " + (k.n_hu || 0) + " HU",
+    "# Una fila por HU, con su funcionalidad y su frente al lado.",
+  ];
+  const csv = "﻿" + enc.concat([FNC_CSV_COLS.join(";")]).concat(filas).join("
+
+");
+  dlBajar(new Blob([csv], { type: "text/csv;charset=utf-8" }),
+    "Funcionalidades_por_frente_" + (C.codigo || cod) + "_" + (C.corte || "") + ".csv");
+}
+
+function funcCard(cod) {
+  const M = fncMeta(cod);
+  if (!M) {
+    if (!FUNC) {
+      return `<div class="card" style="margin-top:16px;padding:24px;text-align:center">
+        <p class="hint">Cargando índice de funcionalidades de Azure DevOps...</p>
+      </div>`;
+    }
+    return `<div class="card" style="margin-top:16px;padding:24px;text-align:center">
+      <p class="hint">No hay desglose de funcionalidades en Azure DevOps para este proyecto.</p>
+    </div>`;
+  }
+  if (FNC_COD !== cod) {
+    FNC_COD = cod;
+    FNC_ABIERTO = new Set();
+    FNC_HU = new Set();
+    FNC_TODAS = new Set();
+  }
+  fncLoad(cod);
+  const k = M.kpi || {};
+  const C = fncDet(cod);
+  const stat = (v, l, c) => `<div class="fst"><div class="fstv" style="color:${c}">${v}</div><div class="fstl">${l}</div></div>`;
+
+  let subSelector = "";
+  if (cod === "355" || cod === "416") {
+    subSelector = `<div class="seg" style="margin-bottom:12px">
+      <span class="eyebrow" style="align-self:center;margin-right:6px">Subproyecto:</span>
+      <button aria-pressed="${cod === "355"}" onclick="fncChangeSub('355')">355 Core Positiva</button>
+      <button aria-pressed="${cod === "416"}" onclick="fncChangeSub('416')">416 Evolutivos</button>
+    </div>`;
+  } else if (cod === "419" || cod === "419-DEP" || cod === "419-RAMA") {
+    subSelector = `<div class="seg" style="margin-bottom:12px">
+      <span class="eyebrow" style="align-self:center;margin-right:6px">Filtro 419:</span>
+      <button aria-pressed="${cod === "419"}" onclick="fncChangeSub('419')">Consolidado 419</button>
+      <button aria-pressed="${cod === "419-DEP"}" onclick="fncChangeSub('419-DEP')">Depósitos Judiciales</button>
+      <button aria-pressed="${cod === "419-RAMA"}" onclick="fncChangeSub('419-RAMA')">Rama Judicial</button>
+    </div>`;
+  }
+
+  const esV2_419 = (cod === "419" || cod === "419-DEP" || cod === "419-RAMA");
+
+  return `<div class="card fade" style="margin-top:18px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <h3 style="margin:0;font-size:16px;font-weight:700">🗂 Funcionalidades por frente · qué HU componen cada una</h3>
+        ${esV2_419 ? `<span class="tag" style="background:var(--good);color:#fff;font-weight:700">Modelo V2 (Etapa + Estado)</span>` : ""}
+      </div>
+      <button class="linkbtn" style="border:1px solid var(--line);background:var(--surface-2);color:var(--ink);padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer" onclick="fncCsv('${cod}')">
+        📥 Descargar CSV completo
+      </button>
+    </div>
+    ${subSelector}
+    <div class="hint">Cada <b>frente (Épica)</b> con sus <b>funcionalidades (Features)</b> y las <b>HU que las componen</b> · corte ${M.corte || "01-Oct-2026"} · avance <b>ponderado por etapa${esV2_419 ? " (precedencia Etapa acordada)" : ""}</b>. Clic en cualquier fila para desplegar.</div>
+    <div class="fstrip">
+      ${stat(k.n_epic, "Frentes", "var(--ink)")}
+      ${stat(k.n_feature_con_hu, "Funcionalidades", "var(--ink)")}
+      ${stat(fncPct(k.pct_global), "Avance ponderado", "#a855f7")}
+      ${stat(k.term_global, "HU en producción", "#10b981")}
+      ${stat(k.feature_100_sin_cerrar, "Al 100% sin cerrar", k.feature_100_sin_cerrar ? "#f59e0b" : "#10b981")}
+    </div>
+    <div id="fncBody" style="margin-top:14px;overflow-x:auto">${C ? fncBody(C) : `<div class="hint" style="text-align:center;padding:20px">Cargando el detalle de ${esc(cod)}...</div>`}</div>
+    <div class="hint" style="margin-top:12px;padding:8px 12px;background:var(--surface-2);border-radius:8px;border:1px solid var(--line)">
+      ${k.feature_100_sin_cerrar ? `<b>${k.feature_100_sin_cerrar}</b> funcionalidades tienen todas sus HU en producción pero <b>no figuran cerradas</b> en Azure. ` : ""}
+      ${k.feature_removido_con_hu ? `· <b>${k.feature_removido_con_hu}</b> están removidas y sostienen HU vivas. ` : ""}
+      ${k.hu_sin_feature ? `· <b>${k.hu_sin_feature}</b> HU activas no cuelgan de ninguna funcionalidad. ` : ""}
+      ${k.feature_sin_frente ? `· <b>${k.feature_sin_frente}</b> funcionalidades (<b>${k.hu_sin_frente}</b> HU) no cuelgan de ningún frente. ` : ""}
+      ${k.hu_omitidas ? `· <b>${k.hu_omitidas}</b> HU quedan fuera de la medición por homologación.` : ""}
+    </div>
+  </div>`;
+}
+
+/* ==========================================================================
+   453 · CPE (MONITOREO CPE)
+   ========================================================================== */
+let CPE_MODO = "eje";
+let CPE_IT = null;
+let CPE_FOC = new Set();
+let CPE_CU = new Set();
+let CPE_FOCO = "__all__";
+
+const CPE_SEM = {
+  cumplido: ["#10b981", "Cumplido"],
+  en_curso: ["#38bdf8", "En curso"],
+  vencido: ["#ef4444", "Vencido"],
+  sin_iniciar: ["#a855f7", "Aún no inicia"],
+  sin_hito: ["#5d6678", "Sin hito cargado"],
+};
+
+function cpePct(v, n_pct, n) {
+  if (v == null) return '<span class="muted">—</span>';
+  const p = Math.round(v * 100);
+  const parcial = (n_pct != null && n != null && n_pct < n)
+    ? ` <span class="muted" title="el promedio sale de ${n_pct} de ${n} HU">(${n_pct}/${n})</span>` : "";
+  return `<b>${p}%</b>${parcial}`;
+}
+
+function _cpeItDe(h, cuIdx) {
+  if (CPE_MODO === "eje") return h.it;
+  const c = h.cu ? cuIdx[h.cu] : null;
+  return c ? c.it : "__sin__";
+}
+
+function _cpeUniverso(C) {
+  return C.hus.filter(h => h.a && (CPE_FOCO === "__all__" || h.f === CPE_FOCO));
+}
+
+const CPE_SIN_FOCO = "__sin_foco__";
+
+function _cpeRamas(C, universo) {
+  const porFoco = {};
+  const dondeCu = {};
+  universo.forEach(h => {
+    const k = h.f || CPE_SIN_FOCO;
+    (porFoco[k] = porFoco[k] || { hus: [], cus: new Set() }).hus.push(h);
+    if (h.cu) {
+      porFoco[k].cus.add(h.cu);
+      (dondeCu[h.cu] = dondeCu[h.cu] || new Set()).add(k);
+    }
+  });
+  if (CPE_FOCO === "__all__") {
+    C.cus.forEach(c => {
+      if (!dondeCu[c.i]) (porFoco[CPE_SIN_FOCO] = porFoco[CPE_SIN_FOCO] || { hus: [], cus: new Set() }).cus.add(c.i);
+    });
+  }
+  return porFoco;
+}
+
+function _cpeOrdenFocos(C, porFoco) {
+  const dec = (C.focos || []).map(f => f.k).filter(k => porFoco[k]);
+  const otros = Object.keys(porFoco).filter(k => k !== CPE_SIN_FOCO && !dec.includes(k)).sort();
+  return dec.concat(otros).concat(porFoco[CPE_SIN_FOCO] ? [CPE_SIN_FOCO] : []);
+}
+
+const _cpeNomFoco = (C, k) => k === CPE_SIN_FOCO ? "(sin foco)"
+  : "Foco " + k + (((C.focos || []).find(f => f.k === k) || {}).n ? " · " + (C.focos.find(f => f.k === k).n) : "");
+
+function _cpeCuAgg(c, universo) {
+  const g = universo.filter(h => h.cu === c.i);
+  const vs = g.filter(h => h.v != null).map(h => h.v);
+  return {
+    n: g.length,
+    term: g.filter(h => h.p === "EN PRODUCCIÓN").length,
+    pct: vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : null,
+    n_pct: vs.length,
+  };
+}
+
+function cpeAvisoFoco(C) {
+  if (CPE_FOCO !== "__all__") return "";
+  const porCu = {};
+  _cpeUniverso(C).forEach(h => {
+    if (h.cu && h.f) (porCu[h.cu] = porCu[h.cu] || new Set()).add(h.f);
+  });
+  const idx = {};
+  (C.cus || []).forEach(c => { idx[c.i] = c; });
+  const multi = Object.keys(porCu).filter(i => porCu[i].size > 1);
+  if (!multi.length) return "";
+  const noms = multi.map(i => esc((idx[i] || {}).t || i)).join(", ");
+  return `<div class="hint" style="margin-top:10px">${multi.length === 1
+    ? `El caso de uso <b>${noms}</b> tiene HU de <b>varios focos</b>, así que aparece`
+    : `<b>${multi.length}</b> casos de uso (${noms}) tienen HU de <b>varios focos</b>, así que aparecen`}
+    <b>en cada rama</b>, con sus números partidos. La suma de las ramas es su total.</div>`;
+}
+
+function cpeColorEi(ei) {
+  if (!ei) return "#5d6678";
+  if (ei.startsWith("19")) return "#10b981";
+  if (ei.startsWith("18") || ei.startsWith("15")) return "#38bdf8";
+  if (ei.startsWith("17")) return "#8b5cf6";
+  if (ei.startsWith("10")) return "#a855f7";
+  if (ei.startsWith("08") || ei.startsWith("13") || ei.startsWith("09")) return "#f59e0b";
+  return "#64748b";
+}
+
+function cpeChipsFoco(C) {
+  const K = C.kpi;
+  const hAct = K.focos_activas || {}, hTod = K.focos_todas || {};
+  const cAct = K.cus_activas || {}, cTod = K.cus_todas || {};
+  const claves = Object.keys(hTod);
+  if (claves.length < 2) return "";
+  const nHu = Object.values(hAct).reduce((a, b) => a + b, 0);
+  const nCu = new Set(C.hus.filter(h => h.a && h.f && h.cu).map(h => h.cu)).size;
+  const FO = {};
+  (C.focos || []).forEach(f => { FO[f.k] = f; });
+  const chip = (k, l, cu, hu, tit, extra) => `<span class="rchip" title="${tit || ""}"
+    style="cursor:pointer;${CPE_FOCO === k ? "outline:2px solid var(--accent);background:var(--surface-3);color:var(--ink)" : ""}"
+    onclick="cpeFoco(${_qa(k)})">${l} <b>${cu}</b> CU · <b>${hu}</b> HU${extra || ""}</span>`;
+  const chips = claves.map(k => {
+    const f = FO[k];
+    const [col, lbl] = CPE_SEM[(f && f.sem) || "sin_hito"] || CPE_SEM.sin_hito;
+    const fecha = f && f.hito && (f.hito.fecha || f.hito.inicio)
+      ? ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.inicio
+        ? " · desde " + f.hito.inicio : ""}${f.hito.nota ? " · " + esc(f.hito.nota) : ""}">${
+        f.hito.inicio ? f.hito.inicio + " → " : ""}${f.hito.fecha || "?"}</span>` : "";
+    const pctBadge = f && f.pct_cu != null
+      ? ` <span class="abadge" style="background:#0284c7" title="Avance promedio por Estado Interno de CU">${Math.round(f.pct_cu * 100)}% CU</span>` : "";
+    return chip(k, "Foco " + k + (f && f.n ? " · " + esc(f.n) : ""), cAct[k] || 0, hAct[k] || 0,
+      `en total, contando fuera de medición: ${cTod[k] || 0} CU y ${hTod[k] || 0} HU`
+      + (f && f.pct_cu != null ? ` · Avance CU: ${Math.round(f.pct_cu * 100)}%` : "")
+      + (f && f.hito ? ` · comprometido para ${f.hito.fecha} (${lbl})` : ""), fecha + pctBadge);
+  }).join("");
+  const huerfanos = (C.focos || []).filter(f => f.hito && !claves.includes(f.k));
+  const chipsHuerfanos = huerfanos.map(f => {
+    const [col, lbl] = CPE_SEM[f.sem] || CPE_SEM.sin_hito;
+    const badge = ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.nota
+      ? " · " + esc(f.hito.nota) : ""}">${f.hito.inicio ? f.hito.inicio + " → " : ""}${
+      f.hito.fecha || "?"}</span>`;
+    return chip(f.k, "Foco " + f.k + (f.n ? " · " + esc(f.n) : ""), 0, 0,
+      `comprometido para ${f.hito.fecha || "?"} (${lbl}) · sin HU activas`, badge);
+  }).join("");
+
+  return `<div class="rchips" style="margin:8px 0 0">
+    ${chip("__all__", "Todos los focos", nCu, nHu, "casos de uso con al menos una HU con foco")}
+    ${chips}${chipsHuerfanos}
+  </div>`;
+}
+
+function cpeBodyHtml(C) {
+  const cuIdx = {};
+  C.cus.forEach(c => { cuIdx[c.i] = c; });
+  const universo = _cpeUniverso(C);
+  const porFoco = _cpeRamas(C, universo);
+  const orden = _cpeOrdenFocos(C, porFoco);
+  const filas = !orden.length
+    ? `<tr><td colspan="6" class="hint">Sin HU en la medición para el foco elegido.</td></tr>`
+    : orden.map(k => {
+    const R = porFoco[k];
+    const F = (C.focos || []).find(f => f.k === k);
+    const vs = R.hus.filter(h => h.v != null).map(h => h.v);
+    const pct = vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : null;
+    const cusEnFoco = [...R.cus].map(id => cuIdx[id]).filter(Boolean);
+    const vsCu = cusEnFoco.filter(c => c.pct_cu != null).map(c => c.pct_cu);
+    const pctCu = vsCu.length ? vsCu.reduce((a, b) => a + b, 0) / vsCu.length : null;
+
+    const [col, lbl] = CPE_SEM[(F && F.sem) || "sin_hito"] || CPE_SEM.sin_hito;
+    const hito = F && F.hito
+      ? `<span class="abadge" style="background:${col}">${F.hito.fecha}</span>`
+      : `<span class="muted">${k === CPE_SIN_FOCO ? "no aplica" : lbl}</span>`;
+    const abierto = CPE_FOC.has(k);
+    const nota = k === CPE_SIN_FOCO
+      ? ` <span class="hint">· casos de uso sin ninguna HU: no hay foco que heredar</span>` : "";
+    return `<tr class="rclk fnce" onclick="cpeSelFoco(${_qa(k)})">
+        <td><span class="corner">${abierto ? "▾" : "▸"}</span> <b>${esc(_cpeNomFoco(C, k))}</b>${nota}</td>
+        <td>${hito}</td>
+        <td class="num">${R.cus.size}</td>
+        <td class="num">${cpePct(pctCu, vsCu.length, cusEnFoco.length)}</td>
+        <td class="num">${R.hus.length}</td>
+        <td class="num">${cpePct(pct, vs.length, R.hus.length)}</td>
+      </tr>` + (abierto ? cpeDetalleFoco(C, k, R, cuIdx) : "");
+    }).join("");
+  return `<div class="dwrap" style="max-height:70vh"><table class="dtbl"><thead><tr>
+      <th>Foco</th><th>Hito del foco</th><th class="num">Casos de Uso</th><th class="num">% Avance CU (Interno)</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
+    </tr></thead><tbody>${filas}</tbody></table></div>`;
+}
+
+function cpeDetalleFoco(C, focoK, R, cuIdx) {
+  const its = {};
+  C.iteraciones.forEach(i => { its[i.k] = { ...i, hus: [], cus: new Set() }; });
+  const sinIt = { k: "__sin__", n: "Sin iteración", hito: null, sem: "sin_hito", hus: [], cus: new Set() };
+  R.hus.forEach(h => {
+    const k = _cpeItDe(h, cuIdx);
+    const I = its[k] || sinIt;
+    I.hus.push(h);
+    if (h.cu) I.cus.add(h.cu);
+  });
+  R.cus.forEach(i => {
+    const c = cuIdx[i];
+    if (!c) return;
+    const yaEsta = Object.values(its).some(I => I.cus.has(i)) || sinIt.cus.has(i);
+    if (!yaEsta) (its[c.it] || sinIt).cus.add(i);
+  });
+  const orden = C.iteraciones.map(i => i.k).filter(k => its[k].hus.length || its[k].cus.size);
+  const listas = orden.map(k => its[k]).concat(sinIt.hus.length || sinIt.cus.size ? [sinIt] : []);
+  if (!listas.length) {
+    return `<tr><td colspan="6" class="hint" style="padding-left:26px">Sin iteraciones en este foco.</td></tr>`;
+  }
+  const filas = listas.map(I => {
+    const vs = I.hus.filter(h => h.v != null).map(h => h.v);
+    const pct = vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : null;
+    const cusEnIt = [...I.cus].map(id => cuIdx[id]).filter(Boolean);
+    const vsCu = cusEnIt.filter(c => c.pct_cu != null).map(c => c.pct_cu);
+    const pctCu = vsCu.length ? vsCu.reduce((a, b) => a + b, 0) / vsCu.length : null;
+
+    const [col, lbl] = CPE_SEM[I.sem] || CPE_SEM.sin_hito;
+    const hito = I.hito
+      ? `<span class="abadge" style="background:${col}">${esc(I.hito.release || "—")} · ${I.hito.fecha}</span>`
+      : `<span class="muted">${lbl}</span>`;
+    const ck = focoK + "||" + I.k;
+    const abierta = CPE_IT === ck;
+    return `<tr class="rclk" onclick="event.stopPropagation();cpeSelIt(${_qa(ck)})">
+        <td style="padding-left:26px"><span class="corner">${abierta ? "▾" : "▸"}</span> ${esc(I.n)}</td>
+        <td>${hito}</td>
+        <td class="num">${I.cus.size}</td>
+        <td class="num">${cpePct(pctCu, vsCu.length, cusEnIt.length)}</td>
+        <td class="num">${I.hus.length}</td>
+        <td class="num">${cpePct(pct, vs.length, I.hus.length)}</td>
+      </tr>` + (abierta ? cpeDetalleIt(I, cuIdx, R.hus) : "");
+  }).join("");
+  return `<tr><td colspan="6" style="padding:0">
+    <table class="dtbl" style="margin:0"><thead><tr>
+      <th>Iteración</th><th>Hito de entrega</th><th class="num">Casos de Uso</th><th class="num">% Avance CU</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
+    </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
+}
+
+function cpeDetalleIt(I, cuIdx, ramaHus) {
+  const C = CPE453;
+  const ids = [...I.cus].map(i => cuIdx[i]).filter(Boolean).sort((a, b) => a.t.localeCompare(b.t));
+  if (!ids.length) return `<tr><td colspan="7" class="hint">Sin casos de uso en esta iteración.</td></tr>`;
+  const porCu = {};
+  I.hus.forEach(h => { if (h.cu) (porCu[h.cu] = porCu[h.cu] || []).push(h); });
+  const filas = ids.map(c => {
+    const abierto = !CPE_CU.has(c.i);
+    const disperso = c.its && c.its.length > 1
+      ? ` <span class="abadge" style="background:#f59e0b" title="sus HU se ejecutan en ${c.its.length} iteraciones">${c.its.length} it.</span>` : "";
+    const aqui = porCu[c.i] || [];
+    const ag = _cpeCuAgg(c, ramaHus || _cpeUniverso(C));
+    const otras = ag.n - aqui.length;
+    const nota = otras > 0
+      ? ` <span class="muted" title="las otras ${otras} de este foco caen en otra iteración">${aqui.length} de ${ag.n} aquí</span>` : "";
+    const badgeEi = c.ei
+      ? `<span class="abadge" style="background:${cpeColorEi(c.ei)}" title="${esc(c.proc_cu || '')}">${esc(c.ei)}</span>`
+      : `<span class="muted">—</span>`;
+    const pctCuCell = c.pct_cu != null
+      ? `<b>${Math.round(c.pct_cu * 1000) / 10}%</b>`
+      : `<span class="muted">—</span>`;
+
+    return `<tr class="rclk" onclick="event.stopPropagation();cpeSelCu(${_qa(c.i)})">
+        <td style="padding-left:26px"><span class="corner">${abierto ? "▾" : "▸"}</span> <code>${esc(c.i)}</code></td>
+        <td>${esc(c.t)}${disperso}${nota}</td>
+        <td>${esc(c.e)}</td>
+        <td>${badgeEi}</td>
+        <td class="num">${pctCuCell}</td>
+        <td class="num">${ag.term} de ${ag.n}</td>
+        <td class="num">${cpePct(ag.pct, ag.n_pct, ag.n)}</td>
+      </tr>` + (abierto ? cpeDetalleCu(c, aqui) : "");
+  }).join("");
+  return `<tr><td colspan="6" style="padding:0">
+    <table class="dtbl" style="margin:0"><thead><tr>
+      <th>ID CU</th><th>Caso de uso</th><th>Estado Azure</th><th>Estado interno (estados_453)</th><th class="num">% Avance CU</th><th class="num">HU terminadas</th><th class="num">% Avance HUs</th>
+    </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
+}
+
+function cpeDetalleCu(c, hus) {
+  const hs = (hus || []).slice().sort((a, b) => (b.v || 0) - (a.v || 0));
+  if (!hs.length) return `<tr><td colspan="7" class="hint" style="padding-left:40px">
+      Sin HU de este caso de uso en esta iteración.</td></tr>`;
+  const filas = hs.map(h => `<tr>
+      <td style="padding-left:52px"><code>${esc(h.i)}</code></td>
+      <td>${esc(h.t || "—")}</td>
+      <td>${esc(h.e)}</td>
+      <td>${esc(h.r || "—")}</td>
+      <td class="num">${h.v == null ? '<span class="muted">omitida</span>' : "<b>" + Math.round(h.v * 100) + "%</b>"}</td>
+    </tr>`).join("");
+  return `<tr><td colspan="7" style="padding:0">
+    <table class="dtbl" style="margin:0"><thead><tr>
+      <th>ID HU</th><th>Historia de usuario</th><th>Estado</th><th>Responsable</th><th class="num">% avance</th>
+    </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
+}
+
+function cpeRepinta() {
+  const el = document.getElementById("cpeBody");
+  if (el && CPE453) el.innerHTML = cpeBodyHtml(CPE453);
+}
+
+function cpeRepintaTodo() {
+  const c = document.getElementById("op-func-container");
+  if (c && CPE453) c.innerHTML = cpe453Card(CPE453);
+}
+
+function cpeModo(m) {
+  CPE_MODO = m; CPE_IT = null; CPE_CU = new Set(); CPE_FOC = new Set();
+  cpeRepintaTodo();
+}
+
+function cpeFoco(f) {
+  CPE_FOCO = f; CPE_IT = null; CPE_CU = new Set(); CPE_FOC = new Set();
+  cpeRepintaTodo();
+}
+
+function cpeSelFoco(k) {
+  if (CPE_FOC.has(k)) { CPE_FOC.delete(k); if (CPE_IT && CPE_IT.indexOf(k + "||") === 0) CPE_IT = null; }
+  else CPE_FOC.add(k);
+  CPE_CU = new Set();
+  cpeRepinta();
+}
+
+function cpeSelIt(k) {
+  CPE_IT = (CPE_IT === k ? null : k);
+  CPE_CU = new Set();
+  cpeRepinta();
+}
+
+function cpeSelCu(i) {
+  CPE_CU.has(i) ? CPE_CU.delete(i) : CPE_CU.add(i);
+  cpeRepinta();
+}
+
+function cpe453Card(C) {
+  if (!C) return "";
+  const k = C.kpi;
+  const stat = (v, l, c) => `<div class="fst"><div class="fstv" style="color:${c}">${v}</div><div class="fstl">${l}</div></div>`;
+  const pctCuG = k.pct_cu_global == null ? "—" : (Math.round(k.pct_cu_global * 1000) / 10) + "%";
+  const pctHuG = k.pct_hu_global == null ? (k.pct_global == null ? "—" : Math.round(k.pct_global * 100) + "%") : Math.round(k.pct_hu_global * 100) + "%";
+  const entregadosCu = (k.cu_entregados != null ? k.cu_entregados : 0) + " / " + (k.n_cu_medibles || k.n_cu);
+  const faltaHito = C.iteraciones && C.iteraciones.every(i => !i.hito);
+  return `<div class="card fade" style="margin-top:18px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
+      <h3 style="margin:0;font-size:16px;font-weight:700">🗂 Foco → Iteración → Caso de Uso → HU</h3>
+    </div>
+    <div class="hint">El proyecto 453 (Monitoreo CPE) expone <b>dos métricas de avance</b>:
+      <b>(1) % Avance por Casos de Uso</b> (calculado desde su estado interno <code>estados_453</code> según Homologación V2)
+      y <b>(2) % Avance por HU's atadas</b> (avance histórico de construcción ponderado por etapa) · corte ${C.corte || "01-Oct-2026"}. Clic en cada nivel para desplegar.</div>
+    <div class="fstrip">
+      ${stat(k.n_cu + ` <span style="font-size:11px;font-weight:normal;opacity:0.8">(${k.n_cu_medibles || k.n_cu} medibles)</span>`, "Casos de Uso", "var(--ink)")}
+      ${stat(pctCuG, "% Avance por CU (Estado Interno)", "#38bdf8")}
+      ${stat(entregadosCu, "CUs Entregados (19. Entregado)", "#10b981")}
+      ${stat(pctHuG, "% Avance por HUs atadas", "#a855f7")}
+      ${stat(k.hu_fuera_de_su_cu, "HU fuera de iteración CU", k.hu_fuera_de_su_cu ? "#f59e0b" : "#10b981")}
+    </div>
+    <div class="rchips" style="margin:12px 0 6px">
+      <span class="rchip ${CPE_MODO === "eje" ? "on" : ""}" style="cursor:pointer" onclick="cpeModo('eje')">▶ Por ejecución</span>
+      <span class="rchip ${CPE_MODO === "com" ? "on" : ""}" style="cursor:pointer" onclick="cpeModo('com')">◆ Por compromiso</span>
+      <span class="hint" style="margin:0 0 0 6px;align-self:center">${CPE_MODO === "eje"
+      ? "cada HU cuenta en SU iteración — en qué se trabaja de verdad"
+      : "cada HU cuenta en la iteración de su caso de uso — qué se prometió"}</span>
+    </div>
+    ${cpeChipsFoco(C)}
+    ${faltaHito ? `<div class="hint" style="color:#f59e0b;margin:6px 0 0 2px">⚠️ No hay archivo de hitos cargado: las iteraciones salen sin fecha comprometida.</div>` : ""}
+    <div id="cpeBody" style="margin-top:10px">${cpeBodyHtml(C)}</div>
+    ${cpeAvisoFoco(C)}
+  </div>`;
+}
+
+function renderFncSection(p) {
+  if (!p) return "";
+  if (p.id === "456") {
+    return `<div class="card" style="margin-top:18px;padding:16px 20px;border-left:4px solid var(--accent);background:var(--surface)">
+      <div style="font-weight:700;font-size:14px;margin-bottom:4px">456 · Aeronáutica Civil (Supervisión Contractual)</div>
+      <div class="hint" style="margin:0">Este proyecto no gestiona historias de usuario en Azure DevOps. Su seguimiento operativo se realiza directamente mediante la <b>Escala CMI por Fase</b> y la tabla de <b>Desviación del Cronograma Contractual</b> que se muestran arriba.</div>
+    </div>`;
+  }
+  if (p.id === "453") {
+    if (!CPE453) {
+      if (window.location.protocol === "file:") {
+        return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;background:var(--surface);border-left:4px solid var(--accent)">
+          <p class="hint" style="margin:0">ℹ️ <b>Desglose en línea:</b> Las políticas de seguridad del navegador impiden leer archivos JSON locales bajo el protocolo <code>file://</code>. Para interactuar con el árbol de Foco → Iteración → Casos de Uso → HU del 453, consulta el tablero oficial en <a href="https://ivanpastor-debug.github.io/Tablero-CMI-PMO/" target="_blank" style="color:var(--accent);font-weight:700">GitHub Pages</a> o ejecuta un servidor local (<code>python -m http.server</code>).</p>
+        </div></div>`;
+      }
+      ensureFuncIndex().then(() => {
+        const c = document.getElementById("op-func-container");
+        if (c && cur === "453" && mode === "op") c.innerHTML = cpe453Card(CPE453);
+      });
+      return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:24px;text-align:center"><p class="hint">Cargando árbol de casos de uso y HU del 453...</p></div></div>`;
+    }
+    return `<div id="op-func-container">${cpe453Card(CPE453)}</div>`;
+  }
+
+  let cod = getFncCodeForProj(p);
+  if (!cod) return "";
+  if (!FUNC) {
+    if (window.location.protocol === "file:") {
+      return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;background:var(--surface);border-left:4px solid var(--accent)">
+        <p class="hint" style="margin:0">ℹ️ <b>Desglose en línea:</b> Las políticas de seguridad del navegador impiden leer archivos JSON locales bajo el protocolo <code>file://</code>. Para interactuar con el desglose de Épicas, Funcionalidades y HUs de Azure DevOps, consulta el tablero oficial en <a href="https://ivanpastor-debug.github.io/Tablero-CMI-PMO/" target="_blank" style="color:var(--accent);font-weight:700">GitHub Pages</a> o ejecuta un servidor local (<code>python -m http.server</code>).</p>
+      </div></div>`;
+    }
+    ensureFuncIndex().then(() => {
+      const c = document.getElementById("op-func-container");
+      if (c && cur === p.id && mode === "op") c.innerHTML = funcCard(cod);
+    });
+    return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:24px;text-align:center"><p class="hint">Cargando funcionalidades de Azure DevOps...</p></div></div>`;
+  }
+  return `<div id="op-func-container">${funcCard(cod)}</div>`;
+}
+
 </script>
 </body></html>
