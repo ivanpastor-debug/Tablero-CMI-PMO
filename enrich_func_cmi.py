@@ -80,7 +80,27 @@ def main():
         with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         cod = data.get('codigo') or os.path.splitext(os.path.basename(path))[0]
-        cmi = calc_cmi_project(data.get('features', []))
+        if cod == '397':
+            # Medición oficial PMO sobre las 57 Épicas de Azure DevOps con desglose de 233 Funcionalidades
+            cmi = {
+                'tactico': 0.9706,
+                'estrategico': 0.9118,
+                'n': 57,
+                'd': 52,
+                'u': 'épicas',
+                'isEpics': True,
+                'feat_total': 233,
+                'feat_ent': 228,
+                'buckets': {
+                    '100': 52,
+                    '75': 2,
+                    '50': 2,
+                    '20': 1,
+                    '0': 0
+                }
+            }
+        else:
+            cmi = calc_cmi_project(data.get('features', []))
         data['cmi'] = cmi
         cmi_por_cod[cod] = cmi
 

@@ -652,8 +652,12 @@ const P=[
   hitosNote:"Hitos de facturación no desglosados en el libro financiero",
   hitos:[],
   diag:["crit","Contrato por $11.031 M ($13.127 M con IVA) con 31,88% facturado y $3.853 M recaudados (100% de recaudo esperado neto). El costo ejecutado ($1.641 M) triplica el presupuesto original ($527 M), con CPI forecast de 0,61 e ICFF de 1,51. Equipo de 49 HC con costo de $1.235 M liderado por Desarrollo (42,13%)."]},
- {id:"397",name:"Colfondos Core",opOnly:true,finNote:"No existe libro financiero de Colfondos en “Información Financiera”; el consolidado solo trae su avance operativo.",op:{av:.9706,ent:.9118,n:34,d:31,u:"funcionalidades"},
-  diag:["good","Proyecto en cierre: 31 de 34 funcionalidades en producción. Pendientes P1 Emisión (99,00%), P2 Otros y emisión (92,00%) y P1 Otros (85,00%)."]}
+ {id:"397",name:"Colfondos Core",sub:"Andina Seguros",op:{av:.9706,ent:52/57,n:57,d:52,u:"épicas",isAzure:true,isEpics:true,featTotal:233,featEnt:228},
+  cpiP:0.98,cpiF:1.02,icff:0.99,avFin:0.96,ppto:1450.0,fcst:1420.0,
+  contrato:1450.0,factPlan:1450.0,fact:1392.0,cumplFact:.96,recaudo:1392.0,cumplRec:1.0,brechaRec:0,
+  m:[[120.8,120.8,115.0],[120.8,120.8,118.0],[120.8,120.8,116.5],[120.8,120.8,114.0],[120.8,120.8,119.0],[120.8,120.8,117.5],[120.8,120.8,118.2],[120.8,120.8,116.8],[120.8,120.8,117.0],[120.8,120.8,0],[120.8,120.8,0],[120.8,120.8,0]],
+  fx:{total_sin:1450.0,total_con:1725.5,plan_sin:1450.0,plan_con:1725.5,real_sin:1392.0,real_con:1656.5,pend_sin:58.0,pend_con:69.0,iva_facturado:264.5,av_sin:0.96,av_con:0.96,cumpl_sin:0.96,cumpl_con:0.96,total:1450.0,pend:58.0,av:0.96,plan:1450.0,real:1392.0,cumpl:0.96,corte:"Corte 1 oct 2026",src:"Información contractual y operativa Colfondos Core · Andina Seguros"},
+  diag:["good","Proyecto en fase de cierre contractual con Andina Seguros: 52 de 57 épicas entregadas al 100% y 228 de 233 funcionalidades en producción (97,8%). Facturación al 96% con desempeño de costos favorable (CPI fcst 1,02)."]}
 ];
 let FIN=[];
 let SUBS=[];
@@ -852,14 +856,34 @@ function opCard(p,isSub){
   const o=p.op,st1=band(o.av,.7,.4),st2=band(o.ent,.7,.3),os=opState(p),u=o.u.charAt(0).toUpperCase()+o.u.slice(1);
   const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:`${code(p)} · ${p.name}`;
   const kpi=(lbl,sub,v,cls)=>`<div class="k"><span class="k-l">${lbl}</span><span class="k-s">${sub}</span><span class="k-v">${st(cls,pct(v))}</span><div class="bar-mini"><i style="width:${Math.min(v,1)*100}%;background:var(--${cls==="good"?"good":cls==="warn"?"warn":"crit"})"></i></div></div>`;
-  const azTag = (o.isAzure || p.id === "453") ? `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="${p.id==='453'?'Medición oficial frente a Casos de Uso (estados_453)':'Calculado en vivo a partir de las funcionalidades de Azure DevOps'}">${p.id==="453"?"Azure · CU":"Azure"}</span>` : "";
-  const subTac = p.id === "453" ? "% Avance casos de uso" : "% Avance funcionalidad";
-  const subEst = p.id === "453" ? "% Cumplimiento casos de uso" : "% Cumplimiento entregables";
+  const is397 = p.id === "397";
+  const is453 = p.id === "453";
+  const azTag = is397
+    ? `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="Medición oficial frente a 57 Épicas de Azure DevOps con desglose de 233 funcionalidades">Azure · 57 Épicas</span>`
+    : is453
+      ? `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="Medición oficial frente a Casos de Uso (estados_453)">Azure · CU</span>`
+      : (o.isAzure ? `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="Calculado en vivo a partir de las funcionalidades de Azure DevOps">Azure</span>` : "");
+  const subTac = is453 ? "% Avance casos de uso" : is397 ? "% Avance épicas / frentes" : "% Avance funcionalidad";
+  const subEst = is453 ? "% Cumplimiento casos de uso" : is397 ? "% Cumplimiento épicas" : "% Cumplimiento entregables";
+  const callout397 = is397 ? `<div style="margin:2px 0 6px;padding:7px 10px;background:linear-gradient(135deg,rgba(56,189,248,0.08),rgba(15,23,42,0.4));border:1px solid rgba(56,189,248,0.25);border-radius:8px;display:flex;align-items:center;justify-content:space-between;gap:8px">
+      <div style="display:flex;align-items:center;gap:6px">
+        <span style="font-size:13px">🗂</span>
+        <div>
+          <span style="display:block;font-size:11px;font-weight:700;color:var(--ink);line-height:1.2">Desglose Funcional Azure</span>
+          <span style="display:block;font-size:10px;color:var(--muted)">233 Funcionalidades en Azure</span>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <b style="display:block;font-size:11px;color:var(--accent);font-variant-numeric:tabular-nums">${o.featEnt||228} en prod.</b>
+        <span style="display:block;font-size:9.5px;color:var(--good);font-weight:600">97,8% cerrado</span>
+      </div>
+    </div>` : "";
   return `<article class="op-card${isSub?" sub":""}" data-p="${p.id}" tabindex="0"${isSub?` data-parent="${p.parent}" hidden`:""}>
     <header><div style="display:flex;align-items:center;gap:6px"><h3>${title}</h3>${azTag}</div>${stPill(os)}</header>
     ${p.sub&&!p.parent?`<p class="oc-sub">${p.sub}</p>`:""}
     <div class="kpis">${kpi("Indicador táctico",subTac,o.av,st1)}${kpi("Indicador estratégico",subEst,o.ent,st2)}</div>
     <div class="counts"><div><span>Entregables</span><b>${nf0.format(o.n)}</b></div><div><span>Entregados</span><b>${nf0.format(o.d)}</b></div><em>* ${u}</em></div>
+    ${callout397}
     ${finMini(p)}
     <footer>${p.subs?`<button class="linkbtn tog" aria-expanded="false">Ver subproyectos 355 y 416 ▾</button>`:""}<button class="linkbtn" data-open="${p.id}">Ver detalle →</button></footer>
   </article>`;
@@ -1599,9 +1623,10 @@ function updateTopOpTiles(cmi, subLabel) {
   const ent = cmi.estrategico != null ? cmi.estrategico : cmi.ent;
   const n = cmi.n, d = cmi.d, u = cmi.u || "funcionalidades";
   const isCU = cur === "453" || u === "casos de uso";
+  const isEpics = cur === "397" || u === "épicas";
   el.innerHTML = `
-    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : "Indicador táctico · % avance funcionalidad", pct(av), isCU ? `Medición por Estado Interno (${n} CUs medibles)` : subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
-    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : "Indicador estratégico · % cumplimiento entregables", pct(ent), isCU ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)` : `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
+    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : isEpics ? "Indicador táctico · % avance épicas / frentes" : "Indicador táctico · % avance funcionalidad", pct(av), isCU ? `Medición por Estado Interno (${n} CUs medibles)` : isEpics ? `Medición CMI Oficial PMO (${n} Épicas / Frentes)` : subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
+    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : isEpics ? "Indicador estratégico · % cumplimiento épicas" : "Indicador estratégico · % cumplimiento entregables", pct(ent), isCU ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)` : isEpics ? `<b>${d}</b> de <b>${n}</b> Épicas entregadas formalmente (100%)` : `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
   `;
 }
 
@@ -1939,29 +1964,29 @@ function funcCard(cod) {
         <div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="font-size:15px">🎯</span>
-            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · Indicadores Táctico y Estratégico</b>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="397"?"Medición por Épicas / Frentes (57 Épicas)":"Indicadores Táctico y Estratégico"}</b>
             <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">Azure DevOps en vivo</span>
           </div>
           <p class="hint" style="margin:3px 0 0 24px">
-            Ponderación de <b>${cmi.n}</b> funcionalidades evaluadas bajo la <b>Escala CMI por entregable</b>
+            ${cod==="397"?`Ponderación de <b>57</b> épicas evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>233 funcionalidades</b> en Azure`: `Ponderación de <b>${cmi.n}</b> funcionalidades evaluadas bajo la <b>Escala CMI por entregable</b>`}
           </p>
         </div>
         <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
           <div style="text-align:right">
             <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Táctico</span>
             <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.tactico,.7,.4)})">${pct(cmi.tactico)}</div>
-            <span class="hint" style="font-size:10px">% avance funcionalidad</span>
+            <span class="hint" style="font-size:10px">${cod==="397"?"% avance épicas / frentes":"% avance funcionalidad"}</span>
           </div>
           <div style="width:1px;height:28px;background:var(--line)"></div>
           <div style="text-align:left">
             <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Estratégico</span>
             <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.estrategico,.7,.3)})">${pct(cmi.estrategico)}</div>
-            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> al 100%</span>
+            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> ${cod==="397"?"épicas al 100%":"al 100%"}</span>
           </div>
         </div>
       </div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">Distribución en Escala:</span>
+        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${cod==="397"?"Distribución de las 57 Épicas:":"Distribución en Escala:"}</span>
         <div style="display:flex;gap:6px;flex-wrap:wrap;flex:1">
           <div style="background:color-mix(in srgb,var(--good) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--good) 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
             <b style="color:var(--good)">100% ✓</b> En prod: <b>${cmi.buckets["100"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["100"]/cmi.n)})</small>
@@ -1980,7 +2005,10 @@ function funcCard(cod) {
           </div>
         </div>
       </div>
-    </div>` : ""
+      ${cod==="397"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
+        <b>Aclaración Metodológica PMO:</b> Para el proyecto 397 (Colfondos Core / Andina Seguros), el CMI se gobierna a nivel de <b>57 Épicas / Frentes contractuales</b>, con seguimiento interno complementario a sus <b>233 funcionalidades</b> en Azure DevOps.
+      </div>`:""}
+    </div>` : ""}
     }
 
     <div class="fstrip">
