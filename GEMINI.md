@@ -183,3 +183,16 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Matrices regeneradas: `Entregables_y_Entregados_Proyectos_PMO.xlsx` y `.csv`.
   - Archivos espejo sincronizados y verificación exitosa con `ACTUALIZAR.py --dry-run`.
   - Despliegue en producción completado en GitHub Pages.
+
+---
+
+## 12. Registro de Estandarización Visual Ejecutiva para todo el Portafolio (15-oct-2026)
+* **Generalización del Diseño Visual Aprobado en 397:**
+  - Se extendió a todas las tarjetas de proyecto en `#sem-op` (005, POS, 355, 416, 384, 419, 453, 421, 456, 348, 397) la misma arquitectura visual uniforme:
+    1. **Encabezado con Código, Nombre y Subtítulo de Cliente:** subtítulo visible en todos los proyectos (`p.sub`), incluyendo subproyectos 355 y 416.
+    2. **Insignia Dinámica de Origen (`getBadgeTag`):** Muestra el alcance exacto de medición de cada proyecto (`Azure · 77 Func.`, `Azure · 87 Func.`, `Azure · 543 Func.`, `Azure · 168 Func.`, `Azure · 66 Func.`, `Azure · 95 Func.`, `Azure · 57 Épicas`, `Azure · 45 CUs`, `Contractual · 6 Hitos`).
+    3. **Contenedor Callout Estilizado (`getProjCallout`):** Bloque con degradado aeroespacial y borde celeste sutil que resalta para cada proyecto su alcance, entregables en producción y % cerrado en Azure / contrato.
+    4. **Bloque Financiero Enriquecido (`finMini`):** Integra el porcentaje de avance de facturación contractual (`Sin/Con IVA · % av.`) directamente en el subtítulo de "Valor facturado", permitiendo lectura ejecutiva inmediata.
+* **Sincronización y Despliegue:**
+  - Verificación exitosa de compatibilidad con `ACTUALIZAR.py --dry-run`.
+  - Sincronización en las 4 rutas espejo y despliegue automático en GitHub Pages.
