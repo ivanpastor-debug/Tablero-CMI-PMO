@@ -161,5 +161,25 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - **Nivel Casos de Uso:** Nueva columna `Iteración / Fecha` en la tabla de detalle con insignias visuales (ej. `📅 2026-06-02 (Rel. 3)`), vinculando cada CU a la fecha de entrega de su release.
   - **Panel de Supervisión Superior (`#cpe-cu`):** Actualización a hitos de releases por iteración con sus fechas contractuales, CU/HU componentes y semáforos en tiempo real.
 
+---
 
-
+## 11. Registro de Homologación de Épicas y Alcance Funcional en 397 (Colfondos Core · Andina Seguros) (15-oct-2026)
+* **Identidad y Cliente:**
+  - Cliente oficial: **Andina Seguros**.
+  - Nombre del proyecto en Azure DevOps: **Colfondos Core** (Código PMO: `397`).
+  - Se corrigió el cruce de nombres con Previsora en matrices y reportes.
+* **Gobernanza de Entregables CMI sobre 57 Épicas:**
+  - En Azure DevOps el proyecto cuenta globalmente con **57 Épicas (Epics / Frentes)** y **233 Funcionalidades (Features)**.
+  - La unidad oficial de entregable contractual CMI para 397 se mide sobre las **57 Épicas**:
+    - **Indicador Táctico:** **97,06%** (promedio ponderado en la escala CMI PMO).
+    - **Indicador Estratégico:** **91,18%** (52 de 57 Épicas entregadas formalmente al 100%).
+  - **Aclaración destacada permanente:** En la tarjeta `#sem-op`, en los tiles `#op-tiles-top` y en el banner `#func-cmi-summary` se resalta el desglose técnico de **233 Funcionalidades** de Azure DevOps (228 en producción · 97,8% cerrado).
+* **Dimensión Financiera Corporativa:**
+  - Integración en la tarjeta de portafolio y ficha de proyecto:
+    - Valor contrato: $1.450 M (Sin IVA) / $1.725 M (Con IVA) con reactividad ante el conmutador de IVA.
+    - Facturación acumulada: $1.392 M (Sin IVA) / $1.656 M (Con IVA) (96,0% de avance).
+    - Indicadores EVM: CPI Forecast de 1,02 y CPI Presupuesto de 0,98 con 100% de recaudo esperado neto.
+* **Sincronización y Validación:**
+  - Matrices regeneradas: `Entregables_y_Entregados_Proyectos_PMO.xlsx` y `.csv`.
+  - Archivos espejo sincronizados y verificación exitosa con `ACTUALIZAR.py --dry-run`.
+  - Despliegue en producción completado en GitHub Pages.
