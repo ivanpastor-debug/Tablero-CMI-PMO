@@ -240,4 +240,31 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Verificación exitosa con `python ACTUALIZAR.py --dry-run`.
   - Sincronización completa en las 4 rutas espejo y publicación automática en GitHub Pages.
 
+---
+
+## 15. Registro de Estandarización de Nombres Oficiales de Todo el Portafolio (16-oct-2026)
+* **Homologación Global de Nombres Oficiales de Proyectos:**
+  - **005:** `005 - PROYECTO POSITIVA SGDEA 2026 - 3T`
+  - **416 / POS:** `416 - PROYECTO DE DESARROLLO Y SOPORTE CORE POSITIVA` (incluyendo su subproyecto 416 y el consolidado POS)
+  - **384:** `384 - PROYECTO CORE FIDUPREVISORA`
+  - **419:** `419- DEPOSITOS JUDICIALES`
+  - **421:** `421 - PROYECTO BALÚ`
+  - **453:** `453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026`
+  - **456:** `456 - PROYECTO INNOVACION AEREONAUTICA CIVIL`
+  - **348:** `348 - PROYECTO SGDEA ACUEDUCTO`
+  - **397:** `397 - PROYECTO CORE ANDINA`
+* **Campos y Componentes Actualizados:**
+  - Chips superiores de navegación (`#pchips`).
+  - Tarjetas de portafolio operativo (`.op-card` en `#sem-op`).
+  - Filas de la tabla resumen de proyectos (`semName`).
+  - Gráfico de flujo contractual *"Del contrato a la caja"* (`#flow` en `renderFlow`).
+  - Gráfico comparativo de costos *"Costo real 2026 vs forecast"* (`#c-costport` en `renderCostPort`).
+  - Contenedores callout de cada tarjeta (`PROJ_CALLOUT_META`).
+  - Aclaración metodológica PMO en la vista funcional de 397 y título de supervisión contractual en 456.
+  - Lógica anti-duplicación de código: evaluación de `(p.name.startsWith(code(p)) || p.id === "POS")` para evitar prefijos redundantes (evita `005 · 005 - ...` o `355 / 416 · 416 - ...`).
+* **Sincronización y Validación:**
+  - Verificación exitosa de compatibilidad con `ACTUALIZAR.py --dry-run` (0 errores de regex).
+  - Sincronización en las 4 rutas espejo y despliegue a producción vía GitHub Pages.
+
+
 
