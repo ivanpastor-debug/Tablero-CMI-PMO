@@ -196,3 +196,33 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
 * **Sincronización y Despliegue:**
   - Verificación exitosa de compatibilidad con `ACTUALIZAR.py --dry-run`.
   - Sincronización en las 4 rutas espejo y despliegue automático en GitHub Pages.
+
+---
+
+## 13. Registro de Medición por Épicas del Portafolio, Excepción 419 y Limpieza Operativa (16-oct-2026)
+* **Gobernanza de Entregables CMI sobre Épicas / Frentes:**
+  - Los entregables principales para los proyectos con trabajo en Azure DevOps se miden contractualmente frente a las **Épicas (Epics / Frentes)**:
+    - 005 SGDEA DOCUM: 18 Épicas (7 entregadas · 38,89% estratégico, 50,56% táctico).
+    - POS Positiva Core: 20 Épicas (0 entregadas · 0,00% estratégico, 21,85% táctico) con subproyectos 355 (18 Épicas) y 416 (2 Épicas).
+    - 384 Core Fiduprevisora: 32 Épicas (1 entregada al 100%: *15 PDI PORTAFOLIO DE INVERSIONES* · 3,12% estratégico, 42,19% táctico).
+    - 421 BALÚ: 2 Frentes contractuales (0 entregados · 0,00% estratégico, 35,00% táctico).
+    - 348 SGDEA Acueducto: 10 Épicas (1 entregada al 100%: *Assesment de Madurez* · 10,00% estratégico, 25,29% táctico).
+    - 397 Colfondos Core: 57 Épicas (52 entregadas · 91,18% estratégico, 97,06% táctico).
+  - Todas las tarjetas operativas (`#sem-op`), tiles (`#op-tiles-top`) y banners CMI reflejan esta unidad de gobierno con desglose complementario de Features en el callout.
+* **Excepción Oficial Proyecto 419 (Depósitos Judiciales):**
+  - Mantiene los indicadores y volumetría oficial del **archivo maestro local PMO**:
+    - Entregables: **466 funcionalidades** (125 certificadas por el cliente).
+    - **Indicador Estratégico:** **26,82%** (125 / 466).
+    - **Indicador Táctico:** **12,01%**.
+    - Badge: `Local · 466 Func.`
+  - Callout conmutado a la trazabilidad en Azure DevOps: `168 Funcionalidades en Azure` · `60 en prod. · 35,7% cerrado`.
+* **Optimización de la Ficha Operativa (`renderOpBody`):**
+  - Se retiró el panel y gráfica estática redundante *"Escala CMI por frente"* (`#fr-list`) en todos los proyectos que cuentan con el desglose interactivo de Azure DevOps (`renderFncSection`), dando paso directo a la jerarquía funcional viva.
+  - **Preservación estricta de 456 (Aeronáutica Civil):** Mantiene sin cambios su visualización contractual de 2 columnas (`#fr-list` Escala CMI por fase + `table.xl.tbl-crono-456` Desviación del Cronograma) conforme a la Regla 4.
+  - Se conservaron los paneles complementarios de 419 (`#c-419` Entregas y certificaciones) y 453 (`#cpe-cu` Casos de uso / releases).
+* **Corrección de Sintaxis Visual:**
+  - Se eliminó el caracter literal stray `}` que se renderizaba indebidamente tras el banner resumen de la Escala CMI.
+* **Validación y Despliegue:**
+  - Verificación exitosa sin errores de regex con `python ACTUALIZAR.py --dry-run`.
+  - Sincronización en las 4 rutas espejo y despliegue a producción vía GitHub Pages.
+

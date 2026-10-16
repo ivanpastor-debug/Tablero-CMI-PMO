@@ -11943,17 +11943,20 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.4906,
-    "estrategico": 0.3675,
-    "n": 117,
-    "d": 43,
-    "u": "funcionalidades",
+    "tactico": 0.29,
+    "estrategico": 0.1,
+    "n": 10,
+    "d": 1,
+    "u": "épicas",
+    "isEpics": true,
+    "feat_total": 117,
+    "feat_ent": 43,
     "buckets": {
-      "100": 43,
+      "100": 1,
       "75": 0,
-      "50": 22,
-      "20": 17,
-      "0": 35
+      "50": 3,
+      "20": 2,
+      "0": 4
     }
   }
 }

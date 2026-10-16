@@ -855,30 +855,32 @@ function finMini(p){
 }
 
 const PROJ_CALLOUT_META = {
-  "005": { tag: "Azure · 77 Func.", title: "Desglose Funcional Azure (004)", sub: "77 Funcionalidades en Azure", ent: "43 en prod.", pct: "55,8% cerrado", icon: "🗂" },
-  "POS": { tag: "Azure · 87 Func.", title: "Desglose Consolidado (355 + 416)", sub: "87 Funcionalidades en Azure", ent: "6 en prod.", pct: "6,9% cerrado", icon: "🗂" },
-  "355": { tag: "Azure · 80 Func.", title: "Desglose Funcional Azure (355)", sub: "80 Funcionalidades en Azure", ent: "6 en prod.", pct: "7,5% cerrado", icon: "🗂" },
-  "416": { tag: "Azure · 7 Func.", title: "Desglose Funcional Azure (416)", sub: "7 Funcionalidades en Azure", ent: "0 en prod.", pct: "0,0% cerrado", icon: "🗂" },
-  "384": { tag: "Azure · 543 Func.", title: "Desglose Funcional Azure", sub: "543 Funcionalidades en Azure", ent: "155 en prod.", pct: "28,6% cerrado", icon: "🗂" },
-  "419": { tag: "Azure · 168 Func.", title: "Desglose Funcional Azure (DEP + RAMA)", sub: "168 Funcionalidades en Azure", ent: "60 en prod.", pct: "35,7% cerrado", icon: "🗂" },
+  "005": { tag: "Azure · 18 Épicas", title: "Desglose Funcional Azure (004)", sub: "77 Funcionalidades en Azure", ent: "43 en prod.", pct: "55,8% cerrado", icon: "🗂" },
+  "POS": { tag: "Azure · 20 Épicas", title: "Desglose Consolidado (355 + 416)", sub: "87 Funcionalidades en Azure", ent: "6 en prod.", pct: "6,9% cerrado", icon: "🗂" },
+  "355": { tag: "Azure · 18 Épicas", title: "Desglose Funcional Azure (355)", sub: "80 Funcionalidades en Azure", ent: "6 en prod.", pct: "7,5% cerrado", icon: "🗂" },
+  "416": { tag: "Azure · 2 Épicas", title: "Desglose Funcional Azure (416)", sub: "7 Funcionalidades en Azure", ent: "0 en prod.", pct: "0,0% cerrado", icon: "🗂" },
+  "384": { tag: "Azure · 32 Épicas", title: "Desglose Funcional Azure", sub: "543 Funcionalidades en Azure", ent: "155 en prod.", pct: "28,6% cerrado", icon: "🗂" },
+  "419": { tag: "Local · 466 Func.", title: "Desglose Funcional Azure (DEP + RAMA)", sub: "168 Funcionalidades en Azure", ent: "60 en prod.", pct: "35,7% cerrado", icon: "🗂" },
   "453": { tag: "Azure · 45 CUs", title: "Medición Oficial por Casos de Uso", sub: "45 Casos de Uso medibles (CPE)", ent: "4 en estado 19. Entregado", pct: "8,9% cumplido", icon: "🎯" },
-  "421": { tag: "Azure · 66 Func.", title: "Desglose Funcional Azure", sub: "66 Funcionalidades en Azure", ent: "19 en prod.", pct: "28,8% cerrado", icon: "🗂" },
+  "421": { tag: "Azure · 2 Frentes", title: "Desglose Funcional Azure", sub: "66 Funcionalidades en Azure", ent: "19 en prod.", pct: "28,8% cerrado", icon: "🗂" },
   "456": { tag: "Contractual · 6 Hitos", title: "Supervisión Contractual por Fases", sub: "3 Fases Metodológicas e Innovación", ent: "1 de 6 entregables", pct: "16,7% cerrado", icon: "📐" },
-  "348": { tag: "Azure · 95 Func.", title: "Desglose Funcional Azure", sub: "95 Funcionalidades en Azure", ent: "15 en prod.", pct: "15,8% cerrado", icon: "🗂" },
+  "348": { tag: "Azure · 10 Épicas", title: "Desglose Funcional Azure", sub: "95 Funcionalidades en Azure", ent: "15 en prod.", pct: "15,8% cerrado", icon: "🗂" },
   "397": { tag: "Azure · 57 Épicas", title: "Desglose Funcional Azure", sub: "233 Funcionalidades en Azure", ent: "228 en prod.", pct: "97,8% cerrado", icon: "🗂" }
 };
 
 function getBadgeTag(p, o) {
   const meta = PROJ_CALLOUT_META[p.id];
-  const tagText = meta ? meta.tag : (o.isAzure ? `Azure · ${o.n} Func.` : "");
+  const tagText = meta ? meta.tag : (o.isAzure ? `Azure · ${o.n} ${o.u}` : "");
   if (!tagText) return "";
-  const tip = p.id === "397"
-    ? "Medición oficial frente a 57 Épicas de Azure DevOps con desglose de 233 funcionalidades"
-    : p.id === "453"
-      ? "Medición oficial frente a Casos de Uso (estados_453)"
-      : p.id === "456"
-        ? "Supervisión contractual de 3 fases y 6 entregables"
-        : `Calculado en vivo a partir de las funcionalidades de Azure DevOps (${o.n} activas)`;
+  const tip = p.id === "453"
+    ? "Medición oficial frente a Casos de Uso (estados_453)"
+    : p.id === "456"
+      ? "Supervisión contractual de 3 fases y 6 entregables"
+      : p.id === "419"
+        ? "Medición oficial del archivo local PMO (125 de 466 entregables) con desglose de 168 funcionalidades Azure"
+        : p.id === "421"
+          ? "Medición oficial frente a 2 Frentes contractuales de Azure DevOps"
+          : `Medición oficial frente a ${o.n} Épicas / Frentes de Azure DevOps`;
   return `<span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good);padding:1px 6px;border-radius:4px" title="${tip}">${tagText}</span>`;
 }
 
@@ -892,15 +894,20 @@ function getProjCallout(p) {
   let pctVal = meta.pct;
   const icon = meta.icon || "🗂";
 
-  if (o.cmi && p.id !== "397" && p.id !== "456") {
+  if (o.cmi) {
     if (p.id === "453") {
       sub = `${o.cmi.n} Casos de Uso medibles (CPE)`;
       ent = `${o.cmi.d} en estado 19. Entregado`;
       pctVal = `${pct(o.cmi.estrategico)} cumplido`;
-    } else {
-      sub = `${o.cmi.n} Funcionalidades en Azure`;
-      ent = `${o.cmi.d} en prod.`;
-      pctVal = `${pct(o.cmi.estrategico)} cerrado`;
+    } else if (p.id === "456") {
+      sub = `3 Fases Metodológicas e Innovación`;
+      ent = `1 de 6 entregables`;
+      pctVal = `16,7% cerrado`;
+    } else if (o.cmi.feat_total) {
+      sub = `${o.cmi.feat_total} Funcionalidades en Azure`;
+      ent = `${o.cmi.feat_ent} en prod.`;
+      const ratio = o.cmi.feat_total > 0 ? o.cmi.feat_ent / o.cmi.feat_total : 0;
+      pctVal = `${pct(ratio)} cerrado`;
     }
   }
 
@@ -923,11 +930,13 @@ function opCard(p,isSub){
   const o=p.op,st1=band(o.av,.7,.4),st2=band(o.ent,.7,.3),os=opState(p),u=o.u.charAt(0).toUpperCase()+o.u.slice(1);
   const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:`${code(p)} · ${p.name}`;
   const kpi=(lbl,sub,v,cls)=>`<div class="k"><span class="k-l">${lbl}</span><span class="k-s">${sub}</span><span class="k-v">${st(cls,pct(v))}</span><div class="bar-mini"><i style="width:${Math.min(v,1)*100}%;background:var(--${cls==="good"?"good":cls==="warn"?"warn":"crit"})"></i></div></div>`;
-  const is397 = p.id === "397";
-  const is453 = p.id === "453";
+  const isCU = p.id === "453" || o.u === "casos de uso";
+  const isHitos = p.id === "456";
+  const isFrentes = p.id === "421" || o.u === "frentes";
+  const is419 = p.id === "419";
+  const subTac = isCU ? "% Avance casos de uso" : isHitos ? "% Avance entregables" : isFrentes ? "% Avance frentes" : is419 ? "% Avance funcionalidad" : "% Avance épicas / frentes";
+  const subEst = isCU ? "% Cumplimiento casos de uso" : isHitos ? "% Cumplimiento entregables" : isFrentes ? "% Cumplimiento frentes" : is419 ? "% Cumplimiento entregables" : "% Cumplimiento épicas";
   const azTag = getBadgeTag(p, o);
-  const subTac = is453 ? "% Avance casos de uso" : is397 ? "% Avance épicas / frentes" : (p.id === "456" ? "% Avance entregables" : "% Avance funcionalidad");
-  const subEst = is453 ? "% Cumplimiento casos de uso" : is397 ? "% Cumplimiento épicas" : "% Cumplimiento entregables";
   const callout = getProjCallout(p);
   return `<article class="op-card${isSub?" sub":""}" data-p="${p.id}" tabindex="0"${isSub?` data-parent="${p.parent}" hidden`:""}>
     <header><div style="display:flex;align-items:center;gap:6px"><h3>${title}</h3>${azTag}</div>${stPill(os)}</header>
@@ -1043,36 +1052,42 @@ function renderModeBody(p,g){
 function renderOpBody(p,g,el){
   const o=p.op;
   const isCU = p.id === "453" || o.isCU;
+  const isEpics = o.u === "épicas" || o.u === "frentes" || (o.cmi && o.cmi.isEpics);
+  const is419 = p.id === "419";
   let h=`<div class="section grid g-tiles" id="op-tiles-top">
-    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : "Indicador táctico · % avance funcionalidad", pct(o.av), isCU ? `Medición por Estado Interno (${o.n} CUs medibles)` : o.isAzure ? `Medición en vivo Azure DevOps (${o.n} func)` : "", band(o.av,.7,.4))}
-    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : "Indicador estratégico · % cumplimiento entregables", pct(o.ent), isCU ? `<b>${o.d}</b> de <b>${o.n}</b> Casos de Uso entregados (100%)` : o.isAzure ? `<b>${o.d}</b> de <b>${o.n}</b> ${o.u} al 100% en Azure` : `${o.d} de ${o.n} ${o.u} entregados`, band(o.ent,.7,.3))}
+    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : isEpics ? "Indicador táctico · % avance épicas / frentes" : "Indicador táctico · % avance funcionalidad", pct(o.av), isCU ? `Medición por Estado Interno (${o.n} CUs medibles)` : is419 ? `Medición archivo local PMO (${o.n} func)` : isEpics ? `Medición CMI Oficial PMO (${o.n} Épicas / Frentes)` : o.isAzure ? `Medición en vivo Azure DevOps (${o.n} func)` : "", band(o.av,.7,.4))}
+    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : isEpics ? "Indicador estratégico · % cumplimiento épicas" : "Indicador estratégico · % cumplimiento entregables", pct(o.ent), isCU ? `<b>${o.d}</b> de <b>${o.n}</b> Casos de Uso entregados (100%)` : is419 ? `<b>${o.d}</b> de <b>${o.n}</b> funcionalidades entregadas (100%)` : isEpics ? `<b>${o.d}</b> de <b>${o.n}</b> Épicas entregadas formalmente (100%)` : o.isAzure ? `<b>${o.d}</b> de <b>${o.n}</b> ${o.u} al 100% en Azure` : `${o.d} de ${o.n} ${o.u} entregados`, band(o.ent,.7,.3))}
   </div>`;
   if(p.opParts)h+=`<div class="section panel"><div class="sec-h"><h2>Consolidado 355 + 416</h2></div><div class="tbl-wrap"><table class="xl"><thead><tr><th>Subproyecto</th><th class="n">Entregables</th><th class="n">Entregados</th><th class="n">% avance funcionalidad</th><th class="n">% cumplimiento entregables</th></tr></thead><tbody>${p.opParts.map(x=>`<tr><td>${x.id}</td><td class="n">${x.op.n} <small style="color:var(--muted)">${x.op.u}</small></td><td class="n">${x.op.d}</td><td class="n">${pct(x.op.av)}</td><td class="n">${pct(x.op.ent)}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${p.op.n}</td><td class="n">${p.op.d}</td><td class="n">${pct(p.op.av)}</td><td class="n">${pct(p.op.ent)}</td></tr></tbody></table></div></div>`;
-  h+=`<div class="section grid ${p.id==="419"||p.id==="453"||p.id==="456"?"g-2":""}">`;
-  h+=`<div class="panel"><div class="sec-h"><h2>${p.id==="453"?"Escala CMI por foco":p.id==="456"?"Escala CMI por fase":"Escala CMI por frente"}</h2></div><div id="fr-list"></div></div>`;
-    if(p.id==="456")h+=`<div class="panel"><div class="sec-h"><h2>Desviación del Cronograma (Línea Base vs 05-oct-2026)</h2><p>Línea base (30-dic-2026) vs Pronóstico actualizado (28-ene-2027) por fases</p></div>
-    <div class="tbl-wrap"><table class="xl tbl-crono-456">
-      <thead><tr><th class="col-ent">Fase / Entregable Contractual</th><th class="col-peso">Peso</th><th class="col-date">Fin Base</th><th class="col-date">Fin Act.</th><th class="col-desv">Desv.</th><th class="col-st">Estado / CMI</th></tr></thead>
-      <tbody>
-        <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase I</b> · Estructuración y Metodología (Peso Fase: 30% · Avance CMI: 80,00%)</td></tr>
-        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Propuesta metodológica e indicadores</td><td class="col-peso">18%</td><td class="col-date">15/07/2026</td><td class="col-date">15/07/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st good">100% Producción</span></td></tr>
-        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Transferencia metodológica y hoja de ruta</td><td class="col-peso">12%</td><td class="col-date">23/09/2026</td><td class="col-date">23/09/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st warn">50% &gt;80% (Gate 1)</span></td></tr>
+  if(p.id==="456"){
+    h+=`<div class="section grid g-2">
+      <div class="panel"><div class="sec-h"><h2>Escala CMI por fase</h2></div><div id="fr-list"></div></div>
+      <div class="panel"><div class="sec-h"><h2>Desviación del Cronograma (Línea Base vs 05-oct-2026)</h2><p>Línea base (30-dic-2026) vs Pronóstico actualizado (28-ene-2027) por fases</p></div>
+      <div class="tbl-wrap"><table class="xl tbl-crono-456">
+        <thead><tr><th class="col-ent">Fase / Entregable Contractual</th><th class="col-peso">Peso</th><th class="col-date">Fin Base</th><th class="col-date">Fin Act.</th><th class="col-desv">Desv.</th><th class="col-st">Estado / CMI</th></tr></thead>
+        <tbody>
+          <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase I</b> · Estructuración y Metodología (Peso Fase: 30% · Avance CMI: 80,00%)</td></tr>
+          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Propuesta metodológica e indicadores</td><td class="col-peso">18%</td><td class="col-date">15/07/2026</td><td class="col-date">15/07/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st good">100% Producción</span></td></tr>
+          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Transferencia metodológica y hoja de ruta</td><td class="col-peso">12%</td><td class="col-date">23/09/2026</td><td class="col-date">23/09/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st warn">50% &gt;80% (Gate 1)</span></td></tr>
 
-        <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte I</b> · Experimento 1: UX y Resultados (Peso Fase: 40% · Avance CMI: 0,00%)</td></tr>
-        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Experimento testeo UX sobre 2 problemas (MVP 1)</td><td class="col-peso">20%</td><td class="col-date">11/11/2026</td><td class="col-date">19/11/2026</td><td class="col-desv"><span class="st warn">+8 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (En curso)</span></td></tr>
-        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Informes de resultados e informe entidad</td><td class="col-peso">12%</td><td class="col-date">19/11/2026</td><td class="col-date">04/12/2026</td><td class="col-desv"><span class="st crit">+15 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
-        <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable III</b> · Transferencia conocimiento y PMV</td><td class="col-peso">8%</td><td class="col-date">20/11/2026</td><td class="col-date">02/12/2026</td><td class="col-desv"><span class="st crit">+12 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
+          <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte I</b> · Experimento 1: UX y Resultados (Peso Fase: 40% · Avance CMI: 0,00%)</td></tr>
+          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Experimento testeo UX sobre 2 problemas (MVP 1)</td><td class="col-peso">20%</td><td class="col-date">11/11/2026</td><td class="col-date">19/11/2026</td><td class="col-desv"><span class="st warn">+8 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (En curso)</span></td></tr>
+          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Informes de resultados e informe entidad</td><td class="col-peso">12%</td><td class="col-date">19/11/2026</td><td class="col-date">04/12/2026</td><td class="col-desv"><span class="st crit">+15 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
+          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable III</b> · Transferencia conocimiento y PMV</td><td class="col-peso">8%</td><td class="col-date">20/11/2026</td><td class="col-date">02/12/2026</td><td class="col-desv"><span class="st crit">+12 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
 
-        <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte II</b> · Experimento 2: Procesos Objetivo (Peso Fase: 30% · Avance CMI: 0,00%)</td></tr>
-        <tr style="background:rgba(239,68,68,0.06)"><td class="col-ent">&nbsp;&nbsp;<b>Entregable Único</b> · Experimento 2 procesos objetivo</td><td class="col-peso">30%</td><td class="col-date">09/12/2026</td><td class="col-date" style="color:var(--crit);font-weight:700">26/01/2027</td><td class="col-desv"><span class="st crit"><b>+48 d</b></span></td><td class="col-st"><span class="st crit"><b>0% &lt;50% (Cruza 2027)</b></span></td></tr>
+          <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte II</b> · Experimento 2: Procesos Objetivo (Peso Fase: 30% · Avance CMI: 0,00%)</td></tr>
+          <tr style="background:rgba(239,68,68,0.06)"><td class="col-ent">&nbsp;&nbsp;<b>Entregable Único</b> · Experimento 2 procesos objetivo</td><td class="col-peso">30%</td><td class="col-date">09/12/2026</td><td class="col-date" style="color:var(--crit);font-weight:700">26/01/2027</td><td class="col-desv"><span class="st crit"><b>+48 d</b></span></td><td class="col-st"><span class="st crit"><b>0% &lt;50% (Cruza 2027)</b></span></td></tr>
 
-        <tr class="tot" style="border-top:2px solid var(--line)"><td class="col-ent"><b>Cierre General del Proyecto AC</b></td><td class="col-peso"><b>100%</b></td><td class="col-date"><b>30/12/2026</b></td><td class="col-date" style="color:var(--crit)"><b>28/01/2027</b></td><td class="col-desv"><span class="st crit"><b>+29 d cal.</b></span></td><td class="col-st"><span class="st crit"><b>Desborde fiscal 2027</b></span></td></tr>
-      </tbody>
-    </table></div></div>`;
-  if(p.id==="419")h+=`<div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
-    <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div>`;
-  if(p.id==="453")h+=`<div class="panel"><div class="sec-h"><h2>Casos de uso</h2><p>Hitos de entrega por iteración (Releases) · corte 01-oct-2026</p></div><div id="cpe-cu"></div></div>`;
-  h+=`</div>`;
+          <tr class="tot" style="border-top:2px solid var(--line)"><td class="col-ent"><b>Cierre General del Proyecto AC</b></td><td class="col-peso"><b>100%</b></td><td class="col-date"><b>30/12/2026</b></td><td class="col-date" style="color:var(--crit)"><b>28/01/2027</b></td><td class="col-desv"><span class="st crit"><b>+29 d cal.</b></span></td><td class="col-st"><span class="st crit"><b>Desborde fiscal 2027</b></span></td></tr>
+        </tbody>
+      </table></div></div>
+    </div>`;
+  } else if(p.id==="419"){
+    h+=`<div class="section grid"><div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
+      <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div></div>`;
+  } else if(p.id==="453"){
+    h+=`<div class="section grid"><div class="panel"><div class="sec-h"><h2>Casos de uso</h2><p>Hitos de entrega por iteración (Releases) · corte 01-oct-2026</p></div><div id="cpe-cu"></div></div></div>`;
+  }
   // Gobierno del proyecto: sección oculta a pedido de la PMO (24-sep); datos y renderGov se conservan
   const SHOW_GOV=false;
   if(SHOW_GOV){ h+=`<div class="gov-h"><h2>Gobierno del proyecto</h2><p>${g?"Fuente: "+g.fuente:"Cronograma, riesgos, observaciones, calidad, próximos pasos y capacidad"}</p></div>`;
@@ -1093,7 +1108,7 @@ function renderOpBody(p,g,el){
   }
   h += renderFncSection(p);
   el.innerHTML=h;
-  renderFrentes(p);
+  if(p.id==="456")renderFrentes(p);
   if(p.id==="419")render419();
   if(p.id==="453")renderCU(g);
   if(SHOW_GOV&&g)renderGov(g);
@@ -1296,6 +1311,7 @@ function renderFrentes(p,all){
   const sorted=hasGroups?f:[...f].sort((a,b)=>(b[2]??-1)-(a[2]??-1));
   const list=all||sorted.length<=LIM+2?sorted:sorted.slice(0,LIM);
   const el=$("#fr-list");
+  if(!el)return;
   el.innerHTML=
     `<div class="fr head"><span>${p.id==="453"?"Foco":p.id==="456"?"Entregable Contractual":"Frente"}</span><span class="hu" style="text-align:right">${p.id==="348"?"Func./HU":p.id==="456"?"Peso":p.id==="453"?"Casos de Uso":"Func."}</span><span class="bars">Escala CMI</span><span class="v">Estado</span></div>`+
     list.map(x=>x.length===1?`<div class="fr"><span class="grp">${x[0].replace("§ ","")}</span></div>`:
@@ -1611,9 +1627,9 @@ function applyLiveFuncCmi() {
           ent: c.estrategico,
           n: c.n,
           d: c.d,
-          u: c.u || "funcionalidades",
+          u: c.u || "épicas",
           cmi: c,
-          isAzure: true
+          isAzure: p.id !== "419"
         };
       }
     });
@@ -1632,7 +1648,7 @@ function applyLiveFuncCmi() {
             ent: c.estrategico,
             n: c.n,
             d: c.d,
-            u: "funcionalidades",
+            u: c.u || "épicas",
             cmi: c,
             isAzure: true
           };
@@ -1672,12 +1688,13 @@ function updateTopOpTiles(cmi, subLabel) {
   if (!el || !cmi) return;
   const av = cmi.tactico != null ? cmi.tactico : cmi.av;
   const ent = cmi.estrategico != null ? cmi.estrategico : cmi.ent;
-  const n = cmi.n, d = cmi.d, u = cmi.u || "funcionalidades";
+  const n = cmi.n, d = cmi.d, u = cmi.u || "épicas";
   const isCU = cur === "453" || u === "casos de uso";
-  const isEpics = cur === "397" || u === "épicas";
+  const isEpics = u === "épicas" || u === "frentes" || cmi.isEpics;
+  const is419 = cur === "419";
   el.innerHTML = `
-    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : isEpics ? "Indicador táctico · % avance épicas / frentes" : "Indicador táctico · % avance funcionalidad", pct(av), isCU ? `Medición por Estado Interno (${n} CUs medibles)` : isEpics ? `Medición CMI Oficial PMO (${n} Épicas / Frentes)` : subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
-    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : isEpics ? "Indicador estratégico · % cumplimiento épicas" : "Indicador estratégico · % cumplimiento entregables", pct(ent), isCU ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)` : isEpics ? `<b>${d}</b> de <b>${n}</b> Épicas entregadas formalmente (100%)` : `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
+    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : isEpics ? "Indicador táctico · % avance épicas / frentes" : "Indicador táctico · % avance funcionalidad", pct(av), isCU ? `Medición por Estado Interno (${n} CUs medibles)` : is419 ? `Medición archivo local PMO (${n} func)` : isEpics ? `Medición CMI Oficial PMO (${n} Épicas / Frentes)` : subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
+    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : isEpics ? "Indicador estratégico · % cumplimiento épicas" : "Indicador estratégico · % cumplimiento entregables", pct(ent), isCU ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)` : is419 ? `<b>${d}</b> de <b>${n}</b> funcionalidades entregadas (100%)` : isEpics ? `<b>${d}</b> de <b>${n}</b> Épicas entregadas formalmente (100%)` : `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
   `;
 }
 
@@ -2015,32 +2032,32 @@ function funcCard(cod) {
         <div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="font-size:15px">🎯</span>
-            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="397"?"Medición por Épicas / Frentes (57 Épicas)":"Indicadores Táctico y Estratégico"}</b>
-            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">Azure DevOps en vivo</span>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
+            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">${cod==="419"?"Archivo Local PMO":"Azure DevOps en vivo"}</span>
           </div>
           <p class="hint" style="margin:3px 0 0 24px">
-            ${cod==="397"?`Ponderación de <b>57</b> épicas evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>233 funcionalidades</b> en Azure`: `Ponderación de <b>${cmi.n}</b> funcionalidades evaluadas bajo la <b>Escala CMI por entregable</b>`}
+            ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (125 certificados) con desglose en Azure de <b>${cmi.feat_total||168} funcionalidades</b>`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b>`}
           </p>
         </div>
         <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
           <div style="text-align:right">
             <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Táctico</span>
             <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.tactico,.7,.4)})">${pct(cmi.tactico)}</div>
-            <span class="hint" style="font-size:10px">${cod==="397"?"% avance épicas / frentes":"% avance funcionalidad"}</span>
+            <span class="hint" style="font-size:10px">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?"% avance épicas / frentes":"% avance funcionalidad"}</span>
           </div>
           <div style="width:1px;height:28px;background:var(--line)"></div>
           <div style="text-align:left">
             <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Estratégico</span>
             <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.estrategico,.7,.3)})">${pct(cmi.estrategico)}</div>
-            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> ${cod==="397"?"épicas al 100%":"al 100%"}</span>
+            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> ${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?"épicas al 100%":cod==="419"?"entregadas (100%)":"al 100%"}</span>
           </div>
         </div>
       </div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${cod==="397"?"Distribución de las 57 Épicas:":"Distribución en Escala:"}</span>
+        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Distribución de las ${cmi.n} ${cmi.u}:`:cod==="419"?"Distribución archivo local (466):":"Distribución en Escala:"}</span>
         <div style="display:flex;gap:6px;flex-wrap:wrap;flex:1">
           <div style="background:color-mix(in srgb,var(--good) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--good) 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
-            <b style="color:var(--good)">100% ✓</b> En prod: <b>${cmi.buckets["100"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["100"]/cmi.n)})</small>
+            <b style="color:var(--good)">100% ✓</b> ${cod==="419"?"Certificadas":"En prod"}: <b>${cmi.buckets["100"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["100"]/cmi.n)})</small>
           </div>
           <div style="background:color-mix(in srgb,#38bdf8 12%,var(--surface));border:1px solid color-mix(in srgb,#38bdf8 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
             <b style="color:#0284c7">75%</b> En UAT: <b>${cmi.buckets["75"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["75"]/cmi.n)})</small>
@@ -2058,9 +2075,10 @@ function funcCard(cod) {
       </div>
       ${cod==="397"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
         <b>Aclaración Metodológica PMO:</b> Para el proyecto 397 (Colfondos Core / Andina Seguros), el CMI se gobierna a nivel de <b>57 Épicas / Frentes contractuales</b>, con seguimiento interno complementario a sus <b>233 funcionalidades</b> en Azure DevOps.
+      </div>`:cod==="419"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
+        <b>Aclaración Metodológica PMO:</b> Para el proyecto 419 (Depósitos Judiciales), el CMI oficial se rige según el <b>archivo maestro local (125 certificadas / 466 entregables)</b>, con seguimiento y trazabilidad simultánea a sus <b>168 funcionalidades</b> en Azure DevOps.
       </div>`:""}
     </div>` : ""}
-    }
 
     <div class="fstrip">
       ${stat(k.n_epic, "Frentes", "var(--ink)")}
