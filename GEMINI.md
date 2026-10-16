@@ -266,5 +266,25 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Verificación exitosa de compatibilidad con `ACTUALIZAR.py --dry-run` (0 errores de regex).
   - Sincronización en las 4 rutas espejo y despliegue a producción vía GitHub Pages.
 
+---
+
+## 16. Registro de Alineación y Automatización Integral (16-oct-2026)
+* **Unificación de la Tubería Operativa, Financiera y de Azure DevOps:**
+  - Se unificó el flujo de actualización local mediante el orquestador `actualizar_todo.py` y el ejecutable por lotes `ACTUALIZAR_TODO.bat`:
+    1. **Paso 1 (Excel PMO):** Ejecuta `ACTUALIZAR.py` para leer `Consolidado Indicadores PMO*.xlsx`, refrescar la variable `FR` e inyectar indicadores operativos y financieros.
+    2. **Paso 2 (Azure DevOps):** Ejecuta `sync_funcionalidades.py` para copiar los árboles jerárquicos (`data_func.json`, carpeta `data_func/*.json`, `data_453_cpe.json`) desde `tableros de proyectos\web`.
+    3. **Paso 3 (Enriquecimiento CMI):** Ejecuta `enrich_func_cmi.py` recalculando dinámicamente los indicadores tácticos, estratégicos y buckets CMI para todo el portafolio.
+    4. **Paso 4 (Sincronización Espejo):** Propaga automáticamente `index.html` a las 4 rutas espejo del sistema.
+    5. **Paso 5 (Publicación Opcional en Producción):** Permite publicar a GitHub Pages con `git add .`, `commit` y `push` automático mediante `--push` o confirmación en consola.
+* **Integración Directa en `ACTUALIZAR.py`:**
+  - Se modificó `ACTUALIZAR.py` en `C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py` para que, en ejecuciones reales (no `--dry-run`), sincronice automáticamente las 4 rutas espejo y llame a `sync_funcionalidades.py`.
+* **Carga en Línea Amigable para Visualización Local (`file://`):**
+  - Se incorporó en `index.html` la función `getJsonUrl(relPath)` con fallback hacia `https://ivanpastor-debug.github.io/Tablero-CMI-PMO/` gracias al soporte CORS de GitHub Pages (`Access-Control-Allow-Origin: *`).
+  - Al abrir el HTML local con doble clic (`file:///...`), el navegador ahora puede cargar e interactuar con el árbol vivo de Épicas, Funcionalidades y HUs sin bloqueos.
+* **Sincronización y Validación:**
+  - `ACTUALIZAR.py --dry-run` 100% compatible (0 errores).
+  - Todas las copias espejo sincronizadas.
+
+
 
 

@@ -1698,13 +1698,23 @@ function updateTopOpTiles(cmi, subLabel) {
   `;
 }
 
+const GITHUB_PAGES_BASE = "https://ivanpastor-debug.github.io/Tablero-CMI-PMO/";
+function getJsonUrl(relPath) {
+  if (window.location.protocol === "file:") {
+    return GITHUB_PAGES_BASE + relPath;
+  }
+  return relPath;
+}
+
 let _funcInitPromise = null;
 function ensureFuncIndex() {
   if (_funcInitPromise) return _funcInitPromise;
   _funcInitPromise = Promise.all([
-    fetch("data_func.json").then(r => r.ok ? r.json() : null).then(j => { FUNC = j; }).catch(() => { FUNC = null; }),
-    fetch("data_453_cpe.json").then(r => r.ok ? r.json() : null).then(j => { CPE453 = j; }).catch(() => { CPE453 = null; })
-  ]).then(() => {
+    fetch(getJsonUrl("data_func.json")).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(getJsonUrl("data_453_cpe.json")).then(r => r.ok ? r.json() : null).catch(() => null)
+  ]).then(([jFunc, jCpe]) => {
+    if (jFunc) FUNC = jFunc;
+    if (jCpe) CPE453 = jCpe;
     applyLiveFuncCmi();
   });
   return _funcInitPromise;
@@ -1723,7 +1733,7 @@ function getFncCodeForProj(p) {
 
 function fncLoad(cod) {
   if (!cod || FUNC_DET[cod] || _fncPend[cod]) return;
-  _fncPend[cod] = fetch(`data_func/${encodeURIComponent(cod)}.json`)
+  _fncPend[cod] = fetch(getJsonUrl(`data_func/${encodeURIComponent(cod)}.json`))
     .then(r => r.ok ? r.json() : null)
     .then(j => {
       FUNC_DET[cod] = j || { epics: [], features: [], hus: [], kpi: {} };
@@ -2529,14 +2539,14 @@ function renderFncSection(p) {
   }
   if (p.id === "453") {
     if (!CPE453) {
-      if (window.location.protocol === "file:") {
-        return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;background:var(--surface);border-left:4px solid var(--accent)">
-          <p class="hint" style="margin:0">ℹ️ <b>Desglose en línea:</b> Las políticas de seguridad del navegador impiden leer archivos JSON locales bajo el protocolo <code>file://</code>. Para interactuar con el árbol de Foco → Iteración → Casos de Uso → HU del 453, consulta el tablero oficial en <a href="https://ivanpastor-debug.github.io/Tablero-CMI-PMO/" target="_blank" style="color:var(--accent);font-weight:700">GitHub Pages</a> o ejecuta un servidor local (<code>python -m http.server</code>).</p>
-        </div></div>`;
-      }
       ensureFuncIndex().then(() => {
         const c = document.getElementById("op-func-container");
-        if (c && cur === "453" && mode === "op") c.innerHTML = cpe453Card(CPE453);
+        if (c && cur === "453" && mode === "op") {
+          if (CPE453) c.innerHTML = cpe453Card(CPE453);
+          else c.innerHTML = `<div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;background:var(--surface);border-left:4px solid var(--accent)">
+            <p class="hint" style="margin:0">ℹ️ <b>Sin conexión:</b> No se pudieron cargar los datos de Casos de Uso del 453. Consulta el tablero oficial en <a href="https://ivanpastor-debug.github.io/Tablero-CMI-PMO/" target="_blank" style="color:var(--accent);font-weight:700">GitHub Pages</a>.</p>
+          </div>`;
+        }
       });
       return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:24px;text-align:center"><p class="hint">Cargando árbol de casos de uso y HU del 453...</p></div></div>`;
     }
@@ -2546,14 +2556,14 @@ function renderFncSection(p) {
   let cod = getFncCodeForProj(p);
   if (!cod) return "";
   if (!FUNC) {
-    if (window.location.protocol === "file:") {
-      return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;background:var(--surface);border-left:4px solid var(--accent)">
-        <p class="hint" style="margin:0">ℹ️ <b>Desglose en línea:</b> Las políticas de seguridad del navegador impiden leer archivos JSON locales bajo el protocolo <code>file://</code>. Para interactuar con el desglose de Épicas, Funcionalidades y HUs de Azure DevOps, consulta el tablero oficial en <a href="https://ivanpastor-debug.github.io/Tablero-CMI-PMO/" target="_blank" style="color:var(--accent);font-weight:700">GitHub Pages</a> o ejecuta un servidor local (<code>python -m http.server</code>).</p>
-      </div></div>`;
-    }
     ensureFuncIndex().then(() => {
       const c = document.getElementById("op-func-container");
-      if (c && cur === p.id && mode === "op") c.innerHTML = funcCard(cod);
+      if (c && cur === p.id && mode === "op") {
+        if (FUNC) c.innerHTML = funcCard(cod);
+        else c.innerHTML = `<div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;background:var(--surface);border-left:4px solid var(--accent)">
+          <p class="hint" style="margin:0">ℹ️ <b>Sin conexión:</b> No se pudieron cargar las funcionalidades de Azure DevOps. Consulta el tablero oficial en <a href="https://ivanpastor-debug.github.io/Tablero-CMI-PMO/" target="_blank" style="color:var(--accent);font-weight:700">GitHub Pages</a>.</p>
+        </div>`;
+      }
     });
     return `<div id="op-func-container"><div class="card" style="margin-top:18px;padding:24px;text-align:center"><p class="hint">Cargando funcionalidades de Azure DevOps...</p></div></div>`;
   }
