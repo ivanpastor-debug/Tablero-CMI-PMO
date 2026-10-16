@@ -226,3 +226,18 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Verificación exitosa sin errores de regex con `python ACTUALIZAR.py --dry-run`.
   - Sincronización en las 4 rutas espejo y despliegue a producción vía GitHub Pages.
 
+---
+
+## 14. Registro de Ajuste de Nombres Oficiales y Optimización Visual en 453 y 419 (16-oct-2026)
+* **Proyecto 453 (PROYECTO MONITOREO DE EQUIPOS CPE 2026):**
+  - **Nombre oficial actualizado:** Se renombró a `453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026` en todo el tablero (chips, encabezados de tarjeta, fichas operativas y financieras, callout y búsquedas).
+  - **Eliminación de tabla redundante de Casos de Uso:** Se retiró el panel estático `#cpe-cu` y su llamada `renderCU(g)`, dado que la información completa y viva se visualiza directamente a través de la conexión con Azure DevOps en el árbol interactivo.
+  - **Depuración de filtros dinámicos:** Se removieron los chips de filtro por foco (`Todos los focos`, `Foco A`, `Foco B`, `Foco C`, `Foco D`), manteniendo exclusivamente el conmutador metodológico: **▶ Por ejecución** vs **◆ Por compromiso**.
+* **Proyecto 419 (419- DEPOSITOS JUDICIALES):**
+  - **Nombre oficial actualizado:** Se renombró a `419- DEPOSITOS JUDICIALES` en todo el tablero.
+  - **Reubicación de gráfica de certificaciones:** La gráfica *"Entregas y certificaciones"* (`#c-419`) se ubicó inmediatamente **después** de la tabla jerárquica de *"Funcionalidades por frente · qué HU componen cada una"*, garantizando lectura visual continua de lo general a lo específico.
+* **Sincronización y Validación:**
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run`.
+  - Sincronización completa en las 4 rutas espejo y publicación automática en GitHub Pages.
+
+

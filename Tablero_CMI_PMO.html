@@ -588,7 +588,7 @@ const P=[
   hitosNote:"9 etapas · 7 atrasadas con plan de choque",
   hitos:[["Etapa 1","Plan de trabajo, brechas, arquitectura",1587.2,1587.2,"Facturado"],["Etapa 2","Ambiente de pruebas",793.6,793.6,"Facturado"],["Etapa 4","Usuarios, terceros, clientes · jul-26 → 17 nov",396.8,0,"Atrasada"],["Etapa 6","Cuentas por pagar, presupuesto · sep-26 → 15 nov",1190.4,0,"Atrasada"],["Etapa 3","Negocios fiduciarios, tesorería · oct-26 → 17 nov",793.6,0,"Atrasada"],["Etapa 5","FIC, portafolio, comisiones · 17 nov",1190.4,0,"Atrasada"],["Etapa 7","Integración E2E etapas 3/5/6 · → 31 ene-27",396.8,0,"Atrasada"],["Etapa 8","Tributarios, normativos, portales · → 31 ene-27",793.6,0,"Atrasada"],["Etapa 9","Integración E2E etapa 8 · → 28 feb-27",793.6,0,"Atrasada"]],
   diag:["good","Proyecto más grande del portafolio: 11,33% del contrato facturado y 1 de 32 funcionalidades al 100% (avance CMI 42,19%: 20 en curso >80%, 11 entre 50–80%). CPI forecast sube a 1,03 (superávit de desempeño). 7 etapas de facturación dependen del plan de choque (nov-26 a feb-27)."]},
- {id:"419",name:"Depósitos Judiciales",sub:"Banco Agrario / Rama Judicial · Depósitos",op:{av:0.120113852,ent:0.2682403433,n:466,d:125,u:"funcionalidades"},
+ {id:"419",name:"419- DEPOSITOS JUDICIALES",sub:"Banco Agrario / Rama Judicial · Depósitos",op:{av:0.120113852,ent:0.2682403433,n:466,d:125,u:"funcionalidades"},
   m:[[1854.4,378.6,213.5],[638.1,368.1,282.2],[686.7,392.8,357.4],[686.7,365.4,333.4],[686.7,374.9,335.6],[686.7,374.8,362.0],[686.7,411.5,338.1],[686.7,435.4,356.8],[686.7,525.3,0],[686.7,525.3,0],[686.7,525.3,0],[679.0,525.3,0]],
   margin:{dir:[.338,.625,.2105],net:[.172,.487,.036],gap:{f_p:[28.7,31.5],r_p:[-12.75,-13.6],r_f:[-41.45,-45.1]}},
    cpiP:.9067,cpiF:.5246,icff:1.2579,avFin:.1845,ppto:18098.6,fcst:10471.2,
@@ -601,7 +601,7 @@ const P=[
   hitosNote:"Implementación $25.644 M · 20% al entregar, 80% al certificar",
   hitos:[["SPI 1–4","Entregados a cliente",2751.5,2751.5,"Facturado"],["SPI 5","Entregados a cliente",412.7,275.2,"Parcial"],["SPI 6–8","Entregados a cliente",770.4,0,"Atrasada"],["SPI 1","Certificados por cliente",1100.6,1100.6,"Facturado"],["SPI 2–6","Certificados por cliente",2063.6,0,"Atrasada"]],
   diag:["crit","Se han certificado 26,82% de las funcionalidades (125 de 466): avance táctico CMI 12,01%. CPI forecast 0,52. El ICFF de 1,26 exige ser 25,79% más productivo que el plan para no romper el presupuesto."]},
- {id:"453",name:"CPE",sub:"MinEducación · Computadores para Educar (CPE)",op:{av:.303,ent:4/45,n:45,d:4,u:"casos de uso",isCU:true},
+ {id:"453",name:"453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026",sub:"MinEducación · Computadores para Educar (CPE)",op:{av:.303,ent:4/45,n:45,d:4,u:"casos de uso",isCU:true},
   m:[[0,0,0],[0,0,0.8],[125.3,65.8,48.9],[149.1,74.5,111.0],[134.0,160.4,149.2],[134.0,174.3,164.5],[138.4,192.0,184.6],[140.1,196.1,197.3],[158.1,192.9,0],[143.5,161.2,0],[147.0,136.0,0],[176.5,142.4,0]],
   margin:{dir:[0,0,0],net:[0,0,0],gap:{f_p:[0,0],r_p:[0,0],r_f:[0,0]}},
    cpiP:0.334157106,cpiF:0.3473474059,icff:1.885869134,avFin:0.2,ppto:1445.8,fcst:1502.8,
@@ -816,7 +816,8 @@ function finState(p){if(!p.m)return "na";const exe=ytd(p,2)/ytd(p,1),conv=p.reca
   return WORST([cpiBand(p.cpiF),icffBand(p.icff),execBand(exe),band(getProjCumplFact(p),.9,.7),band(conv,.9,.7)])}
 function semName(p,isSub,hint){
   const nm=p.subs?`<span class="chev" aria-hidden="true">▸</span> `:isSub?`<span style="color:var(--muted)">↳</span> `:"";
-  return `<td${isSub?' style="padding-left:28px"':""}><div class="pname">${nm}${isSub?"Subproyecto "+p.id:code(p)+" · "+p.name}${p.subs?`<small>Clic para ver subproyectos 355 y 416</small>`:isSub?`<small>${p.sub.replace(/^Subproyecto \d+ ?·? ?/,"")||hint}</small>`:p.sub?`<small>${p.sub}</small>`:""}</div></td>`;
+  const pTitle = isSub ? "Subproyecto "+p.id : (p.name.startsWith(code(p)) ? p.name : code(p)+" · "+p.name);
+  return `<td${isSub?' style="padding-left:28px"':""}><div class="pname">${nm}${pTitle}${p.subs?`<small>Clic para ver subproyectos 355 y 416</small>`:isSub?`<small>${p.sub.replace(/^Subproyecto \d+ ?·? ?/,"")||hint}</small>`:p.sub?`<small>${p.sub}</small>`:""}</div></td>`;
 }
 const stPill=c=>c==="na"?`<span class="pill">Sin información</span>`:`<span class="sdot ${c}"></span>`;
 function semTable(sel,head,cells,state,hint){
@@ -860,8 +861,8 @@ const PROJ_CALLOUT_META = {
   "355": { tag: "Azure · 18 Épicas", title: "Desglose Funcional Azure (355)", sub: "80 Funcionalidades en Azure", ent: "6 en prod.", pct: "7,5% cerrado", icon: "🗂" },
   "416": { tag: "Azure · 2 Épicas", title: "Desglose Funcional Azure (416)", sub: "7 Funcionalidades en Azure", ent: "0 en prod.", pct: "0,0% cerrado", icon: "🗂" },
   "384": { tag: "Azure · 32 Épicas", title: "Desglose Funcional Azure", sub: "543 Funcionalidades en Azure", ent: "155 en prod.", pct: "28,6% cerrado", icon: "🗂" },
-  "419": { tag: "Local · 466 Func.", title: "Desglose Funcional Azure (DEP + RAMA)", sub: "168 Funcionalidades en Azure", ent: "60 en prod.", pct: "35,7% cerrado", icon: "🗂" },
-  "453": { tag: "Azure · 45 CUs", title: "Medición Oficial por Casos de Uso", sub: "45 Casos de Uso medibles (CPE)", ent: "4 en estado 19. Entregado", pct: "8,9% cumplido", icon: "🎯" },
+  "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES · Azure", sub: "168 Funcionalidades en Azure", ent: "60 en prod.", pct: "35,7% cerrado", icon: "🗂" },
+  "453": { tag: "Azure · 45 CUs", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "45 Casos de Uso medibles (CPE)", ent: "4 en estado 19. Entregado", pct: "8,9% cumplido", icon: "🎯" },
   "421": { tag: "Azure · 2 Frentes", title: "Desglose Funcional Azure", sub: "66 Funcionalidades en Azure", ent: "19 en prod.", pct: "28,8% cerrado", icon: "🗂" },
   "456": { tag: "Contractual · 6 Hitos", title: "Supervisión Contractual por Fases", sub: "3 Fases Metodológicas e Innovación", ent: "1 de 6 entregables", pct: "16,7% cerrado", icon: "📐" },
   "348": { tag: "Azure · 10 Épicas", title: "Desglose Funcional Azure", sub: "95 Funcionalidades en Azure", ent: "15 en prod.", pct: "15,8% cerrado", icon: "🗂" },
@@ -928,7 +929,7 @@ function getProjCallout(p) {
 
 function opCard(p,isSub){
   const o=p.op,st1=band(o.av,.7,.4),st2=band(o.ent,.7,.3),os=opState(p),u=o.u.charAt(0).toUpperCase()+o.u.slice(1);
-  const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:`${code(p)} · ${p.name}`;
+  const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:(p.name.startsWith(code(p))?p.name:`${code(p)} · ${p.name}`);
   const kpi=(lbl,sub,v,cls)=>`<div class="k"><span class="k-l">${lbl}</span><span class="k-s">${sub}</span><span class="k-v">${st(cls,pct(v))}</span><div class="bar-mini"><i style="width:${Math.min(v,1)*100}%;background:var(--${cls==="good"?"good":cls==="warn"?"warn":"crit"})"></i></div></div>`;
   const isCU = p.id === "453" || o.u === "casos de uso";
   const isHitos = p.id === "456";
@@ -984,12 +985,13 @@ function renderFlow(){
   $("#flow").innerHTML=FIN.filter(p=>getProjContrato(p)!=null).sort((a,b)=>getProjContrato(b)-getProjContrato(a)).map(p=>{
     const cVal = getProjContrato(p), fVal = getProjFactReal(p), rVal = p.recaudo;
     const f=fVal/cVal,r=Math.min(rVal/cVal,1);
-    return `<div class="flow-row"><div class="top"><b>${code(p)} · ${p.name}</b><span class="num">${M(cVal)}</span></div>
+    const pTitle = p.name.startsWith(code(p)) ? p.name : `${code(p)} · ${p.name}`;
+    return `<div class="flow-row"><div class="top"><b>${pTitle}</b><span class="num">${M(cVal)}</span></div>
       <div class="stack" role="img" aria-label="Facturado ${pct(f)}, recaudado ${pct(rVal/cVal)} del contrato"><i class="f" style="width:${f*100}%"></i><i class="r" style="width:${r*100}%"></i></div>
       <div class="foot"><span>Facturado (${tag}) <b class="num" style="color:var(--ink)">${M(fVal)}</b> (${pct(f)})</span><span>Recaudado <b class="num" style="color:var(--ink)">${M(rVal)}</b></span><span>Por facturar (${tag}) ${M(cVal-fVal)}</span></div></div>`}).join("");
 }
 function renderCostPort(){
-  const data=FIN.map(p=>({k:code(p)+" · "+p.name,real:ytd(p,2),fc:ytd(p,1)}));
+  const data=FIN.map(p=>({k:p.name.startsWith(code(p)) ? p.name : code(p)+" · "+p.name,real:ytd(p,2),fc:ytd(p,1)}));
   const W=560,rowH=46,L=150,R=70,H=data.length*rowH+24;
   const max=niceMax(Math.max(...data.map(d=>Math.max(d.real,d.fc))));
   const x=v=>L+(W-L-R)*v/max;
@@ -1082,11 +1084,6 @@ function renderOpBody(p,g,el){
         </tbody>
       </table></div></div>
     </div>`;
-  } else if(p.id==="419"){
-    h+=`<div class="section grid"><div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
-      <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div></div>`;
-  } else if(p.id==="453"){
-    h+=`<div class="section grid"><div class="panel"><div class="sec-h"><h2>Casos de uso</h2><p>Hitos de entrega por iteración (Releases) · corte 01-oct-2026</p></div><div id="cpe-cu"></div></div></div>`;
   }
   // Gobierno del proyecto: sección oculta a pedido de la PMO (24-sep); datos y renderGov se conservan
   const SHOW_GOV=false;
@@ -1107,10 +1104,13 @@ function renderOpBody(p,g,el){
   }
   }
   h += renderFncSection(p);
+  if(p.id==="419"){
+    h+=`<div class="section grid" style="margin-top:16px"><div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
+      <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div></div>`;
+  }
   el.innerHTML=h;
   if(p.id==="456")renderFrentes(p);
   if(p.id==="419")render419();
-  if(p.id==="453")renderCU(g);
   if(SHOW_GOV&&g)renderGov(g);
 }
 
@@ -2076,7 +2076,7 @@ function funcCard(cod) {
       ${cod==="397"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
         <b>Aclaración Metodológica PMO:</b> Para el proyecto 397 (Colfondos Core / Andina Seguros), el CMI se gobierna a nivel de <b>57 Épicas / Frentes contractuales</b>, con seguimiento interno complementario a sus <b>233 funcionalidades</b> en Azure DevOps.
       </div>`:cod==="419"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
-        <b>Aclaración Metodológica PMO:</b> Para el proyecto 419 (Depósitos Judiciales), el CMI oficial se rige según el <b>archivo maestro local (125 certificadas / 466 entregables)</b>, con seguimiento y trazabilidad simultánea a sus <b>168 funcionalidades</b> en Azure DevOps.
+        <b>Aclaración Metodológica PMO:</b> Para el proyecto <b>419- DEPOSITOS JUDICIALES</b>, el CMI oficial se rige según el <b>archivo maestro local (125 certificadas / 466 entregables)</b>, con seguimiento y trazabilidad simultánea a sus <b>168 funcionalidades</b> en Azure DevOps.
       </div>`:""}
     </div>` : ""}
 
@@ -2451,11 +2451,11 @@ function cpe453Card(C) {
   return `<div class="card fade" style="margin-top:18px">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
       <div style="display:flex;align-items:center;gap:10px">
-        <h3 style="margin:0;font-size:16px;font-weight:700">🗂 Foco → Iteración → Caso de Uso → HU</h3>
+        <h3 style="margin:0;font-size:16px;font-weight:700">🗂 453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026 · Casos de Uso y HUs</h3>
         <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:700;color:var(--good);padding:2px 8px;border-radius:4px">Medición por Casos de Uso (estados_453)</span>
       </div>
     </div>
-    <div class="hint">El proyecto 453 (Monitoreo CPE) mide sus indicadores estratégicos y tácticos frente a <b>Casos de Uso (CU)</b>:
+    <div class="hint">El proyecto <b>453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026</b> mide sus indicadores estratégicos y tácticos frente a <b>Casos de Uso (CU)</b>:
       <b>(1) Indicador Táctico</b> (% Avance por CU desde su estado interno <code>estados_453</code>)
       y <b>(2) Indicador Estratégico</b> (CUs entregados formalmente al 100% en producción).
       También expone el avance de construcción de las <b>HU's atadas</b> · corte ${C.corte || "01-Oct-2026"}. Clic en cada nivel para desplegar.</div>
@@ -2514,10 +2514,8 @@ function cpe453Card(C) {
       ? "cada HU cuenta en SU iteración — en qué se trabaja de verdad"
       : "cada HU cuenta en la iteración de su caso de uso — qué se prometió"}</span>
     </div>
-    ${cpeChipsFoco(C)}
     ${faltaHito ? `<div class="hint" style="color:#f59e0b;margin:6px 0 0 2px">⚠️ No hay archivo de hitos cargado: las iteraciones salen sin fecha comprometida.</div>` : ""}
     <div id="cpeBody" style="margin-top:10px">${cpeBodyHtml(C)}</div>
-    ${cpeAvisoFoco(C)}
   </div>`;
 }
 
