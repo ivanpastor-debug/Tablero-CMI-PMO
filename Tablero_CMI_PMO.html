@@ -939,6 +939,7 @@ function getProjCallout(p) {
     </div>`;
 }
 
+var FUNC = null, CPE453 = null, FUNC_DET = {}, _fncPend = {};
 const PROJ_DATES_META = {
   "005": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_004_20261026.csv)", finDate: "01-Oct-2026", finFile: "Indicadores_DOCUM 20260929.xlsx" },
   "POS": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_355 + HU_416 · 26-Oct-2026)", finDate: "01-Oct-2026", finFile: "Indicadores CORE 20260929.xlsx" },
@@ -1603,13 +1604,7 @@ function setupSearch(){
   }
 }
 
-updateIVAButtons();
-setupTheme();
-setupSearch();
-
-const hp=(location.hash||"").match(/^#p(\d{3}|POS)$/);if(hp&&getP(hp[1]))cur=hp[1];
-renderTiles();renderSem();renderFlow();renderCostPort();renderChips();renderFicha();
-if(hp)show("proj");else{try{const t=localStorage.getItem("cmi-tab");if(t&&$("#v-"+t))show(t)}catch(e){}}
+// Inicialización movida al final del script para evitar TDZ
 
 /* ==========================================================================
    DESGLOSE FUNCIONAL Y HISTORIAS DE USUARIO (AZURE DEVOPS) & 453 CPE
@@ -1617,7 +1612,7 @@ if(hp)show("proj");else{try{const t=localStorage.getItem("cmi-tab");if(t&&$("#v-
 const esc = s => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const _qa = (v) => "'" + String(v).split("'").join("&#39;").split('"').join("&quot;") + "'";
 
-let FUNC = null, CPE453 = null, FUNC_DET = {}, _fncPend = {};
+// FUNC, CPE453, FUNC_DET, _fncPend declarados arriba
 let FNC_ABIERTO = new Set();
 let FNC_HU = new Set();
 let FNC_TODAS = new Set();
@@ -1784,7 +1779,7 @@ function ensureFuncIndex() {
   });
   return _funcInitPromise;
 }
-ensureFuncIndex();
+// ensureFuncIndex se ejecuta al final
 
 function getFncCodeForProj(p) {
   if (!p) return null;
@@ -2635,5 +2630,14 @@ function renderFncSection(p) {
   return `<div id="op-func-container">${funcCard(cod)}</div>`;
 }
 
+
+updateIVAButtons();
+setupTheme();
+setupSearch();
+
+const hp=(location.hash||"").match(/^#p(\d{3}|POS)$/);if(hp&&getP(hp[1]))cur=hp[1];
+renderTiles();renderSem();renderFlow();renderCostPort();renderChips();renderFicha();
+if(hp)show("proj");else{try{const t=localStorage.getItem("cmi-tab");if(t&&$("#v-"+t))show(t)}catch(e){}}
+ensureFuncIndex();
 </script>
 </body></html>
