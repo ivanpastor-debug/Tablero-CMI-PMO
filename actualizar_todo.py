@@ -24,13 +24,18 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT_REPO = Path(r"c:\Users\Usuario1\Indicadores estra y tac")
-DOCS_CMI = Path(r"C:\Users\Usuario1\Documents\PMO INDICADORES\CMI")
-DOWNLOADS = Path(r"C:\Users\Usuario1\Downloads")
+HOME = Path.home()
+GIT_CMD_DIR = HOME / "AppData" / "Local" / "Programs" / "Git" / "cmd"
+if GIT_CMD_DIR.is_dir() and str(GIT_CMD_DIR) not in os.environ.get("PATH", ""):
+    os.environ["PATH"] = str(GIT_CMD_DIR) + os.pathsep + os.environ.get("PATH", "")
+
+ROOT_REPO = HOME / "Indicadores estra y tac"
+DOCS_CMI = HOME / "Documents" / "PMO INDICADORES" / "CMI"
+DOWNLOADS = HOME / "Downloads"
 
 SCRIPT_ACTUALIZAR_PY = DOCS_CMI / "ACTUALIZAR.py"
-SCRIPT_SYNC_FUNC = ROOT_REPO / "sync_funcionalidades.py"
-HTML_SOURCE = ROOT_REPO / "index.html"
+SCRIPT_SYNC_FUNC = DOCS_CMI / "sync_funcionalidades.py"
+HTML_SOURCE = DOCS_CMI / "Tablero_CMI_PMO.html"
 HTML_MASTER_CMI = DOCS_CMI / "Tablero_CMI_PMO.html"
 
 MIRROR_FILES = [
@@ -67,11 +72,12 @@ def run_azure_sync(dry_run: bool = False) -> bool:
         print("[Dry-run] Se omitió la copia de archivos de Azure DevOps.")
         return True
 
-    if not SCRIPT_SYNC_FUNC.is_file():
-        print(f"ERROR: No se encontró {SCRIPT_SYNC_FUNC}")
+    sync_script = SCRIPT_SYNC_FUNC if SCRIPT_SYNC_FUNC.is_file() else (ROOT_REPO / "sync_funcionalidades.py")
+    if not sync_script.is_file():
+        print(f"ERROR: No se encontró {sync_script}")
         return False
 
-    res = subprocess.run([sys.executable, str(SCRIPT_SYNC_FUNC)], cwd=str(ROOT_REPO))
+    res = subprocess.run([sys.executable, str(sync_script)], cwd=str(sync_script.parent))
     return res.returncode == 0
 
 
@@ -81,7 +87,7 @@ def sync_mirrors(dry_run: bool = False) -> bool:
         print("[Dry-run] No se copiaron archivos espejo.")
         return True
 
-    src = HTML_SOURCE if HTML_SOURCE.is_file() else HTML_MASTER_CMI
+    src = HTML_MASTER_CMI if HTML_MASTER_CMI.is_file() else (ROOT_REPO / "index.html")
     if not src.is_file():
         print("ERROR: No se encontró el archivo HTML de origen.")
         return False
@@ -89,13 +95,24 @@ def sync_mirrors(dry_run: bool = False) -> bool:
     print(f"Origen del tablero: {src}")
     for dest in MIRROR_FILES:
         try:
-            if dest != src:
+            if os.path.normcase(os.path.abspath(str(dest))) != os.path.normcase(os.path.abspath(str(src))):
+                dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(src, dest)
                 print(f"  -> Sincronizado: {dest}")
             else:
                 print(f"  -> (Es el archivo base): {dest}")
         except Exception as e:
             print(f"  Aviso al copiar a {dest}: {e}")
+
+    # Sincronizar también scripts de sincronización/enriquecimiento al repositorio GitHub Pages
+    for sc in ("sync_funcionalidades.py", "enrich_func_cmi.py", "actualizar_todo.py", "ACTUALIZAR_TODO.bat", "GEMINI.md"):
+        s_file = DOCS_CMI / sc
+        d_file = ROOT_REPO / sc
+        if s_file.is_file() and ROOT_REPO.is_dir():
+            try:
+                shutil.copy2(s_file, d_file)
+            except Exception:
+                pass
     return True
 
 
@@ -104,7 +121,7 @@ def git_publish() -> bool:
     try:
         subprocess.run(["git", "add", "."], cwd=str(ROOT_REPO), check=True)
         commit_res = subprocess.run(
-            ["git", "commit", "-m", "actualizacion integral CMI y Azure DevOps"],
+            ["git", "commit", "-m", "actualizacion integral CMI y Azure DevOps (corte 2026-10-26 + 457)"],
             cwd=str(ROOT_REPO)
         )
         if commit_res.returncode == 0:
@@ -112,7 +129,7 @@ def git_publish() -> bool:
         else:
             print("No se detectaron cambios pendientes para commit.")
 
-        push_res = subprocess.run(["git", "push", "origin", "main"], cwd=str(ROOT_REPO), check=True)
+        subprocess.run(["git", "push", "origin", "main"], cwd=str(ROOT_REPO), check=True)
         print("¡Publicación en GitHub Pages completada exitosamente!")
         print("URL en vivo: https://ivanpastor-debug.github.io/Tablero-CMI-PMO/")
         return True
@@ -150,4 +167,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

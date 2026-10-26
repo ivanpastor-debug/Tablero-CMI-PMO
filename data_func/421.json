@@ -1,40 +1,48 @@
 {
   "codigo": "421",
-  "corte": "2026-09-25",
-  "generado": "2026-09-25 12:44",
-  "archivo": "HU_421_20260925.csv",
+  "corte": "2026-10-26",
+  "generado": "2026-10-26 13:05",
+  "archivo": "HU_421_20261026.csv",
   "epics": [
-    {
-      "i": "83469",
-      "t": "Afiliaciones y Novedades",
-      "n_f": 29,
-      "n": 427,
-      "term": 225,
-      "pct": 0.829
-    },
     {
       "i": "83437",
       "t": "Sistema de Recaudo y Cartera",
       "n_f": 26,
-      "n": 363,
-      "term": 167,
-      "pct": 0.7482
+      "n": 396,
+      "term": 182,
+      "pct": 0.7642
+    },
+    {
+      "i": "83469",
+      "t": "Afiliaciones y Novedades",
+      "n_f": 27,
+      "n": 357,
+      "term": 220,
+      "pct": 0.8294
     },
     {
       "i": "83503",
       "t": "Funcionalidades Transversales",
       "n_f": 9,
-      "n": 107,
-      "term": 86,
-      "pct": 0.8691
+      "n": 123,
+      "term": 116,
+      "pct": 0.9597
+    },
+    {
+      "i": "207836",
+      "t": "Control de Sprints",
+      "n_f": 2,
+      "n": 85,
+      "term": 58,
+      "pct": 0.9343
     },
     {
       "i": "417182",
       "t": "Automatización_QA Balu",
       "n_f": 2,
-      "n": 52,
-      "term": 50,
-      "pct": 0.9731
+      "n": 58,
+      "term": 56,
+      "pct": 0.981
     }
   ],
   "features": [
@@ -44,10 +52,10 @@
       "e": "2. En Curso",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 83,
-      "term": 28,
-      "pct": 0.6811,
-      "n_pct": 83
+      "n": 86,
+      "term": 35,
+      "pct": 0.7406,
+      "n_pct": 86
     },
     {
       "i": "417232",
@@ -55,10 +63,10 @@
       "e": "1. En Planeacion",
       "ep": "83503",
       "ept": "Funcionalidades Transversales",
-      "n": 68,
-      "term": 49,
-      "pct": 0.8065,
-      "n_pct": 68
+      "n": 83,
+      "term": 78,
+      "pct": 0.9523,
+      "n_pct": 83
     },
     {
       "i": "88254",
@@ -66,31 +74,20 @@
       "e": "2. En Curso",
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
-      "n": 55,
+      "n": 61,
       "term": 6,
-      "pct": 0.5509,
-      "n_pct": 55
+      "pct": 0.6443,
+      "n_pct": 61
     },
     {
       "i": "313337",
       "t": "001_Afiliaciones - Transversales",
-      "e": "2. En Curso",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
-      "n": 54,
-      "term": 25,
-      "pct": 0.8834,
-      "n_pct": 38
-    },
-    {
-      "i": "98062",
-      "t": "026_Certificados_Plantillas",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
-      "n": 40,
-      "term": 27,
-      "pct": 0.7982,
+      "e": "1. En Planeacion",
+      "ep": "207836",
+      "ept": "Control de Sprints",
+      "n": 55,
+      "term": 30,
+      "pct": 0.9087,
       "n_pct": 39
     },
     {
@@ -99,10 +96,21 @@
       "e": "1. En Planeacion",
       "ep": "417182",
       "ept": "Automatización_QA Balu",
-      "n": 40,
-      "term": 39,
-      "pct": 0.9825,
-      "n_pct": 40
+      "n": 44,
+      "term": 43,
+      "pct": 0.9909,
+      "n_pct": 44
+    },
+    {
+      "i": "98062",
+      "t": "026_Certificados_Plantillas",
+      "e": "3. Entregado",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
+      "n": 42,
+      "term": 27,
+      "pct": 0.786,
+      "n_pct": 42
     },
     {
       "i": "307852",
@@ -110,32 +118,43 @@
       "e": "2. En Curso",
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
-      "n": 36,
+      "n": 35,
       "term": 13,
-      "pct": 0.5914,
-      "n_pct": 36
+      "pct": 0.6531,
+      "n_pct": 35
     },
     {
       "i": "96139",
       "t": "007_Empleador_Afiliado_Novedades_WEB",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 31,
-      "term": 19,
-      "pct": 0.8457,
-      "n_pct": 30
+      "term": 23,
+      "pct": 0.871,
+      "n_pct": 31
     },
     {
       "i": "85834",
       "t": "000_Web Service",
       "e": "2. En Curso",
+      "ep": "207836",
+      "ept": "Control de Sprints",
+      "n": 30,
+      "term": 28,
+      "pct": 0.9677,
+      "n_pct": 30
+    },
+    {
+      "i": "313436",
+      "t": "004_Afiliaciones - Afiliación - Trabajadores Independientes",
+      "e": "3. Entregado",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 30,
-      "term": 13,
-      "pct": 0.9427,
-      "n_pct": 30
+      "n": 24,
+      "term": 14,
+      "pct": 0.8304,
+      "n_pct": 24
     },
     {
       "i": "313434",
@@ -144,8 +163,8 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 23,
-      "term": 11,
-      "pct": 0.7591,
+      "term": 12,
+      "pct": 0.8048,
       "n_pct": 23
     },
     {
@@ -156,7 +175,18 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 23,
       "term": 6,
-      "pct": 0.7717,
+      "pct": 0.8065,
+      "n_pct": 23
+    },
+    {
+      "i": "485086",
+      "t": "026_Proceso otras administradoras PILA-LOG",
+      "e": "1. En Planeacion",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 23,
+      "term": 0,
+      "pct": 0.3122,
       "n_pct": 23
     },
     {
@@ -166,8 +196,8 @@
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
       "n": 21,
-      "term": 17,
-      "pct": 0.9905,
+      "term": 18,
+      "pct": 0.9929,
       "n_pct": 21
     },
     {
@@ -178,18 +208,18 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 21,
       "term": 20,
-      "pct": 0.9762,
+      "pct": 0.9929,
       "n_pct": 21
     },
     {
-      "i": "313436",
-      "t": "004_Afiliaciones - Afiliación - Trabajadores Independientes",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
+      "i": "307836",
+      "t": "007_Recaudo - Procesamiento de No Vinculados.",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
       "n": 20,
-      "term": 11,
-      "pct": 0.879,
+      "term": 2,
+      "pct": 0.699,
       "n_pct": 20
     },
     {
@@ -222,7 +252,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 18,
       "term": 11,
-      "pct": 0.8056,
+      "pct": 0.9417,
       "n_pct": 18
     },
     {
@@ -232,8 +262,8 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 17,
-      "term": 16,
-      "pct": 0.9971,
+      "term": 17,
+      "pct": 1.0,
       "n_pct": 17
     },
     {
@@ -244,18 +274,7 @@
       "ept": "Funcionalidades Transversales",
       "n": 17,
       "term": 16,
-      "pct": 0.9529,
-      "n_pct": 17
-    },
-    {
-      "i": "307836",
-      "t": "007_Recaudo - Procesamiento de No Vinculados.",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 17,
-      "term": 2,
-      "pct": 0.6412,
+      "pct": 0.9706,
       "n_pct": 17
     },
     {
@@ -265,8 +284,19 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 17,
-      "term": 11,
-      "pct": 0.9824,
+      "term": 13,
+      "pct": 0.9882,
+      "n_pct": 17
+    },
+    {
+      "i": "308714",
+      "t": "013_Cartera-Marcacion siniestros para generar recobros por mora",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 17,
+      "term": 0,
+      "pct": 0.1582,
       "n_pct": 17
     },
     {
@@ -277,8 +307,19 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 16,
       "term": 15,
-      "pct": 0.9656,
+      "pct": 0.975,
       "n_pct": 16
+    },
+    {
+      "i": "98035",
+      "t": "020_Funcionario_Consulta_General",
+      "e": "3. Entregado",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
+      "n": 15,
+      "term": 7,
+      "pct": 0.6873,
+      "n_pct": 15
     },
     {
       "i": "307837",
@@ -292,15 +333,15 @@
       "n_pct": 6
     },
     {
-      "i": "308714",
-      "t": "013_Cartera-Marcacion siniestros para generar recobros por mora",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 13,
-      "term": 0,
-      "pct": 0.12,
-      "n_pct": 13
+      "i": "417189",
+      "t": "Automatización Front E2E",
+      "e": "1. En Planeacion",
+      "ep": "417182",
+      "ept": "Automatización_QA Balu",
+      "n": 14,
+      "term": 13,
+      "pct": 0.95,
+      "n_pct": 14
     },
     {
       "i": "437764",
@@ -308,10 +349,10 @@
       "e": "2. En Curso",
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
-      "n": 13,
+      "n": 14,
       "term": 1,
-      "pct": 0.7077,
-      "n_pct": 13
+      "pct": 0.8571,
+      "n_pct": 14
     },
     {
       "i": "84186",
@@ -322,17 +363,6 @@
       "n": 12,
       "term": 12,
       "pct": 1.0,
-      "n_pct": 12
-    },
-    {
-      "i": "417189",
-      "t": "Automatización Front E2E",
-      "e": "1. En Planeacion",
-      "ep": "417182",
-      "ept": "Automatización_QA Balu",
-      "n": 12,
-      "term": 11,
-      "pct": 0.9417,
       "n_pct": 12
     },
     {
@@ -347,15 +377,15 @@
       "n_pct": 11
     },
     {
-      "i": "98035",
-      "t": "020_Funcionario_Consulta_General",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
+      "i": "481244",
+      "t": "025_Mejoras y actualizaciones en las consultas de Liquidación diaria 1% e Integración con el FRL",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
       "n": 11,
-      "term": 5,
-      "pct": 0.7845,
-      "n_pct": 11
+      "term": 0,
+      "pct": 0.4744,
+      "n_pct": 9
     },
     {
       "i": "94067",
@@ -365,7 +395,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 10,
       "term": 9,
-      "pct": 0.92,
+      "pct": 0.985,
       "n_pct": 10
     },
     {
@@ -375,31 +405,20 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 10,
-      "term": 7,
-      "pct": 0.955,
+      "term": 8,
+      "pct": 0.975,
       "n_pct": 10
     },
     {
       "i": "459471",
       "t": "024_Mejoras consultas recaudo Cotizante y Aportante",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
-      "n": 9,
-      "term": 0,
-      "pct": 0.8833,
-      "n_pct": 9
-    },
-    {
-      "i": "485086",
-      "t": "026_Proceso otras administradoras PILA-LOG",
-      "e": "1. En Planeacion",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 9,
-      "term": 0,
-      "pct": 0.3556,
-      "n_pct": 9
+      "n": 10,
+      "term": 9,
+      "pct": 0.94,
+      "n_pct": 10
     },
     {
       "i": "307822",
@@ -409,7 +428,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 8,
       "term": 7,
-      "pct": 0.975,
+      "pct": 0.9812,
       "n_pct": 8
     },
     {
@@ -419,19 +438,8 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 8,
-      "term": 3,
-      "pct": 0.8588,
-      "n_pct": 8
-    },
-    {
-      "i": "307862",
-      "t": "015_Reportes de Recaudo y Cartera",
-      "e": "1. En Planeacion",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 8,
-      "term": 5,
-      "pct": 0.65,
+      "term": 6,
+      "pct": 0.8775,
       "n_pct": 8
     },
     {
@@ -441,8 +449,8 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 8,
-      "term": 5,
-      "pct": 0.9125,
+      "term": 6,
+      "pct": 0.9625,
       "n_pct": 8
     },
     {
@@ -452,8 +460,8 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 8,
-      "term": 5,
-      "pct": 0.9812,
+      "term": 7,
+      "pct": 0.9938,
       "n_pct": 8
     },
     {
@@ -464,7 +472,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 8,
       "term": 0,
-      "pct": 0.2857,
+      "pct": 0.4429,
       "n_pct": 7
     },
     {
@@ -474,9 +482,31 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 8,
-      "term": 0,
-      "pct": 0.73,
+      "term": 2,
+      "pct": 0.7425,
       "n_pct": 8
+    },
+    {
+      "i": "307862",
+      "t": "015_Reportes de Recaudo y Cartera",
+      "e": "1. En Planeacion",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 7,
+      "term": 5,
+      "pct": 0.7257,
+      "n_pct": 7
+    },
+    {
+      "i": "180126",
+      "t": "Actualizaciones y mejoras",
+      "e": "2. En Curso",
+      "ep": "83503",
+      "ept": "Funcionalidades Transversales",
+      "n": 7,
+      "term": 6,
+      "pct": 0.9286,
+      "n_pct": 7
     },
     {
       "i": "314185",
@@ -486,18 +516,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 6,
       "term": 2,
-      "pct": 0.6733,
-      "n_pct": 6
-    },
-    {
-      "i": "180126",
-      "t": "Actualizaciones y mejoras",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 6,
-      "term": 6,
-      "pct": 1.0,
+      "pct": 0.69,
       "n_pct": 6
     },
     {
@@ -507,9 +526,20 @@
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
       "n": 6,
-      "term": 0,
-      "pct": 0.7833,
+      "term": 5,
+      "pct": 0.8933,
       "n_pct": 6
+    },
+    {
+      "i": "180577",
+      "t": "027_Carné_Plantillas",
+      "e": "3. Entregado",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
+      "n": 5,
+      "term": 4,
+      "pct": 0.866,
+      "n_pct": 5
     },
     {
       "i": "85105",
@@ -540,8 +570,8 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 5,
-      "term": 2,
-      "pct": 0.82,
+      "term": 4,
+      "pct": 0.9,
       "n_pct": 5
     },
     {
@@ -551,31 +581,9 @@
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
       "n": 5,
-      "term": 0,
-      "pct": 0.84,
+      "term": 2,
+      "pct": 0.93,
       "n_pct": 5
-    },
-    {
-      "i": "481244",
-      "t": "025_Mejoras y actualizaciones en las consultas de Liquidación diaria 1% e Integración con el FRL",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 5,
-      "term": 0,
-      "pct": 0.68,
-      "n_pct": 5
-    },
-    {
-      "i": "180577",
-      "t": "027_Carné_Plantillas",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
-      "n": 4,
-      "term": 4,
-      "pct": 1.0,
-      "n_pct": 4
     },
     {
       "i": "85107",
@@ -584,8 +592,8 @@
       "ep": "83503",
       "ept": "Funcionalidades Transversales",
       "n": 4,
-      "term": 3,
-      "pct": 0.9875,
+      "term": 4,
+      "pct": 1.0,
       "n_pct": 4
     },
     {
@@ -629,7 +637,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 3,
       "term": 1,
-      "pct": 0.9,
+      "pct": 0.9333,
       "n_pct": 3
     },
     {
@@ -1005,7 +1013,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -1016,7 +1024,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Santiago Gonzalez Perdomo"
     },
     {
@@ -1038,7 +1046,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Sergio Lara"
     },
     {
@@ -1115,7 +1123,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -1439,7 +1447,7 @@
     },
     {
       "i": "87637",
-      "t": "307852_HU011_Preparación de casos en etapa Coactiva",
+      "t": "307852_Parte0_HU011_Preparación de casos en etapa Coactiva",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1516,7 +1524,7 @@
     },
     {
       "i": "88255",
-      "t": "307852_HU002_Consulta_de_Procesos_en_Mora",
+      "t": "307852_Parte0_HU002_Consulta_de_Procesos_en_Mora",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1538,7 +1546,7 @@
     },
     {
       "i": "88257",
-      "t": "307852_HU003_Visualización_de_Documentos_Asociados_a_Procesos",
+      "t": "307852_Parte0_HU003_Visualización_de_Documentos_Asociados_a_Procesos",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1560,7 +1568,7 @@
     },
     {
       "i": "88261",
-      "t": "307852_HU009_Consolidación_de_Información_de_Morosos_Persistentes",
+      "t": "307852_Parte0_HU009_Consolidación_de_Información_de_Morosos_Persistentes",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1571,7 +1579,7 @@
     },
     {
       "i": "88262",
-      "t": "307852_HU010_Generación_Automatizada_de_Avisos_de_Incumplimiento",
+      "t": "307852_Parte0_HU010_Generación_Automatizada_de_Avisos_de_Incumplimiento",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1582,7 +1590,7 @@
     },
     {
       "i": "88263",
-      "t": "307852_HU001_Registro_de_Respuestas_a_Avisos",
+      "t": "307852_Parte0_HU001_Registro_de_Respuestas_a_Avisos",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1626,7 +1634,7 @@
     },
     {
       "i": "88268",
-      "t": "307852_HU013_Reporte Cartera por etapa y estado del proceso",
+      "t": "307852_Parte0_HU013_Reporte Cartera por etapa y estado del proceso",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1648,7 +1656,7 @@
     },
     {
       "i": "88270",
-      "t": "307852_HU014_Gestión_de_Comunicaciones_Físicas_Internas",
+      "t": "307852_Parte0_HU014_Gestión_de_Comunicaciones_Físicas_Internas",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1659,7 +1667,7 @@
     },
     {
       "i": "88271",
-      "t": "307852_HU015_Bitácora de Comunicaciones Físicas Por Proveedor externo",
+      "t": "307852_Parte0_HU015_Bitácora de Comunicaciones Físicas Por Proveedor externo",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1703,7 +1711,7 @@
     },
     {
       "i": "88277",
-      "t": "307852_HU012_Confirmación_de_Pagos_y_Actualización_de_Estado_de_Deuda en etapa pre-jurídica",
+      "t": "307852_Parte0_HU012_Confirmación_de_Pagos_y_Actualización_de_Estado_de_Deuda en etapa pre-jurídica",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -1775,7 +1783,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Harol Paez"
     },
     {
@@ -1786,7 +1794,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -1830,7 +1838,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paola Peña"
     },
     {
@@ -1841,7 +1849,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paola Peña"
     },
     {
@@ -1863,7 +1871,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -1885,7 +1893,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Harol Paez"
     },
     {
@@ -1907,7 +1915,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Santiago Gonzalez Perdomo"
     },
     {
@@ -1929,7 +1937,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -1962,7 +1970,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -2061,7 +2069,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Daniel Bonalde"
     },
     {
@@ -2138,7 +2146,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Santiago Gonzalez Perdomo"
     },
     {
@@ -2237,7 +2245,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2248,7 +2256,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2259,7 +2267,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2270,7 +2278,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2281,7 +2289,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2292,7 +2300,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2303,7 +2311,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2314,7 +2322,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2325,7 +2333,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2336,7 +2344,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2347,7 +2355,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2358,7 +2366,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2369,7 +2377,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2380,7 +2388,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2391,7 +2399,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2402,7 +2410,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2413,7 +2421,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2424,7 +2432,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2435,7 +2443,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2732,7 +2740,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2754,7 +2762,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2809,7 +2817,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Miguel Angel Suarez Sanchez"
     },
     {
@@ -2820,7 +2828,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2831,7 +2839,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2842,7 +2850,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2853,7 +2861,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2864,7 +2872,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2875,7 +2883,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2886,7 +2894,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2897,7 +2905,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2908,7 +2916,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2919,7 +2927,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2930,7 +2938,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -3128,7 +3136,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paola Peña"
     },
     {
@@ -3161,7 +3169,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -3172,7 +3180,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -3205,7 +3213,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "David Eduardo Marsiglia Ariña"
     },
     {
@@ -3331,7 +3339,7 @@
     },
     {
       "i": "159765",
-      "t": "307852_HU008_Seguimiento de pagos Etapa Coactiva",
+      "t": "307852_Parte0_HU008_Seguimiento de pagos Etapa Coactiva",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -3634,7 +3642,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -3722,7 +3730,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -3766,7 +3774,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Miguel Angel Suarez Sanchez"
     },
     {
@@ -3777,7 +3785,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paola Peña"
     },
     {
@@ -3827,13 +3835,13 @@
     {
       "i": "200931",
       "t": "83504_HU004_Ajuste_Gestion_Comercial_empleadores",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "83504",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "200967",
@@ -3920,7 +3928,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paola Peña"
     },
     {
@@ -3953,7 +3961,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -4212,13 +4220,13 @@
     {
       "i": "221930",
       "t": "307836_HU005_Visualización en BALÚ Módulo No Vinculados (Opciones de Descarga).",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 0.95,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "222060",
@@ -4343,11 +4351,11 @@
     },
     {
       "i": "231384",
-      "t": "308714_HU002_F2_Consultar_Ventana_Historica_11_Mas_1",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU009_F3_Consultar_Ventana_Historica_11_Mas_1",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -4365,11 +4373,11 @@
     },
     {
       "i": "233390",
-      "t": "308714_HU003_F2_Consultar_Bitacora_y_Registrar_Observaciones",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU010_F3_Consultar_Bitacora_y_Registrar_Observaciones",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -4398,7 +4406,7 @@
     },
     {
       "i": "234504",
-      "t": "307852_HU005_Visualizar alerta tras la autenticación de aportantes en mora",
+      "t": "307852_Parte0_HU005_Visualizar alerta tras la autenticación de aportantes en mora",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -4552,7 +4560,7 @@
     },
     {
       "i": "241200",
-      "t": "307852_HU006_Registro del estado de envío de notificaciones por correo a aportantes morosos",
+      "t": "307852_Parte0_HU006_Registro del estado de envío de notificaciones por correo a aportantes morosos",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -4586,10 +4594,10 @@
     {
       "i": "242358",
       "t": "307862_HU007_Reporte del calculo del 1%",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "307862",
       "ep": "83437",
       "r": "Harol Paez"
@@ -4602,7 +4610,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -4724,7 +4732,7 @@
       "v": 0.95,
       "f": "307799",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "253189",
@@ -4745,7 +4753,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -4916,13 +4924,13 @@
     {
       "i": "259904",
       "t": "185622_HU008_Gal_generar_archivo_para_ruaf_rmrp",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "185622",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "259906",
@@ -5009,7 +5017,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -5103,13 +5111,13 @@
     {
       "i": "262782",
       "t": "185622_HU009_Gal_generar_archivo_para_ruaf_rnra",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "185622",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "262785",
@@ -5163,7 +5171,7 @@
       "a": 0,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Yiced Baracaldo"
     },
     {
@@ -5174,7 +5182,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Emmanuel Camacho Orozco"
     },
     {
@@ -5196,7 +5204,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Emmanuel Camacho Orozco"
     },
     {
@@ -5224,13 +5232,13 @@
     {
       "i": "264518",
       "t": "314150_HU004_Generación_archivos_liquidación_de_aportes_Empleador_Corte_1",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "314150",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "264602",
@@ -5274,7 +5282,7 @@
       "v": 0.95,
       "f": "307799",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "265040",
@@ -5296,7 +5304,7 @@
       "v": 0.85,
       "f": "98035",
       "ep": "83469",
-      "r": "Luis Rosemberg Zambrano Guerrero"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "265049",
@@ -5450,7 +5458,7 @@
       "v": 0.95,
       "f": "314150",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "268790",
@@ -5466,24 +5474,24 @@
     {
       "i": "268922",
       "t": "98035_HU001(CC3)_Gal_ajuste_consulta general_funcionario_trabajador_parte3",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "98035",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "268923",
       "t": "98035_HU002(CC2)_Gal_ajuste_consulta general_funcionario_empleador_parte3",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "98035",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "268989",
@@ -5575,7 +5583,7 @@
     },
     {
       "i": "272372",
-      "t": "307852_HU016_Generar Archivos de Constitución en Mora (CM) SFTP",
+      "t": "307852_Parte1_HU016_Generar Archivos de Constitución en Mora (CM) SFTP",
       "e": "8.1. Pruebas UAT",
       "p": "CLIENTE",
       "a": 1,
@@ -5631,10 +5639,10 @@
     {
       "i": "275225",
       "t": "88254_HU0021: EC-HU-N01 — Conciliación por Novedad de Ingreso (ING): extemporáneo y discrepancia de fecha",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -5680,7 +5688,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -5691,7 +5699,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -5769,11 +5777,11 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Luis Rosemberg Zambrano Guerrero"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "282734",
-      "t": "307852_HU017_Sincronizar automáticamente las marcaciones de Constitución en Mora desde el servidor SFTPNotificación (MARCA_CM)",
+      "t": "307852_Parte1_HU017_Sincronizar automáticamente las marcaciones de Constitución en Mora desde el servidor SFTPNotificación (MARCA_CM)",
       "e": "8.1. Pruebas UAT",
       "p": "CLIENTE",
       "a": 1,
@@ -5790,7 +5798,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -5818,13 +5826,13 @@
     {
       "i": "283967",
       "t": "100219_HU016(CC1)_Gal_Ajuste_firma_funcionario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "100219",
       "ep": "83469",
-      "r": "Luis Rosemberg Zambrano Guerrero"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "284510",
@@ -5856,7 +5864,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Yiced Baracaldo"
     },
     {
@@ -5878,7 +5886,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Gustavo Adolfo Bonilla Orduña"
     },
     {
@@ -5905,7 +5913,7 @@
     },
     {
       "i": "286167",
-      "t": "307852_HU018_307852_HU018_Ejecutar la desmarcación automática de Constitución en Mora (CM → LC) mediante validación técnica de recaudo",
+      "t": "307852_Parte1_HU018_Ejecutar la desmarcación automática de Constitución en Mora (CM → LC) mediante validación técnica de recaudo",
       "e": "8.1. Pruebas UAT",
       "p": "CLIENTE",
       "a": 1,
@@ -5927,11 +5935,11 @@
     },
     {
       "i": "286195",
-      "t": "307852_HU020_Generar reportes consolidados de envíos de Constitución en Mora con descarga multiformato",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "t": "307852_Parte1_HU020_Generar reportes consolidados de envíos de Constitución en Mora con descarga multiformato",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307852",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -5944,27 +5952,27 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Gustavo Adolfo Bonilla Orduña"
     },
     {
       "i": "286384",
       "t": "100219_HU066_Gal_Actualizar_datos_contrato_por_funcionario",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "286400",
-      "t": "307852_HU019_Automatizar el ciclo de georreferenciación (generación y procesamiento de respuesta)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "t": "307852_Parte1_HU019_Automatizar el ciclo de georreferenciación (generación y procesamiento de respuesta)",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307852",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -5977,7 +5985,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paula Gomez Cantor"
     },
     {
@@ -5993,14 +6001,14 @@
     },
     {
       "i": "287348",
-      "t": "307852_HU021_Auditar errores de envío en notificaciones de Constitución en Mora y gestionar acciones correctivas por día/identificación",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "t": "307852_Parte1_HU021_Auditar errores de envío en notificaciones de Constitución en Mora y gestionar acciones correctivas por día/identificación",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307852",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "287840",
@@ -6038,13 +6046,13 @@
     {
       "i": "289285",
       "t": "307826_HU001 (CC4)_Actualizacion de consultas en gestor de recaudo",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "307826",
       "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "289403",
@@ -6362,7 +6370,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Lady Dayan Bernal Tocora"
     },
     {
@@ -6379,13 +6387,13 @@
     {
       "i": "295032",
       "t": "314172_HU004_visualización_novedades_portal_web",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "314172",
       "ep": "83469",
-      "r": "Luis Rosemberg Zambrano Guerrero"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "296836",
@@ -6440,7 +6448,7 @@
       "v": 0.95,
       "f": "313436",
       "ep": "83469",
-      "r": "Yiced Baracaldo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "297170",
@@ -6511,10 +6519,10 @@
     {
       "i": "298435",
       "t": "307822_HU004_Actualización validaciones proceso cargue y conciliación PILA-LOG",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307822",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -6632,13 +6640,13 @@
     {
       "i": "301668",
       "t": "307836_HU003_Visualización en BALÚ Módulo No Vinculados (filtros).",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 0.95,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "302055",
@@ -6653,11 +6661,11 @@
     },
     {
       "i": "302056",
-      "t": "308714_HU001_F1_Consultar_Siniestros_Marcados_Para_Recobro",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU006_F2_Consultar_Siniestros_Marcados_Para_Recobro",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -6786,13 +6794,13 @@
     {
       "i": "306644",
       "t": "313436_HU001(CC4)_Ajuste_afiliación_independientes",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "313436",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "306731",
@@ -6858,7 +6866,7 @@
       "v": 0.95,
       "f": "307799",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "314290",
@@ -6995,13 +7003,13 @@
     {
       "i": "322237",
       "t": "307827_HU017_Generación archivos mensuales y/o por demanda de reprocesos y facturación en cero",
-      "e": "6.4 Ajustes DEV",
-      "p": "DESARROLLO",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.45,
+      "v": 0.6,
       "f": "307827",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Juan Sebastián González Rivera"
     },
     {
       "i": "322413",
@@ -7089,7 +7097,7 @@
       "v": 0.95,
       "f": "314150",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "325588",
@@ -7100,51 +7108,51 @@
       "v": 0.95,
       "f": "314150",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "325622",
       "t": "314150_HU006_Generación_archivos_liquidación_de_aportes_Corte_3",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "314150",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "326617",
       "t": "312123_HU_001_Radicar_solicitud_reclasificación_empleador_por_funcionario",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "312123",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "327061",
       "t": "83504_HU001(CC1)_Gestión_Comercial_Radicación_afiliación_por_traslado_servicio_doméstico",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "83504",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "327561",
       "t": "97986_HU001.1_Radicar_solicitud_reclasificación_empleador_por_empleador",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "97986",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "327603",
@@ -7193,13 +7201,13 @@
     {
       "i": "328975",
       "t": "96139 HU014 Cambio masivo actividad económica dependiente por empleador",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "96139",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "328989",
@@ -7259,24 +7267,24 @@
     {
       "i": "334789",
       "t": "98062_HU017_Certificado_de_afiliación_individual_agrupado_posterior_a_las_afiliaciones_masivas_desde_empleador",
-      "e": "BLOQUEADO",
-      "p": "DESARROLLO",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": null,
+      "v": 0.6,
       "f": "96139",
       "ep": "83469",
-      "r": "César Alejandro Garcia Tous"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "339102",
       "t": "314170_HU002_Certificado_de_afiliación_individual_agrupado_posterior_a_las_afiliaciones_masivas_desde_funcionario",
-      "e": "BLOQUEADO",
-      "p": "DESARROLLO",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": null,
+      "v": 0.6,
       "f": "98062",
       "ep": "83469",
-      "r": "César Alejandro Garcia Tous"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "339766",
@@ -7363,7 +7371,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Cesar Torrens"
     },
     {
@@ -7429,7 +7437,7 @@
       "a": 0,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Yiced Baracaldo"
     },
     {
@@ -7468,13 +7476,13 @@
     {
       "i": "370873",
       "t": "312123_HU001.1_Gestión_solicitud_reclasificación_empleador_por_Funcionario",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "312123",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "370897",
@@ -7528,7 +7536,7 @@
       "a": 1,
       "v": 0.17,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Yiced Baracaldo"
     },
     {
@@ -7545,13 +7553,13 @@
     {
       "i": "373729",
       "t": "313337_HU_022_Acceso_a_módulo_Centro_de_capacitación_(Registrado)_Experiencia_de_usuario",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "313337",
-      "ep": "83469",
-      "r": "Jose Luis Monasterio Yeguez"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "374303",
@@ -7595,26 +7603,26 @@
       "v": 0.85,
       "f": "313436",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "382281",
       "t": "313337_HU021_Ajuste_Nit_casos_especiales",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "313337",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "382536",
       "t": "313436_HU006_Afiliación Independiente Interno de Medicina",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "313436",
       "ep": "83469",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -7655,10 +7663,10 @@
     {
       "i": "385245",
       "t": "313436_HU008_Crear NIT Especial y Centros de Trabajo Independientes internos de medicina",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "313436",
       "ep": "83469",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -7666,13 +7674,13 @@
     {
       "i": "385567",
       "t": "313436_HU009_Anular Afiliación Interno de Medicina",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "313436",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "387500",
@@ -7765,24 +7773,24 @@
     {
       "i": "406994",
       "t": "85107_HU005_Mejora Olvido de contraseña",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85107",
       "ep": "83503",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "407128",
       "t": "307799_HU014_Evitar duplicidad de planillas con validación ampliada de conciliación",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "307799",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "407208",
@@ -7826,7 +7834,7 @@
       "v": 0.95,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "410215",
@@ -7941,10 +7949,10 @@
     {
       "i": "413640",
       "t": "88254_HU001: Reglas maestras_Definición de Población Objeto - Realizar liquidación en paralelo sin tomar aun información de la pila",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -7974,13 +7982,13 @@
     {
       "i": "413783",
       "t": "457292_HU008_Registrar log transaccional del proceso de transferencia",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.6,
       "f": "457292",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Miguel Angel Rodriguez Castillo"
     },
     {
       "i": "413784",
@@ -8029,10 +8037,10 @@
     {
       "i": "413805",
       "t": "88254_HU002: Consulta de  Log de auditoria de estado de cuenta",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8051,10 +8059,10 @@
     {
       "i": "413810",
       "t": "88254_HU004:  Tipificación y semaforización de los estados de cuenta",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8062,10 +8070,10 @@
     {
       "i": "413813",
       "t": "88254_HU005: Matriz de novedades y jerarquía de aplicación en la conciliación",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8073,10 +8081,10 @@
     {
       "i": "413815",
       "t": "88254_HU006: Reglas de excepción y tratamiento técnico del pago en cero",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8084,21 +8092,21 @@
     {
       "i": "413819",
       "t": "88254_HU007: Gestión de identidad y llave única de cruce de recaudo",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Miguel Angel Rodriguez Castillo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "413823",
       "t": "88254_HU008: Sincronización y validación de novedades del portal de afiliaciones",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8106,65 +8114,65 @@
     {
       "i": "413826",
       "t": "88254_HU009_Disparadores de ejecución y ciclo de vida del estado de cuenta",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "413829",
       "t": "88254_HU010: Conciliación de camino feliz (sincronización de fuentes)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "413832",
       "t": "88254_HU011: Conciliación por novedad de retiro (RET) y brecha técnica",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "413838",
       "t": "88254_HU012: EC-HU-C01 — Tipificar y consolidar el estado del aportante (incluye Pendiente PE y mapeo de RCV a Inconsistencia)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Juan Diego Medina Pulido"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "413839",
       "t": "88254_HU013: EC-HU-C02 — Ventana Temporal Dinámica por aportante, Independencia de Periodos y Visualización por Cobertura Efectiva",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Juan Diego Medina Pulido"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "413841",
       "t": "88254_HU014: EC-HU-C03 — Exactitud de la conciliación y redondeo al múltiplo de 100 más cercano (RM_013): eliminación del umbral de tolerancia ±$50",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8337,32 +8345,32 @@
     {
       "i": "414201",
       "t": "307836_HU004_Visualización en BALÚ Módulo No Vinculados (Tabla de resultado).",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 0.95,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "414203",
       "t": "307836_HU002_Tipificar pagos en grupos y subgrupos de No Vinculados",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 0.95,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "414380",
       "t": "88254_HU024:EC-HU-N04 — Conciliación por Licencia de Maternidad / Paternidad (LMA)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8469,13 +8477,13 @@
     {
       "i": "421543",
       "t": "100219_HU_090_Mensaje_al_descargar_certificados_por_funcionario",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "423752",
@@ -8502,13 +8510,13 @@
     {
       "i": "424453",
       "t": "100219_HU103 Novedades_de_Retiro_Dependiente_por_funcionario (CC1)",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "424479",
@@ -8519,7 +8527,7 @@
       "v": 0.95,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "424532",
@@ -8535,35 +8543,35 @@
     {
       "i": "424716",
       "t": "307836_HU007_HU- Notificación de No Vinculados al área de afiliaciones",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 0.95,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "425489",
       "t": "185622_HU007_Ajuste_opcion_consulta_archivos_RUAF",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "185622",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "425507",
       "t": "313337_HU023_Ajuste_Notificación_electronica",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "313337",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "425997",
@@ -8579,13 +8587,13 @@
     {
       "i": "426013",
       "t": "313439_HU002_Ajuste_gestión_de_afiliaciones_proceso_independientes -",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "313439",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "426428",
@@ -8645,10 +8653,10 @@
     {
       "i": "428276",
       "t": "437764_HU003_Visualizar modal de marcación de Correcciones en consulta por aportante",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8667,32 +8675,32 @@
     {
       "i": "428788",
       "t": "312123_HU001.1_Gestión_solicitud_reclasificación_empleador_por_Funcionario_CC1",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "312123",
       "ep": "83469",
-      "r": "Jaiber Antonio León García"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "429326",
       "t": "97986_HU001.1_Radicar_solicitud_reclasificación_empleador_por_empleador - CC1",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "97986",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "429450",
       "t": "88254_HU015: EC-HU-C04 — Ruta única de liquidación en paralelo (eliminación de la Doble Validación / Ruta Directa por imagen de corte)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -8700,79 +8708,79 @@
     {
       "i": "429452",
       "t": "88254_HU016: EC-HU-C05 — Primacía acotada del Portal de Afiliaciones frente a PILA (el Portal prevalece solo para el Ingreso; PILA gobierna el resto e IBC)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "429454",
       "t": "88254_HU017: EC-HU-C06 — Jerarquía y validación del IBC para la liquidación (adopción de PILA, piso de 1 SMMLV, tope de 25 SMMLV y diferenciación IR− / ERR)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Miguel Angel Rodriguez Castillo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "429456",
       "t": "88254_HU018: EC-HU-C07 — Homologación del catálogo de novedades y siglas vigente (IRP, retiro de TA/TDE y corrección de VAC) con su clasificación y jerarquía de aplicación",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "429457",
       "t": "88254_HU019: EC-HU-C08 — Refinamiento de la Gestión de Identidad y Llave Única de Cruce (RM_009)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Miguel Angel Rodriguez Castillo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "429458",
       "t": "88254_HU020: EC-HU-N14 — Convención Única de Conteo de Días (RM_012)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Lina María Ramirez Martinez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "429459",
       "t": "88254_HU023: EC-HU-N03 — Conciliación por Incapacidad General (IGE)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "429461",
       "t": "88254_HU022: EC-HU-N02 — Conciliación por Suspensión / Licencia no Remunerada (SLN)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "430758",
@@ -8970,7 +8978,7 @@
       "v": 0.95,
       "f": "97986",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "434124",
@@ -9063,13 +9071,13 @@
     {
       "i": "436944",
       "t": "313337_HU024_Ajuste_Correo_de_bienvenida_(Independiente)",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "313337",
-      "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "ep": "207836",
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "437013",
@@ -9080,18 +9088,18 @@
       "v": 0.95,
       "f": "313436",
       "ep": "83469",
-      "r": "Yiced Baracaldo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "437203",
       "t": "100219_HU067_Ajuste_actualización_fechas_Cobertura_empleador_por_funcionario",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "437284",
@@ -9102,7 +9110,7 @@
       "v": 0.95,
       "f": "314150",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "437460",
@@ -9129,24 +9137,24 @@
     {
       "i": "437462",
       "t": "437162_HU_003_Validar razón social y consultar Confecámaras",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "437162",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "437484",
       "t": "437162_HU_004_Campo Naturaleza del empleador (pública_privada_mixta)",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "437162",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "437725",
@@ -9173,68 +9181,68 @@
     {
       "i": "454098",
       "t": "313337_HU025_Ajuste_Correo_de_bienvenida_(Empleador)",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "313337",
-      "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "ep": "207836",
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "454203",
       "t": "434003_HU001_Filtros_Año_Mes_Día_Consulta_Validación_Log_Bancario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "434003",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454219",
       "t": "434003_HU002_Resumen_de_cargue_Validación_Log_Bancario_con_totales_y_detalle",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "434003",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454222",
       "t": "434003_HU005_Detalle_de_Planillas_Validación_Log_Bancario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "434003",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454241",
       "t": "434003_HU003_Filtros_Año_Mes_Día_Consulta_Validación_PILA",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "434003",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454280",
       "t": "100219_HU105_Gal_Ajuste_afiliaciones_masivas_723_funcionario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
-      "r": "Yiced Baracaldo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454374",
@@ -9245,7 +9253,7 @@
       "v": 0.95,
       "f": "437162",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454395",
@@ -9261,46 +9269,46 @@
     {
       "i": "454397",
       "t": "85834_HU002(CC)_Ajuste_WS_Registraduria_Nacional",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454512",
       "t": "313337_HU_026_Filtros_y_buscador_de_Videotutoriales_e_instructivos_(Registrado)_Experiencia_de_usuario",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "313337",
-      "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454532",
       "t": "85834_HU_049_Encolar trámite de afiliación- novedad - póliza/retiro en outbox de sincronización GAL  SIARP  SISE",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454536",
       "t": "313337_HU_027_Tabs_de_clasificación_Videotutoriales_e_instructivos_(Registrado)_Experiencia_de_usuario",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "313337",
-      "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454550",
@@ -9310,41 +9318,41 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "454571",
       "t": "313337_HU_029_Visualización_de_sección_Canales_de_atención_(Registrado)_Experiencia_de_usuario",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "313337",
-      "ep": "83469",
-      "r": "Jose Luis Monasterio Yeguez"
+      "ep": "207836",
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "454579",
       "t": "313337_HU_030_Recorrido_pasos_(Registrado)_Experiencia_de_usuario",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "313337",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454604",
       "t": "85834_HU_050_Procesar registros del outbox respetando el orden jerárquico obligatorio de invocación de servicios web",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454616",
@@ -9354,7 +9362,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9365,7 +9373,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9376,7 +9384,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9387,7 +9395,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9398,7 +9406,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9409,7 +9417,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Paula Gomez Cantor"
     },
     {
@@ -9420,7 +9428,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9431,7 +9439,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9442,7 +9450,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9453,7 +9461,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9464,19 +9472,19 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
       "i": "454671",
       "t": "313337_HU_042_Recorrido_pasos_(Independiente)_Experiencia_de_usuario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "313337",
-      "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454695",
@@ -9486,7 +9494,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9497,7 +9505,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9508,7 +9516,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9519,7 +9527,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9530,30 +9538,30 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Andrés Álvarez Vergel"
     },
     {
       "i": "454700",
       "t": "313337_HU_048_Recorrido_pasos_(Funcionario)_Experiencia_de_usuario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "313337",
-      "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454858",
       "t": "85834_HU051_Aplicar acciones correctivas según error conocido devuelto por SIARP-SISE",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454868",
@@ -9564,18 +9572,18 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "454871",
       "t": "85834_HU_052_Reintentar automáticamente registros failed del outbox con backoff exponencial",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454897",
@@ -9585,49 +9593,49 @@
       "a": 1,
       "v": 0.95,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454944",
       "t": "85834_HU_054_Reintentar manualmente registros en dead_letter o failed vía endpoint retry-dead-and-failed",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "455014",
       "t": "85834_HU_055_Monitorear avance y causísticas de la transferencia GAL - SIARP - SISE",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "455058",
       "t": "85834_HU_056_Configurar feature flags por tipo de entidad para activación progresiva del outbox",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "455936",
       "t": "100219_HU105_Afiliación masiva internos de medicina por funcionario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -9635,24 +9643,24 @@
     {
       "i": "456092",
       "t": "434003_HU004_Resumen_de_cargue_Validación_PILA_con_totales_y_detalle",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "434003",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "456102",
       "t": "434003_HU006_Detalle_de_Planillas_Validación_PILA",
-      "e": "6.3 Esperando Despliegue DEV-QA",
+      "e": "6.2 Desarrollo Frontend",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.36,
       "f": "434003",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Andrés Álvarez Vergel"
     },
     {
       "i": "456306",
@@ -9712,13 +9720,13 @@
     {
       "i": "456757",
       "t": "96139_HU013_Gal_Ajuste_notificación_individual_y_masivo_desplazamiento_trabajador_por_empleador_ - CC2",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "96139",
       "ep": "83469",
-      "r": "Yiced Baracaldo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "456877",
@@ -9734,10 +9742,10 @@
     {
       "i": "457266",
       "t": "437764_HU002_Visualizar marcación de Correcciones en consulta por aportante",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -9751,7 +9759,7 @@
       "v": 0.95,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "457453",
@@ -9800,35 +9808,35 @@
     {
       "i": "458918",
       "t": "457292_HU003_Mapear y transformar la información de recaudo de BALÚ a la estructura de las tablas destino de Positiva (4 tablas iniciales)",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.6,
       "f": "457292",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Miguel Angel Rodriguez Castillo"
     },
     {
       "i": "458944",
       "t": "457292_HU005_Generar y entregar los archivos de recaudo en la estructura requerida para el cargue a Recaudo2 (contingencia)",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "457292",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Miguel Angel Rodriguez Castillo"
     },
     {
       "i": "458984",
       "t": "457292_HU004_Validar automáticamente la estructura y los datos antes de la transferencia a Recaudo2",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "457292",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Miguel Angel Rodriguez Castillo"
     },
     {
       "i": "458993",
@@ -9844,13 +9852,13 @@
     {
       "i": "459016",
       "t": "457292_HU007_Notificar automáticamente fallos o discrepancias detectados en el proceso de transferencia a Recaudo2",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "457292",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Miguel Angel Rodriguez Castillo"
     },
     {
       "i": "460098",
@@ -9866,10 +9874,10 @@
     {
       "i": "460148",
       "t": "314185_HU002_Listado_Afiliados_Empleador",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "314185",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -9877,35 +9885,35 @@
     {
       "i": "460536",
       "t": "459471_HU001_Consulta_Cotizante_pantalla_filtros_grilla",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460538",
       "t": "459471_HU002_Consulta_Cotizante_Modal_Novedades",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460540",
       "t": "459471_HU003_Consulta_Cotizante_Descarga_Reporte",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460561",
@@ -9921,21 +9929,21 @@
     {
       "i": "460566",
       "t": "313434_HU010_Mensaje_SAT",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "313434",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460581",
       "t": "314185_HU004_Listado_Pagos_ARL_Empleador",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "314185",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -9954,76 +9962,76 @@
     {
       "i": "460802",
       "t": "88254_HU026: EC-HU-N06 — Conciliación por Incapacidad de Riesgo Profesional (IRP)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460803",
       "t": "88254_HU027: EC-HU-N07 — Conciliación por Variación de Salario (VSP / VST)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460805",
       "t": "88254_HU028: EC-HU-N08 — Conciliación por Variación de Tarifa / Centro de Trabajo (VTE / VCT)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460806",
       "t": "88254_HU029: EC-HU-N09 — Conciliación de Planillas Múltiples y consolidado de Recaudo",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460809",
       "t": "88254_HU030: EC-HU-H01 — Visualización de ultimo informe de estado de cuenta y bifurcación",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.36,
-      "f": "88254",
-      "ep": "83437",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "460861",
-      "t": "88254_HU031: EC-HU-N11 — Conciliación de Planillas de Corrección (Tipo N)",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "88254",
       "ep": "83437",
-      "r": "Nain Grande Ortiz"
+      "r": "Yesid Sanabria Rey"
+    },
+    {
+      "i": "460861",
+      "t": "88254_HU031: EC-HU-N11 — Conciliación de Planillas de Corrección (Tipo N)",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
+      "a": 1,
+      "v": 0.85,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "460862",
-      "t": "88254_HU032: EC-HU-F03 — Verificación de la interfaz del Estado de Cuenta: formatos, navegación, descargas y errores",
-      "e": "0. Pendiente Levantamiento",
+      "t": "88254_HU032: F2 · EC-HU-V07 — Presentar periodos y totales del estado de cuenta",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.17,
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -10031,21 +10039,21 @@
     {
       "i": "460863",
       "t": "88254_HU033: EC-HU-N13 — Coexistencia y Simultaneidad de Novedades (transversal Fase 2)",
-      "e": "6.1 Backlog Frontend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.33,
+      "v": 0.5,
       "f": "88254",
       "ep": "83437",
-      "r": "Andrés Álvarez Vergel"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "461027",
       "t": "88254_HU034: EC-HU-V01 — Consulta y Visualización General del Estado de Cuenta (por aportante)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10053,21 +10061,21 @@
     {
       "i": "461056",
       "t": "88254_HU035: EC-HU-V02 — Informe Detallado por Cotizante y Detalle de Novedades",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "461057",
-      "t": "88254_HU036: EC-HU-H02 — Consulta del último informe generado, en modo de solo lectura",
-      "e": "2. Elaboración HU",
+      "t": "88254_HU036: F4 · EC-HU-H02 — Consultar el último informe generado en solo lectura",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -10075,10 +10083,10 @@
     {
       "i": "461058",
       "t": "88254_HU037: EC-HU-E01 — Protocolo de Gestión de Errores y Notificaciones Visuales",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10086,10 +10094,10 @@
     {
       "i": "461497",
       "t": "314170_HU003_Crear persona con los datos básicos cuando no existe usuario.",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "314170",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
@@ -10097,10 +10105,10 @@
     {
       "i": "461502",
       "t": "314170_HU004_Actualizar datos básicos de personas en el modulo personas",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "314170",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
@@ -10119,13 +10127,13 @@
     {
       "i": "461542",
       "t": "313434_HU012_Ajustes varios actualizar datos dirección y teléfono todos los formularios.",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "313434",
       "ep": "83469",
-      "r": "Jaiber Antonio León García"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "461551",
@@ -10185,24 +10193,24 @@
     {
       "i": "461897",
       "t": "100219_HU106_Novedades_de_Retiro_Independiente_por_funcionario (CC2)",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "461909",
       "t": "100219_HU107 Novedades_de_Retiro_Dependiente_por_funcionario (CC2)",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "461915",
@@ -10240,10 +10248,10 @@
     {
       "i": "463806",
       "t": "437764_HU004_Visualizar modal de marcación de Correcciones en la pestaña \"Detalle cotizantes de la planilla\" de la Consulta por aportante",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10251,10 +10259,10 @@
     {
       "i": "463813",
       "t": "437764_HU005_Visualizar modal de marcación de Correcciones en la pestaña \"Detalle cotizantes del periodo\" de la Consulta por aportante",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10262,10 +10270,10 @@
     {
       "i": "463815",
       "t": "437764_HU006_Visualizar modal de marcación de Correcciones en la Consulta por Cotizantes",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10383,90 +10391,90 @@
     {
       "i": "465859",
       "t": "459471_HU004_Consulta_Aportante_pantalla_filtros_grilla",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "465860",
       "t": "459471_HU005_Consulta_Aportante_Descarga_Reporte",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "465861",
       "t": "459471_HU006_Detalle_Recaudo_Datos_Planilla",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "465863",
       "t": "459471_HU007_Detalle_Recaudo_Cotizantes_Planilla",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "465868",
       "t": "459471_HU008_Detalle_Recaudo_Cotizantes_Periodo",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "466588",
       "t": "98035_HU0026_Anexos_consulta general_funcionario_trabajador",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.4,
+      "v": 0.85,
       "f": "98035",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "466693",
       "t": "98035_HU0027_Anexos_consulta general_funcionario__empleador",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.4,
+      "v": 0.85,
       "f": "98035",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "467516",
       "t": "459471_HU009_Detalle_Recaudo_Modal_Novedades",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "459471",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "470918",
@@ -10482,13 +10490,13 @@
     {
       "i": "470920",
       "t": "96139_HU001_CC_Modificar el tiempo de bloqueo por intentos fallidos de autenticación del empleador_inicio_de_sesion",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "96139",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "470954",
@@ -10548,13 +10556,13 @@
     {
       "i": "472426",
       "t": "434061_HU024_Incluir los filtros \"Número de identificación\" y \"Número de planilla\" en la consulta de Devolución de aportes",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "472440",
@@ -10570,13 +10578,13 @@
     {
       "i": "472451",
       "t": "437764_HU009_Generar y descargar el archivo Log de errores tras el cargue de correcciones no parametrizadas",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "473645",
@@ -10669,13 +10677,13 @@
     {
       "i": "474019",
       "t": "Ajuste Generación - Generar Archivos de Constitución en Mora (CM) SFTP",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "307852",
       "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "474092",
@@ -10697,7 +10705,7 @@
       "v": 0.95,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "475173",
@@ -10708,26 +10716,26 @@
       "v": 0.95,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "477480",
       "t": "434061_HU025_Incluir la columna Causal en la tabla de resultados de la consulta de Devolución de aportes",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "477488",
       "t": "437764_HU008_descarga plantilla correcciones no parametrizadas",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10735,10 +10743,10 @@
     {
       "i": "477494",
       "t": "437764_HU007_Adicionar filtro \"Número de planilla\" en consulta Corrección de aportes",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10746,13 +10754,13 @@
     {
       "i": "480043",
       "t": "100219_HU069_Consultar y visualizar pólizas del empleador",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "480044",
@@ -10801,21 +10809,21 @@
     {
       "i": "480730",
       "t": "313436_HU004_CC1_mensajes y requisitos de cada documento adjunto del formulario de afiliación de independientes con contrato de prestación de servicios",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "313436",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "481248",
       "t": "481244_HU002_Ajuste en nombre de submenú e inclusión del Consolidado por Sucursal en la consulta principal de liquidación 1%",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "481244",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -10823,68 +10831,68 @@
     {
       "i": "481253",
       "t": "481244_HU003_Descarga de excel en el Consolidado por Sucursal de la consulta principal de liquidación 1%",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "481244",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Paez"
     },
     {
       "i": "481919",
       "t": "434061_HU026_Ajuste en plantilla del Correo electrónico tras ejecutar la radicación de solicitud de Devolución",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Javier Alfonso Santiago Salazar"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "481925",
       "t": "437764_HU010_Ajuste a plantillas de notificación al aportante Gestión Automática de Corrección de aportes",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "481938",
       "t": "307836_HU003_CC1_Actualización de filtros en Consulta principal de No Vinculados",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "481940",
       "t": "307836_HU004_CC1_Actualización en Consulta principal de No Vinculados (Tabla de resultado).",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "481945",
       "t": "307836_HU005_CC1_Actualización Opción de Descarga en la Consulta principal de No Vinculados.",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "481946",
@@ -10911,24 +10919,24 @@
     {
       "i": "482520",
       "t": "307037_HU003(CC1)_Ajustar la consulta del pre registro: reubicar el botón continuar y validar los datos diligenciados contra el WS",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "307037",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "483636",
       "t": "434061_HU027_Ajuste en plantilla primer PDF del Correo electrónico tras ejecutar la radicación de solicitud de Devolución (Acuse de recibido)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Javier Alfonso Santiago Salazar"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "484956",
@@ -10999,35 +11007,35 @@
     {
       "i": "485601",
       "t": "485086_HU001_Recepcion_SFTP_Otras_Administradoras",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485603",
       "t": "485086_HU002_Cargue_Automatico_Semanal",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485605",
       "t": "485086_HU003_Cargue_Manual",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Sergio Lara"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485607",
@@ -11038,62 +11046,62 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Sergio Lara"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485611",
       "t": "485086_HU005_Notificacion_Correo_Inconsistencias",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Santiago Cardenas Amaya"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485614",
       "t": "485086_HU006_Conciliacion_Automatica_Estado_Conciliado",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485616",
       "t": "485086_HU007_Log_Ejecucion_Descargable_Excel",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485618",
       "t": "485086_HU008_Columna_Administradora_Validacion_PILA",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485619",
       "t": "485086_HU009_Columna_Administradora_Validacion_LOG",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "486233",
@@ -11109,13 +11117,13 @@
     {
       "i": "486754",
       "t": "434061_HU028_Adicionar plantilla segundo PDF del Correo electrónico tras ejecutar la radicación de solicitud de Devolución (Resumen datos de solicitud)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Javier Alfonso Santiago Salazar"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "487147",
@@ -11186,57 +11194,57 @@
     {
       "i": "487282",
       "t": "434061_HU029_Ajuste en plantilla del Correo electrónico tras gestionar la radicación de solicitud de Devolución (Respuesta de Aprobado/Rechazado)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Javier Alfonso Santiago Salazar"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "487302",
       "t": "434061_HU030_Ajuste en plantilla PDF adjunta al Correo electrónico tras Gestionar la radicación de solicitud de Devolución",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Javier Alfonso Santiago Salazar"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "487592",
-      "t": "437764_HU010_Ajuste a plantillas de PDF notificación al aportante Gestión Automática de Corrección de aportes (informe de decisión)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "t": "437764_HU011_Ajuste a plantillas de PDF notificación al aportante Gestión Automática de Corrección de aportes (informe de decisión)",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "487594",
-      "t": "437764_HU010_Ajuste a plantillas de PDF notificación al aportante Gestión Automática de Corrección de aportes (resumen datos de la solicitud)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "t": "437764_HU012_Ajuste a plantillas de PDF notificación al aportante Gestión Automática de Corrección de aportes (resumen datos de la solicitud)",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "487596",
-      "t": "437764_HU010_Ajuste a plantillas de PDF notificación al aportante Gestión Automática de Corrección de aportes (corrección rechazada)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "t": "437764_HU013_Ajuste a plantillas de PDF notificación al aportante Gestión Automática de Corrección de aportes (corrección rechazada)",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "489412",
@@ -11263,178 +11271,178 @@
     {
       "i": "489528",
       "t": "100219_HU114 Actualizar el centro de trabajo del interno de medicina por traslado de la ciudad de práctica",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489530",
       "t": "100219_HU115 Modificar las fechas de la práctica del interno de medicina por suspensión o ampliación del periodo",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489538",
       "t": "100219_HU116 Habilitar la visualización y la edición del NIT especial de internos de medicina y centros de trabajo",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Nestor Camilo Camacho García"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "489543",
       "t": "100219_HU117 Cambiar el representante legal del NIT especial de internos de medicina desde el espacio de funcionario",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Nestor Camilo Camacho García"
+      "r": "Cristian Camilo Rojas Ascencio"
     },
     {
       "i": "489546",
       "t": "100219_HU118 Ajustar las etiquetas del formulario de afiliación de la modalidad Interno de Medicina",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489839",
       "t": "307836_HU002_CC1_Tipificar los pagos conciliados en los estados de No Vinculados y exponer los estados históricos de consulta",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.6,
       "f": "307836",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "489900",
       "t": "307836_HU008_Consultar la trazabilidad de gestión por estado de No Vinculados",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489908",
       "t": "307836_HU009_Generar y Consultar el detalle de planillas asociadas a los estados de No Vinculados",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489910",
       "t": "307836_HU010_Presentar el archivo Detalle No Vinculados para descarga y para envío a Afiliaciones",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
-      "f": "307836",
-      "ep": "83437",
-      "r": "Yesid Sanabria Rey"
-    },
-    {
-      "i": "489966",
-      "t": "307833_HU_012_Actualizar_Plantillas_Comunicacion_Cartera_Preventiva",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307833",
-      "ep": "83437",
-      "r": "Lina María Ramirez Martinez"
-    },
-    {
-      "i": "490055",
-      "t": "307833_HU_013_Actualizar_Anexo_Cotizantes_Nombre_y_Formatos",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307833",
-      "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "490056",
-      "t": "307833_HU_014_Enviar_Comunicaciones_Pendientes_por_Actualizacion_de_Correo",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307833",
-      "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
-    },
-    {
-      "i": "490057",
-      "t": "307833_HU_015_Actualizar_Fuentes_del_Correo_del_Aportante",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307833",
-      "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "490058",
-      "t": "307833_HU_016_Actualizar_Almacenamiento_de_Comunicaciones_y_Formatos_de_los_Grids",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307833",
-      "ep": "83437",
-      "r": "Lina María Ramirez Martinez"
-    },
-    {
-      "i": "490082",
-      "t": "307833_HU_017_Aplicar_Vigencia_Tabla_Excepciones_en_el_Cruce",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307833",
-      "ep": "83437",
-      "r": "Lina María Ramirez Martinez"
-    },
-    {
-      "i": "490093",
-      "t": "481244_HU001_Reestructurar_Consulta_Principal_Liquidacion Diaria 1%_Pestañas",
       "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.8,
+      "f": "307836",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "489966",
+      "t": "307833_HU_012_Actualizar_Plantillas_Comunicacion_Cartera_Preventiva",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.6,
+      "f": "307833",
+      "ep": "83437",
+      "r": "Maralis Villadiego Gasabon"
+    },
+    {
+      "i": "490055",
+      "t": "307833_HU_013_Actualizar_Anexo_Cotizantes_Nombre_y_Formatos",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "307833",
+      "ep": "83437",
+      "r": "Maralis Villadiego Gasabon"
+    },
+    {
+      "i": "490056",
+      "t": "307833_HU_014_Enviar_Comunicaciones_Pendientes_por_Actualizacion_de_Correo",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.6,
+      "f": "307833",
+      "ep": "83437",
+      "r": "Maralis Villadiego Gasabon"
+    },
+    {
+      "i": "490057",
+      "t": "307833_HU_015_Actualizar_Fuentes_del_Correo_del_Aportante",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "307833",
+      "ep": "83437",
+      "r": "Maralis Villadiego Gasabon"
+    },
+    {
+      "i": "490058",
+      "t": "307833_HU_016_Actualizar_Almacenamiento_de_Comunicaciones_y_Formatos_de_los_Grids",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "307833",
+      "ep": "83437",
+      "r": "Maralis Villadiego Gasabon"
+    },
+    {
+      "i": "490082",
+      "t": "307833_HU_017_Aplicar_Vigencia_Tabla_Excepciones_en_el_Cruce",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "307833",
+      "ep": "83437",
+      "r": "Maralis Villadiego Gasabon"
+    },
+    {
+      "i": "490093",
+      "t": "481244_HU001_Reestructurar_Consulta_Principal_Liquidacion Diaria 1%_Pestañas",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
+      "a": 1,
+      "v": 0.9,
       "f": "481244",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Paez"
     },
     {
       "i": "490099",
@@ -11450,57 +11458,57 @@
     {
       "i": "490100",
       "t": "481244_HU005_Descargar_Certificacion_PDF_Consolidado_Por_Sucursal",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "481244",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Harol Paez"
     },
     {
       "i": "491395",
       "t": "313439_HU003_CC_Reactivación gestión de afiliaciones(gestión_de_afiliaciones_proceso_empleador_servicio_doméstico_e_independientes)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "313439",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491554",
       "t": "85834_HU050 WS_Insertar_Desplazamiento_Trabajador",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491555",
       "t": "85834_HU051 WS_Actualizar_Empleador",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491556",
       "t": "85834_HU052 WS_Actualizar_Sede",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491558",
@@ -11510,63 +11518,63 @@
       "a": 1,
       "v": 0.08,
       "f": "85834",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "491559",
       "t": "85834_HU054 WS_Actualizar_Cargo_Trabajador",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491560",
       "t": "85834_HU055 WS_Actualizar_Actividad_Economica_Independiente",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491561",
       "t": "85834_HU056 WS_Actualizar_Fecha_Contrato_Independiente",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491567",
       "t": "85834_HU057 Actualizar_Ocupacion_Independiente",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "85834",
-      "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "ep": "207836",
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "491871",
       "t": "96139_HU016_CC_Adición de filtro por Número de documento en retiro de trabajador individual",
-      "e": "9. Esperando Despliegue UAT.PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "96139",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "492019",
@@ -11648,10 +11656,10 @@
     {
       "i": "492725",
       "t": "314172_HU015_CC_Novedaes_Ingreso_PILA_Pagos",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "314172",
       "ep": "83469",
       "r": "Cristian Camilo Rojas Ascencio"
@@ -11664,7 +11672,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Santiago Piña Bustos"
     },
     {
@@ -11675,7 +11683,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "83469",
+      "ep": "207836",
       "r": "Santiago Piña Bustos"
     },
     {
@@ -11725,65 +11733,65 @@
     {
       "i": "494559",
       "t": "307836_HU009_CC1_Aplicar la definición dinámica de la columna \"Estado actual\" en la consulta Detalle de No Vinculados",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "307836",
-      "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
-    },
-    {
-      "i": "494645",
-      "t": "307836_HU011_Publicar el archivo de Detalle No Vinculados en el SFTP",
       "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.4,
       "f": "307836",
       "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Andrés Álvarez Vergel"
     },
     {
-      "i": "494855",
-      "t": "88254_HU038: EC-HU-C09 — Catálogo único de siete estados del cotizante y nomenclatura vigente (INX / MVP)",
+      "i": "494645",
+      "t": "307836_HU011_Publicar el archivo de Detalle No Vinculados en el SFTP",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
+      "f": "307836",
+      "ep": "83437",
+      "r": "Carlos Andres Romero Benitez"
+    },
+    {
+      "i": "494855",
+      "t": "88254_HU038: EC-HU-C09 — Catálogo único de siete estados del cotizante y nomenclatura vigente (INX / MVP)",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
+      "a": 1,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "494856",
-      "t": "88254_HU039: EC-HU-H03 — Regeneración del estado de cuenta con motivo, y retención de la última ejecución",
-      "e": "2. Elaboración HU",
+      "t": "88254_HU039: B2 · EC-HU-H03 — Generar el estado de cuenta con motivo y conservar el último informe",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "494857",
-      "t": "x-88254_HU040: EC-HU-C11 — Persistencia trazable del resultado del motor (origen del cálculo, marca del periodo y subempresa)",
-      "e": "0. Pendiente Levantamiento",
+      "t": "88254_HU040: B1 · EC-HU-C12 — Completar la información calculada del estado de cuenta",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.17,
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "494858",
-      "t": "88254_HU041: EC-HU-F01 — Verificación en interfaz de las reglas del motor de Estado de Cuenta",
-      "e": "0. Pendiente Levantamiento",
+      "t": "88254_HU041: B4 · EC-HU-F04 — Verificar el estado de cuenta con la carga masiva",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.17,
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -11857,13 +11865,13 @@
     {
       "i": "494868",
       "t": "88254_HU048: EC-HU-V04 — Consulta del Estado de Cuenta por NIT que agrupa varias entidades (selección de subempresa)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Andrés Álvarez Vergel"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "495370",
@@ -11911,69 +11919,69 @@
     },
     {
       "i": "497078",
-      "t": "307852_HU25_Ingreso automático Notificaciones Físicas CM",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "497079",
-      "t": "307852_HU26_Consulta grilla Notificaciones Físicas CM",
+      "t": "307852_Parte2_HU25_Ingreso automático Notificaciones Físicas CM",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "307852",
       "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Juan Sebastián González Rivera"
+    },
+    {
+      "i": "497079",
+      "t": "307852_Parte2_HU26_Consulta grilla Notificaciones Físicas CM",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Juan Sebastián González Rivera"
     },
     {
       "i": "497081",
-      "t": "307852_HU27_Generación PDF comunicación física CM",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "t": "307852_Parte2_HU27_Generación PDF comunicación física CM",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "307852",
       "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Juan Sebastián González Rivera"
     },
     {
       "i": "497082",
-      "t": "307852_HU28_Etiqueta NF en Consulta Liquidación vs Recaudo",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "t": "307852_Parte2_HU28_Etiqueta NF en Consulta Liquidación vs Recaudo",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "307852",
       "ep": "83437",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Juan Sebastián González Rivera"
     },
     {
       "i": "497084",
-      "t": "307852_HU29_F1_Configurar_Destinatarios_De_Alertas_Por_Modulo_Y_Tipo",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
+      "t": "307852_Parte2_HU29_F1_Configurar_Destinatarios_De_Alertas_Por_Modulo_Y_Tipo",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.12,
+      "v": 0.5,
       "f": "307852",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Juan Sebastián González Rivera"
     },
     {
       "i": "497087",
-      "t": "307852_HU30_B1_Enviar_Alarma_CM_De_Notificaciones_Fisicas_Dos_Veces_Al_Mes",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
+      "t": "307852_Parte2_HU30_B1_Enviar_Alarma_CM_De_Notificaciones_Fisicas_Dos_Veces_Al_Mes",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.12,
+      "v": 0.5,
       "f": "307852",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Juan Sebastián González Rivera"
     },
     {
       "i": "497858",
@@ -11989,76 +11997,76 @@
     {
       "i": "498665",
       "t": "313434_017_Consultar persona representante del centro de trabajo para asignarla - Empleador",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "313434",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "498733",
       "t": "313434_HU018 Consultar persona representante del centro de trabajo para asignarla - Funcionario",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "313434",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "499194",
-      "t": "308714_HU004_F3_Consultar_Informacion_Faltante_de_un_Periodo",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU012_F4_Consultar_Informacion_Faltante_de_un_Periodo",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "499197",
-      "t": "308714_HU005_B1_Recibir_Siniestros_Activos_para_Marcacion",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU001_B1_Recibir_Siniestros_Activos_para_Marcacion",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "499198",
-      "t": "308714_HU006_B1_Registrar_Trazabilidad_de_Cambios_de_Estado",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU002_B1_Registrar_Trazabilidad_de_Cambios_de_Estado",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "499211",
-      "t": "308714_HU007_B1_Registrar_Marcacion_en_Tabla_de_Siniestros",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU003_B1_Registrar_Marcacion_en_Tabla_de_Siniestros",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "499212",
-      "t": "308714_HU008_B2_Aplicar_Exclusiones_Parametrizadas",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU004_B2_Aplicar_Exclusiones_Parametrizadas",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -12072,7 +12080,7 @@
       "v": 0.95,
       "f": "312123",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "500510",
@@ -12098,11 +12106,11 @@
     },
     {
       "i": "505003",
-      "t": "x-88254_HU049: EC-HU-N15 — Listado de retiros por inactivar en Afiliaciones",
-      "e": "0. Pendiente Levantamiento",
+      "t": "88254_HU049: F1 · EC-HU-V06 — Filtrar la consulta del estado de cuenta por cotizante",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.17,
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -12187,13 +12195,13 @@
     {
       "i": "505915",
       "t": "313434_HU019_ Excepcion_Representante_Legal_Responsable_Centro_Trabajo_Empleador CC1 - Empleador",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "313434",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "505948",
@@ -12204,7 +12212,7 @@
       "v": 0.5,
       "f": "313434",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "506064",
@@ -12275,13 +12283,13 @@
     {
       "i": "507714",
       "t": "101755_HU_24_CC1_Actualización del catálogo de tipos de documento de identificación, de sus longitudes y de sus caracteres permitidos",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "101755",
       "ep": "83503",
-      "r": "Paula Gomez Cantor"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "508108",
@@ -12418,35 +12426,35 @@
     {
       "i": "510118",
       "t": "100219_HU120_Seleccionar_los_aportes_E1_y_filtrar_por_tipo_de_planilla",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
+      "v": 0.5,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "510129",
       "t": "100219_HU121_Validar_el estado_del_aportante_ante_el_SAT",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
+      "v": 0.5,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "510136",
       "t": "100219_HU122_Diligenciar_el_formulario_y_crear_la_afiliación_del_empleador",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
+      "v": 0.5,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "510143",
@@ -12462,57 +12470,57 @@
     {
       "i": "510144",
       "t": "100219_HU124_Crear_las_relaciones_laborales_y_aplicar_la_novedad_de_retiro",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Andrés Álvarez Vergel"
     },
     {
       "i": "510145",
       "t": "100219_HU125_Marcar_la_normalización_notificar_al_empleador_y_cerrar_el_aporte",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "510155",
       "t": "98062_HU_025_Formulario_afiliacion_Dependiente",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.33,
       "f": "98062",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "510157",
       "t": "98062_HU_026_Formulario_afiliacion_Independiente_723",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "98062",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "510159",
       "t": "98062_HU_027_Formulario_afiliacion_Independiente voluntario a riesgos laborales",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "98062",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "510162",
@@ -12550,13 +12558,13 @@
     {
       "i": "510167",
       "t": "98062_HU_032_Formulario_afiliacion_Interno de medicina",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.4,
       "f": "98062",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Juan Felipe Zea Sanchez"
     },
     {
       "i": "510169",
@@ -12572,164 +12580,164 @@
     {
       "i": "510173",
       "t": "98062_HU034_Mensaje_ayuda_por_tipo_de_vinvulación_independiente",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.4,
       "f": "98062",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Jose Luis Monasterio Yeguez"
     },
     {
       "i": "510195",
       "t": "100219_HU126_Selección_diaria_de aportes de la categoría Y1 y enrutamiento inicial",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Paola Peña"
     },
     {
       "i": "510316",
-      "t": "100219_HU127_Identificación del contratante, actualización de su registro y ruta de normalización",
-      "e": "4. Refinamiento",
+      "t": "100219_HU127_Identificación del contratante, actualización del tipo de documento y ruta de normalización",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Paola Peña"
     },
     {
       "i": "510318",
       "t": "100219_HU128_Actualización del tipo de documento del contratante a NI",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "100219",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
       "i": "510319",
-      "t": "100219_HU129_Creación del contratante como empleador 723",
-      "e": "4. Refinamiento",
+      "t": "100219_HU129_Creación del contratante como empleador 723 con consulta del representante legal en Confecámaras",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Paola Peña"
     },
     {
       "i": "510341",
       "t": "100219_HU130_Consulta del representante legal del contratante en Confecámaras",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "100219",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
       "i": "510349",
-      "t": "100219_HU131_Creación de la póliza de contratante en SIARP",
-      "e": "4. Refinamiento",
+      "t": "100219_HU131_Creación de la póliza de contratante y envío a SIARP",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Paola Peña"
     },
     {
       "i": "510354",
-      "t": "100219_HU132_Creación de la relación laboral del trabajador independiente: datos del trabajador e intervalos de vigencias",
-      "e": "4. Refinamiento",
+      "t": "100219_HU132_Creación de la relación laboral y del contrato del trabajador independiente",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Paola Peña"
     },
     {
       "i": "510361",
       "t": "100219_HU133_Creación del contrato del trabajador independiente: actividad económica, cargo, IBC y fechas",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "100219",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
       "i": "510364",
-      "t": "100219_HU135_Cierre del aporte normalizado, reproceso de identificación de póliza y trazabilidad",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "100219",
-      "ep": "83469",
-      "r": "Paula Gomez Cantor"
-    },
-    {
-      "i": "510795",
-      "t": "83504_HU002(CC2)_Gestión_Comercial_Documentación_por_traslado",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "83504",
-      "ep": "83469",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "512303",
-      "t": "96139_HU003_Gal_Formulario_y_proceso_de_actualización_datos_empleador_trabajador CC1",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "96139",
-      "ep": "83469",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "512354",
-      "t": "100219_HU105_Gal_Ajuste_afiliaciones_masivas_723_funcionario CC2",
+      "t": "100219_HU135_Cierre del aporte normalizado y entrega a Recaudo y Cartera para el reproceso de identificación de póliza",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
       "f": "100219",
-      "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "514035",
-      "t": "94067_HU004(CC3)_Gal_Ajuste_independientes_Plantilla_masiva",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "94067",
       "ep": "83469",
       "r": "Paola Peña"
     },
     {
+      "i": "510795",
+      "t": "83504_HU002(CC2)_Gestión_Comercial_Documentación_por_traslado",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "83504",
+      "ep": "83469",
+      "r": "Nain Grande Ortiz"
+    },
+    {
+      "i": "512303",
+      "t": "96139_HU003_Gal_Formulario_y_proceso_de_actualización_datos_empleador_trabajador CC1",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.6,
+      "f": "96139",
+      "ep": "83469",
+      "r": "Maria Victoria Martins Souza"
+    },
+    {
+      "i": "512354",
+      "t": "100219_HU105_Gal_Ajuste_afiliaciones_masivas_723_funcionario CC2",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Nain Grande Ortiz"
+    },
+    {
+      "i": "514035",
+      "t": "94067_HU004(CC3)_Gal_Ajuste_independientes_Plantilla_masiva",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
+      "a": 1,
+      "v": 0.85,
+      "f": "94067",
+      "ep": "83469",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
       "i": "514894",
       "t": "HU_PR012_Adaptar el framework Hermes QA al proyecto Balu mediante un perfil (TestPLan - Certificación)",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417189",
       "ep": "417182",
       "r": "Andres Javier Sanchez Barrera"
@@ -12737,10 +12745,10 @@
     {
       "i": "515505",
       "t": "HU_012_Script_Pruebas_Carga_K6_Desarrollo_Adminitrador_Distribuidor",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417212",
       "ep": "417182",
       "r": "William Javier Granados Olarte"
@@ -12748,10 +12756,10 @@
     {
       "i": "515564",
       "t": "Glosas - SP 58",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417232",
       "ep": "83503",
       "r": "Jhon Fredy Torres Peña"
@@ -12759,10 +12767,10 @@
     {
       "i": "515565",
       "t": "Verificación de contenido de HUs de UAT y corrección de errores",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417232",
       "ep": "83503",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12770,10 +12778,10 @@
     {
       "i": "515566",
       "t": "SP_58_Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software (SonarQube Y Glosas) y seguimientos",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417232",
       "ep": "83503",
       "r": "César Alejandro Garcia Tous"
@@ -12781,10 +12789,10 @@
     {
       "i": "515568",
       "t": "Acompañamiento y solucion de errores en UAT - Paola Peña",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417232",
       "ep": "83503",
       "r": "Paola Peña"
@@ -12792,10 +12800,10 @@
     {
       "i": "515569",
       "t": "verificacion de contenido de HUs de UAT y correccion de errores SP58",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417232",
       "ep": "83503",
       "r": "Jaiber Antonio León García"
@@ -12803,6 +12811,996 @@
     {
       "i": "515588",
       "t": "SP_58_Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "515589",
+      "t": "Apoyo en revision HU UAT Jose Monasterio",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Jose Luis Monasterio Yeguez"
+    },
+    {
+      "i": "515592",
+      "t": "Apoyo en revision HUs UAT Andres Alvarez",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Andrés Álvarez Vergel"
+    },
+    {
+      "i": "515818",
+      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Arnold Joan Brinez Tamara"
+    },
+    {
+      "i": "515822",
+      "t": "Actividades transversales recaudo",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Arnold Joan Brinez Tamara"
+    },
+    {
+      "i": "515826",
+      "t": "Acompañamiento QA y apoyo UAT",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Emmanuel Camacho Orozco"
+    },
+    {
+      "i": "515843",
+      "t": "Acompañamiento y apoyo UAT CP - JUAN ZEA",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Juan Felipe Zea Sanchez"
+    },
+    {
+      "i": "515845",
+      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Santiago Cardenas Amaya"
+    },
+    {
+      "i": "515849",
+      "t": "Apoyo en revision HUs Lina Ramirez",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Lina María Ramirez Martinez"
+    },
+    {
+      "i": "515855",
+      "t": "Soporte técnico y funcional a correcciones de aportes, QR y entregas a QA",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Javier Alfonso Santiago Salazar"
+    },
+    {
+      "i": "515887",
+      "t": "Apoyo en revision HUs UAT Sergio Lara",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Sergio Lara"
+    },
+    {
+      "i": "515966",
+      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 58",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Carlos Andres Diaz De Felipe"
+    },
+    {
+      "i": "516043",
+      "t": "Acompañamiento y solucion de errores en UAT - Cesar torrens",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Cesar Torrens"
+    },
+    {
+      "i": "518769",
+      "t": "96139_HU020_Generar el carné de afiliación de un trabajador",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "96139",
+      "ep": "83469",
+      "r": "Jose Luis Monasterio Yeguez"
+    },
+    {
+      "i": "518851",
+      "t": "308714_HU005_B2_Construir_Ventana_11_Mas_1_del_Siniestro",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "518852",
+      "t": "308714_HU007_B3_Determinar_Resultado_de_Cada_Periodo",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "518853",
+      "t": "308714_HU008_B3_Evaluar_Siniestros_Anteriores_a_2017",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "518854",
+      "t": "308714_HU011_B4_Consolidar_Estado_del_Siniestro",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "518855",
+      "t": "308714_HU013_B5_Ejecutar_Revalidacion_Diaria",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "518927",
+      "t": "96139_HU021_Generar los carnés de afiliación de varios trabajadores",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.33,
+      "f": "100219",
+      "ep": "83469",
+      "r": "César Alejandro Garcia Tous"
+    },
+    {
+      "i": "519061",
+      "t": "96139_HU022_Solicitar por correo electrónico la generación de más de 100 carnés",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Jose Luis Monasterio Yeguez"
+    },
+    {
+      "i": "519570",
+      "t": "100219_HU_136_Generar el carné_de_un_trabajador_por_funcionario",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Jose Luis Monasterio Yeguez"
+    },
+    {
+      "i": "519618",
+      "t": "100219_HU_137_Generar carnés de varios trabajadores en un único archivo PDF (hasta 100)_por_funcionario_(opción «Agrupado o individuales»)",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.33,
+      "f": "100219",
+      "ep": "83469",
+      "r": "César Alejandro Garcia Tous"
+    },
+    {
+      "i": "519772",
+      "t": "100219_HU_138_Generar más de 100 carnés con envío de enlace por correo electrónico e historial de cargues masivos_funcionario",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "100219",
+      "ep": "83469",
+      "r": "César Alejandro Garcia Tous"
+    },
+    {
+      "i": "519970",
+      "t": "307852_Parte2_HU31_F4_Ajustar_Consulta_De_Notificaciones_Fisicas",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519971",
+      "t": "307852_Parte2_HU32_F4_Mostrar_Marcas_CM-NF_Y_VD_En_Las_Consultas",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519972",
+      "t": "307852_Parte2_HU33_F6_Confirmar_Generacion_Masiva_De_Notificaciones_Fisicas",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519973",
+      "t": "307852_Parte2_HU34_B1_Asignar_Marca_VD_Y_Enviar_A_Georreferenciacion",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519974",
+      "t": "307852_Parte2_HU35_B3_Generar_Comunicacion_Fisica_Individual",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519975",
+      "t": "307852_Parte2_HU36_B2_Procesar_Respuesta_Georreferenciacion_Con_Marca_CM-NF",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519976",
+      "t": "307852_Parte2_HU37_B6_Conservar_Comunicaciones_Tres_Periodos_Y_Depurar_Vencidas",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519977",
+      "t": "307852_Parte2_HU38_B5_Generar_Comunicaciones_Masivas_Con_Entrega_Del_ZIP",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519978",
+      "t": "307852_Parte2_HU39_B3_Desmarcar_A_LC_Aportantes_En_CM-NF",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "519979",
+      "t": "307852_Parte2_HU40_F4_Ajustar_Reporte_De_Envios_CM_Con_Marca_CM-NF",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "521369",
+      "t": "88254_HU050: F3 · EC-HU-V08 — Presentar detalle del cotizante y novedades con datos de Afiliaciones y PILA",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "521370",
+      "t": "88254_HU052: F5 · EC-HU-H04F — Presentar la comparación de deuda en la ventana de estado de cuenta ya procesado",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "521371",
+      "t": "88254_HU051: B2 · EC-HU-C13 — Consultar el estado de cuenta acotado a un cotizante",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "521372",
+      "t": "88254_HU053: B3 · EC-HU-H04B — Calcular la comparación de deuda entre el último informe y la información vigente",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "521373",
+      "t": "88254_HU054: B1 · EC-HU-C14 — Depurar y consolidar las planillas PILA de un cotizante en el periodo",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "522014",
+      "t": "313436_HU010 Validar fechas de activación cobertura de la afiliación de independientes",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Maria Victoria Martins Souza"
+    },
+    {
+      "i": "522015",
+      "t": "313436_HU011 Asignar centro de trabajo con actividad económica principal del empleador para independientes.",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Maria Victoria Martins Souza"
+    },
+    {
+      "i": "522016",
+      "t": "313436_HU012 Retiro individual del Interno de Medicina por el funcionario",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "313436",
+      "ep": "83469",
+      "r": "César Alejandro Garcia Tous"
+    },
+    {
+      "i": "522017",
+      "t": "313436_HU013 Retiro masivo del Interno de Medicina por el funcionario",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "313436",
+      "ep": "83469",
+      "r": "César Alejandro Garcia Tous"
+    },
+    {
+      "i": "522020",
+      "t": "98062_HU_035_Formulario_afiliacion_Independiente_Concejal o Edil",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "98062",
+      "ep": "83469",
+      "r": "Juan Felipe Zea Sanchez"
+    },
+    {
+      "i": "522021",
+      "t": "98062_HU_036_Formulario_afiliacion_Independiente_Taxista",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "98062",
+      "ep": "83469",
+      "r": "Juan Felipe Zea Sanchez"
+    },
+    {
+      "i": "522032",
+      "t": "100219_HU137_Afiliación masiva internos de medicina por funcionario - Ajuste Plantilla Importación",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Nain Grande Ortiz"
+    },
+    {
+      "i": "524415",
+      "t": "481244_HU006_Pre-validación de archivos maestros antes del cierre mensual",
+      "e": "BLOQUEADO",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": null,
+      "f": "481244",
+      "ep": "83437",
+      "r": "Lina María Ramirez Martinez"
+    },
+    {
+      "i": "524417",
+      "t": "485086_HU001(CC1)_Excluir_Administradoras_Fuera_Del_Catalogo",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "524451",
+      "t": "485086_HU003(CC1)_Validar_Catalogo_Administradoras_Cargue_Manual",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "524458",
+      "t": "485086_HU008(CC1)_Cantidad_Registros_Otras_Administradoras_Validacion_PILA",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Cristian Camilo Rojas Ascencio"
+    },
+    {
+      "i": "524738",
+      "t": "485086_HU010_Consultar_Cargues_Otras_Administradoras",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "524741",
+      "t": "485086_HU011_Identificar_Poliza_Sucursal_Registros_Conciliados",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "524742",
+      "t": "485086_HU012_Enviar_Confirmacion_Cargue_Aportantes",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "524745",
+      "t": "485086_HU013_Consultar_Reportes_Generales_Cargue",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "524746",
+      "t": "485086_HU014_Identificar_Pagos_Otras_Administradoras_Consulta_Aportante",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "524748",
+      "t": "485086_HU015_Identificar_Pagos_Otras_Administradoras_Consulta_Cotizantes",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "524751",
+      "t": "485086_HU016_Consultar_Detalle_Cargue",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Santiago Cardenas Amaya"
+    },
+    {
+      "i": "524754",
+      "t": "485086_HU017_Generar_Archivo_SISE_Cargue",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Santiago Cardenas Amaya"
+    },
+    {
+      "i": "524770",
+      "t": "481244_HU007_Transferencia automática de los archivos maestros al Prevalidador",
+      "e": "BLOQUEADO",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": null,
+      "f": "481244",
+      "ep": "83437",
+      "r": "Emmanuel Camacho Orozco"
+    },
+    {
+      "i": "524775",
+      "t": "485086_HU018_Consultar_Reporte_Correos_Masivos_Otras_Administradoras",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Santiago Cardenas Amaya"
+    },
+    {
+      "i": "524785",
+      "t": "485086_HU019_Asignar_Poliza_Sucursal_Manualmente",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "524788",
+      "t": "485086_HU020_Consultar_Archivos_SISE_Otras_Administradoras",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "524921",
+      "t": "481244_HU008_Registro de auditoría de modificaciones a archivos maestros",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "481244",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "525295",
+      "t": "HU_024_Aplicación apoyo QA_Desarrollo_Implementación_Revisión Documental_Afiliaciones",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
+    },
+    {
+      "i": "526717",
+      "t": "Glosas - SP 59",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "526720",
+      "t": "SP_59_Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "526878",
+      "t": "SP_59_Glosas",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "César Alejandro Garcia Tous"
+    },
+    {
+      "i": "526886",
+      "t": "HU_025_Aplicación apoyo QA_Desarrollo_Implementación_Consultas_Empleados_Conciliación",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
+    },
+    {
+      "i": "527152",
+      "t": "Actividades transversales y apoyo - Juan Zea",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Juan Felipe Zea Sanchez"
+    },
+    {
+      "i": "527154",
+      "t": "Apoyo en revision HUs Lina Ramirez (Sprint 59)",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Lina María Ramirez Martinez"
+    },
+    {
+      "i": "527161",
+      "t": "HU Transversal – Javier Santiago – Acompañamiento técnico y soporte al equipo",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Javier Alfonso Santiago Salazar"
+    },
+    {
+      "i": "527162",
+      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 59",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Carlos Andres Diaz De Felipe"
+    },
+    {
+      "i": "527164",
+      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Santiago Cardenas Amaya"
+    },
+    {
+      "i": "527167",
+      "t": "Apoyo en revision HUs UAT Y QA Jose Monasterio",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Jose Luis Monasterio Yeguez"
+    },
+    {
+      "i": "527168",
+      "t": "Acompañamiento QA y apoyo UAT - SP 59",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Emmanuel Camacho Orozco"
+    },
+    {
+      "i": "527176",
+      "t": "Apoyo en revisión HUs UAT Y QA Andres Alvarez",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Andrés Álvarez Vergel"
+    },
+    {
+      "i": "527550",
+      "t": "Actividades transversales recaudo SP 59",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "527588",
+      "t": "HU_PR013_Protección del código fuente de QualtityLite para distribución al equipo QA",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "417189",
+      "ep": "417182",
+      "r": "Andres Javier Sanchez Barrera"
+    },
+    {
+      "i": "530473",
+      "t": "307836_HU012_Envío de Notificación de NO VINCULADO al Aportante",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "307836",
+      "ep": "83437",
+      "r": "Jhon Fredy Torres Peña"
+    },
+    {
+      "i": "531596",
+      "t": "459471_HU003(CC1)_Consulta_Cotizante_Nomenclatura_Descarga_Reporte",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "459471",
+      "ep": "83437",
+      "r": "Juan Felipe Zea Sanchez"
+    },
+    {
+      "i": "532434",
+      "t": "437764_HU014_CC1_Solución de hallazgos Correcciones y Devoluciones",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "437764",
+      "ep": "83437",
+      "r": "Yesid Sanabria Rey"
+    },
+    {
+      "i": "532681",
+      "t": "180577_HU_003_Generar los carnés de afiliación de los trabajadores del último cargue masivo",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.33,
+      "f": "180577",
+      "ep": "83469",
+      "r": "Jose Luis Monasterio Yeguez"
+    },
+    {
+      "i": "534564",
+      "t": "180126_HU_005_Actualizaciones PDF Footer Consultas RYC",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "180126",
+      "ep": "83503",
+      "r": "Yesid Sanabria Rey"
+    },
+    {
+      "i": "534594",
+      "t": "308714_HU014_B6_Certificar_Recepcion_de_Siniestros_con_el_Servicio_de_Positiva",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "534595",
+      "t": "308714_HU015_B6_Certificar_Consulta_de_Marcas_de_Empresa_con_el_Servicio_de_Positiva",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "534596",
+      "t": "308714_HU016_B6_Certificar_Escritura_de_la_Marcacion_con_el_Servicio_de_Positiva",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "534597",
+      "t": "308714_HU017_B6_Certificar_la_Constitucion_en_Mora_Historica_Entregada_por_Positiva",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "308714",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "535773",
+      "t": "313337_HU023_Ajuste_Notificación_electronica -CC2",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313337",
+      "ep": "207836",
+      "r": "Yiced Baracaldo"
+    },
+    {
+      "i": "536692",
+      "t": "307836_HU008_CC1_Visualización dinámica de estados según filtro aplicado en consulta principal",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "307836",
+      "ep": "83437",
+      "r": "Harol Paez"
+    },
+    {
+      "i": "536758",
+      "t": "88254_HU055: B0 · EC-HU-C15 — Guardar el valor pagado por la corrección y encadenar varias planillas N",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "88254",
+      "ep": "83437",
+      "r": "Erika Catherine Botero Quintero"
+    },
+    {
+      "i": "537456",
+      "t": "SP_60_Remediación vulnerabilidades SOC Retest 14/10/2026 - Afiliaciones, Web, Transversal e Infra",
       "e": "6. Desarrollo Backend",
       "p": "DESARROLLO",
       "a": 1,
@@ -12812,118 +13810,30 @@
       "r": "Jhon Fredy Torres Peña"
     },
     {
-      "i": "515589",
-      "t": "Apoyo en revision HU UAT Jose Monasterio",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
+      "i": "537491",
+      "t": "HU_014_Planeación_Ejecución_Y_Generación_Reportes_Pruebas_Rendimiento_Carga_Estres_Balu",
+      "e": "7.1. Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.36,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
+      "v": 0.6,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
     },
     {
-      "i": "515592",
-      "t": "Apoyo en revision HUs UAT Andres Alvarez",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
+      "i": "537497",
+      "t": "HU_013_Script_Pruebas_Carga_K6_Integrar_Servicios_Flujos_Recaudo",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.36,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Andrés Álvarez Vergel"
+      "v": 1.0,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
     },
     {
-      "i": "515818",
-      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
-      "i": "515822",
-      "t": "Actividades transversales recaudo",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
-      "i": "515826",
-      "t": "Acompañamiento QA y apoyo UAT",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Emmanuel Camacho Orozco"
-    },
-    {
-      "i": "515843",
-      "t": "Acompañamiento y apoyo UAT CP - JUAN ZEA",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "515845",
-      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
-      "i": "515849",
-      "t": "Apoyo en revision HUs Lina Ramirez",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Lina María Ramirez Martinez"
-    },
-    {
-      "i": "515855",
-      "t": "Despliegue a UAT de la HU técnica transversal (dependiente de las 9 HUs de cliente)",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Javier Alfonso Santiago Salazar"
-    },
-    {
-      "i": "515887",
-      "t": "Apoyo en revision HUs UAT Sergio Lara",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.36,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Sergio Lara"
-    },
-    {
-      "i": "515966",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 58",
+      "i": "538824",
+      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 60",
       "e": "6. Desarrollo Backend",
       "p": "DESARROLLO",
       "a": 1,
@@ -12933,259 +13843,138 @@
       "r": "Carlos Andres Diaz De Felipe"
     },
     {
-      "i": "516043",
-      "t": "Acompañamiento y solucion de errores en UAT - Cesar torrens",
-      "e": "6.2 Desarrollo Frontend",
+      "i": "539184",
+      "t": "307836_HU004_CC1_Actualización en los nombres de los estados de No Vinculados (Tabla de resultado Pantalla principal, Detalle y Trazabilidad).",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "307836",
+      "ep": "83437",
+      "r": "Harol Paez"
+    },
+    {
+      "i": "539617",
+      "t": "HU_PR014_Automatización de la regresión funcional (Playwright) de la Feature 307841 – Corrección de aportes",
+      "e": "6. Desarrollo Backend",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.36,
+      "v": 0.3,
+      "f": "417189",
+      "ep": "417182",
+      "r": "Andres Javier Sanchez Barrera"
+    },
+    {
+      "i": "543674",
+      "t": "SP_60_Deuda técnica backend - Afiliaciones y Transversal (AS-IS 21/10/2026)",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
       "f": "417232",
       "ep": "83503",
-      "r": "Cesar Torrens"
+      "r": ""
     },
     {
-      "i": "518769",
-      "t": "96139_HU020_Generar el carné de afiliación de un trabajador",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "i": "545541",
+      "t": "100219_HU_Actualización_masiva_de_vinculaciones_dependientes_e_independientes",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
-      "f": "96139",
-      "ep": "83469",
-      "r": "Paula Gomez Cantor"
-    },
-    {
-      "i": "518851",
-      "t": "308714_HU009_B2_Construir_Ventana_11_Mas_1_del_Siniestro",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "308714",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "518852",
-      "t": "308714_HU010_B3_Determinar_Resultado_de_Cada_Periodo",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "308714",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "518853",
-      "t": "308714_HU011_B3_Evaluar_Siniestros_Anteriores_a_2017",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "308714",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "518854",
-      "t": "308714_HU012_B4_Consolidar_Estado_del_Siniestro",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "308714",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "518855",
-      "t": "308714_HU013_B5_Ejecutar_Revalidacion_Diaria",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "308714",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "518927",
-      "t": "96139_HU021_Generar los carnés de afiliación de varios trabajadores",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": null,
-      "ep": null,
-      "r": "Paula Gomez Cantor"
-    },
-    {
-      "i": "519061",
-      "t": "96139_HU022_Solicitar por correo electrónico la generación de más de 100 carnés",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": null,
-      "ep": null,
-      "r": "Paula Gomez Cantor"
-    },
-    {
-      "i": "519570",
-      "t": "100219_HU_136_Generar el carné_de_un_trabajador_por_funcionario",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
+      "v": 0.8,
       "f": "100219",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Yesid Sanabria Rey"
     },
     {
-      "i": "519618",
-      "t": "100219_HU_137_Generar carnés de varios trabajadores en un único archivo PDF (hasta 100)_por_funcionario_(opción «Agrupado o individuales»)",
+      "i": "545754",
+      "t": "98035_HU005_Consulta General: búsqueda por número de documento y resultados por rol",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": null,
-      "ep": null,
+      "f": "98035",
+      "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
-      "i": "519772",
-      "t": "100219_HU_138_Generar más de 100 carnés con envío de enlace por correo electrónico e historial de cargues masivos_funcionario",
+      "i": "545755",
+      "t": "98035_HU006_Consulta General: Consulta Empleador (datos básicos, pólizas, actividad económica, sedes, anexos y liquidación)",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": null,
-      "ep": null,
+      "f": "98035",
+      "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
-      "i": "519970",
-      "t": "307852_HU31_F1_Ajustar_Consulta_De_Notificaciones_Fisicas",
-      "e": "2. Elaboración HU",
+      "i": "545763",
+      "t": "98035_HU007_Consulta General: Consulta Trabajador (datos básicos, afiliaciones, relaciones laborales y contratos, histórico de novedades y liquidación",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "v": 0.17,
+      "f": "98035",
+      "ep": "83469",
+      "r": "Paula Gomez Cantor"
     },
     {
-      "i": "519971",
-      "t": "307852_HU32_F1_Mostrar_Marcas_CM-NF_Y_VD_En_Las_Consultas",
-      "e": "2. Elaboración HU",
+      "i": "545764",
+      "t": "98035_HU008_Consulta General: novedades del empleador y del trabajador (listado, filtros y detalle)",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "v": 0.17,
+      "f": "98035",
+      "ep": "83469",
+      "r": "Paula Gomez Cantor"
     },
     {
-      "i": "519972",
-      "t": "307852_HU33_F2_Confirmar_Generacion_Masiva_De_Notificaciones_Fisicas",
-      "e": "2. Elaboración HU",
+      "i": "546054",
+      "t": "Notificación de propuesta de pago",
+      "e": "0. Pendiente Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "307852",
+      "v": 0.04,
+      "f": "481244",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Harol Paez"
     },
     {
-      "i": "519973",
-      "t": "307852_HU34_B1_Asignar_Marca_VD_Y_Enviar_A_Georreferenciacion",
-      "e": "2. Elaboración HU",
+      "i": "546055",
+      "t": "Notificación soporte de pago",
+      "e": "0. Pendiente Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "307852",
+      "v": 0.04,
+      "f": "481244",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Harol Paez"
     },
     {
-      "i": "519974",
-      "t": "307852_HU35_B1_Generar_Comunicacion_Fisica_Individual",
-      "e": "2. Elaboración HU",
+      "i": "546056",
+      "t": "Identificación de liquidaciones 1% para Notificar Propuesta de pago",
+      "e": "0. Pendiente Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "307852",
+      "v": 0.04,
+      "f": "481244",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "519975",
-      "t": "307852_HU36_B2_Procesar_Respuesta_Georreferenciacion_Con_Marca_CM-NF",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "519976",
-      "t": "307852_HU37_B2_Conservar_Comunicaciones_Tres_Periodos_Y_Depurar_Vencidas",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "519977",
-      "t": "307852_HU38_B2_Generar_Comunicaciones_Masivas_Con_Entrega_Del_ZIP",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "519978",
-      "t": "307852_HU39_B3_Desmarcar_A_LC_Aportantes_En_CM-NF",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "519979",
-      "t": "307852_HU40_F1_Ajustar_Reporte_De_Envios_CM_Con_Marca_CM-NF",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Harol Paez"
     }
   ],
   "kpi": {
-    "n_hu": 1127,
-    "n_hu_activas": 953,
-    "hu_sin_feature": 4,
+    "n_hu": 1198,
+    "n_hu_activas": 1019,
+    "hu_sin_feature": 0,
     "n_feature": 67,
-    "n_epic": 4,
+    "n_epic": 5,
     "n_feature_con_hu": 66,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.808,
-    "term_global": 528,
+    "pct_global": 0.8365,
+    "term_global": 632,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 9,

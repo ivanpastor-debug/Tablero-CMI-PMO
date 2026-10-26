@@ -4,16 +4,38 @@ Indicador Táctico y Estratégico de la PMO bajo la Escala CMI por entregable.
 
 Gobernanza de Entregables:
   - Los ENTREGABLES principales de los proyectos se miden formalmente sobre las ÉPICAS (Epics / Frentes)
-    en Azure DevOps (004, 348, 355, 384, 397, 416, 419, 421).
+    en Azure DevOps (004, 348, 355, 384, 397, 416, 419, 421, 457).
   - En el proyecto 453 (Monitoreo CPE), se mide frente a CASOS DE USO (CU) según Estado Interno estados_453.
   - En el proyecto 456 (Aeronáutica Civil), se mide frente a los 6 HITOS CONTRACTUALES en 3 fases.
   - Simultáneamente, se calcula el desglose técnico de FUNCIONALIDADES (Features en Azure) con
     feat_total, feat_ent y porcentaje de cierre para visualización en el contenedor Callout.
 """
-import json
 import glob
+import json
 import os
 import shutil
+from pathlib import Path
+
+EI_453_MAP = {
+    "00. en levantamiento/entendimiento": (0.025, "REQUERIMIENTOS"),
+    "02. cu registrado en herramienta": (0.075, "REQUERIMIENTOS"),
+    "02. rq-artefacto registrado en herramienta": (0.075, "REQUERIMIENTOS"),
+    "03. cu en refinamiento": (0.06, "REQUERIMIENTOS"),
+    "05. en elaboración escenarios": (0.125, "REQUERIMIENTOS"),
+    "06. escenarios registrados en herramienta": (0.15, "REQUERIMIENTOS"),
+    "08. escenarios en revisión cliente": (0.175, "REQUERIMIENTOS"),
+    "08. pdte aprobación cliente": (0.175, "REQUERIMIENTOS"),
+    "09. aprobado por cliente": (0.20, "REQUERIMIENTOS"),
+    "10. transversal": (None, "TRANSVERSAL"),
+    "13. aprobado por cliente": (0.20, "REQUERIMIENTOS"),
+    "15. en desarrollo": (0.50, "DESARROLLO"),
+    "16. ajustes": (0.65, "DESARROLLO"),
+    "17. ejecución pruebas qa": (0.80, "QA"),
+    "17. ejecución pruebas": (0.80, "QA"),
+    "18. despliegue qa a uat": (0.90, "UAT"),
+    "19. entregado": (1.0, "Terminado o Producción"),
+}
+
 
 def escala_pmo(pct, estado=''):
     if pct is None:
@@ -28,6 +50,7 @@ def escala_pmo(pct, estado=''):
     if pct >= 0.50:
         return 0.20
     return 0.0
+
 
 def calc_cmi_project(epics, features, cod):
     valid_epics = [e for e in (epics or []) if e.get('i') != '_sin_frente' and e.get('t') != '(sin frente)']
@@ -63,7 +86,7 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 125, '75': 0, '50': 40, '20': 23, '0': 278}
         }
 
-    # 2. 421: BALÚ Frentes contractuales: Afiliaciones y Novedades (0.5), Recaudo y Cartera (0.2)
+    # 3. 421: BALÚ Frentes contractuales: Afiliaciones y Novedades (0.5), Recaudo y Cartera (0.2)
     if cod == '421':
         return {
             'tactico': 0.3500,
@@ -77,7 +100,7 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 0, '75': 0, '50': 1, '20': 1, '0': 0}
         }
 
-    # 3. 348: SGDEA Acueducto - 10 Épicas en Azure (1 al 100%: Assesment de Madurez)
+    # 4. 348: SGDEA Acueducto - 10 Épicas en Azure (1 al 100%: Assesment de Madurez)
     if cod == '348':
         return {
             'tactico': 0.2529,
@@ -91,7 +114,7 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 1, '75': 0, '50': 2, '20': 4, '0': 3}
         }
 
-    # 4. 416: Positiva Core 416 - 2 Épicas / Ramos (Vida Individual y Accidentes Personales)
+    # 5. 416: Positiva Core 416 - 2 Épicas / Ramos (Vida Individual y Accidentes Personales)
     if cod == '416':
         return {
             'tactico': 0.2900,
@@ -105,7 +128,7 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 0, '75': 0, '50': 0, '20': 0, '0': 2}
         }
 
-    # 5. Cálculo general sobre Épicas válidas en Azure DevOps
+    # 6. Cálculo general sobre Épicas válidas en Azure DevOps (incluye 004, 355, 384, 419-DEP, 419-RAMA, 457, etc.)
     buckets = {1.0: 0, 0.75: 0, 0.5: 0, 0.2: 0, 0.0: 0}
     scores = []
     for e in valid_epics:
@@ -137,6 +160,7 @@ def calc_cmi_project(epics, features, cod):
         }
     }
 
+
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     data_func_dir = os.path.join(base_dir, 'data_func')
@@ -158,7 +182,7 @@ def main():
         with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         cod = data.get('codigo') or os.path.splitext(os.path.basename(path))[0]
-        
+
         cmi = calc_cmi_project(data.get('epics', []), data.get('features', []), cod)
         data['cmi'] = cmi
         cmi_por_cod[cod] = cmi
@@ -166,7 +190,7 @@ def main():
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-        print(f"[{cod:8s}] Táctico: {cmi['tactico']*100:6.2f}% | Estratégico: {cmi['estrategico']*100:6.2f}% ({cmi['d']}/{cmi['n']} {cmi['u']})")
+        print(f"[{cod:8s}] Táctico: {cmi['tactico']*100:6.2f}% | Estratégico: {cmi['estrategico']*100:6.2f}% ({cmi['d']}/{cmi['n']} {cmi['u']}) | Feat: {cmi['feat_ent']}/{cmi['feat_total']}")
 
     # 2. Agregar CMI consolidado para POS (355 + 416)
     if '355' in cmi_por_cod and '416' in cmi_por_cod:
@@ -176,7 +200,7 @@ def main():
         d_pos = c355['d'] + c416['d']
         av_pos = (c355['n'] * c355['tactico'] + c416['n'] * c416['tactico']) / n_pos if n_pos else 0.0
         ent_pos = d_pos / n_pos if n_pos else 0.0
-        f_tot_pos = c355.get('feat_total', 80) + c416.get('feat_total', 7)
+        f_tot_pos = c355.get('feat_total', 82) + c416.get('feat_total', 7)
         f_ent_pos = c355.get('feat_ent', 6) + c416.get('feat_ent', 0)
         cmi_por_cod['POS'] = {
             'tactico': round(av_pos, 4),
@@ -195,15 +219,16 @@ def main():
                 '0': c355['buckets']['0'] + c416['buckets']['0']
             }
         }
-        print(f"[POS cons] Táctico: {cmi_por_cod['POS']['tactico']*100:6.2f}% | Estratégico: {cmi_por_cod['POS']['estrategico']*100:6.2f}% ({d_pos}/{n_pos} épicas)")
+        print(f"[POS cons] Táctico: {cmi_por_cod['POS']['tactico']*100:6.2f}% | Estratégico: {cmi_por_cod['POS']['estrategico']*100:6.2f}% ({d_pos}/{n_pos} épicas) | Feat: {f_ent_pos}/{f_tot_pos}")
 
     # 3. Guardar en data_func.json
+    corte_pos = index_data.get('proyectos', {}).get('355', {}).get('corte', '2026-10-26')
     for cod, cmi in cmi_por_cod.items():
         if cod in index_data.get('proyectos', {}):
             index_data['proyectos'][cod]['cmi'] = cmi
         elif cod == 'POS':
             index_data['proyectos']['POS'] = {
-                'corte': '2026-09-25',
+                'corte': corte_pos,
                 'archivo': 'Consolidado Positiva Core (355 + 416)',
                 'cmi': cmi
             }
@@ -216,6 +241,23 @@ def main():
         with open(cpe_file, 'r', encoding='utf-8') as f:
             cpe_data = json.load(f)
 
+        # Aplicar homologación completa de estados_453 a cada Caso de Uso
+        cus_list = cpe_data.get('cus', [])
+        for cu in cus_list:
+            ei_raw = (cu.get('ei') or '').strip().lower()
+            if ei_raw in EI_453_MAP:
+                cu['pct_cu'], cu['proc_cu'] = EI_453_MAP[ei_raw]
+
+        # Recalcular pct_cu y term_cu por iteración
+        for it in cpe_data.get('iteraciones', []):
+            ik = it.get('k')
+            cus_it = [c for c in cus_list if c.get('it') == ik]
+            vs_cu = [c['pct_cu'] for c in cus_it if c.get('pct_cu') is not None]
+            it['n_cu'] = len(cus_it)
+            it['n_cu_pct'] = len(vs_cu)
+            it['pct_cu'] = round(sum(vs_cu) / len(vs_cu), 4) if vs_cu else None
+            it['term_cu'] = sum(1 for c in cus_it if c.get('ei') == '19. Entregado' or c.get('pct_cu') == 1.0)
+
         focos_fechas = {
             'A': {'inicio': '2026-02-25', 'fecha': '2026-10-24', 'fecha_plan': '2026-07-30', 'peso': '40%', 'nota': 'Hito reprogramado al 24/10/2026 (base: 30/07/2026)'},
             'B': {'inicio': '2026-07-01', 'fecha': '2026-12-25', 'fecha_plan': '2026-10-15', 'peso': '30%', 'nota': 'Hito reprogramado al 25/12/2026 (base: 15/10/2026)'},
@@ -224,10 +266,16 @@ def main():
         }
 
         for foc in cpe_data.get('focos', []):
-            k = foc.get('k')
-            if k in focos_fechas:
-                foc['hito'] = focos_fechas[k]
-                foc['sem'] = 'en_curso' if k in ['A', 'B', 'C'] else 'sin_iniciar'
+            fk = foc.get('k')
+            if fk in focos_fechas:
+                foc['hito'] = focos_fechas[fk]
+                foc['sem'] = 'en_curso' if fk in ['A', 'B', 'C'] else 'sin_iniciar'
+            cus_foco = [c for c in cus_list if fk in (c.get('fs') or []) or c.get('fp') == fk]
+            vs_cu = [c['pct_cu'] for c in cus_foco if c.get('pct_cu') is not None]
+            foc['n_cu'] = len(cus_foco)
+            foc['n_cu_medibles'] = len(vs_cu)
+            foc['pct_cu'] = round(sum(vs_cu) / len(vs_cu), 4) if vs_cu else None
+            foc['term_cu'] = sum(1 for c in cus_foco if c.get('ei') == '19. Entregado' or c.get('pct_cu') == 1.0)
 
         # Asignar fecha de iteración en cada caso de uso para renderizado directo
         it_fechas = {}
@@ -238,52 +286,57 @@ def main():
                     'fecha': it['hito'].get('fecha')
                 }
 
-        for cu in cpe_data.get('cus', []):
+        for cu in cus_list:
             it_k = cu.get('it')
             if it_k in it_fechas:
                 cu['release'] = it_fechas[it_k]['release']
                 cu['fecha_entrega'] = it_fechas[it_k]['fecha']
 
-        k = cpe_data.get('kpi', {})
-        n_cu = k.get('n_cu_medibles') or k.get('n_cu') or 45
-        d_cu = k.get('cu_entregados') or 4
-        av_cu = k.get('pct_cu_global') or 0.303
-        ent_cu = d_cu / n_cu if n_cu else 0.0
+        medibles = [c for c in cus_list if c.get('pct_cu') is not None]
+        n_cu = len(medibles)
+        d_cu = sum(1 for c in medibles if c.get('ei') == '19. Entregado' or c.get('pct_cu') >= 0.999)
+        av_cu = round(sum(c['pct_cu'] for c in medibles) / n_cu, 4) if n_cu else 0.0
+        ent_cu = round(d_cu / n_cu, 4) if n_cu else 0.0
+
+        k = cpe_data.setdefault('kpi', {})
+        k['n_cu'] = len(cus_list)
+        k['n_cu_medibles'] = n_cu
+        k['cu_entregados'] = d_cu
+        k['pct_cu_global'] = av_cu
 
         cpe_data['cmi'] = {
-            'tactico': round(av_cu, 4),
-            'estrategico': round(ent_cu, 4),
+            'tactico': av_cu,
+            'estrategico': ent_cu,
             'n': n_cu,
             'd': d_cu,
             'u': 'casos de uso',
             'buckets': {
                 '100': d_cu,
-                '75': 0,
-                '50': sum(1 for c in cpe_data.get('cus', []) if c.get('pct_cu') is not None and c['pct_cu'] > 0.8 and c['pct_cu'] < 0.999),
-                '20': sum(1 for c in cpe_data.get('cus', []) if c.get('pct_cu') is not None and c['pct_cu'] >= 0.5 and c['pct_cu'] <= 0.8),
-                '0': sum(1 for c in cpe_data.get('cus', []) if c.get('pct_cu') is not None and c['pct_cu'] < 0.5)
+                '75': sum(1 for c in medibles if 0.85 <= c['pct_cu'] < 0.999),
+                '50': sum(1 for c in medibles if 0.80 <= c['pct_cu'] < 0.85),
+                '20': sum(1 for c in medibles if 0.50 <= c['pct_cu'] < 0.80),
+                '0': sum(1 for c in medibles if c['pct_cu'] < 0.50)
             }
         }
 
         with open(cpe_file, 'w', encoding='utf-8') as f:
             json.dump(cpe_data, f, ensure_ascii=False, indent=2)
 
-        print(f"[453 (CU)] Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_cu}/{n_cu} Casos de Uso)")
+        print(f"[453 (CU)] Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_cu}/{n_cu} Casos de Uso medibles de {len(cus_list)} totales)")
 
     # 5. Sincronizar espejos
+    home = str(Path.home())
     mirror_dirs = [
-        r'C:\Users\Usuario1\Documents\PMO INDICADORES\CMI',
-        r'C:\Users\Usuario1\Downloads'
+        os.path.join(home, 'Indicadores estra y tac'),
+        os.path.join(home, 'Documents', 'PMO INDICADORES', 'CMI'),
+        os.path.join(home, 'Downloads')
     ]
     for md in mirror_dirs:
-        if not os.path.exists(md):
+        if not os.path.exists(md) or os.path.normcase(os.path.abspath(md)) == os.path.normcase(base_dir):
             continue
-        # copiar data_func.json
         shutil.copy2(index_file, os.path.join(md, 'data_func.json'))
-        # copiar data_453_cpe.json
         if os.path.exists(cpe_file):
             shutil.copy2(cpe_file, os.path.join(md, 'data_453_cpe.json'))
-        # copiar data_func/
         target_fnc = os.path.join(md, 'data_func')
         if os.path.exists(target_fnc):
             shutil.rmtree(target_fnc)
@@ -291,6 +344,7 @@ def main():
         print(f"Sincronizado a espejo: {md}")
 
     print("Enriquecimiento CMI completado con éxito.")
+
 
 if __name__ == '__main__':
     main()

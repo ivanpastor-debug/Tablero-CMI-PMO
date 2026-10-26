@@ -22,21 +22,21 @@ Este espacio de trabajo contiene el **Tablero de Control Estratégico y Táctico
 
 ## 3. Archivos y Rutas Espejo
 Toda modificación debe sincronizarse entre el archivo raíz de despliegue y las copias locales de respaldo:
-1. `c:\Users\Usuario1\Indicadores estra y tac\index.html` (Punto de entrada web para GitHub Pages).
-2. `c:\Users\Usuario1\Indicadores estra y tac\Tablero_CMI_PMO.html` (Copia local de trabajo).
-3. `C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html` (Copia maestra del usuario).
-4. `C:\Users\Usuario1\Downloads\Tablero_CMI_PMO.html` (Copia de consulta rápida).
+1. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\index.html` (Punto de entrada web para GitHub Pages).
+2. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\Tablero_CMI_PMO.html` (Copia local de trabajo).
+3. `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html` (Copia maestra del usuario).
+4. `C:\Users\IvanDarioPastorParra\Downloads\Tablero_CMI_PMO.html` (Copia de consulta rápida).
 
 ---
 
 ## 4. Restricciones Críticas y Compatibilidad de Automatización
 1. **Script de Automatización `ACTUALIZAR.py`:**
-   * Ubicación: `C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py`.
+   * Ubicación: `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py`.
    * **REGLA ESTRICTA:** El script busca la declaración de datos mediante la expresión regular:
      `FR_PATTERN = re.compile(r"const FR=(\{[\s\S]*?\});\s*const BOOK416=")`
      Bajo ninguna circunstancia se debe romper la línea de código `const FR=...; const BOOK416=`.
    * Antes de hacer push, siempre verificar con:
-     `python "C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py" --dry-run`
+     `python "C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py" --dry-run`
 
 2. **Integridad Estructural del Tablero:**
    * **Sin cambios en la estructura establecida:**
@@ -67,12 +67,12 @@ Toda modificación debe sincronizarse entre el archivo raíz de despliegue y las
 Para aplicar y publicar cualquier cambio futuro:
 ```powershell
 # 1. Copiar index.html a las rutas espejo
-Copy-Item "c:\Users\Usuario1\Indicadores estra y tac\index.html" "c:\Users\Usuario1\Indicadores estra y tac\Tablero_CMI_PMO.html" -Force
-Copy-Item "c:\Users\Usuario1\Indicadores estra y tac\index.html" "C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html" -Force
-Copy-Item "c:\Users\Usuario1\Indicadores estra y tac\index.html" "C:\Users\Usuario1\Downloads\Tablero_CMI_PMO.html" -Force
+Copy-Item "c:\Users\IvanDarioPastorParra\Indicadores estra y tac\index.html" "c:\Users\IvanDarioPastorParra\Indicadores estra y tac\Tablero_CMI_PMO.html" -Force
+Copy-Item "c:\Users\IvanDarioPastorParra\Indicadores estra y tac\index.html" "C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html" -Force
+Copy-Item "c:\Users\IvanDarioPastorParra\Indicadores estra y tac\index.html" "C:\Users\IvanDarioPastorParra\Downloads\Tablero_CMI_PMO.html" -Force
 
 # 2. Validar con el script de actualización
-python "C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py" --dry-run
+python "C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py" --dry-run
 
 # 3. Guardar y publicar automáticamente en GitHub Pages
 git add .
@@ -277,7 +277,7 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
     4. **Paso 4 (Sincronización Espejo):** Propaga automáticamente `index.html` a las 4 rutas espejo del sistema.
     5. **Paso 5 (Publicación Opcional en Producción):** Permite publicar a GitHub Pages con `git add .`, `commit` y `push` automático mediante `--push` o confirmación en consola.
 * **Integración Directa en `ACTUALIZAR.py`:**
-  - Se modificó `ACTUALIZAR.py` en `C:\Users\Usuario1\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py` para que, en ejecuciones reales (no `--dry-run`), sincronice automáticamente las 4 rutas espejo y llame a `sync_funcionalidades.py`.
+  - Se modificó `ACTUALIZAR.py` en `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\ACTUALIZAR.py` para que, en ejecuciones reales (no `--dry-run`), sincronice automáticamente las 4 rutas espejo y llame a `sync_funcionalidades.py`.
 * **Carga en Línea Amigable para Visualización Local (`file://`):**
   - Se incorporó en `index.html` la función `getJsonUrl(relPath)` con fallback hacia `https://ivanpastor-debug.github.io/Tablero-CMI-PMO/` gracias al soporte CORS de GitHub Pages (`Access-Control-Allow-Origin: *`).
   - Al abrir el HTML local con doble clic (`file:///...`), el navegador ahora puede cargar e interactuar con el árbol vivo de Épicas, Funcionalidades y HUs sin bloqueos.
@@ -285,6 +285,31 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - `ACTUALIZAR.py --dry-run` 100% compatible (0 errores).
   - Todas las copias espejo sincronizadas.
 
+---
 
-
-
+## 17. Registro de Alineación Operativa con Vercel Principal (Corte 26-oct-2026) e Incorporación del Proyecto 457 (26-oct-2026)
+* **Sincronización Integral con el Tablero Operativo Principal (`tableros de proyectos/web`, Corte `2026-10-26`):**
+  - Se actualizaron `data_func.json`, todos los JSON en `data_func/*.json` (incluyendo la generación dinámica de `419.json` a partir de `419-DEP.json` + `419-RAMA.json`) y `data_453_cpe.json` al corte oficial `2026-10-26`:
+    - **005 (`004` SGDEA Positiva):** 13 Épicas en Azure (3 al 100% · **23,08%** estratégico, **26,15%** táctico), 41 Funcionalidades con HU (7 en prod. · 17,1% cerrado), 169 HU activas.
+    - **POS (`355 + 416` Positiva Core):** 20 Épicas (0 al 100% · **0,00%** estratégico, **23,90%** táctico), 89 Funcionalidades en Azure (6 en prod. · 6,7% cerrado). Subproyecto **355**: 18 Épicas (**23,33%** táctico, 82 func., 6 en prod.). Subproyecto **416**: 2 Épicas (**29,00%** táctico, 7 func., 0 en prod.).
+    - **384 (Core Fiduprevisora):** 33 Épicas válidas en Azure (1 al 100% · **3,03%** estratégico, **42,42%** táctico), 509 Funcionalidades con HU (92 en prod. · 18,1% cerrado), 5.229 HU activas (2.274 en prod., 83,33% avance ponderado).
+    - **419 (Depósitos Judiciales):** Conserva excepción PMO de archivo local (**26,82%** estratégico = `125 / 466` funcionalidades, **12,01%** táctico) y actualiza su desglose vivo V2 en Azure al corte `2026-10-26`: **21 Épicas** (12 DEP + 9 RAMA), **196 Funcionalidades con HU** (`62` en prod. · **31,6% cerrado**) y **1.272 HU activas** (`419` en prod.).
+    - **453 (Monitoreo de Equipos CPE 2026):** Actualizado al corte `2026-10-26` aplicando la homologación completa `estados_453` sobre los **74 Casos de Uso totales** (**70 CUs medibles** + 4 en `10. Transversal`): **28 CUs entregados** en estado `19. Entregado` (**40,00%** estratégico = `28 / 70`, **47,39%** táctico), con 332 HU activas (80,46% avance HU).
+    - **421 (Balú):** 2 Frentes contractuales (**0,00%** estratégico, **35,00%** táctico), 66 Funcionalidades con HU en Azure (19 en prod. · 28,8% cerrado), 1.019 HU activas (632 en prod., 83,65% avance ponderado).
+    - **348 (SGDEA Acueducto):** 10 Épicas contractuales (1 al 100% · **10,00%** estratégico, **25,29%** táctico), 115 Funcionalidades con HU en Azure (25 en prod. · 21,7% cerrado), 2.048 HU activas (223 en prod., 32,46% avance ponderado).
+    - **397 (Core Andina):** 57 Épicas contractuales (52 al 100% · **91,18%** estratégico, **97,06%** táctico), 233 Funcionalidades en Azure (228 en prod. · 97,9% cerrado).
+* **Validación e Incorporación del Proyecto `457` (`457 - PROYECTO PORTALES DIGITALES INTEGRADOS – LA EQUIDAD`):**
+  - **Validación de Captura:** Confirmado al 100%. El proyecto `457` ya cuenta con extracción automatizada vía **Captura Directa** (`pull_azure_capturas_directas.py` y `pull_azure_tasks.py` sobre REST API / WIQL de Azure DevOps), con snapshots históricos desde el `2026-10-22` hasta el `2026-10-26` (`Epic`, `Feature`, `HU`, `Bug`, `Task`).
+  - **Integración en el Tablero CMI PMO:** Incorporado en `P`, `FR`, `PROJ_CALLOUT_META`, `applyLiveFuncCmi` y `data_func/457.json`:
+    - **Unidad de gobierno:** **5 Épicas** en Azure DevOps:
+      1. *Portal de Formación* (`94588`): 16 func., 82 HU, 100% en prod. → Escala CMI **100% ✓**
+      2. *Portal Clientes* (`94577`): 12 func., 42 HU, 100% en prod. → Escala CMI **100% ✓**
+      3. *Portal Intermediarios* (`94578`): 15 func., 38 HU, 97,89% avance → Escala CMI **50%**
+      4. *Transversales* (`149672`): 2 func., 12 HU, 79,17% avance → Escala CMI **20%**
+      5. *Nuevas Funcionalidades* (`292522`): 3 func., 109 HU, 74,24% avance → Escala CMI **20%**
+    - **Indicador Táctico CMI:** **58,00%** (`(1.0 + 1.0 + 0.5 + 0.2 + 0.2) / 5`).
+    - **Indicador Estratégico CMI:** **40,00%** (`2 de 5` Épicas al 100% en producción).
+    - **Desglose técnico Azure:** **48 Funcionalidades con HU** (`43 en prod.` · **89,6% cerrado**) y **284 HU activas** (`231 en prod.` · **88,95%** avance ponderado global).
+    - **Estado financiero:** Registrado con `opOnly: true` (*Sin libro financiero cargado*), listo para enlazar cuando la PMO incorpore `Indicadores 457.xlsx`.
+* **Actualización Dinámica de Rutas de Usuario (`Path.home()`):**
+  - Todos los scripts (`ACTUALIZAR.py`, `actualizar_todo.py`, `sync_funcionalidades.py`, `enrich_func_cmi.py`, `ACTUALIZAR_TODO.bat`) utilizan ahora `Path.home()` (`C:\Users\IvanDarioPastorParra`), eliminando rutas fijas del perfil anterior.

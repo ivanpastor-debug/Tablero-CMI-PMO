@@ -1,8 +1,8 @@
 {
   "codigo": "004",
-  "corte": "2026-09-25",
-  "generado": "2026-09-25 12:44",
-  "archivo": "HU_004_20260925.csv",
+  "corte": "2026-10-26",
+  "generado": "2026-10-26 13:05",
+  "archivo": "HU_004_20261026.csv",
   "epics": [
     {
       "i": "422324",
@@ -13,52 +13,12 @@
       "pct": 0.1844
     },
     {
-      "i": "41827",
-      "t": "SGDA",
-      "n_f": 7,
-      "n": 60,
-      "term": 60,
-      "pct": 1.0
-    },
-    {
       "i": "422326",
       "t": "Deuda SGDEA",
-      "n_f": 9,
-      "n": 29,
-      "term": 1,
-      "pct": 0.5797
-    },
-    {
-      "i": "356042",
-      "t": "Correspondencia",
-      "n_f": 6,
-      "n": 26,
-      "term": 26,
-      "pct": 1.0
-    },
-    {
-      "i": "354186",
-      "t": "PRQRS",
-      "n_f": 4,
-      "n": 18,
-      "term": 17,
-      "pct": 0.9611
-    },
-    {
-      "i": "346262",
-      "t": "Refactorización",
-      "n_f": 5,
-      "n": 13,
-      "term": 11,
-      "pct": 0.8723
-    },
-    {
-      "i": "354174",
-      "t": "Facturación",
-      "n_f": 3,
-      "n": 13,
-      "term": 10,
-      "pct": 0.8085
+      "n_f": 11,
+      "n": 36,
+      "term": 7,
+      "pct": 0.6419
     },
     {
       "i": "340099",
@@ -67,38 +27,6 @@
       "n": 12,
       "term": 0,
       "pct": 0.17
-    },
-    {
-      "i": "354201",
-      "t": "Tutelas",
-      "n_f": 5,
-      "n": 12,
-      "term": 12,
-      "pct": 1.0
-    },
-    {
-      "i": "354236",
-      "t": "Entes de control",
-      "n_f": 5,
-      "n": 11,
-      "term": 11,
-      "pct": 1.0
-    },
-    {
-      "i": "54722",
-      "t": "Arquitectura",
-      "n_f": 1,
-      "n": 8,
-      "term": 8,
-      "pct": 1.0
-    },
-    {
-      "i": "356040",
-      "t": "Transversal",
-      "n_f": 4,
-      "n": 8,
-      "term": 6,
-      "pct": 0.7925
     },
     {
       "i": "341935",
@@ -117,11 +45,11 @@
       "pct": 0.17
     },
     {
-      "i": "354210",
-      "t": "Medicina Laboral",
-      "n_f": 5,
-      "n": 6,
-      "term": 6,
+      "i": "356042",
+      "t": "Correspondencia",
+      "n_f": 3,
+      "n": 4,
+      "term": 4,
       "pct": 1.0
     },
     {
@@ -133,11 +61,35 @@
       "pct": 0.6
     },
     {
-      "i": "38003",
-      "t": "SGDEA",
+      "i": "356040",
+      "t": "Transversal",
+      "n_f": 3,
+      "n": 3,
+      "term": 1,
+      "pct": 0.4467
+    },
+    {
+      "i": "354174",
+      "t": "Facturación",
+      "n_f": 1,
+      "n": 3,
+      "term": 0,
+      "pct": 0.17
+    },
+    {
+      "i": "346262",
+      "t": "Refactorización",
       "n_f": 2,
       "n": 2,
-      "term": 2,
+      "term": 0,
+      "pct": 0.17
+    },
+    {
+      "i": "41827",
+      "t": "SGDA",
+      "n_f": 1,
+      "n": 1,
+      "term": 1,
       "pct": 1.0
     },
     {
@@ -149,26 +101,15 @@
       "pct": 0.17
     },
     {
-      "i": "_sin_frente",
-      "t": "(sin frente)",
-      "n_f": 2,
-      "n": 3,
-      "term": 3,
+      "i": "354210",
+      "t": "Medicina Laboral",
+      "n_f": 1,
+      "n": 1,
+      "term": 1,
       "pct": 1.0
     }
   ],
   "features": [
-    {
-      "i": "41829",
-      "t": "PQRD",
-      "e": "4. Cerrado",
-      "ep": "41827",
-      "ept": "SGDA",
-      "n": 20,
-      "term": 20,
-      "pct": 1.0,
-      "n_pct": 20
-    },
     {
       "i": "422360",
       "t": "Editor V2",
@@ -179,17 +120,6 @@
       "term": 0,
       "pct": 0.2,
       "n_pct": 14
-    },
-    {
-      "i": "41837",
-      "t": "Transversales",
-      "e": "4. Cerrado",
-      "ep": "41827",
-      "ept": "SGDA",
-      "n": 13,
-      "term": 13,
-      "pct": 1.0,
-      "n_pct": 13
     },
     {
       "i": "422362",
@@ -203,17 +133,6 @@
       "n_pct": 13
     },
     {
-      "i": "371187",
-      "t": "Administración - PQRD",
-      "e": "1. En Planeacion",
-      "ep": "354186",
-      "ept": "PRQRS",
-      "n": 12,
-      "term": 11,
-      "pct": 0.9417,
-      "n_pct": 12
-    },
-    {
       "i": "422350",
       "t": "Perfiles de Usuario",
       "e": "2. En Curso",
@@ -223,17 +142,6 @@
       "term": 0,
       "pct": 0.17,
       "n_pct": 12
-    },
-    {
-      "i": "41830",
-      "t": "Tutelas",
-      "e": "4. Cerrado",
-      "ep": "41827",
-      "ept": "SGDA",
-      "n": 11,
-      "term": 11,
-      "pct": 1.0,
-      "n_pct": 11
     },
     {
       "i": "422344",
@@ -247,17 +155,6 @@
       "n_pct": 11
     },
     {
-      "i": "364220",
-      "t": "Administración - correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 10,
-      "term": 10,
-      "pct": 1.0,
-      "n_pct": 10
-    },
-    {
       "i": "422358",
       "t": "Scanner - V2",
       "e": "2. En Curso",
@@ -269,17 +166,6 @@
       "n_pct": 10
     },
     {
-      "i": "359035",
-      "t": "Radicacion - Correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 9,
-      "term": 9,
-      "pct": 1.0,
-      "n_pct": 9
-    },
-    {
       "i": "422399",
       "t": "Creacion de formulario Unico (SGDEA)",
       "e": "2. En Curso",
@@ -289,17 +175,6 @@
       "term": 0,
       "pct": 0.2,
       "n_pct": 9
-    },
-    {
-      "i": "53351",
-      "t": "ARQ_SGDA Positiva Transversales",
-      "e": "4. Cerrado",
-      "ep": "54722",
-      "ept": "Arquitectura",
-      "n": 8,
-      "term": 8,
-      "pct": 1.0,
-      "n_pct": 8
     },
     {
       "i": "340102",
@@ -324,17 +199,6 @@
       "n_pct": 8
     },
     {
-      "i": "57631",
-      "t": "Correspondencia",
-      "e": "4. Cerrado",
-      "ep": "41827",
-      "ept": "SGDA",
-      "n": 7,
-      "term": 7,
-      "pct": 1.0,
-      "n_pct": 7
-    },
-    {
       "i": "341937",
       "t": "Radicación - Proceso Jurídico Laboral",
       "e": "1. En Planeacion",
@@ -357,17 +221,6 @@
       "n_pct": 7
     },
     {
-      "i": "371199",
-      "t": "Cuenta de cobro",
-      "e": "1. En Planeacion",
-      "ep": "354174",
-      "ept": "Facturación",
-      "n": 7,
-      "term": 4,
-      "pct": 0.6443,
-      "n_pct": 7
-    },
-    {
       "i": "477175",
       "t": "Recertificación flujos de negocio - Módulo Expedientes",
       "e": "1. En Planeacion",
@@ -377,17 +230,6 @@
       "term": 1,
       "pct": 0.1771,
       "n_pct": 7
-    },
-    {
-      "i": "41835",
-      "t": "Medicina laboral",
-      "e": "4. Cerrado",
-      "ep": "41827",
-      "ept": "SGDA",
-      "n": 6,
-      "term": 6,
-      "pct": 1.0,
-      "n_pct": 6
     },
     {
       "i": "488606",
@@ -401,66 +243,11 @@
       "n_pct": 6
     },
     {
-      "i": "346270",
-      "t": "Radicación",
+      "i": "540110",
+      "t": "Devoluciones y publicación",
       "e": "1. En Planeacion",
-      "ep": "346262",
-      "ept": "Refactorización",
-      "n": 5,
-      "term": 5,
-      "pct": 1.0,
-      "n_pct": 5
-    },
-    {
-      "i": "364363",
-      "t": "PQRD Transversales",
-      "e": "1. En Planeacion",
-      "ep": "356040",
-      "ept": "Transversal",
-      "n": 5,
-      "term": 5,
-      "pct": 1.0,
-      "n_pct": 5
-    },
-    {
-      "i": "370042",
-      "t": "Radicación - Entes de control",
-      "e": "1. En Planeacion",
-      "ep": "354236",
-      "ept": "Entes de control",
-      "n": 5,
-      "term": 5,
-      "pct": 1.0,
-      "n_pct": 5
-    },
-    {
-      "i": "346417",
-      "t": "Creación de comunicación",
-      "e": "1. En Planeacion",
-      "ep": "346262",
-      "ept": "Refactorización",
-      "n": 4,
-      "term": 3,
-      "pct": 0.7925,
-      "n_pct": 4
-    },
-    {
-      "i": "371188",
-      "t": "Facturación administrativa",
-      "e": "1. En Planeacion",
-      "ep": "354174",
-      "ept": "Facturación",
-      "n": 4,
-      "term": 4,
-      "pct": 1.0,
-      "n_pct": 4
-    },
-    {
-      "i": "371206",
-      "t": "Gestión - Tutelas",
-      "e": "1. En Planeacion",
-      "ep": "354201",
-      "ept": "Tutelas",
+      "ep": "422326",
+      "ept": "Deuda SGDEA",
       "n": 4,
       "term": 4,
       "pct": 1.0,
@@ -500,25 +287,14 @@
       "n_pct": 4
     },
     {
-      "i": "371150",
-      "t": "Gestión - PQRD",
+      "i": "540011",
+      "t": "Clonación Consolidado",
       "e": "1. En Planeacion",
-      "ep": "354186",
-      "ept": "PRQRS",
+      "ep": "422326",
+      "ept": "Deuda SGDEA",
       "n": 3,
-      "term": 3,
-      "pct": 1.0,
-      "n_pct": 3
-    },
-    {
-      "i": "371205",
-      "t": "Asignación - Tutelas",
-      "e": "1. En Planeacion",
-      "ep": "354201",
-      "ept": "Tutelas",
-      "n": 3,
-      "term": 3,
-      "pct": 1.0,
+      "term": 2,
+      "pct": 0.7667,
       "n_pct": 3
     },
     {
@@ -555,6 +331,17 @@
       "n_pct": 3
     },
     {
+      "i": "371199",
+      "t": "Cuenta de cobro",
+      "e": "1. En Planeacion",
+      "ep": "354174",
+      "ept": "Facturación",
+      "n": 3,
+      "term": 0,
+      "pct": 0.17,
+      "n_pct": 3
+    },
+    {
       "i": "422361",
       "t": "Clonación",
       "e": "1. En Planeacion",
@@ -577,187 +364,22 @@
       "n_pct": 3
     },
     {
-      "i": "41847",
-      "t": "Entes de control",
+      "i": "359035",
+      "t": "Radicacion - Correspondencia",
       "e": "1. En Planeacion",
+      "ep": "356042",
+      "ept": "Correspondencia",
+      "n": 2,
+      "term": 2,
+      "pct": 1.0,
+      "n_pct": 2
+    },
+    {
+      "i": "41837",
+      "t": "Transversales",
+      "e": "4. Cerrado",
       "ep": "41827",
       "ept": "SGDA",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "125549",
-      "t": "4. Medicina Laboral",
-      "e": "1. En Planeacion",
-      "ep": "_sin_frente",
-      "ept": "(sin frente)",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "346441",
-      "t": "Seguimiento de envío",
-      "e": "1. En Planeacion",
-      "ep": "346262",
-      "ept": "Refactorización",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "370001",
-      "t": "Gestión - correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "370010",
-      "t": "Revisión - Correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "370013",
-      "t": "Asignación - Correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "370081",
-      "t": "Asignación - Entes de Control",
-      "e": "1. En Planeacion",
-      "ep": "354236",
-      "ept": "Entes de control",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "370084",
-      "t": "Gestión - Entes de control",
-      "e": "1. En Planeacion",
-      "ep": "354236",
-      "ept": "Entes de control",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "370976",
-      "t": "Administración - Medicina laboral",
-      "e": "1. En Planeacion",
-      "ep": "354210",
-      "ept": "Medicina Laboral",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "371149",
-      "t": "Asignación - PQRD",
-      "e": "1. En Planeacion",
-      "ep": "354186",
-      "ept": "PRQRS",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "371196",
-      "t": "Facturación - Manual",
-      "e": "1. En Planeacion",
-      "ep": "354174",
-      "ept": "Facturación",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "371204",
-      "t": "Radicación - Tutelas",
-      "e": "1. En Planeacion",
-      "ep": "354201",
-      "ept": "Tutelas",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "371221",
-      "t": "Administración - Tutelas",
-      "e": "1. En Planeacion",
-      "ep": "354201",
-      "ept": "Tutelas",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "41849",
-      "t": "Facturas administrativas",
-      "e": "1. En Planeacion",
-      "ep": "41827",
-      "ept": "SGDA",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "38096",
-      "t": "Documentos",
-      "e": "2. En Curso",
-      "ep": "38003",
-      "ept": "SGDEA",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "38098",
-      "t": "Administración",
-      "e": "1. En Planeacion",
-      "ep": "38003",
-      "ept": "SGDEA",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "154615",
-      "t": "2. PQRSD",
-      "e": "1. En Planeacion",
-      "ep": "_sin_frente",
-      "ept": "(sin frente)",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -830,19 +452,30 @@
       "n_pct": 1
     },
     {
-      "i": "346442",
-      "t": "Centro de notificaciones",
+      "i": "346417",
+      "t": "Creación de comunicación",
       "e": "1. En Planeacion",
       "ep": "346262",
       "ept": "Refactorización",
+      "n": 1,
+      "term": 0,
+      "pct": 0.17,
+      "n_pct": 1
+    },
+    {
+      "i": "370013",
+      "t": "Asignación - Correspondencia",
+      "e": "1. En Planeacion",
+      "ep": "356042",
+      "ept": "Correspondencia",
       "n": 1,
       "term": 1,
       "pct": 1.0,
       "n_pct": 1
     },
     {
-      "i": "370015",
-      "t": "Aprobación - Correspondencia",
+      "i": "364220",
+      "t": "Administración - correspondencia",
       "e": "1. En Planeacion",
       "ep": "356042",
       "ept": "Correspondencia",
@@ -863,88 +496,11 @@
       "n_pct": 1
     },
     {
-      "i": "370091",
-      "t": "Aprobación - Entes de control",
-      "e": "1. En Planeacion",
-      "ep": "354236",
-      "ept": "Entes de control",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "370086",
-      "t": "Revisión - Entes de control",
-      "e": "1. En Planeacion",
-      "ep": "354236",
-      "ept": "Entes de control",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "370473",
-      "t": "Gestión - Medicina laboral",
+      "i": "370976",
+      "t": "Administración - Medicina laboral",
       "e": "1. En Planeacion",
       "ep": "354210",
       "ept": "Medicina Laboral",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "370474",
-      "t": "Revisión -Medicina Laboral",
-      "e": "1. En Planeacion",
-      "ep": "354210",
-      "ept": "Medicina Laboral",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "370470",
-      "t": "Asignación - Medicina Laboral",
-      "e": "1. En Planeacion",
-      "ep": "354210",
-      "ept": "Medicina Laboral",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "370468",
-      "t": "Radicación - Medina Laboral",
-      "e": "1. En Planeacion",
-      "ep": "354210",
-      "ept": "Medicina Laboral",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "371151",
-      "t": "Revisión - PQRD",
-      "e": "1. En Planeacion",
-      "ep": "354186",
-      "ept": "PRQRS",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "371208",
-      "t": "Aprobación - Tutelas",
-      "e": "1. En Planeacion",
-      "ep": "354201",
-      "ept": "Tutelas",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -1004,6 +560,17 @@
       "term": 0,
       "pct": 0.04,
       "n_pct": 1
+    },
+    {
+      "i": "370473",
+      "t": "Gestión - Medicina laboral",
+      "e": "1. En Planeacion",
+      "ep": "354210",
+      "ept": "Medicina Laboral",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "n_pct": 0
     },
     {
       "i": "370476",
@@ -1074,897 +641,6 @@
       "r": "Henry santiago mendez Molina"
     },
     {
-      "i": "38966",
-      "t": "HU2_SGDEA_Edición_de_usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38967",
-      "t": "HU3_SGDEA_Inicio_de_sesión",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38968",
-      "t": "HU4_SGDA_Indisponibilidad_de_la_herramienta",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38969",
-      "t": "HU5_SGDEA_Creación_de_grupos_de_usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38970",
-      "t": "HU6_SGDEA_Visualizar_el_usuario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38971",
-      "t": "HU7_SGDEA_Restablecimiento_de_contraseña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38972",
-      "t": "HU9_SGDEA_Consulta_y_edición_de_Roles_y_Perfiles",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38973",
-      "t": "HU10_SGDEA_ Radicación_PQRS",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "38974",
-      "t": "HU14_SGDEA_Visualización_de_documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "38975",
-      "t": "HU18_Adjuntar_Soportes_Adicionales_a_la_PQRD_Inicial",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "38976",
-      "t": "HU20_SGDEA_Solicitar_Inactivación_de_Gestión",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "38977",
-      "t": "HU19_SGDEA_Clonación_de_la_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "40507",
-      "t": "HU8_SGDEA_Creación_de_Roles_y_Perfiles",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "40508",
-      "t": "HU21_ SGDEA_Consolidación_de_la_PQRS",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "40509",
-      "t": "HU23_SGDEA_Redireccionamiento_a_Formulario_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "40510",
-      "t": "HU24_SGDEA_Consulta_de_estado_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "40511",
-      "t": "HU25_SGDA_Grilla_de_visualización_de_las_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "40817",
-      "t": "HU15_SGDEA_Visualización_de_la_trazabilidad",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "40823",
-      "t": "HU12_SGDEA_ Asignación_de_la_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "40824",
-      "t": "HU16_SGDEA_Incluir_Notas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "40836",
-      "t": "HU11_SGDEA_Verificación_de_la_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "41356",
-      "t": "HU17_SGDEA_Incluir_Expedientes_a_TRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Ingrid Martinez"
-    },
-    {
-      "i": "41360",
-      "t": "HU22_SGDEA_Envio_de_ respuesta_de_la_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Ingrid Martinez"
-    },
-    {
-      "i": "41853",
-      "t": "Configuración ambientes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "42097",
-      "t": "HU26_SGDEA_Aprobación_del_caso",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "42098",
-      "t": "HU27_SGDEA_Reclasificación_del_caso",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "42099",
-      "t": "HU_28_SGDA_Parametrización de los campos del formulario de radicación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "44464",
-      "t": "HU28_SGDEA_Escalamiento_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "45200",
-      "t": "HU_45_SGDA_Recepción Física de Documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45204",
-      "t": "HU_46_SGDA_Radicación de Comunicaciones Oficiales",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "45207",
-      "t": "HU_47_SGDA_Conformación de Expedientes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "leidy.medina"
-    },
-    {
-      "i": "45210",
-      "t": "HU_48_SGDA_Generación de Documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "julio.berrio"
-    },
-    {
-      "i": "45213",
-      "t": "HU_49_SGDA_Recepción Electrónica de Documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Ingrid Martinez"
-    },
-    {
-      "i": "45216",
-      "t": "HU_50__SGDA_Digitalización",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "julio.berrio"
-    },
-    {
-      "i": "45217",
-      "t": "HU_51_SGDA_RemisiónFísica de Documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45218",
-      "t": "HU_52_SGDEA_Creación o Actualización de Tablas de Retención Documental",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "45226",
-      "t": "HU36_SGDEA_Radicación_Tutelas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45227",
-      "t": "HU37_SGDEA_Inclusión_de_etapa_procesal_Tutelas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45228",
-      "t": "HU38_SGDEA_Asignación_de_Tutela",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45236",
-      "t": "HU39_SGDEA_Gestión_de_la_Tutelas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45237",
-      "t": "HU40_SGDEA_Reasignar_Gestión_de_la_Tutela",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45238",
-      "t": "HU41_SGDEA_Aprobación_de_la_Tutela",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "45240",
-      "t": "HU44_SGDEA_Modulo_de_creación_de_juzgados",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "46247",
-      "t": "HU42_SGDEA_Envio_de_respuesta_de_la_Tutela",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "53113",
-      "t": "HU43_SGDEA_Escalamiento_de_Tutela_Asignador",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "53118",
-      "t": "HU63_SGDEA_Escalamiento_de_Tutela_Gestionador",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "53353",
-      "t": "Planes de Arquitectura",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "53363",
-      "t": "Arquitectura de infraestructura requerida",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "53387",
-      "t": "Arquitectura de Solución SGDEA Positiva",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "53401",
-      "t": "Arquitectura de Integracion SGDEA Positiva",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "53428",
-      "t": "Arquitectura de Migracion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "56009",
-      "t": "HU64_SGDEA_Consulta_Tutelas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41830",
-      "ep": "41827",
-      "r": "Ingrid Rubio"
-    },
-    {
-      "i": "56083",
-      "t": "Servicio de Radicación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "John Hernandez"
-    },
-    {
-      "i": "56500",
-      "t": "HU13_SGDEA_ Inicio_de_gestión_de_la_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "57240",
-      "t": "HU29_SGDEA_formulario de radicado de ML",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41835",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "57542",
-      "t": "Arquitectura de Negocio",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "57549",
-      "t": "Arquitectura de Negocio",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "53351",
-      "ep": "54722",
-      "r": "Jairo Bohorquez"
-    },
-    {
-      "i": "57632",
-      "t": "HU53_ Radicación De entradas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "57643",
-      "t": "HU_65_SGDEA_Modulo de reportes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry santiago mendez Molina"
-    },
-    {
-      "i": "57651",
-      "t": "HU_66_SGDEA_Creación y edición de Notificación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "57887",
-      "t": "Smart Supervision",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41829",
-      "ep": "41827",
-      "r": "edward.tapiero"
-    },
-    {
-      "i": "57964",
-      "t": "HU30_SGDEA_Envio de comunicaciones ML",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41835",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "57977",
-      "t": "HU32_SGDEA_ Inteagracion objeciones",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41835",
-      "ep": "41827",
-      "r": "Héctor Julio Uribe Pardo"
-    },
-    {
-      "i": "58023",
-      "t": "Levantamiento de Información",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41847",
-      "ep": "41827",
-      "r": "Sebastian Garcia"
-    },
-    {
-      "i": "58946",
-      "t": "Levantamiento de Información",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41849",
-      "ep": "41827",
-      "r": "Fabio Bello"
-    },
-    {
-      "i": "59248",
-      "t": "HU0005_SGDEA_Documentos - Nuevo documento a partir de formulario_Back",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "38096",
-      "ep": "38003",
-      "r": "Paola Peña"
-    },
-    {
-      "i": "59252",
-      "t": "HU0026_SGDEA_Instrumentos archivísticos - Ajustes modulo tipos documentales_Back",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "38098",
-      "ep": "38003",
-      "r": "Dario Lopez"
-    },
-    {
-      "i": "60411",
-      "t": "HU_67_SGDEA_Edición de notificaciones",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41837",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "61116",
-      "t": "HU68_SGDEA_Radicación_Entes_de_control_V1",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41847",
-      "ep": "41827",
-      "r": "Sebastian Garcia"
-    },
-    {
-      "i": "61344",
-      "t": "HU58_SGDEA_Administración_cuenta_de_correo_electrónico",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "julio.berrio"
-    },
-    {
-      "i": "61650",
-      "t": "HU_53_SGDEA_Radicación_de_entrada_V1",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "Harold Yepes"
-    },
-    {
-      "i": "61652",
-      "t": "HU_54_SGDEA_administracion_formulario_de_radicacion_V1",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "Harold Yepes"
-    },
-    {
-      "i": "61654",
-      "t": "HU_55_SGDEA_digitalizacion_de_documentos_V1",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "Harold Yepes"
-    },
-    {
-      "i": "61657",
-      "t": "HU_56_SGDEA_generacion_impresion_sticker_V1",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "Harold Yepes"
-    },
-    {
-      "i": "61659",
-      "t": "HU_82_SGDEA_parametrizacion_sticker_V1",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "57631",
-      "ep": "41827",
-      "r": "Harold Yepes"
-    },
-    {
-      "i": "61860",
-      "t": "HU31_SGDEA_Aprobacion de comunicados ML",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41835",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "61861",
-      "t": "HU33_SGDEA_Cartas automaticas ML",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41835",
-      "ep": "41827",
-      "r": "Henry Mendez"
-    },
-    {
-      "i": "61862",
-      "t": "HU35_Parametrización y administración de Prefijos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "41835",
-      "ep": "41827",
-      "r": "Yolima Gonzalez"
-    },
-    {
-      "i": "123613",
-      "t": "CC_PQRD_HU001_RADICACION",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "154615",
-      "ep": "_sin_frente",
-      "r": "Julian Segura"
-    },
-    {
-      "i": "134510",
-      "t": "Creacion de lista desplegable en campo nombre de la comunicación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "125549",
-      "ep": "_sin_frente",
-      "r": "Daniel Elias Rangel Caraballo"
-    },
-    {
-      "i": "135074",
-      "t": "Medicina_Laboral_CC_HU205_SGDEA_Al_Rechazar_Revisión_Bloquear_Revisor",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "125549",
-      "ep": "_sin_frente",
-      "r": "Rafael Alberto Reales Carrillo"
-    },
-    {
       "i": "191436",
       "t": "SGDEA_HU003_Consulta_General",
       "e": "10. En Producción",
@@ -1974,94 +650,6 @@
       "f": "125099",
       "ep": "356040",
       "r": "Rafael Alberto Reales Carrillo"
-    },
-    {
-      "i": "206968",
-      "t": "004_HU_Facturación_Integración_SAP_3T_y_OPEN",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Luis Rosemberg Zambrano Guerrero"
-    },
-    {
-      "i": "208026",
-      "t": "SGDEA_HU003_consulta_general",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": ""
-    },
-    {
-      "i": "208039",
-      "t": "HU0148 Automatización IA para módulo de tutelas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": ""
-    },
-    {
-      "i": "208211",
-      "t": "Creación y Edición de Secuencias",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": ""
-    },
-    {
-      "i": "208214",
-      "t": "HU_0001_Modulo_inbox_Nov29",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": ""
-    },
-    {
-      "i": "209253",
-      "t": "004_HU_001 – Modificación WS Radicar Documento de Servicios a Terceros",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Luis Rosemberg Zambrano Guerrero"
-    },
-    {
-      "i": "209946",
-      "t": "004_HU001 – SGDEA Creación de Usuarios V3",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Luis Rosemberg Zambrano Guerrero"
-    },
-    {
-      "i": "210726",
-      "t": "004_HU002 - SDGEA Modificación de Usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Luis Rosemberg Zambrano Guerrero"
     },
     {
       "i": "342944",
@@ -2185,61 +773,6 @@
       "r": ""
     },
     {
-      "i": "346295",
-      "t": "Redicación por ventanilla",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346270",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346359",
-      "t": "Radicación Mail",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346270",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346371",
-      "t": "Radicación Contac Center",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346270",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346390",
-      "t": "Radicación Web (Smart)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346270",
-      "ep": "346262",
-      "r": ""
-    },
-    {
-      "i": "346410",
-      "t": "Radicación Defensor",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346270",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
       "i": "346422",
       "t": "Comunicación Ministerio",
       "e": "4. Refinamiento",
@@ -2247,72 +780,6 @@
       "a": 1,
       "v": 0.17,
       "f": "346417",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346424",
-      "t": "Comunicación Masiva",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346417",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346427",
-      "t": "Comunicación Correspondencia",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346417",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346429",
-      "t": "Comunicación Medicina Laboral",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346417",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346488",
-      "t": "Gestión de devolución",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346441",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346504",
-      "t": "Publicación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346441",
-      "ep": "346262",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "346509",
-      "t": "BD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "346442",
       "ep": "346262",
       "r": "Yhon Segura"
     },
@@ -2334,8 +801,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "370001",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -2345,8 +812,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "370010",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -2356,8 +823,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -2367,52 +834,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359486",
-      "t": "HU127_Radicación manual T.C Externa-  T.G Manual[V1.1]",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "359525",
-      "t": "HU125_Radicación manual T.C Interna-  T.G Manual[V1.1]",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359616",
-      "t": "HU129_Grilla pre radicados Rad manual",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359638",
-      "t": "HU_117_SGDA_Mesa_Back_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -2423,61 +846,6 @@
       "a": 1,
       "v": 1.0,
       "f": "370013",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359673",
-      "t": "HU119_SGDEA_Gestión _Correspondencia_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370001",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359695",
-      "t": "HU132_SGDEA_Asignación_de_la_devolucion de otras aplicaciones",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370013",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359711",
-      "t": "HU 61_SGDEA Elaboración de comunicaciones internas y de salida",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359732",
-      "t": "HU62_SGDEA_Revisión_Correspondencia_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370010",
-      "ep": "356042",
-      "r": "Yhon Segura"
-    },
-    {
-      "i": "359749",
-      "t": "HU73_SGDEA_Aprobación_y_Envío_Respuesta_Correspondencia_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370015",
       "ep": "356042",
       "r": "Yhon Segura"
     },
@@ -2559,72 +927,6 @@
       "r": "Laura Daniela Barreiro Lopez"
     },
     {
-      "i": "364239",
-      "t": "HU121_SGDEA_Reporte_Expedientes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "364255",
-      "t": "HU_110_SGDEA_Administración_Puntos_de_Radicación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "364263",
-      "t": "HU_123_SGDA Configuración reglas metadatos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "364274",
-      "t": "HU_124_SGDA_Configuración_formularios_de_metadatos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "364286",
-      "t": "HU111_SGDEA_Administración_de_Trámite",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "364293",
-      "t": "HU112_SGDEA_ Crear y Editar metadatos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
       "i": "364299",
       "t": "HU116_SGDEA_Reporte_Correspondencia_Consulta_ General",
       "e": "10. En Producción",
@@ -2636,72 +938,6 @@
       "r": ""
     },
     {
-      "i": "364352",
-      "t": "HU122_SGDEA_Reporte_Usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "364454",
-      "t": "HU13_SGDEA_ Inicio_de_gestión_de_la_PQRD",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364363",
-      "ep": "356040",
-      "r": ""
-    },
-    {
-      "i": "364463",
-      "t": "HU14_SGDEA_Visualización_de_documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364363",
-      "ep": "356040",
-      "r": ""
-    },
-    {
-      "i": "364475",
-      "t": "HU15_SGDEA_Visualización_de_la_trazabilidad",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364363",
-      "ep": "356040",
-      "r": ""
-    },
-    {
-      "i": "364487",
-      "t": "HU16_SGDEA_Incluir_comentarios_a_la_trazabilidad",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364363",
-      "ep": "356040",
-      "r": ""
-    },
-    {
-      "i": "364543",
-      "t": "HU18_SGDEA_Adjuntar_soportes_adicionales",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364363",
-      "ep": "356040",
-      "r": ""
-    },
-    {
       "i": "364688",
       "t": "Escalamiento",
       "e": "4. Refinamiento",
@@ -2710,28 +946,6 @@
       "v": 0.17,
       "f": "346437",
       "ep": "346262",
-      "r": ""
-    },
-    {
-      "i": "369885",
-      "t": "HU001  SGDEA Creación de Usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
-      "r": ""
-    },
-    {
-      "i": "369889",
-      "t": "HU002 SGDEA Consulta - Modificación de Usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "364220",
-      "ep": "356042",
       "r": ""
     },
     {
@@ -2801,127 +1015,6 @@
       "r": "Laura Daniela Barreiro Lopez"
     },
     {
-      "i": "370043",
-      "t": "HU68_SGDEA_Radicación_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370042",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370045",
-      "t": "HU69_SGDEA_Asignación_Entes_de_control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370081",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370050",
-      "t": "HU70_SGDEA_Gestión_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370084",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370052",
-      "t": "HU71_SGDEA_Clonación_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370081",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370054",
-      "t": "HU72_SGDEA_Consolidación_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370084",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370059",
-      "t": "HU74_SGDEA_Aprobación_y_Envio_Respuesta_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370091",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370064",
-      "t": "HU75_SGDEA_Grilla_de_visualización_de_los_radicados_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370042",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370067",
-      "t": "HU76_SGDEA_Reasignación_del_radicado_Entes_de_control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370042",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370071",
-      "t": "HU77_SGDEA_Revisión_Entes_de_control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370086",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370074",
-      "t": "HU78_SGDEA_Reporte_Entes de Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370042",
-      "ep": "354236",
-      "r": ""
-    },
-    {
-      "i": "370080",
-      "t": "HU81_SGDEA_Gestión_Clonación_Entes_de_Control",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370042",
-      "ep": "354236",
-      "r": ""
-    },
-    {
       "i": "370490",
       "t": "HU_30_SGDEA Elaboración de comunicaciones ML",
       "e": "X. Removido",
@@ -2944,50 +1037,6 @@
       "r": ""
     },
     {
-      "i": "370900",
-      "t": "HU_32_SGDEA Revisión de comunicaciones ML",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370474",
-      "ep": "354210",
-      "r": ""
-    },
-    {
-      "i": "370909",
-      "t": "HU_35_SGDEA Administración de Prefijos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370976",
-      "ep": "354210",
-      "r": ""
-    },
-    {
-      "i": "370936",
-      "t": "HU_79_SGDEA Asignación Medicina Laboral",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370470",
-      "ep": "354210",
-      "r": ""
-    },
-    {
-      "i": "370946",
-      "t": "HU_80_SGDEA Radicación de entrada ML",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370468",
-      "ep": "354210",
-      "r": ""
-    },
-    {
       "i": "370949",
       "t": "HU_83_SGDEA Reporte Medicina labora",
       "e": "10. En Producción",
@@ -2995,17 +1044,6 @@
       "a": 1,
       "v": 1.0,
       "f": "370976",
-      "ep": "354210",
-      "r": ""
-    },
-    {
-      "i": "370962",
-      "t": "HU_115_SGDEA_Gestión_Medicina_Laboral",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "370473",
       "ep": "354210",
       "r": ""
     },
@@ -3021,91 +1059,14 @@
       "r": ""
     },
     {
-      "i": "371156",
-      "t": "HU11_SGDEA_Revisión_de_la_PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371151",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371158",
-      "t": "HU12_SGDEA_ Asignación_de_la_PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371149",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371161",
-      "t": "HU13_SGDEA_ Inicio_de_gestión_de_la_PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371150",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371163",
-      "t": "HU14_SGDEA_Visualización_de_documentos_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371164",
-      "t": "HU15_SGDEA_Visualización_de_la_trazabilidad_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371166",
-      "t": "HU16_SGDEA_Incluir_comentarios_a_la_trazabilidad_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371167",
-      "t": "HU18_SGDEA_Adjuntar_soportes_adicionales_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
       "i": "371169",
       "t": "HU20_SGDEA_Clonación_del_caso_V2",
       "e": "10. En Producción",
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
+      "f": "540011",
+      "ep": "422326",
       "r": ""
     },
     {
@@ -3115,52 +1076,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "371150",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371175",
-      "t": "HU22_SGDEA_Envio_de_respuesta_de_la_PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371150",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371177",
-      "t": "HU23_SGDEA_Redireccionamiento_a_Formulario_PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371180",
-      "t": "HU24_SGDEA_Consulta_de_estado_PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371181",
-      "t": "HU25_SGDEA_Grilla_de_visualización_de_los_casos_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
+      "f": "540011",
+      "ep": "422326",
       "r": ""
     },
     {
@@ -3172,292 +1089,6 @@
       "v": null,
       "f": "371152",
       "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371183",
-      "t": "HU27_SGDEA_Reclasificación_del_caso_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371149",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371184",
-      "t": "HU65_SGDEA_Modulo de reportes PQRD_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371185",
-      "t": "HU66_SGDEA_Creación y edición de Notificación_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371186",
-      "t": "HU97_SGDEA_defensor_del_consumidor_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
-      "r": ""
-    },
-    {
-      "i": "371191",
-      "t": "HU_105_SGDEA_Radicado_de_factura_administrativaV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371188",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371192",
-      "t": "HU_106_SGDEA_Asignación_de_factura_administrativaV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371188",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371193",
-      "t": "HU_107_SGDEA_Gestión_factura_administrativaV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371188",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371195",
-      "t": "HU_108_SGDEA_Aprobación_de_factura_administrativaV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371188",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371197",
-      "t": "HU109_SGDEA_Factura_Electronica_Manual_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371196",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371198",
-      "t": "HU120_SGDEA_Reporte_Factura_ElectronicaV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371196",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371200",
-      "t": "HU_91_SGDEA_Radicado_de_cuenta_de_cobroV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371199",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371201",
-      "t": "HU_92_SGDEA_Asignación_de_Cuentas_de_cobroV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371199",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371202",
-      "t": "HU_93_SGDEA_Gestión_Cuenta_de_cobro",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371199",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371203",
-      "t": "HU_94_SGDEA_Aprobación_de_cuentas_de_cobroV2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371199",
-      "ep": "354174",
-      "r": ""
-    },
-    {
-      "i": "371209",
-      "t": "HU_36_SGDEA Formulario de radicación_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371204",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371210",
-      "t": "HU_37_SGDEA_Inclusión_de_etapa_procesal_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371205",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371211",
-      "t": "HU_38_SGDEA_Asignacion_de _Tutela_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371205",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371212",
-      "t": "HU_39_SGDEA Gestión de la Tutela V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371206",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371213",
-      "t": "HU_40_SGDEA_Reasignar_Gestión_de_la_Tutela_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371206",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371214",
-      "t": "HU_41_SGDEA Aprobación de la Tutela V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371208",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371215",
-      "t": "HU_42_SGDEA_Envío_de_Respuesta_de_Tutela_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371206",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371216",
-      "t": "HU_43_SGDEA_Escalamiento_de_Tutela_Asignador_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371205",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371217",
-      "t": "HU_44_SGDEA Módulo creación de Juzgados V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371204",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371218",
-      "t": "HU_63_SGDEA_Escalamiento_de_Tutela_Gestionador_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371206",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371219",
-      "t": "HU_64_SGDEA_Consulta_Tutelas_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371221",
-      "ep": "354201",
-      "r": ""
-    },
-    {
-      "i": "371220",
-      "t": "HU_88_SGDEA_Reporte_Tutelas_V2",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "371221",
-      "ep": "354201",
       "r": ""
     },
     {
@@ -5128,8 +2759,8 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.3,
-      "f": "371187",
-      "ep": "354186",
+      "f": "540011",
+      "ep": "422326",
       "r": ""
     },
     {
@@ -5453,37 +3084,37 @@
     }
   ],
   "kpi": {
-    "n_hu": 399,
-    "n_hu_activas": 345,
-    "hu_sin_feature": 18,
-    "n_feature": 82,
-    "n_epic": 19,
-    "n_feature_con_hu": 77,
-    "feature_sin_hu": 5,
+    "n_hu": 223,
+    "n_hu_activas": 169,
+    "hu_sin_feature": 1,
+    "n_feature": 47,
+    "n_epic": 13,
+    "n_feature_con_hu": 41,
+    "feature_sin_hu": 6,
     "hu_omitidas": 0,
-    "pct_global": 0.6677,
-    "term_global": 190,
-    "feature_sin_frente": 2,
-    "hu_sin_frente": 3,
-    "feature_100_sin_cerrar": 37,
+    "pct_global": 0.3217,
+    "term_global": 14,
+    "feature_sin_frente": 0,
+    "hu_sin_frente": 0,
+    "feature_100_sin_cerrar": 6,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.5056,
-    "estrategico": 0.3889,
-    "n": 18,
-    "d": 7,
+    "tactico": 0.2615,
+    "estrategico": 0.2308,
+    "n": 13,
+    "d": 3,
     "u": "épicas",
     "isEpics": true,
-    "feat_total": 77,
-    "feat_ent": 43,
+    "feat_total": 41,
+    "feat_ent": 7,
     "buckets": {
-      "100": 7,
+      "100": 3,
       "75": 0,
-      "50": 3,
-      "20": 3,
-      "0": 5
+      "50": 0,
+      "20": 2,
+      "0": 8
     }
   }
 }

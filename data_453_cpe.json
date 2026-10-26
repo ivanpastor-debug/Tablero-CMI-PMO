@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-10-14",
-  "generado": "2026-10-14 14:35",
-  "archivo": "snapshot HU + Feature (HU_453_20261014.csv)",
+  "corte": "2026-10-26",
+  "generado": "2026-10-26 12:53",
+  "archivo": "snapshot HU + Feature (HU_453_20261026.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -28,8 +28,8 @@
       "pct_hu": 0.17,
       "n_pct": 6,
       "n_cu": 3,
-      "term_cu": 0,
-      "pct_cu": 0.8,
+      "term_cu": 2,
+      "pct_cu": 1.0,
       "n_cu_pct": 2
     },
     {
@@ -48,8 +48,8 @@
       "pct_hu": 0.85,
       "n_pct": 13,
       "n_cu": 3,
-      "term_cu": 0,
-      "pct_cu": 0.175,
+      "term_cu": 3,
+      "pct_cu": 1.0,
       "n_cu_pct": 3
     },
     {
@@ -68,8 +68,8 @@
       "pct_hu": 0.85,
       "n_pct": 24,
       "n_cu": 4,
-      "term_cu": 0,
-      "pct_cu": 0.175,
+      "term_cu": 4,
+      "pct_cu": 1.0,
       "n_cu_pct": 4
     },
     {
@@ -88,8 +88,8 @@
       "pct_hu": 0.85,
       "n_pct": 90,
       "n_cu": 11,
-      "term_cu": 0,
-      "pct_cu": 0.175,
+      "term_cu": 11,
+      "pct_cu": 1.0,
       "n_cu_pct": 11
     },
     {
@@ -108,8 +108,8 @@
       "pct_hu": 0.85,
       "n_pct": 43,
       "n_cu": 2,
-      "term_cu": 0,
-      "pct_cu": 0.125,
+      "term_cu": 1,
+      "pct_cu": 0.5375,
       "n_cu_pct": 2
     },
     {
@@ -128,8 +128,8 @@
       "pct_hu": 0.8397,
       "n_pct": 73,
       "n_cu": 5,
-      "term_cu": 4,
-      "pct_cu": 0.96,
+      "term_cu": 5,
+      "pct_cu": 1.0,
       "n_cu_pct": 5
     },
     {
@@ -148,23 +148,38 @@
       "pct_hu": 0.85,
       "n_pct": 9,
       "n_cu": 1,
-      "term_cu": 0,
-      "pct_cu": 0.5,
+      "term_cu": 1,
+      "pct_cu": 1.0,
       "n_cu_pct": 1
+    },
+    {
+      "k": "otra:sprint ii",
+      "n": "Sprint II",
+      "hito": null,
+      "sem": "sin_hito",
+      "n_hu": 8,
+      "term": 0,
+      "pct": 0.6,
+      "pct_hu": 0.6,
+      "n_pct": 8,
+      "n_cu": 3,
+      "term_cu": 0,
+      "pct_cu": 0.4417,
+      "n_cu_pct": 3
     },
     {
       "k": "otra:sprint pedagogico",
       "n": "Sprint pedagógico",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 49,
+      "n_hu": 38,
       "term": 0,
-      "pct": 0.3437,
-      "pct_hu": 0.3437,
-      "n_pct": 49,
+      "pct": 0.6129,
+      "pct_hu": 0.6129,
+      "n_pct": 38,
       "n_cu": 5,
-      "term_cu": 0,
-      "pct_cu": 0.435,
+      "term_cu": 1,
+      "pct_cu": 0.505,
       "n_cu_pct": 5
     },
     {
@@ -172,21 +187,21 @@
       "n": "Sin iteración",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 27,
+      "n_hu": 28,
       "term": 19,
-      "pct": 0.8985,
-      "pct_hu": 0.8985,
-      "n_pct": 27,
-      "n_cu": 15,
+      "pct": 0.8771,
+      "pct_hu": 0.8771,
+      "n_pct": 28,
+      "n_cu": 37,
       "term_cu": 0,
-      "pct_cu": 0.0967,
-      "n_cu_pct": 12
+      "pct_cu": 0.0662,
+      "n_cu_pct": 34
     }
   ],
   "focos": [
     {
       "k": "A",
-      "n": "Agente de Monitoreo",
+      "n": "",
       "hito": {
         "inicio": "2026-02-25",
         "fecha": "2026-10-24",
@@ -194,21 +209,23 @@
         "peso": "40%",
         "nota": "Hito reprogramado al 24/10/2026 (base: 30/07/2026)"
       },
+      "peso": 0.4,
+      "aporte": 0.3236,
       "sem": "en_curso",
-      "n_hu": 332,
+      "n_hu": 330,
       "term": 19,
-      "pct": 0.7693,
-      "pct_hu": 0.7693,
-      "n_pct": 332,
-      "n_hu_todas": 366,
-      "n_cu": 38,
-      "n_cu_medibles": 34,
-      "term_cu": 4,
-      "pct_cu": 0.3721
+      "pct": 0.809,
+      "pct_hu": 0.809,
+      "n_pct": 330,
+      "n_hu_todas": 373,
+      "n_cu": 43,
+      "n_cu_medibles": 39,
+      "term_cu": 28,
+      "pct_cu": 0.8231
     },
     {
       "k": "B",
-      "n": "Integraciones, datos y analítica",
+      "n": "Gestión analítica",
       "hito": {
         "inicio": "2026-07-01",
         "fecha": "2026-12-25",
@@ -216,6 +233,8 @@
         "peso": "30%",
         "nota": "Hito reprogramado al 25/12/2026 (base: 15/10/2026)"
       },
+      "peso": 0.3,
+      "aporte": 0.024,
       "sem": "en_curso",
       "n_hu": 1,
       "term": 0,
@@ -238,6 +257,8 @@
         "peso": "15%",
         "nota": "Hito reprogramado al 30/10/2026 (base: 27/11/2026)"
       },
+      "peso": 0.15,
+      "aporte": 0.012,
       "sem": "en_curso",
       "n_hu": 1,
       "term": 0,
@@ -245,10 +266,10 @@
       "pct_hu": 0.08,
       "n_pct": 1,
       "n_hu_todas": 3,
-      "n_cu": 12,
-      "n_cu_medibles": 11,
+      "n_cu": 32,
+      "n_cu_medibles": 31,
       "term_cu": 0,
-      "pct_cu": 0.0895
+      "pct_cu": 0.0347
     },
     {
       "k": "D",
@@ -260,6 +281,8 @@
         "peso": "15%",
         "nota": "Hito al 30/12/2026"
       },
+      "peso": 0.15,
+      "aporte": 0.0,
       "sem": "sin_iniciar",
       "n_hu": 0,
       "term": 0,
@@ -295,6 +318,7 @@
         "B",
         "C"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-03"
     },
@@ -320,6 +344,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "3",
       "fecha_entrega": "2026-06-02"
     },
@@ -327,9 +352,9 @@
       "i": "511464",
       "t": "CU_SME_ADM_001_Gestionar_Usuarios",
       "e": "3. Aprobado por Cliente",
-      "ei": "15. En desarrollo",
-      "proc_cu": "DESARROLLO",
-      "pct_cu": 0.5,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-7",
       "itn": "Iteración 7",
       "r": "Cristian Eduardo Lopez bocanegra",
@@ -344,6 +369,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "3",
       "fecha_entrega": "2026-06-30"
     },
@@ -351,31 +377,32 @@
       "i": "496262",
       "t": "CU_SME_ADM_002_Gestionar_Roles_Permisos",
       "e": "3. Aprobado por Cliente",
-      "ei": "15. En desarrollo",
-      "proc_cu": "DESARROLLO",
-      "pct_cu": 0.5,
+      "ei": "17. Ejecución pruebas QA",
+      "proc_cu": "QA",
+      "pct_cu": 0.8,
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 26,
+      "n": 25,
       "term": 0,
-      "pct": 0.3,
-      "pct_hu": 0.3,
-      "n_pct": 26,
+      "pct": 0.6,
+      "pct_hu": 0.6,
+      "n_pct": 25,
       "its": [
         "otra:sprint pedagogico"
       ],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": ""
     },
     {
       "i": "456851",
-      "t": "CU_SME_ADM_004_Consultar_Auditoria_Monitoreo",
-      "e": "2. En aprobacion",
-      "ei": "08. Escenarios en revisión cliente",
+      "t": "CU_SME_ADM_004_Consultar_Auditoria",
+      "e": "3. Aprobado por Cliente",
+      "ei": "13. Aprobado por cliente",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "pct_cu": 0.2,
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
       "r": "Julio Cesar Manosalva Campos",
@@ -389,15 +416,16 @@
       ],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": ""
     },
     {
       "i": "497147",
       "t": "CU_SME_AM_001.10_Actualizar Estado de Terminal Paquete o Elemento",
       "e": "3. Aprobado por Cliente",
-      "ei": "17. Ejecución pruebas QA",
-      "proc_cu": "QA",
-      "pct_cu": 0.8,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-6",
       "itn": "Iteración 6",
       "r": "Cristian Eduardo Lopez bocanegra",
@@ -412,6 +440,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "3",
       "fecha_entrega": "2026-06-02"
     },
@@ -437,6 +466,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "3",
       "fecha_entrega": "2026-06-02"
     },
@@ -444,9 +474,9 @@
       "i": "422944",
       "t": "CU_SME_AM_001.2_Reinstalar o Actualizar Agente manualmente",
       "e": "3. Aprobado por Cliente",
-      "ei": "17. Ejecución pruebas QA",
-      "proc_cu": "QA",
-      "pct_cu": 0.8,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-1",
       "itn": "Iteration 1",
       "r": "Laura Daniela Barreiro Lopez",
@@ -462,6 +492,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-03"
     },
@@ -487,6 +518,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "3",
       "fecha_entrega": "2026-06-02"
     },
@@ -512,6 +544,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "3",
       "fecha_entrega": "2026-06-02"
     },
@@ -519,9 +552,9 @@
       "i": "422941",
       "t": "CU_SME_AM_001_Instalar_Registrar_Sincronizar_Agente_Windows",
       "e": "3. Aprobado por Cliente",
-      "ei": "17. Ejecución pruebas QA",
-      "proc_cu": "QA",
-      "pct_cu": 0.8,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-1",
       "itn": "Iteration 1",
       "r": "Wilmar Fernando Diaz Alvarez",
@@ -537,6 +570,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-03"
     },
@@ -544,31 +578,32 @@
       "i": "496241",
       "t": "CU_SME_AM_002_Consultar Asignaciones y Estado de Terminales, Paquetes Tecnológicos y Elementos",
       "e": "3. Aprobado por Cliente",
-      "ei": "17. Ejecución pruebas QA",
-      "proc_cu": "QA",
-      "pct_cu": 0.8,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
       "r": "Julio Cesar Manosalva Campos",
       "n": 9,
       "term": 0,
-      "pct": 0.6,
-      "pct_hu": 0.6,
+      "pct": 0.85,
+      "pct_hu": 0.85,
       "n_pct": 9,
       "its": [
         "otra:sprint pedagogico"
       ],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": ""
     },
     {
       "i": "426007",
       "t": "CU_SME_AM_004_Consultar Ubicación de la Terminal de Cómputo",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Julio Cesar Manosalva Campos",
@@ -585,6 +620,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -592,9 +628,9 @@
       "i": "433198",
       "t": "CU_SME_AM_005.1_Consulta de las categorías del software instalado",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -610,6 +646,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -617,9 +654,9 @@
       "i": "433204",
       "t": "CU_SME_AM_005.2_Administración_Categorizacion_Software_Instalado",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -635,6 +672,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -642,9 +680,9 @@
       "i": "422955",
       "t": "CU_SME_AM_005_Consultar_Uso_de_Software_de_la_Terminal_de_Cómputo",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-3",
       "itn": "Iteration 3",
       "r": "Julio Cesar Manosalva Campos",
@@ -660,6 +698,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-17"
     },
@@ -667,9 +706,9 @@
       "i": "422956",
       "t": "CU_SME_AM_006_Exportar Información del Uso de la Terminal de Cómputo",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-3",
       "itn": "Iteration 3",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -685,6 +724,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-17"
     },
@@ -692,9 +732,9 @@
       "i": "422964",
       "t": "CU_SME_AM_007_Consultar Software Instalado en la Terminal de Cómputo",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-3",
       "itn": "Iteration 3",
       "r": "Julio Cesar Manosalva Campos",
@@ -710,6 +750,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-17"
     },
@@ -717,9 +758,9 @@
       "i": "456839",
       "t": "CU_SME_AM_011.1_Desbloquear_Terminal",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Laura Daniela Barreiro Lopez",
@@ -735,6 +776,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -742,9 +784,9 @@
       "i": "429123",
       "t": "CU_SME_AM_011_Bloquear_Terminal",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Julio Cesar Manosalva Campos",
@@ -760,6 +802,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -767,9 +810,9 @@
       "i": "422946",
       "t": "CU_SME_AM_012_Actualizar_Agente_Automaticamente",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-2",
       "itn": "Iteration 2",
       "r": "Julio Cesar Manosalva Campos",
@@ -785,6 +828,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-10"
     },
@@ -792,9 +836,9 @@
       "i": "422950",
       "t": "CU_SME_AM_014_Sincronizar_Terminal",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-2",
       "itn": "Iteration 2",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -810,6 +854,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-10"
     },
@@ -817,9 +862,9 @@
       "i": "424669",
       "t": "CU_SME_AM_015_Copiar_Archivo_Sincronización_Offline",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-3",
       "itn": "Iteration 3",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -835,6 +880,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-17"
     },
@@ -842,9 +888,9 @@
       "i": "432283",
       "t": "CU_SME_AM_016_Cargar Archivo de Sincronización Manual",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -860,6 +906,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -867,9 +914,9 @@
       "i": "435158",
       "t": "CU_SME_AM_017_Configuración y Gestión de Alertas por Geocercas",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -885,6 +932,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -892,9 +940,9 @@
       "i": "436816",
       "t": "CU_SME_AM_018.1_Notificar Alertas por cambios de geolocalización",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -910,6 +958,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -917,9 +966,9 @@
       "i": "456844",
       "t": "CU_SME_AM_018.2_Visualización_y_Gestión_Alertas_Geolocalización",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -935,6 +984,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -942,9 +992,9 @@
       "i": "466665",
       "t": "CU_SME_AM_018.3_Cambiar_Estado_Alertas_Geolocalización",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -960,6 +1010,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
@@ -982,6 +1033,7 @@
       "fs": [
         "A"
       ],
+      "fp": "A",
       "release": "2",
       "fecha_entrega": "2026-05-31"
     },
@@ -989,9 +1041,9 @@
       "i": "422954",
       "t": "CU_SME_AM_14.2_Monitoreo_Terminal",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-2",
       "itn": "Iteration 2",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -1008,6 +1060,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-10"
     },
@@ -1015,31 +1068,33 @@
       "i": "511477",
       "t": "CU_SME_CFG_008_Configurar Monitoreo y Sincronización de Terminales de Cómputo",
       "e": "3. Aprobado por Cliente",
-      "ei": "13. Aprobado por cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.2,
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
+      "ei": "17. Ejecución pruebas QA",
+      "proc_cu": "QA",
+      "pct_cu": 0.8,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "Julio Cesar Manosalva Campos",
-      "n": 10,
+      "n": 9,
       "term": 0,
-      "pct": 0.3,
-      "pct_hu": 0.3,
-      "n_pct": 10,
+      "pct": 0.5667,
+      "pct_hu": 0.5667,
+      "n_pct": 9,
       "its": [
-        "otra:sprint pedagogico"
+        "__sin__",
+        "otra:sprint ii"
       ],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": ""
     },
     {
       "i": "478508",
       "t": "CU_SME_CFG_010.1_Visualización_de_Alertas",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-5",
       "itn": "Iteración 5",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -1055,6 +1110,7 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-31"
     },
@@ -1062,9 +1118,9 @@
       "i": "426378",
       "t": "CU_SME_CFG_010_Configurar_Alertas_de_Monitoreo_de_Terminales",
       "e": "3. Aprobado por Cliente",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "it-4",
       "itn": "Iteración 4",
       "r": "Luis Rosemberg Zambrano Guerrero",
@@ -1080,16 +1136,17 @@
       "fs": [
         "A"
       ],
+      "fp": "",
       "release": "2",
       "fecha_entrega": "2026-05-24"
     },
     {
       "i": "493606",
-      "t": "CU_SME_ENC_001_Crear-Disenar Encuesta",
+      "t": "CU_SME_ENC_001_Crear_Encuesta",
       "e": "2. En aprobacion",
-      "ei": "06. Escenarios registrados en herramienta",
+      "ei": "02. CU registrado en herramienta",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.15,
+      "pct_cu": 0.075,
       "it": "__sin__",
       "itn": "Sin iteración",
       "r": "",
@@ -1101,15 +1158,16 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
     },
     {
-      "i": "493611",
-      "t": "CU_SME_ENC_002 — Consultar y Listar Encuestas (Catálogo y Previsualización)",
+      "i": "539713",
+      "t": "CU_SME_ENC_002_Aprobar_o_Rechazar_Encuesta_Estructural",
       "e": "2. En aprobacion",
-      "ei": "06. Escenarios registrados en herramienta",
+      "ei": "02. CU registrado en herramienta",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.15,
+      "pct_cu": 0.075,
       "it": "__sin__",
       "itn": "Sin iteración",
       "r": "",
@@ -1121,15 +1179,16 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
     },
     {
       "i": "493693",
-      "t": "CU_SME_ENC_003_Gestionar Ciclo de Vida de la Encuesta",
+      "t": "CU_SME_ENC_003_Activar_e_Inactivar_Encuesta",
       "e": "2. En aprobacion",
-      "ei": "06. Escenarios registrados en herramienta",
+      "ei": "02. CU registrado en herramienta",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.15,
+      "pct_cu": 0.075,
       "it": "__sin__",
       "itn": "Sin iteración",
       "r": "",
@@ -1141,51 +1200,54 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539714",
+      "t": "CU_SME_ENC_004_Cerrar_Encuesta",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539716",
+      "t": "CU_SME_ENC_005_Inactivar_Preguntas_Coyunturales",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
     },
     {
       "i": "493696",
-      "t": "CU_SME_ENC_004 — Actualizar Encuesta",
-      "e": "1. En Levantamiento",
-      "ei": "03. CU en refinamiento",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.06,
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "",
-      "n": 0,
-      "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
-      "fs": [
-        "C"
-      ]
-    },
-    {
-      "i": "502088",
-      "t": "CU_SME_ENC_005_Diligenciar Encuesta (Navegador y AWP en línea)",
-      "e": "1. En Levantamiento",
-      "ei": "05. En elaboración Escenarios",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "",
-      "n": 0,
-      "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
-      "fs": [
-        "C"
-      ]
-    },
-    {
-      "i": "502089",
-      "t": "CU_SME_ENC_006_Diligenciar Encuesta Offline y Descargar el Instrumento",
+      "t": "CU_SME_ENC_006_Actualizar_Encuesta",
       "e": "1. En Planeación",
       "ei": "00. En levantamiento/entendimiento",
       "proc_cu": "REQUERIMIENTOS",
@@ -1201,11 +1263,54 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
     },
     {
-      "i": "502091",
-      "t": "CU_SME_ENC_007_Sincronizar Respuestas Offline",
+      "i": "539717",
+      "t": "CU_SME_ENC_007_Agregar_Pregunta_a_Encuesta",
+      "e": "2. En aprobacion",
+      "ei": "02. CU registrado en herramienta",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.075,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539719",
+      "t": "CU_SME_ENC_008_Agregar_Pregunta_desde_Banco_de_Preguntas",
+      "e": "2. En aprobacion",
+      "ei": "02. CU registrado en herramienta",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.075,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "545822",
+      "t": "CU_SME_ENC_009_Previsualizar_Encuesta",
       "e": "1. En Planeación",
       "ei": "00. En levantamiento/entendimiento",
       "proc_cu": "REQUERIMIENTOS",
@@ -1221,31 +1326,12 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
     },
     {
-      "i": "502093",
-      "t": "CU_SME_ENC_008_Consultar y Descargar Respuestas Diligenciadas",
-      "e": "1. En Planeación",
-      "ei": "08. Escenarios en revisión cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.175,
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "",
-      "n": 0,
-      "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
-      "fs": [
-        "C"
-      ]
-    },
-    {
-      "i": "502094",
-      "t": "CU_SME_ENC_009_Dashboard de Reporte y Monitoreo de Encuestas",
+      "i": "539720",
+      "t": "CU_SME_ENC_010_Modificar_Pregunta",
       "e": "1. En Planeación",
       "ei": "00. En levantamiento/entendimiento",
       "proc_cu": "REQUERIMIENTOS",
@@ -1261,11 +1347,33 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539721",
+      "t": "CU_SME_ENC_011_Eliminar_Pregunta",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
     },
     {
       "i": "502096",
-      "t": "CU_SME_ENC_010_Versionamiento y Trazabilidad de Encuestas (BORRADOR)",
+      "t": "CU_SME_ENC_012_Generar_Nueva_Version_de_Encuesta",
       "e": "1. En Planeación",
       "ei": "00. En levantamiento/entendimiento",
       "proc_cu": "REQUERIMIENTOS",
@@ -1281,7 +1389,449 @@
       "its": [],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539723",
+      "t": "CU_SME_ENC_013_Eliminar_Encuesta",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539724",
+      "t": "CU_SME_ENC_014_Crear_Aplicacion_de_Encuesta",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539725",
+      "t": "CU_SME_ENC_015_Publicar_Aplicacion_de_Encuesta",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539726",
+      "t": "CU_SME_ENC_016_Suspender_y_Reactivar_Aplicacion",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539727",
+      "t": "CU_SME_ENC_017_Finalizar_Aplicacion",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539728",
+      "t": "CU_SME_ENC_018_Actualizar_Aplicacion",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "502088",
+      "t": "CU_SME_ENC_019_Diligenciar_Encuesta_en_Linea_Web",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539729",
+      "t": "CU_SME_ENC_020_Descargar_Aplicacion_AWP",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "502089",
+      "t": "CU_SME_ENC_021_Diligenciar_Encuesta_Offline",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "502091",
+      "t": "CU_SME_ENC_022_Sincronizar_Respuestas_Offline",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539730",
+      "t": "CU_SME_ENC_023_Diligenciar_Aplicacion_Online_a_Nombre_de_un_Tercero",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539731",
+      "t": "CU_SME_ENC_024_Diligenciar_Aplicacion_Offline_a_Nombre_de_un_Tercero",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "493611",
+      "t": "CU_SME_ENC_025_Consultar_Encuestas_Estadisticas",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539732",
+      "t": "CU_SME_ENC_026_Consultar_Aplicaciones_con_sus_Respuestas",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "502093",
+      "t": "CU_SME_ENC_027_Ver_Respuestas_de_Encuestas_Diligenciadas",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "502094",
+      "t": "CU_SME_ENC_028_Ver_Reporte_Monitoreo_Encuesta",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539733",
+      "t": "CU_SME_ENC_029_Consultar_Comparativo_de_Aplicaciones",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "539734",
+      "t": "CU_SME_ENC_030_Gestionar_Banco_de_Preguntas_Reutilizables",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "C"
+      ],
+      "fp": "C"
+    },
+    {
+      "i": "545106",
+      "t": "CU_SME_INT_006_Cargar_Archivo_Estructurado",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Julio Cesar Manosalva Campos",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "540577",
+      "t": "Coordinación Interna del equipo",
+      "e": "2. En Curso",
+      "ei": "15. En desarrollo",
+      "proc_cu": "DESARROLLO",
+      "pct_cu": 0.5,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Lorena Constanza Bayona Alcantara",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "543268",
+      "t": "Deuda técnica",
+      "e": "2. En Curso",
+      "ei": "15. En desarrollo",
+      "proc_cu": "DESARROLLO",
+      "pct_cu": 0.5,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Andrés Hernandez",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
     },
     {
       "i": "424346",
@@ -1301,7 +1851,8 @@
       "its": [],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": "A"
     },
     {
       "i": "525835",
@@ -1323,7 +1874,8 @@
       ],
       "fs": [
         "C"
-      ]
+      ],
+      "fp": ""
     },
     {
       "i": "469380",
@@ -1346,7 +1898,29 @@
       "fs": [
         "A",
         "B"
-      ]
+      ],
+      "fp": ""
+    },
+    {
+      "i": "540582",
+      "t": "Gestión contractual y administrativa",
+      "e": "1. En Planeación",
+      "ei": "15. En desarrollo",
+      "proc_cu": "DESARROLLO",
+      "pct_cu": 0.5,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Marcela Navarro Muñoz",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
     },
     {
       "i": "424343",
@@ -1366,7 +1940,8 @@
       "its": [],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": "A"
     },
     {
       "i": "424339",
@@ -1386,7 +1961,29 @@
       "its": [],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "538352",
+      "t": "Reuniones con clientes",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "otra:sprint pedagogico",
+      "itn": "Sprint pedagógico",
+      "r": "",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
     },
     {
       "i": "534651",
@@ -1406,7 +2003,8 @@
       "its": [],
       "fs": [
         "A"
-      ]
+      ],
+      "fp": "A"
     }
   ],
   "hus": [
@@ -2072,19 +2670,6 @@
       "it": "__sin__",
       "itn": "Sin iteración",
       "r": "Wilmar Fernando Diaz Alvarez"
-    },
-    {
-      "i": "424482",
-      "t": "Juan Andres Hernandez Pineda",
-      "e": "0.0 Transversal",
-      "p": "OMITIR",
-      "a": 0,
-      "v": null,
-      "f": "A",
-      "cu": "424346",
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "Andrés Hernandez"
     },
     {
       "i": "424685",
@@ -3089,7 +3674,7 @@
     },
     {
       "i": "459592",
-      "t": "Rafael.Escalante // FOCO-B Mapeo de datos",
+      "t": "Rafael.Escalante // FOCO-B Mapeo de datos fuentes antiguas 2022",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -4494,10 +5079,10 @@
     {
       "i": "510457",
       "t": "Transversal CU_SME_AM_002_Consultar Asignaciones de Terminales, Paquetes Tecnológicos y Elementos a Sedes Educativas",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -4507,15 +5092,15 @@
     {
       "i": "510464",
       "t": "Transversales CU_SME_ADM_002_Gestionar_Roles_Permisos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "512152",
@@ -5105,10 +5690,10 @@
     {
       "i": "514923",
       "t": "SME_AM_002_E01_ConsultarElRegistroHistoricoDeLaSedeEducativa",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5118,10 +5703,10 @@
     {
       "i": "514926",
       "t": "SME_AM_002_E02_ConsultarEstadoDeTerminales",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5131,10 +5716,10 @@
     {
       "i": "514931",
       "t": "SME_AM_002_E03_ConsultarEstadoDePaquetesTecnologicos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5144,10 +5729,10 @@
     {
       "i": "514933",
       "t": "SME_AM_002_E04_ConsultarEstadoDeElementos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5157,10 +5742,10 @@
     {
       "i": "514936",
       "t": "SME_AM_002_E05_ConsultarElementosDentroDeUnPaqueteTecnologico",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5170,10 +5755,10 @@
     {
       "i": "514937",
       "t": "SME_AM_002_E06_SeguimientoDeLasTerminalesPorEstado",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5183,10 +5768,10 @@
     {
       "i": "514939",
       "t": "SME_AM_002_E07_SeguimientoDeLosPaquetesTecnologicosPorEstado",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5196,10 +5781,10 @@
     {
       "i": "514940",
       "t": "SME_AM_002_E08_SeguimientoDeLosElementosPorEstado",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496241",
       "it": "otra:sprint pedagogico",
@@ -5326,97 +5911,97 @@
     {
       "i": "519694",
       "t": "SME_ADM_002_E01_ConsultarRolesYDescargarLaTabla",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "519695",
       "t": "SME_ADM_002_E02_ConsultarCatalogoDePermisos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "519696",
       "t": "SME_ADM_002_E03_CrearRolConSusPermisos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "519697",
       "t": "SME_ADM_002_E04_EditarRolYConfirmarCambioDePermisos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "519698",
       "t": "SME_ADM_002_E05_InactivarRolSinUsuariosAsignados",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "519699",
       "t": "SME_ADM_002_E06_ConsultarPermisosDeUnRol",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "519700",
       "t": "SME_ADM_002_E07_OperarModuloSinElPermisoDeGestionDeRoles",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "525830",
-      "t": "HU_078_ID_453_DEFINICION DE INDICADORES Y FUENTES DE DATOS FOCO B",
+      "t": "DEFINICION DE INDICADORES Y FUENTES DE DATOS FOCO B",
       "e": "1. Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -5429,7 +6014,7 @@
     },
     {
       "i": "527204",
-      "t": "HU_2.3_453_Construccion de informe con KPI y OKR necesarios para el negocio",
+      "t": "Construccion de informe con KPI y OKR necesarios para el negocio",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -5442,7 +6027,7 @@
     },
     {
       "i": "527400",
-      "t": "HU_2.4_453_Recepcionar y consolidar inventario de fuentes oficiales estandarizadas de Foco B",
+      "t": "Recepcionar y consolidar inventario de fuentes oficiales estandarizadas de Foco B",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -5455,7 +6040,7 @@
     },
     {
       "i": "527429",
-      "t": "HU_2.5_453_Levantar matriz de indicadores IED/IIE: fuente, variable, fórmula, ponderación, nivel de agregación, vigencia y responsable",
+      "t": "Levantar matriz de indicadores IED/IIE: fuente, variable, fórmula, ponderación, nivel de agregación, vigencia y responsable",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -5468,7 +6053,7 @@
     },
     {
       "i": "527431",
-      "t": "HU_078_ID_453_CREACION DE BASE DE DATOS Y ESQYEMAS DB_BODEGA (BRONCE PLATA Y ORO) E INGESTA DE DATOS DE EXCEL",
+      "t": "Pruebas Unitarias creación de base de datos y esquemas db_bodega (bronce plata y oro) e ingesta de datos de Excel",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -5481,7 +6066,7 @@
     },
     {
       "i": "528378",
-      "t": "SME_ADM_004_E01_ConsultarElListadoInicialDeEventosDeAuditoria",
+      "t": "SME_ADM_004_E01_ConsultarElListadoPorDefectoDeLosUltimos30Dias",
       "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -5494,7 +6079,7 @@
     },
     {
       "i": "528379",
-      "t": "SME_ADM_004_E02_ConsultarElDetalleDeUnEventoDeModificacion",
+      "t": "SME_ADM_004_E02_ConsultarElDetalleDeLosEventos",
       "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -5507,7 +6092,7 @@
     },
     {
       "i": "528380",
-      "t": "SME_ADM_004_E03_ConsultarElDetalleDeUnaInsercionYDeUnEventoAutomatico",
+      "t": "SME_ADM_004_E03_DescargarLaConsultaEnSuUnicaHoja",
       "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -5520,7 +6105,7 @@
     },
     {
       "i": "528381",
-      "t": "SME_ADM_004_E04_ComprobarElTopeDeFilasDeLaDescargaEnExcel",
+      "t": "SME_ADM_004_E04_ValidarLaDescargaFallidaYElPermisoRetiradoConLaConsultaAbierta",
       "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -5533,63 +6118,63 @@
     },
     {
       "i": "528382",
-      "t": "SME_CFG_008_E01_ConsultarLaConfiguracionVigenteYLaListaDeSincronizacion",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E01_ConsultarLaConfiguracionVigenteYLasDosListas",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528383",
-      "t": "SME_CFG_008_E02_ConfigurarLaFrecuenciaDeMonitoreoDeUsoHardware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E04_ConfigurarLaFrecuenciaDeMonitoreoDeTerminales",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528384",
-      "t": "SME_CFG_008_E03_ConfigurarLaFrecuenciaDeMonitoreoDeUsoSoftware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E07_ComprobarElRechazoDelGuardadoSimultaneoDeDosAdministradores",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528385",
-      "t": "SME_CFG_008_E04_ConfigurarLaFrecuenciaDeMonitoreoDeSoftware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E08_ComprobarLaAdvertenciaDeCambiosSinGuardar",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528386",
       "t": "SME_CFG_008_E05_ConfigurarLaFrecuenciaDeMonitoreoDeConectividad",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
+      "e": "x. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "A",
       "cu": "511477",
       "it": "otra:sprint pedagogico",
@@ -5598,55 +6183,55 @@
     },
     {
       "i": "528387",
-      "t": "SME_CFG_008_E06_ConfigurarLaFrecuenciaDeSincronizacion",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E05_ConfigurarLaFrecuenciaDeSincronizacion",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528388",
-      "t": "SME_CFG_008_E07_ModificarVariasFrecuenciasYConfirmarElCambio",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E02_ModificarLasDosFrecuenciasYConfirmarElCambio",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528389",
-      "t": "SME_CFG_008_E08_ComprobarQueElEstadoDelCicloDeVidaDeterminaSoloLaCantidadDeTerminalesQueSeMonitorean",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E03_ComprobarQueElEstadoDelCicloDeVidaDeterminaSoloLaCantidadDeTerminalesQueSeMonitorean",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528390",
-      "t": "SME_CFG_008_E09_ComprobarElErrorDelSistemaYSuReintento",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "t": "SME_CFG_008_E06_ComprobarElErrorDelSistemaYSuReintento",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "529623",
@@ -5982,8 +6567,8 @@
       "v": 0.3,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
+      "it": "__sin__",
+      "itn": "Sin iteración",
       "r": "Andres Felipe Melo Santos"
     },
     {
@@ -6002,15 +6587,15 @@
     {
       "i": "529947",
       "t": "PRODUCCIÓN CU_SME_ADM_002_Gestionar_Roles_Permisos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "529954",
@@ -6054,223 +6639,223 @@
     {
       "i": "532268",
       "t": "SME_ADM_002_E08_ComprobarPermisosDeUsoDeSoftware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532269",
       "t": "SME_ADM_002_E09_ComprobarPermisosDeCategorizacionDeSoftware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532270",
       "t": "SME_ADM_002_E10_ComprobarPermisosDeSoftwareInstalado",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532271",
       "t": "SME_ADM_002_E11_ComprobarPermisosDeInformacionGeneral",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "William David Gil Riaño"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532272",
       "t": "SME_ADM_002_E12_ComprobarPermisosDeGeocercasConfiguradas",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532273",
       "t": "SME_ADM_002_E13_ComprobarPermisosDeAlertasDeSoftware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532274",
       "t": "SME_ADM_002_E14_ComprobarPermisosDeAlertasDeHardware",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532275",
       "t": "SME_ADM_002_E15_ComprobarPermisosDeAlertasPorTerminalSinUso",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532276",
       "t": "SME_ADM_002_E16_ComprobarPermisosDeConsultaDeAlertasDeGeolocalizacion",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
+      "e": "Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532277",
       "t": "SME_ADM_002_E17_ComprobarPermisosDeConsultaDeAlertas",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532278",
       "t": "SME_ADM_002_E18_ComprobarPermisosDeGestionDeAlertasDeGeolocalizacion",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532279",
       "t": "SME_ADM_002_E19_ComprobarPermisosDeUbicacionDeTerminales",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532280",
       "t": "SME_ADM_002_E20_ComprobarPermisosDeBloqueoDeTerminales",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532281",
       "t": "SME_ADM_002_E21_ComprobarPermisosDeSincronizacionManual",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532282",
       "t": "SME_ADM_002_E22_ComprobarPermisosDeRegistroDeElementos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532283",
       "t": "SME_ADM_002_E23_ComprobarPermisosDePreAsignar",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "532284",
       "t": "SME_ADM_002_E24_ComprobarPermisosDeConsultaDeEstados",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
-      "r": "Oscar Daniel Herrera Peñaloza"
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "534652",
@@ -6283,60 +6868,165 @@
       "cu": "534651",
       "it": "__sin__",
       "itn": "Sin iteración",
-      "r": "Cristian Eduardo Lopez bocanegra"
+      "r": "Daniela Santamaria Maldonado"
+    },
+    {
+      "i": "536159",
+      "t": "Juan Esteban Marín Lopez",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "424392",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Juan Esteban Marin Lopez"
+    },
+    {
+      "i": "536163",
+      "t": "Karla Dayana Lobatón",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "424343",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Karla Dayana Lobaton Quiñones"
+    },
+    {
+      "i": "536164",
+      "t": "Juan David Montenegro",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "424343",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Juan David Montenegro Estupiñán"
+    },
+    {
+      "i": "536166",
+      "t": "Laura Camila Valencia",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "424343",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Laura Camila Valencia Hernandez"
+    },
+    {
+      "i": "536169",
+      "t": "Zaida Catalina Luna",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "424346",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Zaida Catalina Luna Yara"
+    },
+    {
+      "i": "536173",
+      "t": "Danilo Rodriguez Diaz",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "424346",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Danilo Rodriguez Diaz"
+    },
+    {
+      "i": "540579",
+      "t": "Malla de asistencia Octubre",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "540577",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Lorena Constanza Bayona Alcantara"
+    },
+    {
+      "i": "540584",
+      "t": "Planeación Sprint II",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "A",
+      "cu": "540577",
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Lorena Constanza Bayona Alcantara"
     }
   ],
   "kpi": {
-    "n_cu": 49,
-    "n_cu_medibles": 45,
-    "cu_entregados": 4,
-    "pct_cu_global": 0.303,
-    "n_hu": 375,
-    "n_hu_activas": 334,
+    "n_cu": 74,
+    "n_cu_medibles": 70,
+    "cu_entregados": 28,
+    "pct_cu_global": 0.4739,
+    "n_hu": 382,
+    "n_hu_activas": 332,
     "hu_sin_cu": 9,
-    "hu_fuera_de_su_cu": 49,
-    "sin_iteracion": 27,
-    "cu_aprobados": 30,
-    "hu_omitidas": 38,
+    "hu_fuera_de_su_cu": 50,
+    "sin_iteracion": 28,
+    "cu_aprobados": 31,
+    "hu_omitidas": 45,
     "focos_activas": {
-      "A": 332,
+      "A": 330,
       "B": 1,
       "C": 1
     },
     "focos_todas": {
-      "A": 366,
+      "A": 373,
       "B": 6,
       "C": 3
     },
     "cus_activas": {
-      "A": 31,
+      "A": 41,
       "B": 1,
-      "C": 1
+      "C": 31
     },
     "cus_todas": {
-      "A": 37,
+      "A": 43,
       "B": 2,
-      "C": 2
+      "C": 32
     },
     "cu_sin_foco": 0,
     "cu_multi_foco": 2,
     "hu_sin_pct": 0,
-    "pct_global": 0.7652,
-    "pct_hu_global": 0.7652,
+    "pct_global": 0.3596,
+    "pct_global_hu": 0.8046,
+    "avance_modo": "peso_foco",
     "term_global": 19
   },
   "cmi": {
-    "tactico": 0.303,
-    "estrategico": 0.0889,
-    "n": 45,
-    "d": 4,
+    "tactico": 0.4739,
+    "estrategico": 0.4,
+    "n": 70,
+    "d": 28,
     "u": "casos de uso",
     "buckets": {
-      "100": 4,
+      "100": 28,
       "75": 0,
-      "50": 0,
-      "20": 7,
-      "0": 34
+      "50": 2,
+      "20": 4,
+      "0": 36
     }
   }
 }
