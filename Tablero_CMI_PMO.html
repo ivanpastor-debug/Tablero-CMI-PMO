@@ -54,7 +54,12 @@ header.top{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;justify-
 .live-pill{display:inline-flex;align-items:center;gap:8px;background:var(--surface-2);border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:11.5px;color:var(--ink-2);font-weight:500}
 .live-pill b{color:var(--ink)}
 .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--good);animation:pulseGlow 2s infinite}
+.pulse-dot.fin-dot{background:var(--accent);animation:pulseGlowFin 2s infinite}
 @keyframes pulseGlow{0%{box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{box-shadow:0 0 0 6px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+@keyframes pulseGlowFin{0%{box-shadow:0 0 0 0 rgba(2,132,199,.7)}70%{box-shadow:0 0 0 6px rgba(2,132,199,0)}100%{box-shadow:0 0 0 0 rgba(2,132,199,0)}}
+.oc-dates{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:5px 9px;margin:2px 0 4px;background:var(--surface-2);border:1px dashed var(--line);border-radius:7px;font-size:10.5px;color:var(--muted)}
+.oc-dates span{display:inline-flex;align-items:center;gap:5px}
+.oc-dates b{color:var(--ink-2);font-weight:700;font-variant-numeric:tabular-nums}
 .theme-toggle{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);cursor:pointer;transition:all .2s ease}
 .theme-toggle:hover{background:var(--surface-3);border-color:var(--accent);transform:translateY(-1px)}
 nav.tabs{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 20px}
@@ -472,9 +477,13 @@ svg .lbl-ink{fill:var(--ink-2)}
       </div>
     </div>
     <div class="top-actions">
-      <div class="live-pill" title="Fecha de corte oficial">
+      <div class="live-pill" id="pill-act-op" title="Última actualización generada de información operativa (Azure DevOps / Tablero Operativo)">
         <span class="pulse-dot" aria-hidden="true"></span>
-        <span>Corte Op.: <b>26-Oct-2026</b> · Fin.: <b>01-Oct-2026</b></span>
+        <span>Act. Operativa: <b id="hdr-corte-op">26-Oct-2026</b></span>
+      </div>
+      <div class="live-pill" id="pill-act-fin" title="Última actualización de información financiera correspondiente a los archivos locales cargados en Información Financiera (Corte 01-Oct-2026 · Libros actualizados al 29-Sep / 07-Oct-2026)">
+        <span class="pulse-dot fin-dot" aria-hidden="true"></span>
+        <span>Act. Financiera: <b id="hdr-corte-fin">01-Oct-2026</b> <small style="color:var(--muted);font-weight:500">(Archivos locales)</small></span>
       </div>
       <button type="button" class="theme-toggle" id="theme-btn" aria-label="Cambiar tema claro u oscuro">
         <span id="theme-icon">🌙</span> <span id="theme-text">Oscuro</span>
@@ -930,6 +939,45 @@ function getProjCallout(p) {
     </div>`;
 }
 
+const PROJ_DATES_META = {
+  "005": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_004_20261026.csv)", finDate: "01-Oct-2026", finFile: "Indicadores_DOCUM 20260929.xlsx" },
+  "POS": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_355 + HU_416 · 26-Oct-2026)", finDate: "01-Oct-2026", finFile: "Indicadores CORE 20260929.xlsx" },
+  "355": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_355_20261026.csv)", finDate: "01-Oct-2026", finFile: "En libro Indicadores CORE 20260929.xlsx" },
+  "416": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_416_20261026.csv)", finDate: "01-Oct-2026", finFile: "Indicadores CORE 20260929.xlsx" },
+  "384": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_384_20261026.csv)", finDate: "01-Oct-2026", finFile: "IndicadoresFIDU 20260929.xlsx" },
+  "419": { opDate: "26-Oct-2026", opSrc: "Azure V2 (26-Oct-2026) · Consolidado Local PMO (01-Oct-2026)", finDate: "01-Oct-2026", finFile: "Indicadores_419_V11 20260929.xlsx · 419_Resumen 20260929.xlsx" },
+  "453": { opDate: "26-Oct-2026", opSrc: "Azure DevOps CU + HU (HU_453_20261026.csv)", finDate: "01-Oct-2026", finFile: "Indicadores_CPE 20260929.xlsx" },
+  "421": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_421_20261026.csv)", finDate: "01-Oct-2026", finFile: "IndicadoresBalu 20260929.xlsx" },
+  "456": { opDate: "05-Oct-2026", opSrc: "CRONOGRAMA ACTUALIZADO - 051026.xlsx", finDate: "07-Oct-2026", finFile: "Indicadores456.xlsx (Corte 01-Oct-2026)" },
+  "348": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_348_20261026.csv)", finDate: "07-Oct-2026", finFile: "Indicadores 348.xlsx (Corte 01-Oct-2026)" },
+  "397": { opDate: "26-Oct-2026", opSrc: "Azure DevOps (HU_397_20261026.csv)", finDate: "01-Oct-2026", finFile: "Libro contractual Colfondos Core · Andina Seguros" },
+  "457": { opDate: "26-Oct-2026", opSrc: "Captura Directa Azure DevOps (HU_457_20261026.csv)", finDate: "Sin archivo local", finFile: "Pendiente cargue en Información Financiera" }
+};
+
+function fmtIsoDateEs(iso) {
+  if (!iso || typeof iso !== "string") return null;
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return iso;
+  const meses = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+  const idx = parseInt(m[2], 10) - 1;
+  return `${m[3]}-${meses[idx] || m[2]}-${m[1]}`;
+}
+
+function getProjDates(p) {
+  const base = PROJ_DATES_META[p.id] || { opDate: "26-Oct-2026", opSrc: "Azure DevOps", finDate: p.m ? "01-Oct-2026" : "Sin archivo local", finFile: (p.fx && p.fx.src) || "Sin libro financiero" };
+  let opDate = base.opDate;
+  const keyMap = { "005": "004", "355": "355", "416": "416", "POS": "POS", "384": "384", "419": "419", "421": "421", "397": "397", "348": "348", "457": "457" };
+  if (p.id === "453" && typeof CPE453 !== "undefined" && CPE453 && CPE453.corte) {
+    opDate = fmtIsoDateEs(CPE453.corte) || opDate;
+  } else if (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos) {
+    const k = keyMap[p.id];
+    if (k && FUNC.proyectos[k] && FUNC.proyectos[k].corte) {
+      opDate = fmtIsoDateEs(FUNC.proyectos[k].corte) || opDate;
+    }
+  }
+  return { ...base, opDate };
+}
+
 function opCard(p,isSub){
   const o=p.op,st1=band(o.av,.7,.4),st2=band(o.ent,.7,.3),os=opState(p),u=o.u.charAt(0).toUpperCase()+o.u.slice(1);
   const title=p.parent?`Subproyecto ${p.id} · ${p.name}`:((p.name.startsWith(code(p)) || p.id === "POS")?p.name:`${code(p)} · ${p.name}`);
@@ -949,6 +997,7 @@ function opCard(p,isSub){
     <div class="counts"><div><span>Entregables</span><b>${nf0.format(o.n)}</b></div><div><span>Entregados</span><b>${nf0.format(o.d)}</b></div><em>* ${u}</em></div>
     ${callout}
     ${finMini(p)}
+    ${(()=>{const d=getProjDates(p);return `<div class="oc-dates"><span title="Fuente operativa: ${d.opSrc}"><i style="width:6px;height:6px;border-radius:50%;background:var(--good);display:inline-block"></i>Act. Operativa: <b>${d.opDate}</b></span><span title="Archivo financiero local: ${d.finFile}"><i style="width:6px;height:6px;border-radius:50%;background:${p.m?'var(--accent)':'var(--none)'};display:inline-block"></i>Act. Financiera: <b>${d.finDate}</b></span></div>`})()}
     <footer>${p.subs?`<button class="linkbtn tog" aria-expanded="false">Ver subproyectos 355 y 416 ▾</button>`:""}<button class="linkbtn" data-open="${p.id}">Ver detalle →</button></footer>
   </article>`;
 }
@@ -967,6 +1016,17 @@ function renderOpCards(){
   if(window.applySearchFilter) window.applySearchFilter();
 }
 function renderSem(){
+  const cortesOp = [];
+  if (FUNC && FUNC.proyectos) {
+    Object.values(FUNC.proyectos).forEach(v => { if (v && v.corte) cortesOp.push(v.corte); });
+  }
+  if (CPE453 && CPE453.corte) cortesOp.push(CPE453.corte);
+  if (cortesOp.length) {
+    const maxCorte = cortesOp.sort().slice(-1)[0];
+    const hdrOp = document.getElementById("hdr-corte-op");
+    if (hdrOp) hdrOp.textContent = fmtIsoDateEs(maxCorte) || maxCorte;
+  }
+
   renderOpCards();
   if($("#sem-fin"))semTable("#sem-fin",["CPI forecast","CPI ppto","ICFF","Ejecución vs fcst","Facturado / contrato","Cumpl. facturación","Recaudo / facturado"],p=>{
     if(!p.m)return `<td class="n" colspan="7" style="text-align:left;color:var(--muted)">${p.parent?"Incluido en el libro financiero 416 CORE (vista general)":"Sin libro financiero en las fuentes"}</td>`;
@@ -1037,9 +1097,10 @@ function renderFicha(){
   if(par)h+=`<div class="seg" role="group" aria-label="Subproyectos de ${par.name}"><span class="eyebrow" style="align-self:center;margin-right:4px">Subproyectos</span>${[[par.id,"Vista general "+code(par)],...par.subs.map(id=>[id,id+" · "+(getP(id).sub||"").replace(/^Subproyecto \d+ ?·? ?/,"")||id])].map(([id,l])=>`<button aria-pressed="${id===p.id}" data-p="${id}">${l.replace(/ · $/,"")}</button>`).join("")}</div>`;
   // Selector de vista: operativa / financiera
   const fs=finState(p);
+  const dMeta=getProjDates(p);
   h+=`<div class="section modes" role="group" aria-label="Vista de la ficha">
-    <button class="mode" data-mode="op" aria-pressed="${mode==="op"}"><span class="m-h"><span class="m-t">Operativa</span>${stPill(opState(p))}</span><span class="m-go">${mode==="op"?"Ocultar ▴":"Ver detalle ▾"}</span></button>
-    <button class="mode" data-mode="fin" aria-pressed="${mode==="fin"}"><span class="m-h"><span class="m-t">Financiera</span>${stPill(fs)}</span><span class="m-go">${mode==="fin"?"Ocultar ▴":"Ver detalle ▾"}</span></button>
+    <button class="mode" data-mode="op" aria-pressed="${mode==="op"}"><div><span class="m-h"><span class="m-t">Operativa</span>${stPill(opState(p))}</span><small style="display:block;font-size:11px;font-weight:500;color:var(--muted);margin-top:3px">🟢 Última act. operativa: <b style="color:var(--ink-2)">${dMeta.opDate}</b> · ${dMeta.opSrc}</small></div><span class="m-go">${mode==="op"?"Ocultar ▴":"Ver detalle ▾"}</span></button>
+    <button class="mode" data-mode="fin" aria-pressed="${mode==="fin"}"><div><span class="m-h"><span class="m-t">Financiera</span>${stPill(fs)}</span><small style="display:block;font-size:11px;font-weight:500;color:var(--muted);margin-top:3px">💼 Última act. financiera: <b style="color:var(--ink-2)">${dMeta.finDate}</b> · ${dMeta.finFile}</small></div><span class="m-go">${mode==="fin"?"Ocultar ▴":"Ver detalle ▾"}</span></button>
   </div><div id="mode-body"></div>`;
   $("#ficha").innerHTML=h;
   $("#ficha").querySelectorAll("[data-p]").forEach(b=>b.addEventListener("click",()=>openProj(b.dataset.p,true)));
