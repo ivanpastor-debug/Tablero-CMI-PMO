@@ -1,8 +1,8 @@
 {
   "codigo": "457",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 13:05",
-  "archivo": "HU_457_20261026.csv",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:14",
+  "archivo": "HU_457_20261027.csv",
   "epics": [
     {
       "i": "292522",
@@ -10,7 +10,7 @@
       "n_f": 3,
       "n": 109,
       "term": 62,
-      "pct": 0.7424
+      "pct": 0.7568
     },
     {
       "i": "94588",
@@ -41,8 +41,8 @@
       "t": "Transversales",
       "n_f": 2,
       "n": 12,
-      "term": 7,
-      "pct": 0.7917
+      "term": 11,
+      "pct": 0.9583
     }
   ],
   "features": [
@@ -54,7 +54,7 @@
       "ept": "Nuevas Funcionalidades",
       "n": 39,
       "term": 31,
-      "pct": 0.9,
+      "pct": 0.9013,
       "n_pct": 39
     },
     {
@@ -65,7 +65,7 @@
       "ept": "Nuevas Funcionalidades",
       "n": 39,
       "term": 27,
-      "pct": 0.7321,
+      "pct": 0.7505,
       "n_pct": 39
     },
     {
@@ -76,7 +76,7 @@
       "ept": "Nuevas Funcionalidades",
       "n": 31,
       "term": 4,
-      "pct": 0.5571,
+      "pct": 0.5829,
       "n_pct": 31
     },
     {
@@ -163,8 +163,8 @@
       "ep": "149672",
       "ept": "Transversales",
       "n": 6,
-      "term": 1,
-      "pct": 0.5833,
+      "term": 5,
+      "pct": 0.9167,
       "n_pct": 6
     },
     {
@@ -1547,10 +1547,10 @@
     {
       "i": "184499",
       "t": "TRA_HU0005_QA",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "149673",
       "ep": "149672",
       "r": "José Rafae Martinez Colmenares"
@@ -1558,10 +1558,10 @@
     {
       "i": "184764",
       "t": "TRA_HU0003_Diseño",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "149673",
       "ep": "149672",
       "r": "Laura Sánchez"
@@ -1569,10 +1569,10 @@
     {
       "i": "185624",
       "t": "TRA_HU0002_Requerimientos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "149673",
       "ep": "149672",
       "r": "Santiago Quiroga"
@@ -1646,10 +1646,10 @@
     {
       "i": "212428",
       "t": "TRA_HU0004_Desarrollo",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "149673",
       "ep": "149672",
       "r": "Erickson Vergara Rojas"
@@ -3406,10 +3406,10 @@
     {
       "i": "428731",
       "t": "NPDC_HU0006_Captcha_Login",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3461,10 +3461,10 @@
     {
       "i": "437192",
       "t": "NPDC_HU0012_Usuario _Tomador_y_Asegurado",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3483,10 +3483,10 @@
     {
       "i": "437333",
       "t": "NPDC_HU0018_Actualización_Submódulo_de_Noticias_Rol_Adminsitrador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3494,10 +3494,10 @@
     {
       "i": "437346",
       "t": "NPDC_HU0019_submódulo_Novedades_Rol_Adminsitrador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3582,10 +3582,10 @@
     {
       "i": "484696",
       "t": "NPDC_HU0027_Configuración_de_Alertas_Rol_Cliente.",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3593,10 +3593,10 @@
     {
       "i": "484698",
       "t": "PDC_HU0030_Submódulo_Configuración_PQRSF",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3604,10 +3604,10 @@
     {
       "i": "484699",
       "t": "NPDC_HU0026_Seguimiento_de_Alertas_Rol_Administrador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3615,10 +3615,10 @@
     {
       "i": "486736",
       "t": "NPDC_HU0016_Funcionalidad_Icono_de_Eliminación_Rol_Adminsitrador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3725,10 +3725,10 @@
     {
       "i": "497864",
       "t": "NPDC_HU0034_Gestión_de_Diplomas_Rol_Administrador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3736,10 +3736,10 @@
     {
       "i": "498457",
       "t": "NPDC_HU0033_Gestión_de_Diplomas_Rol_Cliente",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3769,13 +3769,13 @@
     {
       "i": "498501",
       "t": "NPDC_HU0022_Consulta_de_Siniestros",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "295069",
       "ep": "292522",
-      "r": "Fabian Camilo Peralta Gutierrez"
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "499716",
@@ -3802,10 +3802,10 @@
     {
       "i": "515329",
       "t": "NPDI_HU0038_Usuario_Inactivo_Osiris_Intermediario",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Puebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "259028",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3846,10 +3846,10 @@
     {
       "i": "534076",
       "t": "NPDF_HU0030_Migrar_a_Bricks_las_páginas_del_bloque_Seguros",
-      "e": "0. Pendiente Levantamiento",
+      "e": "3.  Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.16,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3857,10 +3857,10 @@
     {
       "i": "534077",
       "t": "NPDF_HU0031_Migrar_a_Bricks_las_páginas_del_bloque_La Equidad",
-      "e": "0. Pendiente Levantamiento",
+      "e": "3.  Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.16,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3868,10 +3868,10 @@
     {
       "i": "534078",
       "t": "NPDF_HU0032_Migrar_a_Bricks_las_páginas_del_bloque_Fundequidad",
-      "e": "0. Pendiente Levantamiento",
+      "e": "3.  Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.16,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3879,10 +3879,10 @@
     {
       "i": "538620",
       "t": "NPDF_HU0033_Migrar_a_Bricks_las_páginas_del_bloque_Canales_de_Atención",
-      "e": "0. Pendiente Levantamiento",
+      "e": "3.  Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.16,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3890,10 +3890,10 @@
     {
       "i": "538621",
       "t": "NPDF_HU0034_Migrar_a_Bricks_las_páginas_del_bloque_Normatividad",
-      "e": "0. Pendiente Levantamiento",
+      "e": "3.  Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.16,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3901,10 +3901,10 @@
     {
       "i": "538622",
       "t": "NPDF_HU0035_Migrar_a_Bricks_las_páginas_del_bloque_Blog_Posts",
-      "e": "0. Pendiente Levantamiento",
+      "e": "3.  Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.16,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3963,8 +3963,8 @@
     "n_feature_con_hu": 48,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.8895,
-    "term_global": 231,
+    "pct_global": 0.9021,
+    "term_global": 235,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 0,
@@ -3972,7 +3972,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.58,
+    "tactico": 0.64,
     "estrategico": 0.4,
     "n": 5,
     "d": 2,
@@ -3983,8 +3983,8 @@
     "buckets": {
       "100": 2,
       "75": 0,
-      "50": 1,
-      "20": 2,
+      "50": 2,
+      "20": 1,
       "0": 0
     }
   }

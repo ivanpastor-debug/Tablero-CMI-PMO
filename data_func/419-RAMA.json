@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 13:05",
-  "archivo": "HU_419-RAMA_20261026.csv",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:13",
+  "archivo": "HU_419-RAMA_20261027.csv",
   "epics": [
     {
       "i": "373561",
@@ -18,7 +18,7 @@
       "n_f": 7,
       "n": 53,
       "term": 0,
-      "pct": 0.7453
+      "pct": 0.7566
     },
     {
       "i": "399880",
@@ -53,12 +53,20 @@
       "pct": 1.0
     },
     {
+      "i": "531912",
+      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n_f": 9,
+      "n": 24,
+      "term": 0,
+      "pct": 0.2217
+    },
+    {
       "i": "360689",
       "t": "419_EP_RAMA_ BACKLOG",
-      "n_f": 9,
-      "n": 29,
+      "n_f": 6,
+      "n": 23,
       "term": 0,
-      "pct": 0.1807
+      "pct": 0.1757
     },
     {
       "i": "417388",
@@ -67,14 +75,6 @@
       "n": 17,
       "term": 0,
       "pct": 0.6941
-    },
-    {
-      "i": "531912",
-      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n_f": 3,
-      "n": 5,
-      "term": 0,
-      "pct": 0.244
     }
   ],
   "features": [
@@ -295,7 +295,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_4",
       "n": 6,
       "term": 0,
-      "pct": 0.7,
+      "pct": 0.8,
       "n_pct": 6
     },
     {
@@ -392,6 +392,17 @@
       "e": "1. En Planeacion",
       "ep": "360689",
       "ept": "419_EP_RAMA_ BACKLOG",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "546446",
+      "t": "PR_CREACIÓN PROCESOS – MASIVO",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
       "pct": 0.2,
@@ -497,6 +508,17 @@
       "n_pct": 4
     },
     {
+      "i": "546349",
+      "t": "PR_SOLICITUD NOVEDADES DE CUENTA JUDICIAL",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 4
+    },
+    {
       "i": "360597",
       "t": "419_FT_RAMA_ADMINISTRAR ENTIDADES",
       "e": "4. Cerrado",
@@ -576,12 +598,34 @@
     {
       "i": "401379",
       "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
-      "e": "2. En Curso",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 3,
       "term": 0,
       "pct": 0.2,
+      "n_pct": 3
+    },
+    {
+      "i": "403271",
+      "t": "419_FT_RAMA_FLUJO DE AUTORIZACION CENTRALIZADA",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.3,
+      "n_pct": 3
+    },
+    {
+      "i": "532536",
+      "t": "PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO INDIVIDUAL",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.3,
       "n_pct": 3
     },
     {
@@ -640,30 +684,8 @@
       "n_pct": 2
     },
     {
-      "i": "403271",
-      "t": "419_FT_RAMA_FLUJO DE AUTORIZACION CENTRALIZADA",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 2,
-      "term": 0,
-      "pct": 0.35,
-      "n_pct": 2
-    },
-    {
       "i": "532415",
       "t": "PR_CREACIÓN PROCESOS – INDIVIDUAL",
-      "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
-      "n": 2,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 2
-    },
-    {
-      "i": "532536",
-      "t": "PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO INDIVIDUAL",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
@@ -678,6 +700,17 @@
       "e": "1. En Planeacion",
       "ep": "360689",
       "ept": "419_EP_RAMA_ BACKLOG",
+      "n": 2,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 2
+    },
+    {
+      "i": "546422",
+      "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – INDIVIDUAL",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 2,
       "term": 0,
       "pct": 0.2,
@@ -709,8 +742,8 @@
       "i": "517951",
       "t": "PR_PARAMETRIZACIÓN CUENTAS JUDICIALES SIN SISTEMA PROCESAL",
       "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 1,
       "term": 0,
       "pct": 0.2,
@@ -1403,10 +1436,10 @@
     {
       "i": "363632",
       "t": "419_PR_HU001_Atender_Solicitudes_Y_Novedades",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "360727",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -1414,10 +1447,10 @@
     {
       "i": "363634",
       "t": "419_PR_HU002_Rechazar_Solicitudes_Novedades",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "360727",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -1425,10 +1458,10 @@
     {
       "i": "363636",
       "t": "419_PR_HU003_Devolver_Solicitudes_Novedades",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "360727",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -2838,7 +2871,7 @@
       "a": 1,
       "v": 0.2,
       "f": "401379",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -2849,7 +2882,7 @@
       "a": 1,
       "v": 0.2,
       "f": "401379",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -3031,13 +3064,13 @@
     {
       "i": "404851",
       "t": "419_PR_TX_AUTC_HU002_Gestionar_cierre_automático_de_autorización_centralizada",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "403271",
       "ep": "531912",
-      "r": "Julio Martín Chipatecua Hernandez"
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "404873",
@@ -3399,7 +3432,7 @@
       "a": 1,
       "v": 0.2,
       "f": "401379",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -4103,7 +4136,7 @@
       "a": 1,
       "v": 0.2,
       "f": "517951",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -4158,7 +4191,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532415",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -4180,7 +4213,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532415",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -4325,18 +4358,161 @@
       "f": "532627",
       "ep": "360689",
       "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546312",
+      "t": "419_PB_TEC001_Arquitectura_De_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532536",
+      "ep": "531912",
+      "r": "Daniel Felipe Socha Hurtado"
+    },
+    {
+      "i": "546314",
+      "t": "419_PB_TEC001_Arquitectura_De_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "403271",
+      "ep": "531912",
+      "r": "Daniel Felipe Socha Hurtado"
+    },
+    {
+      "i": "546367",
+      "t": "419_PR_NOV_HU001_Registrar novedad de Activar, Inactivar o Cancelación sobre cuenta judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546349",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546372",
+      "t": "419_PR_NOV_HU002_Registrar_\"Otras novedades\"_sobre_cuenta_judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546349",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546375",
+      "t": "419_PR_NOV_HU003_Registrar_novedad_de_Reordenamiento_sobre cuenta_judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546349",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546378",
+      "t": "419_PR_NOV_HU004 — Diligenciar_formato_para_la_novedad_de_Reordenamiento",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546349",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546430",
+      "t": "419_PR_H001_Consultar_proceso_para_Actualizacion.",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546422",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546436",
+      "t": "419_PR_H002_Actualizar Partes del Proceso",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546422",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546449",
+      "t": "419_PR_CMP_HU001_Cargue_del_archivo_masivo_de_numeros_de_procesos",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546459",
+      "t": "419_PR_CMP_HU002_Autorización_del_cargue_masivo_numero_de_procesos",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546461",
+      "t": "419_PR_CMP_HU003_Rechazo_cargue_masivo_numero_de_procesos",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546483",
+      "t": "419_PR_CMP_HU004_Procesamiento_del_archivo_cargue_masivo_de_numero_proceso",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "546486",
+      "t": "419_PR_CMP_HU005_Consulta_Resultado_Registro_no_validos_para_carga_masiva_procesos",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
     }
   ],
   "kpi": {
-    "n_hu": 327,
-    "n_hu_activas": 326,
+    "n_hu": 340,
+    "n_hu_activas": 339,
     "hu_sin_feature": 9,
-    "n_feature": 59,
+    "n_feature": 62,
     "n_epic": 9,
-    "n_feature_con_hu": 59,
+    "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7891,
+    "pct_global": 0.7692,
     "term_global": 75,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4351,7 +4527,7 @@
     "d": 2,
     "u": "épicas",
     "isEpics": true,
-    "feat_total": 59,
+    "feat_total": 62,
     "feat_ent": 18,
     "buckets": {
       "100": 2,

@@ -6,16 +6,33 @@ import glob
 import json
 import os
 import shutil
+import subprocess
 from pathlib import Path
 
 
-def build_consolidated_419(src_web):
-    """Genera data_func/419.json combinando 419-DEP.json y 419-RAMA.json del corte vigente."""
-    df_dir = os.path.join(src_web, "data_func")
+def pull_latest_source(src_web):
+    """Realiza git pull en el repositorio origen Tableros para traer el último corte diario."""
+    repo_root = os.path.dirname(src_web)
+    git_dir = os.path.join(repo_root, ".git")
+    if not os.path.exists(git_dir):
+        return
+    home = str(Path.home())
+    git_exe = os.path.join(home, "AppData", "Local", "Programs", "Git", "cmd", "git.exe")
+    git_cmd = git_exe if os.path.exists(git_exe) else "git"
+    try:
+        print(f"Actualizando repositorio fuente ({repo_root}) desde GitHub...")
+        subprocess.run([git_cmd, "-C", repo_root, "pull", "--ff-only", "origin", "main"], check=False)
+    except Exception as e:
+        print(f"Aviso git pull en Tableros: {e}")
+
+
+def build_consolidated_419(target_dir):
+    """Genera data_func/419.json en target_dir combinando 419-DEP.json y 419-RAMA.json del corte vigente."""
+    df_dir = os.path.join(target_dir, "data_func")
     dep_path = os.path.join(df_dir, "419-DEP.json")
     rama_path = os.path.join(df_dir, "419-RAMA.json")
     out_path = os.path.join(df_dir, "419.json")
-    idx_path = os.path.join(src_web, "data_func.json")
+    idx_path = os.path.join(target_dir, "data_func.json")
 
     if not (os.path.exists(dep_path) and os.path.exists(rama_path)):
         return
@@ -104,7 +121,7 @@ def main():
         print("ERROR: No se encontró la carpeta web del repositorio Tableros.")
         return
 
-    build_consolidated_419(src_web)
+    pull_latest_source(src_web)
 
     dest_dirs = [
         os.path.join(home, "Indicadores estra y tac"),
@@ -134,6 +151,7 @@ def main():
                     shutil.rmtree(target)
                 shutil.copytree(s, target)
                 print(f"  -> {folder}/ ({len(os.listdir(target))} archivos)")
+        build_consolidated_419(d)
 
     print("Sincronización completada con éxito.")
     try:

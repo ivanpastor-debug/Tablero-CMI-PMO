@@ -1,8 +1,8 @@
 {
   "codigo": "416",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 13:05",
-  "archivo": "HU_416_20261026.csv",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:13",
+  "archivo": "HU_416_20261027.csv",
   "epics": [
     {
       "i": "345822",
@@ -10,7 +10,7 @@
       "n_f": 3,
       "n": 154,
       "term": 0,
-      "pct": 0.2426
+      "pct": 0.2452
     },
     {
       "i": "345824",
@@ -30,7 +30,7 @@
       "ept": "416_Vida Individual",
       "n": 131,
       "term": 0,
-      "pct": 0.1879,
+      "pct": 0.1887,
       "n_pct": 131
     },
     {
@@ -63,7 +63,7 @@
       "ept": "416_Vida Individual",
       "n": 19,
       "term": 0,
-      "pct": 0.6284,
+      "pct": 0.6442,
       "n_pct": 19
     },
     {
@@ -101,61 +101,6 @@
     }
   ],
   "hus": [
-    {
-      "i": "346638",
-      "t": "416_VI_NOV_HU082_CARGUE DE DOCUMENTOS",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Andres Esteban Saldarriaga Ramirez"
-    },
-    {
-      "i": "346654",
-      "t": "416_VI_NOV_HU447_SOLICITUD DE NOVEDAD",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Andres Esteban Saldarriaga Ramirez"
-    },
-    {
-      "i": "382005",
-      "t": "416_AP_EMI_HU574_CARNÉ DE ASEGURADO",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Andrés Stick Melo Figueroa"
-    },
-    {
-      "i": "346293",
-      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "345655",
-      "ep": "345824",
-      "r": "Andrés Stick Melo Figueroa"
-    },
-    {
-      "i": "346296",
-      "t": "416_AP_EMI_HU193_CARGUE DE ASEGURADOS",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Andrés Stick Melo Figueroa"
-    },
     {
       "i": "346303",
       "t": "416_AP_EMI_HU197_ELIMINAR UNA SOLICITUD DE PÓLIZA",
@@ -231,6 +176,17 @@
       "v": 0.8,
       "f": "346272",
       "ep": "345822",
+      "r": "Andrés Stick Melo Figueroa"
+    },
+    {
+      "i": "382005",
+      "t": "416_AP_EMI_HU574_CARNÉ DE ASEGURADO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
       "r": "Andrés Stick Melo Figueroa"
     },
     {
@@ -487,6 +443,17 @@
       "r": "Jhon Jardi Diaz Lora"
     },
     {
+      "i": "346654",
+      "t": "416_VI_NOV_HU447_SOLICITUD DE NOVEDAD",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Joan Steven Medina Beltran"
+    },
+    {
       "i": "434337",
       "t": "416_VI_NOV_HU077_5 - Ejecutar anulación por pago del dote",
       "e": "6. Desarrollo",
@@ -674,6 +641,17 @@
       "r": "Juan Pablo Gomez Cuervo"
     },
     {
+      "i": "346617",
+      "t": "416_VI_EMI_HU213_REASIGNACIÓN DE PÓLIZAS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Juan Pablo Gomez Cuervo"
+    },
+    {
       "i": "434138",
       "t": "416_VI_NOV_HU0819-2_6 - Aniversario retroactivo y anticipado",
       "e": "4. Refinamiento",
@@ -773,17 +751,6 @@
       "r": "Juan Sebastian Ovallos Diaz"
     },
     {
-      "i": "346626",
-      "t": "416_VI_EMI_HU267_REPORTE DE PÓLIZAS EMITIDAS",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Juan Sebastian Ovallos Diaz"
-    },
-    {
       "i": "346645",
       "t": "416_VI_NOV_HU295_CAMBIO Y/O INCLUSIÓN DE INTERMEDIARIO A LA PÓLIZA",
       "e": "6.2 Ajustes DEV",
@@ -793,17 +760,6 @@
       "f": "346274",
       "ep": "345822",
       "r": "Juan Sifontez"
-    },
-    {
-      "i": "346617",
-      "t": "416_VI_EMI_HU213_REASIGNACIÓN DE PÓLIZAS",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Kevin Alexander Parra Alvarez"
     },
     {
       "i": "346314",
@@ -2357,6 +2313,17 @@
       "r": "Omar Fernando Cantor Largo"
     },
     {
+      "i": "346638",
+      "t": "416_VI_NOV_HU082_CARGUE DE DOCUMENTOS",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
       "i": "434332",
       "t": "416_VI_NOV_HU077_1 - Consultar y buscar pólizas para anulación",
       "e": "6. Desarrollo",
@@ -2709,6 +2676,17 @@
       "r": "Yeison Estiven Sanz Castro"
     },
     {
+      "i": "346626",
+      "t": "416_VI_EMI_HU267_REPORTE DE PÓLIZAS EMITIDAS",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Yively Patricia Alvarez Boscan"
+    },
+    {
       "i": "392820",
       "t": "416_AP_EMI_HU446_Listado de asegurados",
       "e": "6. Desarrollo",
@@ -2753,6 +2731,28 @@
       "r": "Zuleyne Astrid Vanegas Arevalo"
     },
     {
+      "i": "346293",
+      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Zuleyne Astrid Vanegas Arevalo"
+    },
+    {
+      "i": "346296",
+      "t": "416_AP_EMI_HU193_CARGUE DE ASEGURADOS",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Zuleyne Astrid Vanegas Arevalo"
+    },
+    {
       "i": "346297",
       "t": "416_AP_EMI_HU647_AMPAROS",
       "e": "4. Refinamiento",
@@ -2773,7 +2773,7 @@
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.2495,
+    "pct_global": 0.2511,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

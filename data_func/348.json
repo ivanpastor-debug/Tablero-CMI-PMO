@@ -1,8 +1,8 @@
 {
   "codigo": "348",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 13:05",
-  "archivo": "HU_348_20261026.csv",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:14",
+  "archivo": "HU_348_20261027.csv",
   "epics": [
     {
       "i": "477771",
@@ -33,8 +33,8 @@
       "t": "Certificación Temáticos",
       "n_f": 9,
       "n": 279,
-      "term": 40,
-      "pct": 0.1776
+      "term": 48,
+      "pct": 0.2052
     },
     {
       "i": "186545",
@@ -57,8 +57,8 @@
       "t": "Certificación CORE",
       "n_f": 11,
       "n": 119,
-      "term": 49,
-      "pct": 0.4353
+      "term": 57,
+      "pct": 0.4998
     },
     {
       "i": "422689",
@@ -194,8 +194,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 52,
-      "term": 6,
-      "pct": 0.1508,
+      "term": 14,
+      "pct": 0.2985,
       "n_pct": 52
     },
     {
@@ -502,8 +502,8 @@
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 22,
-      "term": 0,
-      "pct": 0.04,
+      "term": 8,
+      "pct": 0.3891,
       "n_pct": 22
     },
     {
@@ -740,7 +740,7 @@
     {
       "i": "540615",
       "t": "Historias Clinicas Ocupacionales",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 10,
@@ -20124,10 +20124,10 @@
     {
       "i": "539348",
       "t": "348_CORRESPONDENCIA_HU-CRP-001 - Creación de cuentas Sede Electrónica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20135,10 +20135,10 @@
     {
       "i": "539351",
       "t": "348_CORRESPONDENCIA_HU-CRP-002 - Confirmar tratamiento de datos y envío por medios electrónicos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20146,10 +20146,10 @@
     {
       "i": "539354",
       "t": "348_CORRESPONDENCIA_HU-CRP-003 - Actualización de datos personales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20157,10 +20157,10 @@
     {
       "i": "539357",
       "t": "348_CORRESPONDENCIA_HU-CRP-004 - Radicación sede electrónica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20168,10 +20168,10 @@
     {
       "i": "539360",
       "t": "348_CORRESPONDENCIA_HU-CRP-005 - Consulta de radicados del usuario y_o peticionario",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20179,10 +20179,10 @@
     {
       "i": "539363",
       "t": "348_CORRESPONDENCIA_HU-CRP-006 - Diligenciar formulario de radicación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20190,10 +20190,10 @@
     {
       "i": "539366",
       "t": "348_CORRESPONDENCIA_HU-CRP-007 - Validación por georreferenciación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Angie Tatiana Hernandez Santacruz"
@@ -20333,10 +20333,10 @@
     {
       "i": "539405",
       "t": "348_CORRESPONDENCIA_HU-CRP-020 - Radicar solicitudes o PQRS recibidas por correos electrónicos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20768,7 +20768,7 @@
       "v": 0.04,
       "f": "539472",
       "ep": "539200",
-      "r": "Angie Tatiana Hernandez Santacruz"
+      "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "539527",
@@ -20779,7 +20779,7 @@
       "v": 0.04,
       "f": "539472",
       "ep": "539200",
-      "r": "Angie Tatiana Hernandez Santacruz"
+      "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "539530",
@@ -20790,7 +20790,7 @@
       "v": 0.04,
       "f": "539472",
       "ep": "539200",
-      "r": "Angie Tatiana Hernandez Santacruz"
+      "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "539533",
@@ -20812,7 +20812,7 @@
       "v": 0.04,
       "f": "539472",
       "ep": "539200",
-      "r": "Angie Tatiana Hernandez Santacruz"
+      "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "539539",
@@ -20823,7 +20823,7 @@
       "v": 0.04,
       "f": "539472",
       "ep": "539200",
-      "r": "Angie Tatiana Hernandez Santacruz"
+      "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "539542",
@@ -21807,10 +21807,10 @@
     {
       "i": "540859",
       "t": "Sistec-EPNT - HU-007 - Crear planificación EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21818,10 +21818,10 @@
     {
       "i": "540862",
       "t": "Sistec-EPNT - HU-008 - Consultar historial de planificación EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21829,10 +21829,10 @@
     {
       "i": "540865",
       "t": "Sistec-EPNT - HU-009 - Editar planificación EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21840,10 +21840,10 @@
     {
       "i": "540868",
       "t": "Sistec-EPNT - HU-010 - Eliminar planificación EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21851,10 +21851,10 @@
     {
       "i": "540871",
       "t": "Sistec-EPNT - HU-011 - Registrar evaluación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21862,10 +21862,10 @@
     {
       "i": "540874",
       "t": "Sistec-EPNT - HU-012 - Construir lista de chequeo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21873,10 +21873,10 @@
     {
       "i": "540877",
       "t": "Sistec-EPNT - HU-013 - Realizar lista de chequeo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21884,10 +21884,10 @@
     {
       "i": "540880",
       "t": "Sistec-EPNT - HU-014 - Generar carta",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -24003,11 +24003,11 @@
     "n_feature_con_hu": 115,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.3246,
-    "term_global": 223,
+    "pct_global": 0.3321,
+    "term_global": 239,
     "feature_sin_frente": 7,
     "hu_sin_frente": 65,
-    "feature_100_sin_cerrar": 4,
+    "feature_100_sin_cerrar": 3,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },

@@ -1,24 +1,24 @@
 {
   "codigo": "421",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 13:05",
-  "archivo": "HU_421_20261026.csv",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:13",
+  "archivo": "HU_421_20261027.csv",
   "epics": [
     {
       "i": "83437",
       "t": "Sistema de Recaudo y Cartera",
       "n_f": 26,
-      "n": 396,
+      "n": 395,
       "term": 182,
-      "pct": 0.7642
+      "pct": 0.7661
     },
     {
       "i": "83469",
       "t": "Afiliaciones y Novedades",
       "n_f": 27,
-      "n": 357,
+      "n": 360,
       "term": 220,
-      "pct": 0.8294
+      "pct": 0.8279
     },
     {
       "i": "83503",
@@ -34,7 +34,7 @@
       "n_f": 2,
       "n": 85,
       "term": 58,
-      "pct": 0.9343
+      "pct": 0.943
     },
     {
       "i": "417182",
@@ -52,10 +52,10 @@
       "e": "2. En Curso",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 86,
+      "n": 89,
       "term": 35,
-      "pct": 0.7406,
-      "n_pct": 86
+      "pct": 0.7269,
+      "n_pct": 89
     },
     {
       "i": "417232",
@@ -87,7 +87,7 @@
       "ept": "Control de Sprints",
       "n": 55,
       "term": 30,
-      "pct": 0.9087,
+      "pct": 0.9241,
       "n_pct": 39
     },
     {
@@ -109,7 +109,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 42,
       "term": 27,
-      "pct": 0.786,
+      "pct": 0.794,
       "n_pct": 42
     },
     {
@@ -153,7 +153,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 24,
       "term": 14,
-      "pct": 0.8304,
+      "pct": 0.8429,
       "n_pct": 24
     },
     {
@@ -164,7 +164,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 23,
       "term": 12,
-      "pct": 0.8048,
+      "pct": 0.8091,
       "n_pct": 23
     },
     {
@@ -186,7 +186,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 23,
       "term": 0,
-      "pct": 0.3122,
+      "pct": 0.3161,
       "n_pct": 23
     },
     {
@@ -219,7 +219,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 20,
       "term": 2,
-      "pct": 0.699,
+      "pct": 0.709,
       "n_pct": 20
     },
     {
@@ -307,7 +307,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 16,
       "term": 15,
-      "pct": 0.975,
+      "pct": 0.9875,
       "n_pct": 16
     },
     {
@@ -439,7 +439,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 8,
       "term": 6,
-      "pct": 0.8775,
+      "pct": 0.89,
       "n_pct": 8
     },
     {
@@ -463,17 +463,6 @@
       "term": 7,
       "pct": 0.9938,
       "n_pct": 8
-    },
-    {
-      "i": "457292",
-      "t": "023_Transferencia de Recaudo a Base de dato de Positiva",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 8,
-      "term": 0,
-      "pct": 0.4429,
-      "n_pct": 7
     },
     {
       "i": "437162",
@@ -509,6 +498,17 @@
       "n_pct": 7
     },
     {
+      "i": "457292",
+      "t": "023_Transferencia de Recaudo a Base de dato de Positiva",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 7,
+      "term": 0,
+      "pct": 0.4167,
+      "n_pct": 6
+    },
+    {
       "i": "314185",
       "t": "013_Empleador_Afiliado_Reportes",
       "e": "2. En Curso",
@@ -527,7 +527,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 6,
       "term": 5,
-      "pct": 0.8933,
+      "pct": 0.9,
       "n_pct": 6
     },
     {
@@ -538,7 +538,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 5,
       "term": 4,
-      "pct": 0.866,
+      "pct": 0.88,
       "n_pct": 5
     },
     {
@@ -582,7 +582,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 5,
       "term": 2,
-      "pct": 0.93,
+      "pct": 0.94,
       "n_pct": 5
     },
     {
@@ -7003,13 +7003,13 @@
     {
       "i": "322237",
       "t": "307827_HU017_Generación archivos mensuales y/o por demanda de reprocesos y facturación en cero",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "307827",
       "ep": "83437",
-      "r": "Juan Sebastián González Rivera"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "322413",
@@ -7520,10 +7520,10 @@
     {
       "i": "371778",
       "t": "100219_HU_090_Descargar_certificados_individual_agrupado_empleador y trabajador_por_funcionario",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "100219",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -7575,10 +7575,10 @@
     {
       "i": "377483",
       "t": "312123_HU001.1_Usuarios_reclasificación",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "312123",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -7641,10 +7641,10 @@
     {
       "i": "382746",
       "t": "185622_HU002_Reportes_empleador_por_funcionario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "185622",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -7982,10 +7982,10 @@
     {
       "i": "413783",
       "t": "457292_HU008_Registrar log transaccional del proceso de transferencia",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.6,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "457292",
       "ep": "83437",
       "r": "Miguel Angel Rodriguez Castillo"
@@ -9071,13 +9071,13 @@
     {
       "i": "436944",
       "t": "313337_HU024_Ajuste_Correo_de_bienvenida_(Independiente)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "313337",
       "ep": "207836",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "437013",
@@ -9181,13 +9181,13 @@
     {
       "i": "454098",
       "t": "313337_HU025_Ajuste_Correo_de_bienvenida_(Empleador)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "313337",
       "ep": "207836",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454203",
@@ -9324,13 +9324,13 @@
     {
       "i": "454571",
       "t": "313337_HU_029_Visualización_de_sección_Canales_de_atención_(Registrado)_Experiencia_de_usuario",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "313337",
       "ep": "207836",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "454579",
@@ -9654,10 +9654,10 @@
     {
       "i": "456102",
       "t": "434003_HU006_Detalle_de_Planillas_Validación_PILA",
-      "e": "6.2 Desarrollo Frontend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.36,
+      "v": 0.4,
       "f": "434003",
       "ep": "83437",
       "r": "Andrés Álvarez Vergel"
@@ -10644,10 +10644,10 @@
     {
       "i": "473699",
       "t": "100219_HU111_Espacio_de_trabajo_funcionario_reclasificacion",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "100219",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -10798,10 +10798,10 @@
     {
       "i": "480657",
       "t": "98062_HU018_Actualización_del _formato _de _hoja _membrete_en _la_generación_de_certificados_de_afiliación",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "98062",
       "ep": "83469",
       "r": "Paula Gomez Cantor"
@@ -11326,13 +11326,13 @@
     {
       "i": "489839",
       "t": "307836_HU002_CC1_Tipificar los pagos conciliados en los estados de No Vinculados y exponer los estados históricos de consulta",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "307836",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "489900",
@@ -12084,11 +12084,11 @@
     },
     {
       "i": "500510",
-      "t": "100219_HU119 Afiliación Masiva de Recicladores de Oficio Asociados a una ORO",
-      "e": "1. Levantamiento",
+      "t": "100219_HU119 Descarga de Plantilla Masiva par Recicladores de Oficio - ORO",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.08,
+      "v": 0.17,
       "f": "100219",
       "ep": "83469",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -12206,10 +12206,10 @@
     {
       "i": "505948",
       "t": "313434_HU020_ Excepcion_Representante_Legal_Responsable_Centro_Trabajo_- Funcionario CC1",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "313434",
       "ep": "83469",
       "r": "Nain Grande Ortiz"
@@ -12470,32 +12470,32 @@
     {
       "i": "510144",
       "t": "100219_HU124_Crear_las_relaciones_laborales_y_aplicar_la_novedad_de_retiro",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "100219",
       "ep": "83469",
-      "r": "Andrés Álvarez Vergel"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "510145",
       "t": "100219_HU125_Marcar_la_normalización_notificar_al_empleador_y_cerrar_el_aporte",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "100219",
       "ep": "83469",
-      "r": "Ricardo Andres Marin Pinilla"
+      "r": "Nestor Camilo Camacho García"
     },
     {
       "i": "510155",
       "t": "98062_HU_025_Formulario_afiliacion_Dependiente",
-      "e": "6.1 Backlog Frontend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.33,
+      "v": 0.4,
       "f": "98062",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12503,10 +12503,10 @@
     {
       "i": "510157",
       "t": "98062_HU_026_Formulario_afiliacion_Independiente_723",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "98062",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12568,14 +12568,14 @@
     },
     {
       "i": "510169",
-      "t": "98062_HU033_Formulario_afiliacion_Reciclador de oficio asociado a ORO",
-      "e": "4. Refinamiento",
+      "t": "98062 - HU033 - Formulario Afiliación Individual Reciclador de Oficio - ORO -",
+      "e": "0. Pendiente Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.04,
       "f": "98062",
       "ep": "83469",
-      "r": "Jerson Octavio Lopez Hernandez"
+      "r": "Luis Rosemberg Zambrano Guerrero"
     },
     {
       "i": "510173",
@@ -12602,10 +12602,10 @@
     {
       "i": "510316",
       "t": "100219_HU127_Identificación del contratante, actualización del tipo de documento y ruta de normalización",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "100219",
       "ep": "83469",
       "r": "Paola Peña"
@@ -13262,10 +13262,10 @@
     {
       "i": "522016",
       "t": "313436_HU012 Retiro individual del Interno de Medicina por el funcionario",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.4,
       "f": "313436",
       "ep": "83469",
       "r": "César Alejandro Garcia Tous"
@@ -13273,10 +13273,10 @@
     {
       "i": "522017",
       "t": "313436_HU013 Retiro masivo del Interno de Medicina por el funcionario",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "313436",
       "ep": "83469",
       "r": "César Alejandro Garcia Tous"
@@ -13295,13 +13295,13 @@
     {
       "i": "522021",
       "t": "98062_HU_036_Formulario_afiliacion_Independiente_Taxista",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "98062",
       "ep": "83469",
-      "r": "Juan Felipe Zea Sanchez"
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "522032",
@@ -13405,13 +13405,13 @@
     {
       "i": "524746",
       "t": "485086_HU014_Identificar_Pagos_Otras_Administradoras_Consulta_Aportante",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524748",
@@ -13471,24 +13471,24 @@
     {
       "i": "524785",
       "t": "485086_HU019_Asignar_Poliza_Sucursal_Manualmente",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524788",
       "t": "485086_HU020_Consultar_Archivos_SISE_Otras_Administradoras",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524921",
@@ -13702,10 +13702,10 @@
     {
       "i": "532681",
       "t": "180577_HU_003_Generar los carnés de afiliación de los trabajadores del último cargue masivo",
-      "e": "6.1 Backlog Frontend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.33,
+      "v": 0.4,
       "f": "180577",
       "ep": "83469",
       "r": "Jose Luis Monasterio Yeguez"
@@ -13884,7 +13884,7 @@
       "v": 0.8,
       "f": "100219",
       "ep": "83469",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "545754",
@@ -13962,18 +13962,139 @@
       "f": "481244",
       "ep": "83437",
       "r": "Harol Paez"
+    },
+    {
+      "i": "546210",
+      "t": "HU120 - Cargue y Validación del Archivo Masivo de Recicladores de Oficio - ORO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "546213",
+      "t": "HU121 - Procesamiento, Resultados y Descarga de Errores del Cargue Masivo de Afiliaciones de Recicladores de Oficio - ORO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "546244",
+      "t": "HU122 - Generación y Envío de Certificados de Afiliación de recicladores de oficio ORO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "546287",
+      "t": "313463_HU014 - Registrar afiliación individual voluntario primera respuesta -  Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "546311",
+      "t": "313463_HU015 - Registrar afiliación masiva voluntarios primera respuesta - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "546321",
+      "t": "313463_HU016 - Registrar retiro individual voluntario primera respuesta - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "546346",
+      "t": "313463_HU017 - Registrar retiro masivo voluntario primera respuesta - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "546374",
+      "t": "313463_HU018 - Terminar automáticamente cobertura voluntario primera respuesta terminada fecha de afiliación - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "546394",
+      "t": "313463_HU019 - Actualizar de forma individual fecha fin de la afiliación del voluntario por la entidad autorizada - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "546414",
+      "t": "313463_HU020 - Inactivar y reactivar el indicador del voluntario de primera respuesta - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "547103",
+      "t": "313463_HU021 - Cambiar de forma masiva el estado del voluntario de primera respuesta - Empleador",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": null,
+      "ep": null,
+      "r": "Jerson Octavio Lopez Hernandez"
     }
   ],
   "kpi": {
-    "n_hu": 1198,
-    "n_hu_activas": 1019,
-    "hu_sin_feature": 0,
+    "n_hu": 1209,
+    "n_hu_activas": 1029,
+    "hu_sin_feature": 8,
     "n_feature": 67,
     "n_epic": 5,
     "n_feature_con_hu": 66,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.8365,
+    "pct_global": 0.8313,
     "term_global": 632,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

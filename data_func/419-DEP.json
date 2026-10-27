@@ -1,8 +1,8 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 13:05",
-  "archivo": "HU_419-DEP_20261026.csv",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:13",
+  "archivo": "HU_419-DEP_20261027.csv",
   "epics": [
     {
       "i": "417341",
@@ -34,7 +34,7 @@
       "n_f": 10,
       "n": 88,
       "term": 7,
-      "pct": 0.7585
+      "pct": 0.7926
     },
     {
       "i": "531917",
@@ -42,7 +42,7 @@
       "n_f": 13,
       "n": 73,
       "term": 0,
-      "pct": 0.4096
+      "pct": 0.4685
     },
     {
       "i": "373564",
@@ -132,7 +132,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_6",
       "n": 26,
       "term": 0,
-      "pct": 0.6192,
+      "pct": 0.7346,
       "n_pct": 26
     },
     {
@@ -253,7 +253,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 12,
       "term": 0,
-      "pct": 0.3333,
+      "pct": 0.45,
       "n_pct": 12
     },
     {
@@ -803,7 +803,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.3,
+      "pct": 0.4,
       "n_pct": 7
     },
     {
@@ -941,12 +941,12 @@
     {
       "i": "532783",
       "t": "PB_GESTION DE NOVEDADES CUENTA JUDICIAL",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 6,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.7,
       "n_pct": 6
     },
     {
@@ -1397,7 +1397,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 3,
       "term": 0,
-      "pct": 0.3,
+      "pct": 0.6333,
       "n_pct": 3
     },
     {
@@ -6306,7 +6306,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "392578",
@@ -6427,7 +6427,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "393325",
@@ -6438,7 +6438,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "393326",
@@ -6471,7 +6471,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "393399",
@@ -6482,7 +6482,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "393403",
@@ -6515,7 +6515,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "393424",
@@ -6526,7 +6526,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "393509",
@@ -8786,10 +8786,10 @@
     {
       "i": "430472",
       "t": "419_PB_HU010_Olvido_y_Cambio_de_ContraseñaV2",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Viki Liseth Cruz Plaza"
@@ -8797,10 +8797,10 @@
     {
       "i": "430475",
       "t": "419_PB_HU011_Enfoque_Horario_Cierre_DiarioyMensualV3",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Viki Liseth Cruz Plaza"
@@ -9226,10 +9226,10 @@
     {
       "i": "461788",
       "t": "419_PB_HU004_Ajustar_Lógica_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Viki Liseth Cruz Plaza"
@@ -9237,10 +9237,10 @@
     {
       "i": "461790",
       "t": "419_PB_HU002_Ajustar_Lógica_Validacion_y_asociacion_clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Viki Liseth Cruz Plaza"
@@ -9248,10 +9248,10 @@
     {
       "i": "461792",
       "t": "419_PB_HU003_Ajustar_Lógica_Configuracion_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Viki Liseth Cruz Plaza"
@@ -9265,7 +9265,7 @@
       "v": 0.6,
       "f": "400073",
       "ep": "407644",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "462356",
@@ -9298,7 +9298,7 @@
       "v": 0.85,
       "f": "400073",
       "ep": "407644",
-      "r": "Sergio Idarraga Aguirre"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "462655",
@@ -9309,7 +9309,7 @@
       "v": 0.85,
       "f": "400073",
       "ep": "407644",
-      "r": "Sergio Idarraga Aguirre"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "462739",
@@ -9336,10 +9336,10 @@
     {
       "i": "462899",
       "t": "419_PB_HU001_Ajustar_Control_Dual_Con_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Viki Liseth Cruz Plaza"
@@ -9463,7 +9463,7 @@
       "v": 0.6,
       "f": "400073",
       "ep": "407644",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "465541",
@@ -9639,7 +9639,7 @@
       "v": 0.6,
       "f": "463694",
       "ep": "417341",
-      "r": "Juliana Andrea Arroyave Trujillo"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "469781",
@@ -10304,10 +10304,10 @@
     {
       "i": "481929",
       "t": "419_PB_TEC003_Arquitectura_Tecnologica_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Hellen Alejandra Rincon Soler"
@@ -10414,10 +10414,10 @@
     {
       "i": "484290",
       "t": "419_PB_TEC004_Arquitectura_Datos_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Oscar Ivan Mosquera Acevedo"
@@ -10557,10 +10557,10 @@
     {
       "i": "485641",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajustar_Control_Dual_Con_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Hellen Alejandra Rincon Soler"
@@ -10909,10 +10909,10 @@
     {
       "i": "495387",
       "t": "419_PB_TEC002_Arquitectura_Datos_Ajustar_Control_Dual_Con_Clave_Transaccional",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "400073",
       "ep": "407644",
       "r": "Oscar Ivan Mosquera Acevedo"
@@ -11927,7 +11927,7 @@
       "v": 0.9,
       "f": "433502",
       "ep": "417341",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "517577",
@@ -12015,18 +12015,18 @@
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "518020",
       "t": "419_PB_HU002_Ajustar_Ingreso_Apertura_Cuenta",
-      "e": "6. Desarrollo",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "519479",
@@ -12405,46 +12405,46 @@
     {
       "i": "532787",
       "t": "419_PB_HU001_Gestionar_Novedad_CuentaJudicial",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532783",
       "ep": "531917",
-      "r": "Guillermo Ríos León"
+      "r": "Cristian Marin Gil"
     },
     {
       "i": "532789",
       "t": "419_PB_HU002_Etapas_NovedadCuenta",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532783",
       "ep": "531917",
-      "r": "Guillermo Ríos León"
+      "r": "Cristian Marin Gil"
     },
     {
       "i": "532793",
       "t": "419_PB_HU003_Mantenimiento_Operativo_Cuentas",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532783",
       "ep": "531917",
-      "r": "Guillermo Ríos León"
+      "r": "Cristian Marin Gil"
     },
     {
       "i": "532794",
       "t": "419_PB_HU004_AutorizaciónManteniendo_CambioEstadoCancelado",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532783",
       "ep": "531917",
-      "r": "Guillermo Ríos León"
+      "r": "Cristian Marin Gil"
     },
     {
       "i": "532802",
@@ -12834,57 +12834,57 @@
     {
       "i": "535011",
       "t": "419_PB_HU001_Creacion_Solicitud_Pago_Centralizado",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "535013",
       "t": "419_PB_HU002_Autorizacion_Solicitud_Pago_Centralizado",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "535016",
       "t": "419_PB_HU003_Creacion_Solicitud_Reversion_Pago_Centralizado",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "535020",
       "t": "419_PB_HU004_Autorizacion_Reversion_Pago_Centralizado",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "535024",
       "t": "419_PB_HU005_Comprobante_PagoCentralizado",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "535044",
@@ -12917,7 +12917,7 @@
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Luisa Fernanda Escobar Marquez"
     },
     {
       "i": "535059",
@@ -13054,10 +13054,10 @@
     {
       "i": "535148",
       "t": "419_PB_HU001_Entregar_proceso_a_COBIS",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.8,
       "f": "535145",
       "ep": "531917",
       "r": "Nicolas Giraldo Arenas"
@@ -13076,32 +13076,32 @@
     {
       "i": "536436",
       "t": "419_TEC_001_Arquitectura_De_Datos",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "538322",
       "t": "419_PB_Ajuste_Numero_Expediente_Emision_Individual",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "538323",
       "t": "419_PB_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "6. Desarrollo",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
       "r": "Eduardo Tordecilla Paez"
@@ -13142,24 +13142,24 @@
     {
       "i": "539589",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "6. Desarrollo",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "539592",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajustar_Ingreso_Apertura_Cuenta",
-      "e": "6. Desarrollo",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "539593",
@@ -13186,13 +13186,13 @@
     {
       "i": "539680",
       "t": "419_PB_Ajuste_Numero_Expediente_Emision_Individual_arquitectura_de_datos",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "540434",
@@ -13219,35 +13219,35 @@
     {
       "i": "540516",
       "t": "419_PB_TEC001_Arquitectura_Datos_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "540569",
       "t": "419_PB_TEC001_Arquitectura_Datos_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "540595",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "540608",
@@ -13285,32 +13285,32 @@
     {
       "i": "543034",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "543051",
       "t": "419_PB_TEC002_Ajuste_Numero_Expediente_Emision_Individual_Arquitectura_Tecnologica",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "543802",
       "t": "419_PB_TEC001_Arquitectura de Datos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.8,
       "f": "535145",
       "ep": "531917",
       "r": "Nicolas Giraldo Arenas"
@@ -13347,7 +13347,7 @@
     "n_feature_con_hu": 137,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7485,
+    "pct_global": 0.7562,
     "term_global": 344,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

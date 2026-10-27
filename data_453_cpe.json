@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-10-26",
-  "generado": "2026-10-26 12:53",
-  "archivo": "snapshot HU + Feature (HU_453_20261026.csv)",
+  "corte": "2026-10-27",
+  "generado": "2026-10-27 12:02",
+  "archivo": "snapshot HU + Feature (HU_453_20261027.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -157,30 +157,30 @@
       "n": "Sprint II",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 8,
+      "n_hu": 17,
       "term": 0,
-      "pct": 0.6,
-      "pct_hu": 0.6,
-      "n_pct": 8,
-      "n_cu": 3,
+      "pct": 0.4706,
+      "pct_hu": 0.4706,
+      "n_pct": 17,
+      "n_cu": 5,
       "term_cu": 0,
-      "pct_cu": 0.4417,
-      "n_cu_pct": 3
+      "pct_cu": 0.37,
+      "n_cu_pct": 5
     },
     {
       "k": "otra:sprint pedagogico",
       "n": "Sprint pedagógico",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 38,
+      "n_hu": 34,
       "term": 0,
-      "pct": 0.6129,
-      "pct_hu": 0.6129,
-      "n_pct": 38,
-      "n_cu": 5,
+      "pct": 0.6662,
+      "pct_hu": 0.6662,
+      "n_pct": 34,
+      "n_cu": 4,
       "term_cu": 1,
-      "pct_cu": 0.505,
-      "n_cu_pct": 5
+      "pct_cu": 0.5813,
+      "n_cu_pct": 4
     },
     {
       "k": "__sin__",
@@ -192,10 +192,10 @@
       "pct": 0.8771,
       "pct_hu": 0.8771,
       "n_pct": 28,
-      "n_cu": 37,
+      "n_cu": 36,
       "term_cu": 0,
-      "pct_cu": 0.0662,
-      "n_cu_pct": 34
+      "pct_cu": 0.0674,
+      "n_cu_pct": 33
     }
   ],
   "focos": [
@@ -210,18 +210,18 @@
         "nota": "Hito reprogramado al 24/10/2026 (base: 30/07/2026)"
       },
       "peso": 0.4,
-      "aporte": 0.3236,
+      "aporte": 0.3218,
       "sem": "en_curso",
-      "n_hu": 330,
+      "n_hu": 335,
       "term": 19,
-      "pct": 0.809,
-      "pct_hu": 0.809,
-      "n_pct": 330,
-      "n_hu_todas": 373,
+      "pct": 0.8045,
+      "pct_hu": 0.8045,
+      "n_pct": 335,
+      "n_hu_todas": 376,
       "n_cu": 43,
       "n_cu_medibles": 39,
       "term_cu": 28,
-      "pct_cu": 0.8231
+      "pct_cu": 0.8308
     },
     {
       "k": "B",
@@ -400,19 +400,19 @@
       "i": "456851",
       "t": "CU_SME_ADM_004_Consultar_Auditoria",
       "e": "3. Aprobado por Cliente",
-      "ei": "13. Aprobado por cliente",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.2,
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
+      "ei": "15. En desarrollo",
+      "proc_cu": "DESARROLLO",
+      "pct_cu": 0.5,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "Julio Cesar Manosalva Campos",
-      "n": 4,
+      "n": 9,
       "term": 0,
-      "pct": 0.16,
-      "pct_hu": 0.16,
-      "n_pct": 4,
+      "pct": 0.3556,
+      "pct_hu": 0.3556,
+      "n_pct": 9,
       "its": [
-        "otra:sprint pedagogico"
+        "otra:sprint ii"
       ],
       "fs": [
         "A"
@@ -1315,8 +1315,8 @@
       "ei": "00. En levantamiento/entendimiento",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 0,
       "term": 0,
@@ -6067,54 +6067,54 @@
     {
       "i": "528378",
       "t": "SME_ADM_004_E01_ConsultarElListadoPorDefectoDeLosUltimos30Dias",
-      "e": "3. Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.3,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": ""
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
     },
     {
       "i": "528379",
       "t": "SME_ADM_004_E02_ConsultarElDetalleDeLosEventos",
-      "e": "3. Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.3,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": ""
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
     },
     {
       "i": "528380",
       "t": "SME_ADM_004_E03_DescargarLaConsultaEnSuUnicaHoja",
-      "e": "3. Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.3,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": ""
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
     },
     {
       "i": "528381",
       "t": "SME_ADM_004_E04_ValidarLaDescargaFallidaYElPermisoRetiradoConLaConsultaAbierta",
-      "e": "3. Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.3,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint pedagogico",
-      "itn": "Sprint pedagógico",
-      "r": ""
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
     },
     {
       "i": "528382",
@@ -6268,8 +6268,8 @@
       "v": null,
       "f": "A",
       "cu": "456851",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6949,51 +6949,90 @@
       "r": "Danilo Rodriguez Diaz"
     },
     {
-      "i": "540579",
-      "t": "Malla de asistencia Octubre",
-      "e": "0.0 Transversal",
-      "p": "OMITIR",
-      "a": 0,
-      "v": null,
+      "i": "546855",
+      "t": "Desarrollo del registro del rol del responsable en la auditoría del CU ADM_004",
+      "e": "6.1 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
       "f": "A",
-      "cu": "540577",
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "Lorena Constanza Bayona Alcantara"
+      "cu": "456851",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
     },
     {
-      "i": "540584",
-      "t": "Planeación Sprint II",
-      "e": "0.0 Transversal",
-      "p": "OMITIR",
-      "a": 0,
-      "v": null,
+      "i": "546861",
+      "t": "Ajuste de la consulta de auditoría al catálogo del CU ADM_004: exclusiones y «Sin valor»",
+      "e": "6.1 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
       "f": "A",
-      "cu": "540577",
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "Lorena Constanza Bayona Alcantara"
+      "cu": "456851",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
+    },
+    {
+      "i": "546877",
+      "t": "Registro del intento de acceso denegado en la auditoría del CU ADM_004",
+      "e": "6.1 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "A",
+      "cu": "456851",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
+    },
+    {
+      "i": "546890",
+      "t": "Auditoría de los CU 1.8, 1.10, 18.x y 5.2 con el contrato del CU ADM_004",
+      "e": "6.1 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "A",
+      "cu": "456851",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
+    },
+    {
+      "i": "546901",
+      "t": "Construcción de la pantalla del CU ADM_004 Consultar Auditoría con datos de ejemplo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "A",
+      "cu": "456851",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Oscar Daniel Herrera Peñaloza"
     }
   ],
   "kpi": {
     "n_cu": 74,
     "n_cu_medibles": 70,
     "cu_entregados": 28,
-    "pct_cu_global": 0.4739,
-    "n_hu": 382,
-    "n_hu_activas": 332,
+    "pct_cu_global": 0.4782,
+    "n_hu": 385,
+    "n_hu_activas": 337,
     "hu_sin_cu": 9,
     "hu_fuera_de_su_cu": 50,
     "sin_iteracion": 28,
     "cu_aprobados": 31,
-    "hu_omitidas": 45,
+    "hu_omitidas": 43,
     "focos_activas": {
-      "A": 330,
+      "A": 335,
       "B": 1,
       "C": 1
     },
     "focos_todas": {
-      "A": 373,
+      "A": 376,
       "B": 6,
       "C": 3
     },
@@ -7010,13 +7049,13 @@
     "cu_sin_foco": 0,
     "cu_multi_foco": 2,
     "hu_sin_pct": 0,
-    "pct_global": 0.3596,
-    "pct_global_hu": 0.8046,
+    "pct_global": 0.3578,
+    "pct_global_hu": 0.8002,
     "avance_modo": "peso_foco",
     "term_global": 19
   },
   "cmi": {
-    "tactico": 0.4739,
+    "tactico": 0.4782,
     "estrategico": 0.4,
     "n": 70,
     "d": 28,
@@ -7025,8 +7064,8 @@
       "100": 28,
       "75": 0,
       "50": 2,
-      "20": 4,
-      "0": 36
+      "20": 5,
+      "0": 35
     }
   }
 }
