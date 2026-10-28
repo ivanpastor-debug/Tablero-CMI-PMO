@@ -53,8 +53,19 @@ def escala_pmo(pct, estado=''):
 
 
 def calc_cmi_project(epics, features, cod):
-    valid_epics = [e for e in (epics or []) if e.get('i') != '_sin_frente' and e.get('t') != '(sin frente)']
-    feats = [f for f in (features or []) if (f.get('n', 0) or 0) > 0]
+    valid_epics = [
+        e for e in (epics or [])
+        if e.get('i') != '_sin_frente'
+        and e.get('t') != '(sin frente)'
+        and 'seguimiento_transversal_linktic' not in str(e.get('t') or '').lower()
+        and str(e.get('i') or '') != '327682'
+    ]
+    feats = [
+        f for f in (features or [])
+        if (f.get('n', 0) or 0) > 0
+        and 'seguimiento_transversal_linktic' not in str(f.get('ept') or '').lower()
+        and str(f.get('ep') or '') != '327682'
+    ]
     feat_tot = len(feats)
     feat_ent = sum(1 for f in feats if (f.get('pct') or 0) >= 0.999)
 
@@ -73,17 +84,18 @@ def calc_cmi_project(epics, features, cod):
         }
 
     # 2. 419: Depósitos Judiciales - Excepción PMO: mantener archivo local (125 entregadas / 466 entregables)
+    # Excluye la épica de seguimiento interno 419DPJ_EP_LT_Seguimiento_Transversal_Linktic y sus 5 funcionalidades
     if cod == '419':
         return {
-            'tactico': 0.1201,
-            'estrategico': 0.2682,
+            'tactico': 0.1195777351,
+            'estrategico': 0.2682403433,
             'n': 466,
             'd': 125,
             'u': 'funcionalidades',
             'isEpics': False,
             'feat_total': feat_tot,
             'feat_ent': feat_ent,
-            'buckets': {'100': 125, '75': 0, '50': 40, '20': 23, '0': 278}
+            'buckets': {'100': 125, '75': 0, '50': 40, '20': 18, '0': 278}
         }
 
     # 3. 421: BALÚ Frentes contractuales: Afiliaciones y Novedades (0.5), Recaudo y Cartera (0.2)
