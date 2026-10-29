@@ -1,8 +1,8 @@
 {
   "codigo": "420",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:14",
-  "archivo": "HU_420_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:02",
+  "archivo": "HU_420_20261029.csv",
   "epics": [
     {
       "i": "357078",
@@ -32,17 +32,17 @@
       "i": "356469",
       "t": "Transversales",
       "n_f": 5,
-      "n": 63,
-      "term": 60,
-      "pct": 0.9762
+      "n": 66,
+      "term": 62,
+      "pct": 0.9606
     },
     {
       "i": "357081",
       "t": "Atenciones Call Center",
       "n_f": 3,
       "n": 62,
-      "term": 50,
-      "pct": 0.9323
+      "term": 51,
+      "pct": 0.9355
     },
     {
       "i": "358672",
@@ -57,8 +57,8 @@
       "t": "Contingencia - Continuidad - Errores Integración",
       "n_f": 3,
       "n": 26,
-      "term": 22,
-      "pct": 0.9692
+      "term": 26,
+      "pct": 1.0
     },
     {
       "i": "403281",
@@ -109,8 +109,8 @@
       "ep": "357081",
       "ept": "Atenciones Call Center",
       "n": 43,
-      "term": 31,
-      "pct": 0.9023,
+      "term": 32,
+      "pct": 0.907,
       "n_pct": 43
     },
     {
@@ -152,10 +152,21 @@
       "e": "2. En Curso",
       "ep": "356469",
       "ept": "Transversales",
-      "n": 24,
-      "term": 23,
-      "pct": 0.9792,
-      "n_pct": 24
+      "n": 26,
+      "term": 25,
+      "pct": 0.9692,
+      "n_pct": 26
+    },
+    {
+      "i": "356481",
+      "t": "420_Seguimiento_transversales_Desarrollo_Linktic",
+      "e": "2. En Curso",
+      "ep": "356469",
+      "ept": "Transversales",
+      "n": 21,
+      "term": 19,
+      "pct": 0.9381,
+      "n_pct": 21
     },
     {
       "i": "358512",
@@ -167,17 +178,6 @@
       "term": 15,
       "pct": 0.9429,
       "n_pct": 21
-    },
-    {
-      "i": "356481",
-      "t": "420_Seguimiento_transversales_Desarrollo_Linktic",
-      "e": "2. En Curso",
-      "ep": "356469",
-      "ept": "Transversales",
-      "n": 20,
-      "term": 19,
-      "pct": 0.975,
-      "n_pct": 20
     },
     {
       "i": "357083",
@@ -362,8 +362,8 @@
       "ep": "357080",
       "ept": "Contingencia - Continuidad - Errores Integración",
       "n": 10,
-      "term": 8,
-      "pct": 0.96,
+      "term": 10,
+      "pct": 1.0,
       "n_pct": 10
     },
     {
@@ -648,8 +648,8 @@
       "ep": "357080",
       "ept": "Contingencia - Continuidad - Errores Integración",
       "n": 2,
-      "term": 0,
-      "pct": 0.8,
+      "term": 2,
+      "pct": 1.0,
       "n_pct": 2
     },
     {
@@ -4232,10 +4232,10 @@
     {
       "i": "403145",
       "t": "HU0355_Funcionalidad_Atención_de_Agendamiento_V7",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "356947",
       "ep": "357081",
       "r": "Sebastian Bernal"
@@ -5503,7 +5503,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "459890",
@@ -5514,7 +5514,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "459901",
@@ -5525,7 +5525,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "459904",
@@ -5536,7 +5536,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "459935",
@@ -5547,7 +5547,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "459938",
@@ -6394,7 +6394,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "483633",
@@ -6405,7 +6405,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "484414",
@@ -6476,10 +6476,10 @@
     {
       "i": "490002",
       "t": "HU0175_Positiva_Errores_Integracion_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "490000",
       "ep": "357080",
       "r": "Sebastian Bernal"
@@ -6487,10 +6487,10 @@
     {
       "i": "490003",
       "t": "HU0176_Positiva_Errores_Integracion_Ver_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "490000",
       "ep": "357080",
       "r": "Sebastian Bernal"
@@ -6520,10 +6520,10 @@
     {
       "i": "490024",
       "t": "HU0169_Positiva_Continuidad_Listado_Errores_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "457308",
       "ep": "357080",
       "r": "Sebastian Bernal"
@@ -6531,10 +6531,10 @@
     {
       "i": "490027",
       "t": "HU0134_Positiva_Modo_Continuidad_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "457308",
       "ep": "357080",
       "r": "Sebastian Bernal"
@@ -7136,10 +7136,10 @@
     {
       "i": "525127",
       "t": "420_Seguimiento_Administrativo_Equipo_de_QA_Sprint_76",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "356476",
       "ep": "356469",
       "r": "Tilson Fernandez"
@@ -7153,7 +7153,7 @@
       "v": 0.5,
       "f": "507072",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Hernán Alonso Calderón Polanía"
     },
     {
       "i": "525628",
@@ -7164,7 +7164,7 @@
       "v": 0.5,
       "f": "507072",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Hernán Alonso Calderón Polanía"
     },
     {
       "i": "525724",
@@ -7186,7 +7186,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "Francisco Jose Hernandez Cordero"
+      "r": "orlando perez"
     },
     {
       "i": "528096",
@@ -7318,7 +7318,7 @@
       "v": 0.5,
       "f": "468613",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Hernán Alonso Calderón Polanía"
     },
     {
       "i": "536117",
@@ -7417,39 +7417,72 @@
       "v": 0.5,
       "f": "382413",
       "ep": "357078",
-      "r": "Brandon David Palacio Alvarez"
+      "r": "Hernán Alonso Calderón Polanía"
+    },
+    {
+      "i": "548102",
+      "t": "420_Seguimiento_Administrativo_Desarrollo_Sprint_78",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "356481",
+      "ep": "356469",
+      "r": "Tilson Fernandez"
+    },
+    {
+      "i": "548456",
+      "t": "420_Seguimiento_Administrativo_Equipo_de_QA_Sprint_77",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "356476",
+      "ep": "356469",
+      "r": "Tilson Fernandez"
+    },
+    {
+      "i": "548614",
+      "t": "420_Seguimiento_Administrativo_Equipo_de_QA_Sprint_78",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "356476",
+      "ep": "356469",
+      "r": "Tilson Fernandez"
     }
   ],
   "kpi": {
-    "n_hu": 609,
-    "n_hu_activas": 595,
+    "n_hu": 612,
+    "n_hu_activas": 598,
     "hu_sin_feature": 0,
     "n_feature": 56,
     "n_epic": 12,
     "n_feature_con_hu": 56,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9313,
-    "term_global": 479,
+    "pct_global": 0.9314,
+    "term_global": 486,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 30,
+    "feature_100_sin_cerrar": 32,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.5833,
-    "estrategico": 0.1667,
+    "tactico": 0.625,
+    "estrategico": 0.25,
     "n": 12,
-    "d": 2,
+    "d": 3,
     "u": "épicas",
     "isEpics": true,
     "feat_total": 56,
-    "feat_ent": 31,
+    "feat_ent": 33,
     "buckets": {
-      "100": 2,
+      "100": 3,
       "75": 0,
-      "50": 10,
+      "50": 9,
       "20": 0,
       "0": 0
     }

@@ -1,8 +1,8 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:13",
-  "archivo": "HU_419-DEP_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:01",
+  "archivo": "HU_419-DEP_20261029.csv",
   "epics": [
     {
       "i": "417341",
@@ -10,7 +10,7 @@
       "n_f": 27,
       "n": 212,
       "term": 7,
-      "pct": 0.575
+      "pct": 0.5783
     },
     {
       "i": "291675",
@@ -42,7 +42,7 @@
       "n_f": 13,
       "n": 73,
       "term": 0,
-      "pct": 0.4685
+      "pct": 0.4822
     },
     {
       "i": "373564",
@@ -57,8 +57,8 @@
       "t": "419_EP_BAC_ PRIORIZACIÓN_2",
       "n_f": 10,
       "n": 49,
-      "term": 44,
-      "pct": 0.9531
+      "term": 46,
+      "pct": 0.9694
     },
     {
       "i": "399824",
@@ -253,7 +253,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 12,
       "term": 0,
-      "pct": 0.45,
+      "pct": 0.4583,
       "n_pct": 12
     },
     {
@@ -391,12 +391,12 @@
     {
       "i": "498956",
       "t": "419_PB_EXCEPCIÓN BENEFICIARIO  ABONO A CUENTA PORTAL",
-      "e": "3. Entregado",
+      "e": "2. En Curso",
       "ep": "417341",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 9,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.5778,
       "n_pct": 9
     },
     {
@@ -626,8 +626,8 @@
       "ep": "319591",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_2",
       "n": 7,
-      "term": 5,
-      "pct": 0.8857,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
@@ -732,7 +732,7 @@
     {
       "i": "433487",
       "t": "419_PB_REGISTRO Y LEVANTAMIENTO DEL BLOQUEO PREVENTIVO DE FORMA MASIVA",
-      "e": "3. Entregado",
+      "e": "2. En Curso",
       "ep": "417341",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 7,
@@ -798,12 +798,12 @@
     {
       "i": "535006",
       "t": "PB_PAGO DEPOSITOS PROCESO CENTRALIZADO BAC PORTAL",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.4,
+      "pct": 0.5714,
       "n_pct": 7
     },
     {
@@ -1397,7 +1397,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 3,
       "term": 0,
-      "pct": 0.6333,
+      "pct": 0.5333,
       "n_pct": 3
     },
     {
@@ -3748,10 +3748,10 @@
     {
       "i": "344153",
       "t": "419_PB_HU001_Validar_Y_Solicitar_Creacion_Datos_Del_Tercero",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "343776",
       "ep": "319591",
       "r": "Carlos Alberto Valero Peña"
@@ -4474,10 +4474,10 @@
     {
       "i": "373680",
       "t": "419_PB_HU002_Solicitar_Actualizar_Datos_del_Tercero",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "343776",
       "ep": "319591",
       "r": "Carlos Alberto Valero Peña"
@@ -6504,7 +6504,7 @@
       "v": 0.9,
       "f": "389026",
       "ep": "379729",
-      "r": "Kevin Martinez Palmieri"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "393421",
@@ -11063,10 +11063,10 @@
     {
       "i": "499000",
       "t": "419_PB_HU001_Consultar_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -11074,10 +11074,10 @@
     {
       "i": "499001",
       "t": "419_PB_HU002_Crear_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -11085,10 +11085,10 @@
     {
       "i": "499003",
       "t": "419_PB_HU003_Modificar_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -11096,10 +11096,10 @@
     {
       "i": "499006",
       "t": "419_PB_HU004_Autorizar_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -11107,10 +11107,10 @@
     {
       "i": "499008",
       "t": "419_PB_HU005_Rechazar_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -11118,10 +11118,10 @@
     {
       "i": "499011",
       "t": "419_PB_HU006_Generar_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -11129,10 +11129,10 @@
     {
       "i": "499013",
       "t": "419_PB_HU007_Rechazar_Automatico_Excepcion_De_Beneficiarios_Con_Abono_A_Cuenta",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "498956",
       "ep": "417341",
       "r": "Viki Liseth Cruz Plaza"
@@ -12026,7 +12026,7 @@
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "519479",
@@ -12840,18 +12840,18 @@
       "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "535013",
       "t": "419_PB_HU002_Autorizacion_Solicitud_Pago_Centralizado",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.8,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "535016",
@@ -12862,15 +12862,15 @@
       "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "535020",
       "t": "419_PB_HU004_Autorizacion_Reversion_Pago_Centralizado",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.8,
       "f": "535006",
       "ep": "531917",
       "r": "William Alexis Rodríguez castaño"
@@ -12878,10 +12878,10 @@
     {
       "i": "535024",
       "t": "419_PB_HU005_Comprobante_PagoCentralizado",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.8,
       "f": "535006",
       "ep": "531917",
       "r": "William Alexis Rodríguez castaño"
@@ -12928,7 +12928,7 @@
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Luisa Fernanda Escobar Marquez"
     },
     {
       "i": "535072",
@@ -12939,7 +12939,7 @@
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Luisa Fernanda Escobar Marquez"
     },
     {
       "i": "535076",
@@ -12950,7 +12950,7 @@
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Luisa Fernanda Escobar Marquez"
     },
     {
       "i": "535086",
@@ -13054,10 +13054,10 @@
     {
       "i": "535148",
       "t": "419_PB_HU001_Entregar_proceso_a_COBIS",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "535145",
       "ep": "531917",
       "r": "Nicolas Giraldo Arenas"
@@ -13087,13 +13087,13 @@
     {
       "i": "538322",
       "t": "419_PB_Ajuste_Numero_Expediente_Emision_Individual",
-      "e": "6.1 Esperando Despliegue DEV-QA",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Cristian Andres Marin Durango"
     },
     {
       "i": "538323",
@@ -13137,7 +13137,7 @@
       "v": 0.5,
       "f": "539191",
       "ep": "531917",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Luisa Fernanda Escobar Marquez"
     },
     {
       "i": "539589",
@@ -13192,7 +13192,7 @@
       "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "540434",
@@ -13347,8 +13347,8 @@
     "n_feature_con_hu": 137,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7562,
-    "term_global": 344,
+    "pct_global": 0.7589,
+    "term_global": 346,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 1,
@@ -13363,7 +13363,7 @@
     "u": "épicas",
     "isEpics": true,
     "feat_total": 132,
-    "feat_ent": 44,
+    "feat_ent": 45,
     "buckets": {
       "100": 1,
       "75": 0,

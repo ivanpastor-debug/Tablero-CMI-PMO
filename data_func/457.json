@@ -1,16 +1,16 @@
 {
   "codigo": "457",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:14",
-  "archivo": "HU_457_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:02",
+  "archivo": "HU_457_20261029.csv",
   "epics": [
     {
       "i": "292522",
       "t": "Nuevas Funcionalidades",
       "n_f": 3,
-      "n": 109,
+      "n": 107,
       "term": 62,
-      "pct": 0.7568
+      "pct": 0.7661
     },
     {
       "i": "94588",
@@ -65,7 +65,7 @@
       "ept": "Nuevas Funcionalidades",
       "n": 39,
       "term": 27,
-      "pct": 0.7505,
+      "pct": 0.7592,
       "n_pct": 39
     },
     {
@@ -74,10 +74,10 @@
       "e": "2. En Curso",
       "ep": "292522",
       "ept": "Nuevas Funcionalidades",
-      "n": 31,
+      "n": 29,
       "term": 4,
-      "pct": 0.5829,
-      "n_pct": 31
+      "pct": 0.5934,
+      "n_pct": 29
     },
     {
       "i": "264576",
@@ -3478,7 +3478,7 @@
       "v": 0.8,
       "f": "295069",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Julian Enrique Moreno Samudio"
     },
     {
       "i": "437333",
@@ -3626,10 +3626,10 @@
     {
       "i": "486780",
       "t": "NPDC_HU0020_Submódulo_Radicación_de_Siniestros_Persona Jurídica",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3637,10 +3637,10 @@
     {
       "i": "486852",
       "t": "NPDC_HU0021_Submódulo Radicación_de_Siniestros_Persona Natural",
-      "e": "3.  Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.16,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3769,13 +3769,13 @@
     {
       "i": "498501",
       "t": "NPDC_HU0022_Consulta_de_Siniestros",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.3,
       "f": "295069",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "499716",
@@ -3846,13 +3846,13 @@
     {
       "i": "534076",
       "t": "NPDF_HU0030_Migrar_a_Bricks_las_páginas_del_bloque_Seguros",
-      "e": "3.  Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.5,
       "f": "294898",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Wilmer Javier Castellanos Martinez"
     },
     {
       "i": "534077",
@@ -3956,14 +3956,14 @@
   ],
   "kpi": {
     "n_hu": 304,
-    "n_hu_activas": 284,
+    "n_hu_activas": 282,
     "hu_sin_feature": 1,
     "n_feature": 51,
     "n_epic": 5,
     "n_feature_con_hu": 48,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9021,
+    "pct_global": 0.9066,
     "term_global": 235,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

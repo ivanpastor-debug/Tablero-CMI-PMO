@@ -1,24 +1,24 @@
 {
   "codigo": "421",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:13",
-  "archivo": "HU_421_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:01",
+  "archivo": "HU_421_20261029.csv",
   "epics": [
     {
       "i": "83437",
       "t": "Sistema de Recaudo y Cartera",
-      "n_f": 26,
-      "n": 395,
+      "n_f": 27,
+      "n": 407,
       "term": 182,
-      "pct": 0.7661
+      "pct": 0.7487
     },
     {
       "i": "83469",
       "t": "Afiliaciones y Novedades",
       "n_f": 27,
-      "n": 360,
+      "n": 359,
       "term": 220,
-      "pct": 0.8279
+      "pct": 0.8355
     },
     {
       "i": "83503",
@@ -32,9 +32,9 @@
       "i": "207836",
       "t": "Control de Sprints",
       "n_f": 2,
-      "n": 85,
+      "n": 86,
       "term": 58,
-      "pct": 0.943
+      "pct": 0.9446
     },
     {
       "i": "417182",
@@ -52,10 +52,10 @@
       "e": "2. En Curso",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 89,
+      "n": 91,
       "term": 35,
-      "pct": 0.7269,
-      "n_pct": 89
+      "pct": 0.7292,
+      "n_pct": 91
     },
     {
       "i": "417232",
@@ -85,10 +85,10 @@
       "e": "1. En Planeacion",
       "ep": "207836",
       "ept": "Control de Sprints",
-      "n": 55,
+      "n": 56,
       "term": 30,
-      "pct": 0.9241,
-      "n_pct": 39
+      "pct": 0.9273,
+      "n_pct": 40
     },
     {
       "i": "417212",
@@ -109,7 +109,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 42,
       "term": 27,
-      "pct": 0.794,
+      "pct": 0.806,
       "n_pct": 42
     },
     {
@@ -118,10 +118,10 @@
       "e": "2. En Curso",
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
-      "n": 35,
+      "n": 36,
       "term": 13,
-      "pct": 0.6531,
-      "n_pct": 35
+      "pct": 0.6425,
+      "n_pct": 36
     },
     {
       "i": "96139",
@@ -129,10 +129,10 @@
       "e": "3. Entregado",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 31,
+      "n": 33,
       "term": 23,
-      "pct": 0.871,
-      "n_pct": 31
+      "pct": 0.8627,
+      "n_pct": 33
     },
     {
       "i": "85834",
@@ -153,19 +153,19 @@
       "ept": "Afiliaciones y Novedades",
       "n": 24,
       "term": 14,
-      "pct": 0.8429,
+      "pct": 0.8596,
       "n_pct": 24
     },
     {
-      "i": "313434",
-      "t": "003_Afiliaciones - Afiliación -  Empleadores",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
-      "n": 23,
-      "term": 12,
-      "pct": 0.8091,
-      "n_pct": 23
+      "i": "485086",
+      "t": "026_Proceso otras administradoras PILA-LOG",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 24,
+      "term": 0,
+      "pct": 0.3058,
+      "n_pct": 24
     },
     {
       "i": "307833",
@@ -175,18 +175,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 23,
       "term": 6,
-      "pct": 0.8065,
-      "n_pct": 23
-    },
-    {
-      "i": "485086",
-      "t": "026_Proceso otras administradoras PILA-LOG",
-      "e": "1. En Planeacion",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 23,
-      "term": 0,
-      "pct": 0.3161,
+      "pct": 0.8565,
       "n_pct": 23
     },
     {
@@ -219,7 +208,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 20,
       "term": 2,
-      "pct": 0.709,
+      "pct": 0.714,
       "n_pct": 20
     },
     {
@@ -243,6 +232,17 @@
       "term": 16,
       "pct": 0.9842,
       "n_pct": 19
+    },
+    {
+      "i": "313434",
+      "t": "003_Afiliaciones - Afiliación -  Empleadores",
+      "e": "3. Entregado",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
+      "n": 18,
+      "term": 12,
+      "pct": 0.9094,
+      "n_pct": 18
     },
     {
       "i": "434061",
@@ -289,17 +289,6 @@
       "n_pct": 17
     },
     {
-      "i": "308714",
-      "t": "013_Cartera-Marcacion siniestros para generar recobros por mora",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 17,
-      "term": 0,
-      "pct": 0.1582,
-      "n_pct": 17
-    },
-    {
       "i": "307827",
       "t": "005_Recaudo - Procesamiento archivos de recaudo SISE.",
       "e": "2. En Curso",
@@ -311,6 +300,17 @@
       "n_pct": 16
     },
     {
+      "i": "308714",
+      "t": "013_Cartera-Marcacion siniestros para generar recobros por mora",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 16,
+      "term": 0,
+      "pct": 0.1606,
+      "n_pct": 16
+    },
+    {
       "i": "98035",
       "t": "020_Funcionario_Consulta_General",
       "e": "3. Entregado",
@@ -318,7 +318,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 15,
       "term": 7,
-      "pct": 0.6873,
+      "pct": 0.6953,
       "n_pct": 15
     },
     {
@@ -351,7 +351,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 14,
       "term": 1,
-      "pct": 0.8571,
+      "pct": 0.8607,
       "n_pct": 14
     },
     {
@@ -421,6 +421,17 @@
       "n_pct": 10
     },
     {
+      "i": "511781",
+      "t": "027_Recobros consulta, documentación y dashboard",
+      "e": "1. En Planeacion",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 10,
+      "term": 0,
+      "pct": 0.048,
+      "n_pct": 10
+    },
+    {
       "i": "307822",
       "t": "003_Recaudo - Conciliación archivos PILA - LOG.",
       "e": "2. En Curso",
@@ -428,7 +439,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 8,
       "term": 7,
-      "pct": 0.9812,
+      "pct": 0.9938,
       "n_pct": 8
     },
     {
@@ -465,6 +476,17 @@
       "n_pct": 8
     },
     {
+      "i": "457292",
+      "t": "023_Transferencia de Recaudo a Base de dato de Positiva (primer alcancce)",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 8,
+      "term": 0,
+      "pct": 0.3914,
+      "n_pct": 7
+    },
+    {
       "i": "437162",
       "t": "028_Ajustes_Producción",
       "e": "1. En Planeacion",
@@ -496,17 +518,6 @@
       "term": 6,
       "pct": 0.9286,
       "n_pct": 7
-    },
-    {
-      "i": "457292",
-      "t": "023_Transferencia de Recaudo a Base de dato de Positiva",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 7,
-      "term": 0,
-      "pct": 0.4167,
-      "n_pct": 6
     },
     {
       "i": "314185",
@@ -1652,7 +1663,7 @@
       "v": 1.0,
       "f": "307833",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "88270",
@@ -1751,7 +1762,7 @@
       "v": null,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "88281",
@@ -1784,7 +1795,7 @@
       "v": 1.0,
       "f": "85834",
       "ep": "207836",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "88429",
@@ -1894,7 +1905,7 @@
       "v": 1.0,
       "f": "85834",
       "ep": "207836",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "91350",
@@ -2191,7 +2202,7 @@
       "v": null,
       "f": "307862",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "94896",
@@ -2202,7 +2213,7 @@
       "v": null,
       "f": "307862",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "94897",
@@ -2235,7 +2246,7 @@
       "v": null,
       "f": "101755",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "95635",
@@ -2532,7 +2543,7 @@
       "v": null,
       "f": "85119",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "98008",
@@ -2565,7 +2576,7 @@
       "v": null,
       "f": "85105",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "98011",
@@ -2576,7 +2587,7 @@
       "v": null,
       "f": "85105",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "98012",
@@ -2587,7 +2598,7 @@
       "v": null,
       "f": "85105",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "98014",
@@ -2598,7 +2609,7 @@
       "v": null,
       "f": "85105",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "98040",
@@ -3005,7 +3016,7 @@
       "v": null,
       "f": "314314",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "106537",
@@ -3016,7 +3027,7 @@
       "v": null,
       "f": "314314",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "106538",
@@ -3027,7 +3038,7 @@
       "v": null,
       "f": "314314",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "106540",
@@ -3049,7 +3060,7 @@
       "v": null,
       "f": "314314",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "106542",
@@ -3060,7 +3071,7 @@
       "v": null,
       "f": "314314",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "106834",
@@ -3610,7 +3621,7 @@
       "v": null,
       "f": "307852",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "186224",
@@ -3632,7 +3643,7 @@
       "v": null,
       "f": "307862",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "187137",
@@ -3907,7 +3918,7 @@
       "v": null,
       "f": "307826",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "204157",
@@ -4138,7 +4149,7 @@
       "v": null,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "218660",
@@ -4468,7 +4479,7 @@
       "v": null,
       "f": "307852",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "236543",
@@ -4501,7 +4512,7 @@
       "v": null,
       "f": "307832",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "237186",
@@ -4600,7 +4611,7 @@
       "v": null,
       "f": "307862",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "243019",
@@ -4875,7 +4886,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "259049",
@@ -4897,7 +4908,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "259255",
@@ -4919,7 +4930,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "259904",
@@ -4963,7 +4974,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "260031",
@@ -4985,7 +4996,7 @@
       "v": null,
       "f": "180688",
       "ep": "83503",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "260192",
@@ -5051,7 +5062,7 @@
       "v": null,
       "f": "307799",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "261284",
@@ -5084,7 +5095,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "261718",
@@ -5271,7 +5282,7 @@
       "v": null,
       "f": "307799",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "265022",
@@ -5359,7 +5370,7 @@
       "v": null,
       "f": "307799",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "266047",
@@ -5370,7 +5381,7 @@
       "v": null,
       "f": "307821",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "266056",
@@ -5436,7 +5447,7 @@
       "v": null,
       "f": "307799",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "268323",
@@ -5513,7 +5524,7 @@
       "v": 1.0,
       "f": "307826",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "269430",
@@ -5573,10 +5584,10 @@
     {
       "i": "272371",
       "t": "307833_HU_001_Ejecutar_Proceso_Programado_Mensual_Cartera_Preventiva",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -5612,7 +5623,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "273348",
@@ -5645,7 +5656,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "275571",
@@ -5854,7 +5865,7 @@
       "v": null,
       "f": "307822",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "285280",
@@ -5909,7 +5920,7 @@
       "v": null,
       "f": "307826",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "286167",
@@ -5942,7 +5953,7 @@
       "v": 0.85,
       "f": "307852",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "286351",
@@ -5975,7 +5986,7 @@
       "v": 0.85,
       "f": "307852",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "286980",
@@ -6008,7 +6019,7 @@
       "v": 0.85,
       "f": "307852",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "287840",
@@ -6019,7 +6030,7 @@
       "v": null,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "288458",
@@ -6052,7 +6063,7 @@
       "v": 0.85,
       "f": "307826",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "289403",
@@ -6123,10 +6134,10 @@
     {
       "i": "292132",
       "t": "307833_HU_009_Consultar notificación de cartera preventiva por periodo - CP por periodo",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -6349,7 +6360,7 @@
       "v": null,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "293824",
@@ -6360,7 +6371,7 @@
       "v": null,
       "f": "307826",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "294498",
@@ -6519,13 +6530,13 @@
     {
       "i": "298435",
       "t": "307822_HU004_Actualización validaciones proceso cargue y conciliación PILA-LOG",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "307822",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "298525",
@@ -6954,7 +6965,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "321376",
@@ -6987,7 +6998,7 @@
       "v": 1.0,
       "f": "307827",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "322046",
@@ -7009,7 +7020,7 @@
       "v": 0.8,
       "f": "307827",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "322413",
@@ -7267,24 +7278,24 @@
     {
       "i": "334789",
       "t": "98062_HU017_Certificado_de_afiliación_individual_agrupado_posterior_a_las_afiliaciones_masivas_desde_empleador",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "96139",
       "ep": "83469",
-      "r": "Nestor Camilo Camacho García"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "339102",
       "t": "314170_HU002_Certificado_de_afiliación_individual_agrupado_posterior_a_las_afiliaciones_masivas_desde_funcionario",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "98062",
       "ep": "83469",
-      "r": "Nestor Camilo Camacho García"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "339766",
@@ -7559,7 +7570,7 @@
       "v": 0.85,
       "f": "313337",
       "ep": "207836",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Paula Gomez Cantor"
     },
     {
       "i": "374303",
@@ -7680,7 +7691,7 @@
       "v": 0.85,
       "f": "313436",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "387500",
@@ -7938,13 +7949,13 @@
     {
       "i": "413257",
       "t": "100219_HU102_Proceso automático de normalización I1",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "100219",
       "ep": "83469",
-      "r": "Nestor Camilo Camacho García"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "413640",
@@ -7955,7 +7966,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413774",
@@ -8043,7 +8054,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413806",
@@ -8065,7 +8076,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413813",
@@ -8076,7 +8087,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413815",
@@ -8087,7 +8098,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413819",
@@ -8098,7 +8109,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413823",
@@ -8109,7 +8120,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413826",
@@ -8120,7 +8131,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413829",
@@ -8131,7 +8142,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413832",
@@ -8142,7 +8153,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413838",
@@ -8153,7 +8164,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413839",
@@ -8164,7 +8175,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413841",
@@ -8175,7 +8186,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "413907",
@@ -8373,7 +8384,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "414502",
@@ -8483,7 +8494,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "423752",
@@ -8604,7 +8615,7 @@
       "v": 0.9,
       "f": "307832",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "428144",
@@ -8615,7 +8626,7 @@
       "v": 0.9,
       "f": "307832",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "428145",
@@ -8626,7 +8637,7 @@
       "v": 0.9,
       "f": "307832",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "428264",
@@ -8659,7 +8670,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "428784",
@@ -8681,7 +8692,7 @@
       "v": 0.85,
       "f": "312123",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Paula Gomez Cantor"
     },
     {
       "i": "429326",
@@ -8703,7 +8714,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429452",
@@ -8714,7 +8725,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429454",
@@ -8725,7 +8736,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429456",
@@ -8736,7 +8747,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429457",
@@ -8747,7 +8758,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429458",
@@ -8758,7 +8769,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429459",
@@ -8769,7 +8780,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "429461",
@@ -8780,7 +8791,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "430758",
@@ -8950,10 +8961,10 @@
     {
       "i": "434062",
       "t": "307833_HU_002_Construir el universo de notificación consolidando los cortes de liquidación",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -8961,10 +8972,10 @@
     {
       "i": "434091",
       "t": "307833_HU_003_Validar_y_Resolver_Correo_del_Aportante",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -8983,10 +8994,10 @@
     {
       "i": "434124",
       "t": "307833_HU_004_Generar_y_Enviar_Comunicacion_por_Tipo_de_Aportante_e_independientes",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -8994,10 +9005,10 @@
     {
       "i": "434230",
       "t": "307833_HU_005_Gestionar_Rebotes_y_Reenvios_de_Notificaciones",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -9016,10 +9027,10 @@
     {
       "i": "434575",
       "t": "307833_HU_011_Generar informes de desempeño del envío de Cartera Preventiva",
-      "e": "8.1. Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "307833",
       "ep": "83437",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -9071,10 +9082,10 @@
     {
       "i": "436944",
       "t": "313337_HU024_Ajuste_Correo_de_bienvenida_(Independiente)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "313337",
       "ep": "207836",
       "r": "Jhon Fredy Torres Peña"
@@ -9181,10 +9192,10 @@
     {
       "i": "454098",
       "t": "313337_HU025_Ajuste_Correo_de_bienvenida_(Empleador)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "313337",
       "ep": "207836",
       "r": "Jhon Fredy Torres Peña"
@@ -9280,10 +9291,10 @@
     {
       "i": "454512",
       "t": "313337_HU_026_Filtros_y_buscador_de_Videotutoriales_e_instructivos_(Registrado)_Experiencia_de_usuario",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "313337",
       "ep": "207836",
       "r": "Jhon Fredy Torres Peña"
@@ -9302,10 +9313,10 @@
     {
       "i": "454536",
       "t": "313337_HU_027_Tabs_de_clasificación_Videotutoriales_e_instructivos_(Registrado)_Experiencia_de_usuario",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "313337",
       "ep": "207836",
       "r": "Jhon Fredy Torres Peña"
@@ -9748,7 +9759,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "457409",
@@ -9808,13 +9819,13 @@
     {
       "i": "458918",
       "t": "457292_HU003_Mapear y transformar la información de recaudo de BALÚ a la estructura de las tablas destino de Positiva (4 tablas iniciales)",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "457292",
       "ep": "83437",
-      "r": "Miguel Angel Rodriguez Castillo"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "458944",
@@ -9968,7 +9979,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "460803",
@@ -9979,7 +9990,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "460805",
@@ -9990,7 +10001,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "460806",
@@ -10001,7 +10012,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "460809",
@@ -10012,7 +10023,7 @@
       "v": 0.5,
       "f": "88254",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "460861",
@@ -10023,7 +10034,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "460862",
@@ -10045,7 +10056,7 @@
       "v": 0.5,
       "f": "88254",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "461027",
@@ -10056,7 +10067,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "461056",
@@ -10067,7 +10078,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "461057",
@@ -10089,7 +10100,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "461497",
@@ -10127,12 +10138,12 @@
     {
       "i": "461542",
       "t": "313434_HU012_Ajustes varios actualizar datos dirección y teléfono todos los formularios.",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
-      "f": "313434",
-      "ep": "83469",
+      "v": 0.85,
+      "f": "313337",
+      "ep": "207836",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -10142,7 +10153,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "313434",
+      "f": "100219",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -10164,7 +10175,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "313434",
+      "f": "100219",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -10186,7 +10197,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "313434",
+      "f": "96139",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -10254,7 +10265,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "463813",
@@ -10265,7 +10276,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "463815",
@@ -10276,7 +10287,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "464949",
@@ -10452,7 +10463,7 @@
       "v": 0.85,
       "f": "98035",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "466693",
@@ -10463,7 +10474,7 @@
       "v": 0.85,
       "f": "98035",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "467516",
@@ -10562,7 +10573,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "472440",
@@ -10584,7 +10595,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "473645",
@@ -10727,7 +10738,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "477488",
@@ -10738,7 +10749,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "477494",
@@ -10749,7 +10760,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "480043",
@@ -10760,7 +10771,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Paula Gomez Cantor"
     },
     {
       "i": "480044",
@@ -10809,10 +10820,10 @@
     {
       "i": "480730",
       "t": "313436_HU004_CC1_mensajes y requisitos de cada documento adjunto del formulario de afiliación de independientes con contrato de prestación de servicios",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT.PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "313436",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
@@ -10826,7 +10837,7 @@
       "v": 0.85,
       "f": "481244",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481253",
@@ -10837,7 +10848,7 @@
       "v": 0.9,
       "f": "481244",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481919",
@@ -10848,7 +10859,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481925",
@@ -10859,7 +10870,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481938",
@@ -10870,7 +10881,7 @@
       "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481940",
@@ -10881,7 +10892,7 @@
       "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481945",
@@ -10892,7 +10903,7 @@
       "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "481946",
@@ -10936,7 +10947,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "484956",
@@ -11013,7 +11024,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "485603",
@@ -11024,7 +11035,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "485605",
@@ -11035,7 +11046,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "485607",
@@ -11046,7 +11057,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Maralis Villadiego Gasabon"
     },
     {
       "i": "485611",
@@ -11057,7 +11068,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Maralis Villadiego Gasabon"
     },
     {
       "i": "485614",
@@ -11123,7 +11134,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "487147",
@@ -11200,7 +11211,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "487302",
@@ -11211,7 +11222,7 @@
       "v": 0.85,
       "f": "434061",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "487592",
@@ -11222,7 +11233,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "487594",
@@ -11233,7 +11244,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "487596",
@@ -11244,7 +11255,7 @@
       "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "489412",
@@ -11260,13 +11271,13 @@
     {
       "i": "489414",
       "t": "100219_HU103_Proceso automático de normalización I1_V2",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "100219",
       "ep": "83469",
-      "r": "Nestor Camilo Camacho García"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489528",
@@ -11277,7 +11288,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "489530",
@@ -11288,7 +11299,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "489538",
@@ -11299,7 +11310,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "489543",
@@ -11310,7 +11321,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "489546",
@@ -11321,18 +11332,18 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "489839",
       "t": "307836_HU002_CC1_Tipificar los pagos conciliados en los estados de No Vinculados y exponer los estados históricos de consulta",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "489900",
@@ -11343,7 +11354,7 @@
       "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "489908",
@@ -11354,15 +11365,15 @@
       "v": 0.85,
       "f": "307836",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "489910",
       "t": "307836_HU010_Presentar el archivo Detalle No Vinculados para descarga y para envío a Afiliaciones",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307836",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
@@ -11370,13 +11381,13 @@
     {
       "i": "489966",
       "t": "307833_HU_012_Actualizar_Plantillas_Comunicacion_Cartera_Preventiva",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "307833",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "490055",
@@ -11392,13 +11403,13 @@
     {
       "i": "490056",
       "t": "307833_HU_014_Enviar_Comunicaciones_Pendientes_por_Actualizacion_de_Correo",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "307833",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "490057",
@@ -11414,10 +11425,10 @@
     {
       "i": "490058",
       "t": "307833_HU_016_Actualizar_Almacenamiento_de_Comunicaciones_y_Formatos_de_los_Grids",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "307833",
       "ep": "83437",
       "r": "Maralis Villadiego Gasabon"
@@ -11425,13 +11436,13 @@
     {
       "i": "490082",
       "t": "307833_HU_017_Aplicar_Vigencia_Tabla_Excepciones_en_el_Cruce",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "307833",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "490093",
@@ -11442,7 +11453,7 @@
       "v": 0.9,
       "f": "481244",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "490099",
@@ -11464,7 +11475,7 @@
       "v": 0.9,
       "f": "481244",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "491395",
@@ -11475,7 +11486,7 @@
       "v": 0.85,
       "f": "313439",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Paula Gomez Cantor"
     },
     {
       "i": "491554",
@@ -11662,7 +11673,7 @@
       "v": 0.85,
       "f": "314172",
       "ep": "83469",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Paula Gomez Cantor"
     },
     {
       "i": "493636",
@@ -11761,7 +11772,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "494856",
@@ -11871,7 +11882,7 @@
       "v": 0.85,
       "f": "88254",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "495370",
@@ -11920,10 +11931,10 @@
     {
       "i": "497078",
       "t": "307852_Parte2_HU25_Ingreso automático Notificaciones Físicas CM",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "307852",
       "ep": "83437",
       "r": "Juan Sebastián González Rivera"
@@ -11997,21 +12008,21 @@
     {
       "i": "498665",
       "t": "313434_017_Consultar persona representante del centro de trabajo para asignarla - Empleador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
-      "f": "313434",
+      "v": 0.85,
+      "f": "96139",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "498733",
       "t": "313434_HU018 Consultar persona representante del centro de trabajo para asignarla - Funcionario",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "313434",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
@@ -12195,24 +12206,24 @@
     {
       "i": "505915",
       "t": "313434_HU019_ Excepcion_Representante_Legal_Responsable_Centro_Trabajo_Empleador CC1 - Empleador",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "313434",
       "ep": "83469",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "505948",
       "t": "313434_HU020_ Excepcion_Representante_Legal_Responsable_Centro_Trabajo_- Funcionario CC1",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "313434",
       "ep": "83469",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "506064",
@@ -12503,10 +12514,10 @@
     {
       "i": "510157",
       "t": "98062_HU_026_Formulario_afiliacion_Independiente_723",
-      "e": "6. Desarrollo Backend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "98062",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12514,10 +12525,10 @@
     {
       "i": "510159",
       "t": "98062_HU_027_Formulario_afiliacion_Independiente voluntario a riesgos laborales",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.4,
       "f": "98062",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12701,21 +12712,21 @@
     {
       "i": "512303",
       "t": "96139_HU003_Gal_Formulario_y_proceso_de_actualización_datos_empleador_trabajador CC1",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "96139",
       "ep": "83469",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "512354",
       "t": "100219_HU105_Gal_Ajuste_afiliaciones_masivas_723_funcionario CC2",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nain Grande Ortiz"
@@ -12729,7 +12740,7 @@
       "v": 0.85,
       "f": "94067",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Yiced Baracaldo"
     },
     {
       "i": "514894",
@@ -13064,13 +13075,13 @@
     {
       "i": "519772",
       "t": "100219_HU_138_Generar más de 100 carnés con envío de enlace por correo electrónico e historial de cargues masivos_funcionario",
-      "e": "6. Desarrollo Backend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
-      "r": "César Alejandro Garcia Tous"
+      "r": "Jose Luis Monasterio Yeguez"
     },
     {
       "i": "519970",
@@ -13107,7 +13118,7 @@
     },
     {
       "i": "519973",
-      "t": "307852_Parte2_HU34_B1_Asignar_Marca_VD_Y_Enviar_A_Georreferenciacion",
+      "t": "307852_Parte2_HU34a_B1a_Validar_Correo_Y_Asignar_Marca_VD_Al_Generar_CM",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13246,7 +13257,7 @@
       "v": 0.5,
       "f": "313436",
       "ep": "83469",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "522015",
@@ -13262,24 +13273,24 @@
     {
       "i": "522016",
       "t": "313436_HU012 Retiro individual del Interno de Medicina por el funcionario",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "313436",
       "ep": "83469",
-      "r": "César Alejandro Garcia Tous"
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "522017",
       "t": "313436_HU013 Retiro masivo del Interno de Medicina por el funcionario",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "313436",
       "ep": "83469",
-      "r": "César Alejandro Garcia Tous"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "522020",
@@ -13301,7 +13312,7 @@
       "v": 0.5,
       "f": "98062",
       "ep": "83469",
-      "r": "Maria Victoria Martins Souza"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "522032",
@@ -13416,13 +13427,13 @@
     {
       "i": "524748",
       "t": "485086_HU015_Identificar_Pagos_Otras_Administradoras_Consulta_Cotizantes",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Alejandra Calderón Pérez"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524751",
@@ -13691,13 +13702,13 @@
     {
       "i": "532434",
       "t": "437764_HU014_CC1_Solución de hallazgos Correcciones y Devoluciones",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "437764",
       "ep": "83437",
-      "r": "Yesid Sanabria Rey"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "532681",
@@ -13719,22 +13730,22 @@
       "v": 0.5,
       "f": "180126",
       "ep": "83503",
-      "r": "Yesid Sanabria Rey"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "534594",
-      "t": "308714_HU014_B6_Certificar_Recepcion_de_Siniestros_con_el_Servicio_de_Positiva",
-      "e": "2. Elaboración HU",
+      "t": "307852_Parte2_HU34b_B1b_Procesar_Codigos_MARCA_Y_Generar_Archivo_De_Georreferenciacion",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "308714",
+      "v": 0.17,
+      "f": "307852",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "534595",
-      "t": "308714_HU015_B6_Certificar_Consulta_de_Marcas_de_Empresa_con_el_Servicio_de_Positiva",
+      "t": "ELIMINAR_308714_HU015_B6_Certificar_Consulta_de_Marcas_de_Empresa_con_el_Servicio_de_Positiva",
       "e": "2. Elaboración HU",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13745,7 +13756,7 @@
     },
     {
       "i": "534596",
-      "t": "308714_HU016_B6_Certificar_Escritura_de_la_Marcacion_con_el_Servicio_de_Positiva",
+      "t": "ELIMINAR_308714_HU016_B6_Certificar_Escritura_de_la_Marcacion_con_el_Servicio_de_Positiva",
       "e": "2. Elaboración HU",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13756,7 +13767,7 @@
     },
     {
       "i": "534597",
-      "t": "308714_HU017_B6_Certificar_la_Constitucion_en_Mora_Historica_Entregada_por_Positiva",
+      "t": "ELIMINAR_308714_HU017_B6_Certificar_la_Constitucion_en_Mora_Historica_Entregada_por_Positiva",
       "e": "2. Elaboración HU",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13785,7 +13796,7 @@
       "v": 0.04,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "536758",
@@ -13851,7 +13862,7 @@
       "v": 0.04,
       "f": "307836",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "539617",
@@ -13878,57 +13889,57 @@
     {
       "i": "545541",
       "t": "100219_HU_Actualización_masiva_de_vinculaciones_dependientes_e_independientes",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "545754",
-      "t": "98035_HU005_Consulta General: búsqueda por número de documento y resultados por rol",
-      "e": "4. Refinamiento",
+      "t": "98035_HU005_Consulta General: búsqueda por número de documento y resultados por tipo de afilaicion",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "98035",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "César Alejandro Garcia Tous"
     },
     {
       "i": "545755",
       "t": "98035_HU006_Consulta General: Consulta Empleador (datos básicos, pólizas, actividad económica, sedes, anexos y liquidación)",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "98035",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "César Alejandro Garcia Tous"
     },
     {
       "i": "545763",
       "t": "98035_HU007_Consulta General: Consulta Trabajador (datos básicos, afiliaciones, relaciones laborales y contratos, histórico de novedades y liquidación",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "98035",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "545764",
       "t": "98035_HU008_Consulta General: novedades del empleador y del trabajador (listado, filtros y detalle)",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "98035",
       "ep": "83469",
-      "r": "Paula Gomez Cantor"
+      "r": "Ricardo Andres Marin Pinilla"
     },
     {
       "i": "546054",
@@ -13939,7 +13950,7 @@
       "v": 0.04,
       "f": "481244",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "546055",
@@ -13950,7 +13961,7 @@
       "v": 0.04,
       "f": "481244",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "546056",
@@ -13961,7 +13972,7 @@
       "v": 0.04,
       "f": "481244",
       "ep": "83437",
-      "r": "Harol Paez"
+      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "546210",
@@ -14083,18 +14094,150 @@
       "f": null,
       "ep": null,
       "r": "Jerson Octavio Lopez Hernandez"
+    },
+    {
+      "i": "548411",
+      "t": "457292_HU008_CC1_Registrar log transaccional del proceso de transferencia",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "457292",
+      "ep": "83437",
+      "r": "Harol Alberto Paez Hernandez"
+    },
+    {
+      "i": "548685",
+      "t": "511781_HU001_B1_Consumir_Servicio_Informacion_Del_Caso_De_Recobro",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548697",
+      "t": "511781_HU002_B1_Consumir_Servicio_Facturas",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "485086",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548749",
+      "t": "511781_HU002_B1_Consumir_Servicio_Facturas",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548750",
+      "t": "511781_HU003_B1_Consumir_Servicio_Incapacidad_Temporal",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548751",
+      "t": "511781_HU004_B1_Consumir_Servicio_Honorarios",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548752",
+      "t": "511781_HU005_B1_Consumir_Servicio_Incapacidad_Permanente_Parcial",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548753",
+      "t": "511781_HU006_B1_Consumir_Servicio_Auxilio_Funerario",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548755",
+      "t": "511781_HU007_F1_Mostrar_Informacion_Del_Caso_En_La_Consulta",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548756",
+      "t": "511781_HU008_F1_Asignar_Estado_De_Caso",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548757",
+      "t": "511781_HU009_F1_Consultar_Detalle_Del_Estado_De_Caso",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "548758",
+      "t": "511781_HU010_F1_Filtrar_Por_Estado_De_Caso",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "511781",
+      "ep": "83437",
+      "r": "Alejandra Calderón Pérez"
     }
   ],
   "kpi": {
-    "n_hu": 1209,
-    "n_hu_activas": 1029,
+    "n_hu": 1221,
+    "n_hu_activas": 1041,
     "hu_sin_feature": 8,
-    "n_feature": 67,
+    "n_feature": 68,
     "n_epic": 5,
-    "n_feature_con_hu": 66,
+    "n_feature_con_hu": 67,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.8313,
+    "pct_global": 0.8267,
     "term_global": 632,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -14109,7 +14252,7 @@
     "d": 0,
     "u": "frentes",
     "isEpics": true,
-    "feat_total": 66,
+    "feat_total": 67,
     "feat_ent": 19,
     "buckets": {
       "100": 0,

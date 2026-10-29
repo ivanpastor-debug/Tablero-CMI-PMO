@@ -1,24 +1,24 @@
 {
   "codigo": "020",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:14",
-  "archivo": "HU_020_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:02",
+  "archivo": "HU_020_20261029.csv",
   "epics": [
     {
       "i": "525431",
       "t": "OPERACIÓN",
       "n_f": 5,
       "n": 43,
-      "term": 28,
-      "pct": 0.8009
+      "term": 33,
+      "pct": 0.8698
     },
     {
       "i": "525428",
       "t": "SOPORTE",
       "n_f": 2,
       "n": 18,
-      "term": 12,
-      "pct": 0.8833
+      "term": 16,
+      "pct": 0.9444
     }
   ],
   "features": [
@@ -29,8 +29,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 16,
-      "term": 13,
-      "pct": 0.84,
+      "term": 14,
+      "pct": 0.9375,
       "n_pct": 16
     },
     {
@@ -40,8 +40,8 @@
       "ep": "525428",
       "ept": "SOPORTE",
       "n": 15,
-      "term": 10,
-      "pct": 0.8733,
+      "term": 13,
+      "pct": 0.9333,
       "n_pct": 15
     },
     {
@@ -51,8 +51,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 12,
-      "term": 7,
-      "pct": 0.7667,
+      "term": 9,
+      "pct": 0.8,
       "n_pct": 12
     },
     {
@@ -62,8 +62,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 10,
-      "term": 6,
-      "pct": 0.86,
+      "term": 8,
+      "pct": 0.93,
       "n_pct": 10
     },
     {
@@ -74,7 +74,7 @@
       "ept": "OPERACIÓN",
       "n": 4,
       "term": 2,
-      "pct": 0.675,
+      "pct": 0.75,
       "n_pct": 4
     },
     {
@@ -84,8 +84,8 @@
       "ep": "525428",
       "ept": "SOPORTE",
       "n": 3,
-      "term": 2,
-      "pct": 0.9333,
+      "term": 3,
+      "pct": 1.0,
       "n_pct": 3
     },
     {
@@ -566,10 +566,10 @@
     {
       "i": "540183",
       "t": "HU_010_ID_020_EXTRACCIONES COMPLETA - PROCESO DE EXTRACCIÓN PARA LA TABLA\nPREVISORAVIDA.MCB",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -577,10 +577,10 @@
     {
       "i": "540184",
       "t": "HU_005_ID_020_INCLUIR TABLEROS EN GOOGLE ANALITYCS",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -588,10 +588,10 @@
     {
       "i": "540185",
       "t": "HU_009_ID_020_EXTRACCIONES COMPLETA - PROCESO DE EXTRACCIÓN PARA LAS TABLAS PECONO_",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -599,10 +599,10 @@
     {
       "i": "540186",
       "t": "HU_008_ID_020_INCLUSIÓN DE NUEVOS CAMPOS QUE AYUDEN A CONFIRMAR LA EXISTENCIA DE FRAUDE",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527695",
       "ep": "525428",
       "r": "nicolas.barrera wimbu.co"
@@ -621,10 +621,10 @@
     {
       "i": "540189",
       "t": "HU_003_ID_020_PROCEDIMIENTO DE APLICACIÓN DE LA GUÍA DANE PARA ANONIMIZACIÓN DE BASES DE DATOS",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527697",
       "ep": "525428",
       "r": "Daniel German Hernandez Mayorga"
@@ -632,10 +632,10 @@
     {
       "i": "540190",
       "t": "HU_002_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527697",
       "ep": "525428",
       "r": "Daniel German Hernandez Mayorga"
@@ -643,10 +643,10 @@
     {
       "i": "540191",
       "t": "HU_006_ID_020_CIERRES MENSUALES DE LRS, RESERVA MATEMÁTICA, MOVIMIENTO RESERVAS- CIRCULAR 035",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "527006",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -654,10 +654,10 @@
     {
       "i": "540192",
       "t": "HU_004_ID_020_PROCEDIMEINTO DE APLICACIÓN DE ESTÁNDARES DDI Y DUBLIN CORE",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527697",
       "ep": "525428",
       "r": "Daniel German Hernandez Mayorga"
@@ -665,10 +665,10 @@
     {
       "i": "540195",
       "t": "HU_004_ID_020_CREACIÓN TABLERO DE ACTUALIZACIÓN DE TABLASAVANCE 3 - S06",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -698,10 +698,10 @@
     {
       "i": "546086",
       "t": "HU_002_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – LA ELABORACIÓN DEL PLAN GENERAL DE OPERACIONES ESTADÍSTICAS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -731,10 +731,10 @@
     {
       "i": "546089",
       "t": "HU_005_ID_020_AJUSTE PARÁMETROS – GASTOS ADMINISTRATIVOS MUSA",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -742,10 +742,10 @@
     {
       "i": "546090",
       "t": "HU_006_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO POBLACIÓN",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527697",
       "ep": "525428",
       "r": "jair.vargas wimbu.co"
@@ -753,10 +753,10 @@
     {
       "i": "546091",
       "t": "HU_007_ID_020_CIERRES MENSUALES – MODELO RECAUDO",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527006",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -826,11 +826,11 @@
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8308,
-    "term_global": 42,
+    "pct_global": 0.8952,
+    "term_global": 51,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 0,
+    "feature_100_sin_cerrar": 1,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
@@ -842,7 +842,7 @@
     "u": "épicas",
     "isEpics": true,
     "feat_total": 7,
-    "feat_ent": 0,
+    "feat_ent": 1,
     "buckets": {
       "100": 0,
       "75": 0,

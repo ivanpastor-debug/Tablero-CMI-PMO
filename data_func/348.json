@@ -1,8 +1,8 @@
 {
   "codigo": "348",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:14",
-  "archivo": "HU_348_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:02",
+  "archivo": "HU_348_20261029.csv",
   "epics": [
     {
       "i": "477771",
@@ -33,8 +33,8 @@
       "t": "Certificación Temáticos",
       "n_f": 9,
       "n": 279,
-      "term": 48,
-      "pct": 0.2052
+      "term": 64,
+      "pct": 0.2602
     },
     {
       "i": "186545",
@@ -57,8 +57,8 @@
       "t": "Certificación CORE",
       "n_f": 11,
       "n": 119,
-      "term": 57,
-      "pct": 0.4998
+      "term": 85,
+      "pct": 0.7257
     },
     {
       "i": "422689",
@@ -194,8 +194,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 52,
-      "term": 14,
-      "pct": 0.2985,
+      "term": 30,
+      "pct": 0.5938,
       "n_pct": 52
     },
     {
@@ -370,8 +370,8 @@
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 32,
-      "term": 1,
-      "pct": 0.07,
+      "term": 19,
+      "pct": 0.61,
       "n_pct": 32
     },
     {
@@ -546,8 +546,8 @@
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 19,
-      "term": 9,
-      "pct": 0.4947,
+      "term": 12,
+      "pct": 0.6463,
       "n_pct": 19
     },
     {
@@ -854,8 +854,8 @@
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 7,
-      "term": 0,
-      "pct": 0.04,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
@@ -20014,10 +20014,10 @@
     {
       "i": "539316",
       "t": "348_ARCHIVO_HU_ARCHF_010 Consultar almacenamiento configurado",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20025,10 +20025,10 @@
     {
       "i": "539319",
       "t": "348_ARCHIVO_HU_ARCHF_011 Configurar espacio de almacenamiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20036,10 +20036,10 @@
     {
       "i": "539322",
       "t": "348_ARCHIVO_HU_ARCHF_012 Consultar capacidad de unidades de almacenamiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20047,10 +20047,10 @@
     {
       "i": "539325",
       "t": "348_ARCHIVO_HU_ARCHF_013 Realizar almacenamiento de unidades individuales de conservación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20058,10 +20058,10 @@
     {
       "i": "539328",
       "t": "348_ARCHIVO_HU_ARCHF_014 Realizar movimiento de unidades individuales de conservación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20069,10 +20069,10 @@
     {
       "i": "539331",
       "t": "348_ARCHIVO_HU_ARCHF_015 Mover de forma masiva unidades de conservación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20080,10 +20080,10 @@
     {
       "i": "539334",
       "t": "348_ARCHIVO_HU_ARCHF_016 Realizar almacenamiento masivo de unidades de conservación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539315",
       "ep": "539200",
       "r": "David Felipe Vergara Bogota"
@@ -20498,10 +20498,10 @@
     {
       "i": "539451",
       "t": "348_TRANSVERSAL_HU-TRV-013 - Parametrización de Plantillas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20509,10 +20509,10 @@
     {
       "i": "539454",
       "t": "348_TRANSVERSAL_HU-TRV-013 Administración de plantillas de respuesta de correo-APROBADA-394",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20520,10 +20520,10 @@
     {
       "i": "539457",
       "t": "348_TRANSVERSAL_HU-TRV-014 - Administración Cuentas de Correo Electrónico v3",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20652,10 +20652,10 @@
     {
       "i": "539494",
       "t": "348_PQRS_HU 008 - Asignar PQRS o solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20674,10 +20674,10 @@
     {
       "i": "539500",
       "t": "348_PQRS_HU 010 - Reclasificación o retipificacion interna de la PQRS o solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20685,10 +20685,10 @@
     {
       "i": "539503",
       "t": "348_PQRS_HU 011 - Listar la clasificación documental y asociar documentos al expediente",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20696,10 +20696,10 @@
     {
       "i": "539506",
       "t": "348_PQRS_HU 012 - Gestionar traslado por competencia",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20707,10 +20707,10 @@
     {
       "i": "539509",
       "t": "348_PQRS_HU 013 - Asociar varias PQRS o solicitudes de una cuenta contrato para unificar respuesta",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20718,10 +20718,10 @@
     {
       "i": "539512",
       "t": "348_PQRS_HU 014 - Gestionar Peticiones Incompletas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20751,10 +20751,10 @@
     {
       "i": "539521",
       "t": "348_PQRS_HU 017 - Gestionar aprobación o rechazo para transacción en SAP",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -20762,43 +20762,43 @@
     {
       "i": "539524",
       "t": "348_PQRS_HU 018 - Gestionar Ampliación de términos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "539527",
       "t": "348_PQRS_HU 019 - Solicitar autorización para el estado de Ampliación de Términos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "539530",
       "t": "348_PQRS_HU 020 - Aprobar o Rechazar solicitud para ampliación de términos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "539533",
       "t": "348_PQRS_HU 021 - Gestionar Solicitud de Ampliación de Términos Respondida",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -20806,32 +20806,32 @@
     {
       "i": "539536",
       "t": "348_PQRS_HU 022 - Elaborar comunicación de respuesta al solicitante",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "539539",
       "t": "348_PQRS_HU 023 - Adjuntar archivos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "539542",
       "t": "348_PQRS_HU 024 - Realizar Trabajo Colaborativo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -20839,10 +20839,10 @@
     {
       "i": "539545",
       "t": "348_PQRS_HU 025 - Solicitar Visto Bueno, Aprobación y Firma",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20850,10 +20850,10 @@
     {
       "i": "539548",
       "t": "348_PQRS_HU 026 - Gestionar solicitud de Visto Bueno, Aprobación y Firma",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20861,10 +20861,10 @@
     {
       "i": "539551",
       "t": "348_PQRS_HU 027 - Gestionar rechazo de visto bueno o aprobación y firma",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -20872,10 +20872,10 @@
     {
       "i": "539554",
       "t": "348_PQRS_HU 028 - Generar Radicado de Salida y Declaracion como Documento de Archivo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -21895,10 +21895,10 @@
     {
       "i": "540883",
       "t": "Sistec-EPNT - HU-015 - Consultar ET y productos SAI",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21906,10 +21906,10 @@
     {
       "i": "540886",
       "t": "Sistec-EPNT - HU-016 - Validar y aprobar evaluación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21917,10 +21917,10 @@
     {
       "i": "540889",
       "t": "Sistec-EPNT - HU-017 - Consultar cartas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21928,10 +21928,10 @@
     {
       "i": "540892",
       "t": "Sistec-EPNT - HU-018 - Cerrar solicitud EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21939,10 +21939,10 @@
     {
       "i": "540895",
       "t": "Sistec-EPNT - HU-019 - Enviar documento a archivo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21950,10 +21950,10 @@
     {
       "i": "540898",
       "t": "Sistec-EPNT - HU-020 - Emitir recomendaciones EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21961,10 +21961,10 @@
     {
       "i": "540901",
       "t": "Sistec-EPNT - HU-021 - Eliminar soporte",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21972,10 +21972,10 @@
     {
       "i": "540904",
       "t": "Sistec-EPNT - HU-022 - Registrar plan de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21983,10 +21983,10 @@
     {
       "i": "540907",
       "t": "Sistec-EPNT - HU-023 - Aprobar plan de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -21994,10 +21994,10 @@
     {
       "i": "540910",
       "t": "Sistec-EPNT - HU-024 - Ver comentarios (Aprobar/Rechazar) informe evaluación nueva tecnología",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22005,10 +22005,10 @@
     {
       "i": "540913",
       "t": "Sistec-EPNT - HU-025 - Modificar estado - comentario (Aprobar/Rechazar) informe evaluación NT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22016,10 +22016,10 @@
     {
       "i": "540916",
       "t": "Sistec-EPNT - HU-026 - Crear memorando interno",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22027,10 +22027,10 @@
     {
       "i": "540919",
       "t": "Sistec-EPNT - HU-027 - Eliminar socialización (Agendamiento)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22038,10 +22038,10 @@
     {
       "i": "540922",
       "t": "Sistec-EPNT - HU-028 - Consultar socialización (Agendamiento)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22049,10 +22049,10 @@
     {
       "i": "540925",
       "t": "Sistec-EPNT - HU-029 - Actualizar socialización (Agendamiento)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22060,10 +22060,10 @@
     {
       "i": "540928",
       "t": "Sistec-EPNT - HU-030 - Consultar el registro de las socializaciones (Bitácora)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -24003,8 +24003,8 @@
     "n_feature_con_hu": 115,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.3321,
-    "term_global": 239,
+    "pct_global": 0.3528,
+    "term_global": 283,
     "feature_sin_frente": 7,
     "hu_sin_frente": 65,
     "feature_100_sin_cerrar": 3,
@@ -24019,7 +24019,7 @@
     "u": "épicas",
     "isEpics": true,
     "feat_total": 115,
-    "feat_ent": 25,
+    "feat_ent": 26,
     "buckets": {
       "100": 1,
       "75": 0,

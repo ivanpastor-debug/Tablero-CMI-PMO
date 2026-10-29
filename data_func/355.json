@@ -1,16 +1,16 @@
 {
   "codigo": "355",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:13",
-  "archivo": "HU_355_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:01",
+  "archivo": "HU_355_20261029.csv",
   "epics": [
     {
       "i": "392936",
       "t": "416_Vida_Grupo y evolutivos MCQA",
       "n_f": 12,
       "n": 459,
-      "term": 194,
-      "pct": 0.64
+      "term": 195,
+      "pct": 0.6463
     },
     {
       "i": "297933",
@@ -26,7 +26,7 @@
       "n_f": 4,
       "n": 117,
       "term": 28,
-      "pct": 0.6244
+      "pct": 0.6441
     },
     {
       "i": "385866",
@@ -34,7 +34,7 @@
       "n_f": 7,
       "n": 67,
       "term": 18,
-      "pct": 0.8815
+      "pct": 0.8751
     },
     {
       "i": "225897",
@@ -158,7 +158,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 150,
       "term": 73,
-      "pct": 0.5997,
+      "pct": 0.5981,
       "n_pct": 150
     },
     {
@@ -169,7 +169,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 72,
       "term": 36,
-      "pct": 0.8332,
+      "pct": 0.8392,
       "n_pct": 72
     },
     {
@@ -191,7 +191,7 @@
       "ept": "416_Transversales MCQA",
       "n": 53,
       "term": 17,
-      "pct": 0.6243,
+      "pct": 0.6677,
       "n_pct": 53
     },
     {
@@ -224,7 +224,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 43,
       "term": 20,
-      "pct": 0.7698,
+      "pct": 0.8116,
       "n_pct": 43
     },
     {
@@ -246,7 +246,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 32,
       "term": 5,
-      "pct": 0.5466,
+      "pct": 0.5513,
       "n_pct": 32
     },
     {
@@ -257,7 +257,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 32,
       "term": 12,
-      "pct": 0.5053,
+      "pct": 0.5134,
       "n_pct": 32
     },
     {
@@ -334,7 +334,7 @@
       "ept": "416_Soporte y Deuda SALUD Fase 1",
       "n": 23,
       "term": 0,
-      "pct": 0.8913,
+      "pct": 0.8574,
       "n_pct": 23
     },
     {
@@ -367,7 +367,7 @@
       "ept": "416_Soporte y Deuda SALUD Fase 1",
       "n": 16,
       "term": 2,
-      "pct": 0.85,
+      "pct": 0.8719,
       "n_pct": 16
     },
     {
@@ -388,8 +388,8 @@
       "ep": "392936",
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 13,
-      "term": 1,
-      "pct": 0.2377,
+      "term": 2,
+      "pct": 0.3115,
       "n_pct": 13
     },
     {
@@ -400,7 +400,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 13,
       "term": 3,
-      "pct": 0.7185,
+      "pct": 0.7069,
       "n_pct": 13
     },
     {
@@ -565,7 +565,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 5,
       "term": 0,
-      "pct": 0.694,
+      "pct": 0.624,
       "n_pct": 5
     },
     {
@@ -6431,7 +6431,7 @@
       "v": 0.17,
       "f": "394146",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Juan Sebastian Gachancipa Avila"
     },
     {
       "i": "392659",
@@ -6623,13 +6623,13 @@
     {
       "i": "393451",
       "t": "416_EV_VG_ RES_HU709_Campos para el archivo de reserva de prima no devengada",
-      "e": "8. Esperando Despliegue QA-UAT",
+      "e": "6.2 Ajustes DEV",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.45,
       "f": "393369",
       "ep": "392936",
-      "r": "Diego Fernando Gil Gomez"
+      "r": "Santiago Montero Garcia"
     },
     {
       "i": "393455",
@@ -6700,13 +6700,13 @@
     {
       "i": "393481",
       "t": "416_EV_VG_ SIN_HU352_Informes de gestión (seguimiento mantenimiento y seguimiento de siniestralidad)",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.45,
+      "v": 0.6,
       "f": "393412",
       "ep": "392936",
-      "r": "Santiago Montero Garcia"
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "393484",
@@ -7052,13 +7052,13 @@
     {
       "i": "394064",
       "t": "416_EV_VG_ EMI_HU579_Consulta de asegurados",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.45,
       "f": "393363",
       "ep": "392936",
-      "r": "Diego Humberto Puerta Villareal"
+      "r": "Yively Patricia Alvarez Boscan"
     },
     {
       "i": "394065",
@@ -7393,21 +7393,21 @@
     {
       "i": "394193",
       "t": "416_EV_VG_ NOV_HU387_Ajuste de planes poliza",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "10. En producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.17,
+      "v": 1.0,
       "f": "394146",
       "ep": "392936",
       "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "394197",
-      "t": "416_EV_VG_ NOV_ CC_HU728Gestión integral de movimientos y facturación",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "416_EV_VG_ NOV_ CC_HU728 Gestión integral de movimientos y facturación",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.3,
       "f": "394146",
       "ep": "392936",
       "r": "Juan Sebastian Gachancipa Avila"
@@ -7613,10 +7613,10 @@
     {
       "i": "394246",
       "t": "416_VG_ COT_HU168_Agregar Cotización v3 Coaseguro",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "394216",
       "ep": "392936",
       "r": "Miriam Guerrero Infante"
@@ -7745,10 +7745,10 @@
     {
       "i": "394272",
       "t": "416_VG_ EMI_HU244_Notas de Cobertura",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "394271",
       "ep": "392936",
       "r": "Jorge Luis Vargas Jimenez"
@@ -7756,13 +7756,13 @@
     {
       "i": "394273",
       "t": "416_VG_ EMI_HU446_Listado de Asegurados",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
+      "v": 0.5,
       "f": "394271",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Jose de la Cruz Espinel Mesa"
     },
     {
       "i": "394274",
@@ -8361,13 +8361,13 @@
     {
       "i": "394494",
       "t": "416_VG_ NOV_CC_HU387_Ajuste de planes",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.3,
       "f": "394418",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "394496",
@@ -9791,13 +9791,13 @@
     {
       "i": "398455",
       "t": "416_SALUD_NOV_HU772 - Retorno de Primas- Contabilidad",
-      "e": "6.2 Ajustes DEV",
+      "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.45,
+      "v": 0.8,
       "f": "385871",
       "ep": "385866",
-      "r": "Jhon Jardi Diaz Lora"
+      "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "398859",
@@ -10110,6 +10110,17 @@
     {
       "i": "400823",
       "t": "416_TRAN_ REASE_HU335_Estimación del deterioro de reaseguros",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "400816",
+      "ep": "397818",
+      "r": "Cristian David Franco Camacho"
+    },
+    {
+      "i": "400824",
+      "t": "416_TRAN_REA_HU342_Administración generación de formato",
       "e": "6.2 Ajustes DEV",
       "p": "DESARROLLO",
       "a": 1,
@@ -10119,26 +10130,15 @@
       "r": "Gustavo Eduardo Ortiz Yate"
     },
     {
-      "i": "400824",
-      "t": "416_TRAN_REA_HU342_Administración generación de formato",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.6,
-      "f": "400816",
-      "ep": "397818",
-      "r": "JENIFER AYALA AGUILAR"
-    },
-    {
       "i": "400825",
       "t": "416_TRAN_ REA_HU373_Retiro y entrada de cartera",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Juan Sifontez"
+      "r": "Angie Vanessa Guillen Yazo"
     },
     {
       "i": "400826",
@@ -10165,13 +10165,13 @@
     {
       "i": "400828",
       "t": "416_TRAN_ REA_HU381_Reinstalamento de contratos",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.45,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Megan Nicol Ibague Pinzon"
+      "r": "Angie Vanessa Guillen Yazo"
     },
     {
       "i": "400829",
@@ -10286,13 +10286,13 @@
     {
       "i": "406360",
       "t": "416_TRAN_ REASE_HU540_Distribución de Siniestros (proceso / reporte) (Manual)",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Megan Nicol Ibague Pinzon"
+      "r": "Angie Vanessa Guillen Yazo"
     },
     {
       "i": "406361",
@@ -10341,13 +10341,13 @@
     {
       "i": "406365",
       "t": "416_TRAN_ REASE_HU328_Cesión de valores asegurados y primas a los reaseguradores",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "400816",
       "ep": "397818",
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": "Karen Sofia Contreras Alfonso"
     },
     {
       "i": "406366",
@@ -11254,13 +11254,13 @@
     {
       "i": "420558",
       "t": "416_SALUD_SIN_CC-HU457 – Aumento del peso máximo permitido a 25 MB en el cargue de pruebas",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.95,
+      "v": 0.17,
       "f": "385910",
       "ep": "385866",
-      "r": "Diego Fernando Gil Gomez"
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "420559",
@@ -11535,7 +11535,7 @@
       "v": 0.2,
       "f": "394146",
       "ep": "392936",
-      "r": "Jose de la Cruz Espinel Mesa"
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "472263",
@@ -11573,13 +11573,13 @@
     {
       "i": "482088",
       "t": "416_REFAC_TRAN_ REASE_HU501_Gestionar Reaseguradores",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "JENIFER AYALA AGUILAR"
     },
     {
       "i": "482506",
@@ -11672,57 +11672,57 @@
     {
       "i": "482550",
       "t": "387_REFACT_REA_HU0500_Crear Reaseguradores",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "JENIFER AYALA AGUILAR"
     },
     {
       "i": "482551",
       "t": "416_REFACT_TRAN_ REASE_HU502_Ver información Reaseguradores",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "JENIFER AYALA AGUILAR"
     },
     {
       "i": "482553",
       "t": "416_REFACT_TRAN_ REASE_EHU503_Editar Reaseguradores",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "JENIFER AYALA AGUILAR"
     },
     {
       "i": "482555",
       "t": "416_REFACT_TRAN_ REASE_HU518_Registrar Tasas",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "Angie Vanessa Guillen Yazo"
     },
     {
       "i": "482557",
       "t": "416_REFACT_TRAN_ REASE_HU519_Gestionar Tasas",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "Angie Vanessa Guillen Yazo"
     },
     {
       "i": "482558",
@@ -11760,10 +11760,10 @@
     {
       "i": "482561",
       "t": "416_REFACT_TRAN_ REASE_HU290_Consultar contratos de reaseguros",
-      "e": "6. Desarrollo",
+      "e": "6.2 Ajustes DEV",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.45,
       "f": "400816",
       "ep": "397818",
       "r": "Jhon Alexander Silva Campos"
@@ -11782,13 +11782,13 @@
     {
       "i": "482563",
       "t": "416_REFACT_TRAN_ REASE_HU504_Actualización automática de reaseguradores",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Jhon Alexander Silva Campos"
+      "r": "JENIFER AYALA AGUILAR"
     },
     {
       "i": "482565",
@@ -12085,7 +12085,7 @@
       "v": 0.17,
       "f": "393412",
       "ep": "392936",
-      "r": ""
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "482602",
@@ -12327,7 +12327,7 @@
       "v": 0.17,
       "f": "394146",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482634",
@@ -12343,10 +12343,10 @@
     {
       "i": "482635",
       "t": "416_REFACT_VG_ COT_HU005_Consultar cotización",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "394216",
       "ep": "392936",
       "r": "Miriam Guerrero Infante"
@@ -12376,10 +12376,10 @@
     {
       "i": "482638",
       "t": "416_REFACT_VG_ COT_HU147_agregar cotización v2 Tomador",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "394216",
       "ep": "392936",
       "r": "Miriam Guerrero Infante"
@@ -12398,10 +12398,10 @@
     {
       "i": "482640",
       "t": "416_REFACT_VG_ COT_HU149_Agregar_cotización_v3_asegurados",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "394216",
       "ep": "392936",
       "r": "Miriam Guerrero Infante"
@@ -12409,10 +12409,10 @@
     {
       "i": "482641",
       "t": "416_REFACT_VG_ COT_HU153_Agregar Cotización v2 Siniestralidad",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "394216",
       "ep": "392936",
       "r": "Miriam Guerrero Infante"
@@ -12508,21 +12508,21 @@
     {
       "i": "482652",
       "t": "416_REFACT_VG_ COT_HU277_Editar datos Producto V4",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Ivan Camilo Pulido Ibarra"
+      "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "482653",
       "t": "416_REFACT_VG_ COT_HU278_Editar datos del Tomador V4",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "394216",
       "ep": "392936",
       "r": "Ivan Camilo Pulido Ibarra"
@@ -12893,10 +12893,10 @@
     {
       "i": "482690",
       "t": "416_REFACT_VG_ NOV_HU082_Cargue de Documentos",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.3,
       "f": "394418",
       "ep": "392936",
       "r": "Andres Esteban Saldarriaga Ramirez"
@@ -12958,7 +12958,7 @@
     },
     {
       "i": "482697",
-      "t": "416_REFACT_VG_ NOV_AHU303_signación o modificación de beneficiarios",
+      "t": "416_REFACT_VG_ NOV_AHU303_Asignación o modificación de beneficiarios",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -12976,7 +12976,7 @@
       "v": 0.2,
       "f": "394418",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Jhon Jardi Diaz Lora"
     },
     {
       "i": "482699",
@@ -13025,13 +13025,13 @@
     {
       "i": "482703",
       "t": "416_REFACT_VG_ SIN_HU172_Informacion de la póliza",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.45,
+      "v": 0.5,
       "f": "394516",
       "ep": "392936",
-      "r": "Santiago Montero Garcia"
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "482705",
@@ -13047,13 +13047,13 @@
     {
       "i": "482706",
       "t": "416_REFACT_VG_ SIN_HU175_Agregar solicitud reclamación Medios de pago siniestro",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.45,
       "f": "394516",
       "ep": "392936",
-      "r": "Cristhian Camilo Tejada Perdomo"
+      "r": "Santiago Montero Garcia"
     },
     {
       "i": "482707",
@@ -13102,13 +13102,13 @@
     {
       "i": "482711",
       "t": "416_REFACT_VG_ SIN_ HU186_Generar radicado",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.45,
       "f": "394516",
       "ep": "392936",
-      "r": "Cristhian Camilo Tejada Perdomo"
+      "r": "Jose Manuel Martinez Mendez"
     },
     {
       "i": "482712",
@@ -13174,7 +13174,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "482718",
@@ -13207,7 +13207,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482721",
@@ -13218,7 +13218,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482722",
@@ -13229,7 +13229,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482723",
@@ -13240,7 +13240,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482724",
@@ -13251,7 +13251,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "482725",
@@ -13350,7 +13350,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "482734",
@@ -13361,7 +13361,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "482735",
@@ -13372,7 +13372,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "482736",
@@ -13493,7 +13493,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482747",
@@ -13504,7 +13504,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482748",
@@ -13548,7 +13548,7 @@
       "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482752",
@@ -13812,7 +13812,7 @@
       "v": 0.3,
       "f": "396102",
       "ep": "392936",
-      "r": "Enyel Harold Ocampo Velsaquez"
+      "r": "Gustavo Eduardo Ortiz Yate"
     },
     {
       "i": "482778",
@@ -14455,13 +14455,13 @@
     {
       "i": "536527",
       "t": "355_VG_NOV_HU083_ENVIAR DOCUMENTOS A GESTOR DOCUMENTAL",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.17,
       "f": null,
       "ep": null,
-      "r": "Andres Esteban Saldarriaga Ramirez"
+      "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "545366",
@@ -14539,8 +14539,8 @@
     "n_feature_con_hu": 83,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.6801,
-    "term_global": 424,
+    "pct_global": 0.6842,
+    "term_global": 425,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 6,

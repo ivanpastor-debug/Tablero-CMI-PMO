@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-10-27",
-  "generado": "2026-10-27 12:13",
-  "archivo": "HU_419-RAMA_20261027.csv",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:01",
+  "archivo": "HU_419-RAMA_20261029.csv",
   "epics": [
     {
       "i": "373561",
@@ -10,7 +10,7 @@
       "n_f": 7,
       "n": 57,
       "term": 0,
-      "pct": 0.8509
+      "pct": 0.8667
     },
     {
       "i": "380257",
@@ -18,15 +18,15 @@
       "n_f": 7,
       "n": 53,
       "term": 0,
-      "pct": 0.7566
+      "pct": 0.7679
     },
     {
       "i": "399880",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_5",
       "n_f": 8,
       "n": 50,
-      "term": 3,
-      "pct": 0.852
+      "term": 0,
+      "pct": 0.846
     },
     {
       "i": "407898",
@@ -56,9 +56,9 @@
       "i": "531912",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n_f": 9,
-      "n": 24,
+      "n": 25,
       "term": 0,
-      "pct": 0.2217
+      "pct": 0.2328
     },
     {
       "i": "360689",
@@ -74,7 +74,7 @@
       "n_f": 3,
       "n": 17,
       "term": 0,
-      "pct": 0.6941
+      "pct": 0.7471
     }
   ],
   "features": [
@@ -151,8 +151,8 @@
       "ep": "399880",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_5",
       "n": 10,
-      "term": 3,
-      "pct": 0.86,
+      "term": 0,
+      "pct": 0.83,
       "n_pct": 10
     },
     {
@@ -295,7 +295,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_4",
       "n": 6,
       "term": 0,
-      "pct": 0.8,
+      "pct": 0.85,
       "n_pct": 6
     },
     {
@@ -339,7 +339,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
       "n": 6,
       "term": 0,
-      "pct": 0.7,
+      "pct": 0.85,
       "n_pct": 6
     },
     {
@@ -383,7 +383,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n": 5,
       "term": 0,
-      "pct": 0.68,
+      "pct": 0.86,
       "n_pct": 5
     },
     {
@@ -438,7 +438,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_4",
       "n": 4,
       "term": 0,
-      "pct": 0.75,
+      "pct": 0.825,
       "n_pct": 4
     },
     {
@@ -450,6 +450,17 @@
       "n": 4,
       "term": 0,
       "pct": 0.75,
+      "n_pct": 4
+    },
+    {
+      "i": "401379",
+      "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.275,
       "n_pct": 4
     },
     {
@@ -593,17 +604,6 @@
       "n": 3,
       "term": 0,
       "pct": 0.8333,
-      "n_pct": 3
-    },
-    {
-      "i": "401379",
-      "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 3,
-      "term": 0,
-      "pct": 0.2,
       "n_pct": 3
     },
     {
@@ -1436,10 +1436,10 @@
     {
       "i": "363632",
       "t": "419_PR_HU001_Atender_Solicitudes_Y_Novedades",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "360727",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -1447,10 +1447,10 @@
     {
       "i": "363634",
       "t": "419_PR_HU002_Rechazar_Solicitudes_Novedades",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "360727",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -1458,10 +1458,10 @@
     {
       "i": "363636",
       "t": "419_PR_HU003_Devolver_Solicitudes_Novedades",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "360727",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -1777,10 +1777,10 @@
     {
       "i": "377217",
       "t": "419_PR_HU001_Configurar_Etapa_Solicitud_V1",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "376238",
       "ep": "373561",
       "r": "Angela Maria Valbuena Aponte"
@@ -1788,10 +1788,10 @@
     {
       "i": "377222",
       "t": "419_PR_HU002_Listar_Configuración_Etapas_Solicitud_V1",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "376238",
       "ep": "373561",
       "r": "Angela Maria Valbuena Aponte"
@@ -1799,10 +1799,10 @@
     {
       "i": "377228",
       "t": "419_PR_HU003_Ver_Detalle_Configuración_Etapa_V1",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "376238",
       "ep": "373561",
       "r": "Angela Maria Valbuena Aponte"
@@ -1821,10 +1821,10 @@
     {
       "i": "377413",
       "t": "419_PR_HU001_Generar_Certificado_Cuenta",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "377386",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -3372,10 +3372,10 @@
     {
       "i": "414051",
       "t": "419_PR_HU001_Registrar_Orden_de_no_pago",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "414050",
       "ep": "417388",
       "r": "Angela Maria Valbuena Aponte"
@@ -3405,10 +3405,10 @@
     {
       "i": "416769",
       "t": "419_PR_HU002_Levantamiento_de_orden_de_no_pago",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "414050",
       "ep": "417388",
       "r": "Angela Maria Valbuena Aponte"
@@ -3493,10 +3493,10 @@
     {
       "i": "421350",
       "t": "419_PR_HU001_Inactivar_Catalogo",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 1.0,
+      "v": 0.9,
       "f": "427745",
       "ep": "399880",
       "r": "Angela Maria Valbuena Aponte"
@@ -3526,10 +3526,10 @@
     {
       "i": "427765",
       "t": "419_PR_HU002_Identificar_Entidad_Portal_Rama",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 1.0,
+      "v": 0.9,
       "f": "427745",
       "ep": "399880",
       "r": "Angela Maria Valbuena Aponte"
@@ -3537,10 +3537,10 @@
     {
       "i": "427778",
       "t": "419_PR_HU003_Ajustes_Configuración_Solicitudes",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 1.0,
+      "v": 0.9,
       "f": "427745",
       "ep": "399880",
       "r": "Angela Maria Valbuena Aponte"
@@ -3834,10 +3834,10 @@
     {
       "i": "459326",
       "t": "419_PR_HU003_Descargar_Resultados_Registro_y_levantamiento_Orden_de_No_Pago",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "414050",
       "ep": "417388",
       "r": "Angela Maria Valbuena Aponte"
@@ -4501,19 +4501,30 @@
       "f": "546446",
       "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "547686",
+      "t": "419_PB_TEC001_Arquitectura_De_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "401379",
+      "ep": "531912",
+      "r": "Daniel Felipe Socha Hurtado"
     }
   ],
   "kpi": {
-    "n_hu": 340,
-    "n_hu_activas": 339,
+    "n_hu": 341,
+    "n_hu_activas": 340,
     "hu_sin_feature": 9,
     "n_feature": 62,
     "n_epic": 9,
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7692,
-    "term_global": 75,
+    "pct_global": 0.7746,
+    "term_global": 72,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 1,

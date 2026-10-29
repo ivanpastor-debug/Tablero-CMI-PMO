@@ -1,9 +1,9 @@
 {
-  "generado": "2026-10-27 12:14",
+  "generado": "2026-10-29 11:02",
   "proyectos": {
     "004": {
-      "corte": "2026-10-27",
-      "archivo": "HU_004_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_004_20261029.csv",
       "kpi": {
         "n_hu": 223,
         "n_hu_activas": 169,
@@ -40,22 +40,22 @@
       }
     },
     "384": {
-      "corte": "2026-10-27",
-      "archivo": "HU_384_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_384_20261029.csv",
       "kpi": {
-        "n_hu": 5817,
-        "n_hu_activas": 5213,
+        "n_hu": 5867,
+        "n_hu_activas": 5257,
         "hu_sin_feature": 19,
-        "n_feature": 583,
+        "n_feature": 589,
         "n_epic": 34,
-        "n_feature_con_hu": 510,
-        "feature_sin_hu": 73,
+        "n_feature_con_hu": 515,
+        "feature_sin_hu": 74,
         "hu_omitidas": 0,
-        "pct_global": 0.8422,
-        "term_global": 2301,
+        "pct_global": 0.8436,
+        "term_global": 2315,
         "feature_sin_frente": 2,
         "hu_sin_frente": 7,
-        "feature_100_sin_cerrar": 88,
+        "feature_100_sin_cerrar": 86,
         "feature_estado_ajeno": 0,
         "feature_removido_con_hu": 1
       },
@@ -66,8 +66,8 @@
         "d": 1,
         "u": "épicas",
         "isEpics": true,
-        "feat_total": 510,
-        "feat_ent": 92,
+        "feat_total": 515,
+        "feat_ent": 90,
         "buckets": {
           "100": 1,
           "75": 0,
@@ -78,8 +78,8 @@
       }
     },
     "397": {
-      "corte": "2026-10-27",
-      "archivo": "HU_397_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_397_20261029.csv",
       "kpi": {
         "n_hu": 229,
         "n_hu_activas": 229,
@@ -116,8 +116,8 @@
       }
     },
     "355": {
-      "corte": "2026-10-27",
-      "archivo": "HU_355_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_355_20261029.csv",
       "kpi": {
         "n_hu": 1223,
         "n_hu_activas": 1124,
@@ -127,8 +127,8 @@
         "n_feature_con_hu": 83,
         "feature_sin_hu": 1,
         "hu_omitidas": 0,
-        "pct_global": 0.6801,
-        "term_global": 424,
+        "pct_global": 0.6842,
+        "term_global": 425,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
         "feature_100_sin_cerrar": 6,
@@ -154,8 +154,8 @@
       }
     },
     "416": {
-      "corte": "2026-10-27",
-      "archivo": "HU_416_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_416_20261029.csv",
       "kpi": {
         "n_hu": 242,
         "n_hu_activas": 242,
@@ -165,7 +165,7 @@
         "n_feature_con_hu": 7,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.2511,
+        "pct_global": 0.2544,
         "term_global": 0,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -192,18 +192,18 @@
       }
     },
     "421": {
-      "corte": "2026-10-27",
-      "archivo": "HU_421_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_421_20261029.csv",
       "kpi": {
-        "n_hu": 1209,
-        "n_hu_activas": 1029,
+        "n_hu": 1221,
+        "n_hu_activas": 1041,
         "hu_sin_feature": 8,
-        "n_feature": 67,
+        "n_feature": 68,
         "n_epic": 5,
-        "n_feature_con_hu": 66,
+        "n_feature_con_hu": 67,
         "feature_sin_hu": 1,
         "hu_omitidas": 0,
-        "pct_global": 0.8313,
+        "pct_global": 0.8267,
         "term_global": 632,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -218,7 +218,7 @@
         "d": 0,
         "u": "frentes",
         "isEpics": true,
-        "feat_total": 66,
+        "feat_total": 67,
         "feat_ent": 19,
         "buckets": {
           "100": 0,
@@ -230,8 +230,8 @@
       }
     },
     "419-DEP": {
-      "corte": "2026-10-27",
-      "archivo": "HU_419-DEP_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_419-DEP_20261029.csv",
       "kpi": {
         "n_hu": 1046,
         "n_hu_activas": 946,
@@ -241,8 +241,8 @@
         "n_feature_con_hu": 137,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7562,
-        "term_global": 344,
+        "pct_global": 0.7589,
+        "term_global": 346,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
         "feature_100_sin_cerrar": 1,
@@ -257,7 +257,7 @@
         "u": "épicas",
         "isEpics": true,
         "feat_total": 132,
-        "feat_ent": 44,
+        "feat_ent": 45,
         "buckets": {
           "100": 1,
           "75": 0,
@@ -268,19 +268,19 @@
       }
     },
     "419-RAMA": {
-      "corte": "2026-10-27",
-      "archivo": "HU_419-RAMA_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_419-RAMA_20261029.csv",
       "kpi": {
-        "n_hu": 340,
-        "n_hu_activas": 339,
+        "n_hu": 341,
+        "n_hu_activas": 340,
         "hu_sin_feature": 9,
         "n_feature": 62,
         "n_epic": 9,
         "n_feature_con_hu": 62,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.7692,
-        "term_global": 75,
+        "pct_global": 0.7746,
+        "term_global": 72,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
         "feature_100_sin_cerrar": 1,
@@ -306,8 +306,8 @@
       }
     },
     "348": {
-      "corte": "2026-10-27",
-      "archivo": "HU_348_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_348_20261029.csv",
       "kpi": {
         "n_hu": 2056,
         "n_hu_activas": 2048,
@@ -317,8 +317,8 @@
         "n_feature_con_hu": 115,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.3321,
-        "term_global": 239,
+        "pct_global": 0.3528,
+        "term_global": 283,
         "feature_sin_frente": 7,
         "hu_sin_frente": 65,
         "feature_100_sin_cerrar": 3,
@@ -333,7 +333,7 @@
         "u": "épicas",
         "isEpics": true,
         "feat_total": 115,
-        "feat_ent": 25,
+        "feat_ent": 26,
         "buckets": {
           "100": 1,
           "75": 0,
@@ -344,8 +344,8 @@
       }
     },
     "020": {
-      "corte": "2026-10-27",
-      "archivo": "HU_020_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_020_20261029.csv",
       "kpi": {
         "n_hu": 65,
         "n_hu_activas": 63,
@@ -355,11 +355,11 @@
         "n_feature_con_hu": 7,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.8308,
-        "term_global": 42,
+        "pct_global": 0.8952,
+        "term_global": 51,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
-        "feature_100_sin_cerrar": 0,
+        "feature_100_sin_cerrar": 1,
         "feature_estado_ajeno": 0,
         "feature_removido_con_hu": 0
       },
@@ -371,7 +371,7 @@
         "u": "épicas",
         "isEpics": true,
         "feat_total": 7,
-        "feat_ent": 0,
+        "feat_ent": 1,
         "buckets": {
           "100": 0,
           "75": 0,
@@ -382,56 +382,56 @@
       }
     },
     "420": {
-      "corte": "2026-10-27",
-      "archivo": "HU_420_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_420_20261029.csv",
       "kpi": {
-        "n_hu": 609,
-        "n_hu_activas": 595,
+        "n_hu": 612,
+        "n_hu_activas": 598,
         "hu_sin_feature": 0,
         "n_feature": 56,
         "n_epic": 12,
         "n_feature_con_hu": 56,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.9313,
-        "term_global": 479,
+        "pct_global": 0.9314,
+        "term_global": 486,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
-        "feature_100_sin_cerrar": 30,
+        "feature_100_sin_cerrar": 32,
         "feature_estado_ajeno": 0,
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.5833,
-        "estrategico": 0.1667,
+        "tactico": 0.625,
+        "estrategico": 0.25,
         "n": 12,
-        "d": 2,
+        "d": 3,
         "u": "épicas",
         "isEpics": true,
         "feat_total": 56,
-        "feat_ent": 31,
+        "feat_ent": 33,
         "buckets": {
-          "100": 2,
+          "100": 3,
           "75": 0,
-          "50": 10,
+          "50": 9,
           "20": 0,
           "0": 0
         }
       }
     },
     "457": {
-      "corte": "2026-10-27",
-      "archivo": "HU_457_20261027.csv",
+      "corte": "2026-10-29",
+      "archivo": "HU_457_20261029.csv",
       "kpi": {
         "n_hu": 304,
-        "n_hu_activas": 284,
+        "n_hu_activas": 282,
         "hu_sin_feature": 1,
         "n_feature": 51,
         "n_epic": 5,
         "n_feature_con_hu": 48,
         "feature_sin_hu": 3,
         "hu_omitidas": 0,
-        "pct_global": 0.9021,
+        "pct_global": 0.9066,
         "term_global": 235,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -457,20 +457,61 @@
         }
       }
     },
-    "419": {
-      "corte": "2026-10-27",
-      "archivo": "Consolidado 419 (DEP + RAMA · 2026-10-27)",
+    "456": {
+      "corte": "2026-10-29",
+      "archivo": "HU_456_20261029.csv",
       "kpi": {
-        "n_hu": 1386,
-        "n_hu_activas": 1285,
+        "n_hu": 16,
+        "n_hu_activas": 16,
+        "hu_sin_feature": 0,
+        "n_feature": 4,
+        "n_epic": 1,
+        "n_feature_con_hu": 4,
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.12,
+        "term_global": 0,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 0,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.24,
+        "estrategico": 0.1667,
+        "n": 6,
+        "d": 1,
+        "u": "entregables",
+        "isEpics": false,
+        "feat_total": 4,
+        "feat_ent": 0,
+        "epic_total": 1,
+        "hu_total": 16,
+        "pct_azure": 0.12,
+        "buckets": {
+          "100": 1,
+          "75": 0,
+          "50": 1,
+          "20": 0,
+          "0": 4
+        }
+      }
+    },
+    "419": {
+      "corte": "2026-10-29",
+      "archivo": "Consolidado 419 (DEP + RAMA · 2026-10-29)",
+      "kpi": {
+        "n_hu": 1387,
+        "n_hu_activas": 1286,
         "hu_sin_feature": 36,
         "n_feature": 219,
         "n_epic": 21,
         "n_feature_con_hu": 199,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7596,
-        "term_global": 419,
+        "pct_global": 0.7631,
+        "term_global": 418,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
         "feature_100_sin_cerrar": 2,
@@ -485,7 +526,7 @@
         "u": "funcionalidades",
         "isEpics": false,
         "feat_total": 194,
-        "feat_ent": 62,
+        "feat_ent": 63,
         "buckets": {
           "100": 125,
           "75": 0,
@@ -496,7 +537,7 @@
       }
     },
     "POS": {
-      "corte": "2026-10-27",
+      "corte": "2026-10-29",
       "archivo": "Consolidado Positiva Core (355 + 416)",
       "cmi": {
         "tactico": 0.239,

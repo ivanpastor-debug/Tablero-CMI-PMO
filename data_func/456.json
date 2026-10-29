@@ -1,0 +1,277 @@
+{
+  "codigo": "456",
+  "corte": "2026-10-29",
+  "generado": "2026-10-29 11:02",
+  "archivo": "HU_456_20261029.csv",
+  "epics": [
+    {
+      "i": "544970",
+      "t": "Memoria contractual consultable con IA",
+      "n_f": 4,
+      "n": 16,
+      "term": 0,
+      "pct": 0.12
+    }
+  ],
+  "features": [
+    {
+      "i": "545363",
+      "t": "Acceso y autenticación",
+      "e": "1. En Planeación",
+      "ep": "544970",
+      "ept": "Memoria contractual consultable con IA",
+      "n": 5,
+      "term": 0,
+      "pct": 0.12,
+      "n_pct": 5
+    },
+    {
+      "i": "545459",
+      "t": "Gestión documental",
+      "e": "1. En Planeación",
+      "ep": "544970",
+      "ept": "Memoria contractual consultable con IA",
+      "n": 5,
+      "term": 0,
+      "pct": 0.12,
+      "n_pct": 5
+    },
+    {
+      "i": "545458",
+      "t": "Gestión de usuarios y roles",
+      "e": "1. En Planeación",
+      "ep": "544970",
+      "ept": "Memoria contractual consultable con IA",
+      "n": 4,
+      "term": 0,
+      "pct": 0.12,
+      "n_pct": 4
+    },
+    {
+      "i": "545460",
+      "t": "Consulta y búsqueda con IA",
+      "e": "1. En Planeación",
+      "ep": "544970",
+      "ept": "Memoria contractual consultable con IA",
+      "n": 2,
+      "term": 0,
+      "pct": 0.12,
+      "n_pct": 2
+    }
+  ],
+  "hus": [
+    {
+      "i": "549160",
+      "t": "HU001 - Autenticación de usuario",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545363",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549162",
+      "t": "HU002 - Sincronizar usuarios de LDAP y asignar rol",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545458",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549163",
+      "t": "HU005 - Control de acceso por rol, categoría, módulo y grupo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545458",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549165",
+      "t": "HU008 - Creación de un caso por proyecto con su grupo responsable y las áreas participantes",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545459",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549166",
+      "t": "HU011 - Primer ingreso: aceptación de términos y condiciones, tour de bienvenida y verificación del contacto",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545363",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549167",
+      "t": "HU003 - Desbloqueo de cuenta bloqueada por intentos fallidos mediante código de verificación",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545363",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549168",
+      "t": "HU006 - Carga de documentos por categoría y organización en categorías",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545459",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549171",
+      "t": "HU009 - Registro de observaciones y reasignación del caso a cada área, con adjuntos, autor y fecha",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545459",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549172",
+      "t": "HU004 - Gestión de usuarios: crear, desactivar, reactivar y asignar rol",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545458",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549173",
+      "t": "HU012 - Administración de los permisos y del menú de cada rol",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545458",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549174",
+      "t": "HU007 - Versionado de documentos: versión nueva, histórico y vuelta a una versión anterior",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545459",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549175",
+      "t": "HT001 - Cambio obligatorio de contraseña temporal o vencida",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545363",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549176",
+      "t": "HU010 - Solicitud de concepto a un grupo, aprobación o rechazo con motivo y estados del caso hasta el cierre",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545459",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549177",
+      "t": "HT002 - Recuperación de contraseña olvidada mediante código de verificación",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545363",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549179",
+      "t": "HT003 - Consulta al asistente de IA con respuestas citadas, solo con los documentos permitidos al rol",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545460",
+      "ep": "544970",
+      "r": ""
+    },
+    {
+      "i": "549182",
+      "t": "HT004 - Búsqueda de documentos por categoría (contrato o proyecto), nombre y fecha de carga",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "545460",
+      "ep": "544970",
+      "r": ""
+    }
+  ],
+  "kpi": {
+    "n_hu": 16,
+    "n_hu_activas": 16,
+    "hu_sin_feature": 0,
+    "n_feature": 4,
+    "n_epic": 1,
+    "n_feature_con_hu": 4,
+    "feature_sin_hu": 0,
+    "hu_omitidas": 0,
+    "pct_global": 0.12,
+    "term_global": 0,
+    "feature_sin_frente": 0,
+    "hu_sin_frente": 0,
+    "feature_100_sin_cerrar": 0,
+    "feature_estado_ajeno": 0,
+    "feature_removido_con_hu": 0
+  },
+  "cmi": {
+    "tactico": 0.24,
+    "estrategico": 0.1667,
+    "n": 6,
+    "d": 1,
+    "u": "entregables",
+    "isEpics": false,
+    "feat_total": 4,
+    "feat_ent": 0,
+    "epic_total": 1,
+    "hu_total": 16,
+    "pct_azure": 0.12,
+    "buckets": {
+      "100": 1,
+      "75": 0,
+      "50": 1,
+      "20": 0,
+      "0": 4
+    }
+  }
+}

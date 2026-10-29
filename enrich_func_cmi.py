@@ -140,6 +140,26 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 0, '75': 0, '50': 0, '20': 0, '0': 2}
         }
 
+    # 6. 456: Innovación Aeronáutica Civil - Supervisión contractual (6 hitos: 1 al 100%, 1 al 50% -> 24% táctico, 16,67% estratégico)
+    # integrada con captura directa de Azure DevOps (1 Épica, 4 Funcionalidades, 16 HUs)
+    if cod == '456':
+        hu_tot = sum((f.get('n', 0) or 0) for f in feats)
+        pct_az = round(sum((f.get('pct', 0) or 0) * (f.get('n', 0) or 0) for f in feats) / hu_tot, 4) if hu_tot else 0.0
+        return {
+            'tactico': 0.2400,
+            'estrategico': round(1 / 6, 4),
+            'n': 6,
+            'd': 1,
+            'u': 'entregables',
+            'isEpics': False,
+            'feat_total': feat_tot,
+            'feat_ent': feat_ent,
+            'epic_total': len(valid_epics),
+            'hu_total': hu_tot,
+            'pct_azure': pct_az,
+            'buckets': {'100': 1, '75': 0, '50': 1, '20': 0, '0': 4}
+        }
+
     # 6. Cálculo general sobre Épicas válidas en Azure DevOps (incluye 004, 355, 384, 419-DEP, 419-RAMA, 457, etc.)
     buckets = {1.0: 0, 0.75: 0, 0.5: 0, 0.2: 0, 0.0: 0}
     scores = []

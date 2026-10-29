@@ -875,7 +875,7 @@ const PROJ_CALLOUT_META = {
   "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES", sub: "194 Funcionalidades en Azure", ent: "62 en prod.", pct: "32,0% cerrado", icon: "🗂" },
   "453": { tag: "Azure · 70 CUs", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "70 Casos de Uso medibles (CPE)", ent: "28 en estado 19. Entregado", pct: "40,0% cumplido", icon: "🎯" },
   "421": { tag: "Azure · 2 Frentes", title: "421 - PROYECTO BALÚ", sub: "66 Funcionalidades en Azure", ent: "19 en prod.", pct: "28,8% cerrado", icon: "🗂" },
-  "456": { tag: "Contractual · 6 Hitos", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "3 Fases Metodológicas e Innovación", ent: "1 de 6 entregables", pct: "16,7% cerrado", icon: "📐" },
+  "456": { tag: "Contractual · 6 Hitos | Azure · 4 Func.", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 Épica · 4 Funcionalidades en Azure (16 HU)", ent: "0 en prod. · 1/6 hitos", pct: "12,0% av. HU · 16,7% hitos", icon: "🗂" },
   "348": { tag: "Azure · 10 Épicas", title: "348 - PROYECTO SGDEA ACUEDUCTO", sub: "115 Funcionalidades en Azure", ent: "25 en prod.", pct: "21,7% cerrado", icon: "🗂" },
   "397": { tag: "Azure · 57 Épicas", title: "397 - PROYECTO CORE ANDINA", sub: "233 Funcionalidades en Azure", ent: "228 en prod.", pct: "97,9% cerrado", icon: "🗂" },
   "457": { tag: "Azure · 5 Épicas", title: "457 - PROYECTO PORTALES DIGITALES INTEGRADOS – LA EQUIDAD", sub: "48 Funcionalidades en Azure", ent: "43 en prod.", pct: "89,6% cerrado", icon: "🗂" }
@@ -888,7 +888,7 @@ function getBadgeTag(p, o) {
   const tip = p.id === "453"
     ? "Medición oficial frente a Casos de Uso (estados_453)"
     : p.id === "456"
-      ? "Supervisión contractual de 3 fases y 6 entregables"
+      ? "Supervisión contractual de 3 fases y 6 entregables · Captura directa Azure DevOps (1 Épica · 4 Funcionalidades · 16 HU)"
       : p.id === "419"
         ? "Medición oficial del archivo local PMO (125 de 466 entregables, excluyendo Seguimiento Transversal Linktic) con desglose de 194 funcionalidades Azure"
         : p.id === "421"
@@ -913,9 +913,9 @@ function getProjCallout(p) {
       ent = `${o.cmi.d} en estado 19. Entregado`;
       pctVal = `${pct(o.cmi.estrategico)} cumplido`;
     } else if (p.id === "456") {
-      sub = `3 Fases Metodológicas e Innovación`;
-      ent = `1 de 6 entregables`;
-      pctVal = `16,7% cerrado`;
+      sub = `${o.cmi.epic_total||1} Épica · ${o.cmi.feat_total||4} Funcionalidades en Azure (${o.cmi.hu_total||16} HU)`;
+      ent = `${o.cmi.feat_ent||0} en prod. · 1/6 hitos`;
+      pctVal = `${pct(o.cmi.pct_azure!=null?o.cmi.pct_azure:0.12)} av. HU · 16,7% hitos`;
     } else if (o.cmi.feat_total) {
       sub = `${o.cmi.feat_total} Funcionalidades en Azure`;
       ent = `${o.cmi.feat_ent} en prod.`;
@@ -949,7 +949,7 @@ const PROJ_DATES_META = {
   "419": { opDate: "27-Oct-2026", opSrc: "Azure V2 (27-Oct-2026) · Consolidado Local PMO (01-Oct-2026)", finDate: "01-Oct-2026", finFile: "Indicadores_419_V11 20260929.xlsx · 419_Resumen 20260929.xlsx" },
   "453": { opDate: "27-Oct-2026", opSrc: "Azure DevOps CU + HU (HU_453_20261027.csv)", finDate: "01-Oct-2026", finFile: "Indicadores_CPE 20260929.xlsx" },
   "421": { opDate: "27-Oct-2026", opSrc: "Azure DevOps (HU_421_20261027.csv)", finDate: "01-Oct-2026", finFile: "IndicadoresBalu 20260929.xlsx" },
-  "456": { opDate: "05-Oct-2026", opSrc: "CRONOGRAMA ACTUALIZADO - 051026.xlsx", finDate: "07-Oct-2026", finFile: "Indicadores456.xlsx (Corte 01-Oct-2026)" },
+  "456": { opDate: "29-Oct-2026", opSrc: "Captura Directa Azure DevOps (HU_456_20261029.csv) · Cronograma 05-Oct-2026", finDate: "07-Oct-2026", finFile: "Indicadores456.xlsx (Corte 01-Oct-2026)" },
   "348": { opDate: "27-Oct-2026", opSrc: "Azure DevOps (HU_348_20261027.csv)", finDate: "07-Oct-2026", finFile: "Indicadores 348.xlsx (Corte 01-Oct-2026)" },
   "397": { opDate: "27-Oct-2026", opSrc: "Azure DevOps (HU_397_20261027.csv)", finDate: "01-Oct-2026", finFile: "Libro contractual Colfondos Core · Andina Seguros" },
   "457": { opDate: "27-Oct-2026", opSrc: "Captura Directa Azure DevOps (HU_457_20261027.csv)", finDate: "Sin archivo local", finFile: "Pendiente cargue en Información Financiera" }
@@ -967,7 +967,7 @@ function fmtIsoDateEs(iso) {
 function getProjDates(p) {
   const base = PROJ_DATES_META[p.id] || { opDate: "27-Oct-2026", opSrc: "Azure DevOps", finDate: p.m ? "01-Oct-2026" : "Sin archivo local", finFile: (p.fx && p.fx.src) || "Sin libro financiero" };
   let opDate = base.opDate;
-  const keyMap = { "005": "004", "355": "355", "416": "416", "POS": "POS", "384": "384", "419": "419", "421": "421", "397": "397", "348": "348", "457": "457" };
+  const keyMap = { "005": "004", "355": "355", "416": "416", "POS": "POS", "384": "384", "419": "419", "421": "421", "456": "456", "397": "397", "348": "348", "457": "457" };
   if (p.id === "453" && typeof CPE453 !== "undefined" && CPE453 && CPE453.corte) {
     opDate = fmtIsoDateEs(CPE453.corte) || opDate;
   } else if (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos) {
@@ -1673,7 +1673,7 @@ function applyLiveFuncCmi() {
     "421": "421",
     "397": "397",
     "348": "348",
-    "457": "457"
+    "456": "456", "457": "457"
   };
 
   if (FUNC && FUNC.proyectos) {
@@ -1689,7 +1689,7 @@ function applyLiveFuncCmi() {
           d: c.d,
           u: c.u || "épicas",
           cmi: c,
-          isAzure: p.id !== "419"
+          isAzure: p.id !== "419" && p.id !== "456"
         };
       }
     });
@@ -1786,7 +1786,7 @@ function getFncCodeForProj(p) {
   const id = p.id;
   if (id === "005") return "004";
   if (id === "POS") return "355";
-  if (id === "456") return null;
+  if (id === "456") return "456";
   if (id === "453") return "453";
   return id;
 }
@@ -2102,11 +2102,11 @@ function funcCard(cod) {
         <div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="font-size:15px">🎯</span>
-            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
-            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">${cod==="419"?"Archivo Local PMO":"Azure DevOps en vivo"}</span>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":cod==="456"?"Supervisión Contractual (6 Hitos) + Captura Azure DevOps":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
+            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">${cod==="419"?"Archivo Local PMO":cod==="456"?"Contractual + Azure DevOps":"Azure DevOps en vivo"}</span>
           </div>
           <p class="hint" style="margin:3px 0 0 24px">
-            ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (125 certificados) con desglose en Azure de <b>${cmi.feat_total||194} funcionalidades</b>`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b>`}
+            ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (125 certificados) con desglose en Azure de <b>${cmi.feat_total||194} funcionalidades</b>`:cod==="456"?`Medición contractual sobre <b>6 entregables</b> (1 al 100%, 1 al 50%) con captura en vivo de <b>${cmi.epic_total||1} épica</b>, <b>${cmi.feat_total||4} funcionalidades</b> y <b>${cmi.hu_total||16} HU</b> en Azure DevOps`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b>`}
           </p>
         </div>
         <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
@@ -2147,7 +2147,7 @@ function funcCard(cod) {
         <b>Aclaración Metodológica PMO:</b> Para el proyecto <b>397 - PROYECTO CORE ANDINA</b>, el CMI se gobierna a nivel de <b>57 Épicas / Frentes contractuales</b>, con seguimiento interno complementario a sus <b>233 funcionalidades</b> en Azure DevOps.
       </div>`:cod==="419"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
         <b>Aclaración Metodológica PMO:</b> Para el proyecto <b>419- DEPOSITOS JUDICIALES</b>, el CMI oficial se rige según el <b>archivo maestro local (125 certificadas / 466 entregables)</b>, con seguimiento y trazabilidad simultánea a sus <b>${cmi.feat_total||194} funcionalidades</b> en Azure DevOps.
-      </div>`:""}
+      </div>`:cod==="456"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)"><b>Aclaración Metodológica PMO:</b> Para el proyecto <b>456 - PROYECTO INNOVACION AEREONAUTICA CIVIL</b>, los indicadores táctico (24,00%) y estratégico (16,67%) miden los <b>6 entregables contractuales</b> en 3 fases, integrando en esta sección la captura directa en vivo desde Azure DevOps del MVP (<b>${cmi.epic_total||1} épica · ${cmi.feat_total||4} funcionalidades · ${cmi.hu_total||16} HU</b>).</div>`:""}
     </div>` : ""}
 
     <div class="fstrip">
@@ -2591,7 +2591,7 @@ function cpe453Card(C) {
 
 function renderFncSection(p) {
   if (!p) return "";
-  if (p.id === "456") {
+  if (false && p.id === "456") {
     return `<div class="card" style="margin-top:18px;padding:16px 20px;border-left:4px solid var(--accent);background:var(--surface)">
       <div style="font-weight:700;font-size:14px;margin-bottom:4px">456 - PROYECTO INNOVACION AEREONAUTICA CIVIL (Supervisión Contractual)</div>
       <div class="hint" style="margin:0">Este proyecto no gestiona historias de usuario en Azure DevOps. Su seguimiento operativo se realiza directamente mediante la <b>Escala CMI por Fase</b> y la tabla de <b>Desviación del Cronograma Contractual</b> que se muestran arriba.</div>
