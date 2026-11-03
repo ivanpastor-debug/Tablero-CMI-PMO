@@ -1325,7 +1325,7 @@ function costBlock(title,sub,v){
   return `<div class="panel cost-b"><div class="cb-h"><h2>${title}</h2>${sub?`<p>${sub}</p>`:""}</div>
     <div class="cc-row3">${card("PPTO",COP(pp),"Presupuesto")}${card("FCST",COP(fc),"Forecast")}${card("REAL",COP(re),"Ejecutado")}</div>
     <div class="cc-row3">${vr("FCST vs PPTO",fc-pp,pp)}${vr("REAL vs PPTO",re-pp,pp)}${vr("REAL vs FCST",re-fc,fc)}</div>
-    <div class="cc-row2">${card("Cumpl. REAL / PPTO",pp?pct(re/pp):"—","Real ÷ presupuesto")}${card("Cumpl. REAL / FCST",fc?pct(re/fc):"—","Real ÷ forecast")}</div>
+    <div class="cc-row2">${card("Ejecución REAL/PPTO",pp?pct(re/pp):"—","Real ÷ presupuesto")}${card("Cumpl. REAL / FCST",fc?pct(re/fc):"—","Real ÷ forecast")}</div>
   </div>`;
 }
 function evmCard(title,v){
@@ -1335,7 +1335,7 @@ function evmCard(title,v){
   return `<div class="panel cost-b"><div class="cb-h"><h2>${title}</h2><p>PV ${P(pv)} · % avance ${pct(av)}</p></div>
     <div class="evm-c">
       <div class="evm-v"><span class="cc-l">CPI · índice de desempeño del costo</span><strong class="tone-${cpiBand(cpi)}">${nf2.format(cpi)}</strong></div>
-      <div class="evm-f"><div class="frac"><div><span>EV · Valor ganado</span><b>${P(ev)}</b></div><i></i><div><span>AC · Costo real acumulado</span><b>${P(ac)}</b></div></div></div>
+      <div class="evm-f"><div class="frac"><div><span>EV · Costo total ejecutado</span><b>${P(ev)}</b></div><i></i><div><span>AC · Costo real acumulado</span><b>${P(ac)}</b></div></div></div>
     </div>
     <div class="evm-c icff">
       <span class="cc-l">ICFF · índice FF</span><strong class="tone-${ib(icff)}">${nf2.format(icff)}</strong>
