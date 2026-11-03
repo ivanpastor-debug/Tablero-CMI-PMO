@@ -1,8 +1,8 @@
 {
   "codigo": "416",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "HU_416_20261029.csv",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "HU_416_20261103.csv",
   "epics": [
     {
       "i": "345822",
@@ -137,17 +137,6 @@
     {
       "i": "346308",
       "t": "416_AP_EMI_HU213_REASIGNACIÓN DE SOLICITUDES",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Andrés Stick Melo Figueroa"
-    },
-    {
-      "i": "346317",
-      "t": "416_AP_EMI_HU576_TIPO DE VIGENCIA ABIERTA",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -454,17 +443,6 @@
       "r": "Jesus David Sotaquira Chacon"
     },
     {
-      "i": "346293",
-      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "345655",
-      "ep": "345824",
-      "r": "Jesus David Sotaquira Chacon"
-    },
-    {
       "i": "346627",
       "t": "416_VI_EMI_HU272_CARÁTULA DE SOLICITUD DE PÓLIZAS",
       "e": "7.1 Pruebas QA",
@@ -520,17 +498,6 @@
       "r": "Jonathan Santiago Mora Lozano"
     },
     {
-      "i": "346311",
-      "t": "416_AP_EMI_HU253_EDITAR-DATOS DEL GRUPO ASEGURABLE",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
       "i": "346281",
       "t": "416_AP_EMI_HU187_DATOS GENERALES",
       "e": "5. Backlog General",
@@ -553,8 +520,8 @@
       "r": "Jonathan Santiago Mora Lozano"
     },
     {
-      "i": "346346",
-      "t": "416_AP_EMI_HU191_DATOS DEL TOMADOR",
+      "i": "346311",
+      "t": "416_AP_EMI_HU253_EDITAR-DATOS DEL GRUPO ASEGURABLE",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -881,6 +848,39 @@
       "f": "346272",
       "ep": "345822",
       "r": "María Alejandra Ramírez Zambrano"
+    },
+    {
+      "i": "346317",
+      "t": "416_AP_EMI_HU576_TIPO DE VIGENCIA ABIERTA",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Maria Alejandra Torrens Acosta"
+    },
+    {
+      "i": "346346",
+      "t": "416_AP_EMI_HU191_DATOS DEL TOMADOR",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Maria Alejandra Torrens Acosta"
+    },
+    {
+      "i": "346351",
+      "t": "416_AP_EMI_HU577_FACTURA POR ASEGURADO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Maria Alejandra Torrens Acosta"
     },
     {
       "i": "346330",
@@ -1375,17 +1375,6 @@
       "v": 0.9,
       "f": "346272",
       "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "346351",
-      "t": "416_AP_EMI_HU577_FACTURA POR ASEGURADO",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
       "r": "Omar Fernando Cantor Largo"
     },
     {
@@ -2762,6 +2751,17 @@
       "f": "346272",
       "ep": "345822",
       "r": "Yury Viviana Ocampo Baracaldo"
+    },
+    {
+      "i": "346293",
+      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Zuleyne Astrid Vanegas Arevalo"
     }
   ],
   "kpi": {

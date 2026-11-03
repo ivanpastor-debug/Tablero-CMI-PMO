@@ -1,16 +1,16 @@
 {
   "codigo": "020",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "HU_020_20261029.csv",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "HU_020_20261103.csv",
   "epics": [
     {
       "i": "525431",
       "t": "OPERACIÓN",
       "n_f": 5,
       "n": 43,
-      "term": 33,
-      "pct": 0.8698
+      "term": 34,
+      "pct": 0.9302
     },
     {
       "i": "525428",
@@ -18,7 +18,7 @@
       "n_f": 2,
       "n": 18,
       "term": 16,
-      "pct": 0.9444
+      "pct": 0.9778
     }
   ],
   "features": [
@@ -30,7 +30,7 @@
       "ept": "OPERACIÓN",
       "n": 16,
       "term": 14,
-      "pct": 0.9375,
+      "pct": 0.975,
       "n_pct": 16
     },
     {
@@ -41,7 +41,7 @@
       "ept": "SOPORTE",
       "n": 15,
       "term": 13,
-      "pct": 0.9333,
+      "pct": 0.9733,
       "n_pct": 15
     },
     {
@@ -52,7 +52,7 @@
       "ept": "OPERACIÓN",
       "n": 12,
       "term": 9,
-      "pct": 0.8,
+      "pct": 0.85,
       "n_pct": 12
     },
     {
@@ -63,7 +63,7 @@
       "ept": "OPERACIÓN",
       "n": 10,
       "term": 8,
-      "pct": 0.93,
+      "pct": 0.96,
       "n_pct": 10
     },
     {
@@ -74,7 +74,7 @@
       "ept": "OPERACIÓN",
       "n": 4,
       "term": 2,
-      "pct": 0.75,
+      "pct": 0.9,
       "n_pct": 4
     },
     {
@@ -95,8 +95,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 1,
-      "term": 0,
-      "pct": 0.5,
+      "term": 1,
+      "pct": 1.0,
       "n_pct": 1
     }
   ],
@@ -687,10 +687,10 @@
     {
       "i": "546085",
       "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO DIMENSIONES MENSUALES",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527697",
       "ep": "525428",
       "r": "daniel.hernandez wimbu.co"
@@ -698,10 +698,10 @@
     {
       "i": "546086",
       "t": "HU_002_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – LA ELABORACIÓN DEL PLAN GENERAL DE OPERACIONES ESTADÍSTICAS",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -709,10 +709,10 @@
     {
       "i": "546087",
       "t": "HU_003_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – EL ENFOQUE DIFERENCIAL E INTERSECCIONAL EN LA PRODUCCIÓN ESTADÍSTICA",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -720,10 +720,10 @@
     {
       "i": "546088",
       "t": "HU_004_ID_020_REVISIÓN DATOS POBLACIÓN – SUCURSAL MODELO SCG",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -742,10 +742,10 @@
     {
       "i": "546090",
       "t": "HU_006_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO POBLACIÓN",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527697",
       "ep": "525428",
       "r": "jair.vargas wimbu.co"
@@ -764,10 +764,10 @@
     {
       "i": "546092",
       "t": "HU_008_ID_020_AJUSTES GALENO V2 Y POSORA V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527006",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -775,10 +775,10 @@
     {
       "i": "546093",
       "t": "HU_009_ID_020_REVISIÓN MODELO SEGMENTACIÓN MUSA – PESO ÚLTIMOS DOS AÑOS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527008",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -808,10 +808,10 @@
     {
       "i": "546274",
       "t": "HU_012_ID_020_GESTIÓN Y COORDINACIÓN TÉCNICA",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "543997",
       "ep": "525431",
       "r": "vladimir.silva wimbu.co"
@@ -826,11 +826,11 @@
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8952,
-    "term_global": 51,
+    "pct_global": 0.946,
+    "term_global": 52,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 1,
+    "feature_100_sin_cerrar": 2,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
@@ -842,7 +842,7 @@
     "u": "épicas",
     "isEpics": true,
     "feat_total": 7,
-    "feat_ent": 1,
+    "feat_ent": 2,
     "buckets": {
       "100": 0,
       "75": 0,

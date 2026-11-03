@@ -1,8 +1,8 @@
 {
   "codigo": "419",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "Consolidado 419 (DEP + RAMA · 2026-10-29)",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "Consolidado 419 (DEP + RAMA · 2026-11-03)",
   "epics": [
     {
       "i": "417341",
@@ -10,7 +10,7 @@
       "n_f": 27,
       "n": 212,
       "term": 7,
-      "pct": 0.5783
+      "pct": 0.5854
     },
     {
       "i": "291675",
@@ -29,20 +29,20 @@
       "pct": 0.9115
     },
     {
+      "i": "531917",
+      "t": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n_f": 15,
+      "n": 104,
+      "term": 0,
+      "pct": 0.3948
+    },
+    {
       "i": "407644",
       "t": "419_EP_BAC_ PRIORIZACIÓN_6",
       "n_f": 10,
       "n": 88,
       "term": 7,
       "pct": 0.7926
-    },
-    {
-      "i": "531917",
-      "t": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n_f": 13,
-      "n": 73,
-      "term": 0,
-      "pct": 0.4822
     },
     {
       "i": "373564",
@@ -77,20 +77,20 @@
       "pct": 0.6906
     },
     {
-      "i": "332460",
-      "t": "419DPJ_EP_BAC_ BACKLOG",
-      "n_f": 3,
-      "n": 28,
-      "term": 0,
-      "pct": 0.2093
-    },
-    {
       "i": "517451",
       "t": "419DPJ_EP_BAC_MigraciónDatos",
       "n_f": 6,
       "n": 18,
       "term": 7,
       "pct": 0.6422
+    },
+    {
+      "i": "332460",
+      "t": "419DPJ_EP_BAC_ BACKLOG",
+      "n_f": 1,
+      "n": 4,
+      "term": 0,
+      "pct": 0.2
     },
     {
       "i": "321422",
@@ -115,6 +115,14 @@
       "n": 53,
       "term": 0,
       "pct": 0.7679
+    },
+    {
+      "i": "531912",
+      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n_f": 13,
+      "n": 52,
+      "term": 0,
+      "pct": 0.2338
     },
     {
       "i": "399880",
@@ -149,28 +157,20 @@
       "pct": 1.0
     },
     {
-      "i": "531912",
-      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n_f": 9,
-      "n": 25,
-      "term": 0,
-      "pct": 0.2328
-    },
-    {
-      "i": "360689",
-      "t": "419_EP_RAMA_ BACKLOG",
-      "n_f": 6,
-      "n": 23,
-      "term": 0,
-      "pct": 0.1757
-    },
-    {
       "i": "417388",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_7",
       "n_f": 3,
       "n": 17,
       "term": 0,
       "pct": 0.7471
+    },
+    {
+      "i": "360689",
+      "t": "419_EP_RAMA_ BACKLOG",
+      "n_f": 2,
+      "n": 10,
+      "term": 0,
+      "pct": 0.174
     }
   ],
   "features": [
@@ -208,6 +208,17 @@
       "n_pct": 26
     },
     {
+      "i": "532401",
+      "t": "419_PB_REFINAMIENTO_SPRINT 8",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 21,
+      "term": 0,
+      "pct": 0.3457,
+      "n_pct": 21
+    },
+    {
       "i": "376222",
       "t": "419_FT_BAC_PREGUNTAS_FRECUENTES_-_CHATBOT / PARAMETRIZACIÓN REGUNTAS FRECUENTES - R3",
       "e": "4. Cerrado",
@@ -220,7 +231,7 @@
     },
     {
       "i": "484565",
-      "t": "419_PB_INTEGRACIONES SPRINT 7",
+      "t": "419_PB_INTEGRACIONES",
       "e": "3. Entregado",
       "ep": "417341",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
@@ -244,8 +255,8 @@
       "i": "399896",
       "t": "419_PB_GESTION DE NOVEDADES USUARIOS ENTES COACTIVOS",
       "e": "1. En Planeacion",
-      "ep": "332460",
-      "ept": "419DPJ_EP_BAC_ BACKLOG",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 16,
       "term": 0,
       "pct": 0.2188,
@@ -253,7 +264,7 @@
     },
     {
       "i": "433502",
-      "t": "419_PB_REFINAMIENTO_SPRINT 7",
+      "t": "419_PB_REFINAMIENTO",
       "e": "3. Entregado",
       "ep": "417341",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
@@ -315,17 +326,6 @@
       "n": 12,
       "term": 0,
       "pct": 0.7,
-      "n_pct": 12
-    },
-    {
-      "i": "532401",
-      "t": "419_PB_REFINAMIENTO_SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 12,
-      "term": 0,
-      "pct": 0.4583,
       "n_pct": 12
     },
     {
@@ -463,7 +463,7 @@
     {
       "i": "498956",
       "t": "419_PB_EXCEPCIÓN BENEFICIARIO  ABONO A CUENTA PORTAL",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "417341",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 9,
@@ -538,17 +538,6 @@
       "n_pct": 8
     },
     {
-      "i": "379733",
-      "t": "419_PB_TRASLADO_DE_PROCESOS_MASIVOS",
-      "e": "3. Entregado",
-      "ep": "417341",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
-      "n": 8,
-      "term": 0,
-      "pct": 0.6,
-      "n_pct": 8
-    },
-    {
       "i": "388936",
       "t": "419_FT_BAC_CARGUE MASIVO PROCESOS ENTE - R4",
       "e": "3. Entregado",
@@ -557,6 +546,17 @@
       "n": 8,
       "term": 0,
       "pct": 0.7875,
+      "n_pct": 8
+    },
+    {
+      "i": "379733",
+      "t": "419_PB_TRASLADO_DE_PROCESOS_MASIVOS",
+      "e": "3. Entregado",
+      "ep": "417341",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
+      "n": 8,
+      "term": 0,
+      "pct": 0.6,
       "n_pct": 8
     },
     {
@@ -615,17 +615,6 @@
       "n_pct": 8
     },
     {
-      "i": "518009",
-      "t": "PB_REFINAMIENTO",
-      "e": "1. En Planeacion",
-      "ep": "332460",
-      "ept": "419DPJ_EP_BAC_ BACKLOG",
-      "n": 8,
-      "term": 0,
-      "pct": 0.195,
-      "n_pct": 8
-    },
-    {
       "i": "486335",
       "t": "419_PB_ANULACION ORDEN DE PAGO",
       "e": "3. Entregado",
@@ -633,7 +622,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 8,
       "term": 0,
-      "pct": 0.525,
+      "pct": 0.675,
       "n_pct": 8
     },
     {
@@ -804,7 +793,7 @@
     {
       "i": "433487",
       "t": "419_PB_REGISTRO Y LEVANTAMIENTO DEL BLOQUEO PREVENTIVO DE FORMA MASIVA",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "417341",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 7,
@@ -875,7 +864,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.5714,
+      "pct": 0.4857,
       "n_pct": 7
     },
     {
@@ -996,7 +985,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 6,
       "term": 0,
-      "pct": 0.5167,
+      "pct": 0.5667,
       "n_pct": 6
     },
     {
@@ -1187,6 +1176,28 @@
       "n_pct": 5
     },
     {
+      "i": "532770",
+      "t": "PB_CLAVE TRANSACCIONAL POR CONTINGENCIA (BIOMETRIA - COBIS)",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "551785",
+      "t": "SP7_PB_ORDEN DE PAGO MASIVO POR ARCHIVO - ABONO A CUENTA (ACH) (CARGUE, VALIDACION, INGRESO, AUTORIZACIONES, RECHAZO)",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
       "i": "319597",
       "t": "419_FT_BAC_AUTENTICACION_DE_USUARIOS (INCLUIDO_MULTIUSUARIO)",
       "e": "4. Cerrado",
@@ -1261,17 +1272,6 @@
       "n": 4,
       "term": 0,
       "pct": 0.5,
-      "n_pct": 4
-    },
-    {
-      "i": "532770",
-      "t": "PB_CLAVE TRANSACCIONAL POR CONTINGENCIA (BIOMETRIA - COBIS)",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 4,
-      "term": 0,
-      "pct": 0.2,
       "n_pct": 4
     },
     {
@@ -2089,6 +2089,17 @@
       "n_pct": 7
     },
     {
+      "i": "546446",
+      "t": "PR_CREACIÓN PROCESOS – MASIVO",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 7,
+      "term": 0,
+      "pct": 0.2571,
+      "n_pct": 7
+    },
+    {
       "i": "360590",
       "t": "419_FT_RAMA_ADMINISTRACIÓN_DE_CATALOGOS",
       "e": "4. Cerrado",
@@ -2210,25 +2221,36 @@
       "n_pct": 5
     },
     {
-      "i": "532582",
-      "t": "PR_TRASLADO MASIVO",
+      "i": "401379",
+      "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
       "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.32,
       "n_pct": 5
     },
     {
-      "i": "546446",
-      "t": "PR_CREACIÓN PROCESOS – MASIVO",
+      "i": "532582",
+      "t": "PR_TRASLADO MASIVO",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
       "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "546349",
+      "t": "PR_SOLICITUD NOVEDADES DE CUENTA JUDICIAL",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.168,
       "n_pct": 5
     },
     {
@@ -2276,17 +2298,6 @@
       "n_pct": 4
     },
     {
-      "i": "401379",
-      "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 4,
-      "term": 0,
-      "pct": 0.275,
-      "n_pct": 4
-    },
-    {
       "i": "405324",
       "t": "419_FT_ RAMA_CONTROL DUAL - R5",
       "e": "3. Entregado",
@@ -2310,7 +2321,7 @@
     },
     {
       "i": "421344",
-      "t": "419_PR_REFINAMIENTO SPRINT 7",
+      "t": "419_PR_REFINAMIENTO",
       "e": "3. Entregado",
       "ep": "417388",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
@@ -2320,30 +2331,41 @@
       "n_pct": 4
     },
     {
-      "i": "531944",
-      "t": "PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO MASIVA",
+      "i": "532415",
+      "t": "PR_CREACIÓN PROCESOS – INDIVIDUAL",
       "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.225,
+      "n_pct": 4
+    },
+    {
+      "i": "532536",
+      "t": "PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO INDIVIDUAL",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.35,
       "n_pct": 4
     },
     {
       "i": "532569",
       "t": "PR_TRASLADO INDIVIDUAL",
       "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
       "pct": 0.2,
       "n_pct": 4
     },
     {
-      "i": "546349",
-      "t": "PR_SOLICITUD NOVEDADES DE CUENTA JUDICIAL",
+      "i": "546422",
+      "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – INDIVIDUAL",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
@@ -2433,6 +2455,28 @@
       "i": "403271",
       "t": "419_FT_RAMA_FLUJO DE AUTORIZACION CENTRALIZADA",
       "e": "1. En Planeacion",
+      "ep": "360689",
+      "ept": "419_EP_RAMA_ BACKLOG",
+      "n": 3,
+      "term": 0,
+      "pct": 0.3,
+      "n_pct": 3
+    },
+    {
+      "i": "532409",
+      "t": "419_PR_REFINAMIENTO SPRINT 8",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.1733,
+      "n_pct": 3
+    },
+    {
+      "i": "517951",
+      "t": "PR_PARAMETRIZACIÓN CUENTAS JUDICIALES SIN SISTEMA PROCESAL",
+      "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 3,
@@ -2441,14 +2485,25 @@
       "n_pct": 3
     },
     {
-      "i": "532536",
-      "t": "PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO INDIVIDUAL",
+      "i": "551692",
+      "t": "PR_RECIBIR Y ALMACENAR PROCESO (CREACION SISTEMA PROCESAL)",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 3,
       "term": 0,
-      "pct": 0.3,
+      "pct": 0.2,
+      "n_pct": 3
+    },
+    {
+      "i": "551764",
+      "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – MASIVO",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 3
     },
     {
@@ -2507,30 +2562,8 @@
       "n_pct": 2
     },
     {
-      "i": "532415",
-      "t": "PR_CREACIÓN PROCESOS – INDIVIDUAL",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 2,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 2
-    },
-    {
       "i": "532627",
       "t": "PR_TRASLADO AUTOMÁTICO DE PROCESO - SISTEMAS PROCESALES",
-      "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
-      "n": 2,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 2
-    },
-    {
-      "i": "546422",
-      "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – INDIVIDUAL",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
@@ -2548,39 +2581,6 @@
       "n": 1,
       "term": 1,
       "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "521821",
-      "t": "419_FT_RAMA_REFINAMIENTO",
-      "e": "1. En Planeacion",
-      "ep": "360689",
-      "ept": "419_EP_RAMA_ BACKLOG",
-      "n": 1,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 1
-    },
-    {
-      "i": "517951",
-      "t": "PR_PARAMETRIZACIÓN CUENTAS JUDICIALES SIN SISTEMA PROCESAL",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 1,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 1
-    },
-    {
-      "i": "532409",
-      "t": "419_PR_REFINAMIENTO SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 1,
-      "term": 0,
-      "pct": 0.12,
       "n_pct": 1
     }
   ],
@@ -6002,8 +6002,8 @@
       "p": "EXCLUIR",
       "a": 0,
       "v": null,
-      "f": "379733",
-      "ep": "417341",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -7807,7 +7807,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8005,7 +8005,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8016,7 +8016,7 @@
       "a": 0,
       "v": null,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8027,7 +8027,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8038,7 +8038,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8248,7 +8248,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "405881",
@@ -8259,7 +8259,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "405885",
@@ -8270,7 +8270,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "405890",
@@ -8281,7 +8281,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "405896",
@@ -8292,7 +8292,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "406622",
@@ -8368,7 +8368,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8379,7 +8379,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8390,7 +8390,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8401,7 +8401,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8412,7 +8412,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8423,7 +8423,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -8996,7 +8996,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "414905",
@@ -9051,7 +9051,7 @@
       "v": 0.6,
       "f": "405870",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "415885",
@@ -10206,7 +10206,7 @@
       "v": 0.6,
       "f": "465250",
       "ep": "417341",
-      "r": "Carlos Alberto Valero Peña"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "465431",
@@ -10228,7 +10228,7 @@
       "v": 0.6,
       "f": "465250",
       "ep": "417341",
-      "r": "Carlos Alberto Valero Peña"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "465727",
@@ -10239,7 +10239,7 @@
       "v": 0.6,
       "f": "465250",
       "ep": "417341",
-      "r": "Carlos Alberto Valero Peña"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "465808",
@@ -10250,7 +10250,7 @@
       "v": 0.6,
       "f": "465250",
       "ep": "417341",
-      "r": "Carlos Alberto Valero Peña"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "465810",
@@ -10261,7 +10261,7 @@
       "v": 0.6,
       "f": "465250",
       "ep": "417341",
-      "r": "Carlos Alberto Valero Peña"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "465916",
@@ -10693,17 +10693,6 @@
       "r": "Jhon Fredy Valencia Naranjo"
     },
     {
-      "i": "474926",
-      "t": "419_PB_HU002_Ajuste_Creación_Usuarios_Ente_Manual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
-      "r": "Hellen Alejandra Rincon Soler"
-    },
-    {
       "i": "474988",
       "t": "419_PB_HU001_Cargar_y_descargar_plantilla_fraccionamiento_masivo.",
       "e": "7.1  Pruebas QA",
@@ -11117,8 +11106,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11327,7 +11316,7 @@
       "a": 1,
       "v": 0.5,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Lina Maria Usme Marin"
     },
     {
@@ -11360,7 +11349,7 @@
       "a": 0,
       "v": null,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Ricardo Andres Guzman Guzman"
     },
     {
@@ -11370,8 +11359,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Carlos Andres Lopez"
     },
     {
@@ -11795,13 +11784,13 @@
     {
       "i": "498729",
       "t": "419_PB_HU004_Rechazar_Anulación_Orden_De_Pago",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "486335",
       "ep": "417341",
-      "r": "Cristhian Giraldo Orozco"
+      "r": "Estiward Alexander Duque Cortes"
     },
     {
       "i": "498730",
@@ -12015,24 +12004,24 @@
     {
       "i": "505247",
       "t": "419_PB_PREC_HU001_Generar_solicitud_prenota",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "505228",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "505252",
       "t": "419_PB_PREE_HU002_Enviar_solicitud_prenota",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "505228",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "505253",
@@ -12043,18 +12032,18 @@
       "v": 0.6,
       "f": "505228",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "505256",
       "t": "419_PB_PGAE_HU004_Enviar_Movimientos_de_Pago_BAC",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "505228",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "505372",
@@ -12129,8 +12118,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.16,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Daniel Felipe Socha Hurtado"
     },
     {
@@ -12339,7 +12328,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -12350,7 +12339,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -12361,7 +12350,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -12372,7 +12361,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -12383,7 +12372,7 @@
       "a": 1,
       "v": 0.2,
       "f": "399896",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
@@ -12428,7 +12417,7 @@
       "v": 0.6,
       "f": "498165",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "514675",
@@ -12472,7 +12461,7 @@
       "v": 0.6,
       "f": "498165",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "515718",
@@ -12613,8 +12602,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12624,8 +12613,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12635,8 +12624,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12646,8 +12635,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "518009",
-      "ep": "332460",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12785,13 +12774,13 @@
     {
       "i": "519479",
       "t": "419_PB_HU007_Arquitectura_De_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "486335",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Estiward Alexander Duque Cortes"
     },
     {
       "i": "519492",
@@ -12906,13 +12895,13 @@
     {
       "i": "525161",
       "t": "419_PB_TEC007_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "486335",
       "ep": "417341",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Estiward Alexander Duque Cortes"
     },
     {
       "i": "525735",
@@ -13599,10 +13588,10 @@
     {
       "i": "535013",
       "t": "419_PB_HU002_Autorizacion_Solicitud_Pago_Centralizado",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "535006",
       "ep": "531917",
       "r": "Paula Andrea Maldonado Pamplona"
@@ -13621,13 +13610,13 @@
     {
       "i": "535020",
       "t": "419_PB_HU004_Autorizacion_Reversion_Pago_Centralizado",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "535024",
@@ -13638,7 +13627,7 @@
       "v": 0.8,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "535044",
@@ -13836,7 +13825,7 @@
       "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "538322",
@@ -13902,7 +13891,7 @@
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "539592",
@@ -13913,7 +13902,7 @@
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "539593",
@@ -13979,7 +13968,7 @@
       "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "540569",
@@ -13990,7 +13979,7 @@
       "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "540595",
@@ -14001,7 +13990,7 @@
       "v": 0.4,
       "f": "535006",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Paula Andrea Maldonado Pamplona"
     },
     {
       "i": "540608",
@@ -14045,7 +14034,7 @@
       "v": 0.4,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "543051",
@@ -14090,6 +14079,94 @@
       "f": "545854",
       "ep": "_sin_frente",
       "r": "Nelson Boton"
+    },
+    {
+      "i": "551789",
+      "t": "419_PB_HU001_Cargar_Archivo_Masivo_de_Ordenes_de_Pago",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551791",
+      "t": "419_PB_HU002_Autorizar_Rechazar_Cargue_Masivo_de_Ordenes_de_Pago",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551793",
+      "t": "419_PB_HU003_Procesar_y_Generar_Orden_de_Pago_Oficina",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551794",
+      "t": "419_PB_HU004_Procesar_y_Generar_Orden_de_Pago_Abono_a_Cuenta",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551796",
+      "t": "419_PB_HU005_Consulta_Registros_no_Procesados_de_Cargue_Masivo_de_Ordenes de Pago",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551798",
+      "t": "419_PB_CUE_CC_005_Ajuste_Creación_Usuarios_Ente_Manual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551815",
+      "t": "419_PB_Refinamiento_Validación_SARLAFT_según_Configuración",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "552545",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532770",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "360574",
@@ -16387,7 +16464,7 @@
       "a": 1,
       "v": 0.2,
       "f": "403271",
-      "ep": "531912",
+      "ep": "360689",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -16398,7 +16475,7 @@
       "a": 1,
       "v": 0.2,
       "f": "403271",
-      "ep": "531912",
+      "ep": "360689",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17376,8 +17453,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "521821",
-      "ep": "360689",
+      "f": "532409",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17466,7 +17543,7 @@
       "v": 0.2,
       "f": "517951",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "532374",
@@ -17475,8 +17552,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "531944",
-      "ep": "360689",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17486,8 +17563,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "531944",
-      "ep": "360689",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17497,8 +17574,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "531944",
-      "ep": "360689",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17508,8 +17585,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "531944",
-      "ep": "360689",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17575,7 +17652,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532569",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17586,7 +17663,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532569",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17597,7 +17674,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532569",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17608,7 +17685,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532569",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17619,7 +17696,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532582",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17630,7 +17707,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532582",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17641,7 +17718,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532582",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17652,7 +17729,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532582",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17663,7 +17740,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532582",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17674,7 +17751,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532627",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17685,7 +17762,7 @@
       "a": 1,
       "v": 0.2,
       "f": "532627",
-      "ep": "360689",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -17707,7 +17784,7 @@
       "a": 1,
       "v": 0.5,
       "f": "403271",
-      "ep": "531912",
+      "ep": "360689",
       "r": "Daniel Felipe Socha Hurtado"
     },
     {
@@ -17763,7 +17840,7 @@
       "v": 0.2,
       "f": "546422",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "546436",
@@ -17774,7 +17851,7 @@
       "v": 0.2,
       "f": "546422",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "546449",
@@ -17841,18 +17918,216 @@
       "f": "401379",
       "ep": "531912",
       "r": "Daniel Felipe Socha Hurtado"
+    },
+    {
+      "i": "549954",
+      "t": "419_PB_TEC001_Arquitectura de Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "517951",
+      "ep": "531912",
+      "r": "Yuliana Delgado Osorio"
+    },
+    {
+      "i": "549994",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "517951",
+      "ep": "531912",
+      "r": "Yuliana Delgado Osorio"
+    },
+    {
+      "i": "550383",
+      "t": "419_PR_TEC001_Arquitectura_de_Datos",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "532415",
+      "ep": "531912",
+      "r": "Yesica Johana Ospina Patiño"
+    },
+    {
+      "i": "550384",
+      "t": "419_PR_TEC001_Arquitectura_de_Datos",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Yesica Johana Ospina Patiño"
+    },
+    {
+      "i": "550385",
+      "t": "419_PR_TEC001_Arquitectura_de_Datos",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546422",
+      "ep": "531912",
+      "r": "Yuliana Delgado Osorio"
+    },
+    {
+      "i": "550637",
+      "t": "419_PB_TEC001_Arquitectura de Datos",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "546349",
+      "ep": "531912",
+      "r": "Steven Florez Hernández"
+    },
+    {
+      "i": "551319",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "401379",
+      "ep": "531912",
+      "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "551598",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532415",
+      "ep": "531912",
+      "r": "Yesica Johana Ospina Patiño"
+    },
+    {
+      "i": "551738",
+      "t": "419_PR_RAP_HU001- Capturar_y_Consultar_proceso_con_sistema_procesal",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551692",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551742",
+      "t": "419_PR_RAP_HU002- Recibir_proceso_del_sistema_procesal",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551692",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551763",
+      "t": "419_PR_RAP_HU003 - Crear_proceso_en_PWT_II_Banco_y_asociar_cuenta_judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551692",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551766",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "546422",
+      "ep": "531912",
+      "r": "Yuliana Delgado Osorio"
+    },
+    {
+      "i": "551773",
+      "t": "419_PR_H001_Cargar_Archivo_Actualizaciones_Partes_Proceso",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551764",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551775",
+      "t": "419_PR_H002_Actualizar_Partes_Proceso_Masiva",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551764",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551776",
+      "t": "419_PR_H003_Consultar_Registros_No_procesados",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551764",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "551780",
+      "t": "419_PR_Ajuste_Validacion_Codigo_Interno_Solicitud_Apertura_Cuenta",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532409",
+      "ep": "531912",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "552062",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "546446",
+      "ep": "531912",
+      "r": "Yesica Johana Ospina Patiño"
+    },
+    {
+      "i": "552063",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532536",
+      "ep": "531912",
+      "r": "Nicolas Giraldo Arenas"
     }
   ],
   "kpi": {
-    "n_hu": 1387,
-    "n_hu_activas": 1286,
-    "hu_sin_feature": 36,
+    "n_hu": 1412,
+    "n_hu_activas": 1311,
+    "hu_sin_feature": 40,
     "n_feature": 219,
     "n_epic": 21,
     "n_feature_con_hu": 199,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7631,
+    "pct_global": 0.7539,
     "term_global": 418,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

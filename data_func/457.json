@@ -1,16 +1,16 @@
 {
   "codigo": "457",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "HU_457_20261029.csv",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "HU_457_20261103.csv",
   "epics": [
     {
       "i": "292522",
-      "t": "Nuevas Funcionalidades",
+      "t": "Nuevas Funcionalidades- 2026",
       "n_f": 3,
       "n": 107,
-      "term": 62,
-      "pct": 0.7661
+      "term": 63,
+      "pct": 0.7716
     },
     {
       "i": "94588",
@@ -33,8 +33,8 @@
       "t": "Portal Intermediarios",
       "n_f": 15,
       "n": 38,
-      "term": 37,
-      "pct": 0.9789
+      "term": 38,
+      "pct": 1.0
     },
     {
       "i": "149672",
@@ -51,21 +51,21 @@
       "t": "Portal Intermediarios",
       "e": "2. En Curso",
       "ep": "292522",
-      "ept": "Nuevas Funcionalidades",
+      "ept": "Nuevas Funcionalidades- 2026",
       "n": 39,
       "term": 31,
-      "pct": 0.9013,
+      "pct": 0.8936,
       "n_pct": 39
     },
     {
       "i": "294898",
       "t": "Portal Formación",
-      "e": "2. En Curso",
+      "e": "4. Cerrado",
       "ep": "292522",
-      "ept": "Nuevas Funcionalidades",
+      "ept": "Nuevas Funcionalidades- 2026",
       "n": 39,
       "term": 27,
-      "pct": 0.7592,
+      "pct": 0.7859,
       "n_pct": 39
     },
     {
@@ -73,10 +73,10 @@
       "t": "Portal Clientes",
       "e": "2. En Curso",
       "ep": "292522",
-      "ept": "Nuevas Funcionalidades",
+      "ept": "Nuevas Funcionalidades- 2026",
       "n": 29,
-      "term": 4,
-      "pct": 0.5934,
+      "term": 5,
+      "pct": 0.5883,
       "n_pct": 29
     },
     {
@@ -427,8 +427,8 @@
       "ep": "94578",
       "ept": "Portal Intermediarios",
       "n": 2,
-      "term": 1,
-      "pct": 0.6,
+      "term": 2,
+      "pct": 1.0,
       "n_pct": 2
     },
     {
@@ -2702,10 +2702,10 @@
     {
       "i": "291640",
       "t": "PDI_HU0039_Eliminacion de Vulnerabilidades Detectadas(Parte 1)",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "225993",
       "ep": "94578",
       "r": "Julian Enrique Moreno Samudio"
@@ -2735,7 +2735,7 @@
     {
       "i": "295077",
       "t": "NPDF_HU0001_Cambios_estructura_Actualizaciones_Portal_Funequidad",
-      "e": "10. En Producción",
+      "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
@@ -3274,10 +3274,10 @@
     {
       "i": "405939",
       "t": "NPDI_HU0030_Módulo_Circular 050_Submódulo_PNV",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "259028",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3285,13 +3285,13 @@
     {
       "i": "406474",
       "t": "NPDI_HU0031_Módulo_PNV_Rol administrador",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "259028",
       "ep": "292522",
-      "r": "Julian Enrique Moreno Samudio"
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "406481",
@@ -3472,13 +3472,13 @@
     {
       "i": "437283",
       "t": "NPDC_HU0017_ Ofertas_de_Temporada_Rol_Adminsitrador",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "295069",
       "ep": "292522",
-      "r": "Julian Enrique Moreno Samudio"
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "437333",
@@ -3538,10 +3538,10 @@
     {
       "i": "458542",
       "t": "NPDC_HU0028_Submódulo Certificaciones_ certificado_de_póliza_RCC_y_RCE",
-      "e": "8.1 Puebas UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3835,13 +3835,13 @@
     {
       "i": "528817",
       "t": "NPDF_HU0029_Migrar_a_Bricks_las_páginas_del_bloque_Home",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "294898",
       "ep": "292522",
-      "r": "Wilmer Javier Castellanos Martinez"
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "534076",
@@ -3857,10 +3857,10 @@
     {
       "i": "534077",
       "t": "NPDF_HU0031_Migrar_a_Bricks_las_páginas_del_bloque_La Equidad",
-      "e": "3.  Aprobación de HU y Artefactos",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.16,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3868,10 +3868,10 @@
     {
       "i": "534078",
       "t": "NPDF_HU0032_Migrar_a_Bricks_las_páginas_del_bloque_Fundequidad",
-      "e": "3.  Aprobación de HU y Artefactos",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.16,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3879,10 +3879,10 @@
     {
       "i": "538620",
       "t": "NPDF_HU0033_Migrar_a_Bricks_las_páginas_del_bloque_Canales_de_Atención",
-      "e": "3.  Aprobación de HU y Artefactos",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.16,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3890,10 +3890,10 @@
     {
       "i": "538621",
       "t": "NPDF_HU0034_Migrar_a_Bricks_las_páginas_del_bloque_Normatividad",
-      "e": "3.  Aprobación de HU y Artefactos",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.16,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3901,10 +3901,10 @@
     {
       "i": "538622",
       "t": "NPDF_HU0035_Migrar_a_Bricks_las_páginas_del_bloque_Blog_Posts",
-      "e": "3.  Aprobación de HU y Artefactos",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.16,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3912,46 +3912,46 @@
     {
       "i": "538623",
       "t": "NPDF_HU0036_Migrar_a_Bricks_las_páginas_del_bloque_Slider",
-      "e": "0. Pendiente Levantamiento",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
-      "r": ""
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "538624",
       "t": "NPDF_HU0037_Migrar_a_Bricks_las_páginas_del_bloque_Otras_páginas_sueltas",
-      "e": "0. Pendiente Levantamiento",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
-      "r": ""
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "538625",
       "t": "NPDF_HU0038_Migrar_a_Bricks_las_páginas_del_bloque_ARL",
-      "e": "0. Pendiente Levantamiento",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
-      "r": ""
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "538626",
       "t": "NPDF_HU0039_Realizar_QA_Final_y_Desplegar_el_Sitio_Migrado_a_Producción",
-      "e": "0. Pendiente Levantamiento",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.2,
       "f": "294898",
       "ep": "292522",
-      "r": ""
+      "r": "Sergio Andres Rodriguez Toloza"
     }
   ],
   "kpi": {
@@ -3963,8 +3963,8 @@
     "n_feature_con_hu": 48,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9066,
-    "term_global": 235,
+    "pct_global": 0.9116,
+    "term_global": 237,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 0,
@@ -3972,18 +3972,18 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.64,
-    "estrategico": 0.4,
+    "tactico": 0.74,
+    "estrategico": 0.6,
     "n": 5,
-    "d": 2,
+    "d": 3,
     "u": "épicas",
     "isEpics": true,
     "feat_total": 48,
-    "feat_ent": 43,
+    "feat_ent": 44,
     "buckets": {
-      "100": 2,
+      "100": 3,
       "75": 0,
-      "50": 2,
+      "50": 1,
       "20": 1,
       "0": 0
     }

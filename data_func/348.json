@@ -1,8 +1,8 @@
 {
   "codigo": "348",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "HU_348_20261029.csv",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "HU_348_20261103.csv",
   "epics": [
     {
       "i": "477771",
@@ -33,8 +33,8 @@
       "t": "Certificación Temáticos",
       "n_f": 9,
       "n": 279,
-      "term": 64,
-      "pct": 0.2602
+      "term": 97,
+      "pct": 0.3738
     },
     {
       "i": "186545",
@@ -128,8 +128,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 64,
-      "term": 0,
-      "pct": 0.04,
+      "term": 15,
+      "pct": 0.265,
       "n_pct": 64
     },
     {
@@ -194,8 +194,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 52,
-      "term": 30,
-      "pct": 0.5938,
+      "term": 48,
+      "pct": 0.9262,
       "n_pct": 52
     },
     {
@@ -22071,10 +22071,10 @@
     {
       "i": "540931",
       "t": "Sistec-EPNT - HU-031 - Eliminar el registro de las socializaciones (Bitácora)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22082,10 +22082,10 @@
     {
       "i": "540934",
       "t": "Sistec-EPNT - HU-032 - Actualizar el registro de las socializaciones (Bitácora)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22093,10 +22093,10 @@
     {
       "i": "540937",
       "t": "Sistec-EPNT - HU-033 - Aprobar/Rechazar informe evaluación de la nueva tecnología",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22104,10 +22104,10 @@
     {
       "i": "540940",
       "t": "Sistec-EPNT - HU-034 - Elaborar presentación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22115,10 +22115,10 @@
     {
       "i": "540943",
       "t": "Sistec-EPNT - HU-035 - Editar evaluación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22126,10 +22126,10 @@
     {
       "i": "540946",
       "t": "Sistec-EPNT - HU-036 - Enviar a Gestión del conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22137,10 +22137,10 @@
     {
       "i": "540949",
       "t": "Sistec-EPNT - HU-037 - Programar socialización (agendamiento)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22148,10 +22148,10 @@
     {
       "i": "540952",
       "t": "Sistec-EPNT - HU-038 - Registrar socialización y anexar soportes",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22159,10 +22159,10 @@
     {
       "i": "540955",
       "t": "Sistec-EPNT - HU-039 - Generar reportes estadísticos de apropiación del conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22170,10 +22170,10 @@
     {
       "i": "540958",
       "t": "Sistec-EPNT - HU-040 - Administrar resultados de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22181,10 +22181,10 @@
     {
       "i": "540961",
       "t": "Sistec-EPNT - HU-041 - Consultar resultados de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22192,10 +22192,10 @@
     {
       "i": "540964",
       "t": "Sistec-EPNT - HU-042 - Registrar resultados de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22203,10 +22203,10 @@
     {
       "i": "540967",
       "t": "Sistec-EPNT - HU-043 - Editar resultado de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22214,10 +22214,10 @@
     {
       "i": "540970",
       "t": "Sistec-EPNT - HU-044 - Eliminar resultado de pruebas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22225,10 +22225,10 @@
     {
       "i": "540973",
       "t": "Sistec-EPNT - HU-045 - Administrar visita técnica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22236,10 +22236,10 @@
     {
       "i": "540976",
       "t": "Sistec-EPNT - HU-046 - Consultar visita técnica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22247,10 +22247,10 @@
     {
       "i": "540979",
       "t": "Sistec-EPNT - HU-047 - Registrar visita técnica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22258,10 +22258,10 @@
     {
       "i": "540982",
       "t": "Sistec-EPNT - HU-048 - Editar visita técnica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22313,10 +22313,10 @@
     {
       "i": "540998",
       "t": "Sistec-GNET - HU-001 - Crear Solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22324,10 +22324,10 @@
     {
       "i": "541001",
       "t": "Sistec-GNET - HU-002 - Consultar Solicitudes",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22335,10 +22335,10 @@
     {
       "i": "541004",
       "t": "Sistec-GNET - HU-003 - Asignar Solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22346,10 +22346,10 @@
     {
       "i": "541007",
       "t": "Sistec-GNET - HU-004 - Asignar / Rechazar Asignación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22357,10 +22357,10 @@
     {
       "i": "541010",
       "t": "Sistec-GNET - HU-005 - Consultar Directorio de Expertos y Páginas Amarillas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22368,10 +22368,10 @@
     {
       "i": "541013",
       "t": "Sistec-GNET - HU-006 - Crear Planificación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22379,10 +22379,10 @@
     {
       "i": "541016",
       "t": "Sistec-GNET - HU-007 - Editar Planificación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22390,10 +22390,10 @@
     {
       "i": "541019",
       "t": "Sistec-GNET - HU-008 - Eliminar Planificación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22401,10 +22401,10 @@
     {
       "i": "541022",
       "t": "Sistec-GNET - HU-009 - Cerrar Solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22412,10 +22412,10 @@
     {
       "i": "541025",
       "t": "Sistec-GNET - HU-010 - Asociar documentación a solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22423,10 +22423,10 @@
     {
       "i": "541028",
       "t": "Sistec-GNET - HU-011 - Programar mesa de trabajo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22434,10 +22434,10 @@
     {
       "i": "541031",
       "t": "Sistec-GNET - HU-012 - Relacionar Líder a NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22445,10 +22445,10 @@
     {
       "i": "541034",
       "t": "Sistec-GNET - HU-013 - Elaborar documento de anteproyecto",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22456,10 +22456,10 @@
     {
       "i": "541037",
       "t": "Sistec-GNET - HU-014 - Editar documento de anteproyecto",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22467,10 +22467,10 @@
     {
       "i": "541040",
       "t": "Sistec-GNET - HU-015 - Consultar - asociar NT-ET que afectan la solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -24003,8 +24003,8 @@
     "n_feature_con_hu": 115,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.3528,
-    "term_global": 283,
+    "pct_global": 0.3682,
+    "term_global": 316,
     "feature_sin_frente": 7,
     "hu_sin_frente": 65,
     "feature_100_sin_cerrar": 3,

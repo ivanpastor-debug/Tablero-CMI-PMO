@@ -1,48 +1,40 @@
 {
   "codigo": "421",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "HU_421_20261029.csv",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "HU_421_20261103.csv",
   "epics": [
+    {
+      "i": "83469",
+      "t": "Afiliaciones y Novedades",
+      "n_f": 29,
+      "n": 445,
+      "term": 278,
+      "pct": 0.856
+    },
     {
       "i": "83437",
       "t": "Sistema de Recaudo y Cartera",
       "n_f": 27,
-      "n": 407,
+      "n": 409,
       "term": 182,
-      "pct": 0.7487
-    },
-    {
-      "i": "83469",
-      "t": "Afiliaciones y Novedades",
-      "n_f": 27,
-      "n": 359,
-      "term": 220,
-      "pct": 0.8355
+      "pct": 0.7551
     },
     {
       "i": "83503",
       "t": "Funcionalidades Transversales",
       "n_f": 9,
       "n": 123,
-      "term": 116,
-      "pct": 0.9597
-    },
-    {
-      "i": "207836",
-      "t": "Control de Sprints",
-      "n_f": 2,
-      "n": 86,
-      "term": 58,
-      "pct": 0.9446
+      "term": 117,
+      "pct": 0.9686
     },
     {
       "i": "417182",
       "t": "Automatización_QA Balu",
       "n_f": 2,
-      "n": 58,
-      "term": 56,
-      "pct": 0.981
+      "n": 63,
+      "term": 58,
+      "pct": 0.9371
     }
   ],
   "features": [
@@ -54,7 +46,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 91,
       "term": 35,
-      "pct": 0.7292,
+      "pct": 0.7353,
       "n_pct": 91
     },
     {
@@ -64,8 +56,8 @@
       "ep": "83503",
       "ept": "Funcionalidades Transversales",
       "n": 83,
-      "term": 78,
-      "pct": 0.9523,
+      "term": 79,
+      "pct": 0.9607,
       "n_pct": 83
     },
     {
@@ -76,15 +68,15 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 61,
       "term": 6,
-      "pct": 0.6443,
+      "pct": 0.6492,
       "n_pct": 61
     },
     {
       "i": "313337",
       "t": "001_Afiliaciones - Transversales",
       "e": "1. En Planeacion",
-      "ep": "207836",
-      "ept": "Control de Sprints",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
       "n": 56,
       "term": 30,
       "pct": 0.9273,
@@ -96,10 +88,10 @@
       "e": "1. En Planeacion",
       "ep": "417182",
       "ept": "Automatización_QA Balu",
-      "n": 44,
-      "term": 43,
-      "pct": 0.9909,
-      "n_pct": 44
+      "n": 47,
+      "term": 44,
+      "pct": 0.9511,
+      "n_pct": 47
     },
     {
       "i": "98062",
@@ -109,7 +101,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 42,
       "term": 27,
-      "pct": 0.806,
+      "pct": 0.8167,
       "n_pct": 42
     },
     {
@@ -120,7 +112,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 36,
       "term": 13,
-      "pct": 0.6425,
+      "pct": 0.6469,
       "n_pct": 36
     },
     {
@@ -131,15 +123,15 @@
       "ept": "Afiliaciones y Novedades",
       "n": 33,
       "term": 23,
-      "pct": 0.8627,
+      "pct": 0.8642,
       "n_pct": 33
     },
     {
       "i": "85834",
       "t": "000_Web Service",
       "e": "2. En Curso",
-      "ep": "207836",
-      "ept": "Control de Sprints",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
       "n": 30,
       "term": 28,
       "pct": 0.9677,
@@ -164,7 +156,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 24,
       "term": 0,
-      "pct": 0.3058,
+      "pct": 0.3817,
       "n_pct": 24
     },
     {
@@ -175,7 +167,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 23,
       "term": 6,
-      "pct": 0.8565,
+      "pct": 0.8783,
       "n_pct": 23
     },
     {
@@ -208,7 +200,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 20,
       "term": 2,
-      "pct": 0.714,
+      "pct": 0.719,
       "n_pct": 20
     },
     {
@@ -274,7 +266,7 @@
       "ept": "Funcionalidades Transversales",
       "n": 17,
       "term": 16,
-      "pct": 0.9706,
+      "pct": 0.9765,
       "n_pct": 17
     },
     {
@@ -296,7 +288,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 16,
       "term": 15,
-      "pct": 0.9875,
+      "pct": 0.9906,
       "n_pct": 16
     },
     {
@@ -307,7 +299,18 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 16,
       "term": 0,
-      "pct": 0.1606,
+      "pct": 0.1975,
+      "n_pct": 16
+    },
+    {
+      "i": "417189",
+      "t": "Automatización Front E2E",
+      "e": "1. En Planeacion",
+      "ep": "417182",
+      "ept": "Automatización_QA Balu",
+      "n": 16,
+      "term": 14,
+      "pct": 0.8962,
       "n_pct": 16
     },
     {
@@ -318,7 +321,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 15,
       "term": 7,
-      "pct": 0.6953,
+      "pct": 0.702,
       "n_pct": 15
     },
     {
@@ -331,17 +334,6 @@
       "term": 5,
       "pct": 0.9833,
       "n_pct": 6
-    },
-    {
-      "i": "417189",
-      "t": "Automatización Front E2E",
-      "e": "1. En Planeacion",
-      "ep": "417182",
-      "ept": "Automatización_QA Balu",
-      "n": 14,
-      "term": 13,
-      "pct": 0.95,
-      "n_pct": 14
     },
     {
       "i": "437764",
@@ -384,7 +376,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 11,
       "term": 0,
-      "pct": 0.4744,
+      "pct": 0.4856,
       "n_pct": 9
     },
     {
@@ -410,6 +402,17 @@
       "n_pct": 10
     },
     {
+      "i": "457292",
+      "t": "023_Transferencia de Recaudo a Base de dato de Positiva (primer alcancce)",
+      "e": "2. En Curso",
+      "ep": "83437",
+      "ept": "Sistema de Recaudo y Cartera",
+      "n": 10,
+      "term": 0,
+      "pct": 0.33,
+      "n_pct": 9
+    },
+    {
       "i": "459471",
       "t": "024_Mejoras consultas recaudo Cotizante y Aportante",
       "e": "2. En Curso",
@@ -417,7 +420,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 10,
       "term": 9,
-      "pct": 0.94,
+      "pct": 0.95,
       "n_pct": 10
     },
     {
@@ -476,17 +479,6 @@
       "n_pct": 8
     },
     {
-      "i": "457292",
-      "t": "023_Transferencia de Recaudo a Base de dato de Positiva (primer alcancce)",
-      "e": "2. En Curso",
-      "ep": "83437",
-      "ept": "Sistema de Recaudo y Cartera",
-      "n": 8,
-      "term": 0,
-      "pct": 0.3914,
-      "n_pct": 7
-    },
-    {
       "i": "437162",
       "t": "028_Ajustes_Producción",
       "e": "1. En Planeacion",
@@ -516,7 +508,7 @@
       "ept": "Funcionalidades Transversales",
       "n": 7,
       "term": 6,
-      "pct": 0.9286,
+      "pct": 0.9714,
       "n_pct": 7
     },
     {
@@ -538,7 +530,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 6,
       "term": 5,
-      "pct": 0.9,
+      "pct": 0.9167,
       "n_pct": 6
     },
     {
@@ -1024,7 +1016,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -1035,7 +1027,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Santiago Gonzalez Perdomo"
     },
     {
@@ -1057,7 +1049,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Sergio Lara"
     },
     {
@@ -1134,7 +1126,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -1794,7 +1786,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Harol Alberto Paez Hernandez"
     },
     {
@@ -1805,7 +1797,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -1849,7 +1841,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paola Peña"
     },
     {
@@ -1860,7 +1852,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paola Peña"
     },
     {
@@ -1882,7 +1874,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -1904,7 +1896,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Harol Alberto Paez Hernandez"
     },
     {
@@ -1926,7 +1918,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Santiago Gonzalez Perdomo"
     },
     {
@@ -1948,7 +1940,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -1981,7 +1973,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -2080,7 +2072,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Daniel Bonalde"
     },
     {
@@ -2157,7 +2149,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Santiago Gonzalez Perdomo"
     },
     {
@@ -2256,7 +2248,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2267,7 +2259,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2278,7 +2270,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2289,7 +2281,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2300,7 +2292,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2311,7 +2303,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2322,7 +2314,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2333,7 +2325,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2344,7 +2336,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2355,7 +2347,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2366,7 +2358,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2377,7 +2369,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2388,7 +2380,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2399,7 +2391,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2410,7 +2402,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2421,7 +2413,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2432,7 +2424,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2443,7 +2435,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2454,7 +2446,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2751,7 +2743,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2773,7 +2765,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2828,7 +2820,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Miguel Angel Suarez Sanchez"
     },
     {
@@ -2839,7 +2831,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2850,7 +2842,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2861,7 +2853,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2872,7 +2864,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2883,7 +2875,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2894,7 +2886,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2905,7 +2897,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2916,7 +2908,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2927,7 +2919,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2938,7 +2930,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -2949,7 +2941,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -3147,7 +3139,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paola Peña"
     },
     {
@@ -3180,7 +3172,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -3191,7 +3183,7 @@
       "a": 0,
       "v": null,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
@@ -3224,7 +3216,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "David Eduardo Marsiglia Ariña"
     },
     {
@@ -3653,7 +3645,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -3741,7 +3733,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -3785,7 +3777,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Miguel Angel Suarez Sanchez"
     },
     {
@@ -3796,7 +3788,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paola Peña"
     },
     {
@@ -3939,7 +3931,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paola Peña"
     },
     {
@@ -3972,7 +3964,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -4621,7 +4613,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -4764,7 +4756,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -5028,7 +5020,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -5182,7 +5174,7 @@
       "a": 0,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Yiced Baracaldo"
     },
     {
@@ -5193,7 +5185,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Emmanuel Camacho Orozco"
     },
     {
@@ -5215,7 +5207,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Emmanuel Camacho Orozco"
     },
     {
@@ -5699,7 +5691,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -5710,7 +5702,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -5809,7 +5801,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -5875,7 +5867,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Yiced Baracaldo"
     },
     {
@@ -5897,7 +5889,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Gustavo Adolfo Bonilla Orduña"
     },
     {
@@ -5963,7 +5955,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Gustavo Adolfo Bonilla Orduña"
     },
     {
@@ -5996,7 +5988,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
@@ -6381,7 +6373,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Lady Dayan Bernal Tocora"
     },
     {
@@ -6673,13 +6665,13 @@
     {
       "i": "302056",
       "t": "308714_HU006_F2_Consultar_Siniestros_Marcados_Para_Recobro",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.2 Desarrollo Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.36,
       "f": "308714",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Jose Luis Monasterio Yeguez"
     },
     {
       "i": "302238",
@@ -7014,10 +7006,10 @@
     {
       "i": "322237",
       "t": "307827_HU017_Generación archivos mensuales y/o por demanda de reprocesos y facturación en cero",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307827",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
@@ -7278,10 +7270,10 @@
     {
       "i": "334789",
       "t": "98062_HU017_Certificado_de_afiliación_individual_agrupado_posterior_a_las_afiliaciones_masivas_desde_empleador",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "96139",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
@@ -7289,10 +7281,10 @@
     {
       "i": "339102",
       "t": "314170_HU002_Certificado_de_afiliación_individual_agrupado_posterior_a_las_afiliaciones_masivas_desde_funcionario",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "98062",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
@@ -7339,7 +7331,7 @@
       "v": 0.5,
       "f": "96139",
       "ep": "83469",
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "344176",
@@ -7382,7 +7374,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Cesar Torrens"
     },
     {
@@ -7448,7 +7440,7 @@
       "a": 0,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Yiced Baracaldo"
     },
     {
@@ -7547,7 +7539,7 @@
       "a": 1,
       "v": 0.17,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Yiced Baracaldo"
     },
     {
@@ -7569,7 +7561,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
@@ -7624,7 +7616,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -7949,10 +7941,10 @@
     {
       "i": "413257",
       "t": "100219_HU102_Proceso automático de normalización I1",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
@@ -8581,7 +8573,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9087,7 +9079,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9197,7 +9189,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9285,7 +9277,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9296,7 +9288,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9307,7 +9299,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9318,7 +9310,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9329,7 +9321,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
     },
     {
@@ -9340,7 +9332,7 @@
       "a": 1,
       "v": 0.8,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9351,7 +9343,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9362,7 +9354,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9373,7 +9365,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9384,7 +9376,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9395,7 +9387,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9406,7 +9398,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9417,7 +9409,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9428,7 +9420,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Paula Gomez Cantor"
     },
     {
@@ -9439,7 +9431,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9450,7 +9442,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9461,7 +9453,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9472,7 +9464,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9483,7 +9475,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9494,7 +9486,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9505,7 +9497,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9516,7 +9508,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9527,7 +9519,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9538,7 +9530,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9549,7 +9541,7 @@
       "a": 1,
       "v": null,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Andrés Álvarez Vergel"
     },
     {
@@ -9560,7 +9552,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9571,7 +9563,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9593,7 +9585,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9604,7 +9596,7 @@
       "a": 1,
       "v": 0.95,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9615,7 +9607,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9626,7 +9618,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9637,7 +9629,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9665,10 +9657,10 @@
     {
       "i": "456102",
       "t": "434003_HU006_Detalle_de_Planillas_Validación_PILA",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "434003",
       "ep": "83437",
       "r": "Andrés Álvarez Vergel"
@@ -9819,10 +9811,10 @@
     {
       "i": "458918",
       "t": "457292_HU003_Mapear y transformar la información de recaudo de BALÚ a la estructura de las tablas destino de Positiva (4 tablas iniciales)",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "457292",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
@@ -9841,10 +9833,10 @@
     {
       "i": "458984",
       "t": "457292_HU004_Validar automáticamente la estructura y los datos antes de la transferencia a Recaudo2",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "457292",
       "ep": "83437",
       "r": "Miguel Angel Rodriguez Castillo"
@@ -9962,13 +9954,13 @@
     {
       "i": "460796",
       "t": "88254_HU025:EC-HU-N05 — Conciliación por Vacaciones (VAC)",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "88254",
       "ep": "83437",
-      "r": "Jaiber Antonio León García"
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "460802",
@@ -10017,10 +10009,10 @@
     {
       "i": "460809",
       "t": "88254_HU030: EC-HU-H01 — Visualización de ultimo informe de estado de cuenta y bifurcación",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "88254",
       "ep": "83437",
       "r": "Maria Victoria Martins Souza"
@@ -10050,10 +10042,10 @@
     {
       "i": "460863",
       "t": "88254_HU033: EC-HU-N13 — Coexistencia y Simultaneidad de Novedades (transversal Fase 2)",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "88254",
       "ep": "83437",
       "r": "Maria Victoria Martins Souza"
@@ -10143,7 +10135,7 @@
       "a": 1,
       "v": 0.85,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -10775,7 +10767,7 @@
     },
     {
       "i": "480044",
-      "t": "100219_HU070_Inactivar póliza y generar endoso de cancelación con fecha de anulación",
+      "t": "100219_HU070_Activar o inactivar póliza y registrar la novedad de cancelación con fecha de anulación",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -10908,13 +10900,13 @@
     {
       "i": "481946",
       "t": "307836_HU007_CC1_Ajuste en la Notificación de No Vinculados al área de afiliaciones",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "307836",
       "ep": "83437",
-      "r": "Jaiber Antonio León García"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "482115",
@@ -11024,7 +11016,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Maralis Villadiego Gasabon"
     },
     {
       "i": "485603",
@@ -11035,7 +11027,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Maralis Villadiego Gasabon"
     },
     {
       "i": "485605",
@@ -11046,7 +11038,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Maralis Villadiego Gasabon"
     },
     {
       "i": "485607",
@@ -11057,7 +11049,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485611",
@@ -11068,7 +11060,7 @@
       "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485614",
@@ -11271,10 +11263,10 @@
     {
       "i": "489414",
       "t": "100219_HU103_Proceso automático de normalización I1_V2",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
@@ -11381,10 +11373,10 @@
     {
       "i": "489966",
       "t": "307833_HU_012_Actualizar_Plantillas_Comunicacion_Cartera_Preventiva",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307833",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
@@ -11392,10 +11384,10 @@
     {
       "i": "490055",
       "t": "307833_HU_013_Actualizar_Anexo_Cotizantes_Nombre_y_Formatos",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "307833",
       "ep": "83437",
       "r": "Maralis Villadiego Gasabon"
@@ -11403,10 +11395,10 @@
     {
       "i": "490056",
       "t": "307833_HU_014_Enviar_Comunicaciones_Pendientes_por_Actualizacion_de_Correo",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307833",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
@@ -11425,21 +11417,21 @@
     {
       "i": "490058",
       "t": "307833_HU_016_Actualizar_Almacenamiento_de_Comunicaciones_y_Formatos_de_los_Grids",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "307833",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "490082",
       "t": "307833_HU_017_Aplicar_Vigencia_Tabla_Excepciones_en_el_Cruce",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "307833",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
@@ -11458,13 +11450,13 @@
     {
       "i": "490099",
       "t": "481244_HU004_Publicar Archivos Maestros en SFTP",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "481244",
       "ep": "83437",
-      "r": "Arnold Joan Brinez Tamara"
+      "r": "Carlos Andres Romero Benitez"
     },
     {
       "i": "490100",
@@ -11496,7 +11488,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11507,7 +11499,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11518,7 +11510,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11529,7 +11521,7 @@
       "a": 1,
       "v": 0.08,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
     {
@@ -11540,7 +11532,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11551,7 +11543,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11562,7 +11554,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11573,7 +11565,7 @@
       "a": 1,
       "v": 1.0,
       "f": "85834",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -11683,7 +11675,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Santiago Piña Bustos"
     },
     {
@@ -11694,7 +11686,7 @@
       "a": 1,
       "v": 1.0,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Santiago Piña Bustos"
     },
     {
@@ -12041,46 +12033,46 @@
     {
       "i": "499197",
       "t": "308714_HU001_B1_Recibir_Siniestros_Activos_para_Marcacion",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "308714",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Javier Alfonso Santiago Salazar"
     },
     {
       "i": "499198",
       "t": "308714_HU002_B1_Registrar_Trazabilidad_de_Cambios_de_Estado",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.3,
       "f": "308714",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Carlos Andres Diaz De Felipe"
     },
     {
       "i": "499211",
       "t": "308714_HU003_B1_Registrar_Marcacion_en_Tabla_de_Siniestros",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "308714",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Carlos Andres Diaz De Felipe"
     },
     {
       "i": "499212",
       "t": "308714_HU004_B2_Aplicar_Exclusiones_Parametrizadas",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "308714",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Carlos Andres Diaz De Felipe"
     },
     {
       "i": "499219",
@@ -12294,13 +12286,13 @@
     {
       "i": "507714",
       "t": "101755_HU_24_CC1_Actualización del catálogo de tipos de documento de identificación, de sus longitudes y de sus caracteres permitidos",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "101755",
       "ep": "83503",
-      "r": "Yesid Sanabria Rey"
+      "r": "Nain Grande Ortiz"
     },
     {
       "i": "508108",
@@ -12503,35 +12495,35 @@
     {
       "i": "510155",
       "t": "98062_HU_025_Formulario_afiliacion_Dependiente",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "98062",
       "ep": "83469",
-      "r": "Ricardo Andres Marin Pinilla"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "510157",
       "t": "98062_HU_026_Formulario_afiliacion_Independiente_723",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "98062",
       "ep": "83469",
-      "r": "Ricardo Andres Marin Pinilla"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "510159",
       "t": "98062_HU_027_Formulario_afiliacion_Independiente voluntario a riesgos laborales",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "98062",
       "ep": "83469",
-      "r": "Ricardo Andres Marin Pinilla"
+      "r": "Maria Victoria Martins Souza"
     },
     {
       "i": "510162",
@@ -12569,10 +12561,10 @@
     {
       "i": "510167",
       "t": "98062_HU_032_Formulario_afiliacion_Interno de medicina",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "98062",
       "ep": "83469",
       "r": "Juan Felipe Zea Sanchez"
@@ -12613,10 +12605,10 @@
     {
       "i": "510316",
       "t": "100219_HU127_Identificación del contratante, actualización del tipo de documento y ruta de normalización",
-      "e": "6. Desarrollo Backend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
       "r": "Paola Peña"
@@ -12635,10 +12627,10 @@
     {
       "i": "510319",
       "t": "100219_HU129_Creación del contratante como empleador 723 con consulta del representante legal en Confecámaras",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "100219",
       "ep": "83469",
       "r": "Paola Peña"
@@ -12723,13 +12715,13 @@
     {
       "i": "512354",
       "t": "100219_HU105_Gal_Ajuste_afiliaciones_masivas_723_funcionario CC2",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "514035",
@@ -12976,13 +12968,13 @@
     {
       "i": "518851",
       "t": "308714_HU005_B2_Construir_Ventana_11_Mas_1_del_Siniestro",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "308714",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Javier Alfonso Santiago Salazar"
     },
     {
       "i": "518852",
@@ -12997,7 +12989,7 @@
     },
     {
       "i": "518853",
-      "t": "308714_HU008_B3_Evaluar_Siniestros_Anteriores_a_2017",
+      "t": "308714_HU017_B7_Enviar_Alerta_de_Falla_de_Integracion_con_Positiva",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13086,13 +13078,13 @@
     {
       "i": "519970",
       "t": "307852_Parte2_HU31_F4_Ajustar_Consulta_De_Notificaciones_Fisicas",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "307852",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Juan Felipe Zea Sanchez"
     },
     {
       "i": "519971",
@@ -13103,7 +13095,7 @@
       "v": 0.2,
       "f": "307852",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Juan Felipe Zea Sanchez"
     },
     {
       "i": "519972",
@@ -13119,13 +13111,13 @@
     {
       "i": "519973",
       "t": "307852_Parte2_HU34a_B1a_Validar_Correo_Y_Asignar_Marca_VD_Al_Generar_CM",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "307852",
       "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
+      "r": "Emmanuel Camacho Orozco"
     },
     {
       "i": "519974",
@@ -13312,7 +13304,7 @@
       "v": 0.5,
       "f": "98062",
       "ep": "83469",
-      "r": "Nain Grande Ortiz"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "522032",
@@ -13339,46 +13331,46 @@
     {
       "i": "524417",
       "t": "485086_HU001(CC1)_Excluir_Administradoras_Fuera_Del_Catalogo",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524451",
       "t": "485086_HU003(CC1)_Validar_Catalogo_Administradoras_Cargue_Manual",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524458",
       "t": "485086_HU008(CC1)_Cantidad_Registros_Otras_Administradoras_Validacion_PILA",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Cristian Camilo Rojas Ascencio"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524738",
       "t": "485086_HU010_Consultar_Cargues_Otras_Administradoras",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "485086",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Lina María Ramirez Martinez"
     },
     {
       "i": "524741",
@@ -13389,37 +13381,37 @@
       "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Lina María Ramirez Martinez"
     },
     {
       "i": "524742",
       "t": "485086_HU012_Enviar_Confirmacion_Cargue_Aportantes",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524745",
       "t": "485086_HU013_Consultar_Reportes_Generales_Cargue",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "485086",
       "ep": "83437",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Santiago Cardenas Amaya"
     },
     {
       "i": "524746",
       "t": "485086_HU014_Identificar_Pagos_Otras_Administradoras_Consulta_Aportante",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "485086",
       "ep": "83437",
       "r": "Santiago Cardenas Amaya"
@@ -13427,10 +13419,10 @@
     {
       "i": "524748",
       "t": "485086_HU015_Identificar_Pagos_Otras_Administradoras_Consulta_Cotizantes",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "485086",
       "ep": "83437",
       "r": "Santiago Cardenas Amaya"
@@ -13444,7 +13436,7 @@
       "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Santiago Cardenas Amaya"
+      "r": "Lina María Ramirez Martinez"
     },
     {
       "i": "524754",
@@ -13455,7 +13447,7 @@
       "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Santiago Cardenas Amaya"
+      "r": "Lina María Ramirez Martinez"
     },
     {
       "i": "524770",
@@ -13471,10 +13463,10 @@
     {
       "i": "524775",
       "t": "485086_HU018_Consultar_Reporte_Correos_Masivos_Otras_Administradoras",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "485086",
       "ep": "83437",
       "r": "Santiago Cardenas Amaya"
@@ -13488,7 +13480,7 @@
       "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Santiago Cardenas Amaya"
+      "r": "Lina María Ramirez Martinez"
     },
     {
       "i": "524788",
@@ -13499,7 +13491,7 @@
       "v": 0.2,
       "f": "485086",
       "ep": "83437",
-      "r": "Santiago Cardenas Amaya"
+      "r": "Lina María Ramirez Martinez"
     },
     {
       "i": "524921",
@@ -13691,10 +13683,10 @@
     {
       "i": "531596",
       "t": "459471_HU003(CC1)_Consulta_Cotizante_Nomenclatura_Descarga_Reporte",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "459471",
       "ep": "83437",
       "r": "Juan Felipe Zea Sanchez"
@@ -13724,54 +13716,54 @@
     {
       "i": "534564",
       "t": "180126_HU_005_Actualizaciones PDF Footer Consultas RYC",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "180126",
       "ep": "83503",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "534594",
       "t": "307852_Parte2_HU34b_B1b_Procesar_Codigos_MARCA_Y_Generar_Archivo_De_Georreferenciacion",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "307852",
+      "ep": "83437",
+      "r": "Juan Felipe Zea Sanchez"
+    },
+    {
+      "i": "534595",
+      "t": "308714_HU014_B6_Cargar_Base_Historica_de_Siniestros_Marcados_por_Positiva",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "307852",
-      "ep": "83437",
-      "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "534595",
-      "t": "ELIMINAR_308714_HU015_B6_Certificar_Consulta_de_Marcas_de_Empresa_con_el_Servicio_de_Positiva",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "534596",
-      "t": "ELIMINAR_308714_HU016_B6_Certificar_Escritura_de_la_Marcacion_con_el_Servicio_de_Positiva",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU015_F5_Configurar_Alertas_de_Recobro_en_Notificaciones_Internas",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
     },
     {
       "i": "534597",
-      "t": "ELIMINAR_308714_HU017_B6_Certificar_la_Constitucion_en_Mora_Historica_Entregada_por_Positiva",
-      "e": "2. Elaboración HU",
+      "t": "308714_HU016_F6_Mostrar_Siniestros_Historicos_Marcados_por_Positiva",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -13784,7 +13776,7 @@
       "a": 1,
       "v": 0.17,
       "f": "313337",
-      "ep": "207836",
+      "ep": "83469",
       "r": "Yiced Baracaldo"
     },
     {
@@ -13823,10 +13815,10 @@
     {
       "i": "537491",
       "t": "HU_014_Planeación_Ejecución_Y_Generación_Reportes_Pruebas_Rendimiento_Carga_Estres_Balu",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "417212",
       "ep": "417182",
       "r": "William Javier Granados Olarte"
@@ -13845,10 +13837,10 @@
     {
       "i": "538824",
       "t": "Zendesk – Nivel 3 Desarrollo - Sprint 60",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417232",
       "ep": "83503",
       "r": "Carlos Andres Diaz De Felipe"
@@ -13867,10 +13859,10 @@
     {
       "i": "539617",
       "t": "HU_PR014_Automatización de la regresión funcional (Playwright) de la Feature 307841 – Corrección de aportes",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.3,
+      "v": 1.0,
       "f": "417189",
       "ep": "417182",
       "r": "Andres Javier Sanchez Barrera"
@@ -13884,7 +13876,7 @@
       "v": 0.04,
       "f": "417232",
       "ep": "83503",
-      "r": ""
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "545541",
@@ -13895,7 +13887,7 @@
       "v": 0.85,
       "f": "100219",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "César Alejandro Garcia Tous"
     },
     {
       "i": "545754",
@@ -13922,10 +13914,10 @@
     {
       "i": "545763",
       "t": "98035_HU007_Consulta General: Consulta Trabajador (datos básicos, afiliaciones, relaciones laborales y contratos, histórico de novedades y liquidación",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "98035",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -14226,19 +14218,96 @@
       "f": "511781",
       "ep": "83437",
       "r": "Alejandra Calderón Pérez"
+    },
+    {
+      "i": "551153",
+      "t": "HU_027_Aplicación apoyo QA_Desarrollo_Implementación_Modulo_Administracion_Roles",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
+    },
+    {
+      "i": "551159",
+      "t": "HU_026_Aplicación apoyo QA_Desarrollo_Implementación_Modulo_Login",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
+    },
+    {
+      "i": "551160",
+      "t": "HU_028_Aplicación apoyo QA_Desarrollo_Implementación_Seleccion_Dinamica_Ambientes",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "417212",
+      "ep": "417182",
+      "r": "William Javier Granados Olarte"
+    },
+    {
+      "i": "551410",
+      "t": "HU_PR015_QA_Automatización de ejecución de pruebas – Feature 308714 Marcación de siniestros para recobro por mora",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "417189",
+      "ep": "417182",
+      "r": "Andres Javier Sanchez Barrera"
+    },
+    {
+      "i": "551616",
+      "t": "HU_PR016_QA_Marco de automatización de pruebas Balú (regresión y ejecución por entrega)",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "417189",
+      "ep": "417182",
+      "r": "Andres Javier Sanchez Barrera"
+    },
+    {
+      "i": "551864",
+      "t": "Registro en Log Transaccional",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "457292",
+      "ep": "83437",
+      "r": ""
+    },
+    {
+      "i": "551867",
+      "t": "Valores por defecto",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "457292",
+      "ep": "83437",
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 1221,
-    "n_hu_activas": 1041,
+    "n_hu": 1228,
+    "n_hu_activas": 1048,
     "hu_sin_feature": 8,
     "n_feature": 68,
-    "n_epic": 5,
+    "n_epic": 4,
     "n_feature_con_hu": 67,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.8267,
-    "term_global": 632,
+    "pct_global": 0.8293,
+    "term_global": 635,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 9,

@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-10-29",
-  "generado": "2026-10-29 13:26",
-  "archivo": "HU_420_20261029.csv",
+  "corte": "2026-11-03",
+  "generado": "2026-11-03 15:25",
+  "archivo": "HU_420_20261103.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
-      "n_f": 13,
-      "n": 181,
-      "term": 107,
-      "pct": 0.8619
+      "n_f": 14,
+      "n": 180,
+      "term": 114,
+      "pct": 0.875
     },
     {
       "i": "357729",
@@ -32,9 +32,9 @@
       "i": "356469",
       "t": "Transversales",
       "n_f": 5,
-      "n": 66,
+      "n": 71,
       "term": 62,
-      "pct": 0.9606
+      "pct": 0.907
     },
     {
       "i": "357081",
@@ -262,20 +262,9 @@
       "e": "1. En Planeacion",
       "ep": "357078",
       "ept": "Cuentas médicas",
-      "n": 14,
-      "term": 0,
-      "pct": 0.6714,
-      "n_pct": 14
-    },
-    {
-      "i": "391351",
-      "t": "Gestión de glosas",
-      "e": "1. En Planeacion",
-      "ep": "357078",
-      "ept": "Cuentas médicas",
       "n": 13,
-      "term": 12,
-      "pct": 0.9385,
+      "term": 0,
+      "pct": 0.7077,
       "n_pct": 13
     },
     {
@@ -295,6 +284,17 @@
       "e": "1. En Planeacion",
       "ep": "357079",
       "ept": "Gestión red hospitalaría",
+      "n": 12,
+      "term": 12,
+      "pct": 1.0,
+      "n_pct": 12
+    },
+    {
+      "i": "391351",
+      "t": "Gestión de glosas",
+      "e": "1. En Planeacion",
+      "ep": "357078",
+      "ept": "Cuentas médicas",
       "n": 12,
       "term": 12,
       "pct": 1.0,
@@ -395,8 +395,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 9,
-      "term": 0,
-      "pct": 0.8,
+      "term": 7,
+      "pct": 0.9556,
       "n_pct": 9
     },
     {
@@ -496,6 +496,17 @@
       "n": 6,
       "term": 6,
       "pct": 1.0,
+      "n_pct": 6
+    },
+    {
+      "i": "383722",
+      "t": "420_Seguimiento_transversales_SCRUM_Linktic",
+      "e": "2. En Curso",
+      "ep": "356469",
+      "ept": "Transversales",
+      "n": 6,
+      "term": 0,
+      "pct": 0.25,
       "n_pct": 6
     },
     {
@@ -664,17 +675,6 @@
       "n_pct": 1
     },
     {
-      "i": "383722",
-      "t": "420_Seguimiento_transversales_SCRUM_Linktic",
-      "e": "2. En Curso",
-      "ep": "356469",
-      "ept": "Transversales",
-      "n": 1,
-      "term": 0,
-      "pct": 0.5,
-      "n_pct": 1
-    },
-    {
       "i": "390316",
       "t": "Ajustes Generales Usuarios",
       "e": "1. En Planeacion",
@@ -705,6 +705,17 @@
       "n": 1,
       "term": 0,
       "pct": 0.8,
+      "n_pct": 1
+    },
+    {
+      "i": "550640",
+      "t": "Integración ISARL",
+      "e": "1. En Planeacion",
+      "ep": "357078",
+      "ept": "Cuentas médicas",
+      "n": 1,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 1
     },
     {
@@ -5497,10 +5508,10 @@
     {
       "i": "459887",
       "t": "HU0022_Positiva_Motivos_Devolución_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5508,10 +5519,10 @@
     {
       "i": "459890",
       "t": "HU0023_Positiva_Modal_Devolución_Radicador_Responder_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5530,10 +5541,10 @@
     {
       "i": "459904",
       "t": "HU0143_Positiva_Auditoría_Devolución_Auditor_Responder_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5541,10 +5552,10 @@
     {
       "i": "459935",
       "t": "HU0144_Positiva_Enviar_respuesta_confirmar_radicador_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5558,7 +5569,7 @@
       "v": 0.8,
       "f": "485413",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "460094",
@@ -6377,10 +6388,10 @@
     {
       "i": "483628",
       "t": "HU0170_Positiva_Gestión_de_Devoluciones_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6388,10 +6399,10 @@
     {
       "i": "483631",
       "t": "HU0171_Positiva_Modal_Asignar_Auxiliar_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6399,10 +6410,10 @@
     {
       "i": "483633",
       "t": "HU0172_Positiva_Gestión_Devoluciones_Detalle_Factura_Ver_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6916,13 +6927,13 @@
     {
       "i": "507121",
       "t": "HU0202_Positiva_Cuentas_Médicas_Rubro_Contable_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
-      "f": "507072",
+      "v": 0.5,
+      "f": "550640",
       "ep": "357078",
-      "r": "Alba Lucero Tangarife Camargo"
+      "r": "orlando perez"
     },
     {
       "i": "507126",
@@ -7301,10 +7312,10 @@
     {
       "i": "533599",
       "t": "HU0750_Positiva_Gestión_Glosas_Ver_Detalle_V4",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "391351",
       "ep": "357078",
       "r": "Alba Lucero Tangarife Camargo"
@@ -7451,22 +7462,77 @@
       "f": "356476",
       "ep": "356469",
       "r": "Tilson Fernandez"
+    },
+    {
+      "i": "550684",
+      "t": "Actividades diarias Scrum Junio",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "383722",
+      "ep": "356469",
+      "r": "María Alejandra Velásquez Piedrahita"
+    },
+    {
+      "i": "550770",
+      "t": "Actividades diarias Scrum Septiembre",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "383722",
+      "ep": "356469",
+      "r": "María Alejandra Velásquez Piedrahita"
+    },
+    {
+      "i": "551335",
+      "t": "Actividades diarias Scrum Agosto",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "383722",
+      "ep": "356469",
+      "r": "María Alejandra Velásquez Piedrahita"
+    },
+    {
+      "i": "551339",
+      "t": "Actividades diarias Scrum Mayo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "383722",
+      "ep": "356469",
+      "r": "María Alejandra Velásquez Piedrahita"
+    },
+    {
+      "i": "551435",
+      "t": "Actividades diarias Scrum Octubre",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "383722",
+      "ep": "356469",
+      "r": "María Alejandra Velásquez Piedrahita"
     }
   ],
   "kpi": {
-    "n_hu": 612,
-    "n_hu_activas": 598,
+    "n_hu": 617,
+    "n_hu_activas": 602,
     "hu_sin_feature": 0,
-    "n_feature": 56,
+    "n_feature": 57,
     "n_epic": 12,
-    "n_feature_con_hu": 56,
+    "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9314,
-    "term_global": 486,
+    "pct_global": 0.9294,
+    "term_global": 493,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 32,
+    "feature_100_sin_cerrar": 33,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
@@ -7477,8 +7543,8 @@
     "d": 3,
     "u": "épicas",
     "isEpics": true,
-    "feat_total": 56,
-    "feat_ent": 33,
+    "feat_total": 57,
+    "feat_ent": 34,
     "buckets": {
       "100": 3,
       "75": 0,
