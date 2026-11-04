@@ -1180,12 +1180,16 @@ function renderOpBody(p,g,el){
   }
   h += renderFncSection(p);
   if(p.id==="419"){
+    h+=renderBugs419Section();
     h+=`<div class="section grid" style="margin-top:16px"><div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
       <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div></div>`;
   }
   el.innerHTML=h;
   if(p.id==="456")renderFrentes(p);
-  if(p.id==="419")render419();
+  if(p.id==="419"){
+    renderBugs419Chart();
+    render419();
+  }
   if(SHOW_GOV&&g)renderGov(g);
 }
 
@@ -1463,6 +1467,343 @@ function render419(){
     h.addEventListener("mousemove",e=>{xh.setAttribute("x1",x(i));xh.setAttribute("x2",x(i));xh.setAttribute("visibility","visible");showTip(e,`<b>${MES[i]} 2026</b><div><span>Entrega plan / real</span><span>${f(S.pe)} / ${f(S.re)}</span></div><div><span>Cert. plan / real</span><span>${f(S.pc)} / ${f(S.rc)}</span></div>`)});
     h.addEventListener("mouseleave",()=>{hideTip();xh.setAttribute("visibility","hidden")})});
 }
+
+/* ==================== AUDITORÍA Y CONSOLIDADO BUGS 419 ==================== */
+const BUGS_419_DATA = {
+  kpis: {
+    total: 1836,
+    dep: 1265,
+    rama: 571,
+    pct_dep: 68.9,
+    pct_rama: 31.1,
+    t_prom: 15.2,
+    mediana: 6.7,
+    ans: 3.0,
+    evo_s1: 25.0,
+    evo_s7: 5.4,
+    red_pct: 78.4
+  },
+  sprints: [
+    { sp: "Sprint 01", dep: 296, rama: 110, tot: 406, p_dep: 72.9, p_rama: 27.1, t_dep: 11.1, t_rama: 62.5, t_cons: 25.0, ans: 3.0, brecha: 22.0, st: "Fuera de ANS (> 6d)", sem: "crit" },
+    { sp: "Sprint 02", dep: 114, rama: 61,  tot: 175, p_dep: 65.1, p_rama: 34.9, t_dep: 13.3, t_rama: 36.5, t_cons: 21.4, ans: 3.0, brecha: 18.4, st: "Fuera de ANS (> 6d)", sem: "crit" },
+    { sp: "Sprint 03", dep: 137, rama: 172, tot: 309, p_dep: 44.3, p_rama: 55.7, t_dep: 15.3, t_rama: 11.7, t_cons: 13.3, ans: 3.0, brecha: 10.3, st: "Fuera de ANS (> 6d)", sem: "crit" },
+    { sp: "Sprint 04", dep: 183, rama: 48,  tot: 231, p_dep: 79.2, p_rama: 20.8, t_dep: 7.7,  t_rama: 15.3, t_cons: 9.5,  ans: 3.0, brecha: 6.5,  st: "Fuera de ANS (> 6d)", sem: "crit" },
+    { sp: "Sprint 05", dep: 52,  rama: 15,  tot: 67,  p_dep: 77.6, p_rama: 22.4, t_dep: 8.0,  t_rama: 7.3,  t_cons: 7.8,  ans: 3.0, brecha: 4.8,  st: "Fuera de ANS (> 6d)", sem: "warn" },
+    { sp: "Sprint 06", dep: 137, rama: 60,  tot: 197, p_dep: 69.5, p_rama: 30.5, t_dep: 6.3,  t_rama: 5.9,  t_cons: 6.2,  ans: 3.0, brecha: 3.2,  st: "Fuera de ANS (> 6d)", sem: "warn" },
+    { sp: "Sprint 07", dep: 178, rama: 39,  tot: 217, p_dep: 82.0, p_rama: 18.0, t_dep: 4.4,  t_rama: 8.7,  t_cons: 5.4,  ans: 3.0, brecha: 2.4,  st: "Cerca al ANS (≤ 6d)", sem: "good" },
+    { sp: "Sin Sprint / Raíz", dep: 159, rama: 66, tot: 225, p_dep: 70.7, p_rama: 29.3, t_dep: 5.7, t_rama: 38.5, t_cons: 16.1, ans: 3.0, brecha: 13.1, st: "Fuera de ANS (> 6d)", sem: "crit" }
+  ],
+  total_cons: {
+    dep: 1265, rama: 571, tot: 1836, p_dep: 68.9, p_rama: 31.1, t_dep: 9.5, t_rama: 26.9, t_cons: 15.2, ans: 3.0, brecha: 12.2
+  },
+  conciliacion: [
+    { sp: "Sp1", linktic: 406, cliente: null, concil: null, valor: 35000000, estado: "Conciliado y Facturado", sem: "good" },
+    { sp: "Sp2", linktic: 175, cliente: null, concil: null, valor: 21000000, estado: "Conciliado y Facturado", sem: "good" },
+    { sp: "Sp3", linktic: 309, cliente: 188,  concil: "69", valor: 74000000, estado: "Conciliado y Facturado", sem: "good" },
+    { sp: "Sp4", linktic: 231, cliente: 250,  concil: "Pendiente conciliación", valor: null, estado: "Mesa Técnica en Curso", sem: "warn" }
+  ],
+  testigos: [
+    { id: 502170, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 03 (Sprint 3 PWT RAMA)", tit: "419_PR_MH_HU006_Visualizacion Mensajes Home", st: "3. Entregado", sev: "2. Alto", fc: "28/08/2026", fr: "30/09/2026", t: "33.0 d" },
+    { id: 522914, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 02 (Sprint 2 PWT RAMA)", tit: "419_PR_MH_HU006_El carrusel del Home no aplica el límite máximo de mensajes por entidad", st: "3. Entregado", sev: "3. Medio", fc: "28/09/2026", fr: "28/10/2026", t: "29.8 d" },
+    { id: 532666, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 07 (Sprint 7 PWT RAMA)", tit: "419_PR_HU001_Registrar_Orden_de_no_pago y Levantar Orden de Pago: Mensaje de búsqueda", st: "4. Cerrado", sev: "3. Medio", fc: "08/10/2026", fr: "27/10/2026", t: "19.1 d" },
+    { id: 539936, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 07 (Sprint 7 PWT RAMA)", tit: "419_PR_HU001_Registrar_Orden_de_no_pago: Al desmarcar un depósito después de Seleccionar Todos", st: "2. En Curso", sev: "3. Medio", fc: "19/10/2026", fr: "—", t: "Activo (en curso)" }
+  ]
+};
+
+function renderBugs419Section() {
+  const K = BUGS_419_DATA.kpis;
+  const C = BUGS_419_DATA.conciliacion;
+  const S = BUGS_419_DATA.sprints;
+  const T = BUGS_419_DATA.total_cons;
+  const G = BUGS_419_DATA.testigos;
+
+  const totVal = C.reduce((acc, x) => acc + (x.valor || 0), 0);
+
+  return `
+  <div class="section panel" style="margin-top:18px;border-left:4px solid var(--accent)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:14px">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="font-size:20px">🐛</span>
+          <h2 style="margin:0;font-size:16px;font-weight:800;letter-spacing:-.02em">Evolución Consolidada de Bugs 419 (DEP vs RAMA) y Tiempos de Respuesta vs ANS (3 Días)</h2>
+          <span class="tag" style="background:var(--accent);color:#fff;font-weight:700">Doble Validación Azure DevOps 100%</span>
+        </div>
+        <p class="hint" style="margin:4px 0 0 30px">
+          Auditoría de defectos por sprint diferenciando <b>Depósitos Judiciales (BAC)</b> y <b>Rama Judicial</b> vs compromiso contractual de <b>ANS de 3 días</b>.
+        </p>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:700;color:var(--ink-2)">Meta ANS: ≤ 3.0 días hábiles</span>
+        <span class="tag" style="background:color-mix(in srgb,var(--good) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--good) 30%,transparent);font-size:11px;font-weight:700;color:var(--good)">Curva S1➔S7: -78% tiempo</span>
+      </div>
+    </div>
+
+    <!-- KPI TILES -->
+    <div class="grid g-tiles" style="margin-bottom:16px">
+      ${tileHTML("Bugs Totales 419", nf0.format(K.total), `<b>${nf0.format(K.dep)}</b> DEP (68,9%) | <b>${nf0.format(K.rama)}</b> RAMA (31,1%)`)}
+      ${tileHTML("Tiempo Medio Global", `${K.t_prom} d`, `Mediana: <b>${K.mediana} días</b> de resolución`, "warn")}
+      ${tileHTML("Meta ANS Contractual", `≤ ${K.ans.toFixed(1)} d`, "Tiempo de respuesta esperado", "good")}
+      ${tileHTML("Evolución S1 ➔ S7", `${K.evo_s1}d ➔ ${K.evo_s7}d`, `Reducción del <b>${K.red_pct}%</b> en tiempo`, "good")}
+    </div>
+
+    <!-- GRAFICA COMBINADA -->
+    <div class="panel" style="background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px">
+        <div>
+          <div style="font-weight:700;font-size:13px;color:var(--ink)">Participación de Bugs por Sprint y Tiempo Promedio vs ANS</div>
+          <div class="hint" style="margin:2px 0 0">Barras apiladas (Eje Izq: Volumen) · Curva naranja (Eje Der: Días promedio) · Línea roja punteada (Meta ANS 3.0 d)</div>
+        </div>
+        <div class="legend" style="margin:0">
+          <span><i class="sw" style="background:#0284c7;border-radius:2px"></i>Bugs Depósitos (BAC)</span>
+          <span><i class="sw" style="background:#8b5cf6;border-radius:2px"></i>Bugs Rama Judicial</span>
+          <span><i class="sw line" style="background:#f59e0b"></i>T. Promedio Consolidado</span>
+          <span><i class="sw dash" style="border-color:#ef4444"></i>Meta ANS (3d)</span>
+        </div>
+      </div>
+      <div class="chart" id="c-bugs419"></div>
+    </div>
+
+    <!-- TABLA DE CONCILIACIÓN Y LIQUIDACIÓN FINANCIERA (RANGO B59:F63) -->
+    <div class="panel" style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:17px">💵</span>
+            <b style="font-size:13px;color:var(--ink)">Conciliación Comercial y Liquidación Financiera de Bugs (Rango B59:F63)</b>
+          </div>
+          <p class="hint" style="margin:3px 0 0 25px">
+            Control de defectos reportados vs conciliados entre Linktic y el Cliente (Banco Agrario / Rama Judicial) con reconocimiento y liquidación contractual.
+          </p>
+        </div>
+        <div style="text-align:right;background:var(--surface-2);padding:6px 14px;border-radius:10px;border:1px solid var(--line)">
+          <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Total Facturado / Conciliado</span>
+          <div style="font-size:18px;font-weight:800;color:var(--good);font-family:'JetBrains Mono',monospace">$ ${nf0.format(totVal)} COP</div>
+        </div>
+      </div>
+      <div class="tbl-wrap">
+        <table class="xl" style="font-size:12px">
+          <thead>
+            <tr>
+              <th>Sprint</th>
+              <th class="n">Bug´s Identificados (Linktic)</th>
+              <th class="n">Bug´s Reportados (Cliente)</th>
+              <th style="text-align:center">Conciliación</th>
+              <th class="n">Valor Conciliado</th>
+              <th style="text-align:center">Estado Comercial</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${C.map(r => `
+              <tr ${r.sem === "warn" ? 'style="background:color-mix(in srgb,var(--warn) 6%,var(--surface))"' : ""}>
+                <td><b>${r.sp}</b></td>
+                <td class="n"><b>${nf0.format(r.linktic)}</b></td>
+                <td class="n">${r.cliente != null ? nf0.format(r.cliente) : '<span style="color:var(--muted)">—</span>'}</td>
+                <td style="text-align:center">${r.concil ? (r.concil === "Pendiente conciliación" ? '<span class="st warn">Pendiente conciliación</span>' : `<b style="color:var(--accent)">${r.concil}</b> bugs`) : '<span style="color:var(--muted)">—</span>'}</td>
+                <td class="n" style="font-weight:700;color:${r.valor ? "var(--good)" : "var(--muted)"}">${r.valor ? "$ " + nf0.format(r.valor) : "Por liquidar"}</td>
+                <td style="text-align:center"><span class="st ${r.sem}">${r.estado}</span></td>
+              </tr>
+            `).join("")}
+            <tr class="tot" style="background:var(--surface-2);font-weight:800">
+              <td>Total / Subtotal Acumulado</td>
+              <td class="n">${nf0.format(C.reduce((a,x)=>a+x.linktic,0))}</td>
+              <td class="n">${nf0.format(C.reduce((a,x)=>a+(x.cliente||0),0))}</td>
+              <td style="text-align:center"><b>69 acordados</b></td>
+              <td class="n" style="color:var(--good);font-size:13px">$ ${nf0.format(totVal)}</td>
+              <td style="text-align:center"><span class="st good">Sp1 a Sp3 Liquidados</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- DESGLOSE OPERATIVO POR SPRINT Y AUDITORÍA DE TESTIGOS -->
+    <details class="panel" style="background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
+      <summary style="cursor:pointer;font-weight:700;font-size:13px;color:var(--ink);display:flex;justify-content:space-between;align-items:center">
+        <span>📋 Desglose Operativo por Sprint y Certificación de Testigos Azure (Doble Validación)</span>
+        <span class="hint" style="font-size:11px">Clic para desplegar detalle completo ▾</span>
+      </summary>
+      
+      <div style="margin-top:14px">
+        <div class="tbl-wrap">
+          <table class="xl" style="font-size:11.5px">
+            <thead>
+              <tr>
+                <th>Sprint</th>
+                <th class="n">Bugs DEP</th>
+                <th class="n">Bugs RAMA</th>
+                <th class="n">Total</th>
+                <th class="n">% DEP</th>
+                <th class="n">% RAMA</th>
+                <th class="n">T. Prom DEP</th>
+                <th class="n">T. Prom RAMA</th>
+                <th class="n">T. Prom Consolidado</th>
+                <th class="n">Meta ANS</th>
+                <th class="n">Brecha</th>
+                <th style="text-align:center">Semáforo ANS</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${S.map(r => `
+                <tr>
+                  <td><b>${r.sp}</b></td>
+                  <td class="n">${nf0.format(r.dep)}</td>
+                  <td class="n">${nf0.format(r.rama)}</td>
+                  <td class="n"><b>${nf0.format(r.tot)}</b></td>
+                  <td class="n">${r.p_dep.toFixed(1)}%</td>
+                  <td class="n">${r.p_rama.toFixed(1)}%</td>
+                  <td class="n">${r.t_dep.toFixed(1)} d</td>
+                  <td class="n">${r.t_rama.toFixed(1)} d</td>
+                  <td class="n" style="font-weight:700;color:var(--warn)">${r.t_cons.toFixed(1)} d</td>
+                  <td class="n" style="color:var(--good)">${r.ans.toFixed(1)} d</td>
+                  <td class="n" style="font-weight:700;color:${r.sem === 'good' ? 'var(--good)' : r.sem === 'warn' ? 'var(--warn)' : 'var(--crit)'}">+${r.brecha.toFixed(1)} d</td>
+                  <td style="text-align:center"><span class="st ${r.sem}">${r.st}</span></td>
+                </tr>
+              `).join("")}
+              <tr class="tot" style="background:var(--surface-2);font-weight:800">
+                <td>TOTAL CONSOLIDADO</td>
+                <td class="n">${nf0.format(T.dep)}</td>
+                <td class="n">${nf0.format(T.rama)}</td>
+                <td class="n">${nf0.format(T.tot)}</td>
+                <td class="n">${T.p_dep.toFixed(1)}%</td>
+                <td class="n">${T.p_rama.toFixed(1)}%</td>
+                <td class="n">${T.t_dep.toFixed(1)} d</td>
+                <td class="n">${T.t_rama.toFixed(1)} d</td>
+                <td class="n" style="color:var(--warn)">${T.t_cons.toFixed(1)} d</td>
+                <td class="n" style="color:var(--good)">${T.ans.toFixed(1)} d</td>
+                <td class="n">+${T.brecha.toFixed(1)} d</td>
+                <td style="text-align:center"><span class="st warn">Global: +${T.brecha.toFixed(1)}d vs ANS</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)">
+          <div style="font-weight:700;font-size:12px;margin-bottom:8px;color:var(--ink)">🔬 Testigos de Doble Validación Auditados en Azure DevOps</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:8px">
+            ${G.map(t => `
+              <div style="background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:11px">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+                  <span style="font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace">Bug #${t.id}</span>
+                  <span class="tag" style="background:color-mix(in srgb,var(--good) 12%,var(--surface));color:var(--good);font-weight:700;font-size:10px">Certificado Azure ✓</span>
+                </div>
+                <div style="font-weight:600;color:var(--ink);margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${esc(t.tit)}">${esc(t.tit)}</div>
+                <div style="display:flex;gap:8px;color:var(--muted);font-size:10px">
+                  <span>Iteración: <b style="color:var(--ink-2)">${t.iter.split('(')[0].trim()}</b></span>
+                  <span>Estado: <b style="color:var(--ink-2)">${t.st}</b></span>
+                  <span>Tiempo Resp: <b style="color:var(--warn)">${t.t}</b></span>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>`;
+}
+
+function renderBugs419Chart() {
+  const el = document.getElementById("c-bugs419");
+  if (!el) return;
+
+  const S = BUGS_419_DATA.sprints;
+  const W = 860, H = 320, L = 50, R = 65, T = 30, B = 45;
+  const innerW = W - L - R, innerH = H - T - B;
+  const maxBugs = 450, maxDays = 30;
+
+  const yLeft = v => T + innerH * (1 - Math.min(v, maxBugs) / maxBugs);
+  const yRight = d => T + innerH * (1 - Math.min(d, maxDays) / maxDays);
+  const colW = innerW / S.length;
+  const barW = 38;
+
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolución Consolidada de Bugs 419 DEP vs RAMA y ANS">`;
+
+  // Grid lines (Left Axis)
+  [0, 100, 200, 300, 400].forEach(v => {
+    const y = yLeft(v);
+    s += `<line x1="${L}" x2="${W - R}" y1="${y}" y2="${y}" stroke="${v === 0 ? 'var(--axis)' : 'var(--line)'}"/>`;
+    s += `<text x="${L - 8}" y="${y + 4}" text-anchor="end" style="font-size:10px;fill:var(--muted)">${v}</text>`;
+  });
+
+  // Right Axis Ticks (Days)
+  [0, 5, 10, 15, 20, 25, 30].forEach(d => {
+    const y = yRight(d);
+    s += `<text x="${W - R + 8}" y="${y + 4}" text-anchor="start" style="font-size:10px;fill:var(--muted)">${d} d</text>`;
+  });
+
+  // Meta ANS Line (3.0d)
+  const yAns = yRight(3.0);
+  s += `<line x1="${L}" x2="${W - R}" y1="${yAns}" y2="${yAns}" stroke="var(--crit)" stroke-width="2" stroke-dasharray="5 4"/>`;
+  s += `<rect x="${W - R - 85}" y="${yAns - 16}" width="80" height="15" rx="3" fill="color-mix(in srgb,var(--crit) 15%,var(--surface))"/>`;
+  s += `<text x="${W - R - 45}" y="${yAns - 5}" text-anchor="middle" style="font-size:9.5px;font-weight:700;fill:var(--crit)">Meta ANS (3d)</text>`;
+
+  // Stacked Bars (DEP + RAMA)
+  S.forEach((d, i) => {
+    const cx = L + (i + 0.5) * colW;
+    const yBase = T + innerH;
+    const hDep = (d.dep / maxBugs) * innerH;
+    const hRama = (d.rama / maxBugs) * innerH;
+
+    // DEP bar (Bottom)
+    s += `<rect x="${cx - barW/2}" y="${yBase - hDep}" width="${barW}" height="${hDep}" rx="2" fill="#0284c7" opacity="0.9"/>`;
+    // RAMA bar (Stacked on top)
+    s += `<rect x="${cx - barW/2}" y="${yBase - hDep - hRama}" width="${barW}" height="${hRama}" rx="2" fill="#8b5cf6" opacity="0.9"/>`;
+
+    // Total count label above bar
+    s += `<text x="${cx}" y="${yBase - hDep - hRama - 6}" text-anchor="middle" class="lbl-strong" style="font-size:11px;font-weight:700">${d.tot}</text>`;
+
+    // Category label on X axis
+    const shortName = d.sp.replace("Sprint ", "S").replace("Sin Sprint / Raíz", "Sin Sp");
+    s += `<text x="${cx}" y="${yBase + 16}" text-anchor="middle" class="lbl-strong" style="font-size:10.5px">${shortName}</text>`;
+    s += `<text x="${cx}" y="${yBase + 28}" text-anchor="middle" style="font-size:9px;fill:var(--muted)">${d.tot} bugs</text>`;
+  });
+
+  // Line Points for Tiempo Promedio Consolidado
+  const pts = S.map((d, i) => {
+    const cx = L + (i + 0.5) * colW;
+    const cy = yRight(d.t_cons);
+    return { cx, cy, d };
+  });
+
+  // Draw Polyline
+  s += `<polyline points="${pts.map(p => p.cx + ',' + p.cy).join(' ')}" fill="none" stroke="#f59e0b" stroke-width="2.5"/>`;
+
+  // Draw Points & Values
+  pts.forEach(p => {
+    s += `<circle cx="${p.cx}" cy="${p.cy}" r="4" fill="#f59e0b" stroke="var(--surface)" stroke-width="2"/>`;
+    s += `<text x="${p.cx}" y="${p.cy - 8}" text-anchor="middle" style="font-size:10px;font-weight:800;fill:#f59e0b">${p.d.t_cons.toFixed(1)}d</text>`;
+  });
+
+  // Interactive hit overlays
+  S.forEach((d, i) => {
+    const cx = L + (i + 0.5) * colW;
+    s += `<rect class="hit-bug419" data-i="${i}" x="${cx - colW/2}" y="${T}" width="${colW}" height="${innerH}" fill="transparent" style="cursor:pointer"/>`;
+  });
+
+  s += `</svg>`;
+  el.innerHTML = s;
+
+  // Tooltips
+  el.querySelectorAll(".hit-bug419").forEach(h => {
+    const i = +h.dataset.i;
+    const d = S[i];
+    h.addEventListener("mousemove", e => {
+      showTip(e, `
+        <div style="font-size:12px;font-weight:800;margin-bottom:4px;color:var(--ink)">${d.sp}</div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span style="color:#0284c7">● Bugs Depósitos (BAC):</span><b>${nf0.format(d.dep)} (${d.p_dep.toFixed(1)}%)</b></div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span style="color:#8b5cf6">● Bugs Rama Judicial:</span><b>${nf0.format(d.rama)} (${d.p_rama.toFixed(1)}%)</b></div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span>Total Bugs Sprint:</span><b>${nf0.format(d.tot)}</b></div>
+        <hr style="margin:5px 0;border:0;border-top:1px dashed var(--line)">
+        <div style="display:flex;justify-content:space-between;gap:14px"><span>T. Prom DEP:</span><b>${d.t_dep.toFixed(1)} días</b></div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span>T. Prom RAMA:</span><b>${d.t_rama.toFixed(1)} días</b></div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span style="color:#f59e0b;font-weight:700">T. Prom Consolidado:</span><b style="color:#f59e0b">${d.t_cons.toFixed(1)} días</b></div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span style="color:var(--good)">Meta ANS Contractual:</span><b>3.0 días</b></div>
+        <div style="display:flex;justify-content:space-between;gap:14px"><span>Brecha vs ANS:</span><b style="color:${d.sem === 'good' ? 'var(--good)' : d.sem === 'warn' ? 'var(--warn)' : 'var(--crit)'}">+${d.brecha.toFixed(1)} días (${d.st})</b></div>
+      `);
+    });
+    h.addEventListener("mouseleave", hideTip);
+  });
+}
+
 
 function renderCU(g){
   const el = $("#cpe-cu");
