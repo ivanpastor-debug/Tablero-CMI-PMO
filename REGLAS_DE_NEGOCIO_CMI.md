@@ -55,7 +55,7 @@ Cada unidad de medición contractual es evaluada bajo los 5 cubos de la escala o
 ### 3.1. Marco de Gestión de Defectos (Bugs), Curva ANS y Liquidación Comercial en Proyecto 419 (Depósitos Judiciales)
 En el marco de la supervisión integral de Depósitos Judiciales, el proyecto incorpora un módulo especializado para la gobernanza de defectos técnicos (Bugs) con las siguientes reglas de negocio:
 
-1. **Segmentación de Variantes Operativas:**
+1. **Segmentación de Variantes Operativas (Bug´s de Desarrollo - Fuente de información Azure DevOps Linktic):**
    * La medición de defectos se divide en dos frentes operacionales con dinámicas de desarrollo independientes:
      * **Depósitos Judiciales (BAC - Banco Agrario de Colombia):** 1.265 bugs (68,9% del volumen global).
      * **Rama Judicial:** 571 bugs (31,1% del volumen global).
@@ -77,7 +77,7 @@ En el marco de la supervisión integral de Depósitos Judiciales, el proyecto in
      $$\text{Reducción de Tiempo} = \frac{T_{\text{S1}} - T_{\text{S7}}}{T_{\text{S1}}} \times 100 = \frac{25,0\text{ d} - 5,4\text{ d}}{25,0\text{ d}} \times 100 = 78,4\%$$
    * Esta reducción del **78,4%** en tiempos de atención certifica la curva de aprendizaje, estabilización de código y madurez en la mesa de soporte.
 
-4. **Reglas de Conciliación y Liquidación Comercial (Rango B59:F63):**
+4. **Reglas de Conciliación de Bug´s con Reportados por Cliente (Rango B59:F63):**
    * Los defectos reportados se someten a mesas de conciliación técnica periódicas con el cliente (Banco Agrario / Rama Judicial) para definir los defectos imputables y su liquidación económica:
      * **Sprint 01:** 406 bugs Linktic $\rightarrow$ **$35.000.000 COP** (Conciliado y Facturado).
      * **Sprint 02:** 175 bugs Linktic $\rightarrow$ **$21.000.000 COP** (Conciliado y Facturado).
