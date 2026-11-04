@@ -1497,9 +1497,9 @@ const BUGS_419_DATA = {
     dep: 1265, rama: 571, tot: 1836, p_dep: 68.9, p_rama: 31.1, t_dep: 9.5, t_rama: 26.9, t_cons: 15.2, ans: 3.0, brecha: 12.2
   },
   conciliacion: [
-    { sp: "Sp1", linktic: 406, cliente: null, concil: null, valor: 35000000, estado: "Conciliado y Facturado", sem: "good" },
-    { sp: "Sp2", linktic: 175, cliente: null, concil: null, valor: 21000000, estado: "Conciliado y Facturado", sem: "good" },
-    { sp: "Sp3", linktic: 309, cliente: 188,  concil: "69", valor: 74000000, estado: "Conciliado y Facturado", sem: "good" },
+    { sp: "Sp1", linktic: 406, cliente: 200,  concil: "200", valor: 35000000, estado: "Conciliado y Facturado", sem: "good" },
+    { sp: "Sp2", linktic: 175, cliente: 96,   concil: "96",  valor: 21000000, estado: "Conciliado y Facturado", sem: "good" },
+    { sp: "Sp3", linktic: 309, cliente: 188,  concil: "69",  valor: 74000000, estado: "Conciliado y Facturado", sem: "good" },
     { sp: "Sp4", linktic: 231, cliente: 250,  concil: "Pendiente conciliación", valor: null, estado: "Mesa Técnica en Curso", sem: "warn" }
   ],
   testigos: [
@@ -1607,7 +1607,7 @@ function renderBugs419Section() {
               <td>Total / Subtotal Acumulado</td>
               <td class="n">${nf0.format(C.reduce((a,x)=>a+x.linktic,0))}</td>
               <td class="n">${nf0.format(C.reduce((a,x)=>a+(x.cliente||0),0))}</td>
-              <td style="text-align:center"><b>69 acordados</b></td>
+              <td style="text-align:center"><b>${nf0.format(C.reduce((a,x)=>(x.concil && !isNaN(Number(x.concil))) ? a + Number(x.concil) : a, 0))} acordados</b></td>
               <td class="n" style="color:var(--good);font-size:13px">$ ${nf0.format(totVal)}</td>
               <td style="text-align:center"><span class="st good">Sp1 a Sp3 Liquidados</span></td>
             </tr>
