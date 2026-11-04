@@ -42,7 +42,7 @@ Cada unidad de medición contractual es evaluada bajo los 5 cubos de la escala o
 | **005** · Positiva SGDEA 2026 - 3T | **13 Épicas** | `26,15%` | `23,08%` (3/13) | Conexión directa a Azure DevOps. Desglose complementario de 41 funcionalidades (7 en producción). |
 | **POS** · Core Positiva (Consolidado) | **20 Épicas** | `23,90%` | `0,00%` (0/20) | Integra subproyecto 355 (18 épicas, avance `23,33%`) y subproyecto 416 (2 épicas, avance `29,00%`). Comparte libro financiero consolidado (carpeta 416). |
 | **384** · Core Fiduprevisora | **33 Épicas** | `42,42%` | `3,03%` (1/33) | Evaluado sobre las 33 épicas válidas de Azure DevOps con desglose técnico de >500 funcionalidades (90 en producción). |
-| **419** · Depósitos Judiciales | **466 Funcionalidades** | `11,96%` | `26,82%` (125/466) | **Excepción Oficial PMO:** Se rige por el archivo maestro local PMO (125 certificadas de 466). **Exclusión estricta:** Se descarta la épica interna `▾ 419DPJ_EP_LT_Seguimiento_Transversal_Linktic` (`id: 327682`, 5 func.) por ser control interno. En paralelo visualiza 194 func. en Azure (DEP + RAMA). |
+| **419** · Depósitos Judiciales | **466 Funcionalidades** | `11,96%` | `26,82%` (125/466) | **Excepción Oficial PMO:** Se rige por el archivo maestro local PMO (125 certificadas de 466). **Exclusión estricta:** Se descarta la épica interna `▾ 419DPJ_EP_LT_Seguimiento_Transversal_Linktic` (`id: 327682`, 5 func.) por ser control interno. En paralelo visualiza 194 func. en Azure (DEP + RAMA) y auditoría de 1.836 bugs con ANS de 3 días y liquidación comercial. |
 | **453** · Monitoreo CPE 2026 | **71 Casos de Uso** | `47,85%` | `39,44%` (28/71) | **Medición Exclusiva por Casos de Uso:** Evalúa el campo Estado Interno `estados_453`. Excluye CUs en `10. Transversal`. Incorpora Focos (A, B, C, D) con Línea Base vs Reprogramada y releases por iteración. |
 | **456** · Innovación Aeronáutica | **6 Entregables Contractuales** | `24,00%` | `16,67%` (1/6) | **Supervisión Contractual en 3 Fases:** 6 hitos (1 al 100%, 1 al 50%). **Regla de Interfaz:** Ficha operativa en **dos columnas lado a lado (`g-2`)** (Columna 1: Escala CMI + Columna 2: Desviación del Cronograma) y debajo el árbol vivo de Azure (1 épica, 4 func., 16 HU). |
 | **348** · SGDEA Acueducto | **10 Épicas** | `25,29%` | `10,00%` (1/10) | 10 épicas contractuales (1 al 100%: *Assesment de Madurez*). Desglose técnico de 115 funcionalidades (26 en producción). |
@@ -50,6 +50,43 @@ Cada unidad de medición contractual es evaluada bajo los 5 cubos de la escala o
 | **421** · BALÚ | **2 Frentes** | `35,00%` | `0,00%` (0/2) | Medición contractual sobre *Afiliaciones y Novedades* (50%) y *Recaudo y Cartera* (20%). |
 | **457** · Portales La Equidad | **5 Épicas** | `64,00%` | `40,00%` (2/5) | Ingesta por Captura Directa desde Azure DevOps (`opOnly: true`). 2 épicas al 100% (*Portal Formación* y *Portal Clientes*). |
 | **020** · Servicios de Analítica | **2 Épicas** | `50,00%` | `0,00%` (0/2) | Ingesta por Captura Directa desde Azure DevOps (`opOnly: true`). 2 épicas activas (*OPERACIÓN* al 86,98% y *SOPORTE* al 94,44% en Escala CMI 50%). |
+| **461** · Cuentas Claras CNE | **7 Épicas** | `8,57%` | `0,00%` (0/7) | Ingesta por Captura Directa desde Azure DevOps (`opOnly: true`). 3 épicas en Escala CMI 20% y 4 en 0%. Soporte de 32 features y 108 HU activas. |
+
+### 3.1. Marco de Gestión de Defectos (Bugs), Curva ANS y Liquidación Comercial en Proyecto 419 (Depósitos Judiciales)
+En el marco de la supervisión integral de Depósitos Judiciales, el proyecto incorpora un módulo especializado para la gobernanza de defectos técnicos (Bugs) con las siguientes reglas de negocio:
+
+1. **Segmentación de Variantes Operativas:**
+   * La medición de defectos se divide en dos frentes operacionales con dinámicas de desarrollo independientes:
+     * **Depósitos Judiciales (BAC - Banco Agrario de Colombia):** 1.265 bugs (68,9% del volumen global).
+     * **Rama Judicial:** 571 bugs (31,1% del volumen global).
+   * **Universo Total Auditado:** 1.836 work items de tipo Bug consolidados con doble validación al 100% en Azure DevOps.
+
+2. **Compromiso Contractual y Tiempos de Respuesta (ANS):**
+   * **Meta ANS Contractual:** Tiempo máximo de resolución esperado $\le 3,0$ días hábiles.
+   * **Tiempo Promedio Global:** 15,2 días de resolución (con una mediana de 6,7 días).
+   * **Fórmula de Brecha ANS por Sprint:**
+     $$\text{Brecha ANS} = T_{\text{cons}} - 3,0\text{ días}$$
+     *(Donde $T_{\text{cons}}$ es el tiempo promedio ponderado de resolución del sprint).*
+   * **Criterio Semafórico ANS:**
+     * **Verde (`good`):** *Cerca al ANS* ($\le 6,0\text{ d}$, brecha $\le +3,0\text{ d}$).
+     * **Amarillo (`warn`):** *Fuera de ANS Moderado* ($> 6,0\text{ d}$ y $\le 8,0\text{ d}$, brecha entre $+3,1\text{ d}$ y $+5,0\text{ d}$).
+     * **Rojo (`crit`):** *Fuera de ANS Crítico* ($> 8,0\text{ d}$, brecha $> +5,0\text{ d}$).
+
+3. **Curva de Eficiencia Operativa (S1 ➔ S7):**
+   * El indicador evalúa la evolución de los tiempos entre el arranque del proyecto y el sprint vigente:
+     $$\text{Reducción de Tiempo} = \frac{T_{\text{S1}} - T_{\text{S7}}}{T_{\text{S1}}} \times 100 = \frac{25,0\text{ d} - 5,4\text{ d}}{25,0\text{ d}} \times 100 = 78,4\%$$
+   * Esta reducción del **78,4%** en tiempos de atención certifica la curva de aprendizaje, estabilización de código y madurez en la mesa de soporte.
+
+4. **Reglas de Conciliación y Liquidación Comercial (Rango B59:F63):**
+   * Los defectos reportados se someten a mesas de conciliación técnica periódicas con el cliente (Banco Agrario / Rama Judicial) para definir los defectos imputables y su liquidación económica:
+     * **Sprint 01:** 406 bugs Linktic $\rightarrow$ **$35.000.000 COP** (Conciliado y Facturado).
+     * **Sprint 02:** 175 bugs Linktic $\rightarrow$ **$21.000.000 COP** (Conciliado y Facturado).
+     * **Sprint 03:** 309 bugs Linktic vs 188 cliente (69 bugs formalmente acordados) $\rightarrow$ **$74.000.000 COP** (Conciliado y Facturado).
+     * **Subtotal Facturado/Liquidado:** **$130.000.000 COP**.
+     * **Sprint 04:** 231 bugs Linktic vs 250 cliente $\rightarrow$ En proceso de concertación (*Mesa Técnica en Curso*).
+
+5. **Auditoría de Testigos en Azure DevOps:**
+   * Toda cifra y estado conciliado cuenta con respaldo en work items específicos tipo Bug registrados en Azure DevOps (con ID, título, fecha de creación `fc`, fecha de resolución `fr`, severidad y tiempo efectivo transcurrido), garantizando trazabilidad y transparencia contractual.
 
 ---
 
