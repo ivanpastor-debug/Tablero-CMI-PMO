@@ -231,6 +231,15 @@ def main() -> int:
         print(f"348 táctico/estratégico: {indicator_348[0]:.2%} / {indicator_348[1]:.2%}")
         print(f"456 táctico/estratégico: {indicator_456[0]:.2%} / {indicator_456[1]:.2%}")
         print(f"Frentes Acueducto a incorporar: {front_count}")
+        sync_bugs_script = ROOT / "sync_bugs_419.py"
+        if not sync_bugs_script.is_file():
+            sync_bugs_script = home / "Indicadores estra y tac" / "sync_bugs_419.py"
+        if sync_bugs_script.is_file():
+            try:
+                import subprocess
+                subprocess.run([sys.executable, str(sync_bugs_script), "--dry-run"], check=False)
+            except Exception as e:
+                print(f"Aviso validación Bugs 419: {e}")
         print("Dry run: no se modificaron archivos.")
         return 0
 
@@ -280,6 +289,18 @@ def main() -> int:
             subprocess.run([sys.executable, str(sync_script)], check=False)
         except Exception as e:
             print(f"Aviso sincronización Azure: {e}")
+
+    # Sincronización automática de Auditoría y Conciliación de Bugs 419
+    sync_bugs_script = ROOT / "sync_bugs_419.py"
+    if not sync_bugs_script.is_file():
+        sync_bugs_script = home / "Indicadores estra y tac" / "sync_bugs_419.py"
+    if sync_bugs_script.is_file():
+        try:
+            import subprocess
+            print("Sincronizando Auditoría y Conciliación de Bugs 419...")
+            subprocess.run([sys.executable, str(sync_bugs_script)], check=False)
+        except Exception as e:
+            print(f"Aviso sincronización Bugs 419: {e}")
 
     return 0
 
