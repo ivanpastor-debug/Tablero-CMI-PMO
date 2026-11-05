@@ -1221,10 +1221,16 @@ function renderChips(){
     return String(ta[3]).localeCompare(String(tb[3]), "es");
   });
   const selected=cur||"";
-  const opts=items.map(p=>{
-    const label=(p.parent?"↳ Subproyecto "+p.id+" · ":"")+((p.name||p.sub||p.id).replace(/</g,"&lt;"));
-    return `<option value="${p.id}" ${p.id===selected?"selected":""}>${label}</option>`;
-  }).join("");
+  const getOptLabel=p=>{
+    if(p.parent){
+      if(p.id==="355") return "↳ 355 · Positiva Core";
+      if(p.id==="416") return "↳ 416 · Evolutivos";
+      const clean=(p.name||p.sub||p.id).replace(/</g,"&lt;");
+      return clean.startsWith(p.id)?`↳ ${clean}`:`↳ ${p.id} · ${clean}`;
+    }
+    return (p.name||p.sub||p.id).replace(/</g,"&lt;");
+  };
+  const opts=items.map(p=>`<option value="${p.id}" ${p.id===selected?"selected":""}>${getOptLabel(p)}</option>`).join("");
   $("#pchips").innerHTML=`<div class="project-picker-redesign">
     <label class="ppr-field"><span class="ppr-label">Buscar proyecto</span><input id="project-search-detail" type="search" placeholder="Código, nombre o cliente..." autocomplete="off" value=""></label>
     <label class="ppr-field"><span class="ppr-label">Proyecto seleccionado</span><select id="project-select-detail"><option value="">Seleccione un proyecto...</option>${opts}</select></label>
@@ -1236,7 +1242,7 @@ function renderChips(){
     const current=select.value;
     const filtered=items.filter(p=>`${p.id} ${p.name||""} ${p.sub||""} ${p.parent||""}`.toLocaleLowerCase("es").includes(q));
     select.innerHTML=`<option value="">${filtered.length?`Seleccione entre ${filtered.length} resultados...`:"Sin coincidencias"}</option>`+
-      filtered.map(p=>`<option value="${p.id}">${p.parent?"↳ Subproyecto "+p.id+" · ":""}${(p.name||p.sub||p.id).replace(/</g,"&lt;")}</option>`).join("");
+      filtered.map(p=>`<option value="${p.id}">${getOptLabel(p)}</option>`).join("");
     if(filtered.some(p=>p.id===current))select.value=current;
   });
   select.addEventListener("change",()=>{if(select.value)openProj(select.value,true)});
@@ -1281,7 +1287,16 @@ function renderFicha(){
   const src=[["Financiero",!!p.m],["Operativo CMI",true],["Base maestra",!!g]];
   const par=p.subs?p:p.parent?getP(p.parent):null;
   let h=`<div class="ph project-detail-heading"><div><span class="eyebrow">Detalle integral del proyecto</span><h2>${p.name||p.sub||p.id}</h2><div class="srcs"><span class="pill">Código ${p.id}</span><span class="pill">Corte operativo: ${getProjDates(p).opDate}</span></div></div><span class="tag">Seguimiento PMO</span></div>`;
-  if(par)h+=`<div class="seg" role="group" aria-label="Subproyectos de ${par.name}"><span class="eyebrow" style="align-self:center;margin-right:4px">Subproyectos</span>${[[par.id,"Vista general "+code(par)],...par.subs.map(id=>[id,id+" · "+(getP(id).sub||"").replace(/^Subproyecto \d+ ?·? ?/,"")||id])].map(([id,l])=>`<button aria-pressed="${id===p.id}" data-p="${id}">${l.replace(/ · $/,"")}</button>`).join("")}</div>`;
+  if(par){
+    const subLabel=id=>{
+      if(id===par.id) return "Vista general "+code(par);
+      if(id==="355") return "355 · Positiva Core";
+      if(id==="416") return "416 · Evolutivos";
+      const clean=(getP(id).name||getP(id).sub||id).replace(/^Subproyecto \d+ ?·? ?/,"");
+      return clean.startsWith(id)?clean:`${id} · ${clean}`;
+    };
+    h+=`<div class="seg" role="group" aria-label="Componentes de ${par.name}"><span class="eyebrow" style="align-self:center;margin-right:4px">Componentes 416</span>${[[par.id],...par.subs.map(id=>[id])].map(([id])=>`<button aria-pressed="${id===p.id}" data-p="${id}">${subLabel(id)}</button>`).join("")}</div>`;
+  }
   h+=cmiOverviewHTML(p);
   // Selector de vista: operativa / financiera
   const fs=finState(p);
