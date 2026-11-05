@@ -1273,12 +1273,12 @@ function cmiOverviewHTML(p){
     </div>
   </section>`;
 }
-function openProj(id,stay){cur=id;renderChips();renderFicha();if(!stay)show("proj")}
+function openProj(id,stay){cur=id;if(!mode)mode="op";renderChips();renderFicha();if(!stay)show("proj")}
 function tileHTML(l,v,s,cls){return `<div class="panel tile"><span class="lbl">${l}</span><span class="val">${cls?st(cls,v):v}</span><span class="sub">${s}</span></div>`}
 
 const REC_CUT={"005":"1 oct 2026","POS":"1 oct 2026","416":"1 oct 2026","384":"1 oct 2026","419":"1 oct 2026","421":"1 oct 2026"};
-let mode=null,finTab="fact";
-try{mode=localStorage.getItem("cmi-mode")||null;finTab=localStorage.getItem("cmi-fintab")||"fact"}catch(e){}
+let mode="op",finTab="fact";
+try{const savedMode=localStorage.getItem("cmi-mode");mode=(savedMode==="fin"||savedMode==="op")?savedMode:"op";finTab=localStorage.getItem("cmi-fintab")||"fact"}catch(e){}
 const saveUI=()=>{try{localStorage.setItem("cmi-mode",mode||"");localStorage.setItem("cmi-fintab",finTab)}catch(e){}};
 
 function renderFicha(){
@@ -2565,6 +2565,29 @@ function updateTopOpTiles(cmi, subLabel) {
   const heroTactSub = document.querySelector(".cmi-hero-card.tactical .cmi-bottom span:first-child");
   if (heroTactSub && n) heroTactSub.textContent = `${n} ${u} en universo`;
 }
+
+const GITHUB_PAGES_BASE = "https://ivanpastor-debug.github.io/Tablero-CMI-PMO/";
+function getJsonUrl(relPath) {
+  if (window.location.protocol === "file:") {
+    return GITHUB_PAGES_BASE + relPath;
+  }
+  return relPath;
+}
+
+let _funcInitPromise = null;
+function ensureFuncIndex() {
+  if (_funcInitPromise) return _funcInitPromise;
+  _funcInitPromise = Promise.all([
+    fetch(getJsonUrl("data_func.json")).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(getJsonUrl("data_453_cpe.json")).then(r => r.ok ? r.json() : null).catch(() => null)
+  ]).then(([jFunc, jCpe]) => {
+    if (jFunc) FUNC = jFunc;
+    if (jCpe) CPE453 = jCpe;
+    applyLiveFuncCmi();
+  });
+  return _funcInitPromise;
+}
+// ensureFuncIndex se ejecuta al final
 
 function getFncCodeForProj(p) {
   if (!p) return null;
