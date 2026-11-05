@@ -1193,9 +1193,21 @@ function renderCostPort(){
 /* ======================= FICHA POR PROYECTO ======================= */
 let cur=null;
 function renderChips(){
+  const getProjNum=p=>{
+    const mId=String(p.id||"").match(/\d+/);
+    if(mId)return parseInt(mId[0],10);
+    const mName=String(p.name||"").match(/\d+/);
+    if(mName)return parseInt(mName[0],10);
+    const mCode=String(p.code||"").match(/\d+/);
+    if(mCode)return parseInt(mCode[0],10);
+    return 99999;
+  };
   const items=(ALL&&ALL.length?ALL:P).slice().sort((a,b)=>{
-    const an=(a.parent?`1-${a.parent}`:"0")+String(a.id),bn=(b.parent?`1-${b.parent}`:"0")+String(b.id);
-    return an.localeCompare(bn,"es",{numeric:true});
+    const na=getProjNum(a),nb=getProjNum(b);
+    if(na!==nb)return na-nb;
+    if(!a.parent&&b.parent)return -1;
+    if(a.parent&&!b.parent)return 1;
+    return String(a.id).localeCompare(String(b.id),"es");
   });
   const selected=cur||"";
   const opts=items.map(p=>{
