@@ -83,19 +83,19 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 52, '75': 2, '50': 2, '20': 1, '0': 0}
         }
 
-    # 2. 419: Depósitos Judiciales - Excepción PMO: mantener archivo local (125 entregadas / 466 entregables)
+    # 2. 419: Depósitos Judiciales - Excepción PMO: mantener archivo local (80 entregadas / 466 entregables)
     # Excluye la épica de seguimiento interno 419DPJ_EP_LT_Seguimiento_Transversal_Linktic y sus 5 funcionalidades
     if cod == '419':
         return {
             'tactico': 0.1195777351,
-            'estrategico': 0.2682403433,
+            'estrategico': 0.1716738197,
             'n': 466,
-            'd': 125,
+            'd': 80,
             'u': 'funcionalidades',
             'isEpics': False,
             'feat_total': feat_tot,
             'feat_ent': feat_ent,
-            'buckets': {'100': 125, '75': 0, '50': 40, '20': 18, '0': 278}
+            'buckets': {'100': 80, '75': 0, '50': 40, '20': 18, '0': 328}
         }
 
     # 3. 421: BALÚ Frentes contractuales: Afiliaciones y Novedades (0.5), Recaudo y Cartera (0.2)

@@ -1624,43 +1624,257 @@ function render419(){
 
 /* ==================== AUDITORÍA Y CONSOLIDADO BUGS 419 ==================== */
 const BUGS_419_DATA = {
-  kpis: {
-    total: 1836,
-    dep: 1265,
-    rama: 571,
-    pct_dep: 68.9,
-    pct_rama: 31.1,
-    t_prom: 15.2,
-    mediana: 6.7,
-    ans: 3.0,
-    evo_s1: 25.0,
-    evo_s7: 5.4,
-    red_pct: 78.4
+  "kpis": {
+    "tot_bugs": 1836,
+    "dep_bugs": 1265,
+    "rama_bugs": 571,
+    "dep_pct": 68.9,
+    "rama_pct": 31.1,
+    "t_prom": 15.2,
+    "t_med": 6.7,
+    "ans": 3.0,
+    "brecha": 12.2,
+    "s1_t": 25.0,
+    "s7_t": 5.4,
+    "reduc": 78.4
   },
-  sprints: [
-    { sp: "Sprint 01", dep: 296, rama: 110, tot: 406, p_dep: 72.9, p_rama: 27.1, t_dep: 11.1, t_rama: 62.5, t_cons: 25.0, ans: 3.0, brecha: 22.0, st: "Fuera de ANS (> 6d)", sem: "crit" },
-    { sp: "Sprint 02", dep: 114, rama: 61,  tot: 175, p_dep: 65.1, p_rama: 34.9, t_dep: 13.3, t_rama: 36.5, t_cons: 21.4, ans: 3.0, brecha: 18.4, st: "Fuera de ANS (> 6d)", sem: "crit" },
-    { sp: "Sprint 03", dep: 137, rama: 172, tot: 309, p_dep: 44.3, p_rama: 55.7, t_dep: 15.3, t_rama: 11.7, t_cons: 13.3, ans: 3.0, brecha: 10.3, st: "Fuera de ANS (> 6d)", sem: "crit" },
-    { sp: "Sprint 04", dep: 183, rama: 48,  tot: 231, p_dep: 79.2, p_rama: 20.8, t_dep: 7.7,  t_rama: 15.3, t_cons: 9.5,  ans: 3.0, brecha: 6.5,  st: "Fuera de ANS (> 6d)", sem: "crit" },
-    { sp: "Sprint 05", dep: 52,  rama: 15,  tot: 67,  p_dep: 77.6, p_rama: 22.4, t_dep: 8.0,  t_rama: 7.3,  t_cons: 7.8,  ans: 3.0, brecha: 4.8,  st: "Fuera de ANS (> 6d)", sem: "warn" },
-    { sp: "Sprint 06", dep: 137, rama: 60,  tot: 197, p_dep: 69.5, p_rama: 30.5, t_dep: 6.3,  t_rama: 5.9,  t_cons: 6.2,  ans: 3.0, brecha: 3.2,  st: "Fuera de ANS (> 6d)", sem: "warn" },
-    { sp: "Sprint 07", dep: 178, rama: 39,  tot: 217, p_dep: 82.0, p_rama: 18.0, t_dep: 4.4,  t_rama: 8.7,  t_cons: 5.4,  ans: 3.0, brecha: 2.4,  st: "Cerca al ANS (≤ 6d)", sem: "good" },
-    { sp: "Sin Sprint / Raíz", dep: 159, rama: 66, tot: 225, p_dep: 70.7, p_rama: 29.3, t_dep: 5.7, t_rama: 38.5, t_cons: 16.1, ans: 3.0, brecha: 13.1, st: "Fuera de ANS (> 6d)", sem: "crit" }
+  "sprints": [
+    {
+      "sp": "Sprint 01",
+      "dep": 296,
+      "rama": 110,
+      "tot": 406,
+      "p_dep": 72.9,
+      "p_rama": 27.1,
+      "t_dep": 11.1,
+      "t_rama": 62.5,
+      "t_cons": 25.0,
+      "ans": 3.0,
+      "brecha": 22.0,
+      "sem": "crit"
+    },
+    {
+      "sp": "Sprint 02",
+      "dep": 114,
+      "rama": 61,
+      "tot": 175,
+      "p_dep": 65.1,
+      "p_rama": 34.9,
+      "t_dep": 13.3,
+      "t_rama": 36.5,
+      "t_cons": 21.4,
+      "ans": 3.0,
+      "brecha": 18.4,
+      "sem": "crit"
+    },
+    {
+      "sp": "Sprint 03",
+      "dep": 137,
+      "rama": 172,
+      "tot": 309,
+      "p_dep": 44.3,
+      "p_rama": 55.7,
+      "t_dep": 15.3,
+      "t_rama": 11.7,
+      "t_cons": 13.3,
+      "ans": 3.0,
+      "brecha": 10.3,
+      "sem": "crit"
+    },
+    {
+      "sp": "Sprint 04",
+      "dep": 183,
+      "rama": 48,
+      "tot": 231,
+      "p_dep": 79.2,
+      "p_rama": 20.8,
+      "t_dep": 7.7,
+      "t_rama": 15.3,
+      "t_cons": 9.5,
+      "ans": 3.0,
+      "brecha": 6.5,
+      "sem": "crit"
+    },
+    {
+      "sp": "Sprint 05",
+      "dep": 52,
+      "rama": 15,
+      "tot": 67,
+      "p_dep": 77.6,
+      "p_rama": 22.4,
+      "t_dep": 8.0,
+      "t_rama": 7.3,
+      "t_cons": 7.8,
+      "ans": 3.0,
+      "brecha": 4.8,
+      "sem": "warn"
+    },
+    {
+      "sp": "Sprint 06",
+      "dep": 137,
+      "rama": 60,
+      "tot": 197,
+      "p_dep": 69.5,
+      "p_rama": 30.5,
+      "t_dep": 6.3,
+      "t_rama": 5.9,
+      "t_cons": 6.2,
+      "ans": 3.0,
+      "brecha": 3.2,
+      "sem": "warn"
+    },
+    {
+      "sp": "Sprint 07",
+      "dep": 178,
+      "rama": 39,
+      "tot": 217,
+      "p_dep": 82.0,
+      "p_rama": 18.0,
+      "t_dep": 4.4,
+      "t_rama": 8.7,
+      "t_cons": 5.4,
+      "ans": 3.0,
+      "brecha": 2.4,
+      "sem": "good"
+    },
+    {
+      "sp": "Sin Sprint / Raíz",
+      "dep": 159,
+      "rama": 66,
+      "tot": 225,
+      "p_dep": 70.7,
+      "p_rama": 29.3,
+      "t_dep": 5.7,
+      "t_rama": 38.5,
+      "t_cons": 16.1,
+      "ans": 3.0,
+      "brecha": 13.1,
+      "sem": "crit"
+    },
+    {
+      "sp": "Sprint 10",
+      "dep": 1,
+      "rama": 0,
+      "tot": 1,
+      "p_dep": 100.0,
+      "p_rama": 0.0,
+      "t_dep": 0.0,
+      "t_rama": 0.0,
+      "t_cons": 0.0,
+      "ans": 3.0,
+      "brecha": -3.0,
+      "sem": "good"
+    },
+    {
+      "sp": "Sprint Backlog",
+      "dep": 8,
+      "rama": 0,
+      "tot": 8,
+      "p_dep": 100.0,
+      "p_rama": 0.0,
+      "t_dep": 25.0,
+      "t_rama": 0.0,
+      "t_cons": 25.0,
+      "ans": 3.0,
+      "brecha": 22.0,
+      "sem": "crit"
+    }
   ],
-  total_cons: {
-    dep: 1265, rama: 571, tot: 1836, p_dep: 68.9, p_rama: 31.1, t_dep: 9.5, t_rama: 26.9, t_cons: 15.2, ans: 3.0, brecha: 12.2
+  "total_cons": {
+    "dep": 1265,
+    "rama": 571,
+    "tot": 1836,
+    "p_dep": 68.9,
+    "p_rama": 31.1,
+    "t_dep": 9.5,
+    "t_rama": 26.9,
+    "t_cons": 15.2,
+    "ans": 3.0,
+    "brecha": 12.2
   },
-  conciliacion: [
-    { sp: "Sp1", linktic: 406, cliente: 200,  concil: "200", valor: 35000000, estado: "Conciliado y Facturado", sem: "good" },
-    { sp: "Sp2", linktic: 175, cliente: 96,   concil: "96",  valor: 21000000, estado: "Conciliado y Facturado", sem: "good" },
-    { sp: "Sp3", linktic: 309, cliente: 188,  concil: "69",  valor: 74000000, estado: "Conciliado y Facturado", sem: "good" },
-    { sp: "Sp4", linktic: 231, cliente: 250,  concil: "Pendiente conciliación", valor: null, estado: "Mesa Técnica en Curso", sem: "warn" }
+  "conciliacion": [
+    {
+      "sp": "Sp1",
+      "linktic": 406,
+      "cliente": 200,
+      "concil": "200",
+      "valor": 35000000,
+      "estado": "Conciliado y Facturado",
+      "sem": "good"
+    },
+    {
+      "sp": "Sp2",
+      "linktic": 175,
+      "cliente": 96,
+      "concil": "96",
+      "valor": 21000000,
+      "estado": "Conciliado y Facturado",
+      "sem": "good"
+    },
+    {
+      "sp": "Sp3",
+      "linktic": 309,
+      "cliente": 188,
+      "concil": "69",
+      "valor": 74000000,
+      "estado": "Conciliado y Facturado",
+      "sem": "good"
+    },
+    {
+      "sp": "Sp4",
+      "linktic": 231,
+      "cliente": 250,
+      "concil": "Pendiente conciliación",
+      "valor": null,
+      "estado": "Mesa Técnica en Curso",
+      "sem": "warn"
+    }
   ],
-  testigos: [
-    { id: 502170, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 03 (Sprint 3 PWT RAMA)", tit: "419_PR_MH_HU006_Visualizacion Mensajes Home", st: "3. Entregado", sev: "2. Alto", fc: "28/08/2026", fr: "30/09/2026", t: "33.0 d" },
-    { id: 522914, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 02 (Sprint 2 PWT RAMA)", tit: "419_PR_MH_HU006_El carrusel del Home no aplica el límite máximo de mensajes por entidad", st: "3. Entregado", sev: "3. Medio", fc: "28/09/2026", fr: "28/10/2026", t: "29.8 d" },
-    { id: 532666, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 07 (Sprint 7 PWT RAMA)", tit: "419_PR_HU001_Registrar_Orden_de_no_pago y Levantar Orden de Pago: Mensaje de búsqueda", st: "4. Cerrado", sev: "3. Medio", fc: "08/10/2026", fr: "27/10/2026", t: "19.1 d" },
-    { id: 539936, rama: "419 - RAMA DEPOSITOS JUDICIALES", iter: "Sprint 07 (Sprint 7 PWT RAMA)", tit: "419_PR_HU001_Registrar_Orden_de_no_pago: Al desmarcar un depósito después de Seleccionar Todos", st: "2. En Curso", sev: "3. Medio", fc: "19/10/2026", fr: "—", t: "Activo (en curso)" }
+  "testigos": [
+    {
+      "id": 502170,
+      "rama": "419 - RAMA DEPOSITOS JUDICIALES",
+      "iter": "Sprint 03 (Sprint 3 PWT RAMA)",
+      "tit": "419_PR_MH_HU006_Visualizacion Mensajes Home",
+      "st": "3. Entregado",
+      "sev": "2. Alto",
+      "fc": "28/08/2026",
+      "fr": "30/09/2026",
+      "t": "33.0 d"
+    },
+    {
+      "id": 522914,
+      "rama": "419 - RAMA DEPOSITOS JUDICIALES",
+      "iter": "Sprint 02 (Sprint 2 PWT RAMA)",
+      "tit": "419_PR_MH_HU006_El carrusel del Home no aplica el límite máximo de mensajes por entidad",
+      "st": "3. Entregado",
+      "sev": "3. Medio",
+      "fc": "28/09/2026",
+      "fr": "28/10/2026",
+      "t": "29.8 d"
+    },
+    {
+      "id": 532666,
+      "rama": "419 - RAMA DEPOSITOS JUDICIALES",
+      "iter": "Sprint 07 (Sprint 7 PWT RAMA)",
+      "tit": "419_PR_HU001_Registrar_Orden_de_no_pago y Levantar Orden de Pago: Mensaje de búsqueda",
+      "st": "4. Cerrado",
+      "sev": "3. Medio",
+      "fc": "08/10/2026",
+      "fr": "27/10/2026",
+      "t": "19.1 d"
+    },
+    {
+      "id": 539936,
+      "rama": "419 - RAMA DEPOSITOS JUDICIALES",
+      "iter": "Sprint 07 (Sprint 7 PWT RAMA)",
+      "tit": "419_PR_HU001_Registrar_Orden_de_no_pago: Al desmarcar un depósito después de Seleccionar Todos",
+      "st": "2. En Curso",
+      "sev": "3. Medio",
+      "fc": "19/10/2026",
+      "fr": "—",
+      "t": "Activo (en curso)"
+    }
   ]
 };
 

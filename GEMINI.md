@@ -313,3 +313,155 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
     - **Estado financiero:** Registrado con `opOnly: true` (*Sin libro financiero cargado*), listo para enlazar cuando la PMO incorpore `Indicadores 457.xlsx`.
 * **Actualización Dinámica de Rutas de Usuario (`Path.home()`):**
   - Todos los scripts (`ACTUALIZAR.py`, `actualizar_todo.py`, `sync_funcionalidades.py`, `enrich_func_cmi.py`, `ACTUALIZAR_TODO.bat`) utilizan ahora `Path.home()` (`C:\Users\IvanDarioPastorParra`), eliminando rutas fijas del perfil anterior.
+
+---
+
+## 18. Registro de Incorporación del Proyecto 020 (Servicios de Analítica) (29-oct-2026)
+* **Proyecto 020 (020 - PROYECTO SERVICIOS DE ANALITICA):**
+  - **Cliente y Entorno:** Positiva Compañía de Seguros · Servicios de Analítica.
+  - **Modalidad de Ingesta:** Captura directa automatizada desde Azure DevOps (`pull_azure_capturas_directas.py` con `Epic`, `Feature`, `HU`, `Bug` y `Task`), corte oficial `2026-10-29`.
+  - **Gobernanza CMI sobre 2 Épicas:**
+    1. *OPERACIÓN* (`525431`): 5 funcionalidades, 43 HU activas, 33 en prod. (86,98% de avance) → Escala CMI **50,00%**.
+    2. *SOPORTE* (`525428`): 2 funcionalidades, 18 HU activas, 16 en prod. (94,44% de avance) → Escala CMI **50,00%**.
+  - **Indicadores Oficiales PMO:**
+    - **Indicador Táctico:** **50,00%** (`(0.50 + 0.50) / 2`).
+    - **Indicador Estratégico:** **0,00%** (`0 de 2` Épicas al 100% entregadas al cliente).
+  - **Desglose Técnico en Azure DevOps:**
+    - **7 Funcionalidades:** *Siniestros/Agentes* (16 HU), *Documentación* (15 HU), *Extracciones* (12 HU), *Looker pro* (10 HU), *Gobierno de datos* (4 HU), *Fraude* (3 HU · 100% en prod.), *Gestión* (1 HU).
+    - **1 Funcionalidad cerrada en producción:** *Fraude* (14,3% cerrado).
+    - **63 HU activas:** 51 en producción (81,0% en producción · 89,52% avance global).
+  - **Integración en la Interfaz del Tablero:**
+    - Chip interactivo en `#pchips`: `020 - PROYECTO SERVICIOS DE ANALITICA`.
+    - Tarjeta operativa `#sem-op` con badge `Azure · 2 Épicas` y callout: `7 Funcionalidades en Azure` · `1 en prod.` · `14,3% cerrado`.
+    - Ficha Operativa con árbol jerárquico interactivo completo: Épica → Funcionalidad → HU con sus responsables y descarga en CSV.
+    - Estado financiero: Marcado como `opOnly: true` con nota explicativa `finNote`.
+  - **Sincronización y Validación:**
+    - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+    - Sincronización completa en las 4 rutas espejo y despliegue a producción vía GitHub Pages.
+
+---
+
+## 19. Registro de Ajuste de Etiquetas Financieras (03-nov-2026)
+* **Ajuste en la Sección Costos:**
+  - Se renombró el indicador `Cumpl. REAL / PPTO` a **`Ejecución REAL/PPTO`** en la tarjeta de costos de todos los proyectos (`costBlock`).
+* **Ajuste en Índices de Desempeño EVM (`evmCard`):**
+  - En los paneles de **Escenario PPTO** y **Escenario FCST**, se ajustó el numerador de la fórmula del CPI:
+    - Antes: `EV · Valor ganado`
+    - Ahora: **`EV · Costo total ejecutado`**
+* **Validación y Publicación:**
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Sincronización en las 4 rutas espejo y despliegue automático en GitHub Pages (`commit 37bbb5b`).
+
+---
+
+## 20. Registro de Incorporación del Proyecto 461 (Cuentas Claras · CNE) (03-nov-2026)
+* **Proyecto 461 (461 - PROYECTO CUENTAS CLARAS):**
+  - **Cliente y Entorno:** Consejo Nacional Electoral (CNE) · Cuentas Claras 2.0.
+  - **Modalidad de Ingesta:** Captura directa automatizada desde Azure DevOps (`HU_461_20261103.csv`), corte oficial `2026-11-03`.
+  - **Gobernanza CMI sobre 7 Épicas:**
+    1. *Parametrización y Configuración* (`457548`): 7 features, 32 HU activas, 57,72% de avance → Escala CMI **20,00%**.
+    2. *Gestión Electoral y Campañas* (`467870`): 5 features, 24 HU activas, 31,91% de avance → Escala CMI **0,00%**.
+    3. *Acceso e Identidad (IAM)* (`435992`): 5 features, 18 HU activas, 67,72% de avance → Escala CMI **20,00%**.
+    4. *Finanzas y Contabilidad de Campaña* (`487090`): 5 features, 11 HU activas, 22,00% de avance → Escala CMI **0,00%**.
+    5. *Declaración Anual de Patrimonio* (`487098`): 5 features, 11 HU activas, 21,00% de avance → Escala CMI **0,00%**.
+    6. *Rendición de Cuentas de Campaña* (`487094`): 4 features, 10 HU activas, 17,90% de avance → Escala CMI **0,00%**.
+    7. *Transversales* (`467406`): 1 feature, 2 HU activas (1 en prod.), 80,00% de avance → Escala CMI **20,00%**.
+  - **Indicadores Oficiales PMO:**
+    - **Indicador Táctico:** **8,57%** (`(3 * 0.20 + 4 * 0.0) / 7 = 0.60 / 7`).
+    - **Indicador Estratégico:** **0,00%** (`0 de 7` Épicas al 100% entregadas formalmente).
+  - **Desglose Técnico en Azure DevOps:**
+    - **32 Funcionalidades (Features)** registradas en Azure.
+    - **0 Funcionalidades cerradas al 100% en producción**.
+    - **108 HU activas** (1 en producción · 43,41% de avance ponderado global · 45 HU omitidas/cerradas).
+  - **Integración en la Interfaz del Tablero:**
+    - Chip interactivo en `#pchips`: `461 - PROYECTO CUENTAS CLARAS`.
+    - Tarjeta operativa `#sem-op` con badge `Azure · 7 Épicas` y callout: `32 Funcionalidades en Azure` · `0 en prod.` · `0,0% cerrado`.
+    - Ficha Operativa con árbol jerárquico interactivo completo: Épica → Funcionalidad → HU con sus responsables y descarga en CSV (`data_func/461.json`).
+    - Estado financiero: Marcado como `opOnly: true` con nota explicativa `finNote` (*Pendiente cargue de libro financiero*).
+  - **Sincronización y Validación:**
+    - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores de regex).
+    - Sincronización completa en las 4 rutas espejo y despliegue a producción vía GitHub Pages.
+
+---
+
+## 21. Registro de Auditoría de Bugs, Curva ANS y Conciliación Financiera en 419 (Depósitos Judiciales) (04-nov-2026)
+* **Contexto y Gobernanza de Defectos en 419 (Depósitos Judiciales):**
+  - Además del control de avance funcional maestro (466 funcionalidades / 125 certificadas), se incorporó en la ficha operativa del proyecto 419 el panel integral de auditoría de defectos (Bugs) con trazabilidad entre Linktic y el cliente (Banco Agrario / Rama Judicial).
+  - **Doble Validación en Azure DevOps:** 1.836 bugs auditados en total, diferenciando dos variantes operativas:
+    - **Depósitos Judiciales (BAC):** 1.265 bugs (68,9%).
+    - **Rama Judicial:** 571 bugs (31,1%).
+* **Control de Tiempos de Respuesta vs ANS Contractual (Meta ≤ 3.0 días):**
+  - **Tiempo Medio Global:** 15,2 días (Mediana 6,7 días).
+  - **Evolución S1 ➔ S7 (Curva de Eficiencia):**
+    - Reducción del **78,4%** en el tiempo de resolución: pasando de 25,0 días en Sprint 01 a 5,4 días en Sprint 07.
+    - S1: 406 bugs (25,0d promedio · Brecha +22,0d vs ANS · Crítico).
+    - S2: 175 bugs (21,4d promedio · Brecha +18,4d vs ANS · Crítico).
+    - S3: 309 bugs (13,3d promedio · Brecha +10,3d vs ANS · Crítico).
+    - S4: 231 bugs (9,5d promedio · Brecha +6,5d vs ANS · Crítico).
+    - S5: 67 bugs (7,8d promedio · Brecha +4,8d vs ANS · Alerta).
+    - S6: 197 bugs (6,2d promedio · Brecha +3,2d vs ANS · Alerta).
+    - S7: 217 bugs (5,4d promedio · Brecha +2,4d vs ANS · Favorable / Cerca al ANS ≤ 6d).
+    - Sin Sprint / Raíz: 225 bugs (16,1d promedio · Brecha +13,1d).
+* **Conciliación de bug´s con reportados por Cliente (Rango B59:F63):**
+  - Registro auditable del acuerdo comercial por defectos entre Linktic y el Cliente:
+    - **Sp1:** 406 bugs Linktic $\rightarrow$ **$35.000.000 COP** (Conciliado y Facturado).
+    - **Sp2:** 175 bugs Linktic $\rightarrow$ **$21.000.000 COP** (Conciliado y Facturado).
+    - **Sp3:** 309 bugs Linktic vs 188 cliente (69 acordados) $\rightarrow$ **$74.000.000 COP** (Conciliado y Facturado).
+    - **Total Liquidado (Sp1 a Sp3):** **$130.000.000 COP**.
+    - **Sp4:** 231 bugs Linktic vs 250 cliente $\rightarrow$ Pendiente conciliación (**Mesa Técnica en Curso**).
+* **Componentes de Interfaz Incorporados:**
+  - `renderBugs419Section()`: 4 KPI tiles superiores (Bugs Totales, Tiempo Medio Global, Meta ANS, Evolución S1➔S7).
+  - Gráfica combinada SVG `#c-bugs419`: Barras apiladas de volumen por sprint (azul BAC / púrpura Rama), línea de tendencia de tiempo promedio (ámbar) y línea de meta ANS punteada en rojo (3.0d) con tooltips interactivos (`renderBugs419Chart`).
+  - Tabla ejecutiva de Conciliación y Liquidación Financiera (B59:F63).
+  - Bloque colapsable con tabla detallada por sprint y semáforos ANS, más fichas de casos testigo certificados en Azure (IDs 502170, 522914, 532666, 539936).
+  - Ubicación: Inmediatamente después del desglose funcional y antes de la curva acumulada de entregas y certificaciones (`#c-419`).
+* **Sincronización y Validación:**
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Sincronización en las 4 rutas espejo y despliegue a producción vía GitHub Pages (`commit 309756b`).
+
+---
+
+## 22. Registro de Actualización del Indicador Estratégico en 419 (Depósitos Judiciales) (05-nov-2026)
+* **Actualización del Indicador Estratégico Oficial PMO:**
+  - A partir de la actualización global registrada en `Consolidado Indicadores PMO 01102026.xlsx` (hoja `CMI`, celda `K34 = K39/I39`), se ajustó el conteo oficial de entregables cumplidos al 100%:
+    - **Antes:** 125 funcionalidades certificadas de 466 $\rightarrow$ **26,82%**.
+    - **Ahora:** **80 funcionalidades certificadas de 466** $\rightarrow$ **17,17%**.
+  - **Indicador Táctico:** Se mantiene en **11,96%** (promedio aritmético del avance sin seguimiento interno Linktic).
+* **Ajustes en Componentes y Sincronizadores:**
+  - `enrich_func_cmi.py`: Actualizado bloque 419 con `estrategico: 0.1716738197` (80/466) y `buckets: {'100': 80, '75': 0, '50': 40, '20': 18, '0': 328}`.
+  - `ACTUALIZAR.py`: Ajustada la regla de inferencia de entregables para preservar el denominador maestro 466 (`d: 80, n: 466`) y evitar simplificación a 40/233.
+  - `Tablero_CMI_PMO.html`:
+    - Objeto de proyecto en `P` (`av: 0.1195777351, ent: 0.1716738197, n: 466, d: 80`).
+    - Diagnóstico ejecutivo: *"Se han certificado 17,17% de las funcionalidades (80 de 466): avance táctico CMI 11,96%."*
+    - Bloque `VAL`: `"419": {src: "CMI!I34 = 11,96% · K34 = 17,17% (80/466)", ...}`.
+    - Banner CMI y Aclaración Metodológica: Actualizados a *"80 certificadas / 466 entregables"*.
+    - Callout: Actualizado a 63 funcionalidades cerradas en producción de 194 en Azure (`32,5% cerrado`).
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores).
+  - Sincronización completa en las 4 rutas espejo y publicación automática en GitHub Pages.
+
+---
+
+## 23. Registro de Rediseño Visual UX/UI v2 con 3 Indicadores CMI (05-nov-2026)
+* **Arquitectura Visual Rediseñada (Mockup de Referencia `Tablero_CMI_PMO_redisenado_v2`):**
+  - **Selector Avanzado de Proyectos (`.project-picker-redesign` en `#pchips`):**
+    - Sustitución de los chips horizontales básicos por un componente de búsqueda rápida + menú desplegable estilizado (`#project-search-detail` y `#project-select-detail`).
+    - Filtrado en vivo de proyectos y subproyectos por código, nombre o cliente.
+    - Contador reactivo de elementos disponibles.
+  - **Encabezado Integral del Detalle de Proyecto (`.project-detail-heading`):**
+    - Título ejecutivo del proyecto seleccionado con badges de código y fecha de corte operativo oficial (`getProjDates(p).opDate`).
+    - Conservación fluida de selector segmentado de subproyectos (e.g. 355 vs 416 en POS).
+  - **Hero Grid de los 3 Indicadores CMI PMO (`.cmi-hero`):**
+    - **01 · Indicador estratégico:** Mide el cumplimiento formal de entregables al 100% formalizados ante el cliente (`${pct(strategic)}`), con detalle cuantitativo inferior (`d de n al 100%`) y píldora semafórica de estado (`Favorable`, `En seguimiento`, `Requiere atención`).
+    - **02 · Indicador de éxito:** Espacio habilitado y estandarizado para la futura medición por proyecto (`Por definir`), con píldora `Pendiente`.
+    - **03 · Indicador táctico:** Avance promedio de funcionalidades / entregables bajo la escala CMI PMO (`${pct(tactical)}`), con universo medible inferior (`n en universo`) y píldora semafórica de estado.
+* **Cumplimiento Estricto de Restricciones Negativas del Negocio:**
+  - **Exclusión total de notas de interpretación:** No se incluye `.cmi-scale-note` (`Interpretación:...`), manteniendo la visual limpia y directa.
+  - **Remoción de aclaraciones discursivas:** Se retiraron los textos descriptivos `.cmi-description` de las tarjetas de indicadores para preservar un aspecto ejecutivo, sin justificaciones metodológicas en bloque.
+* **Estilos y Hoja de Ruta Visual (`/* ================= CMI PMO · REDISEÑO UX/UI ================= */`):**
+  - Paleta refinada con degradados suaves, bordes limpios, sombras aeroespaciales y adaptación responsive completa (breakpoints en 850px y 620px).
+* **Sincronización y Validación:**
+  - Validación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores de regex o estructuras).
+  - Sincronización verificada en las 4 rutas espejo del sistema.
+  - Publicación y despliegue en producción completado en GitHub Pages (`commit 2ca58c2`).
+
