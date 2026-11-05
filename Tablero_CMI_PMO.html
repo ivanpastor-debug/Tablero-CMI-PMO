@@ -465,6 +465,112 @@ svg .lbl-ink{fill:var(--ink-2)}
 .hint{font-size:12px;color:var(--muted);margin-bottom:8px;line-height:1.4}
 .tag{display:inline-block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:3px 8px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
 
+
+/* ================= CMI PMO · REDISEÑO UX/UI ================= */
+:root{
+ --bg:#f3f6fb;--surface:#fff;--surface-2:#f6f8fc;--surface-3:#e9eef6;
+ --ink:#14243a;--ink-2:#40516a;--muted:#718198;--line:#e1e8f1;
+ --accent:#285fbd;--accent-ink:#fff;--s-real:#326bd0;--good:#15966a;
+ --warn:#d79524;--serious:#e47732;--crit:#d64b52;--none:#98a5b7;
+ --good-ink:#08764f;--warn-ink:#966313;--serious-ink:#b65320;--crit-ink:#b8323b;
+ --shadow:0 2px 8px rgba(21,42,70,.045),0 12px 28px rgba(21,42,70,.035);
+ --shadow-lg:0 10px 30px rgba(21,42,70,.09);
+}
+body{background:radial-gradient(ellipse at 10% 0%,#e8effa 0,transparent 34%),var(--bg);color:var(--ink)}
+.wrap{max-width:1600px;padding:0 26px 36px}
+header.top{padding:22px 25px;margin:20px 0 18px;border:1px solid #e4eaf3;border-radius:18px;box-shadow:var(--shadow);background:rgba(255,255,255,.94);position:relative;overflow:hidden}
+header.top:after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,#326bd0,#1a9b91)}
+.pmo-badge{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,#1e477b,#397bd1);box-shadow:0 8px 18px rgba(40,95,189,.22);font-size:14px}
+.top-titles .eyebrow{font-size:10px;letter-spacing:.15em;color:#547092}
+.top-titles h1{font-size:clamp(21px,2.3vw,29px);letter-spacing:-.045em;color:#142b49}
+.top-actions{gap:8px}
+.live-pill{border-radius:9px;background:#f5f8fc;border:1px solid #e4eaf2;padding:8px 11px;font-size:10.5px}
+.theme-toggle{border-radius:9px!important;padding:9px 12px!important}
+nav.tabs{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:13px;padding:7px;box-shadow:var(--shadow);position:sticky;top:8px;z-index:20;backdrop-filter:blur(12px)}
+.tab-group{background:transparent;border:0;box-shadow:none;padding:0}
+nav.tabs button{padding:10px 16px;border-radius:9px;font-size:12px}
+nav.tabs button[aria-selected="true"]{background:#eaf1ff;color:#214f9d;box-shadow:inset 0 0 0 1px #d5e2fb}
+.search-box{border-radius:9px;background:#f7f9fc;border-color:#e4eaf2;min-width:min(360px,100%)}
+.search-box input{font-size:11.5px}
+.section{margin-top:17px}
+.panel{border-radius:15px;padding:19px;border-color:#e4eaf2;box-shadow:var(--shadow)}
+.panel:hover{box-shadow:var(--shadow)}
+.sec-h{margin-bottom:15px}
+.sec-h h2{font-size:15px;letter-spacing:-.02em;color:#1a3555}
+.sec-h p{font-size:10.5px}
+.tile{padding:17px 18px;min-height:116px;position:relative;overflow:hidden}
+.tile:after{content:"";position:absolute;right:-22px;top:-30px;width:95px;height:95px;border-radius:50%;background:color-mix(in srgb,var(--accent) 6%,transparent)}
+.tile .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#65758c}
+.tile .val{font-size:clamp(25px,2.3vw,36px);font-weight:800;letter-spacing:-.045em;color:#17385e}
+.tile .sub{font-size:10.5px;line-height:1.45}
+.g-tiles{gap:12px}
+.g-sem>.panel{padding:19px}
+.esc2{padding:2px 1px 15px}
+.esc2-h h3{font-size:13px}
+.esc2-bar{border-radius:10px;overflow:hidden;gap:3px}
+.esc2-b{min-height:58px}
+.esc2-def{font-size:10.5px;line-height:1.55;margin-top:10px}
+.op-cards{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:13px}
+.op-card{border-radius:14px;padding:16px;box-shadow:0 2px 9px rgba(21,42,70,.035);gap:10px}
+.op-card:hover{transform:translateY(-2px);border-color:#c8d8f1;box-shadow:var(--shadow-lg)}
+.op-card h3,.op-card .p-title{font-size:13px}
+.chips{margin:0 0 14px}
+.project-detail-heading{padding:7px 3px 12px;align-items:center}.project-detail-heading h2{font-size:19px;color:#18395f;margin-top:3px}.project-detail-heading .srcs .pill{font-size:9px}.project-picker-redesign{display:grid;grid-template-columns:minmax(220px,.9fr) minmax(260px,1.7fr) auto;gap:11px;align-items:end;padding:15px 17px;margin:0 0 15px;border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:var(--shadow)}
+.ppr-field{min-width:0}
+.ppr-label{display:block;margin:0 0 6px;font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#74849a}
+.ppr-field input,.ppr-field select{display:block;width:100%;min-width:0;height:41px;padding:0 12px;border:1px solid #dfe7f1;border-radius:9px;background:#f8fafd;color:#1b3554;font:inherit;font-size:11.5px;outline:none}
+.ppr-field input:focus,.ppr-field select:focus{border-color:#76a0e3;box-shadow:0 0 0 3px rgba(50,107,208,.11)}
+.ppr-count{align-self:center;white-space:nowrap;font-size:10px;color:#77869a;padding:0 4px}
+.cmi-hero{margin:13px 0 15px;padding:18px 19px;border:1px solid #dce6f4;border-radius:16px;background:linear-gradient(115deg,#fdfefe 0%,#f4f8ff 100%);box-shadow:var(--shadow)}
+.cmi-hero-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:13px;flex-wrap:wrap}
+.cmi-hero-head h3{font-size:14px;font-weight:800;letter-spacing:-.02em;color:#1a3555}
+.cmi-hero-head p{font-size:10px;color:#75849a;margin:4px 0 0}
+.cmi-hero-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.cmi-hero-card{min-width:0;padding:14px 15px;background:#fff;border:1px solid #e1e9f3;border-radius:12px;position:relative;overflow:hidden}
+.cmi-hero-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#326bd0}
+.cmi-hero-card.success:before{background:#15966a}.cmi-hero-card.tactical:before{background:#8a69c7}
+.cmi-kicker{font-size:9px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#73839a}
+.cmi-value{font-size:clamp(25px,2.5vw,34px);font-weight:800;letter-spacing:-.05em;line-height:1.15;color:#18395f;margin:9px 0 5px;font-variant-numeric:tabular-nums}
+.cmi-description{font-size:10px;line-height:1.5;color:#687990;min-height:31px}
+.cmi-bottom{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px;padding-top:9px;border-top:1px solid #edf1f6;font-size:9.5px;color:#7a899c}
+.cmi-pill{display:inline-flex;padding:4px 8px;border-radius:30px;font-size:9px;font-weight:800;background:#edf2f8;color:#64748b}
+.cmi-pill.good{background:#e5f5ee;color:#08764f}.cmi-pill.warn{background:#fff3dc;color:#986316}.cmi-pill.crit{background:#fdebed;color:#b8323b}.cmi-pill.na{background:#eef2f6;color:#78879a}
+.cmi-scale-note{margin-top:11px;padding:9px 11px;background:#edf3fb;border-radius:8px;color:#60738d;font-size:9.5px;line-height:1.55}
+.cmi-scale-note b{color:#344e70}
+.seg{padding:11px 13px!important;background:#f7f9fc;border:1px solid var(--line);border-radius:12px;gap:7px!important}
+.seg button{border-radius:8px!important;padding:8px 11px!important;font-size:10.5px!important}
+.section.modes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.mode{padding:16px 18px;border-radius:13px;box-shadow:var(--shadow);border-color:#e1e8f1;min-height:82px}
+.mode .m-t{font-size:13px;font-weight:800}
+.mode[aria-pressed="true"]{background:#f0f5ff;border-color:#a9c4ef;box-shadow:inset 0 0 0 1px #b7cbed}
+#mode-body{margin-top:14px}
+#mode-body .panel{margin-bottom:12px}
+.tbl-wrap{border-radius:10px}
+table{font-size:11.5px}
+th{font-size:9.5px!important;letter-spacing:.05em}
+td{font-size:10.5px}
+.note,.hint{font-size:10.5px}
+.gov-h h2{font-size:15px}
+@media(max-width:850px){
+ .wrap{padding:0 15px 25px}
+ .project-picker-redesign{grid-template-columns:1fr 1.5fr}
+ .ppr-count{grid-column:1/-1}
+ .cmi-hero-grid{grid-template-columns:1fr 1fr}
+ .cmi-hero-card:last-child{grid-column:1/-1}
+}
+@media(max-width:620px){
+ .wrap{padding:0 10px 20px}
+ header.top{padding:16px;margin:10px 0 13px}
+ .top-actions{width:100%;flex-wrap:wrap}
+ nav.tabs{position:static}
+ nav.tabs .search-box{width:100%;min-width:0}
+ .project-picker-redesign{grid-template-columns:1fr}
+ .ppr-count{grid-column:auto}
+ .cmi-hero-grid{grid-template-columns:1fr}
+ .cmi-hero-card:last-child{grid-column:auto}
+ .section.modes{grid-template-columns:1fr}
+ .panel{padding:14px}
+}
 </style>
 
 <div class="wrap">
@@ -1087,9 +1193,56 @@ function renderCostPort(){
 /* ======================= FICHA POR PROYECTO ======================= */
 let cur=null;
 function renderChips(){
-  const c=cur?getP(cur):null;
-  $("#pchips").innerHTML=P.map(p=>`<button class="chip" aria-pressed="${!!c&&(p.id===cur||c.parent===p.id)}" data-p="${p.id}">${p.name}</button>`).join("");
-  $("#pchips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{const sel=b.getAttribute("aria-pressed")==="true";if(sel){cur=null;renderChips();renderFicha()}else openProj(b.dataset.p,true)});
+  const items=(ALL&&ALL.length?ALL:P).slice().sort((a,b)=>{
+    const an=(a.parent?`1-${a.parent}`:"0")+String(a.id),bn=(b.parent?`1-${b.parent}`:"0")+String(b.id);
+    return an.localeCompare(bn,"es",{numeric:true});
+  });
+  const selected=cur||"";
+  const opts=items.map(p=>{
+    const label=(p.parent?"↳ Subproyecto "+p.id+" · ":"")+((p.name||p.sub||p.id).replace(/</g,"&lt;"));
+    return `<option value="${p.id}" ${p.id===selected?"selected":""}>${label}</option>`;
+  }).join("");
+  $("#pchips").innerHTML=`<div class="project-picker-redesign">
+    <label class="ppr-field"><span class="ppr-label">Buscar proyecto</span><input id="project-search-detail" type="search" placeholder="Código, nombre o cliente..." autocomplete="off" value=""></label>
+    <label class="ppr-field"><span class="ppr-label">Proyecto seleccionado</span><select id="project-select-detail"><option value="">Seleccione un proyecto...</option>${opts}</select></label>
+    <div class="ppr-count">${items.length} proyectos / subproyectos disponibles</div>
+  </div>`;
+  const search=$("#project-search-detail"),select=$("#project-select-detail");
+  search.addEventListener("input",()=>{
+    const q=search.value.trim().toLocaleLowerCase("es");
+    const current=select.value;
+    const filtered=items.filter(p=>`${p.id} ${p.name||""} ${p.sub||""} ${p.parent||""}`.toLocaleLowerCase("es").includes(q));
+    select.innerHTML=`<option value="">${filtered.length?`Seleccione entre ${filtered.length} resultados...`:"Sin coincidencias"}</option>`+
+      filtered.map(p=>`<option value="${p.id}">${p.parent?"↳ Subproyecto "+p.id+" · ":""}${(p.name||p.sub||p.id).replace(/</g,"&lt;")}</option>`).join("");
+    if(filtered.some(p=>p.id===current))select.value=current;
+  });
+  select.addEventListener("change",()=>{if(select.value)openProj(select.value,true)});
+}
+
+function cmiOverviewHTML(p){
+  const o=p.op||{}, tactical=o.av, strategic=o.ent;
+  const n=o.n||0, d=o.d||0, unit=o.u||"entregables";
+  const isCU=(p.id==="453"||o.isCU), isEpic=(o.isEpics||unit==="épicas"||unit==="frentes");
+  const itemName=isCU?"casos de uso":isEpic?(unit==="frentes"?"frentes":"épicas"):unit;
+  const cls=v=>v==null||isNaN(v)?"na":v>=.7?"good":v>=.4?"warn":"crit";
+  const state=v=>v==null||isNaN(v)?"Sin dato":v>=.7?"Favorable":v>=.4?"En seguimiento":"Requiere atención";
+  return `<section class="cmi-hero" aria-label="Indicadores estratégicos, de éxito y tácticos">
+    <div class="cmi-hero-head"><div><h3>Desempeño del proyecto · Cuadro de Mando Integral</h3><p>Primero el resultado y el valor esperado; después el detalle de ejecución.</p></div><span class="tag">Vista CMI</span></div>
+    <div class="cmi-hero-grid">
+      <article class="cmi-hero-card"><div class="cmi-kicker">01 · Indicador estratégico</div>
+        <div class="cmi-value">${pct(strategic)}</div>
+        <div class="cmi-bottom"><span>${n?`${d} de ${n} ${itemName} al 100%`:"Meta: 100% entregado"}</span><span class="cmi-pill ${cls(strategic)}">${state(strategic)}</span></div>
+      </article>
+      <article class="cmi-hero-card success"><div class="cmi-kicker">02 · Indicador de éxito</div>
+        <div class="cmi-value">Por definir</div>
+        <div class="cmi-bottom"><span>Medición por proyecto</span><span class="cmi-pill na">Pendiente</span></div>
+      </article>
+      <article class="cmi-hero-card tactical"><div class="cmi-kicker">03 · Indicador táctico</div>
+        <div class="cmi-value">${pct(tactical)}</div>
+        <div class="cmi-bottom"><span>${n} ${itemName} en universo</span><span class="cmi-pill ${cls(tactical)}">${state(tactical)}</span></div>
+      </article>
+    </div>
+  </section>`;
 }
 function openProj(id,stay){cur=id;renderChips();renderFicha();if(!stay)show("proj")}
 function tileHTML(l,v,s,cls){return `<div class="panel tile"><span class="lbl">${l}</span><span class="val">${cls?st(cls,v):v}</span><span class="sub">${s}</span></div>`}
@@ -1104,8 +1257,9 @@ function renderFicha(){
   const p=getP(cur),g=GOV[p.id],o=p.op;
   const src=[["Financiero",!!p.m],["Operativo CMI",true],["Base maestra",!!g]];
   const par=p.subs?p:p.parent?getP(p.parent):null;
-  let h="";
+  let h=`<div class="ph project-detail-heading"><div><span class="eyebrow">Detalle integral del proyecto</span><h2>${p.name||p.sub||p.id}</h2><div class="srcs"><span class="pill">Código ${p.id}</span><span class="pill">Corte operativo: ${getProjDates(p).opDate}</span></div></div><span class="tag">Seguimiento PMO</span></div>`;
   if(par)h+=`<div class="seg" role="group" aria-label="Subproyectos de ${par.name}"><span class="eyebrow" style="align-self:center;margin-right:4px">Subproyectos</span>${[[par.id,"Vista general "+code(par)],...par.subs.map(id=>[id,id+" · "+(getP(id).sub||"").replace(/^Subproyecto \d+ ?·? ?/,"")||id])].map(([id,l])=>`<button aria-pressed="${id===p.id}" data-p="${id}">${l.replace(/ · $/,"")}</button>`).join("")}</div>`;
+  h+=cmiOverviewHTML(p);
   // Selector de vista: operativa / financiera
   const fs=finState(p);
   const dMeta=getProjDates(p);
