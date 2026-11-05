@@ -477,7 +477,7 @@ svg .lbl-ink{fill:var(--ink-2)}
  --shadow-lg:0 10px 30px rgba(21,42,70,.09);
 }
 body{background:radial-gradient(ellipse at 10% 0%,#e8effa 0,transparent 34%),var(--bg);color:var(--ink)}
-.wrap{max-width:1600px;padding:0 26px 36px}
+.wrap{max-width:1600px;margin:0 auto;padding:0 26px 36px}
 header.top{padding:22px 25px;margin:20px 0 18px;border:1px solid #e4eaf3;border-radius:18px;box-shadow:var(--shadow);background:rgba(255,255,255,.94);position:relative;overflow:hidden}
 header.top:after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,#326bd0,#1a9b91)}
 .pmo-badge{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,#1e477b,#397bd1);box-shadow:0 8px 18px rgba(40,95,189,.22);font-size:14px}
@@ -2520,10 +2520,50 @@ function applyLiveFuncCmi() {
     };
   }
 
+  renderOpCards();
   renderTiles();
   renderSem();
   renderChips();
   if (cur) renderFicha();
+}
+
+function updateTopOpTiles(cmi, subLabel) {
+  if (!cmi) return;
+  const av = cmi.tactico != null ? cmi.tactico : cmi.av;
+  const ent = cmi.estrategico != null ? cmi.estrategico : cmi.ent;
+  const n = cmi.n, d = cmi.d, u = cmi.u || "épicas";
+  const isCU = cur === "453" || u === "casos de uso";
+  const isEpics = u === "épicas" || u === "frentes" || cmi.isEpics;
+  const is419 = cur === "419";
+
+  const el = document.getElementById("op-tiles-top");
+  if (el) {
+    el.innerHTML = `
+      ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : isEpics ? "Indicador táctico · % avance épicas / frentes" : "Indicador táctico · % avance funcionalidad", pct(av), isCU ? `Medición por Estado Interno (${n} CUs medibles)` : is419 ? `Medición archivo local PMO (${n} func)` : isEpics ? `Medición CMI Oficial PMO (${n} Épicas / Frentes)` : subLabel ? `Subproyecto ${subLabel} (${n} func)` : `Medición Azure DevOps (${n} func)`, band(av, .7, .4))}
+      ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : isEpics ? "Indicador estratégico · % cumplimiento épicas" : "Indicador estratégico · % cumplimiento entregables", pct(ent), isCU ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)` : is419 ? `<b>${d}</b> de <b>${n}</b> funcionalidades entregadas (100%)` : isEpics ? `<b>${d}</b> de <b>${n}</b> Épicas entregadas formalmente (100%)` : `<b>${d}</b> de <b>${n}</b> ${u} al 100% en Azure`, band(ent, .7, .3))}
+    `;
+  }
+
+  // Sincronizar también las tarjetas Hero CMI superiores
+  const heroStrat = document.querySelector(".cmi-hero-card:first-child .cmi-value");
+  if (heroStrat) heroStrat.textContent = pct(ent);
+  const heroStratPill = document.querySelector(".cmi-hero-card:first-child .cmi-pill");
+  if (heroStratPill) {
+    heroStratPill.className = `cmi-pill ${band(ent, .7, .3)}`;
+    heroStratPill.textContent = ent == null || isNaN(ent) ? "Sin dato" : ent >= .7 ? "Favorable" : ent >= .4 ? "En seguimiento" : "Requiere atención";
+  }
+  const heroStratSub = document.querySelector(".cmi-hero-card:first-child .cmi-bottom span:first-child");
+  if (heroStratSub && n) heroStratSub.textContent = `${d} de ${n} ${u} al 100%`;
+
+  const heroTact = document.querySelector(".cmi-hero-card.tactical .cmi-value");
+  if (heroTact) heroTact.textContent = pct(av);
+  const heroTactPill = document.querySelector(".cmi-hero-card.tactical .cmi-pill");
+  if (heroTactPill) {
+    heroTactPill.className = `cmi-pill ${band(av, .7, .4)}`;
+    heroTactPill.textContent = av == null || isNaN(av) ? "Sin dato" : av >= .7 ? "Favorable" : av >= .4 ? "En seguimiento" : "Requiere atención";
+  }
+  const heroTactSub = document.querySelector(".cmi-hero-card.tactical .cmi-bottom span:first-child");
+  if (heroTactSub && n) heroTactSub.textContent = `${n} ${u} en universo`;
 }
 
 function getFncCodeForProj(p) {
