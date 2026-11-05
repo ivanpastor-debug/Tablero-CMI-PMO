@@ -295,6 +295,18 @@ table.xl.tbl-crono-456 th.col-desv,table.xl.tbl-crono-456 td.col-desv{width:56px
 table.xl.tbl-crono-456 th.col-st,table.xl.tbl-crono-456 td.col-st{min-width:115px;white-space:normal;line-height:1.2}
 table.xl.tbl-crono-456 .st{font-size:10.5px;gap:4px;white-space:normal;line-height:1.15;display:inline-flex;align-items:center}
 table.xl.tbl-crono-456 .st::before{width:8px;height:8px;flex:none}
+table.xl.tbl-estatus-456{width:100%;min-width:0;font-size:11.5px}
+table.xl.tbl-estatus-456 th{padding:6px 5px;font-size:10.5px;letter-spacing:0}
+table.xl.tbl-estatus-456 td{padding:5px 5px;font-size:11.5px}
+table.xl.tbl-estatus-456 .col-ent{white-space:normal;line-height:1.25;min-width:110px}
+table.xl.tbl-estatus-456 th.col-peso,table.xl.tbl-estatus-456 td.col-peso{width:36px;text-align:right;white-space:nowrap}
+table.xl.tbl-estatus-456 th.col-date,table.xl.tbl-estatus-456 td.col-date{width:80px;text-align:center;white-space:nowrap;font-size:11px}
+table.xl.tbl-estatus-456 th.col-pct,table.xl.tbl-estatus-456 td.col-pct{width:55px;text-align:center;white-space:nowrap;font-size:11.5px}
+table.xl.tbl-estatus-456 th.col-bar,table.xl.tbl-estatus-456 td.col-bar{width:90px;text-align:center}
+table.xl.tbl-estatus-456 th.col-desv,table.xl.tbl-estatus-456 td.col-desv{width:90px;text-align:center;white-space:nowrap}
+table.xl.tbl-estatus-456 th.col-st,table.xl.tbl-estatus-456 td.col-st{min-width:110px;white-space:normal;line-height:1.2}
+table.xl.tbl-estatus-456 .st{font-size:10.5px;gap:4px;white-space:normal;line-height:1.15;display:inline-flex;align-items:center}
+table.xl.tbl-estatus-456 .st::before{width:8px;height:8px;flex:none}
 .cost-b{display:flex;flex-direction:column;gap:8px}
 .cost-b .cb-h h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
 .cost-b .cb-h p{margin:2px 0 0;font-size:11px;color:var(--muted)}
@@ -1425,27 +1437,192 @@ function renderOpBody(p,g,el){
   </div>`;
   if(p.opParts)h+=`<div class="section panel"><div class="sec-h"><h2>Consolidado 355 + 416</h2></div><div class="tbl-wrap"><table class="xl"><thead><tr><th>Subproyecto</th><th class="n">Entregables</th><th class="n">Entregados</th><th class="n">% avance funcionalidad</th><th class="n">% cumplimiento entregables</th></tr></thead><tbody>${p.opParts.map(x=>`<tr><td>${x.id}</td><td class="n">${x.op.n} <small style="color:var(--muted)">${x.op.u}</small></td><td class="n">${x.op.d}</td><td class="n">${pct(x.op.av)}</td><td class="n">${pct(x.op.ent)}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${p.op.n}</td><td class="n">${p.op.d}</td><td class="n">${pct(p.op.av)}</td><td class="n">${pct(p.op.ent)}</td></tr></tbody></table></div></div>`;
   if(p.id==="456"){
-    h+=`<div class="section grid g-2">
-      <div class="panel"><div class="sec-h"><h2>Escala CMI por fase</h2></div><div id="fr-list"></div></div>
-      <div class="panel"><div class="sec-h"><h2>Desviación del Cronograma (Línea Base vs 05-oct-2026)</h2><p>Línea base (30-dic-2026) vs Pronóstico actualizado (28-ene-2027) por fases</p></div>
-      <div class="tbl-wrap"><table class="xl tbl-crono-456">
-        <thead><tr><th class="col-ent">Fase / Entregable Contractual</th><th class="col-peso">Peso</th><th class="col-date">Fin Base</th><th class="col-date">Fin Act.</th><th class="col-desv">Desv.</th><th class="col-st">Estado / CMI</th></tr></thead>
-        <tbody>
-          <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase I</b> · Estructuración y Metodología (Peso Fase: 30% · Avance CMI: 80,00%)</td></tr>
-          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Propuesta metodológica e indicadores</td><td class="col-peso">18%</td><td class="col-date">15/07/2026</td><td class="col-date">15/07/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st good">100% Producción</span></td></tr>
-          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Transferencia metodológica y hoja de ruta</td><td class="col-peso">12%</td><td class="col-date">23/09/2026</td><td class="col-date">23/09/2026</td><td class="col-desv"><span class="st good">0 d</span></td><td class="col-st"><span class="st warn">50% &gt;80% (Gate 1)</span></td></tr>
+    h+=`<div class="section panel">
+      <div class="sec-h"><h2>Estatus por fase</h2></div>
+      <div class="tbl-wrap">
+        <table class="xl tbl-estatus-456">
+          <thead>
+            <tr>
+              <th class="col-ent">Fase / Entregable Contractual</th>
+              <th class="col-peso">Peso</th>
+              <th class="col-date">Cierre Proyectado</th>
+              <th class="col-pct">% Avance</th>
+              <th class="col-bar"></th>
+              <th class="col-st">Estado</th>
+              <th class="col-desv">Desviación a la fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tot" style="background:var(--surface-2)"><td colspan="7"><b>Fase I</b> · Estructuración y Metodología (Peso Fase: 30% · Avance CMI: 80,00%)</td></tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Propuesta metodológica para el laboratorio e indicadores</td>
+              <td class="col-peso">18%</td>
+              <td class="col-date">15/07/2026</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">100%</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:var(--good)"></i></div></div></td>
+              <td class="col-st"><span class="st good">100% Producción</span></td>
+              <td class="col-desv"><span class="st good">0 d hábiles</span></td>
+            </tr>
+            <tr style="background:rgba(245,158,11,0.05)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Transferencia de conocimiento y hoja de ruta a PMV</td>
+              <td class="col-peso">12%</td>
+              <td class="col-date" style="color:#b45309;font-weight:700">23/09/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">50%</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:50%;background:#f59e0b"></i></div></div></td>
+              <td class="col-st"><span class="st warn">50% &gt;80% (Gate 1)</span></td>
+              <td class="col-desv"><span class="st crit"><b>+29 d hábiles</b></span></td>
+            </tr>
 
-          <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte I</b> · Experimento 1: UX y Resultados (Peso Fase: 40% · Avance CMI: 0,00%)</td></tr>
-          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Experimento testeo UX sobre 2 problemas (MVP 1)</td><td class="col-peso">20%</td><td class="col-date">11/11/2026</td><td class="col-date">19/11/2026</td><td class="col-desv"><span class="st warn">+8 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (En curso)</span></td></tr>
-          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Informes de resultados e informe entidad</td><td class="col-peso">12%</td><td class="col-date">19/11/2026</td><td class="col-date">04/12/2026</td><td class="col-desv"><span class="st crit">+15 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
-          <tr><td class="col-ent">&nbsp;&nbsp;<b>Entregable III</b> · Transferencia conocimiento y PMV</td><td class="col-peso">8%</td><td class="col-date">20/11/2026</td><td class="col-date">02/12/2026</td><td class="col-desv"><span class="st crit">+12 d</span></td><td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td></tr>
+            <tr class="tot" style="background:var(--surface-2)"><td colspan="7"><b>Fase II parte I</b> · Experimento 1: UX y Resultados (Peso Fase: 40% · Avance CMI: 0,00%)</td></tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Experimento testeo UX sobre problemas priorizados (MVP 1)</td>
+              <td class="col-peso">20%</td>
+              <td class="col-date">19/11/2026</td>
+              <td class="col-pct">0%</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:0%;background:var(--line)"></i></div></div></td>
+              <td class="col-st"><span class="st crit">0% &lt;50% (En curso)</span></td>
+              <td class="col-desv"><span class="st good">0 d hábiles</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Informes de resultados detallados e individualizados</td>
+              <td class="col-peso">12%</td>
+              <td class="col-date">04/12/2026</td>
+              <td class="col-pct">0%</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:0%;background:var(--line)"></i></div></div></td>
+              <td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td>
+              <td class="col-desv"><span class="st good">0 d hábiles</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable III</b> · Transferencia de conocimiento del experimento y PMV</td>
+              <td class="col-peso">8%</td>
+              <td class="col-date">02/12/2026</td>
+              <td class="col-pct">0%</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:0%;background:var(--line)"></i></div></div></td>
+              <td class="col-st"><span class="st crit">0% &lt;50% (Pendiente)</span></td>
+              <td class="col-desv"><span class="st good">0 d hábiles</span></td>
+            </tr>
 
-          <tr class="tot" style="background:var(--surface-2)"><td colspan="6"><b>Fase II parte II</b> · Experimento 2: Procesos Objetivo (Peso Fase: 30% · Avance CMI: 0,00%)</td></tr>
-          <tr style="background:rgba(239,68,68,0.06)"><td class="col-ent">&nbsp;&nbsp;<b>Entregable Único</b> · Experimento 2 procesos objetivo</td><td class="col-peso">30%</td><td class="col-date">09/12/2026</td><td class="col-date" style="color:var(--crit);font-weight:700">26/01/2027</td><td class="col-desv"><span class="st crit"><b>+48 d</b></span></td><td class="col-st"><span class="st crit"><b>0% &lt;50% (Cruza 2027)</b></span></td></tr>
+            <tr class="tot" style="background:var(--surface-2)"><td colspan="7"><b>Fase II parte II</b> · Experimento 2: Procesos Objetivo (Peso Fase: 30% · Avance CMI: 0,00%)</td></tr>
+            <tr style="background:rgba(239,68,68,0.06)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable Único</b> · Experimento 2 para al menos dos procesos objetivo</td>
+              <td class="col-peso">30%</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">26/01/2027</td>
+              <td class="col-pct">0%</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:0%;background:var(--line)"></i></div></div></td>
+              <td class="col-st"><span class="st crit">0% &lt;50% (Cruza 2027)</span></td>
+              <td class="col-desv"><span class="st warn">0 d (Vence 2027)</span></td>
+            </tr>
 
-          <tr class="tot" style="border-top:2px solid var(--line)"><td class="col-ent"><b>Cierre General del Proyecto AC</b></td><td class="col-peso"><b>100%</b></td><td class="col-date"><b>30/12/2026</b></td><td class="col-date" style="color:var(--crit)"><b>28/01/2027</b></td><td class="col-desv"><span class="st crit"><b>+29 d cal.</b></span></td><td class="col-st"><span class="st crit"><b>Desborde fiscal 2027</b></span></td></tr>
-        </tbody>
-      </table></div></div>
+            <tr class="tot" style="border-top:2px solid var(--line)">
+              <td class="col-ent"><b>Total Proyecto 456 (Avance Táctico Ponderado CMI)</b></td>
+              <td class="col-peso"><b>100%</b></td>
+              <td class="col-date"><b>28/01/2027</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>24,00%</b></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:24%;background:#8a69c7"></i></div></div></td>
+              <td class="col-st"><span class="st crit"><b>Avance Táctico: 24%</b></span></td>
+              <td class="col-desv"><span class="st crit"><b>+29 d hábiles</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section panel" style="margin-top:16px">
+      <div class="sec-h"><h2>Desviación del Cronograma</h2></div>
+      <div class="tbl-wrap">
+        <table class="xl tbl-crono-456">
+          <thead>
+            <tr>
+              <th class="col-ent">Fase / Entregable Contractual</th>
+              <th class="col-peso">Peso</th>
+              <th class="col-date">Inicio</th>
+              <th class="col-date">Cierre planeado</th>
+              <th class="col-date">Cierre reprogramado</th>
+              <th class="col-desv">Ajuste en días hábiles</th>
+              <th class="col-desv">Desviación</th>
+              <th class="col-st">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tot" style="background:var(--surface-2)"><td colspan="8"><b>Fase I</b> · Estructuración y Metodología (Peso Fase: 30% · Avance CMI: 80,00%)</td></tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Propuesta metodológica e indicadores</td>
+              <td class="col-peso">18%</td>
+              <td class="col-date">20/04/2026</td>
+              <td class="col-date">15/07/2026</td>
+              <td class="col-date">15/07/2026</td>
+              <td class="col-desv"><span class="st good">0 d</span></td>
+              <td class="col-desv"><span class="st good">0 d</span></td>
+              <td class="col-st"><span class="st good">Entregado</span></td>
+            </tr>
+            <tr style="background:rgba(245,158,11,0.05)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Transferencia metodológica y hoja de ruta</td>
+              <td class="col-peso">12%</td>
+              <td class="col-date">20/04/2026</td>
+              <td class="col-date">23/09/2026</td>
+              <td class="col-date" style="color:#b45309;font-weight:700">23/09/2026</td>
+              <td class="col-desv"><span class="st good">0 d</span></td>
+              <td class="col-desv"><span class="st crit"><b>+29 d hábiles</b></span></td>
+              <td class="col-st"><span class="st warn">En curso (Gate 1)</span></td>
+            </tr>
+
+            <tr class="tot" style="background:var(--surface-2)"><td colspan="8"><b>Fase II parte I</b> · Experimento 1: UX y Resultados (Peso Fase: 40% · Avance CMI: 0,00%)</td></tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable I</b> · Experimento testeo UX sobre 2 problemas (MVP 1)</td>
+              <td class="col-peso">20%</td>
+              <td class="col-date">28/09/2026</td>
+              <td class="col-date">11/11/2026</td>
+              <td class="col-date">19/11/2026</td>
+              <td class="col-desv"><span class="st warn">+6 d hábiles</span></td>
+              <td class="col-desv"><span class="st good">0 d</span></td>
+              <td class="col-st"><span class="st warn">En curso</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable II</b> · Informes de resultados e informe entidad</td>
+              <td class="col-peso">12%</td>
+              <td class="col-date">10/11/2026</td>
+              <td class="col-date">19/11/2026</td>
+              <td class="col-date">04/12/2026</td>
+              <td class="col-desv"><span class="st crit">+10 d hábiles</span></td>
+              <td class="col-desv"><span class="st good">0 d</span></td>
+              <td class="col-st"><span class="st crit">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable III</b> · Transferencia conocimiento y PMV</td>
+              <td class="col-peso">8%</td>
+              <td class="col-date">10/11/2026</td>
+              <td class="col-date">20/11/2026</td>
+              <td class="col-date">02/12/2026</td>
+              <td class="col-desv"><span class="st crit">+8 d hábiles</span></td>
+              <td class="col-desv"><span class="st good">0 d</span></td>
+              <td class="col-st"><span class="st crit">Pendiente</span></td>
+            </tr>
+
+            <tr class="tot" style="background:var(--surface-2)"><td colspan="8"><b>Fase II parte II</b> · Experimento 2: Procesos Objetivo (Peso Fase: 30% · Avance CMI: 0,00%)</td></tr>
+            <tr style="background:rgba(239,68,68,0.06)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Entregable Único</b> · Experimento 2 procesos objetivo</td>
+              <td class="col-peso">30%</td>
+              <td class="col-date">27/07/2026</td>
+              <td class="col-date">09/12/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">26/01/2027</td>
+              <td class="col-desv"><span class="st crit"><b>+32 d hábiles</b></span></td>
+              <td class="col-desv"><span class="st warn">0 d</span></td>
+              <td class="col-st"><span class="st crit"><b>Cruza 2027</b></span></td>
+            </tr>
+
+            <tr class="tot" style="border-top:2px solid var(--line)">
+              <td class="col-ent"><b>Cierre General del Proyecto AC</b></td>
+              <td class="col-peso"><b>100%</b></td>
+              <td class="col-date"><b>20/04/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-date" style="color:var(--crit)"><b>28/01/2027</b></td>
+              <td class="col-desv"><span class="st crit"><b>+19 d hábiles</b></span></td>
+              <td class="col-desv"><span class="st crit"><b>+29 d hábiles</b></span></td>
+              <td class="col-st"><span class="st crit"><b>Desborde fiscal 2027</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>`;
   }
   // Gobierno del proyecto: sección oculta a pedido de la PMO (24-sep); datos y renderGov se conservan
