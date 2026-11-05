@@ -1,8 +1,8 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_419-DEP_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:19",
+  "archivo": "HU_419-DEP_20261104.csv",
   "epics": [
     {
       "i": "417341",
@@ -32,9 +32,9 @@
       "i": "531917",
       "t": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n_f": 15,
-      "n": 104,
+      "n": 105,
       "term": 0,
-      "pct": 0.3948
+      "pct": 0.3968
     },
     {
       "i": "407644",
@@ -143,7 +143,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 21,
       "term": 0,
-      "pct": 0.3457,
+      "pct": 0.3695,
       "n_pct": 21
     },
     {
@@ -156,6 +156,17 @@
       "term": 18,
       "pct": 1.0,
       "n_pct": 18
+    },
+    {
+      "i": "399896",
+      "t": "419_PB_GESTION DE NOVEDADES USUARIOS ENTES COACTIVOS",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 17,
+      "term": 0,
+      "pct": 0.2176,
+      "n_pct": 17
     },
     {
       "i": "484565",
@@ -177,17 +188,6 @@
       "n": 16,
       "term": 3,
       "pct": 0.9188,
-      "n_pct": 16
-    },
-    {
-      "i": "399896",
-      "t": "419_PB_GESTION DE NOVEDADES USUARIOS ENTES COACTIVOS",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 16,
-      "term": 0,
-      "pct": 0.2188,
       "n_pct": 16
     },
     {
@@ -941,7 +941,7 @@
     {
       "i": "535050",
       "t": "PB_CONFIGURACION DEPURACION DE ORDENES DE PAGO (ENTIDAD / ENTIDAD - CUENTA JUDICIAL)",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 6,
@@ -1392,18 +1392,18 @@
     {
       "i": "535145",
       "t": "PB_INTEGRACIONES",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 3,
       "term": 0,
-      "pct": 0.5333,
+      "pct": 0.5,
       "n_pct": 3
     },
     {
       "i": "539191",
       "t": "PB_EJECUCION DEPURACION DEPURACION ORDENES DE PAGO (ENTIDAD / ENTIDAD - CUENTA JUDICIAL)",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 3,
@@ -5242,17 +5242,6 @@
       "r": "Ricardo Andres Guzman Guzman"
     },
     {
-      "i": "380148",
-      "t": "419_PB_HU006_Ingreso_Archivo_Traslado_Procesos",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": null,
-      "ep": null,
-      "r": "Hellen Alejandra Rincon Soler"
-    },
-    {
       "i": "380337",
       "t": "419_PB_TEC001_Arquitectura de Datos",
       "e": "4. Cerrado",
@@ -7250,17 +7239,6 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "399896",
-      "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
-    },
-    {
-      "i": "402961",
-      "t": "419_PB_HU011_Gestion_Novedad_Usuario_RegistroFirmarEntesCoactivos",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
       "f": "399896",
       "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
@@ -11589,39 +11567,6 @@
       "r": "Yamile Andrea Carmona Osorio"
     },
     {
-      "i": "513996",
-      "t": "419_PB_HU014_Autorización_Ingreso_InactivacionEstados_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "399896",
-      "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
-    },
-    {
-      "i": "513999",
-      "t": "419_PB_HU015_Consulta_Descarga_RegistrosNoProcesados",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "399896",
-      "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
-    },
-    {
-      "i": "514003",
-      "t": "419_PB_HU016_Rechazar_InactivacionEstados_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "399896",
-      "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
-    },
-    {
       "i": "514063",
       "t": "419_PB_TEC002_Arquitectura de Tecnologica_Levantamiento_Bloqueo_Preventivo_Automatico_Integracion-COBIS",
       "e": "1. En Planeacion",
@@ -11998,24 +11943,24 @@
     {
       "i": "518017",
       "t": "419_PB_HU001_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Viki Liseth Cruz Plaza"
     },
     {
       "i": "518020",
       "t": "419_PB_HU002_Ajustar_Ingreso_Apertura_Cuenta",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Viki Liseth Cruz Plaza"
     },
     {
       "i": "519479",
@@ -12884,7 +12829,7 @@
       "v": 0.5,
       "f": "535037",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Santiago Hernandez Saldarriga"
     },
     {
       "i": "535047",
@@ -12895,51 +12840,51 @@
       "v": 0.5,
       "f": "535037",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Santiago Hernandez Saldarriga"
     },
     {
       "i": "535053",
       "t": "419_PB_HU001_Consulta_Parametrizaciones_Depuracion_OP",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Luisa Fernanda Escobar Marquez"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "535059",
       "t": "419_PB_HU002_Creacion_Parametrizacion_Depuracion_OP",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Luisa Fernanda Escobar Marquez"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "535072",
       "t": "419_PB_HU003_Modificacion_Parametrizacion_Depuracion_OP",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Luisa Fernanda Escobar Marquez"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "535076",
       "t": "419_PB_HU004_Autorizacion_Parametrizacion_Depuracion_OP",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Luisa Fernanda Escobar Marquez"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "535086",
@@ -13043,24 +12988,24 @@
     {
       "i": "535148",
       "t": "419_PB_HU001_Entregar_proceso_a_COBIS",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535145",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "536423",
       "t": "419_TEC_001_Arquitectura_de_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "536436",
@@ -13076,24 +13021,24 @@
     {
       "i": "538322",
       "t": "419_PB_Ajuste_Numero_Expediente_Emision_Individual",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Cristian Andres Marin Durango"
+      "r": "Johnatan Alonso Ospina Zapata"
     },
     {
       "i": "538323",
       "t": "419_PB_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Johnatan Alonso Ospina Zapata"
     },
     {
       "i": "538482",
@@ -13120,68 +13065,68 @@
     {
       "i": "539194",
       "t": "419_PB_HU001_Depuración_automática_de_órdenes_de_pago_por_oficina_por_vencimiento_de_vigencia",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "539191",
       "ep": "531917",
-      "r": "Luisa Fernanda Escobar Marquez"
+      "r": "Daniela Gonzalez Lopez"
     },
     {
       "i": "539589",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Viki Liseth Cruz Plaza"
     },
     {
       "i": "539592",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajustar_Ingreso_Apertura_Cuenta",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Viki Liseth Cruz Plaza"
     },
     {
       "i": "539593",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "535145",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "539669",
       "t": "419_TEC_001_Arquitectura_de_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "539191",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Daniela Gonzalez Lopez"
     },
     {
       "i": "539680",
       "t": "419_PB_Ajuste_Numero_Expediente_Emision_Individual_arquitectura_de_datos",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Johnatan Alonso Ospina Zapata"
     },
     {
       "i": "540434",
@@ -13208,24 +13153,24 @@
     {
       "i": "540516",
       "t": "419_PB_TEC001_Arquitectura_Datos_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Viki Liseth Cruz Plaza"
     },
     {
       "i": "540569",
       "t": "419_PB_TEC001_Arquitectura_Datos_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Johnatan Alonso Ospina Zapata"
     },
     {
       "i": "540595",
@@ -13252,57 +13197,57 @@
     {
       "i": "542763",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "535050",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "542877",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "539191",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Daniela Gonzalez Lopez"
     },
     {
       "i": "543034",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Pino Gonzales"
+      "r": "Johnatan Alonso Ospina Zapata"
     },
     {
       "i": "543051",
       "t": "419_PB_TEC002_Ajuste_Numero_Expediente_Emision_Individual_Arquitectura_Tecnologica",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "William Alexis Rodríguez castaño"
+      "r": "Johnatan Alonso Ospina Zapata"
     },
     {
       "i": "543802",
       "t": "419_PB_TEC001_Arquitectura de Datos",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "535145",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "545855",
@@ -13413,18 +13358,62 @@
       "f": "532770",
       "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "553092",
+      "t": "419_PB_HU006_Aplicar_Novedades_Programadas_Inactivacion_UsuariosEntes",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "399896",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "553352",
+      "t": "419_PB_HU003_Gestion_InactivacionEstados_UsuariosEntes",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "399896",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "553368",
+      "t": "419_PB_HU005_Resultado_Procesamiento_InactivacionEstados",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "399896",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "553378",
+      "t": "419_PB_HU004_Procesar_Registros_Inactivacion_UsuariosEntes",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "399896",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     }
   ],
   "kpi": {
-    "n_hu": 1053,
-    "n_hu_activas": 953,
+    "n_hu": 1052,
+    "n_hu_activas": 954,
     "hu_sin_feature": 27,
     "n_feature": 157,
     "n_epic": 12,
     "n_feature_con_hu": 137,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7557,
+    "pct_global": 0.7556,
     "term_global": 346,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

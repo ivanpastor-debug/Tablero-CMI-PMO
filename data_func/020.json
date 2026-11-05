@@ -1,24 +1,24 @@
 {
   "codigo": "020",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_020_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:20",
+  "archivo": "HU_020_20261104.csv",
   "epics": [
     {
       "i": "525431",
       "t": "OPERACIÓN",
       "n_f": 5,
-      "n": 43,
+      "n": 52,
       "term": 34,
-      "pct": 0.9302
+      "pct": 0.8154
     },
     {
       "i": "525428",
       "t": "SOPORTE",
       "n_f": 2,
-      "n": 18,
+      "n": 21,
       "term": 16,
-      "pct": 0.9778
+      "pct": 0.8667
     }
   ],
   "features": [
@@ -28,10 +28,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 16,
+      "n": 17,
       "term": 14,
-      "pct": 0.975,
-      "n_pct": 16
+      "pct": 0.9294,
+      "n_pct": 17
     },
     {
       "i": "527697",
@@ -39,10 +39,10 @@
       "e": "2. En Curso",
       "ep": "525428",
       "ept": "SOPORTE",
-      "n": 15,
+      "n": 17,
       "term": 13,
-      "pct": 0.9733,
-      "n_pct": 15
+      "pct": 0.8824,
+      "n_pct": 17
     },
     {
       "i": "527008",
@@ -50,10 +50,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 12,
+      "n": 14,
       "term": 9,
-      "pct": 0.85,
-      "n_pct": 12
+      "pct": 0.8,
+      "n_pct": 14
     },
     {
       "i": "527007",
@@ -61,10 +61,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 10,
+      "n": 12,
       "term": 8,
-      "pct": 0.96,
-      "n_pct": 10
+      "pct": 0.8333,
+      "n_pct": 12
     },
     {
       "i": "527009",
@@ -72,10 +72,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 4,
+      "n": 7,
       "term": 2,
-      "pct": 0.9,
-      "n_pct": 4
+      "pct": 0.6,
+      "n_pct": 7
     },
     {
       "i": "527695",
@@ -83,10 +83,10 @@
       "e": "2. En Curso",
       "ep": "525428",
       "ept": "SOPORTE",
-      "n": 3,
+      "n": 4,
       "term": 3,
-      "pct": 1.0,
-      "n_pct": 3
+      "pct": 0.8,
+      "n_pct": 4
     },
     {
       "i": "543997",
@@ -94,10 +94,10 @@
       "e": "1. En Planeacion",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 1,
+      "n": 2,
       "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
+      "pct": 0.6,
+      "n_pct": 2
     }
   ],
   "hus": [
@@ -786,10 +786,10 @@
     {
       "i": "546094",
       "t": "HU_010_ID_020_EXTRACCIONES COMPLETA – PA_MV_DEVOLUCIONES Y CAMPOS IG_PA_MV",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -815,22 +815,154 @@
       "f": "543997",
       "ep": "525431",
       "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "552954",
+      "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO SCG POBLACIÓN",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527697",
+      "ep": "525428",
+      "r": "daniel.hernandez wimbu.co"
+    },
+    {
+      "i": "552959",
+      "t": "HU_002_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – PUBLICACIÓN DEL INVENTARIO DE REGISTROS ADMINISTRATIVOS",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527009",
+      "ep": "525431",
+      "r": "daniel.hernandez wimbu.co"
+    },
+    {
+      "i": "552964",
+      "t": "HU_003_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – PUBLICACIÓN DEL INVENTARIO DE OPERACIONES ESTADÍSTICAS",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527009",
+      "ep": "525431",
+      "r": "daniel.hernandez wimbu.co"
+    },
+    {
+      "i": "552969",
+      "t": "HU_004_ID_020_GOBIERNO DE DATOS – ACTUALIZACIÓN GIMI, LINEAMIENTOS Y GOBIERNO DE LA IA",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527009",
+      "ep": "525431",
+      "r": "daniel.hernandez wimbu.co"
+    },
+    {
+      "i": "552974",
+      "t": "HU_005_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO EXPUESTOS",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527697",
+      "ep": "525428",
+      "r": "jair.vargas wimbu.co"
+    },
+    {
+      "i": "552979",
+      "t": "HU_006_ID_020_TABLERO DE ACTUALIZACIÓN DE TABLAS – INCLUSIÓN DE TODAS LAS TABLAS DE LA BODEGA",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527007",
+      "ep": "525431",
+      "r": "jair.vargas wimbu.co"
+    },
+    {
+      "i": "552984",
+      "t": "HU_007_ID_020_CIERRES MENSUALES – INVENTARIO EMPRESAS, MUSA Y ALISSTA",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527006",
+      "ep": "525431",
+      "r": "nicolas.barrera wimbu.co"
+    },
+    {
+      "i": "552989",
+      "t": "HU_008_ID_020_NUEVAS REGLAS DE FRAUDE – CORTE OCTUBRE",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527695",
+      "ep": "525428",
+      "r": "nicolas.barrera wimbu.co"
+    },
+    {
+      "i": "552994",
+      "t": "HU_009_ID_020_EXTRACCIONES COMPLETA – PECONO_RESERVAS (SEG_AREAS, CARGO Y TIPO_CONTRATO)",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527008",
+      "ep": "525431",
+      "r": "Camilo Linares Villegas"
+    },
+    {
+      "i": "553000",
+      "t": "HU_010_ID_020_EJECUCIÓN CONTROLADA – CARGUE FRECUENTE PV_HEADER",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527008",
+      "ep": "525431",
+      "r": "Camilo Linares Villegas"
+    },
+    {
+      "i": "553005",
+      "t": "HU_011_ID_020_MIGRACIÓN TABLERO CHATBOT A LOOKER PRO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527007",
+      "ep": "525431",
+      "r": ""
+    },
+    {
+      "i": "553010",
+      "t": "HU_012_ID_020_GESTIÓN Y COORDINACIÓN TÉCNICA",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "543997",
+      "ep": "525431",
+      "r": "vladimir.silva wimbu.co"
     }
   ],
   "kpi": {
-    "n_hu": 65,
-    "n_hu_activas": 63,
+    "n_hu": 77,
+    "n_hu_activas": 75,
     "hu_sin_feature": 2,
     "n_feature": 7,
     "n_epic": 2,
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.946,
+    "pct_global": 0.8347,
     "term_global": 52,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 2,
+    "feature_100_sin_cerrar": 0,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
@@ -842,7 +974,7 @@
     "u": "épicas",
     "isEpics": true,
     "feat_total": 7,
-    "feat_ent": 2,
+    "feat_ent": 0,
     "buckets": {
       "100": 0,
       "75": 0,

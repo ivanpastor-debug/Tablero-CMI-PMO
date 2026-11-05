@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_419-RAMA_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:19",
+  "archivo": "HU_419-RAMA_20261104.csv",
   "epics": [
     {
       "i": "373561",
@@ -26,7 +26,7 @@
       "n_f": 13,
       "n": 52,
       "term": 0,
-      "pct": 0.2338
+      "pct": 0.28
     },
     {
       "i": "399880",
@@ -268,12 +268,12 @@
     {
       "i": "546446",
       "t": "PR_CREACIÓN PROCESOS – MASIVO",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.2571,
+      "pct": 0.4714,
       "n_pct": 7
     },
     {
@@ -510,12 +510,12 @@
     {
       "i": "532415",
       "t": "PR_CREACIÓN PROCESOS – INDIVIDUAL",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.225,
+      "pct": 0.45,
       "n_pct": 4
     },
     {
@@ -3844,7 +3844,7 @@
     },
     {
       "i": "459331",
-      "t": "419_PR_HU004_Descarga_resultado_ registro_novalido_para_Levantamiento_Orden_de_no_pago_LONP",
+      "t": "419_PR_MRLONP_HU004_Colsulta_resultado_ registro_novalido_para_Levantamiento_Orden_de_no_pago_LONP",
       "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
@@ -4186,13 +4186,13 @@
     {
       "i": "532418",
       "t": "419_PR_PROC_HU001_Crear_Proceso_Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532415",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "532428",
@@ -4208,13 +4208,13 @@
     {
       "i": "532447",
       "t": "419_PR_PROC_HU002_Consultar_Proceso_Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532415",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "532560",
@@ -4450,57 +4450,57 @@
     {
       "i": "546449",
       "t": "419_PR_CMP_HU001_Cargue_del_archivo_masivo_de_numeros_de_procesos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "546459",
       "t": "419_PR_CMP_HU002_Autorización_del_cargue_masivo_numero_de_procesos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "546461",
       "t": "419_PR_CMP_HU003_Rechazo_cargue_masivo_numero_de_procesos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "546483",
       "t": "419_PR_CMP_HU004_Procesamiento_del_archivo_cargue_masivo_de_numero_proceso",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "546486",
       "t": "419_PR_CMP_HU005_Consulta_Resultado_Registro_no_validos_para_carga_masiva_procesos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "547686",
@@ -4593,10 +4593,10 @@
     {
       "i": "551598",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532415",
       "ep": "531912",
       "r": "Yesica Johana Ospina Patiño"
@@ -4721,7 +4721,7 @@
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7492,
+    "pct_global": 0.7559,
     "term_global": 72,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:13",
-  "archivo": "snapshot HU + Feature (HU_453_20261103.csv)",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:08",
+  "archivo": "snapshot HU + Feature (HU_453_20261104.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -157,15 +157,15 @@
       "n": "Sprint II",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 22,
+      "n_hu": 154,
       "term": 0,
-      "pct": 0.4909,
-      "pct_hu": 0.4909,
-      "n_pct": 22,
-      "n_cu": 6,
+      "pct": 0.173,
+      "pct_hu": 0.173,
+      "n_pct": 154,
+      "n_cu": 22,
       "term_cu": 0,
-      "pct_cu": 0.4083,
-      "n_cu_pct": 6
+      "pct_cu": 0.2023,
+      "n_cu_pct": 22
     },
     {
       "k": "otra:sprint pedagogico",
@@ -174,12 +174,12 @@
       "sem": "sin_hito",
       "n_hu": 34,
       "term": 0,
-      "pct": 0.6662,
-      "pct_hu": 0.6662,
+      "pct": 0.85,
+      "pct_hu": 0.85,
       "n_pct": 34,
       "n_cu": 4,
-      "term_cu": 1,
-      "pct_cu": 0.5813,
+      "term_cu": 2,
+      "pct_cu": 0.6312,
       "n_cu_pct": 4
     },
     {
@@ -187,15 +187,15 @@
       "n": "Sin iteración",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 116,
+      "n_hu": 13,
       "term": 7,
-      "pct": 0.2061,
-      "pct_hu": 0.2061,
-      "n_pct": 116,
-      "n_cu": 36,
+      "pct": 0.8885,
+      "pct_hu": 0.8885,
+      "n_pct": 13,
+      "n_cu": 21,
       "term_cu": 0,
-      "pct_cu": 0.0962,
-      "n_cu_pct": 33
+      "pct_cu": 0.0889,
+      "n_cu_pct": 18
     }
   ],
   "focos": [
@@ -210,18 +210,18 @@
         "nota": "Hito reprogramado al 24/10/2026 (base: 30/07/2026)"
       },
       "peso": 0.4,
-      "aporte": 0.3383,
+      "aporte": 0.3461,
       "sem": "en_curso",
       "n_hu": 322,
       "term": 7,
-      "pct": 0.8458,
-      "pct_hu": 0.8458,
+      "pct": 0.8652,
+      "pct_hu": 0.8652,
       "n_pct": 322,
       "n_hu_todas": 375,
-      "n_cu": 43,
-      "n_cu_medibles": 39,
-      "term_cu": 28,
-      "pct_cu": 0.8391
+      "n_cu": 44,
+      "n_cu_medibles": 40,
+      "term_cu": 29,
+      "pct_cu": 0.8238
     },
     {
       "k": "B",
@@ -260,16 +260,16 @@
       "peso": 0.15,
       "aporte": 0.018,
       "sem": "en_curso",
-      "n_hu": 108,
+      "n_hu": 137,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 108,
-      "n_hu_todas": 111,
+      "n_pct": 137,
+      "n_hu_todas": 140,
       "n_cu": 32,
       "n_cu_medibles": 31,
       "term_cu": 0,
-      "pct_cu": 0.0685
+      "pct_cu": 0.0815
     },
     {
       "k": "D",
@@ -321,6 +321,48 @@
       "fp": "",
       "release": "1",
       "fecha_entrega": "2026-05-03"
+    },
+    {
+      "i": "545106",
+      "t": "CU_SIMEE_INT_006_Cargar_Archivo_Estructurado",
+      "e": "1. En Levantamiento",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Julio Cesar Manosalva Campos",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "557747",
+      "t": "CU_SIMEE_INT_007_Cargar_Archivo_Libre",
+      "e": "1. En Planeación",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Julio Cesar Manosalva Campos",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
     },
     {
       "i": "489917",
@@ -377,16 +419,16 @@
       "i": "496262",
       "t": "CU_SME_ADM_002_Gestionar_Roles_Permisos",
       "e": "3. Aprobado por Cliente",
-      "ei": "17. Ejecución pruebas QA",
-      "proc_cu": "QA",
-      "pct_cu": 0.8,
+      "ei": "19. Entregado",
+      "proc_cu": "Terminado o Producción",
+      "pct_cu": 1.0,
       "it": "otra:sprint pedagogico",
       "itn": "Sprint pedagógico",
       "r": "Cristian Eduardo Lopez bocanegra",
       "n": 25,
       "term": 0,
-      "pct": 0.6,
-      "pct_hu": 0.6,
+      "pct": 0.85,
+      "pct_hu": 0.85,
       "n_pct": 25,
       "its": [
         "otra:sprint pedagogico"
@@ -1134,8 +1176,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 4,
       "term": 0,
@@ -1143,7 +1185,7 @@
       "pct_hu": 0.12,
       "n_pct": 4,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1157,8 +1199,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 9,
       "term": 0,
@@ -1166,7 +1208,7 @@
       "pct_hu": 0.12,
       "n_pct": 9,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1180,8 +1222,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 6,
       "term": 0,
@@ -1189,7 +1231,7 @@
       "pct_hu": 0.12,
       "n_pct": 6,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1203,16 +1245,16 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 7,
+      "n": 8,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 7,
+      "n_pct": 8,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1226,8 +1268,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 8,
       "term": 0,
@@ -1235,7 +1277,7 @@
       "pct_hu": 0.12,
       "n_pct": 8,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1249,8 +1291,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 14,
       "term": 0,
@@ -1258,7 +1300,7 @@
       "pct_hu": 0.12,
       "n_pct": 14,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1272,8 +1314,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 19,
       "term": 0,
@@ -1281,7 +1323,7 @@
       "pct_hu": 0.12,
       "n_pct": 19,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1295,8 +1337,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 8,
       "term": 0,
@@ -1304,7 +1346,7 @@
       "pct_hu": 0.12,
       "n_pct": 8,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1341,16 +1383,16 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 7,
+      "n": 8,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 7,
+      "n_pct": 8,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1364,8 +1406,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 7,
       "term": 0,
@@ -1373,7 +1415,7 @@
       "pct_hu": 0.12,
       "n_pct": 7,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1387,8 +1429,8 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
       "n": 8,
       "term": 0,
@@ -1396,7 +1438,7 @@
       "pct_hu": 0.12,
       "n_pct": 8,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1410,16 +1452,16 @@
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.125,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 6,
+      "n": 7,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 6,
+      "n_pct": 7,
       "its": [
-        "__sin__"
+        "otra:sprint ii"
       ],
       "fs": [
         "C"
@@ -1429,86 +1471,94 @@
     {
       "i": "539724",
       "t": "CU_SME_ENC_014_Crear_Aplicacion_de_Encuesta",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 0,
+      "n": 10,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 10,
+      "its": [
+        "otra:sprint ii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539725",
       "t": "CU_SME_ENC_015_Publicar_Aplicacion_de_Encuesta",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 0,
+      "n": 4,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 4,
+      "its": [
+        "otra:sprint ii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539726",
       "t": "CU_SME_ENC_016_Suspender_y_Reactivar_Aplicacion",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 0,
+      "n": 6,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 6,
+      "its": [
+        "otra:sprint ii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539727",
       "t": "CU_SME_ENC_017_Finalizar_Aplicacion",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": "",
-      "n": 0,
+      "n": 6,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 6,
+      "its": [
+        "otra:sprint ii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539728",
@@ -1782,27 +1832,6 @@
         "C"
       ],
       "fp": "C"
-    },
-    {
-      "i": "545106",
-      "t": "CU_SME_INT_006_Cargar_Archivo_Estructurado",
-      "e": "1. En Levantamiento",
-      "ei": "00. En levantamiento/entendimiento",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
-      "r": "Julio Cesar Manosalva Campos",
-      "n": 0,
-      "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
-      "fs": [
-        "A"
-      ],
-      "fp": "A"
     },
     {
       "i": "540577",
@@ -4635,7 +4664,7 @@
       "cu": "424339",
       "it": "__sin__",
       "itn": "Sin iteración",
-      "r": ""
+      "r": "Jose Luis Dueñas Maldonado"
     },
     {
       "i": "488990",
@@ -5108,10 +5137,10 @@
     {
       "i": "510464",
       "t": "Transversales CU_SME_ADM_002_Gestionar_Roles_Permisos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -5927,10 +5956,10 @@
     {
       "i": "519694",
       "t": "SME_ADM_002_E01_ConsultarRolesYDescargarLaTabla",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -5940,10 +5969,10 @@
     {
       "i": "519695",
       "t": "SME_ADM_002_E02_ConsultarCatalogoDePermisos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -5953,10 +5982,10 @@
     {
       "i": "519696",
       "t": "SME_ADM_002_E03_CrearRolConSusPermisos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -5966,10 +5995,10 @@
     {
       "i": "519697",
       "t": "SME_ADM_002_E04_EditarRolYConfirmarCambioDePermisos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -5979,10 +6008,10 @@
     {
       "i": "519698",
       "t": "SME_ADM_002_E05_InactivarRolSinUsuariosAsignados",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -5992,10 +6021,10 @@
     {
       "i": "519699",
       "t": "SME_ADM_002_E06_ConsultarPermisosDeUnRol",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6005,10 +6034,10 @@
     {
       "i": "519700",
       "t": "SME_ADM_002_E07_OperarModuloSinElPermisoDeGestionDeRoles",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6538,10 +6567,10 @@
     {
       "i": "529947",
       "t": "PRODUCCIÓN CU_SME_ADM_002_Gestionar_Roles_Permisos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6590,10 +6619,10 @@
     {
       "i": "532268",
       "t": "SME_ADM_002_E08_ComprobarPermisosDeUsoDeSoftware",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6603,10 +6632,10 @@
     {
       "i": "532269",
       "t": "SME_ADM_002_E09_ComprobarPermisosDeCategorizacionDeSoftware",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6616,10 +6645,10 @@
     {
       "i": "532270",
       "t": "SME_ADM_002_E10_ComprobarPermisosDeSoftwareInstalado",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6629,10 +6658,10 @@
     {
       "i": "532271",
       "t": "SME_ADM_002_E11_ComprobarPermisosDeInformacionGeneral",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6642,10 +6671,10 @@
     {
       "i": "532272",
       "t": "SME_ADM_002_E12_ComprobarPermisosDeGeocercasConfiguradas",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6655,10 +6684,10 @@
     {
       "i": "532273",
       "t": "SME_ADM_002_E13_ComprobarPermisosDeAlertasDeSoftware",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6668,10 +6697,10 @@
     {
       "i": "532274",
       "t": "SME_ADM_002_E14_ComprobarPermisosDeAlertasDeHardware",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6681,10 +6710,10 @@
     {
       "i": "532275",
       "t": "SME_ADM_002_E15_ComprobarPermisosDeAlertasPorTerminalSinUso",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6707,10 +6736,10 @@
     {
       "i": "532277",
       "t": "SME_ADM_002_E17_ComprobarPermisosDeConsultaDeAlertas",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6720,10 +6749,10 @@
     {
       "i": "532278",
       "t": "SME_ADM_002_E18_ComprobarPermisosDeGestionDeAlertasDeGeolocalizacion",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6733,10 +6762,10 @@
     {
       "i": "532279",
       "t": "SME_ADM_002_E19_ComprobarPermisosDeUbicacionDeTerminales",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6746,10 +6775,10 @@
     {
       "i": "532280",
       "t": "SME_ADM_002_E20_ComprobarPermisosDeBloqueoDeTerminales",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6759,10 +6788,10 @@
     {
       "i": "532281",
       "t": "SME_ADM_002_E21_ComprobarPermisosDeSincronizacionManual",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6772,10 +6801,10 @@
     {
       "i": "532282",
       "t": "SME_ADM_002_E22_ComprobarPermisosDeRegistroDeElementos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6785,10 +6814,10 @@
     {
       "i": "532283",
       "t": "SME_ADM_002_E23_ComprobarPermisosDePreAsignar",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6798,10 +6827,10 @@
     {
       "i": "532284",
       "t": "SME_ADM_002_E24_ComprobarPermisosDeConsultaDeEstados",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "496262",
       "it": "otra:sprint pedagogico",
@@ -6973,8 +7002,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493606",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -6986,8 +7015,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493606",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -6999,8 +7028,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493606",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7012,8 +7041,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493606",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7025,8 +7054,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7038,8 +7067,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7051,8 +7080,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7064,8 +7093,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7077,8 +7106,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7090,8 +7119,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7103,8 +7132,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7116,8 +7145,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7129,8 +7158,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539713",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7142,8 +7171,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493693",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7155,8 +7184,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493693",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7168,8 +7197,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493693",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7181,8 +7210,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493693",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7194,8 +7223,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493693",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7207,8 +7236,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493693",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7220,8 +7249,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7233,8 +7262,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7246,8 +7275,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7259,8 +7288,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7272,8 +7301,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7285,8 +7314,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7298,8 +7327,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539714",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7311,8 +7340,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7324,8 +7353,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7337,8 +7366,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7350,8 +7379,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7363,8 +7392,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7376,8 +7405,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7389,8 +7418,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7402,8 +7431,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539716",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7415,8 +7444,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7428,8 +7457,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7441,8 +7470,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7454,8 +7483,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7467,8 +7496,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7480,8 +7509,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7493,8 +7522,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7506,8 +7535,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7519,8 +7548,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7532,8 +7561,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7545,8 +7574,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7558,8 +7587,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7571,8 +7600,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7584,8 +7613,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "493696",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7597,8 +7626,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7610,8 +7639,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7623,8 +7652,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7636,8 +7665,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7649,8 +7678,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7662,8 +7691,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7675,8 +7704,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7688,8 +7717,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7701,8 +7730,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7714,8 +7743,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7727,8 +7756,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7740,8 +7769,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7753,8 +7782,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7766,8 +7795,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7779,8 +7808,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7792,8 +7821,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7805,8 +7834,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7818,8 +7847,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7831,8 +7860,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539717",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7844,8 +7873,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7857,8 +7886,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7870,8 +7899,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7883,8 +7912,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7896,8 +7925,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7909,8 +7938,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7922,8 +7951,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -7935,8 +7964,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539719",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8013,8 +8042,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8026,8 +8055,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8039,8 +8068,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8052,8 +8081,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8065,8 +8094,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8078,8 +8107,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8091,8 +8120,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539720",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8104,8 +8133,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8117,8 +8146,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8130,8 +8159,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8143,8 +8172,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8156,8 +8185,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8169,8 +8198,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8182,8 +8211,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539721",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8195,8 +8224,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8208,8 +8237,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8221,8 +8250,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8234,8 +8263,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8247,8 +8276,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8260,8 +8289,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8273,8 +8302,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8286,8 +8315,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "502096",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8299,8 +8328,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539723",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8312,8 +8341,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539723",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8325,8 +8354,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539723",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8338,8 +8367,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539723",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8351,8 +8380,8 @@
       "v": 0.12,
       "f": "C",
       "cu": "539723",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     },
     {
@@ -8364,62 +8393,439 @@
       "v": 0.12,
       "f": "C",
       "cu": "539723",
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "553118",
+      "t": "SME_ENC_004_E08_VerificarCierreNoOfrecidoSinPermisoCerrarEncuestas",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539714",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "553120",
+      "t": "SME_ENC_010_E08_IntentarCorregirSinPermiso",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539720",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "553122",
+      "t": "SME_ENC_013_E07_IntentarEliminarEncuestaSinPermisoDeEliminar",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539723",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556226",
+      "t": "SME_ENC_014_E01_CrearAplicacionDesdeOpcionAplicaciones",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556229",
+      "t": "SME_ENC_014_E02_CrearAplicacionDesdePestanaAplicacionesDeLaEncuesta",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556230",
+      "t": "SME_ENC_014_E03_CrearAplicacionDesdeMenuDeFilaDelCatalogo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556231",
+      "t": "SME_ENC_014_E04_CrearAplicacionDesdeCabeceraDeLaEncuesta",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556232",
+      "t": "SME_ENC_014_E05_ValidarCamposObligatoriosAlCrearAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556233",
+      "t": "SME_ENC_014_E06_ValidarTiempoProgramadoAlCrearAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556234",
+      "t": "SME_ENC_014_E07_ValidarSegmentacionTerritorialAlCrearAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556235",
+      "t": "SME_ENC_014_E08_VerificarCrearAplicacionEnEncuestaNoActiva",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556236",
+      "t": "SME_ENC_014_E09_IntentarCrearAplicacionSinPermisoDeGestionarAplicaciones",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556237",
+      "t": "SME_ENC_014_E10_CancelarCreacionDeAplicacionConCambiosSinGuardar",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556238",
+      "t": "SME_ENC_015_E01_PublicarAplicacionAlLlegarSuFechaYHoraDeInicio",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539725",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556239",
+      "t": "SME_ENC_015_E02_CopiarEnlacesYDescargarCodigosQRDeAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539725",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556240",
+      "t": "SME_ENC_015_E03_IntentarConsultarEnlacesSinPermisoDeConsultarAplicaciones",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539725",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556241",
+      "t": "SME_ENC_015_E04_VerificarEnlacesDeAplicacionPendienteDePublicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539725",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556242",
+      "t": "SME_ENC_016_E01_SuspenderAplicacionPublicadaConMotivoYPlazo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556243",
+      "t": "SME_ENC_016_E02_ReactivarAplicacionSuspendida",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556244",
+      "t": "SME_ENC_016_E03_ValidarMotivoYPlazoAlSuspenderAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556245",
+      "t": "SME_ENC_016_E04_IntentarReactivarAplicacionConFechaDeFinVencida",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556246",
+      "t": "SME_ENC_016_E05_IntentarSuspenderYReactivarSinPermisoDeGestionarAplicaciones",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556247",
+      "t": "SME_ENC_016_E06_VerificarEnlacesDeAplicacionSuspendida",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556248",
+      "t": "SME_ENC_017_E01_FinalizarAplicacionPublicadaConMotivo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556249",
+      "t": "SME_ENC_017_E02_FinalizarAplicacionSuspendidaDesdeSuFicha",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556250",
+      "t": "SME_ENC_017_E03_FinalizarAplicacionPublicadaAlVencerSuFechaDeFin",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556251",
+      "t": "SME_ENC_017_E04_ValidarMotivoAlFinalizarAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556252",
+      "t": "SME_ENC_017_E05_IntentarFinalizarAplicacionSinPermisoDeGestionarAplicaciones",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": ""
+    },
+    {
+      "i": "556253",
+      "t": "SME_ENC_017_E06_VerificarQueAplicacionFinalizadaNoAdmiteCambiosNiRespuestas",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
       "r": ""
     }
   ],
   "kpi": {
-    "n_cu": 75,
-    "n_cu_medibles": 71,
-    "cu_entregados": 28,
-    "pct_cu_global": 0.4933,
-    "n_hu": 487,
-    "n_hu_activas": 430,
+    "n_cu": 76,
+    "n_cu_medibles": 72,
+    "cu_entregados": 29,
+    "pct_cu_global": 0.4951,
+    "n_hu": 516,
+    "n_hu_activas": 459,
     "hu_sin_cu": 9,
     "hu_fuera_de_su_cu": 37,
-    "sin_iteracion": 116,
+    "sin_iteracion": 13,
     "cu_aprobados": 31,
     "hu_omitidas": 52,
     "focos_activas": {
       "A": 322,
-      "C": 108
+      "C": 137
     },
     "focos_todas": {
       "A": 375,
       "B": 1,
-      "C": 111
+      "C": 140
     },
     "cus_activas": {
-      "A": 42,
+      "A": 43,
       "B": 1,
       "C": 31
     },
     "cus_todas": {
-      "A": 43,
+      "A": 44,
       "B": 2,
       "C": 32
     },
     "cu_sin_foco": 0,
     "cu_multi_foco": 1,
     "hu_sin_pct": 0,
-    "pct_global": 0.3563,
-    "pct_global_hu": 0.6635,
+    "pct_global": 0.3641,
+    "pct_global_hu": 0.6428,
     "avance_modo": "peso_foco",
     "term_global": 7
   },
   "cmi": {
-    "tactico": 0.4933,
-    "estrategico": 0.3944,
-    "n": 71,
-    "d": 28,
+    "tactico": 0.4951,
+    "estrategico": 0.4028,
+    "n": 72,
+    "d": 29,
     "u": "casos de uso",
     "buckets": {
-      "100": 28,
+      "100": 29,
       "75": 0,
-      "50": 2,
+      "50": 1,
       "20": 6,
-      "0": 35
+      "0": 36
     }
   }
 }

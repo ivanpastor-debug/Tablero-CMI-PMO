@@ -1,8 +1,8 @@
 {
   "codigo": "397",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_397_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:19",
+  "archivo": "HU_397_20261104.csv",
   "epics": [
     {
       "i": "333320",
@@ -1904,17 +1904,6 @@
       "f": "333854",
       "ep": "333318",
       "r": "Kevin Reynaldo Guerrero Garcia"
-    },
-    {
-      "i": "409803",
-      "t": "397_ControlCambio_R69HU85 El campo “Fecha respuesta” no será obligatorio",
-      "e": "12 - En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": null,
-      "ep": null,
-      "r": "Juan Esteban González Moreno"
     },
     {
       "i": "519214",
@@ -4316,16 +4305,16 @@
     }
   ],
   "kpi": {
-    "n_hu": 229,
-    "n_hu_activas": 229,
-    "hu_sin_feature": 9,
+    "n_hu": 228,
+    "n_hu_activas": 228,
+    "hu_sin_feature": 8,
     "n_feature": 137,
     "n_epic": 35,
     "n_feature_con_hu": 137,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
     "pct_global": 0.9991,
-    "term_global": 228,
+    "term_global": 227,
     "feature_sin_frente": 1,
     "hu_sin_frente": 1,
     "feature_100_sin_cerrar": 113,

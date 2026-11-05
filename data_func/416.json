@@ -1,8 +1,8 @@
 {
   "codigo": "416",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_416_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:19",
+  "archivo": "HU_416_20261104.csv",
   "epics": [
     {
       "i": "345822",
@@ -10,15 +10,15 @@
       "n_f": 3,
       "n": 154,
       "term": 0,
-      "pct": 0.2504
+      "pct": 0.2523
     },
     {
       "i": "345824",
       "t": "416_Accidentes Personales",
       "n_f": 4,
-      "n": 88,
+      "n": 95,
       "term": 0,
-      "pct": 0.2615
+      "pct": 0.2553
     }
   ],
   "features": [
@@ -39,10 +39,10 @@
       "e": "1. En Planeación",
       "ep": "345824",
       "ept": "416_Accidentes Personales",
-      "n": 38,
+      "n": 44,
       "term": 0,
-      "pct": 0.2295,
-      "n_pct": 38
+      "pct": 0.2255,
+      "n_pct": 44
     },
     {
       "i": "345796",
@@ -63,7 +63,7 @@
       "ept": "416_Vida Individual",
       "n": 19,
       "term": 0,
-      "pct": 0.6932,
+      "pct": 0.7089,
       "n_pct": 19
     },
     {
@@ -78,6 +78,17 @@
       "n_pct": 11
     },
     {
+      "i": "345798",
+      "t": "416_AP_Reservas",
+      "e": "1. En Planeación",
+      "ep": "345824",
+      "ept": "416_Accidentes Personales",
+      "n": 4,
+      "term": 0,
+      "pct": 0.2025,
+      "n_pct": 4
+    },
+    {
       "i": "346275",
       "t": "416_VI_Siniestros",
       "e": "1. En Planeación",
@@ -87,23 +98,23 @@
       "term": 0,
       "pct": 0.2,
       "n_pct": 4
-    },
-    {
-      "i": "345798",
-      "t": "416_AP_Reservas",
-      "e": "1. En Planeación",
-      "ep": "345824",
-      "ept": "416_Accidentes Personales",
-      "n": 3,
-      "term": 0,
-      "pct": 0.2567,
-      "n_pct": 3
     }
   ],
   "hus": [
     {
       "i": "346296",
       "t": "416_AP_EMI_HU193_CARGUE DE ASEGURADOS",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Andrés Stick Melo Figueroa"
+    },
+    {
+      "i": "346297",
+      "t": "416_AP_EMI_HU647_AMPAROS",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -432,13 +443,13 @@
       "r": "Ivan Camilo Pulido Ibarra"
     },
     {
-      "i": "346297",
-      "t": "416_AP_EMI_HU647_AMPAROS",
+      "i": "346293",
+      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "345796",
+      "f": "345655",
       "ep": "345824",
       "r": "Jesus David Sotaquira Chacon"
     },
@@ -498,6 +509,61 @@
       "r": "Jonathan Santiago Mora Lozano"
     },
     {
+      "i": "346320",
+      "t": "416_AP_EMI_HU248_EDITAR DATOS GENERALES",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Jonathan Santiago Mora Lozano"
+    },
+    {
+      "i": "346321",
+      "t": "416_AP_EMI_HU250_EDITAR DATOS DE INTERMEDIACIÓN SOLICITUD DE PÓLIZA_AP",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Jonathan Santiago Mora Lozano"
+    },
+    {
+      "i": "346342",
+      "t": "416_AP_EMI_HU345_DATOS GENERALES-AJUSTE FORMA DE PAGO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Jonathan Santiago Mora Lozano"
+    },
+    {
+      "i": "346333",
+      "t": "416_AP_EMI_HU255_EDITAR PRODUCTO SOLICITUD DE PÓLIZA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.45,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Jonathan Santiago Mora Lozano"
+    },
+    {
+      "i": "346338",
+      "t": "416_AP_EMI_HU189_DATOS DE INTERMEDIACIÓN",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Jonathan Santiago Mora Lozano"
+    },
+    {
       "i": "346281",
       "t": "416_AP_EMI_HU187_DATOS GENERALES",
       "e": "5. Backlog General",
@@ -531,72 +597,6 @@
       "r": "Jonathan Santiago Mora Lozano"
     },
     {
-      "i": "346342",
-      "t": "416_AP_EMI_HU345_DATOS GENERALES-AJUSTE FORMA DE PAGO",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
-      "i": "346338",
-      "t": "416_AP_EMI_HU189_DATOS DE INTERMEDIACIÓN",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
-      "i": "346320",
-      "t": "416_AP_EMI_HU248_EDITAR DATOS GENERALES",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
-      "i": "346321",
-      "t": "416_AP_EMI_HU250_EDITAR DATOS DE INTERMEDIACIÓN SOLICITUD DE PÓLIZA_AP",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
-      "i": "346332",
-      "t": "416_AP_EMI_HU194_AGREGAR PRODUCTO",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
-      "i": "346333",
-      "t": "416_AP_EMI_HU255_EDITAR PRODUCTO SOLICITUD DE PÓLIZA",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.45,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Jonathan Santiago Mora Lozano"
-    },
-    {
       "i": "346498",
       "t": "416_AP_NOV_HU249_EDITAR COASEGURO",
       "e": "5. Backlog General",
@@ -617,17 +617,6 @@
       "f": "346272",
       "ep": "345822",
       "r": "Jorge Luis Vargas Jimenez"
-    },
-    {
-      "i": "346633",
-      "t": "416_VI_EMI_HU650_FORMULACIÓN PRODUCTOS COMERCIALIZADOS",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Jose de la Cruz Espinel Mesa"
     },
     {
       "i": "434317",
@@ -661,17 +650,6 @@
       "f": "345655",
       "ep": "345824",
       "r": "Jose Mario Camilo Diaz Ortiz"
-    },
-    {
-      "i": "346617",
-      "t": "416_VI_EMI_HU213_REASIGNACIÓN DE PÓLIZAS",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Juan Pablo Gomez Cuervo"
     },
     {
       "i": "346327",
@@ -850,8 +828,30 @@
       "r": "María Alejandra Ramírez Zambrano"
     },
     {
+      "i": "346633",
+      "t": "416_VI_EMI_HU650_FORMULACIÓN PRODUCTOS COMERCIALIZADOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "346272",
+      "ep": "345822",
+      "r": "María Alejandra Ramírez Zambrano"
+    },
+    {
       "i": "346317",
       "t": "416_AP_EMI_HU576_TIPO DE VIGENCIA ABIERTA",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Maria Alejandra Torrens Acosta"
+    },
+    {
+      "i": "346332",
+      "t": "416_AP_EMI_HU194_AGREGAR PRODUCTO",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -891,6 +891,17 @@
       "v": 0.45,
       "f": "345796",
       "ep": "345824",
+      "r": "Maria Julieth Gonzalez Masmela"
+    },
+    {
+      "i": "346617",
+      "t": "416_VI_EMI_HU213_REASIGNACIÓN DE PÓLIZAS",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.6,
+      "f": "346272",
+      "ep": "345822",
       "r": "Maria Julieth Gonzalez Masmela"
     },
     {
@@ -1444,28 +1455,6 @@
       "r": "Omar Fernando Cantor Largo"
     },
     {
-      "i": "346636",
-      "t": "416_VI_NOV_HU079_REHABILITAR PÓLIZA",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "346638",
-      "t": "416_VI_NOV_HU082_CARGUE DE DOCUMENTOS",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
       "i": "346619",
       "t": "416_VI_EMI_HU248_EDITAR DATOS GENERALES DEL NEGOCIO-EMISIÓN",
       "e": "8.2 Aprobación por Cliente UAT",
@@ -1484,6 +1473,28 @@
       "a": 1,
       "v": 0.8,
       "f": "346272",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "346636",
+      "t": "416_VI_NOV_HU079_REHABILITAR PÓLIZA",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "346638",
+      "t": "416_VI_NOV_HU082_CARGUE DE DOCUMENTOS",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
       "ep": "345822",
       "r": "Omar Fernando Cantor Largo"
     },
@@ -2379,138 +2390,6 @@
       "r": "Omar Fernando Cantor Largo"
     },
     {
-      "i": "434332",
-      "t": "416_VI_NOV_HU077_1 - Consultar y buscar pólizas para anulación",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434333",
-      "t": "416_VI_NOV_HU077_2 - Seleccionar tipo y confirmar anulación de póliza",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434334",
-      "t": "416_VI_NOV_HU077_3 - Ejecutar anulación por error de usuario",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434336",
-      "t": "416_VI_NOV_HU077_4 - Ejecutar anulación anticipada con cálculo de rescate",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434338",
-      "t": "416_VI_NOV_HU077_6 - Ejecutar anulación por siniestro de muerte",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434339",
-      "t": "416_VI_NOV_HU077_7 - Ejecutar anulación por terminación de póliza saldada o prorrogada",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434340",
-      "t": "416_VI_NOV_HU077_8 - Ejecutar anulación por vencimiento o decisión de compañía",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434341",
-      "t": "416_VI_NOV_HU077_9 - Ejecutar anulación automática por mora día 46",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434342",
-      "t": "416_VI_NOV_HU077_10 - Ejecutar anulación manual con doble validación",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434345",
-      "t": "416_VI_NOV_HU077_11 - Gestionar grilla de recibos en proceso de anulación",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434346",
-      "t": "416_VI_NOV_HU077_12 - Consultar historial y documentación de pólizas anuladas",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "434347",
-      "t": "416_VI_NOV_HU077_13 - Calcular mayor valor asegurado por utilidades compartidas",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.17,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
       "i": "434213",
       "t": "416_VI_NOV_HU0819-3_3 - Reproceso Manual y Cambio de Estado de Renovaciones",
       "e": "4. Refinamiento",
@@ -2709,6 +2588,204 @@
       "r": "Omar Fernando Cantor Largo"
     },
     {
+      "i": "434338",
+      "t": "416_VI_NOV_HU077_6 - Ejecutar anulación por siniestro de muerte",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434339",
+      "t": "416_VI_NOV_HU077_7 - Ejecutar anulación por terminación de póliza saldada o prorrogada",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434340",
+      "t": "416_VI_NOV_HU077_8 - Ejecutar anulación por vencimiento o decisión de compañía",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434341",
+      "t": "416_VI_NOV_HU077_9 - Ejecutar anulación automática por mora día 46",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434342",
+      "t": "416_VI_NOV_HU077_10 - Ejecutar anulación manual con doble validación",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434345",
+      "t": "416_VI_NOV_HU077_11 - Gestionar grilla de recibos en proceso de anulación",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434346",
+      "t": "416_VI_NOV_HU077_12 - Consultar historial y documentación de pólizas anuladas",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434347",
+      "t": "416_VI_NOV_HU077_13 - Calcular mayor valor asegurado por utilidades compartidas",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434332",
+      "t": "416_VI_NOV_HU077_1 - Consultar y buscar pólizas para anulación",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434333",
+      "t": "416_VI_NOV_HU077_2 - Seleccionar tipo y confirmar anulación de póliza",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434334",
+      "t": "416_VI_NOV_HU077_3 - Ejecutar anulación por error de usuario",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "434336",
+      "t": "416_VI_NOV_HU077_4 - Ejecutar anulación anticipada con cálculo de rescate",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "556653",
+      "t": "416_AP_NOV_HU772 - Retorno de Primas- Contabilidad",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "557418",
+      "t": "416_AP_NOV_HU447_SOLICITUD DE NOVEDAD",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "557453",
+      "t": "416_AP_NOV_TRA_HU845_Articulación Anulación de movimiento y Anulación de pólizas",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "557472",
+      "t": "416_AP_NOV_HU_846 Histórico factura por asegurado",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "557486",
+      "t": "416_AP_NOV_HU867_CLAUSULADOS",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "557488",
+      "t": "416_AP_NOV_HU586_Cambio de aclaraciones",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
       "i": "346574",
       "t": "416_AP_SIN_HU833_PARÁMETROS DE FILTROS PARA EL PROCESO DE RED ASISTENCIA Y RECLAMACIONES VIDA",
       "e": "6.2 Ajustes DEV",
@@ -2753,27 +2830,27 @@
       "r": "Yury Viviana Ocampo Baracaldo"
     },
     {
-      "i": "346293",
-      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
-      "e": "4. Refinamiento",
+      "i": "556596",
+      "t": "416_AP_RES_HU642_HU DE RESERVAS",
+      "e": "0. Pendiente Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
-      "f": "345655",
+      "v": 0.04,
+      "f": "345798",
       "ep": "345824",
-      "r": "Zuleyne Astrid Vanegas Arevalo"
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 242,
-    "n_hu_activas": 242,
+    "n_hu": 249,
+    "n_hu_activas": 249,
     "hu_sin_feature": 0,
     "n_feature": 7,
     "n_epic": 2,
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.2544,
+    "pct_global": 0.2535,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

@@ -1,16 +1,16 @@
 {
   "codigo": "456",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_456_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:20",
+  "archivo": "HU_456_20261104.csv",
   "epics": [
     {
       "i": "544970",
       "t": "Memoria contractual consultable con IA",
       "n_f": 4,
-      "n": 16,
+      "n": 13,
       "term": 0,
-      "pct": 0.12
+      "pct": 0.16
     }
   ],
   "features": [
@@ -22,18 +22,7 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 5,
       "term": 0,
-      "pct": 0.12,
-      "n_pct": 5
-    },
-    {
-      "i": "545459",
-      "t": "Gestión documental",
-      "e": "1. En Planeación",
-      "ep": "544970",
-      "ept": "Memoria contractual consultable con IA",
-      "n": 5,
-      "term": 0,
-      "pct": 0.12,
+      "pct": 0.16,
       "n_pct": 5
     },
     {
@@ -44,8 +33,19 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 4,
       "term": 0,
-      "pct": 0.12,
+      "pct": 0.16,
       "n_pct": 4
+    },
+    {
+      "i": "545459",
+      "t": "Gestión documental",
+      "e": "1. En Planeación",
+      "ep": "544970",
+      "ept": "Memoria contractual consultable con IA",
+      "n": 2,
+      "term": 0,
+      "pct": 0.16,
+      "n_pct": 2
     },
     {
       "i": "545460",
@@ -55,198 +55,198 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 2,
       "term": 0,
-      "pct": 0.12,
+      "pct": 0.16,
       "n_pct": 2
     }
   ],
   "hus": [
     {
-      "i": "549160",
+      "i": "553015",
       "t": "HU001 - Autenticación de usuario",
-      "e": "2. Elaboración HU",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
       "f": "545363",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549162",
-      "t": "HU002 - Sincronizar usuarios de LDAP y asignar rol",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545458",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549163",
-      "t": "HU005 - Control de acceso por rol, categoría, módulo y grupo",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545458",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549165",
-      "t": "HU008 - Creación de un caso por proyecto con su grupo responsable y las áreas participantes",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545459",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549166",
-      "t": "HU011 - Primer ingreso: aceptación de términos y condiciones, tour de bienvenida y verificación del contacto",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545363",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549167",
-      "t": "HU003 - Desbloqueo de cuenta bloqueada por intentos fallidos mediante código de verificación",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545363",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549168",
-      "t": "HU006 - Carga de documentos por categoría y organización en categorías",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545459",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549171",
-      "t": "HU009 - Registro de observaciones y reasignación del caso a cada área, con adjuntos, autor y fecha",
-      "e": "2. Elaboración HU",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.12,
-      "f": "545459",
-      "ep": "544970",
-      "r": ""
-    },
-    {
-      "i": "549172",
+      "i": "553016",
       "t": "HU004 - Gestión de usuarios: crear, desactivar, reactivar y asignar rol",
-      "e": "2. Elaboración HU",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
       "f": "545458",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549173",
-      "t": "HU012 - Administración de los permisos y del menú de cada rol",
-      "e": "2. Elaboración HU",
+      "i": "553017",
+      "t": "HU005 - Control de acceso por rol, categoría, módulo y grupo",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
       "f": "545458",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549174",
-      "t": "HU007 - Versionado de documentos: versión nueva, histórico y vuelta a una versión anterior",
-      "e": "2. Elaboración HU",
+      "i": "553018",
+      "t": "HU006 - Carga y organización de documentos por categoría",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
       "f": "545459",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549175",
-      "t": "HT001 - Cambio obligatorio de contraseña temporal o vencida",
-      "e": "2. Elaboración HU",
+      "i": "553019",
+      "t": "HU003-T - Consulta al asistente de IA con respuestas citadas",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
+      "f": "545460",
+      "ep": "544970",
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553020",
+      "t": "HU002 - Asignar rol a usuarios pendientes de rol",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
+      "f": "545458",
+      "ep": "544970",
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553021",
+      "t": "HU003 - Desbloqueo de cuenta mediante código de verificación",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
       "f": "545363",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549176",
-      "t": "HU010 - Solicitud de concepto a un grupo, aprobación o rechazo con motivo y estados del caso hasta el cierre",
-      "e": "2. Elaboración HU",
+      "i": "553022",
+      "t": "HU007 - Versionado de documentos",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
       "f": "545459",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549177",
-      "t": "HT002 - Recuperación de contraseña olvidada mediante código de verificación",
-      "e": "2. Elaboración HU",
+      "i": "553023",
+      "t": "HU008 - Creación de caso por proyecto IP/APP",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
+      "f": null,
+      "ep": null,
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553025",
+      "t": "HU009 - Observaciones y réplicas del caso",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
+      "f": null,
+      "ep": null,
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553026",
+      "t": "HU010 - Concepto y estados del caso hasta el cierre",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
+      "f": null,
+      "ep": null,
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553027",
+      "t": "HU011 - Primer ingreso: términos y condiciones, tour y verificación de contacto",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
       "f": "545363",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549179",
-      "t": "HT003 - Consulta al asistente de IA con respuestas citadas, solo con los documentos permitidos al rol",
-      "e": "2. Elaboración HU",
+      "i": "553028",
+      "t": "HU012 - Administración de roles, permisos y menú",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
-      "f": "545460",
+      "v": 0.16,
+      "f": "545458",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     },
     {
-      "i": "549182",
-      "t": "HT004 - Búsqueda de documentos por categoría (contrato o proyecto), nombre y fecha de carga",
-      "e": "2. Elaboración HU",
+      "i": "553029",
+      "t": "HU001-T - Cambio obligatorio de contraseña temporal o vencida",
+      "e": "3. Aprobación de HU y Artefactos",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.16,
+      "f": "545363",
+      "ep": "544970",
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553030",
+      "t": "HU002-T - Recuperación de contraseña olvidada con código de verificación",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
+      "f": "545363",
+      "ep": "544970",
+      "r": "Cesar Andres Patiño Nieto"
+    },
+    {
+      "i": "553031",
+      "t": "HU004-T - Búsqueda de documentos por categoría, nombre y fecha de carga",
+      "e": "3. Aprobación de HU y Artefactos",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.16,
       "f": "545460",
       "ep": "544970",
-      "r": ""
+      "r": "Cesar Andres Patiño Nieto"
     }
   ],
   "kpi": {
     "n_hu": 16,
     "n_hu_activas": 16,
-    "hu_sin_feature": 0,
+    "hu_sin_feature": 3,
     "n_feature": 4,
     "n_epic": 1,
     "n_feature_con_hu": 4,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.12,
+    "pct_global": 0.16,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -264,8 +264,8 @@
     "feat_total": 4,
     "feat_ent": 0,
     "epic_total": 1,
-    "hu_total": 16,
-    "pct_azure": 0.12,
+    "hu_total": 13,
+    "pct_azure": 0.16,
     "buckets": {
       "100": 1,
       "75": 0,

@@ -1,8 +1,8 @@
 {
   "codigo": "348",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_348_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:20",
+  "archivo": "HU_348_20261104.csv",
   "epics": [
     {
       "i": "477771",
@@ -33,8 +33,8 @@
       "t": "Certificación Temáticos",
       "n_f": 9,
       "n": 279,
-      "term": 97,
-      "pct": 0.3738
+      "term": 109,
+      "pct": 0.4151
     },
     {
       "i": "186545",
@@ -128,8 +128,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 64,
-      "term": 15,
-      "pct": 0.265,
+      "term": 19,
+      "pct": 0.325,
       "n_pct": 64
     },
     {
@@ -194,8 +194,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 52,
-      "term": 48,
-      "pct": 0.9262,
+      "term": 52,
+      "pct": 1.0,
       "n_pct": 52
     },
     {
@@ -381,8 +381,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 32,
-      "term": 0,
-      "pct": 0.04,
+      "term": 4,
+      "pct": 0.16,
       "n_pct": 32
     },
     {
@@ -806,7 +806,7 @@
     {
       "i": "541218",
       "t": "Historias Laborales",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 8,
@@ -22269,10 +22269,10 @@
     {
       "i": "540985",
       "t": "Sistec-EPNT - HU-049 - Eliminar visita técnica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22280,10 +22280,10 @@
     {
       "i": "540988",
       "t": "Sistec-EPNT - HU-050 - Diligenciar formato de apropiación del conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22291,10 +22291,10 @@
     {
       "i": "540991",
       "t": "Sistec-EPNT - HU-051 - Cerrar Planificación EPNT",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22302,10 +22302,10 @@
     {
       "i": "540994",
       "t": "Sistec-EPNT - HU-052 - Consultar proveedor",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -22478,10 +22478,10 @@
     {
       "i": "541043",
       "t": "Sistec-GNET - HU-016 - Registrar comentarios y observaciones",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22489,10 +22489,10 @@
     {
       "i": "541046",
       "t": "Sistec-GNET - HU-017 - Crear memorando de discusión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22500,10 +22500,10 @@
     {
       "i": "541049",
       "t": "Sistec-GNET - HU-018 - Eliminar memorando de discusión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22511,10 +22511,10 @@
     {
       "i": "541052",
       "t": "Sistec-GNET - HU-019 - Editar memorando de discusión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -23710,46 +23710,46 @@
     {
       "i": "541383",
       "t": "Calidad y Procesos - HU-007 - Consultar y modificar Plan de análisis.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541386",
       "t": "Calidad y Procesos - HU-008 - Recibir la solicitud de apoyo.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541389",
       "t": "Calidad y Procesos - HU-009 - Designar al analista.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541392",
       "t": "Calidad y Procesos - HU-010 - Validar solicitud y Solicitar prórroga.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541395",
@@ -24003,11 +24003,11 @@
     "n_feature_con_hu": 115,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.3682,
-    "term_global": 316,
+    "pct_global": 0.3739,
+    "term_global": 328,
     "feature_sin_frente": 7,
     "hu_sin_frente": 65,
-    "feature_100_sin_cerrar": 3,
+    "feature_100_sin_cerrar": 4,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
@@ -24019,7 +24019,7 @@
     "u": "épicas",
     "isEpics": true,
     "feat_total": 115,
-    "feat_ent": 26,
+    "feat_ent": 27,
     "buckets": {
       "100": 1,
       "75": 0,

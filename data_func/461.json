@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_461_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:20",
+  "archivo": "HU_461_20261104.csv",
   "epics": [
     {
       "i": "457548",
@@ -18,7 +18,7 @@
       "n_f": 5,
       "n": 24,
       "term": 0,
-      "pct": 0.3191
+      "pct": 0.3273
     },
     {
       "i": "435992",
@@ -26,7 +26,7 @@
       "n_f": 5,
       "n": 18,
       "term": 0,
-      "pct": 0.6772
+      "pct": 0.6911
     },
     {
       "i": "487090",
@@ -34,7 +34,7 @@
       "n_f": 5,
       "n": 11,
       "term": 0,
-      "pct": 0.22
+      "pct": 0.2111
     },
     {
       "i": "487098",
@@ -92,7 +92,7 @@
       "ept": "Gestión Electoral y Campañas",
       "n": 7,
       "term": 0,
-      "pct": 0.27,
+      "pct": 0.2833,
       "n_pct": 6
     },
     {
@@ -125,7 +125,7 @@
       "ept": "Gestión Electoral y Campañas",
       "n": 6,
       "term": 0,
-      "pct": 0.4,
+      "pct": 0.4167,
       "n_pct": 6
     },
     {
@@ -191,7 +191,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 3,
       "term": 0,
-      "pct": 0.4567,
+      "pct": 0.54,
       "n_pct": 3
     },
     {
@@ -246,8 +246,8 @@
       "ept": "Finanzas y Contabilidad de Campaña",
       "n": 3,
       "term": 0,
-      "pct": 0.2333,
-      "n_pct": 3
+      "pct": 0.2,
+      "n_pct": 2
     },
     {
       "i": "487119",
@@ -463,10 +463,10 @@
     {
       "i": "461627",
       "t": "HU_AccNot_002_Confirmación correo electrónico",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "487223",
       "ep": "435992",
       "r": "John Sebastian Rincon Pulido"
@@ -1409,10 +1409,10 @@
     {
       "i": "502650",
       "t": "HU_FinGas_068_Registrar gasto por categoría",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "2.4 Bloqueado por Data",
+      "p": "",
       "a": 1,
-      "v": 0.3,
+      "v": null,
       "f": "487123",
       "ep": "487090",
       "r": "Sebastian Ocampo Roa"
@@ -2003,10 +2003,10 @@
     {
       "i": "548268",
       "t": "HU_GesPro_102_Motor de carga con vista previa y lote",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "487149",
       "ep": "467870",
       "r": "Jose Luis Cortes Jerez"
@@ -2068,7 +2068,7 @@
     },
     {
       "i": "551158",
-      "t": "Sprint 8 - Ricardo",
+      "t": "Sprint8 - Ricardo",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -2091,13 +2091,13 @@
     {
       "i": "551608",
       "t": "HU_GesCam_111_Mis campañas del sujeto obligado: histórico",
-      "e": "2. Elaboración HU",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.2,
       "f": "487144",
       "ep": "467870",
-      "r": ""
+      "r": "Mabel Rocio Ramirez Bonilla"
     },
     {
       "i": "551615",
@@ -2131,18 +2131,29 @@
       "f": null,
       "ep": null,
       "r": "Mabel Rocio Ramirez Bonilla"
+    },
+    {
+      "i": "557934",
+      "t": "Sprint 8 - Sergio",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "467408",
+      "ep": "467406",
+      "r": "Sergio Senestrari Castro"
     }
   ],
   "kpi": {
-    "n_hu": 156,
+    "n_hu": 157,
     "n_hu_activas": 108,
     "hu_sin_feature": 0,
     "n_feature": 32,
     "n_epic": 7,
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
-    "hu_omitidas": 45,
-    "pct_global": 0.4341,
+    "hu_omitidas": 46,
+    "pct_global": 0.4395,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

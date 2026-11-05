@@ -1,16 +1,16 @@
 {
   "codigo": "005",
-  "corte": "2026-11-03",
-  "generado": "2026-11-03 15:25",
-  "archivo": "HU_005_20261103.csv",
+  "corte": "2026-11-04",
+  "generado": "2026-11-04 14:20",
+  "archivo": "HU_005_20261104.csv",
   "epics": [
     {
       "i": "82",
       "t": "NP - Evolutivos",
       "n_f": 12,
       "n": 50,
-      "term": 7,
-      "pct": 0.6264
+      "term": 6,
+      "pct": 0.627
     },
     {
       "i": "578",
@@ -18,7 +18,7 @@
       "n_f": 1,
       "n": 36,
       "term": 1,
-      "pct": 0.3984
+      "pct": 0.3839
     },
     {
       "i": "153",
@@ -32,7 +32,7 @@
       "i": "568",
       "t": "Épica de gestión",
       "n_f": 1,
-      "n": 5,
+      "n": 6,
       "term": 0,
       "pct": null
     },
@@ -70,7 +70,7 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.3984,
+      "pct": 0.3839,
       "n_pct": 31
     },
     {
@@ -80,9 +80,9 @@
       "ep": "82",
       "ept": "NP - Evolutivos",
       "n": 21,
-      "term": 4,
-      "pct": 0.5094,
-      "n_pct": 16
+      "term": 3,
+      "pct": 0.5059,
+      "n_pct": 17
     },
     {
       "i": "154",
@@ -123,7 +123,7 @@
       "e": "New",
       "ep": "568",
       "ept": "Épica de gestión",
-      "n": 5,
+      "n": 6,
       "term": 0,
       "pct": null,
       "n_pct": 0
@@ -191,7 +191,7 @@
       "ept": "NP - Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": 0.3,
+      "pct": 0.5,
       "n_pct": 1
     },
     {
@@ -595,13 +595,13 @@
     {
       "i": "169",
       "t": "Agente para la extracción de información de documentos y su precarga en formularios del sistema.",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "125",
       "ep": "82",
-      "r": "Yessica Mendoza"
+      "r": "Angie Hernandez"
     },
     {
       "i": "180",
@@ -760,13 +760,13 @@
     {
       "i": "583",
       "t": "Documentos históricos en Alfresco sin relación en base de datos",
-      "e": "Active",
-      "p": "",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": null,
+      "v": 0.95,
       "f": "579",
       "ep": "82",
-      "r": "Julian Prieto"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "584",
@@ -914,13 +914,13 @@
     {
       "i": "597",
       "t": "Guía de clasificación documental (tipo documental)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "579",
       "ep": "82",
-      "r": "Yessica Mendoza"
+      "r": "Angie Hernandez"
     },
     {
       "i": "598",
@@ -1288,13 +1288,13 @@
     {
       "i": "632",
       "t": "C004-Anexo-Técnico 4.4",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.95,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Yessica Mendoza"
+      "r": "Angie Hernandez"
     },
     {
       "i": "633",
@@ -1563,7 +1563,7 @@
     {
       "i": "1692",
       "t": "Gestión Ana Ortiz",
-      "e": "Active",
+      "e": "Resolved",
       "p": "",
       "a": 1,
       "v": null,
@@ -1580,7 +1580,7 @@
       "v": null,
       "f": "1462",
       "ep": "568",
-      "r": "John Eliecer Garzón Maldonado"
+      "r": "John Elicecer Garzon Maldonado"
     },
     {
       "i": "1748",
@@ -1603,19 +1603,30 @@
       "f": "1753",
       "ep": "82",
       "r": ""
+    },
+    {
+      "i": "1948",
+      "t": "Gestión Angie Hernandez",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "1462",
+      "ep": "568",
+      "r": "Angie Hernandez"
     }
   ],
   "kpi": {
-    "n_hu": 119,
-    "n_hu_activas": 118,
+    "n_hu": 120,
+    "n_hu_activas": 119,
     "hu_sin_feature": 1,
     "n_feature": 21,
     "n_epic": 7,
     "n_feature_con_hu": 21,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.578,
-    "term_global": 16,
+    "pct_global": 0.574,
+    "term_global": 15,
     "feature_sin_frente": 1,
     "hu_sin_frente": 1,
     "feature_100_sin_cerrar": 5,
