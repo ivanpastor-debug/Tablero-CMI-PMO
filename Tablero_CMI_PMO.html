@@ -1288,97 +1288,134 @@ function cmiOverviewHTML(p){
   const cls=v=>v==null||isNaN(v)?"na":v>=.7?"good":v>=.4?"warn":"crit";
   const state=v=>v==null||isNaN(v)?"Sin dato":v>=.7?"Favorable":v>=.4?"En seguimiento":"Requiere atención";
 
-  if (p.id === "456") {
-    const exitoReal = 0.18;
-    const exitoMeta = 0.30;
-    const brecha = exitoReal - exitoMeta;
-    return `<section class="cmi-hero" aria-label="Indicadores estratégicos, de éxito y tácticos">
-      <div class="cmi-hero-head">
-        <div>
-          <h3>Desempeño del proyecto · Cuadro de Mando Integral</h3>
-          <p>Primero el resultado estratégico y el indicador de éxito; después el detalle de ejecución.</p>
-        </div>
-        <span class="tag">Vista CMI Oficial</span>
-      </div>
-      <div class="cmi-hero-grid grid-2">
-        <article class="cmi-hero-card">
-          <div class="cmi-kicker">01 · Indicador estratégico</div>
-          <div class="cmi-value">${pct(strategic)}</div>
-          <div class="cmi-bottom">
-            <span><b>1</b> de <b>6</b> entregables contractuales al 100% formal</span>
-            <span class="cmi-pill ${cls(strategic)}">${state(strategic)}</span>
-          </div>
-        </article>
-        <article class="cmi-hero-card success">
-          <div class="cmi-kicker">02 · Indicador de éxito</div>
-          <div class="cmi-value">${pct(exitoReal)}</div>
-          <div class="cmi-bottom">
-            <span>Ponderación entregada al 100% · Meta proyectada a la fecha: <b>${pct(exitoMeta)}</b></span>
-            <span class="cmi-pill warn">Brecha: ${nf2.format(brecha * 100)} pp</span>
-          </div>
-        </article>
-      </div>
+  const is456 = (p.id === "456");
+  const exitoReal = is456 ? 0.18 : null;
+  const exitoMeta = is456 ? 0.30 : null;
+  const brecha = is456 ? (exitoReal - exitoMeta) : null;
 
-      <details class="cmi-accordion">
-        <summary>
-          <span>📊 Ver Indicador Táctico y Discriminado del Indicador de Éxito</span>
-          <span class="cmi-acc-tag">Desplegar detalle ▾</span>
-        </summary>
-        <div class="cmi-accordion-body">
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
-            <article class="cmi-hero-card tactical" style="box-shadow:none">
-              <div class="cmi-kicker">03 · Indicador táctico</div>
-              <div class="cmi-value">${pct(tactical)}</div>
-              <div class="cmi-bottom">
-                <span><b>${n}</b> ${itemName} en universo · Escala CMI Oficial PMO</span>
-                <span class="cmi-pill ${cls(tactical)}">${state(tactical)}</span>
-              </div>
-            </article>
-            <div class="cmi-exito-box">
-              <div style="display:flex;justify-content:space-between;align-items:center">
-                <span class="cmi-kicker">Conciliación de Indicador de Éxito</span>
-                <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 05-Nov-2026</span>
-              </div>
-              <div class="cmi-exito-kpis" style="margin-bottom:0">
-                <div class="cmi-exito-kpi real">
-                  <span>Real Entregado</span>
-                  <strong style="color:#059669">${pct(exitoReal)}</strong>
-                  <small>1 entregable formalizado</small>
-                </div>
-                <div class="cmi-exito-kpi meta">
-                  <span>Meta Proyectada a la fecha</span>
-                  <strong style="color:#b45309">${pct(exitoMeta)}</strong>
-                  <small>Cronograma Ajustado (23-Sep)</small>
-                </div>
-                <div class="cmi-exito-kpi gap">
-                  <span>Brecha de Cumplimiento</span>
-                  <strong style="color:#dc2626">${nf2.format(brecha * 100)} pp</strong>
-                  <small>🔴 Desfase de Gate 1</small>
-                </div>
-              </div>
-            </div>
-          </div>
+  const exitoCardHTML = is456 ? `
+    <article class="cmi-hero-card success">
+      <div class="cmi-kicker">02 · Indicador de éxito</div>
+      <div class="cmi-value">${pct(exitoReal)}</div>
+      <div class="cmi-bottom">
+        <span>Ponderación entregada al 100% · Meta proyectada a la fecha: <b>${pct(exitoMeta)}</b></span>
+        <span class="cmi-pill warn">Brecha: ${nf2.format(brecha * 100)} pp</span>
+      </div>
+    </article>` : `
+    <article class="cmi-hero-card success">
+      <div class="cmi-kicker">02 · Indicador de éxito</div>
+      <div class="cmi-value">Por definir</div>
+      <div class="cmi-bottom">
+        <span>Medición particular según fases y entregables</span>
+        <span class="cmi-pill na">Pendiente</span>
+      </div>
+    </article>`;
+
+  const exitoBoxHTML = is456 ? `
+    <div class="cmi-exito-box">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="cmi-kicker">Conciliación de Indicador de Éxito</span>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 05-Nov-2026</span>
+      </div>
+      <div class="cmi-exito-kpis" style="margin-bottom:0">
+        <div class="cmi-exito-kpi real">
+          <span>Real Entregado</span>
+          <strong style="color:#059669">${pct(exitoReal)}</strong>
+          <small>1 entregable formalizado</small>
         </div>
-      </details>
-    </section>`;
-  }
+        <div class="cmi-exito-kpi meta">
+          <span>Meta Proyectada a la fecha</span>
+          <strong style="color:#b45309">${pct(exitoMeta)}</strong>
+          <small>Cronograma Ajustado (23-Sep)</small>
+        </div>
+        <div class="cmi-exito-kpi gap">
+          <span>Brecha de Cumplimiento</span>
+          <strong style="color:#dc2626">${nf2.format(brecha * 100)} pp</strong>
+          <small>🔴 Desfase de Gate 1</small>
+        </div>
+      </div>
+    </div>` : `
+    <div class="cmi-exito-box">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="cmi-kicker">Conciliación de Indicador de Éxito</span>
+        <span class="tag" style="background:var(--surface-2);color:var(--muted);border:1px solid var(--line);font-weight:700">En homologación PMO</span>
+      </div>
+      <div class="cmi-exito-kpis" style="margin-bottom:0">
+        <div class="cmi-exito-kpi real" style="border-left-color:var(--muted);background:var(--surface-3)">
+          <span>Real Entregado</span>
+          <strong style="color:var(--ink-2);font-size:16px">Por definir</strong>
+          <small>Pendiente ponderación de fases</small>
+        </div>
+        <div class="cmi-exito-kpi meta" style="border-left-color:var(--muted);background:var(--surface-3)">
+          <span>Meta Proyectada a la fecha</span>
+          <strong style="color:var(--ink-2);font-size:16px">Por definir</strong>
+          <small>Cronograma vigente de fases</small>
+        </div>
+        <div class="cmi-exito-kpi gap" style="border-left-color:var(--line);background:var(--surface-3)">
+          <span>Brecha de Cumplimiento</span>
+          <strong style="color:var(--muted);font-size:16px">—</strong>
+          <small>En proceso de medición</small>
+        </div>
+      </div>
+    </div>`;
+
+  const stratBottomText = is456
+    ? `<b>1</b> de <b>6</b> entregables contractuales al 100% formal`
+    : isCU
+    ? `<b>${d}</b> de <b>${n}</b> Casos de Uso entregados (100%)`
+    : p.id === "419"
+    ? `<b>${d}</b> de <b>${n}</b> funcionalidades entregadas (100%)`
+    : n
+    ? `<b>${d}</b> de <b>${n}</b> ${itemName} formalizados al 100%`
+    : `Meta: 100% entregado`;
+
+  const tactBottomText = isCU
+    ? `<b>${n}</b> Casos de Uso en universo · Medición Estado Interno`
+    : p.id === "419"
+    ? `<b>${n}</b> funcionalidades en universo · Archivo local PMO`
+    : n
+    ? `<b>${n}</b> ${itemName} en universo · Escala CMI Oficial PMO`
+    : `Escala CMI Oficial PMO`;
 
   return `<section class="cmi-hero" aria-label="Indicadores estratégicos, de éxito y tácticos">
-    <div class="cmi-hero-head"><div><h3>Desempeño del proyecto · Cuadro de Mando Integral</h3><p>Primero el resultado y el valor esperado; después el detalle de ejecución.</p></div><span class="tag">Vista CMI</span></div>
-    <div class="cmi-hero-grid">
-      <article class="cmi-hero-card"><div class="cmi-kicker">01 · Indicador estratégico</div>
-        <div class="cmi-value">${pct(strategic)}</div>
-        <div class="cmi-bottom"><span>${n?`${d} de ${n} ${itemName} al 100%`:"Meta: 100% entregado"}</span><span class="cmi-pill ${cls(strategic)}">${state(strategic)}</span></div>
-      </article>
-      <article class="cmi-hero-card success"><div class="cmi-kicker">02 · Indicador de éxito</div>
-        <div class="cmi-value">Por definir</div>
-        <div class="cmi-bottom"><span>Medición por proyecto</span><span class="cmi-pill na">Pendiente</span></div>
-      </article>
-      <article class="cmi-hero-card tactical"><div class="cmi-kicker">03 · Indicador táctico</div>
-        <div class="cmi-value">${pct(tactical)}</div>
-        <div class="cmi-bottom"><span>${n} ${itemName} en universo</span><span class="cmi-pill ${cls(tactical)}">${state(tactical)}</span></div>
-      </article>
+    <div class="cmi-hero-head">
+      <div>
+        <h3>Desempeño del proyecto · Cuadro de Mando Integral</h3>
+        <p>Primero el resultado estratégico y el indicador de éxito; después el detalle de ejecución.</p>
+      </div>
+      <span class="tag">Vista CMI Oficial</span>
     </div>
+    <div class="cmi-hero-grid grid-2">
+      <article class="cmi-hero-card">
+        <div class="cmi-kicker">01 · Indicador estratégico</div>
+        <div class="cmi-value">${pct(strategic)}</div>
+        <div class="cmi-bottom">
+          <span>${stratBottomText}</span>
+          <span class="cmi-pill ${cls(strategic)}">${state(strategic)}</span>
+        </div>
+      </article>
+      ${exitoCardHTML}
+    </div>
+
+    <details class="cmi-accordion">
+      <summary>
+        <span>📊 Ver Indicador Táctico y Discriminado del Indicador de Éxito</span>
+        <span class="cmi-acc-tag">Desplegar detalle ▾</span>
+      </summary>
+      <div class="cmi-accordion-body">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
+          <article class="cmi-hero-card tactical" style="box-shadow:none">
+            <div class="cmi-kicker">03 · Indicador táctico</div>
+            <div class="cmi-value">${pct(tactical)}</div>
+            <div class="cmi-bottom">
+              <span>${tactBottomText}</span>
+              <span class="cmi-pill ${cls(tactical)}">${state(tactical)}</span>
+            </div>
+          </article>
+          ${exitoBoxHTML}
+        </div>
+      </div>
+    </details>
   </section>`;
 }
 function openProj(id,stay){cur=id;if(!mode)mode="op";renderChips();renderFicha();if(!stay)show("proj")}
