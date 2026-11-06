@@ -1325,6 +1325,11 @@ function cmiOverviewHTML(p){
   const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.1749 (17.49%)
   const brecha421 = real421 - meta421; // -0.0251 (-2.51 pp)
 
+  // Indicador de Éxito 421 (Balú):
+  // Ponderación oficial: Táctico (30%) + RQC (40%) + Cumplimiento Cronograma (30%)
+  const rqc421 = 0.4937; // 311 / 630 cumplidos
+  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 35,50%
+
   const exitoCardHTML = is456 ? `
     <article class="cmi-hero-card success">
       <div class="cmi-kicker">02 · Indicador de éxito</div>
@@ -1336,10 +1341,10 @@ function cmiOverviewHTML(p){
     </article>` : is421 ? `
     <article class="cmi-hero-card success">
       <div class="cmi-kicker">02 · Indicador de éxito</div>
-      <div class="cmi-value">${(real421 * 100).toFixed(2).replace('.', ',')}%</div>
+      <div class="cmi-value">${(exito421 * 100).toFixed(2).replace('.', ',')}%</div>
       <div class="cmi-bottom">
-        <span>Cumplimiento Cronograma Releases · Meta proyectada a la fecha: <b>${(meta421 * 100).toFixed(2).replace('.', ',')}%</b></span>
-        <span class="cmi-pill warn">Brecha: ${(brecha421 * 100).toFixed(2).replace('.', ',')} pp</span>
+        <span>Ponderado: <b>Táctico (30%)</b> · <b>RQC (40%)</b> · <b>Cronograma (30%)</b></span>
+        <span class="cmi-pill ${cls(exito421)}">${state(exito421)}</span>
       </div>
     </article>` : `
     <article class="cmi-hero-card success">
@@ -1454,17 +1459,17 @@ function cmiOverviewHTML(p){
           </article>
           ${is421 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
-            <div class="cmi-kicker" style="color:#7c3aed">📋 Cumplimiento RQC · Contrato</div>
+            <div class="cmi-kicker" style="color:#7c3aed">📋 Cumplimiento RQC · Contrato (Peso: 40%)</div>
             <div class="cmi-value" style="color:#7c3aed">49,37%</div>
             <div class="cmi-bottom">
               <span>311 / 630 RQC activos (descontando 283 removidos)</span>
-              <span class="cmi-pill" style="background:#f3e8ff;color:#7c3aed;border:1px solid #d8b4fe">49,4%</span>
+              <span class="cmi-pill" style="background:#f3e8ff;color:#7c3aed;border:1px solid #d8b4fe">Aporte: ${(rqc421 * 0.40 * 100).toFixed(2).replace('.', ',')}%</span>
             </div>
           </article>
           <div class="cmi-exito-box" style="margin-top:0">
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <span class="cmi-kicker">Cumplimiento Cronograma</span>
-              <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 06-Nov-2026</span>
+              <span class="cmi-kicker">Cumplimiento Cronograma (Peso: 30%)</span>
+              <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Aporte: ${(real421 * 0.30 * 100).toFixed(2).replace('.', ',')}%</span>
             </div>
             <div class="cmi-exito-kpis" style="margin-bottom:0">
               <div class="cmi-exito-kpi real">
