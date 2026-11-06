@@ -782,7 +782,7 @@ const P=[
   team:{"hc": 49, "cost": 818.81, "period": "Enero 2025 - Septiembre 2026", "src": "Indicadores_CPE · Copia de Detalle Team", "roles": [["Desarrollo", 172.63, 6, 0.21083], ["Pruebas Qa", 146.26, 15, 0.178627], ["Requerimientos", 128.01, 5, 0.156339], ["Gestión De Proyectos", 85.18, 1, 0.104024], ["Gestión De Integral De Proyectos", 74.92, 1, 0.091498], ["Arquitectura", 48.22, 4, 0.058892], ["Data", 43.82, 3, 0.053516], ["Scrum Master", 40.22, 2, 0.049118], ["Lider Tecnico", 30.53, 1, 0.037283], ["Diseño Ux", 14.58, 1, 0.017803], ["Infraestructura Cloud", 12.25, 1, 0.014962], ["Datos", 5.79, 1, 0.007069], ["Directivos", 5.45, 1, 0.006652], ["Aprendiz Etapa Productiva", 4.45, 1, 0.005435], ["Transversales", 3.53, 3, 0.004312], ["Staff Fabrica", 1.96, 1, 0.002397], ["Aprendiz Etapa Lectiva", 0.77, 1, 0.000946], ["Sin Categoría", 0.24, 1, 0.000295]]},
   hitosNote:"Sin valor de contrato ni facturación cargados",hitos:[],
   diag:["crit","Ejecutado 59,85% del presupuesto con 20,00% de avance (solo el Foco A avanza): CPI 0,35 (forecast) e ICFF 1,89. Foco B (30% del contrato) es ruta crítica, no ha iniciado y cierra el 25 dic. Sin contrato ni plan de facturación cargados."]},
- {id:"421",name:"421 - PROYECTO BALÚ",sub:"Fiduprevisora · Afiliaciones y Recaudo",op:{av:0.4875,ent:0.2142857,n:56,d:12,u:"funcionalidades"},
+ {id:"421",name:"421 - PROYECTO BALÚ",sub:"Fiduprevisora · Afiliaciones y Recaudo",op:{av:0.4821,ent:0.2142857,n:56,d:12,u:"funcionalidades"},
   m:[[1588.5,3758.1,3611.8],[1588.5,1262.9,1236.4],[1588.5,1367.1,1267.0],[1588.5,1221.0,1179.5],[1588.5,1150.2,1118.8],[1588.5,1124.1,1142.0],[1688.6,1098.7,1184.6],[1688.6,1085.8,1061.7],[1688.6,1131.1,0],[1688.6,1083.2,0],[1688.6,1061.5,0],[1738.6,2452.8,0]],
   cpiP:1.012666361,cpiF:0.7055263173,icff:1.2898963703,avFin:0.35,ppto:34146.2,fcst:23789.7,
   contrato:100945.3,factPlan:50633.9,fact:38249.3,cumplFact:.7554,recaudo:32566.7,cumplRec:.7658,brechaRec:-9957.9,
@@ -1353,7 +1353,7 @@ function cmiOverviewHTML(p){
   // Indicador de Éxito 421 (Balú):
   // Ponderación oficial: Táctico Producto (30%) + RQC (40%) + Cumplimiento Cronograma (30%)
   const rqc421 = 0.4937; // 311 / 630 cumplidos
-  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 39,62% (con Táctico 48,75% de 56 funcionalidades de cara a producto)
+  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 39,46% (con Táctico 48,21% de 56 funcionalidades de cara a producto al 06-Nov-2026)
 
   const exitoCardHTML = is456 ? `
     <article class="cmi-hero-card success">
