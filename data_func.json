@@ -639,6 +639,7 @@
       "cmi": {
         "tactico": 0.125,
         "estrategico": 0.0,
+        "exito": 0.3981,
         "n": 4,
         "d": 0,
         "u": "focos",

@@ -1044,7 +1044,7 @@ const PROJ_CALLOUT_META = {
   "416": { tag: "Azure · 2 Épicas", title: "416 - PROYECTO DE DESARROLLO Y SOPORTE CORE POSITIVA", sub: "7 Funcionalidades en Azure", ent: "0 en prod.", pct: "0,0% cerrado", icon: "🗂" },
   "384": { tag: "Azure · 33 Épicas", title: "384 - PROYECTO CORE FIDUPREVISORA", sub: "510 Funcionalidades en Azure", ent: "92 en prod.", pct: "18,0% cerrado", icon: "🗂" },
   "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES", sub: "194 Funcionalidades en Azure", ent: "63 en prod.", pct: "32,5% cerrado", icon: "🗂" },
-  "453": { tag: "Azure · 4 Focos", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "76 Casos de Uso en Azure (CPE)", ent: "0 cerrados", pct: "0,0% cumplido", icon: "🎯" },
+  "453": { tag: "Azure · 4 Focos", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "4 Focos en Cronograma · 76 Casos de Uso", ent: "29 CUs al 100%", pct: "39,8% éxito · 12,5% táctico", icon: "🎯" },
   "421": { tag: "Azure · 56 Func.", title: "421 - PROYECTO BALÚ", sub: "56 Funcionalidades de Producto (2 Frentes)", ent: "12 en prod.", pct: "21,4% cerrado", icon: "🗂" },
   "456": { tag: "Contractual · 6 Hitos | Azure · 4 Func.", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 Épica · 4 Funcionalidades en Azure (16 HU)", ent: "0 en prod. · 1/6 hitos", pct: "12,0% av. HU · 16,7% hitos", icon: "🗂" },
   "348": { tag: "Azure · 10 Épicas", title: "348 - PROYECTO SGDEA ACUEDUCTO", sub: "115 Funcionalidades en Azure", ent: "25 en prod.", pct: "21,7% cerrado", icon: "🗂" },
@@ -1321,6 +1321,12 @@ function cmiOverviewHTML(p){
   const is456 = (p.id === "456");
   const is421 = (p.id === "421");
   const is419 = (p.id === "419");
+  const is453 = (p.id === "453");
+
+  // Proyecto 453 - Monitoreo CPE: Cronograma de 4 Focos ponderados con % de avance CU (similar a 456)
+  const exito453 = 0.3981; // 39,81% Ponderado: Focos en Cronograma × % Avance CU
+  const meta453 = 0.5500;  // 55,00% Meta proyectada al corte 06-Nov (Foco A [40%] + Foco C [15%] vencidos)
+  const brecha453 = exito453 - meta453; // -0.1519 (-15,19 pp)
 
   // Proyecto 419 - Depósitos Judiciales: Escenario B.3 (Funcionalidades 100% 40% + Cronograma Dual 60%)
   const var1_419 = 63 / 219; // 28,77% (63 al 100% en producción de 219 features Azure)
@@ -1383,6 +1389,14 @@ function cmiOverviewHTML(p){
       <div class="cmi-bottom">
         <span>Ponderado: <b>Funcionalidades 100% (40%)</b> · <b>Cronograma Dual B.3 (60%)</b></span>
         <span class="cmi-pill ${cls(exito419)}">${state(exito419)}</span>
+      </div>
+    </article>` : is453 ? `
+    <article class="cmi-hero-card success">
+      <div class="cmi-kicker">02 · Indicador de éxito</div>
+      <div class="cmi-value">${(exito453 * 100).toFixed(2).replace('.', ',')}%</div>
+      <div class="cmi-bottom">
+        <span>Ponderado: <b>Focos en Cronograma (100%)</b> × <b>% Avance CU</b></span>
+        <span class="cmi-pill warn">En seguimiento</span>
       </div>
     </article>` : `
     <article class="cmi-hero-card success">
@@ -1560,6 +1574,97 @@ function cmiOverviewHTML(p){
             <div style="font-size:11px;color:var(--muted);padding:4px 8px;background:var(--surface-3);border-radius:6px;display:flex;gap:12px;flex-wrap:wrap">
               <span><b>Momento Linktic (Entrega Desarr.):</b> 37,91% (Desv: +21 d hab)</span>
               <span><b>Momento Cliente (Certificac. UAT):</b> 34,38% (Desv: +23 d hab)</span>
+            </div>
+          </div>` : is453 ? `
+          <div class="cmi-exito-box" style="margin-top:0;grid-column:1/-1">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <span class="cmi-kicker" style="font-size:12px">⏱️ Cumplimiento de Cronograma por Foco Ponderado (Peso: 100% · % Avance CU)</span>
+              <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Aporte Global: 39,81%</span>
+            </div>
+            <div class="cmi-exito-kpis" style="margin-bottom:12px">
+              <div class="cmi-exito-kpi real">
+                <span>Real Entregado (Ponderado CU)</span>
+                <strong style="color:#059669">39,81%</strong>
+                <small>Σ (Peso Foco × % Avance CU)</small>
+              </div>
+              <div class="cmi-exito-kpi meta">
+                <span>Meta Proyectada a la fecha</span>
+                <strong style="color:#b45309">55,00%</strong>
+                <small>Foco A (40%) + Foco C (15%)</small>
+              </div>
+              <div class="cmi-exito-kpi gap">
+                <span>Brecha de Cumplimiento</span>
+                <strong style="color:#dc2626">-15,19 pp</strong>
+                <small>🔴 Foco A y C reprogramados vencidos</small>
+              </div>
+            </div>
+            <div class="tbl-wrap" style="margin-top:8px">
+              <table class="xl tbl-estatus-456" style="margin:0">
+                <thead>
+                  <tr>
+                    <th class="col-ent">Foco / Entregable Contractual</th>
+                    <th class="col-peso">Peso</th>
+                    <th class="col-date">Inicio</th>
+                    <th class="col-date">Cierre Planeado</th>
+                    <th class="col-date">Cierre Reprogramado</th>
+                    <th class="col-pct">% Avance CU</th>
+                    <th class="col-pct">Aporte Éxito</th>
+                    <th class="col-st">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-ent"><b>Foco A</b> · Agentes de monitoreo (40 CUs medibles · 29 entregados)</td>
+                    <td class="col-peso">40%</td>
+                    <td class="col-date">25/02/2026</td>
+                    <td class="col-date">30/07/2026</td>
+                    <td class="col-date" style="color:var(--crit);font-weight:700">24/10/2026</td>
+                    <td class="col-pct" style="font-weight:700;color:var(--good)">82,38%</td>
+                    <td class="col-pct" style="font-weight:700;color:var(--good)">32,95%</td>
+                    <td class="col-st"><span class="st crit">Vencido (+87 d)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="col-ent"><b>Foco B</b> · Gestión analítica (1 CU medible · 0 entregados)</td>
+                    <td class="col-peso">30%</td>
+                    <td class="col-date">01/07/2026</td>
+                    <td class="col-date">15/10/2026</td>
+                    <td class="col-date" style="color:#b45309;font-weight:700">25/12/2026</td>
+                    <td class="col-pct" style="font-weight:700;color:#b45309">17,50%</td>
+                    <td class="col-pct" style="font-weight:700;color:#b45309">5,25%</td>
+                    <td class="col-st"><span class="st warn">En curso (+71 d)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="col-ent"><b>Foco C</b> · Encuestas (31 CUs medibles · 0 entregados)</td>
+                    <td class="col-peso">15%</td>
+                    <td class="col-date">16/09/2026</td>
+                    <td class="col-date">27/11/2026</td>
+                    <td class="col-date" style="color:var(--crit);font-weight:700">30/10/2026</td>
+                    <td class="col-pct" style="font-weight:700;color:#b45309">10,73%</td>
+                    <td class="col-pct" style="font-weight:700;color:#b45309">1,61%</td>
+                    <td class="col-st"><span class="st crit">Vencido (+7 d)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="col-ent"><b>Foco D</b> · Planes e indicadores (Comprometido fin de año)</td>
+                    <td class="col-peso">15%</td>
+                    <td class="col-date">30/10/2026</td>
+                    <td class="col-date">30/12/2026</td>
+                    <td class="col-date">30/12/2026</td>
+                    <td class="col-pct">0,00%</td>
+                    <td class="col-pct">0,00%</td>
+                    <td class="col-st"><span class="st">Sin iniciar</span></td>
+                  </tr>
+                  <tr class="tot" style="background:var(--surface-2);border-top:2px solid var(--line)">
+                    <td class="col-ent"><b>Total Proyecto 453 (Ponderación Éxito Cronograma × % Avance CU)</b></td>
+                    <td class="col-peso"><b>100%</b></td>
+                    <td class="col-date"><b>25/02/2026</b></td>
+                    <td class="col-date"><b>30/12/2026</b></td>
+                    <td class="col-date"><b>30/12/2026</b></td>
+                    <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>—</b></td>
+                    <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>39,81%</b></td>
+                    <td class="col-st"><span class="st warn"><b>Éxito: 39,81%</b></span></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>` : exitoBoxHTML}
         </div>
@@ -3436,6 +3541,16 @@ function updateTopOpTiles(cmi, subLabel) {
   }
   const heroTactSub = document.querySelector(".cmi-hero-card.tactical .cmi-bottom span:first-child");
   if (heroTactSub && n) heroTactSub.textContent = `${n} ${u} en universo`;
+
+  if (p && p.id === "453") {
+    const heroExitoVal = document.querySelector(".cmi-hero-card.success .cmi-value");
+    if (heroExitoVal) heroExitoVal.textContent = "39,81%";
+    const heroExitoPill = document.querySelector(".cmi-hero-card.success .cmi-pill");
+    if (heroExitoPill) {
+      heroExitoPill.className = "cmi-pill warn";
+      heroExitoPill.textContent = "En seguimiento";
+    }
+  }
 }
 
 const GITHUB_PAGES_BASE = "https://ivanpastor-debug.github.io/Tablero-CMI-PMO/";
@@ -3772,6 +3887,84 @@ function funcCard(cod) {
     </div>
     ${subSelector}
     <div class="hint">Cada <b>frente (Épica)</b> con sus <b>funcionalidades (Features)</b> y las <b>HU que las componen</b> · corte ${M.corte || "01-Oct-2026"}. Clic en cualquier fila para desplegar.</div>
+
+    <div class="section panel" style="margin:14px 0 12px;border-radius:12px;border:1px solid var(--line);padding:14px 16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px">
+        <div>
+          <h3 style="margin:0;font-size:13px;font-weight:700;color:var(--ink)">⏱️ Desviación y Cumplimiento del Cronograma por Foco Contractual</h3>
+          <p class="hint" style="margin:2px 0 0">Ponderación del Indicador de Éxito basada en el peso asignado en cronograma y el % de avance CU (45 CUs medibles).</p>
+        </div>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Éxito Ponderado: 39,81%</span>
+      </div>
+      <div class="tbl-wrap">
+        <table class="xl tbl-estatus-456" style="margin:0">
+          <thead>
+            <tr>
+              <th class="col-ent">Foco / Entregable Contractual</th>
+              <th class="col-peso">Peso</th>
+              <th class="col-date">Inicio</th>
+              <th class="col-date">Cierre Planeado</th>
+              <th class="col-date">Cierre Reprogramado</th>
+              <th class="col-pct">% Avance CU</th>
+              <th class="col-pct">Aporte Éxito</th>
+              <th class="col-st">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-ent"><b>Foco A</b> · Agentes de monitoreo (40 CUs medibles · 29 entregados)</td>
+              <td class="col-peso">40%</td>
+              <td class="col-date">25/02/2026</td>
+              <td class="col-date">30/07/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">24/10/2026</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">82,38%</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">32,95%</td>
+              <td class="col-st"><span class="st crit">Vencido (+87 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco B</b> · Gestión analítica (1 CU medible · 0 entregados)</td>
+              <td class="col-peso">30%</td>
+              <td class="col-date">01/07/2026</td>
+              <td class="col-date">15/10/2026</td>
+              <td class="col-date" style="color:#b45309;font-weight:700">25/12/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">17,50%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">5,25%</td>
+              <td class="col-st"><span class="st warn">En curso (+71 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco C</b> · Encuestas (31 CUs medibles · 0 entregados)</td>
+              <td class="col-peso">15%</td>
+              <td class="col-date">16/09/2026</td>
+              <td class="col-date">27/11/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">30/10/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">10,73%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">1,61%</td>
+              <td class="col-st"><span class="st crit">Vencido (+7 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco D</b> · Planes e indicadores (Comprometido fin de año)</td>
+              <td class="col-peso">15%</td>
+              <td class="col-date">30/10/2026</td>
+              <td class="col-date">30/12/2026</td>
+              <td class="col-date">30/12/2026</td>
+              <td class="col-pct">0,00%</td>
+              <td class="col-pct">0,00%</td>
+              <td class="col-st"><span class="st">Sin iniciar</span></td>
+            </tr>
+            <tr class="tot" style="background:var(--surface-2);border-top:2px solid var(--line)">
+              <td class="col-ent"><b>Total Proyecto 453 (Ponderación Éxito Cronograma × % Avance CU)</b></td>
+              <td class="col-peso"><b>100%</b></td>
+              <td class="col-date"><b>25/02/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>—</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>39,81%</b></td>
+              <td class="col-st"><span class="st warn"><b>Éxito: 39,81%</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
     ${cmi ? `
     <div style="margin:14px 0 10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
@@ -4214,6 +4407,84 @@ function cpe453Card(C) {
       <b>(1) Indicador Táctico</b> (% Avance de cada foco evaluado bajo la escala CMI por entregable)
       y <b>(2) Indicador Estratégico</b> (Focos entregados o cerrados al 100%).
       También expone el desglose de <b>${C.kpi ? (C.kpi.n_cu || 76) : 76} Casos de Uso</b> y sus <b>HUs atadas</b> · corte ${C.corte || "06-Nov-2026"}. Clic en cada nivel para desplegar.</div>
+
+    <div class="section panel" style="margin:14px 0 12px;border-radius:12px;border:1px solid var(--line);padding:14px 16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px">
+        <div>
+          <h3 style="margin:0;font-size:13px;font-weight:700;color:var(--ink)">⏱️ Desviación y Cumplimiento del Cronograma por Foco Contractual</h3>
+          <p class="hint" style="margin:2px 0 0">Ponderación del Indicador de Éxito basada en el peso asignado en cronograma y el % de avance CU (45 CUs medibles).</p>
+        </div>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Éxito Ponderado: 39,81%</span>
+      </div>
+      <div class="tbl-wrap">
+        <table class="xl tbl-estatus-456" style="margin:0">
+          <thead>
+            <tr>
+              <th class="col-ent">Foco / Entregable Contractual</th>
+              <th class="col-peso">Peso</th>
+              <th class="col-date">Inicio</th>
+              <th class="col-date">Cierre Planeado</th>
+              <th class="col-date">Cierre Reprogramado</th>
+              <th class="col-pct">% Avance CU</th>
+              <th class="col-pct">Aporte Éxito</th>
+              <th class="col-st">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-ent"><b>Foco A</b> · Agentes de monitoreo (40 CUs medibles · 29 entregados)</td>
+              <td class="col-peso">40%</td>
+              <td class="col-date">25/02/2026</td>
+              <td class="col-date">30/07/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">24/10/2026</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">82,38%</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">32,95%</td>
+              <td class="col-st"><span class="st crit">Vencido (+87 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco B</b> · Gestión analítica (1 CU medible · 0 entregados)</td>
+              <td class="col-peso">30%</td>
+              <td class="col-date">01/07/2026</td>
+              <td class="col-date">15/10/2026</td>
+              <td class="col-date" style="color:#b45309;font-weight:700">25/12/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">17,50%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">5,25%</td>
+              <td class="col-st"><span class="st warn">En curso (+71 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco C</b> · Encuestas (31 CUs medibles · 0 entregados)</td>
+              <td class="col-peso">15%</td>
+              <td class="col-date">16/09/2026</td>
+              <td class="col-date">27/11/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">30/10/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">10,73%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">1,61%</td>
+              <td class="col-st"><span class="st crit">Vencido (+7 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco D</b> · Planes e indicadores (Comprometido fin de año)</td>
+              <td class="col-peso">15%</td>
+              <td class="col-date">30/10/2026</td>
+              <td class="col-date">30/12/2026</td>
+              <td class="col-date">30/12/2026</td>
+              <td class="col-pct">0,00%</td>
+              <td class="col-pct">0,00%</td>
+              <td class="col-st"><span class="st">Sin iniciar</span></td>
+            </tr>
+            <tr class="tot" style="background:var(--surface-2);border-top:2px solid var(--line)">
+              <td class="col-ent"><b>Total Proyecto 453 (Ponderación Éxito Cronograma × % Avance CU)</b></td>
+              <td class="col-peso"><b>100%</b></td>
+              <td class="col-date"><b>25/02/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>—</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>39,81%</b></td>
+              <td class="col-st"><span class="st warn"><b>Éxito: 39,81%</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
     ${cmi ? `
     <div style="margin:14px 0 10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
