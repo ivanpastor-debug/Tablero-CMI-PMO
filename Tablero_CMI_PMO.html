@@ -294,6 +294,20 @@ table.xl.tbl-crono-421 th.col-date,table.xl.tbl-crono-421 td.col-date{width:75px
 table.xl.tbl-crono-421 th.col-pct,table.xl.tbl-crono-421 td.col-pct{width:75px;text-align:center;white-space:nowrap}
 table.xl.tbl-crono-421 th.col-desv,table.xl.tbl-crono-421 td.col-desv{width:95px;text-align:center;white-space:nowrap}
 table.xl.tbl-crono-421 th.col-st,table.xl.tbl-crono-421 td.col-st{width:90px;text-align:center;white-space:nowrap}
+table.xl.tbl-crono-419{width:100%;min-width:0;font-size:11px}
+table.xl.tbl-crono-419 th{padding:6px 4px;font-size:10px;letter-spacing:0}
+table.xl.tbl-crono-419 td{padding:5px 4px;font-size:11px}
+table.xl.tbl-crono-419 .col-sp{font-weight:700;white-space:nowrap}
+table.xl.tbl-crono-419 .col-p{text-align:center;white-space:nowrap;width:38px}
+table.xl.tbl-crono-419 .col-ep{white-space:nowrap;font-size:9.5px;color:var(--muted)}
+table.xl.tbl-crono-419 .col-m1-date{text-align:center;white-space:nowrap;width:70px}
+table.xl.tbl-crono-419 .col-m1-desv{text-align:center;white-space:nowrap;width:75px}
+table.xl.tbl-crono-419 .col-m1-hu{text-align:right;white-space:nowrap;width:75px}
+table.xl.tbl-crono-419 .col-m1-st{text-align:center;white-space:nowrap;width:75px}
+table.xl.tbl-crono-419 .col-m2-date{text-align:center;white-space:nowrap;width:70px}
+table.xl.tbl-crono-419 .col-m2-desv{text-align:center;white-space:nowrap;width:75px}
+table.xl.tbl-crono-419 .col-m2-hu{text-align:right;white-space:nowrap;width:75px}
+table.xl.tbl-crono-419 .col-m2-st{text-align:center;white-space:nowrap;width:75px}
 .cmi-hero-card.rqc:before{background:#8b5cf6}
 table.xl.tbl-crono-456{width:100%;min-width:0;font-size:11.5px}
 table.xl.tbl-crono-456 th{padding:6px 5px;font-size:10.5px;letter-spacing:0}
@@ -1300,6 +1314,16 @@ function cmiOverviewHTML(p){
 
   const is456 = (p.id === "456");
   const is421 = (p.id === "421");
+  const is419 = (p.id === "419");
+
+  // Proyecto 419 - Depósitos Judiciales: Escenario B.3 (Funcionalidades 100% 40% + Cronograma Dual 60%)
+  const var1_419 = 63 / 219; // 28,77% (63 al 100% en producción de 219 features Azure)
+  const cronoM1_419 = 0.3791; // 37,91% Momento Linktic (Sprints 1 a 6 desarrollo entregado + Sprint 7 parcial)
+  const cronoM2_419 = 0.3438; // 34,38% Momento Cliente (Sprints 1 a 5 certificados UAT + Sprint 6 en pruebas UAT)
+  const realCrono419 = (cronoM1_419 + cronoM2_419) / 2; // 36,15% Promedio Dual B.3
+  const metaCrono419 = 0.4063; // 40,63% Meta proyectada al corte 06-Nov (Sprints 1 a 6 + Desarr. Sprint 7)
+  const brechaCrono419 = realCrono419 - metaCrono419; // -0.0448 (-4,48 pp)
+  const exito419 = (var1_419 * 0.40) + (realCrono419 * 0.60); // 33,20%
 
   // Proyecto 456
   const exitoReal = is456 ? 0.18 : null;
@@ -1345,6 +1369,14 @@ function cmiOverviewHTML(p){
       <div class="cmi-bottom">
         <span>Ponderado: <b>Táctico (30%)</b> · <b>RQC (40%)</b> · <b>Cronograma (30%)</b></span>
         <span class="cmi-pill ${cls(exito421)}">${state(exito421)}</span>
+      </div>
+    </article>` : is419 ? `
+    <article class="cmi-hero-card success">
+      <div class="cmi-kicker">02 · Indicador de éxito</div>
+      <div class="cmi-value">${(exito419 * 100).toFixed(2).replace('.', ',')}%</div>
+      <div class="cmi-bottom">
+        <span>Ponderado: <b>Funcionalidades 100% (40%)</b> · <b>Cronograma Dual B.3 (60%)</b></span>
+        <span class="cmi-pill ${cls(exito419)}">${state(exito419)}</span>
       </div>
     </article>` : `
     <article class="cmi-hero-card success">
@@ -1417,7 +1449,7 @@ function cmiOverviewHTML(p){
   const tactBottomText = isCU
     ? `<b>${n}</b> Casos de Uso en universo · Medición Estado Interno`
     : p.id === "419"
-    ? `<b>${n}</b> funcionalidades en universo · Archivo local PMO`
+    ? `<b>${n}</b> funcionalidades en universo`
     : n
     ? `<b>${n}</b> ${itemName} en universo · Escala CMI Oficial PMO`
     : `Escala CMI Oficial PMO`;
@@ -1487,6 +1519,41 @@ function cmiOverviewHTML(p){
                 <strong style="color:#dc2626">${(brecha421 * 100).toFixed(2).replace('.', ',')} pp</strong>
                 <small>🔴 15 HUs en validación UAT</small>
               </div>
+            </div>
+          </div>` : is419 ? `
+          <article class="cmi-hero-card rqc" style="box-shadow:none">
+            <div class="cmi-kicker" style="color:#0284c7">📋 Funcionalidades Certificadas por Cliente (Peso: 40%)</div>
+            <div class="cmi-value" style="color:#0284c7">${(var1_419 * 100).toFixed(2).replace('.', ',')}%</div>
+            <div class="cmi-bottom">
+              <span><b>63</b> de <b>219</b> funcionalidades en prod (BAC: 45 · RAMA: 18)</span>
+              <span class="cmi-pill" style="background:#e0f2fe;color:#0284c7;border:1px solid #bae6fd">Aporte: ${(var1_419 * 0.40 * 100).toFixed(2).replace('.', ',')}%</span>
+            </div>
+          </article>
+          <div class="cmi-exito-box" style="margin-top:0">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span class="cmi-kicker">⏱️ Cumplimiento Cronograma Dual B.3 (Peso: 60%)</span>
+              <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Aporte: ${(realCrono419 * 0.60 * 100).toFixed(2).replace('.', ',')}%</span>
+            </div>
+            <div class="cmi-exito-kpis" style="margin-bottom:8px">
+              <div class="cmi-exito-kpi real">
+                <span>Real Entregado (Dual)</span>
+                <strong style="color:#059669">${(realCrono419 * 100).toFixed(2).replace('.', ',')}%</strong>
+                <small>Promedio M1 (37,9%) + M2 (34,4%)</small>
+              </div>
+              <div class="cmi-exito-kpi meta">
+                <span>Meta Proyectada a la fecha</span>
+                <strong style="color:#b45309">${(metaCrono419 * 100).toFixed(2).replace('.', ',')}%</strong>
+                <small>Sprints 1 a 6 + Desarr Sp 7</small>
+              </div>
+              <div class="cmi-exito-kpi gap">
+                <span>Brecha de Cumplimiento</span>
+                <strong style="color:#dc2626">${(brechaCrono419 * 100).toFixed(2).replace('.', ',')} pp</strong>
+                <small>🔴 Sprint 7 reprogramado a 07-Dic</small>
+              </div>
+            </div>
+            <div style="font-size:11px;color:var(--muted);padding:4px 8px;background:var(--surface-3);border-radius:6px;display:flex;gap:12px;flex-wrap:wrap">
+              <span><b>Momento Linktic (Entrega Desarr.):</b> 37,91% (Desv: +21 d hab)</span>
+              <span><b>Momento Cliente (Certificac. UAT):</b> 34,38% (Desv: +23 d hab)</span>
             </div>
           </div>` : exitoBoxHTML}
         </div>
@@ -1675,6 +1742,265 @@ function renderCrono421Collapsible(){
             </tr>
           </tbody>
         </table>
+      </div>
+    </details>
+  </div>`;
+}
+
+function renderCrono419Collapsible(){
+  return `<div class="section panel" style="margin-top:16px">
+    <details class="cmi-accordion" open>
+      <summary style="padding:12px 16px;background:var(--surface);border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+        <div style="display:flex;align-items:center;gap:10px">
+          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación del Cronograma · 16 Sprints (Momento Linktic vs Momento Cliente) · Peso: 6,25% cada uno</h2>
+        </div>
+        <span class="cmi-acc-tag" style="font-size:11px;font-weight:700">Pestaña desplegable ▾</span>
+      </summary>
+      <div class="tbl-wrap" style="padding-top:10px;overflow-x:auto">
+        <table class="xl tbl-crono-419">
+          <thead>
+            <tr>
+              <th rowspan="2" class="col-sp" style="vertical-align:middle">Sprint</th>
+              <th rowspan="2" class="col-p" style="vertical-align:middle;text-align:center">Peso</th>
+              <th rowspan="2" class="col-ep" style="vertical-align:middle">Épicas Azure (BAC / RAMA)</th>
+              <th colspan="4" style="text-align:center;background:#0f766e;color:#fff;border-radius:4px 4px 0 0">MOMENTO 1 · LINKTIC (Entrega Desarrollo a UAT)</th>
+              <th colspan="4" style="text-align:center;background:#0284c7;color:#fff;border-radius:4px 4px 0 0">MOMENTO 2 · CLIENTE (Certificación UAT Formal)</th>
+            </tr>
+            <tr>
+              <th class="col-m1-date">Fecha Plan</th>
+              <th class="col-m1-desv">Desv. Hábiles</th>
+              <th class="col-m1-hu">HUs UAT/Prod</th>
+              <th class="col-m1-st">Estado</th>
+              <th class="col-m2-date">Fecha Plan</th>
+              <th class="col-m2-desv">Desv. Hábiles</th>
+              <th class="col-m2-hu">HUs en Prod</th>
+              <th class="col-m2-st">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:rgba(16,185,129,0.04)">
+              <td class="col-sp">Sprint 1</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">291675 / 360573</td>
+              <td class="col-m1-date">31/12/2025</td>
+              <td class="col-m1-desv"><span class="st good">0 d</span></td>
+              <td class="col-m1-hu">204 / 204 <small>(100%)</small></td>
+              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m2-date">31/07/2026</td>
+              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-hu">204 / 204 <small>(100%)</small></td>
+              <td class="col-m2-st"><span class="st good">🟢 Certificado</span></td>
+            </tr>
+            <tr style="background:rgba(16,185,129,0.04)">
+              <td class="col-sp">Sprint 2</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">319591 / 360576 / 321422</td>
+              <td class="col-m1-date">13/03/2026</td>
+              <td class="col-m1-desv"><span class="st good">0 d</span></td>
+              <td class="col-m1-hu">75 / 80 <small>(93,8%)</small></td>
+              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m2-date">31/07/2026</td>
+              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-hu">75 / 80 <small>(93,8%)</small></td>
+              <td class="col-m2-st"><span class="st good">🟢 Certificado</span></td>
+            </tr>
+            <tr style="background:rgba(16,185,129,0.04)">
+              <td class="col-sp">Sprint 3</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">373564 / 373561</td>
+              <td class="col-m1-date">13/04/2026</td>
+              <td class="col-m1-desv"><span class="st good">0 d</span></td>
+              <td class="col-m1-hu">104 / 121 <small>(86,0%)</small></td>
+              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m2-date">26/08/2026</td>
+              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-hu">23 / 121 <small>(19,0%)</small></td>
+              <td class="col-m2-st"><span class="st warn">🟡 En UAT</span></td>
+            </tr>
+            <tr style="background:rgba(16,185,129,0.04)">
+              <td class="col-sp">Sprint 4</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">379729 / 380257</td>
+              <td class="col-m1-date">29/05/2026</td>
+              <td class="col-m1-desv"><span class="st good">0 d</span></td>
+              <td class="col-m1-hu">154 / 201 <small>(76,6%)</small></td>
+              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m2-date">25/08/2026</td>
+              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-hu">67 / 201 <small>(33,3%)</small></td>
+              <td class="col-m2-st"><span class="st warn">🟡 En UAT</span></td>
+            </tr>
+            <tr style="background:rgba(16,185,129,0.04)">
+              <td class="col-sp">Sprint 5</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">399824 / 399880</td>
+              <td class="col-m1-date">10/07/2026</td>
+              <td class="col-m1-desv"><span class="st good">0 d</span></td>
+              <td class="col-m1-hu">52 / 89 <small>(58,4%)</small></td>
+              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m2-date">26/06/2026</td>
+              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-hu">13 / 89 <small>(14,6%)</small></td>
+              <td class="col-m2-st"><span class="st warn">🟡 En UAT</span></td>
+            </tr>
+            <tr style="background:rgba(56,189,248,0.05)">
+              <td class="col-sp">Sprint 6</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">407644 / 407898</td>
+              <td class="col-m1-date">21/09/2026</td>
+              <td class="col-m1-desv"><span class="st good">0 d</span></td>
+              <td class="col-m1-hu">84 / 127 <small>(66,1%)</small></td>
+              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m2-date">07/12/2026</td>
+              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-hu">12 / 127 <small>(9,4%)</small></td>
+              <td class="col-m2-st"><span class="st info" style="background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd">🔵 En plazo UAT</span></td>
+            </tr>
+            <tr style="background:rgba(239,68,68,0.06)">
+              <td class="col-sp">Sprint 7</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">417341 / 417388</td>
+              <td class="col-m1-date" style="color:#dc2626;font-weight:700">07/12/2026</td>
+              <td class="col-m1-desv"><span class="st crit"><b>+21 d hábiles</b></span></td>
+              <td class="col-m1-hu">15 / 229 <small>(6,6%)</small></td>
+              <td class="col-m1-st"><span class="st crit">🔴 Reprog.</span></td>
+              <td class="col-m2-date" style="color:#dc2626;font-weight:700">06/01/2027</td>
+              <td class="col-m2-desv"><span class="st crit"><b>+23 d hábiles</b></span></td>
+              <td class="col-m2-hu">7 / 229 <small>(3,1%)</small></td>
+              <td class="col-m2-st"><span class="st crit">🔴 Reprog.</span></td>
+            </tr>
+            <tr style="background:rgba(245,158,11,0.04)">
+              <td class="col-sp">Sprint 8</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">531917 / 531912</td>
+              <td class="col-m1-date">06/01/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+23 d hab</span></td>
+              <td class="col-m1-hu">0 / 157 <small>(0%)</small></td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">05/02/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+20 d hab</span></td>
+              <td class="col-m2-hu">0 / 157 <small>(0%)</small></td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 9</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">02/02/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+20 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">02/03/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+17 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 10</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">02/03/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+17 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">01/04/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+19 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 11</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">01/04/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+19 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">28/04/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+13 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 12</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">28/04/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+13 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">26/05/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+13 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 13</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">26/05/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+13 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">24/06/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+12 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 14</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">24/06/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+12 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">23/07/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+10 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr>
+              <td class="col-sp">Sprint 15</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep">Sprints subsiguientes</td>
+              <td class="col-m1-date">23/07/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+10 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date">20/08/2027</td>
+              <td class="col-m2-desv"><span class="st warn">+5 d hab</span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+            </tr>
+            <tr style="background:rgba(16,185,129,0.04)">
+              <td class="col-sp">Sprint 16</td>
+              <td class="col-p">6,25%</td>
+              <td class="col-ep"><b>Hito Final Fijo</b></td>
+              <td class="col-m1-date">20/08/2027</td>
+              <td class="col-m1-desv"><span class="st warn">+5 d hab</span></td>
+              <td class="col-m1-hu">—</td>
+              <td class="col-m1-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-m2-date" style="color:#059669;font-weight:700">10/09/2027</td>
+              <td class="col-m2-desv"><span class="st good"><b>0 d (Fijo)</b></span></td>
+              <td class="col-m2-hu">—</td>
+              <td class="col-m2-st"><span class="st good">🟢 En fecha</span></td>
+            </tr>
+            <tr class="tot" style="background:var(--surface-2);font-weight:700">
+              <td class="col-sp">TOTAL</td>
+              <td class="col-p">100,0%</td>
+              <td class="col-ep">Consolidado 16 Sprints</td>
+              <td colspan="4" style="text-align:center"><span class="st" style="background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd"><b>Momento 1 Linktic: 37,91%</b> · Desv: +21 d hab</span></td>
+              <td colspan="4" style="text-align:center"><span class="st" style="background:#dcfce7;color:#15803d;border:1px solid #bbf7d0"><b>Momento 2 Cliente: 34,38%</b> · Desv: +23 d hab</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top:10px;padding:8px 12px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--ink-2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <span><b>Meta Proyectada al corte:</b> 40,63% (Sprints 1 a 6 + Desarr. Sp 7)</span>
+        <span><b>Real Promedio Dual B.3:</b> 36,15%</span>
+        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-4,48 pp</b></span>
+        <span><b>Hito Contractual Fijo:</b> 10-Sep-2027 (Sprint 16 UAT)</span>
       </div>
     </details>
   </div>`;
@@ -1903,6 +2229,7 @@ if(p.id==="456"){
   }
   h += renderFncSection(p);
   if(p.id==="419"){
+    h+=renderCrono419Collapsible();
     h+=renderBugs419Section();
     h+=`<div class="section grid" style="margin-top:16px"><div class="panel"><div class="sec-h"><h2>Entregas y certificaciones</h2><p>Requerimientos acumulados</p></div>
       <div class="legend" style="margin-bottom:8px"><span><i class="sw line" style="background:var(--s-real)"></i>Entrega real</span><span style="color:var(--s-real)"><i class="sw dash"></i><span style="color:var(--ink-2)">Entrega plan</span></span><span><i class="sw line" style="background:var(--s-fcst)"></i>Certificación real</span><span style="color:var(--s-fcst)"><i class="sw dash"></i><span style="color:var(--ink-2)">Certificación plan</span></span></div><div class="chart" id="c-419"></div></div></div>`;
@@ -3481,8 +3808,6 @@ function funcCard(cod) {
       </div>
       ${cod==="397"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
         <b>Aclaración Metodológica PMO:</b> Para el proyecto <b>397 - PROYECTO CORE ANDINA</b>, el CMI se gobierna a nivel de <b>57 Épicas / Frentes contractuales</b>, con seguimiento interno complementario a sus <b>233 funcionalidades</b> en Azure DevOps.
-      </div>`:cod==="419"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
-        <b>Aclaración Metodológica PMO:</b> Para el proyecto <b>419- DEPOSITOS JUDICIALES</b>, el CMI oficial se rige según el <b>archivo maestro local (80 certificadas / 466 entregables)</b>, con seguimiento y trazabilidad simultánea a sus <b>${cmi.feat_total||194} funcionalidades</b> en Azure DevOps.
       </div>`:cod==="456"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)"><b>Aclaración Metodológica PMO:</b> Para el proyecto <b>456 - PROYECTO INNOVACION AEREONAUTICA CIVIL</b>, los indicadores táctico (24,00%) y estratégico (16,67%) miden los <b>6 entregables contractuales</b> en 3 fases, integrando en esta sección la captura directa en vivo desde Azure DevOps del MVP (<b>${cmi.epic_total||1} épica · ${cmi.feat_total||4} funcionalidades · ${cmi.hu_total||16} HU</b>).</div>`:""}
     </div>` : ""}
 
