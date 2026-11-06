@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:08",
-  "archivo": "snapshot HU + Feature (HU_453_20261104.csv)",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:49",
+  "archivo": "snapshot HU + Feature (HU_453_20261106.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -157,15 +157,30 @@
       "n": "Sprint II",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 154,
+      "n_hu": 137,
       "term": 0,
-      "pct": 0.173,
-      "pct_hu": 0.173,
-      "n_pct": 154,
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 137,
       "n_cu": 22,
       "term_cu": 0,
       "pct_cu": 0.2023,
       "n_cu_pct": 22
+    },
+    {
+      "k": "otra:sprint iii",
+      "n": "Sprint III",
+      "hito": null,
+      "sem": "sin_hito",
+      "n_hu": 66,
+      "term": 0,
+      "pct": 0.2547,
+      "pct_hu": 0.2547,
+      "n_pct": 66,
+      "n_cu": 8,
+      "term_cu": 0,
+      "pct_cu": 0.125,
+      "n_cu_pct": 8
     },
     {
       "k": "otra:sprint pedagogico",
@@ -187,15 +202,15 @@
       "n": "Sin iteración",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 13,
+      "n_hu": 12,
       "term": 7,
-      "pct": 0.8885,
-      "pct_hu": 0.8885,
-      "n_pct": 13,
-      "n_cu": 21,
+      "pct": 0.9375,
+      "pct_hu": 0.9375,
+      "n_pct": 12,
+      "n_cu": 13,
       "term_cu": 0,
-      "pct_cu": 0.0889,
-      "n_cu_pct": 18
+      "pct_cu": 0.14,
+      "n_cu_pct": 10
     }
   ],
   "focos": [
@@ -210,18 +225,19 @@
         "nota": "Hito reprogramado al 24/10/2026 (base: 30/07/2026)"
       },
       "peso": 0.4,
-      "aporte": 0.3461,
+      "aporte": 0.3468,
       "sem": "en_curso",
       "n_hu": 322,
       "term": 7,
-      "pct": 0.8652,
-      "pct_hu": 0.8652,
+      "pct": 0.8669,
+      "pct_hu": 0.8669,
       "n_pct": 322,
       "n_hu_todas": 375,
       "n_cu": 44,
       "n_cu_medibles": 40,
       "term_cu": 29,
-      "pct_cu": 0.8238
+      "pct_cu": 0.8238,
+      "escala_cmi": 0.5
     },
     {
       "k": "B",
@@ -245,7 +261,8 @@
       "n_cu": 2,
       "n_cu_medibles": 1,
       "term_cu": 0,
-      "pct_cu": 0.175
+      "pct_cu": 0.175,
+      "escala_cmi": 0.0
     },
     {
       "k": "C",
@@ -260,16 +277,17 @@
       "peso": 0.15,
       "aporte": 0.018,
       "sem": "en_curso",
-      "n_hu": 137,
+      "n_hu": 185,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 137,
-      "n_hu_todas": 140,
+      "n_pct": 185,
+      "n_hu_todas": 188,
       "n_cu": 32,
       "n_cu_medibles": 31,
       "term_cu": 0,
-      "pct_cu": 0.0815
+      "pct_cu": 0.1073,
+      "escala_cmi": 0.0
     },
     {
       "k": "D",
@@ -293,7 +311,8 @@
       "n_cu": 0,
       "n_cu_medibles": 0,
       "term_cu": 0,
-      "pct_cu": null
+      "pct_cu": null,
+      "escala_cmi": 0.0
     }
   ],
   "cus": [
@@ -454,7 +473,7 @@
       "pct_hu": 0.6,
       "n_pct": 9,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint iii"
       ],
       "fs": [
         "A"
@@ -1106,12 +1125,11 @@
       "r": "Julio Cesar Manosalva Campos",
       "n": 9,
       "term": 0,
-      "pct": 0.5667,
-      "pct_hu": 0.5667,
+      "pct": 0.6278,
+      "pct_hu": 0.6278,
       "n_pct": 9,
       "its": [
-        "__sin__",
-        "otra:sprint ii"
+        "otra:sprint iii"
       ],
       "fs": [
         "A"
@@ -1563,170 +1581,186 @@
     {
       "i": "539728",
       "t": "CU_SME_ENC_018_Actualizar_Aplicacion",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 10,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 10,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "502088",
       "t": "CU_SME_ENC_019_Diligenciar_Encuesta_en_Linea_Web",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 7,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 7,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539729",
       "t": "CU_SME_ENC_020_Descargar_Aplicacion_AWP",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 5,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 5,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "502089",
       "t": "CU_SME_ENC_021_Diligenciar_Encuesta_Offline",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 9,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 9,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "502091",
       "t": "CU_SME_ENC_022_Sincronizar_Respuestas_Offline",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 6,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 6,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539730",
       "t": "CU_SME_ENC_023_Diligenciar_Aplicacion_Online_a_Nombre_de_un_Tercero",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 3,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 3,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539731",
       "t": "CU_SME_ENC_024_Diligenciar_Aplicacion_Offline_a_Nombre_de_un_Tercero",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 2,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 2,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "493611",
       "t": "CU_SME_ENC_025_Consultar_Encuestas_Estadisticas",
-      "e": "1. En Planeación",
-      "ei": "00. En levantamiento/entendimiento",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.025,
-      "it": "__sin__",
-      "itn": "Sin iteración",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "",
-      "n": 0,
+      "n": 6,
       "term": 0,
-      "pct": null,
-      "pct_hu": null,
-      "n_pct": 0,
-      "its": [],
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 6,
+      "its": [
+        "otra:sprint iii"
+      ],
       "fs": [
         "C"
       ],
-      "fp": "C"
+      "fp": ""
     },
     {
       "i": "539732",
@@ -6053,8 +6087,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6066,8 +6100,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6079,8 +6113,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6092,21 +6126,21 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "528382",
       "t": "SME_CFG_008_E01_ConsultarLaConfiguracionVigenteYLasDosListas",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6118,8 +6152,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6131,8 +6165,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6144,8 +6178,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6170,8 +6204,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6183,8 +6217,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6196,8 +6230,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6209,8 +6243,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6541,15 +6575,15 @@
     {
       "i": "529844",
       "t": "Tranversales CU_SME_CFG_008_Configurar Monitoreo y Sincronización de Terminales de Cómputo",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "A",
       "cu": "511477",
-      "it": "__sin__",
-      "itn": "Sin iteración",
-      "r": "Andres Felipe Melo Santos"
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Daniela Santamaria Maldonado"
     },
     {
       "i": "529944",
@@ -6937,8 +6971,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6950,8 +6984,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6963,8 +6997,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6976,8 +7010,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -6989,8 +7023,8 @@
       "v": 0.6,
       "f": "A",
       "cu": "456851",
-      "it": "otra:sprint ii",
-      "itn": "Sprint II",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
       "r": "Daniela Santamaria Maldonado"
     },
     {
@@ -8773,28 +8807,652 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": ""
+    },
+    {
+      "i": "558201",
+      "t": "SME_ENC_018_E01_EditarFichaDeAplicacionPendienteDePublicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558208",
+      "t": "SME_ENC_018_E02_AgregarPoblacionYLugaresEnFichaDeAplicacionPublicada",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558209",
+      "t": "SME_ENC_018_E03_AgregarLugaresEnFichaDeAplicacionSuspendida",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558210",
+      "t": "SME_ENC_018_E04_AjustarTiempoProgramadoDeAplicacionPendienteDePublicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558211",
+      "t": "SME_ENC_018_E05_AjustarInicioDeAplicacionPublicadaConRespuestas",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558212",
+      "t": "SME_ENC_018_E06_AjustarFinDeAplicacionSuspendidaConFinVencido",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558213",
+      "t": "SME_ENC_018_E07_ValidarCamposAlEditarFichaDeAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558214",
+      "t": "SME_ENC_018_E08_ValidarTiempoProgramadoAlAjustarAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558215",
+      "t": "SME_ENC_018_E09_VerificarQueAplicacionFinalizadaNoAdmiteEditarFichaNiAjustarTiempo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558216",
+      "t": "SME_ENC_018_E10_IntentarEditarFichaYAjustarTiempoSinPermisoDeGestionarAplicaciones",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558217",
+      "t": "SME_ENC_019_E01_DiligenciarEncuestaPorEnlaceDeRespuestaLibre",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558218",
+      "t": "SME_ENC_019_E02_RegistrarOtraRespuestaReutilizandoDatosDelCuidador",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558219",
+      "t": "SME_ENC_019_E03_ResponderPorEnlaceDeRespuestaPorDispositivo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558220",
+      "t": "SME_ENC_019_E04_ResponderPorOtraSedeYValidarUnicidadDeLaRespuesta",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558221",
+      "t": "SME_ENC_019_E05_ValidarReglasDeUnicidadDelDirectivoDocenteYDelEstudiante",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558222",
+      "t": "SME_ENC_019_E06_ValidarTratamientoIdentificacionYUbicacionAlDiligenciarEnLinea",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558223",
+      "t": "SME_ENC_019_E07_ValidarRespuestasAlEnviarEnLinea",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558224",
+      "t": "SME_ENC_020_E01_DescargarAplicacionPublicadaDesdeDisponibles",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539729",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558225",
+      "t": "SME_ENC_020_E02_DescargarAplicacionPorSuEnlaceDeDescarga",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539729",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558226",
+      "t": "SME_ENC_020_E03_DescargarAplicacionPendienteDePublicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539729",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558227",
+      "t": "SME_ENC_020_E04_VolverADescargarYActualizarAplicacionDescargada",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539729",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "558228",
+      "t": "SME_ENC_020_E05_ValidarDescargaSinConexionYEnlaceNoDisponible",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539729",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559757",
+      "t": "SME_ENC_021_E01_DiligenciarEncuestaSinConexionHastaPorEnviar",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559759",
+      "t": "SME_ENC_021_E02_ContinuarDiligenciamientoEnCursoConLoAutoguardado",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559760",
+      "t": "SME_ENC_021_E03_EliminarDiligenciamientoEnCurso",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559761",
+      "t": "SME_ENC_021_E04_ValidarPresentacionQueNoDejaDiligenciar",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559763",
+      "t": "SME_ENC_021_E05_DetenerDiligenciamientoEnCursoAlVencerElPlazo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559765",
+      "t": "SME_ENC_021_E06_ValidarUnicidadDeLaMismaPersonaEnElDispositivo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559766",
+      "t": "SME_ENC_021_E07_ValidarReglasDeUnicidadDelDirectivoDocenteYDelEstudianteEnElDispositivo",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559767",
+      "t": "SME_ENC_021_E08_ValidarTratamientoIdentificacionYUbicacionSinConexion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "559769",
+      "t": "SME_ENC_021_E09_ValidarRespuestasAlFinalizarSinConexion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560037",
+      "t": "SME_ENC_022_E01_SincronizarAutomaticamenteAlRecuperarLaConexion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560038",
+      "t": "SME_ENC_023_E01_RegistrarRespuestasDeVariasPersonasPorElEnlaceDeRespuestaLibre",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539730",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560039",
+      "t": "SME_ENC_024_E01_RegistrarVariasPersonasSinConexionReutilizandoLosDatosDelCuidador",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539731",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560040",
+      "t": "SME_ENC_025_E01_ConsultarCatalogoDeEncuestasConFiltrosYResumenPorEstado",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560047",
+      "t": "SME_ENC_022_E02_CompletarDiligenciamientoRechazadoPorObligatorias",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560048",
+      "t": "SME_ENC_022_E03_ValidarRechazosAlSincronizarRespuestasOffline",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560049",
+      "t": "SME_ENC_022_E04_SincronizarConElBotonTrasUnaFallaDelServicio",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560050",
+      "t": "SME_ENC_022_E05_SincronizarDiligenciamientosDeUnaAplicacionSuspendida",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560051",
+      "t": "SME_ENC_022_E06_RecuperarDiligenciamientosAlAmpliarElFinYReactivarLaAplicacion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560052",
+      "t": "SME_ENC_023_E02_RegistrarRespuestasDeVariasPersonasEnLaAplicacionMovilConConexion",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539730",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560053",
+      "t": "SME_ENC_023_E03_RechazarLaRespuestaDeUnaPersonaQueYaRespondioPorOtroCanal",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539730",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560054",
+      "t": "SME_ENC_024_E02_ValidarUnicidadEntreLasPersonasRegistradasEnElMismoTelefono",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539731",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560055",
+      "t": "SME_ENC_025_E02_OrdenarBuscarPorColumnaYPaginarCatalogoDeEncuestas",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560056",
+      "t": "SME_ENC_025_E03_ExportarCatalogoDeEncuestasAExcel",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560057",
+      "t": "SME_ENC_025_E04_AbrirEncuestaEnConsultaYRecorrerSusPestanas",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560058",
+      "t": "SME_ENC_025_E05_ValidarRangoDeFechasYCatalogoSinCoincidencias",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
+    },
+    {
+      "i": "560059",
+      "t": "SME_ENC_025_E06_IntentarConsultarCatalogoSinPermisoDeConsultarEncuestas",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": ""
     }
   ],
   "kpi": {
     "n_cu": 76,
     "n_cu_medibles": 72,
     "cu_entregados": 29,
-    "pct_cu_global": 0.4951,
-    "n_hu": 516,
-    "n_hu_activas": 459,
+    "pct_cu_global": 0.5063,
+    "n_hu": 564,
+    "n_hu_activas": 507,
     "hu_sin_cu": 9,
-    "hu_fuera_de_su_cu": 37,
-    "sin_iteracion": 13,
+    "hu_fuera_de_su_cu": 54,
+    "sin_iteracion": 12,
     "cu_aprobados": 31,
     "hu_omitidas": 52,
     "focos_activas": {
       "A": 322,
-      "C": 137
+      "C": 185
     },
     "focos_todas": {
       "A": 375,
       "B": 1,
-      "C": 140
+      "C": 188
     },
     "cus_activas": {
       "A": 43,
@@ -8809,23 +9467,26 @@
     "cu_sin_foco": 0,
     "cu_multi_foco": 1,
     "hu_sin_pct": 0,
-    "pct_global": 0.3641,
-    "pct_global_hu": 0.6428,
+    "pct_global": 0.3648,
+    "pct_global_hu": 0.5944,
     "avance_modo": "peso_foco",
     "term_global": 7
   },
   "cmi": {
-    "tactico": 0.4951,
-    "estrategico": 0.4028,
-    "n": 72,
-    "d": 29,
-    "u": "casos de uso",
+    "tactico": 0.125,
+    "estrategico": 0.0,
+    "n": 4,
+    "d": 0,
+    "u": "focos",
+    "isFocos": true,
+    "feat_total": 76,
+    "feat_ent": 29,
     "buckets": {
-      "100": 29,
+      "100": 0,
       "75": 0,
       "50": 1,
-      "20": 6,
-      "0": 36
+      "20": 0,
+      "0": 3
     }
   }
 }

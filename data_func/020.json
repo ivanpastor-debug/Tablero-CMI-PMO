@@ -1,8 +1,8 @@
 {
   "codigo": "020",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:20",
-  "archivo": "HU_020_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_020_20261106.csv",
   "epics": [
     {
       "i": "525431",
@@ -10,7 +10,7 @@
       "n_f": 5,
       "n": 52,
       "term": 34,
-      "pct": 0.8154
+      "pct": 0.8269
     },
     {
       "i": "525428",
@@ -18,7 +18,7 @@
       "n_f": 2,
       "n": 21,
       "term": 16,
-      "pct": 0.8667
+      "pct": 0.8952
     }
   ],
   "features": [
@@ -41,7 +41,7 @@
       "ept": "SOPORTE",
       "n": 17,
       "term": 13,
-      "pct": 0.8824,
+      "pct": 0.9176,
       "n_pct": 17
     },
     {
@@ -74,7 +74,7 @@
       "ept": "OPERACIÓN",
       "n": 7,
       "term": 2,
-      "pct": 0.6,
+      "pct": 0.6857,
       "n_pct": 7
     },
     {
@@ -103,7 +103,7 @@
   "hus": [
     {
       "i": "515778",
-      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\nAJUSTES DE MAPEO Y TRAZABILIDAD",
+      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\r\nAJUSTES DE MAPEO Y TRAZABILIDAD",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -114,7 +114,7 @@
     },
     {
       "i": "515779",
-      "t": "HU_081_ID_020_MIGRACIÓN TABLEROS A LOOKER PRO EL TABLERO \nCIUDADES Y RAMOS",
+      "t": "HU_081_ID_020_MIGRACIÓN TABLEROS A LOOKER PRO EL TABLERO \r\nCIUDADES Y RAMOS",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -125,7 +125,7 @@
     },
     {
       "i": "515780",
-      "t": "HU_082_ID_020_REVISIÓN REGLA 202\nEMPRESAS ACTIVAS EN SIARP",
+      "t": "HU_082_ID_020_REVISIÓN REGLA 202\r\nEMPRESAS ACTIVAS EN SIARP",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -191,7 +191,7 @@
     },
     {
       "i": "518661",
-      "t": "HU_083_ID_020_AJUSTES GALENO\nREDISEÑO DEL PROMPT Y ARQUITECTURA DEL AUDITOR",
+      "t": "HU_083_ID_020_AJUSTES GALENO\r\nREDISEÑO DEL PROMPT Y ARQUITECTURA DEL AUDITOR",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -213,7 +213,7 @@
     },
     {
       "i": "518663",
-      "t": "HU_079_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\n\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)",
+      "t": "HU_079_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\r\n\r\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -235,7 +235,7 @@
     },
     {
       "i": "518665",
-      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\nAJUSTES DE MAPEO Y TRAZABILIDAD",
+      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\r\nAJUSTES DE MAPEO Y TRAZABILIDAD",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -433,7 +433,7 @@
     },
     {
       "i": "530718",
-      "t": "HU_004_ID_020_CREACIÓN TABLERO DE ACTUALIZACIÓN DE TABLAS\nAVANCE 1",
+      "t": "HU_004_ID_020_CREACIÓN TABLERO DE ACTUALIZACIÓN DE TABLAS\r\nAVANCE 1",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -455,7 +455,7 @@
     },
     {
       "i": "530720",
-      "t": "HU_003_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\n\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
+      "t": "HU_003_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\r\n\r\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -477,7 +477,7 @@
     },
     {
       "i": "530722",
-      "t": "HU_002_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\n\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
+      "t": "HU_002_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\r\n\r\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -521,7 +521,7 @@
     },
     {
       "i": "536047",
-      "t": "HU_003_ID_020_AJUSTES GALENO\nDESARROLLO TÉCNICO, ETL E INTEGRACIÓN ADK",
+      "t": "HU_003_ID_020_AJUSTES GALENO\r\nDESARROLLO TÉCNICO, ETL E INTEGRACIÓN ADK",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -565,7 +565,7 @@
     },
     {
       "i": "540183",
-      "t": "HU_010_ID_020_EXTRACCIONES COMPLETA - PROCESO DE EXTRACCIÓN PARA LA TABLA\nPREVISORAVIDA.MCB",
+      "t": "HU_010_ID_020_EXTRACCIONES COMPLETA - PROCESO DE EXTRACCIÓN PARA LA TABLA\r\nPREVISORAVIDA.MCB",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -819,10 +819,10 @@
     {
       "i": "552954",
       "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO SCG POBLACIÓN",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527697",
       "ep": "525428",
       "r": "daniel.hernandez wimbu.co"
@@ -830,10 +830,10 @@
     {
       "i": "552959",
       "t": "HU_002_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – PUBLICACIÓN DEL INVENTARIO DE REGISTROS ADMINISTRATIVOS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -841,10 +841,10 @@
     {
       "i": "552964",
       "t": "HU_003_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – PUBLICACIÓN DEL INVENTARIO DE OPERACIONES ESTADÍSTICAS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -863,10 +863,10 @@
     {
       "i": "552974",
       "t": "HU_005_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO EXPUESTOS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527697",
       "ep": "525428",
       "r": "jair.vargas wimbu.co"
@@ -958,7 +958,7 @@
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8347,
+    "pct_global": 0.8507,
     "term_global": 52,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

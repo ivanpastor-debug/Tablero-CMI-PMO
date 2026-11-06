@@ -1,16 +1,16 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:19",
-  "archivo": "HU_419-DEP_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_419-DEP_20261106.csv",
   "epics": [
     {
       "i": "417341",
       "t": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n_f": 27,
-      "n": 212,
+      "n": 219,
       "term": 7,
-      "pct": 0.5854
+      "pct": 0.5838
     },
     {
       "i": "291675",
@@ -32,9 +32,9 @@
       "i": "531917",
       "t": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n_f": 15,
-      "n": 105,
+      "n": 96,
       "term": 0,
-      "pct": 0.3968
+      "pct": 0.4115
     },
     {
       "i": "407644",
@@ -136,15 +136,15 @@
       "n_pct": 26
     },
     {
-      "i": "532401",
-      "t": "419_PB_REFINAMIENTO_SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 21,
+      "i": "433502",
+      "t": "419_PB_REFINAMIENTO",
+      "e": "3. Entregado",
+      "ep": "417341",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
+      "n": 23,
       "term": 0,
-      "pct": 0.3695,
-      "n_pct": 21
+      "pct": 0.533,
+      "n_pct": 23
     },
     {
       "i": "376222",
@@ -188,17 +188,6 @@
       "n": 16,
       "term": 3,
       "pct": 0.9188,
-      "n_pct": 16
-    },
-    {
-      "i": "433502",
-      "t": "419_PB_REFINAMIENTO",
-      "e": "3. Entregado",
-      "ep": "417341",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
-      "n": 16,
-      "term": 0,
-      "pct": 0.6813,
       "n_pct": 16
     },
     {
@@ -254,6 +243,17 @@
       "n": 12,
       "term": 0,
       "pct": 0.7,
+      "n_pct": 12
+    },
+    {
+      "i": "532401",
+      "t": "419_PB_REFINAMIENTO_SPRINT 8",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 12,
+      "term": 0,
+      "pct": 0.45,
       "n_pct": 12
     },
     {
@@ -880,7 +880,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 6,
       "term": 0,
-      "pct": 0.4667,
+      "pct": 0.6667,
       "n_pct": 6
     },
     {
@@ -1089,7 +1089,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 5,
       "term": 0,
-      "pct": 0.44,
+      "pct": 0.68,
       "n_pct": 5
     },
     {
@@ -1210,7 +1210,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.55,
       "n_pct": 4
     },
     {
@@ -9188,7 +9188,7 @@
       "v": 0.6,
       "f": "410513",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "461703",
@@ -9265,7 +9265,7 @@
       "v": 0.6,
       "f": "426390",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "462644",
@@ -9496,7 +9496,7 @@
       "v": 0.6,
       "f": "410513",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Fabio Alexander Ruiz Torrejano"
     },
     {
       "i": "465918",
@@ -9507,7 +9507,7 @@
       "v": 0.6,
       "f": "426390",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "466484",
@@ -10321,7 +10321,7 @@
       "v": 0.6,
       "f": "468087",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "483380",
@@ -10330,8 +10330,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -10583,8 +10583,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Carlos Andres Lopez"
     },
     {
@@ -11342,8 +11342,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.16,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Daniel Felipe Socha Hurtado"
     },
     {
@@ -11421,7 +11421,7 @@
       "v": 0.9,
       "f": "433502",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "510287",
@@ -11443,7 +11443,7 @@
       "v": 0.6,
       "f": "469825",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "512123",
@@ -11498,7 +11498,7 @@
       "v": 0.6,
       "f": "468087",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "512458",
@@ -11509,7 +11509,7 @@
       "v": 0.6,
       "f": "469825",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "512659",
@@ -11729,7 +11729,7 @@
       "v": 0.2,
       "f": "478428",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "516519",
@@ -11793,8 +11793,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11804,8 +11804,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11815,8 +11815,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11826,8 +11826,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
+      "f": "433502",
+      "ep": "417341",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11947,8 +11947,8 @@
       "p": "QA",
       "a": 1,
       "v": 0.5,
-      "f": "532401",
-      "ep": "531917",
+      "f": null,
+      "ep": null,
       "r": "Viki Liseth Cruz Plaza"
     },
     {
@@ -11958,8 +11958,8 @@
       "p": "QA",
       "a": 1,
       "v": 0.5,
-      "f": "532401",
-      "ep": "531917",
+      "f": null,
+      "ep": null,
       "r": "Viki Liseth Cruz Plaza"
     },
     {
@@ -11987,13 +11987,13 @@
     {
       "i": "520709",
       "t": "419_PB_TEC001_Arquitectura de Datos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "490982",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "522184",
@@ -12009,13 +12009,13 @@
     {
       "i": "522992",
       "t": "419_PB_TEC001_Arquitectura de Datos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "490996",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Estiward Alexander Duque Cortes"
     },
     {
       "i": "523004",
@@ -12053,24 +12053,24 @@
     {
       "i": "524457",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "490996",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Estiward Alexander Duque Cortes"
     },
     {
       "i": "524467",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "490982",
       "ep": "417341",
-      "r": "Yuliana Delgado Osorio"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "524507",
@@ -12383,10 +12383,10 @@
     {
       "i": "532802",
       "t": "419_PB_HU001_Registrar_Novedad_De_Activar_Inactivar_o_Cancelación_Sobre_Cuenta_Judicial",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532798",
       "ep": "531917",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -12394,10 +12394,10 @@
     {
       "i": "532807",
       "t": "419_PB_HU002_Registrar _\"Otras_Novedades\"_Sobre_Cuenta_Judicial",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532798",
       "ep": "531917",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -13407,13 +13407,13 @@
   "kpi": {
     "n_hu": 1052,
     "n_hu_activas": 954,
-    "hu_sin_feature": 27,
+    "hu_sin_feature": 29,
     "n_feature": 157,
     "n_epic": 12,
     "n_feature_con_hu": 137,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7556,
+    "pct_global": 0.7583,
     "term_global": 346,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

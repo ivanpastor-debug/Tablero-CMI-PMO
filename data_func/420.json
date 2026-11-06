@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:20",
-  "archivo": "HU_420_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_420_20261106.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
       "n": 180,
-      "term": 117,
-      "pct": 0.885
+      "term": 119,
+      "pct": 0.8889
     },
     {
       "i": "357729",
@@ -374,7 +374,7 @@
       "ept": "Cuentas médicas",
       "n": 10,
       "term": 3,
-      "pct": 0.77,
+      "pct": 0.8,
       "n_pct": 10
     },
     {
@@ -527,8 +527,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 6,
-      "term": 3,
-      "pct": 0.9,
+      "term": 5,
+      "pct": 0.9667,
       "n_pct": 6
     },
     {
@@ -5294,7 +5294,7 @@
       "v": 0.8,
       "f": "377082",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "431915",
@@ -6245,10 +6245,10 @@
     {
       "i": "474860",
       "t": "HU0161_Positiva_Mis_Notificaciones_Modal_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "474854",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6256,10 +6256,10 @@
     {
       "i": "474867",
       "t": "HU0162_Positiva_Mis_Notificaciones_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "474854",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6823,7 +6823,7 @@
       "v": 0.8,
       "f": "468613",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "500399",
@@ -6856,7 +6856,7 @@
       "v": 0.8,
       "f": "507072",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "502277",
@@ -6889,7 +6889,7 @@
       "v": 0.8,
       "f": "507072",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "507079",
@@ -6911,7 +6911,7 @@
       "v": 0.8,
       "f": "507072",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "507089",
@@ -6944,7 +6944,7 @@
       "v": 0.8,
       "f": "507072",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "507128",
@@ -7065,7 +7065,7 @@
       "v": 0.8,
       "f": "507072",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "519919",
@@ -7164,7 +7164,7 @@
       "v": 0.8,
       "f": "507072",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "525628",
@@ -7323,13 +7323,13 @@
     {
       "i": "533642",
       "t": "HU0148_Positiva_facturas_Ver_Transversales_Filtros_Avanzados_V2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "468613",
       "ep": "357078",
-      "r": "Juan Pablo Prada Ortiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "536117",
@@ -7528,8 +7528,8 @@
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9339,
-    "term_global": 499,
+    "pct_global": 0.935,
+    "term_global": 501,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 34,

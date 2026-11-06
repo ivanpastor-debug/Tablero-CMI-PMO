@@ -1,24 +1,24 @@
 {
   "codigo": "005",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:20",
-  "archivo": "HU_005_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_005_20261106.csv",
   "epics": [
+    {
+      "i": "578",
+      "t": "Deuda Técnica y Contractual",
+      "n_f": 2,
+      "n": 57,
+      "term": 4,
+      "pct": 0.4187
+    },
     {
       "i": "82",
       "t": "NP - Evolutivos",
       "n_f": 12,
-      "n": 50,
-      "term": 6,
-      "pct": 0.627
-    },
-    {
-      "i": "578",
-      "t": "Deuda Técnica y Contractual",
-      "n_f": 1,
-      "n": 36,
-      "term": 1,
-      "pct": 0.3839
+      "n": 37,
+      "term": 3,
+      "pct": 0.7075
     },
     {
       "i": "153",
@@ -70,18 +70,18 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.3839,
+      "pct": 0.3855,
       "n_pct": 31
     },
     {
       "i": "579",
       "t": "Deuda Técnica",
       "e": "New",
-      "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ep": "578",
+      "ept": "Deuda Técnica y Contractual",
       "n": 21,
       "term": 3,
-      "pct": 0.5059,
+      "pct": 0.4794,
       "n_pct": 17
     },
     {
@@ -105,6 +105,17 @@
       "term": 0,
       "pct": 0.6,
       "n_pct": 12
+    },
+    {
+      "i": "107",
+      "t": "Dashboard de Facturación",
+      "e": "New",
+      "ep": "82",
+      "ept": "NP - Evolutivos",
+      "n": 8,
+      "term": 0,
+      "pct": null,
+      "n_pct": 0
     },
     {
       "i": "101",
@@ -239,17 +250,6 @@
       "n_pct": 1
     },
     {
-      "i": "107",
-      "t": "Dashboard de Facturación",
-      "e": "New",
-      "ep": "82",
-      "ept": "NP - Evolutivos",
-      "n": 1,
-      "term": 0,
-      "pct": null,
-      "n_pct": 0
-    },
-    {
       "i": "96",
       "t": "Angente IA que realice informes de seguimiento de operaciones",
       "e": "New",
@@ -292,6 +292,17 @@
       "term": 0,
       "pct": null,
       "n_pct": 0
+    },
+    {
+      "i": "1993",
+      "t": "Pago de comisión - Facturación Administrativa",
+      "e": "2. En Curso",
+      "ep": "82",
+      "ept": "NP - Evolutivos",
+      "n": 1,
+      "term": 0,
+      "pct": 0.5,
+      "n_pct": 1
     }
   ],
   "hus": [
@@ -732,7 +743,7 @@
       "a": 1,
       "v": 1.0,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Brayan Correa"
     },
     {
@@ -743,7 +754,7 @@
       "a": 1,
       "v": 1.0,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Carlos Cansina"
     },
     {
@@ -754,18 +765,18 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Bryan Chaves"
     },
     {
       "i": "583",
       "t": "Documentos históricos en Alfresco sin relación en base de datos",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.95,
+      "v": 0.5,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhonatan Rocha"
     },
     {
@@ -776,7 +787,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Bryan Chaves"
     },
     {
@@ -787,7 +798,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhonatan Rocha"
     },
     {
@@ -798,7 +809,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Yadimir Molina"
     },
     {
@@ -809,7 +820,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhonatan Rocha"
     },
     {
@@ -820,7 +831,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Yadimir Molina"
     },
     {
@@ -831,7 +842,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Juan Vargas"
     },
     {
@@ -842,7 +853,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Cristian Roa"
     },
     {
@@ -853,7 +864,7 @@
       "a": 1,
       "v": 1.0,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Brayan Correa"
     },
     {
@@ -864,7 +875,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhonatan Rocha"
     },
     {
@@ -875,7 +886,7 @@
       "a": 1,
       "v": 0.85,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jorge Barragan"
     },
     {
@@ -886,7 +897,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhonatan Rocha"
     },
     {
@@ -897,7 +908,7 @@
       "a": 1,
       "v": 0.3,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Yadimir Molina"
     },
     {
@@ -908,7 +919,7 @@
       "a": 1,
       "v": null,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Kevin Pulido"
     },
     {
@@ -919,7 +930,7 @@
       "a": 1,
       "v": 0.5,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Angie Hernandez"
     },
     {
@@ -930,7 +941,7 @@
       "a": 1,
       "v": null,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhonatan Rocha"
     },
     {
@@ -941,7 +952,7 @@
       "a": 1,
       "v": null,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jhostin Ladino"
     },
     {
@@ -952,7 +963,7 @@
       "a": 1,
       "v": null,
       "f": "579",
-      "ep": "82",
+      "ep": "578",
       "r": "Jorge Barragan"
     },
     {
@@ -1002,13 +1013,13 @@
     {
       "i": "606",
       "t": "C001-Anexo1-Técnico 5.3.6.",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.95,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
-      "r": "Hugo Salcedo"
+      "r": "Angie Hernandez"
     },
     {
       "i": "607",
@@ -1019,7 +1030,7 @@
       "v": null,
       "f": "601",
       "ep": "578",
-      "r": "Brayan Correa"
+      "r": "Davis Diaz Mestra"
     },
     {
       "i": "608",
@@ -1063,7 +1074,7 @@
       "v": null,
       "f": "601",
       "ep": "578",
-      "r": "Dario Lopez"
+      "r": "Cristian Roa"
     },
     {
       "i": "612",
@@ -1178,13 +1189,13 @@
     {
       "i": "622",
       "t": "C001-Anexo1-Técnico 5.10.8.",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Brayan Correa"
+      "r": "Angie Hernandez"
     },
     {
       "i": "623",
@@ -1200,13 +1211,13 @@
     {
       "i": "624",
       "t": "C001-Anexo1-Técnico 5.10.10.",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Brayan Correa"
+      "r": "Angie Hernandez"
     },
     {
       "i": "625",
@@ -1518,7 +1529,7 @@
     },
     {
       "i": "1637",
-      "t": "Dashboard de Facturación",
+      "t": "HU-SGDEA-TFE-01_Acceso_solo_consulta_tablero",
       "e": "New",
       "p": "",
       "a": 1,
@@ -1614,18 +1625,106 @@
       "f": "1462",
       "ep": "568",
       "r": "Angie Hernandez"
+    },
+    {
+      "i": "1994",
+      "t": "Pago de comisión - Facturación Administrativa",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": "1993",
+      "ep": "82",
+      "r": "Angie Hernandez"
+    },
+    {
+      "i": "2004",
+      "t": "HU-SGDEA-TFE-02_Tipo_de_marcacion_columna_y_filtro",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2008",
+      "t": "HU-SGDEA-TFE-03_Columnas_de_gestion_interna",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2010",
+      "t": "HU-SGDEA-TFE-04_Filtros_estado_interno_y_dependencia",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2011",
+      "t": "HU-SGDEA-TFE-05_Grafica_distribucion_por_estado_interno",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2013",
+      "t": "HU-SGDEA-TFE-06_Grafica_distribucion_por_tipo_de_marcacion",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2015",
+      "t": "HU-SGDEA-TFE-07_Eventos_Radian_completos",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2017",
+      "t": "HU-SGDEA-TFE-08_Fecha_y_hora_de_ultima_actualizacion",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "107",
+      "ep": "82",
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 120,
-    "n_hu_activas": 119,
+    "n_hu": 128,
+    "n_hu_activas": 127,
     "hu_sin_feature": 1,
-    "n_feature": 21,
+    "n_feature": 22,
     "n_epic": 7,
-    "n_feature_con_hu": 21,
+    "n_feature_con_hu": 22,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.574,
+    "pct_global": 0.5689,
     "term_global": 15,
     "feature_sin_frente": 1,
     "hu_sin_frente": 1,
@@ -1640,7 +1739,7 @@
     "d": 1,
     "u": "épicas",
     "isEpics": true,
-    "feat_total": 21,
+    "feat_total": 22,
     "feat_ent": 5,
     "buckets": {
       "100": 1,

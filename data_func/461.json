@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:20",
-  "archivo": "HU_461_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_461_20261106.csv",
   "epics": [
     {
       "i": "457548",
@@ -18,7 +18,7 @@
       "n_f": 5,
       "n": 24,
       "term": 0,
-      "pct": 0.3273
+      "pct": 0.3435
     },
     {
       "i": "435992",
@@ -92,8 +92,8 @@
       "ept": "Gestión Electoral y Campañas",
       "n": 7,
       "term": 0,
-      "pct": 0.2833,
-      "n_pct": 6
+      "pct": 0.3143,
+      "n_pct": 7
     },
     {
       "i": "436526",
@@ -125,7 +125,7 @@
       "ept": "Gestión Electoral y Campañas",
       "n": 6,
       "term": 0,
-      "pct": 0.4167,
+      "pct": 0.45,
       "n_pct": 6
     },
     {
@@ -1024,10 +1024,10 @@
     {
       "i": "488751",
       "t": "HU_GesCon_049_Asociar campaña bajo un proceso electoral",
-      "e": "6.1 Esperando Despliegue DEV",
-      "p": "",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "487144",
       "ep": "467870",
       "r": "Jose Luis Cortes Jerez"
@@ -1409,7 +1409,7 @@
     {
       "i": "502650",
       "t": "HU_FinGas_068_Registrar gasto por categoría",
-      "e": "2.4 Bloqueado por Data",
+      "e": "2.1 Bloqueado por Cliente",
       "p": "",
       "a": 1,
       "v": null,
@@ -2014,10 +2014,10 @@
     {
       "i": "548289",
       "t": "HU_GesPro_101_Perfil de carga declarativo y versionado",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "487149",
       "ep": "467870",
       "r": "Javier Felipe Vasquez Roldan"
@@ -2142,18 +2142,29 @@
       "f": "467408",
       "ep": "467406",
       "r": "Sergio Senestrari Castro"
+    },
+    {
+      "i": "558017",
+      "t": "Sprint_8_Lizeth Monsalve",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": null,
+      "ep": null,
+      "r": "lizeth paola monsalve"
     }
   ],
   "kpi": {
-    "n_hu": 157,
+    "n_hu": 158,
     "n_hu_activas": 108,
     "hu_sin_feature": 0,
     "n_feature": 32,
     "n_epic": 7,
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
-    "hu_omitidas": 46,
-    "pct_global": 0.4395,
+    "hu_omitidas": 47,
+    "pct_global": 0.442,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

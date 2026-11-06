@@ -1,8 +1,8 @@
 {
   "codigo": "348",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:20",
-  "archivo": "HU_348_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_348_20261106.csv",
   "epics": [
     {
       "i": "477771",
@@ -33,8 +33,8 @@
       "t": "Certificación Temáticos",
       "n_f": 9,
       "n": 279,
-      "term": 109,
-      "pct": 0.4151
+      "term": 141,
+      "pct": 0.5252
     },
     {
       "i": "186545",
@@ -64,9 +64,9 @@
       "i": "422689",
       "t": "EAAB_3.0",
       "n_f": 19,
-      "n": 68,
+      "n": 69,
       "term": 16,
-      "pct": 0.5074
+      "pct": 0.5072
     },
     {
       "i": "238729",
@@ -128,8 +128,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 64,
-      "term": 19,
-      "pct": 0.325,
+      "term": 35,
+      "pct": 0.565,
       "n_pct": 64
     },
     {
@@ -381,8 +381,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 32,
-      "term": 4,
-      "pct": 0.16,
+      "term": 20,
+      "pct": 0.64,
       "n_pct": 32
     },
     {
@@ -1046,6 +1046,17 @@
       "n_pct": 4
     },
     {
+      "i": "437789",
+      "t": "CIERRE CRONOGRAMA ACUEDUCTO",
+      "e": "1. En Planeacion",
+      "ep": "422689",
+      "ept": "EAAB_3.0",
+      "n": 4,
+      "term": 1,
+      "pct": 0.625,
+      "n_pct": 4
+    },
+    {
       "i": "539201",
       "t": "Comunicado Interno",
       "e": "4. Cerrado",
@@ -1076,17 +1087,6 @@
       "n": 3,
       "term": 3,
       "pct": 1.0,
-      "n_pct": 3
-    },
-    {
-      "i": "437789",
-      "t": "CIERRE CRONOGRAMA ACUEDUCTO",
-      "e": "1. En Planeacion",
-      "ep": "422689",
-      "ept": "EAAB_3.0",
-      "n": 3,
-      "term": 1,
-      "pct": 0.6667,
       "n_pct": 3
     },
     {
@@ -22522,10 +22522,10 @@
     {
       "i": "541055",
       "t": "Sistec-GNET - HU-020 - Crear observaciones en anteproyecto y proyecto",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22533,10 +22533,10 @@
     {
       "i": "541058",
       "t": "Sistec-GNET - HU-021 - Generar lista de observaciones",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22544,10 +22544,10 @@
     {
       "i": "541061",
       "t": "Sistec-GNET - HU-022 - Generar acta de comité industrial",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22555,10 +22555,10 @@
     {
       "i": "541064",
       "t": "Sistec-GNET - HU-023 - Publicar NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22566,10 +22566,10 @@
     {
       "i": "541067",
       "t": "Sistec-GNET - HU-024 - Buscar NT - ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22577,10 +22577,10 @@
     {
       "i": "541070",
       "t": "Sistec-GNET - HU-025 - Generar versionamiento NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22588,10 +22588,10 @@
     {
       "i": "541073",
       "t": "Sistec-GNET - HU-026 - Poner marca de agua al cambiar estado",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22599,10 +22599,10 @@
     {
       "i": "541076",
       "t": "Sistec-GNET - HU-027 - Clasificar NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22610,10 +22610,10 @@
     {
       "i": "541079",
       "t": "Sistec-GNET - HU-028 - Cargar información generada en medio físico",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22621,10 +22621,10 @@
     {
       "i": "541082",
       "t": "Sistec-GNET - HU-029 - Consultar NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22632,10 +22632,10 @@
     {
       "i": "541085",
       "t": "Sistec-GNET - HU-030 - Bloquear edición de documentos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22643,10 +22643,10 @@
     {
       "i": "541088",
       "t": "Sistec-GNET - HU-031 - Consultar manual de SISTEC",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22654,10 +22654,10 @@
     {
       "i": "541091",
       "t": "Sistec-GNET - HU-032 - Consultar instructivo de acceso al SISTEC",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22665,10 +22665,10 @@
     {
       "i": "541094",
       "t": "Sistec-GNET - HU-033 - Consultar catálogo de NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22676,10 +22676,10 @@
     {
       "i": "541097",
       "t": "Sistec-GNET - HU-034 - Generar tablero de control",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -22687,10 +22687,10 @@
     {
       "i": "541100",
       "t": "Sistec-GNET - HU-035 - Analizar contenido similar NT ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -23754,13 +23754,13 @@
     {
       "i": "541395",
       "t": "Calidad y Procesos - HU-011 - Verificar correlaciones del documento y convocar reuniones.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541398",
@@ -23776,54 +23776,54 @@
     {
       "i": "541401",
       "t": "Calidad y Procesos - HU-013 - Recibir la tarea de solicitud de prórroga.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541404",
       "t": "Calidad y Procesos - HU-014 - Otorgar prórroga.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541407",
       "t": "Calidad y Procesos - HU-015 - Cargar ayudas de memoria en el Plan de Análisis.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541410",
       "t": "Calidad y Procesos - HU-016 - Ajustar documento propuesto.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541413",
       "t": "Calidad y Procesos - HU-017 - Recibir tarea de verificación de Documento ajustado.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -23831,112 +23831,112 @@
     {
       "i": "541416",
       "t": "Calidad y Procesos - HU-018 - Verificar y codificar documento ajustado.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541419",
       "t": "Calidad y Procesos - HU-019 - Recibir documento para aprobación.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541422",
       "t": "Calidad y Procesos - HU-020 - Dar aprobación o devolver.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541425",
       "t": "Calidad y Procesos - HU-021 - Recibir documento aprobado para versionamiento.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541428",
       "t": "Calidad y Procesos - HU-022 - Versionar el documento aprobado.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541431",
       "t": "Calidad y Procesos - HU-023 - Agregar la Marca de agua Inactivo.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541434",
       "t": "Calidad y Procesos - HU-024 - Recibir documento ajustado para publicación en MP.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541437",
       "t": "Calidad y Procesos - HU-025 - Publicar_Eliminar documento en Mapa de Procesos.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541440",
       "t": "Calidad y Procesos - HU-026 - Actualizar Listados Maestros (Individual y Masivo).docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541443",
       "t": "Calidad y Procesos - HU-027 - Recibir documento para publicación externa.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541446",
@@ -23992,19 +23992,30 @@
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
+    },
+    {
+      "i": "558537",
+      "t": "Gestión Liderazgo QA Angie Hernández",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "437789",
+      "ep": "422689",
+      "r": "Angie Tatiana Hernandez Santacruz"
     }
   ],
   "kpi": {
-    "n_hu": 2056,
-    "n_hu_activas": 2048,
+    "n_hu": 2057,
+    "n_hu_activas": 2049,
     "hu_sin_feature": 30,
     "n_feature": 115,
     "n_epic": 13,
     "n_feature_con_hu": 115,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.3739,
-    "term_global": 328,
+    "pct_global": 0.3889,
+    "term_global": 360,
     "feature_sin_frente": 7,
     "hu_sin_frente": 65,
     "feature_100_sin_cerrar": 4,

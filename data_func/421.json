@@ -1,16 +1,16 @@
 {
   "codigo": "421",
-  "corte": "2026-11-04",
-  "generado": "2026-11-04 14:19",
-  "archivo": "HU_421_20261104.csv",
+  "corte": "2026-11-06",
+  "generado": "2026-11-06 13:48",
+  "archivo": "HU_421_20261106.csv",
   "epics": [
     {
       "i": "83469",
       "t": "Afiliaciones y Novedades",
       "n_f": 29,
-      "n": 450,
+      "n": 458,
       "term": 278,
-      "pct": 0.8489
+      "pct": 0.8404
     },
     {
       "i": "83437",
@@ -18,15 +18,15 @@
       "n_f": 27,
       "n": 409,
       "term": 182,
-      "pct": 0.7575
+      "pct": 0.7615
     },
     {
       "i": "83503",
       "t": "Funcionalidades Transversales",
       "n_f": 9,
-      "n": 123,
+      "n": 124,
       "term": 117,
-      "pct": 0.9686
+      "pct": 0.9632
     },
     {
       "i": "417182",
@@ -34,7 +34,7 @@
       "n_f": 2,
       "n": 63,
       "term": 59,
-      "pct": 0.9498
+      "pct": 0.9549
     }
   ],
   "features": [
@@ -44,10 +44,10 @@
       "e": "2. En Curso",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 91,
+      "n": 90,
       "term": 35,
-      "pct": 0.7375,
-      "n_pct": 91
+      "pct": 0.7462,
+      "n_pct": 90
     },
     {
       "i": "417232",
@@ -55,10 +55,10 @@
       "e": "1. En Planeacion",
       "ep": "83503",
       "ept": "Funcionalidades Transversales",
-      "n": 83,
+      "n": 84,
       "term": 79,
-      "pct": 0.9607,
-      "n_pct": 83
+      "pct": 0.9529,
+      "n_pct": 84
     },
     {
       "i": "88254",
@@ -68,7 +68,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 61,
       "term": 6,
-      "pct": 0.6492,
+      "pct": 0.6508,
       "n_pct": 61
     },
     {
@@ -77,10 +77,10 @@
       "e": "1. En Planeacion",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 56,
+      "n": 55,
       "term": 30,
-      "pct": 0.9273,
-      "n_pct": 40
+      "pct": 0.9292,
+      "n_pct": 39
     },
     {
       "i": "417212",
@@ -112,7 +112,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 36,
       "term": 13,
-      "pct": 0.6506,
+      "pct": 0.6561,
       "n_pct": 36
     },
     {
@@ -121,10 +121,10 @@
       "e": "3. Entregado",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 33,
+      "n": 32,
       "term": 23,
-      "pct": 0.8673,
-      "n_pct": 33
+      "pct": 0.8709,
+      "n_pct": 32
     },
     {
       "i": "85834",
@@ -143,10 +143,10 @@
       "e": "3. Entregado",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 24,
+      "n": 30,
       "term": 14,
-      "pct": 0.8596,
-      "n_pct": 24
+      "pct": 0.7217,
+      "n_pct": 30
     },
     {
       "i": "485086",
@@ -156,8 +156,19 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 24,
       "term": 0,
-      "pct": 0.3971,
+      "pct": 0.4179,
       "n_pct": 24
+    },
+    {
+      "i": "313434",
+      "t": "003_Afiliaciones - Afiliación -  Empleadores",
+      "e": "3. Entregado",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
+      "n": 23,
+      "term": 12,
+      "pct": 0.8374,
+      "n_pct": 23
     },
     {
       "i": "307833",
@@ -167,7 +178,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 23,
       "term": 6,
-      "pct": 0.8826,
+      "pct": 0.9,
       "n_pct": 23
     },
     {
@@ -200,7 +211,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 20,
       "term": 2,
-      "pct": 0.729,
+      "pct": 0.734,
       "n_pct": 20
     },
     {
@@ -224,17 +235,6 @@
       "term": 16,
       "pct": 0.9842,
       "n_pct": 19
-    },
-    {
-      "i": "313434",
-      "t": "003_Afiliaciones - Afiliación -  Empleadores",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
-      "n": 18,
-      "term": 12,
-      "pct": 0.9094,
-      "n_pct": 18
     },
     {
       "i": "434061",
@@ -277,7 +277,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 17,
       "term": 12,
-      "pct": 0.7412,
+      "pct": 0.7559,
       "n_pct": 17
     },
     {
@@ -310,7 +310,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 16,
       "term": 0,
-      "pct": 0.2038,
+      "pct": 0.2075,
       "n_pct": 16
     },
     {
@@ -321,7 +321,7 @@
       "ept": "Automatización_QA Balu",
       "n": 16,
       "term": 14,
-      "pct": 0.8962,
+      "pct": 0.9163,
       "n_pct": 16
     },
     {
@@ -332,7 +332,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 15,
       "term": 7,
-      "pct": 0.7087,
+      "pct": 0.7373,
       "n_pct": 15
     },
     {
@@ -409,7 +409,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 10,
       "term": 0,
-      "pct": 0.3356,
+      "pct": 0.3578,
       "n_pct": 9
     },
     {
@@ -4355,10 +4355,10 @@
     {
       "i": "231384",
       "t": "308714_HU009_F3_Consultar_Ventana_Historica_11_Mas_1",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -4377,10 +4377,10 @@
     {
       "i": "233390",
       "t": "308714_HU010_F3_Consultar_Bitacora_y_Registrar_Observaciones",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "308714",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
@@ -7325,10 +7325,10 @@
     {
       "i": "341520",
       "t": "96139_HU007_Ajuste Individual_fecha_contrato_ prorroga_trabajador_independiente_por_empleador",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "96139",
       "ep": "83469",
       "r": "Nain Grande Ortiz"
@@ -9833,13 +9833,13 @@
     {
       "i": "458984",
       "t": "457292_HU004_Validar automáticamente la estructura y los datos antes de la transferencia a Recaudo2",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "457292",
       "ep": "83437",
-      "r": "Miguel Angel Rodriguez Castillo"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "458993",
@@ -9954,10 +9954,10 @@
     {
       "i": "460796",
       "t": "88254_HU025:EC-HU-N05 — Conciliación por Vacaciones (VAC)",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "88254",
       "ep": "83437",
       "r": "Maria Victoria Martins Souza"
@@ -10134,7 +10134,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "313337",
+      "f": "313434",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
@@ -10145,7 +10145,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "100219",
+      "f": "313434",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -10167,7 +10167,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "100219",
+      "f": "313434",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -10189,7 +10189,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "96139",
+      "f": "313434",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -10900,10 +10900,10 @@
     {
       "i": "481946",
       "t": "307836_HU007_CC1_Ajuste en la Notificación de No Vinculados al área de afiliaciones",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "307836",
       "ep": "83437",
       "r": "Carlos Andres Romero Benitez"
@@ -11010,10 +11010,10 @@
     {
       "i": "485601",
       "t": "485086_HU001_Recepcion_SFTP_Otras_Administradoras",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "485086",
       "ep": "83437",
       "r": "Maralis Villadiego Gasabon"
@@ -11021,10 +11021,10 @@
     {
       "i": "485603",
       "t": "485086_HU002_Cargue_Automatico_Semanal",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "485086",
       "ep": "83437",
       "r": "Maralis Villadiego Gasabon"
@@ -11384,13 +11384,13 @@
     {
       "i": "490055",
       "t": "307833_HU_013_Actualizar_Anexo_Cotizantes_Nombre_y_Formatos",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "307833",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "490056",
@@ -11406,13 +11406,13 @@
     {
       "i": "490057",
       "t": "307833_HU_015_Actualizar_Fuentes_del_Correo_del_Aportante",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "307833",
       "ep": "83437",
-      "r": "Maralis Villadiego Gasabon"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "490058",
@@ -12004,7 +12004,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "96139",
+      "f": "313434",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
     },
@@ -12429,10 +12429,10 @@
     {
       "i": "510118",
       "t": "100219_HU120_Seleccionar_los_aportes_E1_y_filtrar_por_tipo_de_planilla",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nestor Camilo Camacho García"
@@ -12440,10 +12440,10 @@
     {
       "i": "510129",
       "t": "100219_HU121_Validar_el estado_del_aportante_ante_el_SAT",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nestor Camilo Camacho García"
@@ -12451,10 +12451,10 @@
     {
       "i": "510136",
       "t": "100219_HU122_Diligenciar_el_formulario_y_crear_la_afiliación_del_empleador",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nestor Camilo Camacho García"
@@ -12473,10 +12473,10 @@
     {
       "i": "510144",
       "t": "100219_HU124_Crear_las_relaciones_laborales_y_aplicar_la_novedad_de_retiro",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nestor Camilo Camacho García"
@@ -12484,10 +12484,10 @@
     {
       "i": "510145",
       "t": "100219_HU125_Marcar_la_normalización_notificar_al_empleador_y_cerrar_el_aporte",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nestor Camilo Camacho García"
@@ -12627,10 +12627,10 @@
     {
       "i": "510319",
       "t": "100219_HU129_Creación del contratante como empleador 723 con consulta del representante legal en Confecámaras",
-      "e": "6. Desarrollo Backend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
       "r": "Paola Peña"
@@ -12649,10 +12649,10 @@
     {
       "i": "510349",
       "t": "100219_HU131_Creación de la póliza de contratante y envío a SIARP",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
       "r": "Paola Peña"
@@ -12660,10 +12660,10 @@
     {
       "i": "510354",
       "t": "100219_HU132_Creación de la relación laboral y del contrato del trabajador independiente",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "100219",
       "ep": "83469",
       "r": "Paola Peña"
@@ -13077,7 +13077,7 @@
     },
     {
       "i": "519970",
-      "t": "307852_Parte2_HU31_F4_Ajustar_Consulta_De_Notificaciones_Fisicas",
+      "t": "307852_Parte2_08_HU31_F4_Ajustar_Consulta_De_Notificaciones_Fisicas",
       "e": "6. Desarrollo Backend",
       "p": "DESARROLLO",
       "a": 1,
@@ -13088,7 +13088,7 @@
     },
     {
       "i": "519971",
-      "t": "307852_Parte2_HU32_F4_Mostrar_Marcas_CM-NF_Y_VD_En_Las_Consultas",
+      "t": "307852_Parte2_06_HU32_F4_Mostrar_Marcas_CM-NF_Y_VD_En_Las_Consultas",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13099,7 +13099,7 @@
     },
     {
       "i": "519972",
-      "t": "307852_Parte2_HU33_F6_Confirmar_Generacion_Masiva_De_Notificaciones_Fisicas",
+      "t": "307852_Parte2_11_HU33_F6_Confirmar_Generacion_Masiva_Y_Ordenar_Por_Consecutivo_En_Notificaciones_Fisicas",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13110,18 +13110,18 @@
     },
     {
       "i": "519973",
-      "t": "307852_Parte2_HU34a_B1a_Validar_Correo_Y_Asignar_Marca_VD_Al_Generar_CM",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "t": "307852_Parte2_01_HU34a_B1a_Validar_Correo_Y_Asignar_Marca_VD_Al_Generar_CM",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "307852",
       "ep": "83437",
       "r": "Emmanuel Camacho Orozco"
     },
     {
       "i": "519974",
-      "t": "307852_Parte2_HU35_B3_Generar_Comunicacion_Fisica_Individual",
+      "t": "307852_Parte2_04_HU35_B3_Generar_Comunicacion_Fisica_Individual",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13132,7 +13132,7 @@
     },
     {
       "i": "519975",
-      "t": "307852_Parte2_HU36_B2_Procesar_Respuesta_Georreferenciacion_Con_Marca_CM-NF",
+      "t": "307852_Parte2_03_HU36_B2_Procesar_Respuesta_Georreferenciacion_Con_Marca_CM-NF",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13143,7 +13143,7 @@
     },
     {
       "i": "519976",
-      "t": "307852_Parte2_HU37_B6_Conservar_Comunicaciones_Tres_Periodos_Y_Depurar_Vencidas",
+      "t": "307852_Parte2_10_HU37_B6_Conservar_Comunicaciones_Tres_Periodos_Y_Depurar_Vencidas",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13154,7 +13154,7 @@
     },
     {
       "i": "519977",
-      "t": "307852_Parte2_HU38_B5_Generar_Comunicaciones_Masivas_Con_Entrega_Del_ZIP",
+      "t": "307852_Parte2_09_HU38_B5_Generar_Comunicaciones_Masivas_Con_Entrega_Del_ZIP",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13165,7 +13165,7 @@
     },
     {
       "i": "519978",
-      "t": "307852_Parte2_HU39_B3_Desmarcar_A_LC_Aportantes_En_CM-NF",
+      "t": "307852_Parte2_05_HU39_B3_Desmarcar_A_LC_Aportantes_En_CM-NF",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13176,7 +13176,7 @@
     },
     {
       "i": "519979",
-      "t": "307852_Parte2_HU40_F4_Ajustar_Reporte_De_Envios_CM_Con_Marca_CM-NF",
+      "t": "307852_Parte2_07_HU40_F4_Ajustar_Reporte_De_Envios_CM_Con_Marca_CM-NF",
       "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -13364,21 +13364,21 @@
     {
       "i": "524738",
       "t": "485086_HU010_Consultar_Cargues_Otras_Administradoras",
-      "e": "6. Desarrollo Backend",
+      "e": "6.2 Desarrollo Frontend",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.36,
       "f": "485086",
       "ep": "83437",
-      "r": "Lina María Ramirez Martinez"
+      "r": "Jose Luis Monasterio Yeguez"
     },
     {
       "i": "524741",
       "t": "485086_HU011_Identificar_Poliza_Sucursal_Registros_Conciliados",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "485086",
       "ep": "83437",
       "r": "Lina María Ramirez Martinez"
@@ -13463,10 +13463,10 @@
     {
       "i": "524775",
       "t": "485086_HU018_Consultar_Reporte_Correos_Masivos_Otras_Administradoras",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.36,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
       "r": "Fayber Yesid Sanabria Rey"
@@ -13726,11 +13726,11 @@
     },
     {
       "i": "534594",
-      "t": "307852_Parte2_HU34b_B1b_Procesar_Codigos_MARCA_Y_Generar_Archivo_De_Georreferenciacion",
-      "e": "6. Desarrollo Backend",
+      "t": "307852_Parte2_02_HU34b_B1b_Procesar_Codigos_MARCA_Y_Generar_Archivo_De_Georreferenciacion",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "307852",
       "ep": "83437",
       "r": "Juan Felipe Zea Sanchez"
@@ -13892,21 +13892,21 @@
     {
       "i": "545754",
       "t": "98035_HU005_Consulta General: búsqueda por número de documento y resultados por tipo de afilaicion",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "98035",
       "ep": "83469",
-      "r": "César Alejandro Garcia Tous"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "545755",
       "t": "98035_HU006_Consulta General: Consulta Empleador (datos básicos, pólizas, actividad económica, sedes, anexos y liquidación)",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "98035",
       "ep": "83469",
       "r": "César Alejandro Garcia Tous"
@@ -13914,10 +13914,10 @@
     {
       "i": "545763",
       "t": "98035_HU007_Consulta General: Consulta Trabajador (datos básicos, afiliaciones, relaciones laborales y contratos, histórico de novedades y liquidación",
-      "e": "6. Desarrollo Backend",
+      "e": "6.1 Backlog Frontend",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.33,
       "f": "98035",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -13925,10 +13925,10 @@
     {
       "i": "545764",
       "t": "98035_HU008_Consulta General: novedades del empleador y del trabajador (listado, filtros y detalle)",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "98035",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -14266,10 +14266,10 @@
     {
       "i": "551616",
       "t": "HU_PR016_QA_Marco de automatización de pruebas Balú (regresión y ejecución por entrega)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6.2 Desarrollo Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.36,
       "f": "417189",
       "ep": "417182",
       "r": "Andres Javier Sanchez Barrera"
@@ -14299,10 +14299,10 @@
     {
       "i": "552594",
       "t": "84186_HU0011_Mostrar mensaje emergente de actualización del contratante",
-      "e": "2. Elaboración HU",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "84186",
       "ep": "83469",
       "r": "Yiced Baracaldo"
@@ -14310,10 +14310,10 @@
     {
       "i": "556282",
       "t": "84186_HU0012_Consultar los datos del contratante del contrato",
-      "e": "2. Elaboración HU",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "84186",
       "ep": "83469",
       "r": "Yiced Baracaldo"
@@ -14321,10 +14321,10 @@
     {
       "i": "556286",
       "t": "84186_HU0013_Registrar los datos del firmante del contrato por parte del contratante",
-      "e": "2. Elaboración HU",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "84186",
       "ep": "83469",
       "r": "Yiced Baracaldo"
@@ -14332,10 +14332,10 @@
     {
       "i": "556290",
       "t": "84186_HU0014_Registrar los datos del firmante del contrato por parte del contratante",
-      "e": "2. Elaboración HU",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "84186",
       "ep": "83469",
       "r": "Yiced Baracaldo"
@@ -14343,25 +14343,124 @@
     {
       "i": "556296",
       "t": "84186_HU0015_Transmitir a SIARP la actualización y anular la relación laboral con los NIT especiales",
-      "e": "2. Elaboración HU",
+      "e": "4. Refinamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.12,
+      "v": 0.17,
       "f": "84186",
       "ep": "83469",
       "r": "Yiced Baracaldo"
+    },
+    {
+      "i": "558603",
+      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 61",
+      "e": "6. Desarrollo Backend",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "417232",
+      "ep": "83503",
+      "r": "Carlos Andres Diaz De Felipe"
+    },
+    {
+      "i": "559890",
+      "t": "313436_HU001 Acceso, selección y descarga de plantilla para afiliación masiva de recicladores de oficio",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "559900",
+      "t": "313436_HU002 Cargue y validación estructural del archivo Excel para afiliación masiva de recicladores de oficio",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "559907",
+      "t": "313436_HU003 Procesamiento y validación campo a campo de los registros",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "559912",
+      "t": "313436_HU004 Procesamiento de registros exitosos y asignación de póliza",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "559914",
+      "t": "313436_HU005 Resultados del cargue masivo y descarga del archivo procesado",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "559916",
+      "t": "313436_HU006 Generación y envío de certificados de afiliación",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "313436",
+      "ep": "83469",
+      "r": "Luis Rosemberg Zambrano Guerrero"
+    },
+    {
+      "i": "560296",
+      "t": "96139_HU_21_CC1_Descargar_certificados_individual_masivo_empleador_trabajador",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "96139",
+      "ep": "83469",
+      "r": "Paula Gomez Cantor"
+    },
+    {
+      "i": "560303",
+      "t": "100219_HU_101_CC1_Descargar_certificados_individual_masivo_empleador y trabajador_por_funcionario",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "100219",
+      "ep": "83469",
+      "r": "Paula Gomez Cantor"
     }
   ],
   "kpi": {
-    "n_hu": 1233,
-    "n_hu_activas": 1053,
+    "n_hu": 1242,
+    "n_hu_activas": 1062,
     "hu_sin_feature": 8,
     "n_feature": 68,
     "n_epic": 4,
     "n_feature_con_hu": 67,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.8281,
+    "pct_global": 0.8259,
     "term_global": 636,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -14370,7 +14469,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.4875,
+    "tactico": 0.4821,
     "estrategico": 0.2143,
     "n": 56,
     "d": 12,
@@ -14381,8 +14480,8 @@
     "buckets": {
       "100": 12,
       "75": 0,
-      "50": 27,
-      "20": 9,
+      "50": 26,
+      "20": 10,
       "0": 8
     }
   }
