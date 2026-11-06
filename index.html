@@ -3221,13 +3221,13 @@ function fncBarra(v) {
 
 const FNC_COLS = [
   { t: "Frente → Funcionalidad → HU", w: null, ay: "El árbol tal como cuelga en Azure: Frente (Epic) → Funcionalidad (Feature) → HU. Clic en una fila para desplegar el nivel de abajo." },
-  { t: "Estado", w: "168px", ay: "Estado de la funcionalidad en Azure. En las filas de HU, la ETAPA en que está la HU." },
+  { t: "Estado / Etapa", w: "168px", ay: "En las filas de HU, la ETAPA en que está la HU en Azure DevOps." },
   { t: "Responsable", w: "172px", ay: "Solo en las filas de HU: a quién está asignada." },
   { t: "Func.", w: "58px", n: 1, ay: "Cuántas funcionalidades tiene el frente con HU." },
   { t: "HU", w: "52px", n: 1, ay: "HU activas que componen la fila." },
   { t: "En prod.", w: "76px", n: 1, ay: "De esas HU, cuántas están EN PRODUCCIÓN." },
-  { t: "Avance", w: "110px", ay: "Avance ponderado por etapa." },
-  { t: "%", w: "64px", n: 1, ay: "El mismo avance ponderado en porcentaje." },
+  { t: "Avance", w: "110px", ay: "Avance de entrega." },
+  { t: "%", w: "64px", n: 1, ay: "Porcentaje de avance." },
 ];
 
 const fncTd = (c, html, extra) =>
@@ -3279,10 +3279,7 @@ function fncBody(C) {
       return `<tr style="cursor:pointer" onclick="fncToggleHu('${f.i}')">
         ${fncTd(0, `<span style="padding-left:26px">${verHu ? "▾" : "▸"} ${esc(f.t)}</span>`,
     ` title="${esc(f.t)}"`)}
-        ${fncTd(1, `<span style="color:var(--muted)">${esc(f.e)}</span>${desfase
-      ? ` <span class="hint" style="color:#f59e0b">· al 100% sin cerrar</span>` : ""}${removida
-        ? ` <span class="hint" style="color:#fb7185">· removida con HU vivas</span>` : ""}`,
-    ` title="${esc(f.e)}"`)}
+        ${fncTd(1, "")}
         ${fncTd(2, "")}
         ${fncTd(3, "")}
         ${fncTd(4, f.n)}
@@ -3433,7 +3430,7 @@ function funcCard(cod) {
       </button>
     </div>
     ${subSelector}
-    <div class="hint">Cada <b>frente (Épica)</b> con sus <b>funcionalidades (Features)</b> y las <b>HU que las componen</b> · corte ${M.corte || "01-Oct-2026"} · avance <b>ponderado por etapa${esV2_419 ? " (precedencia Etapa acordada)" : ""}</b>. Clic en cualquier fila para desplegar.</div>
+    <div class="hint">Cada <b>frente (Épica)</b> con sus <b>funcionalidades (Features)</b> y las <b>HU que las componen</b> · corte ${M.corte || "01-Oct-2026"}. Clic en cualquier fila para desplegar.</div>
 
     ${cmi ? `
     <div style="margin:14px 0 10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
@@ -3492,7 +3489,6 @@ function funcCard(cod) {
     <div class="fstrip">
       ${stat(k.n_epic, "Frentes", "var(--ink)")}
       ${stat(k.n_feature_con_hu, "Funcionalidades", "var(--ink)")}
-      ${stat(fncPct(k.pct_global), "Avance ponderado", "#a855f7")}
       ${stat(k.term_global, "HU en producción", "#10b981")}
       ${stat(k.feature_100_sin_cerrar, "Al 100% sin cerrar", k.feature_100_sin_cerrar ? "#f59e0b" : "#10b981")}
     </div>
