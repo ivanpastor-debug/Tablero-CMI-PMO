@@ -2107,7 +2107,7 @@ function renderCrono453Collapsible(){
               <td class="col-date" style="text-align:center">27/11/2026</td>
               <td class="col-date" style="text-align:center;color:var(--crit);font-weight:700">30/10/2026</td>
               <td class="col-pct" style="text-align:center;font-weight:700;color:#b45309">10,73%</td>
-              <td class="col-pct" style="text-align:center;font-weight:700;color:#b45309">1,61%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">1,61%</td>
               <td class="col-st" style="text-align:center"><span class="st crit">Vencido (+7 d)</span></td>
             </tr>
             <tr>
@@ -2127,7 +2127,7 @@ function renderCrono453Collapsible(){
               <td class="col-date" style="text-align:center"><b>30/12/2026</b></td>
               <td class="col-date" style="text-align:center"><b>30/12/2026</b></td>
               <td class="col-pct" style="text-align:center;font-weight:800;color:var(--ink)"><b>—</b></td>
-              <td class="col-pct" style="text-align:center;font-weight:800;color:var(--ink)"><b>39,81%</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>39,81%</b></td>
               <td class="col-st" style="text-align:center"><span class="st warn"><b>Éxito: 39,81%</b></span></td>
             </tr>
           </tbody>
@@ -3898,6 +3898,527 @@ function funcCard(cod) {
 
   const esV2_419 = (cod === "419" || cod === "419-DEP" || cod === "419-RAMA");
 
+  return `<div class="card fade" style="margin-top:18px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <h3 style="margin:0;font-size:16px;font-weight:700">🗂 Funcionalidades por frente · qué HU componen cada una</h3>
+        ${esV2_419 ? `<span class="tag" style="background:var(--good);color:#fff;font-weight:700">Modelo V2 (Etapa + Estado)</span>` : ""}
+      </div>
+      <button class="linkbtn" style="border:1px solid var(--line);background:var(--surface-2);color:var(--ink);padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer" onclick="fncCsv('${cod}')">
+        📥 Descargar CSV completo
+      </button>
+    </div>
+    ${subSelector}
+    <div class="hint">Cada <b>frente (Épica)</b> con sus <b>funcionalidades (Features)</b> y las <b>HU que las componen</b> · corte ${M.corte || "01-Oct-2026"}. Clic en cualquier fila para desplegar.</div>
+
+    <div class="section panel" style="margin:14px 0 12px;border-radius:12px;border:1px solid var(--line);padding:14px 16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px">
+        <div>
+          <h3 style="margin:0;font-size:13px;font-weight:700;color:var(--ink)">⏱️ Desviación y Cumplimiento del Cronograma por Foco Contractual</h3>
+          <p class="hint" style="margin:2px 0 0">Ponderación del Indicador de Éxito basada en el peso asignado en cronograma y el % de avance CU (45 CUs medibles).</p>
+        </div>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Éxito Ponderado: 39,81%</span>
+      </div>
+      <div class="tbl-wrap">
+        <table class="xl tbl-estatus-456" style="margin:0">
+          <thead>
+            <tr>
+              <th class="col-ent">Foco / Entregable Contractual</th>
+              <th class="col-peso">Peso</th>
+              <th class="col-date">Inicio</th>
+              <th class="col-date">Cierre Planeado</th>
+              <th class="col-date">Cierre Reprogramado</th>
+              <th class="col-pct">% Avance CU</th>
+              <th class="col-pct">Aporte Éxito</th>
+              <th class="col-st">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-ent"><b>Foco A</b> · Agentes de monitoreo (40 CUs medibles · 29 entregados)</td>
+              <td class="col-peso">40%</td>
+              <td class="col-date">25/02/2026</td>
+              <td class="col-date">30/07/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">24/10/2026</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">82,38%</td>
+              <td class="col-pct" style="font-weight:700;color:var(--good)">32,95%</td>
+              <td class="col-st"><span class="st crit">Vencido (+87 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco B</b> · Gestión analítica (1 CU medible · 0 entregados)</td>
+              <td class="col-peso">30%</td>
+              <td class="col-date">01/07/2026</td>
+              <td class="col-date">15/10/2026</td>
+              <td class="col-date" style="color:#b45309;font-weight:700">25/12/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">17,50%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">5,25%</td>
+              <td class="col-st"><span class="st warn">En curso (+71 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco C</b> · Encuestas (31 CUs medibles · 0 entregados)</td>
+              <td class="col-peso">15%</td>
+              <td class="col-date">16/09/2026</td>
+              <td class="col-date">27/11/2026</td>
+              <td class="col-date" style="color:var(--crit);font-weight:700">30/10/2026</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">10,73%</td>
+              <td class="col-pct" style="font-weight:700;color:#b45309">1,61%</td>
+              <td class="col-st"><span class="st crit">Vencido (+7 d)</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent"><b>Foco D</b> · Planes e indicadores (Comprometido fin de año)</td>
+              <td class="col-peso">15%</td>
+              <td class="col-date">30/10/2026</td>
+              <td class="col-date">30/12/2026</td>
+              <td class="col-date">30/12/2026</td>
+              <td class="col-pct">0,00%</td>
+              <td class="col-pct">0,00%</td>
+              <td class="col-st"><span class="st">Sin iniciar</span></td>
+            </tr>
+            <tr class="tot" style="background:var(--surface-2);border-top:2px solid var(--line)">
+              <td class="col-ent"><b>Total Proyecto 453 (Ponderación Éxito Cronograma × % Avance CU)</b></td>
+              <td class="col-peso"><b>100%</b></td>
+              <td class="col-date"><b>25/02/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-date"><b>30/12/2026</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>—</b></td>
+              <td class="col-pct" style="font-weight:800;color:var(--ink)"><b>39,81%</b></td>
+              <td class="col-st"><span class="st warn"><b>Éxito: 39,81%</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    ${cmi ? `
+    <div style="margin:14px 0 10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:15px">🎯</span>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":cod==="456"?"Supervisión Contractual (6 Hitos) + Captura Azure DevOps":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
+            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">${cod==="419"?"Archivo Local PMO":cod==="456"?"Contractual + Azure DevOps":"Azure DevOps en vivo"}</span>
+          </div>
+          <p class="hint" style="margin:3px 0 0 24px">
+            ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (80 certificados) con desglose en Azure de <b>${cmi.feat_total||194} funcionalidades</b>`:cod==="456"?`Medición contractual sobre <b>6 entregables</b> (1 al 100%, 1 al 50%) con captura en vivo de <b>${cmi.epic_total||1} épica</b>, <b>${cmi.feat_total||4} funcionalidades</b> y <b>${cmi.hu_total||16} HU</b> en Azure DevOps`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b>`}
+          </p>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
+          <div style="text-align:right">
+            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Táctico</span>
+            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.tactico,.7,.4)})">${pct(cmi.tactico)}</div>
+            <span class="hint" style="font-size:10px">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?"% avance épicas / frentes":"% avance funcionalidad"}</span>
+          </div>
+          <div style="width:1px;height:28px;background:var(--line)"></div>
+          <div style="text-align:left">
+            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Estratégico</span>
+            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.estrategico,.7,.3)})">${pct(cmi.estrategico)}</div>
+            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> ${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?"épicas al 100%":cod==="419"?"entregadas (100%)":"al 100%"}</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Distribución de las ${cmi.n} ${cmi.u}:`:cod==="419"?"Distribución archivo local (466):":"Distribución en Escala:"}</span>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;flex:1">
+          <div style="background:color-mix(in srgb,var(--good) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--good) 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
+            <b style="color:var(--good)">100% ✓</b> ${cod==="419"?"Certificadas":"En prod"}: <b>${cmi.buckets["100"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["100"]/cmi.n)})</small>
+          </div>
+          <div style="background:color-mix(in srgb,#38bdf8 12%,var(--surface));border:1px solid color-mix(in srgb,#38bdf8 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
+            <b style="color:#0284c7">75%</b> En UAT: <b>${cmi.buckets["75"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["75"]/cmi.n)})</small>
+          </div>
+          <div style="background:color-mix(in srgb,var(--warn) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
+            <b style="color:var(--warn)">50%</b> &gt;80%: <b>${cmi.buckets["50"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["50"]/cmi.n)})</small>
+          </div>
+          <div style="background:color-mix(in srgb,var(--warn) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 20%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
+            <b style="color:var(--warn)">20%</b> 50–80%: <b>${cmi.buckets["20"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["20"]/cmi.n)})</small>
+          </div>
+          <div style="background:color-mix(in srgb,var(--crit) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--crit) 25%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
+            <b style="color:var(--crit)">0%</b> &lt;50%: <b>${cmi.buckets["0"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["0"]/cmi.n)})</small>
+          </div>
+        </div>
+      </div>
+      ${cod==="397"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)">
+        <b>Aclaración Metodológica PMO:</b> Para el proyecto <b>397 - PROYECTO CORE ANDINA</b>, el CMI se gobierna a nivel de <b>57 Épicas / Frentes contractuales</b>, con seguimiento interno complementario a sus <b>233 funcionalidades</b> en Azure DevOps.
+      </div>`:cod==="456"?`<div style="margin-top:8px;padding:6px 10px;background:var(--surface-2);border-radius:6px;font-size:11px;color:var(--ink-2)"><b>Aclaración Metodológica PMO:</b> Para el proyecto <b>456 - PROYECTO INNOVACION AEREONAUTICA CIVIL</b>, los indicadores táctico (24,00%) y estratégico (16,67%) miden los <b>6 entregables contractuales</b> en 3 fases, integrando en esta sección la captura directa en vivo desde Azure DevOps del MVP (<b>${cmi.epic_total||1} épica · ${cmi.feat_total||4} funcionalidades · ${cmi.hu_total||16} HU</b>).</div>`:""}
+    </div>` : ""}
+
+    <div class="fstrip">
+      ${stat(k.n_epic, "Frentes", "var(--ink)")}
+      ${stat(k.n_feature_con_hu, "Funcionalidades", "var(--ink)")}
+      ${stat(k.term_global, "HU en producción", "#10b981")}
+      ${stat(k.feature_100_sin_cerrar, "Al 100% sin cerrar", k.feature_100_sin_cerrar ? "#f59e0b" : "#10b981")}
+    </div>
+    <div id="fncBody" style="margin-top:14px;overflow-x:auto">${C ? fncBody(C) : `<div class="hint" style="text-align:center;padding:20px">Cargando el detalle de ${esc(cod)}...</div>`}</div>
+    <div class="hint" style="margin-top:12px;padding:8px 12px;background:var(--surface-2);border-radius:8px;border:1px solid var(--line)">
+      ${k.feature_100_sin_cerrar ? `<b>${k.feature_100_sin_cerrar}</b> funcionalidades tienen todas sus HU en producción pero <b>no figuran cerradas</b> en Azure. ` : ""}
+      ${k.feature_removido_con_hu ? `· <b>${k.feature_removido_con_hu}</b> están removidas y sostienen HU vivas. ` : ""}
+      ${k.hu_sin_feature ? `· <b>${k.hu_sin_feature}</b> HU activas no cuelgan de ninguna funcionalidad. ` : ""}
+      ${k.feature_sin_frente ? `· <b>${k.feature_sin_frente}</b> funcionalidades (<b>${k.hu_sin_frente}</b> HU) no cuelgan de ningún frente. ` : ""}
+      ${k.hu_omitidas ? `· <b>${k.hu_omitidas}</b> HU quedan fuera de la medición por homologación.` : ""}
+    </div>
+  </div>`;
+}
+
+/* ==========================================================================
+   453 · CPE (MONITOREO CPE)
+   ========================================================================== */
+let CPE_MODO = "eje";
+let CPE_IT = null;
+let CPE_FOC = new Set();
+let CPE_CU = new Set();
+let CPE_FOCO = "__all__";
+
+const CPE_SEM = {
+  cumplido: ["#10b981", "Cumplido"],
+  en_curso: ["#38bdf8", "En curso"],
+  vencido: ["#ef4444", "Vencido"],
+  sin_iniciar: ["#a855f7", "Aún no inicia"],
+  sin_hito: ["#5d6678", "Sin hito cargado"],
+};
+
+function cpePct(v, n_pct, n) {
+  if (v == null) return '<span class="muted">—</span>';
+  const p = Math.round(v * 100);
+  const parcial = (n_pct != null && n != null && n_pct < n)
+    ? ` <span class="muted" title="el promedio sale de ${n_pct} de ${n} HU">(${n_pct}/${n})</span>` : "";
+  return `<b>${p}%</b>${parcial}`;
+}
+
+function _cpeItDe(h, cuIdx) {
+  if (CPE_MODO === "eje") return h.it;
+  const c = h.cu ? cuIdx[h.cu] : null;
+  return c ? c.it : "__sin__";
+}
+
+function _cpeUniverso(C) {
+  return C.hus.filter(h => h.a && (CPE_FOCO === "__all__" || h.f === CPE_FOCO));
+}
+
+const CPE_SIN_FOCO = "__sin_foco__";
+
+function _cpeRamas(C, universo) {
+  const porFoco = {};
+  const dondeCu = {};
+  (C.focos || []).forEach(f => {
+    porFoco[f.k] = { hus: [], cus: new Set() };
+  });
+  universo.forEach(h => {
+    const k = h.f || CPE_SIN_FOCO;
+    (porFoco[k] = porFoco[k] || { hus: [], cus: new Set() }).hus.push(h);
+    if (h.cu) {
+      porFoco[k].cus.add(h.cu);
+      (dondeCu[h.cu] = dondeCu[h.cu] || new Set()).add(k);
+    }
+  });
+  if (CPE_FOCO === "__all__") {
+    C.cus.forEach(c => {
+      if (!dondeCu[c.i]) {
+        const targetFoco = c.fp || (c.fs && c.fs.length ? c.fs[0] : null);
+        if (targetFoco && porFoco[targetFoco]) {
+          porFoco[targetFoco].cus.add(c.i);
+        } else {
+          (porFoco[CPE_SIN_FOCO] = porFoco[CPE_SIN_FOCO] || { hus: [], cus: new Set() }).cus.add(c.i);
+        }
+      }
+    });
+  }
+  return porFoco;
+}
+
+function _cpeOrdenFocos(C, porFoco) {
+  const dec = (C.focos || []).map(f => f.k);
+  const otros = Object.keys(porFoco).filter(k => k !== CPE_SIN_FOCO && !dec.includes(k)).sort();
+  const conSin = porFoco[CPE_SIN_FOCO] && porFoco[CPE_SIN_FOCO].cus.size > 0 ? [CPE_SIN_FOCO] : [];
+  return dec.concat(otros).concat(conSin);
+}
+
+const _cpeNomFoco = (C, k) => k === CPE_SIN_FOCO ? "(sin foco)"
+  : "Foco " + k + (((C.focos || []).find(f => f.k === k) || {}).n ? " · " + (C.focos.find(f => f.k === k).n) : "");
+
+function _cpeCuAgg(c, universo) {
+  const g = universo.filter(h => h.cu === c.i);
+  const vs = g.filter(h => h.v != null).map(h => h.v);
+  return {
+    n: g.length,
+    term: g.filter(h => h.p === "EN PRODUCCIÓN").length,
+    pct: vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : null,
+    n_pct: vs.length,
+  };
+}
+
+function cpeAvisoFoco(C) {
+  if (CPE_FOCO !== "__all__") return "";
+  const porCu = {};
+  _cpeUniverso(C).forEach(h => {
+    if (h.cu && h.f) (porCu[h.cu] = porCu[h.cu] || new Set()).add(h.f);
+  });
+  const idx = {};
+  (C.cus || []).forEach(c => { idx[c.i] = c; });
+  const multi = Object.keys(porCu).filter(i => porCu[i].size > 1);
+  if (!multi.length) return "";
+  const noms = multi.map(i => esc((idx[i] || {}).t || i)).join(", ");
+  return `<div class="hint" style="margin-top:10px">${multi.length === 1
+    ? `El caso de uso <b>${noms}</b> tiene HU de <b>varios focos</b>, así que aparece`
+    : `<b>${multi.length}</b> casos de uso (${noms}) tienen HU de <b>varios focos</b>, así que aparecen`}
+    <b>en cada rama</b>, con sus números partidos. La suma de las ramas es su total.</div>`;
+}
+
+function cpeColorEi(ei) {
+  if (!ei) return "#5d6678";
+  if (ei.startsWith("19")) return "#10b981";
+  if (ei.startsWith("18") || ei.startsWith("15")) return "#38bdf8";
+  if (ei.startsWith("17")) return "#8b5cf6";
+  if (ei.startsWith("10")) return "#a855f7";
+  if (ei.startsWith("08") || ei.startsWith("13") || ei.startsWith("09")) return "#f59e0b";
+  return "#64748b";
+}
+
+function cpeChipsFoco(C) {
+  const K = C.kpi;
+  const hAct = K.focos_activas || {}, hTod = K.focos_todas || {};
+  const cAct = K.cus_activas || {}, cTod = K.cus_todas || {};
+  const claves = Object.keys(hTod);
+  if (claves.length < 2) return "";
+  const nHu = Object.values(hAct).reduce((a, b) => a + b, 0);
+  const nCu = new Set(C.hus.filter(h => h.a && h.f && h.cu).map(h => h.cu)).size;
+  const FO = {};
+  (C.focos || []).forEach(f => { FO[f.k] = f; });
+  const chip = (k, l, cu, hu, tit, extra) => `<span class="rchip" title="${tit || ""}"
+    style="cursor:pointer;${CPE_FOCO === k ? "outline:2px solid var(--accent);background:var(--surface-3);color:var(--ink)" : ""}"
+    onclick="cpeFoco(${_qa(k)})">${l} <b>${cu}</b> CU · <b>${hu}</b> HU${extra || ""}</span>`;
+  const chips = claves.map(k => {
+    const f = FO[k];
+    const [col, lbl] = CPE_SEM[(f && f.sem) || "sin_hito"] || CPE_SEM.sin_hito;
+    const planTxt = (f && f.hito && f.hito.fecha_plan && f.hito.fecha_plan !== f.hito.fecha) ? ` (base ${f.hito.fecha_plan})` : "";
+    const fecha = f && f.hito && (f.hito.fecha || f.hito.inicio)
+      ? ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.fecha_plan ? ' · Base: ' + f.hito.fecha_plan : ''}${f.hito.inicio
+        ? " · desde " + f.hito.inicio : ""}${f.hito.nota ? " · " + esc(f.hito.nota) : ""}">📅 ${
+        f.hito.inicio ? f.hito.inicio + " → " : ""}${f.hito.fecha || "?"}${planTxt}</span>` : "";
+    const pctBadge = f && f.pct_cu != null
+      ? ` <span class="abadge" style="background:#0284c7" title="Avance promedio por Estado Interno de CU">${Math.round(f.pct_cu * 100)}% CU</span>` : "";
+    return chip(k, "Foco " + k + (f && f.n ? " · " + esc(f.n) : ""), cAct[k] || 0, hAct[k] || 0,
+      `en total, contando fuera de medición: ${cTod[k] || 0} CU y ${hTod[k] || 0} HU`
+      + (f && f.pct_cu != null ? ` · Avance CU: ${Math.round(f.pct_cu * 100)}%` : "")
+      + (f && f.hito ? ` · comprometido para ${f.hito.fecha} (${lbl})` : ""), fecha + pctBadge);
+  }).join("");
+  const huerfanos = (C.focos || []).filter(f => f.hito && !claves.includes(f.k));
+  const chipsHuerfanos = huerfanos.map(f => {
+    const [col, lbl] = CPE_SEM[f.sem] || CPE_SEM.sin_hito;
+    const planTxt = (f.hito && f.hito.fecha_plan && f.hito.fecha_plan !== f.hito.fecha) ? ` (base ${f.hito.fecha_plan})` : "";
+    const badge = ` <span class="abadge" style="background:${col}" title="${esc(lbl)}${f.hito.nota
+      ? " · " + esc(f.hito.nota) : ""}">📅 ${f.hito.inicio ? f.hito.inicio + " → " : ""}${
+      f.hito.fecha || "?"}${planTxt}</span>`;
+    return chip(f.k, "Foco " + f.k + (f.n ? " · " + esc(f.n) : ""), 0, 0,
+      `comprometido para ${f.hito.fecha || "?"} (${lbl}) · sin HU activas`, badge);
+  }).join("");
+
+  const hintFechas = C.focos_epoca
+    ? `<div class="hint" style="margin:4px 0 0 2px">Fechas comprometidas por foco según <b>${esc(C.focos_epoca)}</b> (Línea Base vs Reprogramada) · Hitos de entrega de iteraciones según <b>${esc(C.hitos_epoca || 'HITOS_453')}</b>.</div>`
+    : "";
+
+  return `<div class="rchips" style="margin:8px 0 0">
+    ${chip("__all__", "Todos los focos", nCu, nHu, "casos de uso con al menos una HU con foco")}
+    ${chips}${chipsHuerfanos}
+  </div>${hintFechas}`;
+}
+
+function cpeBodyHtml(C) {
+  const cuIdx = {};
+  C.cus.forEach(c => { cuIdx[c.i] = c; });
+  const universo = _cpeUniverso(C);
+  const porFoco = _cpeRamas(C, universo);
+  const orden = _cpeOrdenFocos(C, porFoco);
+  const filas = !orden.length
+    ? `<tr><td colspan="6" class="hint">Sin HU en la medición para el foco elegido.</td></tr>`
+    : orden.map(k => {
+    const R = porFoco[k];
+    const F = (C.focos || []).find(f => f.k === k);
+    const vs = R.hus.filter(h => h.v != null).map(h => h.v);
+    const pct = vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : null;
+    const cusEnFoco = [...R.cus].map(id => cuIdx[id]).filter(Boolean);
+    const vsCu = cusEnFoco.filter(c => c.pct_cu != null).map(c => c.pct_cu);
+    const pctCu = vsCu.length ? vsCu.reduce((a, b) => a + b, 0) / vsCu.length : null;
+
+    const [col, lbl] = CPE_SEM[(F && F.sem) || "sin_hito"] || CPE_SEM.sin_hito;
+    let hito = "";
+    if (F && F.hito) {
+      const planTxt = (F.hito.fecha_plan && F.hito.fecha_plan !== F.hito.fecha) ? `<br><small class="muted" style="font-size:11px">Base: ${F.hito.fecha_plan}</small>` : "";
+      const rangoTxt = F.hito.inicio ? `${F.hito.inicio} → ` : "";
+      hito = `<span class="abadge" style="background:${col}" title="${esc(lbl)}${F.hito.nota ? ' · ' + esc(F.hito.nota) : ''}">📅 ${rangoTxt}${F.hito.fecha}</span>${planTxt}`;
+    } else {
+      hito = `<span class="muted">${k === CPE_SIN_FOCO ? "no aplica" : lbl}</span>`;
+    }
+    const abierto = CPE_FOC.has(k);
+    const nota = k === CPE_SIN_FOCO
+      ? ` <span class="hint">· casos de uso sin ninguna HU: no hay foco que heredar</span>` : "";
+    return `<tr class="rclk fnce" onclick="cpeSelFoco(${_qa(k)})">
+        <td><span class="corner">${abierto ? "▾" : "▸"}</span> <b>${esc(_cpeNomFoco(C, k))}</b>${nota}</td>
+        <td>${hito}</td>
+        <td class="num">${R.cus.size}</td>
+        <td class="num">${cpePct(pctCu, vsCu.length, cusEnFoco.length)}</td>
+        <td class="num">${R.hus.length}</td>
+        <td class="num">${cpePct(pct, vs.length, R.hus.length)}</td>
+      </tr>` + (abierto ? cpeDetalleFoco(C, k, R, cuIdx) : "");
+    }).join("");
+  return `<div class="dwrap" style="max-height:70vh"><table class="dtbl"><thead><tr>
+      <th>Foco</th><th>Hito del foco (Fechas)</th><th class="num">Casos de Uso</th><th class="num">% Avance CU (Interno)</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
+    </tr></thead><tbody>${filas}</tbody></table></div>`;
+}
+
+function cpeDetalleFoco(C, focoK, R, cuIdx) {
+  const its = {};
+  C.iteraciones.forEach(i => { its[i.k] = { ...i, hus: [], cus: new Set() }; });
+  const sinIt = { k: "__sin__", n: "Sin iteración", hito: null, sem: "sin_hito", hus: [], cus: new Set() };
+  R.hus.forEach(h => {
+    const k = _cpeItDe(h, cuIdx);
+    const I = its[k] || sinIt;
+    I.hus.push(h);
+    if (h.cu) I.cus.add(h.cu);
+  });
+  R.cus.forEach(i => {
+    const c = cuIdx[i];
+    if (!c) return;
+    const yaEsta = Object.values(its).some(I => I.cus.has(i)) || sinIt.cus.has(i);
+    if (!yaEsta) (its[c.it] || sinIt).cus.add(i);
+  });
+  const orden = C.iteraciones.map(i => i.k).filter(k => its[k].hus.length || its[k].cus.size);
+  const listas = orden.map(k => its[k]).concat(sinIt.hus.length || sinIt.cus.size ? [sinIt] : []);
+  if (!listas.length) {
+    return `<tr><td colspan="6" class="hint" style="padding-left:26px">Sin iteraciones en este foco.</td></tr>`;
+  }
+  const filas = listas.map(I => {
+    const vs = I.hus.filter(h => h.v != null).map(h => h.v);
+    const pct = vs.length ? vs.reduce((a, b) => a + b, 0) / vs.length : null;
+    const cusEnIt = [...I.cus].map(id => cuIdx[id]).filter(Boolean);
+    const vsCu = cusEnIt.filter(c => c.pct_cu != null).map(c => c.pct_cu);
+    const pctCu = vsCu.length ? vsCu.reduce((a, b) => a + b, 0) / vsCu.length : null;
+
+    const [col, lbl] = CPE_SEM[I.sem] || CPE_SEM.sin_hito;
+    const hito = I.hito
+      ? `<span class="abadge" style="background:${col}" title="Release ${esc(I.hito.release || '')} · ${lbl}">Rel. ${esc(I.hito.release || "—")} · 📅 ${I.hito.fecha}</span>`
+      : `<span class="muted">${lbl}</span>`;
+    const ck = focoK + "||" + I.k;
+    const abierta = CPE_IT === ck;
+    return `<tr class="rclk" onclick="event.stopPropagation();cpeSelIt(${_qa(ck)})">
+        <td style="padding-left:26px"><span class="corner">${abierta ? "▾" : "▸"}</span> ${esc(I.n)}</td>
+        <td>${hito}</td>
+        <td class="num">${I.cus.size}</td>
+        <td class="num">${cpePct(pctCu, vsCu.length, cusEnIt.length)}</td>
+        <td class="num">${I.hus.length}</td>
+        <td class="num">${cpePct(pct, vs.length, I.hus.length)}</td>
+      </tr>` + (abierta ? cpeDetalleIt(I, cuIdx, R.hus) : "");
+  }).join("");
+  return `<tr><td colspan="6" style="padding:0">
+    <table class="dtbl" style="margin:0"><thead><tr>
+      <th>Iteración</th><th>Hito de entrega (Fecha)</th><th class="num">Casos de Uso</th><th class="num">% Avance CU</th><th class="num">HUs atadas</th><th class="num">% Avance HUs</th>
+    </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
+}
+
+function cpeDetalleIt(I, cuIdx, ramaHus) {
+  const C = CPE453;
+  const ids = [...I.cus].map(i => cuIdx[i]).filter(Boolean).sort((a, b) => a.t.localeCompare(b.t));
+  if (!ids.length) return `<tr><td colspan="8" class="hint">Sin casos de uso en esta iteración.</td></tr>`;
+  const porCu = {};
+  I.hus.forEach(h => { if (h.cu) (porCu[h.cu] = porCu[h.cu] || []).push(h); });
+  const filas = ids.map(c => {
+    const abierto = !CPE_CU.has(c.i);
+    const disperso = c.its && c.its.length > 1
+      ? ` <span class="abadge" style="background:#f59e0b" title="sus HU se ejecutan en ${c.its.length} iteraciones">${c.its.length} it.</span>` : "";
+    const aqui = porCu[c.i] || [];
+    const ag = _cpeCuAgg(c, ramaHus || _cpeUniverso(C));
+    const otras = ag.n - aqui.length;
+    const nota = otras > 0
+      ? ` <span class="muted" title="las otras ${otras} de este foco caen en otra iteración">${aqui.length} de ${ag.n} aquí</span>` : "";
+    const badgeEi = c.ei
+      ? `<span class="abadge" style="background:${cpeColorEi(c.ei)}" title="${esc(c.proc_cu || '')}">${esc(c.ei)}</span>`
+      : `<span class="muted">—</span>`;
+    const pctCuCell = c.pct_cu != null
+      ? `<b>${Math.round(c.pct_cu * 1000) / 10}%</b>`
+      : `<span class="muted">—</span>`;
+    const fechaCol = c.fecha_entrega
+      ? `<span class="abadge" style="background:var(--surface-3);color:var(--ink);border:1px solid var(--line);font-size:11px" title="Release ${esc(c.release || '')} · Iteración: ${esc(c.itn || '')}">📅 ${c.fecha_entrega}${c.release ? ' <small class="muted">(Rel. ' + esc(c.release) + ')</small>' : ''}</span>`
+      : (c.itn ? `<span class="muted" style="font-size:11px">${esc(c.itn)}</span>` : `<span class="muted">—</span>`);
+
+    return `<tr class="rclk" onclick="event.stopPropagation();cpeSelCu(${_qa(c.i)})">
+        <td style="padding-left:26px"><span class="corner">${abierto ? "▾" : "▸"}</span> <code>${esc(c.i)}</code></td>
+        <td>${esc(c.t)}${disperso}${nota}</td>
+        <td>${fechaCol}</td>
+        <td>${esc(c.e)}</td>
+        <td>${badgeEi}</td>
+        <td class="num">${pctCuCell}</td>
+        <td class="num">${ag.term} de ${ag.n}</td>
+        <td class="num">${cpePct(ag.pct, ag.n_pct, ag.n)}</td>
+      </tr>` + (abierto ? cpeDetalleCu(c, aqui) : "");
+  }).join("");
+  return `<tr><td colspan="6" style="padding:0">
+    <table class="dtbl" style="margin:0"><thead><tr>
+      <th>ID CU</th><th>Caso de uso</th><th>Iteración / Fecha</th><th>Estado Azure</th><th>Estado interno (estados_453)</th><th class="num">% Avance CU</th><th class="num">HU terminadas</th><th class="num">% Avance HUs</th>
+    </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
+}
+
+function cpeDetalleCu(c, hus) {
+  const hs = (hus || []).slice().sort((a, b) => (b.v || 0) - (a.v || 0));
+  if (!hs.length) return `<tr><td colspan="8" class="hint" style="padding-left:40px">
+      Sin HU de este caso de uso en esta iteración.</td></tr>`;
+  const filas = hs.map(h => `<tr>
+      <td style="padding-left:52px"><code>${esc(h.i)}</code></td>
+      <td>${esc(h.t || "—")}</td>
+      <td>${esc(h.e)}</td>
+      <td>${esc(h.r || "—")}</td>
+      <td class="num">${h.v == null ? '<span class="muted">omitida</span>' : "<b>" + Math.round(h.v * 100) + "%</b>"}</td>
+    </tr>`).join("");
+  return `<tr><td colspan="8" style="padding:0">
+    <table class="dtbl" style="margin:0"><thead><tr>
+      <th>ID HU</th><th>Historia de usuario</th><th>Estado</th><th>Responsable</th><th class="num">% avance</th>
+    </tr></thead><tbody>${filas}</tbody></table></td></tr>`;
+}
+
+function cpeRepinta() {
+  const el = document.getElementById("cpeBody");
+  if (el && CPE453) el.innerHTML = cpeBodyHtml(CPE453);
+}
+
+function cpeRepintaTodo() {
+  const c = document.getElementById("op-func-container");
+  if (c && CPE453) c.innerHTML = cpe453Card(CPE453);
+}
+
+function cpeModo(m) {
+  CPE_MODO = m; CPE_IT = null; CPE_CU = new Set(); CPE_FOC = new Set();
+  cpeRepintaTodo();
+}
+
+function cpeFoco(f) {
+  CPE_FOCO = f; CPE_IT = null; CPE_CU = new Set(); CPE_FOC = new Set();
+  cpeRepintaTodo();
+}
+
+function cpeSelFoco(k) {
+  if (CPE_FOC.has(k)) { CPE_FOC.delete(k); if (CPE_IT && CPE_IT.indexOf(k + "||") === 0) CPE_IT = null; }
+  else CPE_FOC.add(k);
+  CPE_CU = new Set();
+  cpeRepinta();
+}
+
+function cpeSelIt(k) {
+  CPE_IT = (CPE_IT === k ? null : k);
+  CPE_CU = new Set();
+  cpeRepinta();
+}
+
+function cpeSelCu(i) {
+  CPE_CU.has(i) ? CPE_CU.delete(i) : CPE_CU.add(i);
+  cpeRepinta();
+}
+
+function cpe453Card(C) {
+  if (!C) return "";
+  const k = C.kpi;
+  const cmi = C.cmi;
+  const stat = (v, l, c) => `<div class="fst"><div class="fstv" style="color:${c}">${v}</div><div class="fstl">${l}</div></div>`;
+  const pctCuG = k.pct_cu_global == null ? "—" : (Math.round(k.pct_cu_global * 1000) / 10) + "%";
+  const pctHuG = k.pct_hu_global == null ? (k.pct_global == null ? "—" : Math.round(k.pct_global * 100) + "%") : Math.round(k.pct_hu_global * 100) + "%";
+  const entregadosCu = (k.cu_entregados != null ? k.cu_entregados : 0) + " / " + (k.n_cu_medibles || k.n_cu);
+  const faltaHito = C.iteraciones && C.iteraciones.every(i => !i.hito);
   return `<div class="card fade" style="margin-top:18px">
     ${cmi ? `
     <div style="margin:14px 0 10px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px">
