@@ -2863,8 +2863,9 @@
     "estrategico": 0.0,
     "n": 2,
     "d": 0,
-    "u": "épicas",
+    "u": "ramos",
     "isEpics": true,
+    "isRamos": true,
     "feat_total": 7,
     "feat_ent": 0,
     "buckets": {

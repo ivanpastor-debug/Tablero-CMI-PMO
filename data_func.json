@@ -22,20 +22,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.2571,
-        "estrategico": 0.2143,
-        "n": 14,
-        "d": 3,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.2767,
+        "estrategico": 0.2093,
+        "n": 43,
+        "d": 9,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 43,
         "feat_ent": 9,
         "buckets": {
-          "100": 3,
+          "100": 9,
           "75": 0,
-          "50": 0,
-          "20": 3,
-          "0": 8
+          "50": 5,
+          "20": 2,
+          "0": 27
         }
       }
     },
@@ -60,20 +60,20 @@
         "feature_removido_con_hu": 7
       },
       "cmi": {
-        "tactico": 0.4118,
-        "estrategico": 0.0294,
-        "n": 34,
-        "d": 1,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.4851,
+        "estrategico": 0.2036,
+        "n": 496,
+        "d": 101,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 496,
         "feat_ent": 101,
         "buckets": {
-          "100": 1,
+          "100": 101,
           "75": 0,
-          "50": 22,
-          "20": 10,
-          "0": 1
+          "50": 222,
+          "20": 143,
+          "0": 30
         }
       }
     },
@@ -136,20 +136,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.2333,
-        "estrategico": 0.0,
-        "n": 18,
-        "d": 0,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.2735,
+        "estrategico": 0.0723,
+        "n": 83,
+        "d": 6,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 83,
         "feat_ent": 6,
         "buckets": {
-          "100": 0,
+          "100": 6,
           "75": 0,
-          "50": 4,
-          "20": 11,
-          "0": 3
+          "50": 17,
+          "20": 41,
+          "0": 19
         }
       }
     },
@@ -178,8 +178,9 @@
         "estrategico": 0.0,
         "n": 2,
         "d": 0,
-        "u": "épicas",
+        "u": "ramos",
         "isEpics": true,
+        "isRamos": true,
         "feat_total": 7,
         "feat_ent": 0,
         "buckets": {
@@ -250,20 +251,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.3273,
-        "estrategico": 0.0909,
-        "n": 11,
-        "d": 1,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.5189,
+        "estrategico": 0.3409,
+        "n": 132,
+        "d": 45,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 132,
         "feat_ent": 45,
         "buckets": {
-          "100": 1,
+          "100": 45,
           "75": 0,
-          "50": 4,
-          "20": 3,
-          "0": 3
+          "50": 29,
+          "20": 45,
+          "0": 13
         }
       }
     },
@@ -288,20 +289,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.4333,
-        "estrategico": 0.2222,
-        "n": 9,
-        "d": 2,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.4935,
+        "estrategico": 0.2903,
+        "n": 62,
+        "d": 18,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 62,
         "feat_ent": 18,
         "buckets": {
-          "100": 2,
+          "100": 18,
           "75": 0,
-          "50": 3,
-          "20": 2,
-          "0": 2
+          "50": 22,
+          "20": 8,
+          "0": 14
         }
       }
     },
@@ -326,20 +327,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.2529,
-        "estrategico": 0.1,
-        "n": 10,
-        "d": 1,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.2835,
+        "estrategico": 0.2348,
+        "n": 115,
+        "d": 27,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 115,
         "feat_ent": 27,
         "buckets": {
-          "100": 1,
+          "100": 27,
           "75": 0,
           "50": 2,
-          "20": 4,
-          "0": 3
+          "20": 23,
+          "0": 63
         }
       }
     },
@@ -364,19 +365,19 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.5,
+        "tactico": 0.3286,
         "estrategico": 0.0,
-        "n": 2,
+        "n": 7,
         "d": 0,
-        "u": "épicas",
-        "isEpics": true,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 7,
         "feat_ent": 0,
         "buckets": {
           "100": 0,
           "75": 0,
-          "50": 2,
-          "20": 0,
+          "50": 3,
+          "20": 4,
           "0": 0
         }
       }
@@ -402,20 +403,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.625,
-        "estrategico": 0.25,
-        "n": 12,
-        "d": 3,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.7439,
+        "estrategico": 0.614,
+        "n": 57,
+        "d": 35,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 57,
         "feat_ent": 35,
         "buckets": {
-          "100": 3,
+          "100": 35,
           "75": 0,
-          "50": 9,
-          "20": 0,
-          "0": 0
+          "50": 12,
+          "20": 7,
+          "0": 3
         }
       }
     },
@@ -440,19 +441,19 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.7333,
-        "estrategico": 0.6667,
-        "n": 6,
-        "d": 4,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.9408,
+        "estrategico": 0.9184,
+        "n": 49,
+        "d": 45,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 49,
         "feat_ent": 45,
         "buckets": {
-          "100": 4,
+          "100": 45,
           "75": 0,
-          "50": 0,
-          "20": 2,
+          "50": 1,
+          "20": 3,
           "0": 0
         }
       }
@@ -519,20 +520,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.2333,
-        "estrategico": 0.1667,
-        "n": 6,
-        "d": 1,
-        "u": "épicas",
-        "isEpics": true,
+        "tactico": 0.2864,
+        "estrategico": 0.2273,
+        "n": 22,
+        "d": 5,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 22,
         "feat_ent": 5,
         "buckets": {
-          "100": 1,
+          "100": 5,
           "75": 0,
-          "50": 0,
-          "20": 2,
-          "0": 3
+          "50": 1,
+          "20": 4,
+          "0": 12
         }
       }
     },
@@ -557,20 +558,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.0857,
+        "tactico": 0.0719,
         "estrategico": 0.0,
-        "n": 7,
+        "n": 32,
         "d": 0,
-        "u": "épicas",
-        "isEpics": true,
+        "u": "funcionalidades",
+        "isEpics": false,
         "feat_total": 32,
         "feat_ent": 0,
         "buckets": {
           "100": 0,
           "75": 0,
-          "50": 0,
-          "20": 3,
-          "0": 4
+          "50": 1,
+          "20": 9,
+          "0": 22
         }
       }
     },
@@ -616,20 +617,20 @@
       "corte": "2026-11-06",
       "archivo": "Consolidado Positiva Core (355 + 416)",
       "cmi": {
-        "tactico": 0.239,
-        "estrategico": 0.0,
-        "n": 20,
-        "d": 0,
+        "tactico": 0.2739,
+        "estrategico": 0.0706,
+        "n": 85,
+        "d": 6,
         "u": "épicas",
         "isEpics": true,
         "feat_total": 90,
         "feat_ent": 6,
         "buckets": {
-          "100": 0,
+          "100": 6,
           "75": 0,
-          "50": 4,
-          "20": 11,
-          "0": 5
+          "50": 17,
+          "20": 41,
+          "0": 21
         }
       }
     },
