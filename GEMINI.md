@@ -1382,3 +1382,44 @@ enderCrono421Collapsible):**
     4. `C:\Users\IvanDarioPastorParra\Downloads\Tablero_CMI_PMO.html` y `consulta.html`
   - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores de regex).
   - Publicación a producción en GitHub Pages y Vercel.
+
+
+---
+
+## 53. Registro de Automatización y Tubería Unificada para las Tres Visuales PMO (09-nov-2026)
+
+* **Ecosistema de las Tres Visuales:**
+  1. **Visual 1: Vista Libre Actual (`index.html`):**
+     - URL: `https://ivanpastor-debug.github.io/Tablero-CMI-PMO/`
+     - Acceso libre directo para consulta general de todo el portafolio.
+     - Enlaces cruzados en cabecera: `🛡️ Vista por Clave` y `👑 Master PMO`.
+  2. **Visual 2: Master PMO (`master.html`):**
+     - URL: `https://ivanpastor-debug.github.io/Tablero-CMI-PMO/master.html`
+     - Acceso restringido exclusivo para Dirección y PMO.
+     - Protegido mediante la **Master Key PMO (`PMO-MASTER-2026*`)**.
+     - Desbloquea la totalidad del portafolio consolidado, EVM, flujo contractual y todos los proyectos.
+     - Banner superior: `👑 Panel Master PMO · Vista de Dirección Completa`.
+  3. **Visual 3: Vista con Key por Proyecto (`consulta.html`):**
+     - URL: `https://ivanpastor-debug.github.io/Tablero-CMI-PMO/consulta.html`
+     - Acceso restringido por proyecto para clientes y líderes técnicos.
+     - Al ingresar la clave de un proyecto (ej. `DEP-419-JUDICIAL`):
+       - Oculta el portafolio global y los demás proyectos.
+       - Reemplaza el selector de búsqueda por una tarjeta exclusiva de proyecto autorizado.
+       - Despliega de inmediato la ficha integral del proyecto (CMI, Azure DevOps, Bugs, Cronograma, Finanzas).
+       - Fija la navegación impidiendo acceso a datos ajenos.
+     - Al ingresar la **Master Key (`PMO-MASTER-2026*`)**, desbloquea todos los proyectos en modo administrador.
+
+* **Tubería Automática de Sincronización Disparada (`generate_three_views.py`):**
+  - Cualquier actualización operativa o financiera disparada mediante:
+    - `python ACTUALIZAR.py`
+    - `python actualizar_todo.py`
+    - `ACTUALIZAR_TODO.bat`
+  - Ejecuta automáticamente `generate_three_views.py`, propagando los datos actualizados a las **tres visuales** simultáneamente:
+    - `index.html` (Vista libre)
+    - `master.html` (Master PMO)
+    - `consulta.html` (Vista por clave)
+  - Y sincroniza a las 3 ubicaciones locales (Repositorio de despliegue, Copia maestra CMI y Downloads).
+
+* **Validación y Despliegue:**
+  - `python ACTUALIZAR.py --dry-run` verificado con **0 errores**.
+  - Desplegado en GitHub Pages y Vercel (`commit 2ad15b1`).
