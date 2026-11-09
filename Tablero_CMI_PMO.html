@@ -1378,16 +1378,19 @@ function cmiOverviewHTML(p){
     { id: 9, name: "Release 9", date: "2027-03-06", peso: 0.10, prod: 1.000, pond: 1.000, scope: "Novedades PILA (permanentes y transitorias)" },
     { id: 10, name: "Release 10", date: "2027-03-20", peso: 0.10, prod: 0.625, pond: 0.825, scope: "Modulo retiro independiente (análisis contratos)" }
   ];
-  const cutoff421 = "2026-11-06"; // Fecha oficial de corte del cronograma
+  let cutoff421 = "2026-11-09"; // Fecha oficial de corte del cronograma (09-Nov-2026)
+  if (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos && FUNC.proyectos["421"] && FUNC.proyectos["421"].corte) {
+    cutoff421 = FUNC.proyectos["421"].corte;
+  }
   const passed421 = RELEASES_421.filter(r => r.date <= cutoff421);
-  const meta421 = passed421.reduce((acc, r) => acc + r.peso, 0); // 0.20 (20%)
-  const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.1749 (17.49%)
-  const brecha421 = real421 - meta421; // -0.0251 (-2.51 pp)
+  const meta421 = passed421.reduce((acc, r) => acc + r.peso, 0); // 0.30 (30,00% con Releases 1, 2 y 3)
+  const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.2513 (25,13%)
+  const brecha421 = real421 - meta421; // -0.0487 (-4,87 pp)
 
   // Indicador de Éxito 421 (Balú):
   // Ponderación oficial: Táctico Producto (30%) + RQC (40%) + Cumplimiento Cronograma (30%)
   const rqc421 = 0.4937; // 311 / 630 cumplidos
-  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 39,46% (con Táctico 48,21% de 56 funcionalidades de cara a producto al 06-Nov-2026)
+  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 41,75% (con Táctico 48,21% de 56 funcionalidades de cara a producto al 09-Nov-2026)
 
   const exitoCardHTML = is456 ? `
     <article class="cmi-hero-card success">
@@ -1617,12 +1620,12 @@ function cmiOverviewHTML(p){
               <div class="cmi-exito-kpi meta">
                 <span>Meta proyectada a la fecha</span>
                 <strong style="color:#b45309">${(meta421 * 100).toFixed(2).replace('.', ',')}%</strong>
-                <small>Releases 1 y 2 (10% c/u)</small>
+                <small>Releases 1, 2 y 3 (10% c/u)</small>
               </div>
               <div class="cmi-exito-kpi gap">
                 <span>Brecha de cumplimiento</span>
                 <strong style="color:#dc2626">${(brecha421 * 100).toFixed(2).replace('.', ',')} pp</strong>
-                <small>🔴 15 HUs en validación UAT</small>
+                <small>🔴 Releases 1, 2 y 3 vencidos sin entregar al 100%</small>
               </div>
             </div>
             <div style="margin-top:8px;padding:6px 10px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--muted);line-height:1.4">
@@ -1784,22 +1787,22 @@ function renderCrono421Collapsible(){
               <td class="col-desv" style="text-align:center"><span class="st crit">+13 d cal</span></td>
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
-            <tr style="background:rgba(245,158,11,0.06)">
+            <tr style="background:rgba(239,68,68,0.05)">
               <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · Actualizaciones sedes masivas (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
-              <td class="col-date" style="text-align:center;font-weight:700;color:#b45309">07/11/2026</td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.4%;background:#f59e0b"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn"><b>0 d hábiles</b></span></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn">-1 d cal</span></td>
-              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
+              <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">07/11/2026</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.4%;background:#059669"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>+1 d hábil</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit">+2 d cal</span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · Recicladores, Voluntarios primera respuesta, Tipos de doc, Y1, E1</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">14/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:55.2%;background:#3b82f6"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (5 d hábiles)</span></td>
-              <td class="col-desv" style="text-align:center"><span class="st good">Faltan 8 d</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (4 d hábiles)</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Faltan 5 d</span></td>
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
@@ -1861,17 +1864,17 @@ function renderCrono421Collapsible(){
               <td class="col-peso" style="text-align:center"><b>100%</b></td>
               <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:75.01%;background:#8a69c7"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn"><b>Meta al corte: 20,00%</b></span></td>
-              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 17,49%</b></span></td>
-              <td class="col-st" style="text-align:center"><span class="st warn"><b>1 de 10 Entregados</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta al corte: 30,00%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 25,13%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -4,87 pp</b></span></td>
             </tr>
           </tbody>
         </table>
       </div>
       <div style="margin-top:10px;padding:8px 12px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--ink-2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-        <span><b>Meta Proyectada al corte:</b> 20,00% (Releases 1 y 2 debidos)</span>
-        <span><b>Real Logrado:</b> 17,49% (Ponderado de Releases)</span>
-        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-2,51 pp</b></span>
+        <span><b>Meta Proyectada al corte:</b> 30,00% (Releases 1, 2 y 3 debidos)</span>
+        <span><b>Real Logrado:</b> 25,13% (Ponderado de Releases)</span>
+        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-4,87 pp</b></span>
         <span><b>Releases Formalizados:</b> 1 de 10 al 100% (Release 9)</span>
       </div>
     </details>
