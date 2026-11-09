@@ -105,7 +105,8 @@ def sync_mirrors(dry_run: bool = False) -> bool:
             print(f"  Aviso al copiar a {dest}: {e}")
 
     # Sincronizar también scripts de sincronización/enriquecimiento al repositorio GitHub Pages
-    for sc in ("sync_funcionalidades.py", "enrich_func_cmi.py", "actualizar_todo.py", "ACTUALIZAR_TODO.bat", "GEMINI.md"):
+    # Sincronizar scripts de automatización al repositorio GitHub Pages
+    for sc in ("sync_funcionalidades.py", "enrich_func_cmi.py", "generate_three_views.py", "actualizar_todo.py", "ACTUALIZAR_TODO.bat", "GEMINI.md", "DIRECTORIO_CLAVES_PMO.md"):
         s_file = DOCS_CMI / sc
         d_file = ROOT_REPO / sc
         if s_file.is_file() and ROOT_REPO.is_dir():
@@ -113,6 +114,16 @@ def sync_mirrors(dry_run: bool = False) -> bool:
                 shutil.copy2(s_file, d_file)
             except Exception:
                 pass
+
+    # Generar y sincronizar las 3 visuales PMO (Vista Libre, Master PMO, Vista por Clave)
+    script_three = DOCS_CMI / "generate_three_views.py"
+    if script_three.is_file():
+        try:
+            print("\n  -> Generando y alineando las 3 visuales (Libre, Master PMO, Vista por Clave)...")
+            subprocess.run([sys.executable, str(script_three)], cwd=str(DOCS_CMI), check=True)
+        except Exception as e:
+            print(f"  Aviso al generar las 3 visuales: {e}")
+
     return True
 
 

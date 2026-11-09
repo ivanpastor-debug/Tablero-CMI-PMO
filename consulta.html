@@ -4,25 +4,27 @@
   <div id="auth-overlay" class="auth-overlay">
     <div class="auth-card">
       <div class="auth-badge">PMO</div>
-      <h2>Portal de Consulta de Proyectos</h2>
-      <p class="auth-sub">Tablero de Control Estratégico y Táctico</p>
-      <p class="auth-desc">Ingrese la clave única asignada a su proyecto para acceder a la supervisión operativa, desglose funcional de Azure DevOps y seguimiento contractual.</p>
+      <h2 style="font-size:22px;font-weight:800;color:var(--ink);margin:0 0 4px">Portal de Consulta de Proyectos</h2>
+      <p style="font-size:11.5px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin:0 0 14px">Tablero de Control Estratégico y Táctico</p>
+      <p style="font-size:13px;color:var(--muted);line-height:1.45;margin:0 0 22px">Ingrese la clave única asignada a su proyecto para consultar su ficha técnica, indicadores CMI y seguimiento contractual.</p>
       <form id="auth-form" onsubmit="event.preventDefault(); doAuth();">
-        <div class="auth-input-wrap">
-          <input type="password" id="auth-key" placeholder="Ingrese la clave del proyecto (ej: DEP-419-JUDICIAL)..." autocomplete="off" autofocus required>
-          <button type="button" class="auth-eye-btn" id="auth-eye" onclick="toggleAuthEye()" title="Mostrar u ocultar clave">👁️</button>
+        <div style="position:relative;margin-bottom:14px">
+          <input type="password" id="auth-key" placeholder="Ingrese clave del proyecto (ej: DEP-419-JUDICIAL)..." autocomplete="off" autofocus required
+                 style="width:100%;padding:13px 48px 13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);font-size:14px;font-weight:600;box-sizing:border-box">
+          <button type="button" id="auth-eye" onclick="toggleAuthEye()" title="Mostrar u ocultar clave"
+                  style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:16px;opacity:.7">👁️</button>
         </div>
-        <div id="auth-err" class="auth-err" hidden>Clave no válida. Verifique el código asignado a su proyecto.</div>
-        <button type="submit" class="auth-btn" id="auth-btn">Acceder al Proyecto</button>
+        <div id="auth-err" style="font-size:12.5px;font-weight:600;color:var(--crit-ink);background:color-mix(in srgb,var(--crit) 12%,transparent);border:1px solid color-mix(in srgb,var(--crit) 25%,transparent);border-radius:8px;padding:9px 12px;margin-bottom:14px" hidden>Clave no válida. Verifique el código asignado a su proyecto.</div>
+        <button type="submit" style="width:100%;padding:13px;border:none;border-radius:12px;background:linear-gradient(135deg,var(--s-real),var(--accent));color:#fff;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px color-mix(in srgb,var(--s-real) 35%,transparent)">Consultar Proyecto</button>
       </form>
-      <div class="auth-footer">
-        <span>🛡️ <b>Acceso Restringido y Protegido por Clave Criptográfica</b></span>
-        <span>Si no dispone de su clave asignada, solicítela a la Gerencia / PMO.</span>
+      <div style="margin-top:18px;font-size:11.5px;color:var(--muted);display:flex;flex-direction:column;gap:4px">
+        <span>🛡️ <b>Acceso Restringido y Protegido por Clave</b></span>
+        <a href="index.html" style="color:var(--accent);text-decoration:none;font-weight:600;margin-top:6px">← Ir a la Vista Libre del Tablero</a>
       </div>
     </div>
   </div>
 
-<title>Visual Espejo PMO · Consulta Protegida de Proyectos</title>
+<title>Visual Espejo PMO · Consulta Protegida por Proyecto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
@@ -654,242 +656,40 @@ td{font-size:10.5px}
 
 /* Mirror Auth Overlay & Banner Styles */
 .auth-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
+  position: fixed; inset: 0; z-index: 999999;
   background: radial-gradient(circle at 50% 20%, rgba(30, 58, 138, 0.45), rgba(15, 23, 42, 0.94) 75%), rgba(15, 23, 42, 0.96);
   backdrop-filter: blur(16px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  opacity: 1;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
 }
-.auth-overlay[hidden] {
-  display: none !important;
-  opacity: 0;
-  visibility: hidden;
-}
+.auth-overlay[hidden] { display: none !important; }
 .auth-card {
-  width: 100%;
-  max-width: 480px;
+  width: 100%; max-width: 480px;
   background: var(--surface);
   border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
   border-radius: 24px;
   box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
-  padding: 36px 32px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  padding: 36px 32px; text-align: center; position: relative; overflow: hidden;
 }
 .auth-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px;
   background: linear-gradient(90deg, var(--s-real), var(--accent), var(--good));
 }
 .auth-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; border-radius: 16px;
   background: linear-gradient(135deg, var(--s-real), var(--accent));
-  color: #fff;
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: .06em;
-  margin-bottom: 16px;
-  box-shadow: 0 8px 20px color-mix(in srgb, var(--s-real) 40%, transparent);
+  color: #fff; font-size: 19px; font-weight: 800;
+  margin-bottom: 16px; box-shadow: 0 8px 20px color-mix(in srgb, var(--s-real) 40%, transparent);
 }
-.auth-card h2 {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -.02em;
-  color: var(--ink);
-  margin: 0 0 4px;
-}
-.auth-sub {
-  font-size: 11.5px;
-  font-weight: 700;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  margin: 0 0 14px;
-}
-.auth-desc {
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.45;
-  margin: 0 0 22px;
-}
-.auth-input-wrap {
-  position: relative;
-  margin-bottom: 14px;
-}
-.auth-input-wrap input {
-  width: 100%;
-  padding: 13px 48px 13px 16px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  background: var(--surface-2);
-  color: var(--ink);
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: 600;
-  letter-spacing: .03em;
-  outline: none;
-  transition: all .2s;
-  box-sizing: border-box;
-}
-.auth-input-wrap input:focus {
-  border-color: var(--accent);
-  background: var(--surface);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 15%, transparent);
-}
-.auth-eye-btn {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 4px;
-  opacity: .7;
-  transition: opacity .2s;
-}
-.auth-eye-btn:hover {
-  opacity: 1;
-}
-.auth-err {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--crit-ink);
-  background: color-mix(in srgb, var(--crit) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--crit) 25%, transparent);
-  border-radius: 8px;
-  padding: 9px 12px;
-  margin-bottom: 14px;
-  animation: authShake .35s ease;
-}
-@keyframes authShake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-6px); }
-  75% { transform: translateX(6px); }
-}
-.auth-btn {
-  width: 100%;
-  padding: 13px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--s-real), var(--accent));
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--s-real) 35%, transparent);
-  transition: all .2s;
-}
-.auth-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px color-mix(in srgb, var(--s-real) 45%, transparent);
-}
-.auth-btn:active {
-  transform: translateY(1px);
-}
-.auth-footer {
-  margin-top: 18px;
-  font-size: 11.5px;
-  color: var(--muted);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-/* Mirror Active Banner */
 .mirror-banner {
   background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 15%, var(--surface)), var(--surface));
   border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
-  border-radius: 14px;
-  padding: 12px 18px;
-  margin: 0 0 16px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  box-shadow: var(--shadow);
+  border-radius: 14px; padding: 12px 18px; margin: 0 0 16px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
 }
 .mirror-banner.admin {
-  background: linear-gradient(90deg, color-mix(in srgb, var(--good) 15%, var(--surface)), var(--surface));
-  border-color: color-mix(in srgb, var(--good) 35%, var(--line));
-}
-.mirror-banner-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.mirror-banner-icon {
-  font-size: 24px;
-}
-.mirror-banner-text h4 {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--ink);
-}
-.mirror-banner-text p {
-  margin: 0;
-  font-size: 11.5px;
-  color: var(--muted);
-}
-.mirror-banner-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.mirror-btn-logout {
-  background: var(--surface-2);
-  border: 1px solid var(--line);
-  color: var(--ink-2);
-  padding: 7px 14px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all .2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.mirror-btn-logout:hover {
-  background: color-mix(in srgb, var(--crit) 10%, var(--surface));
-  color: var(--crit-ink);
-  border-color: color-mix(in srgb, var(--crit) 30%, transparent);
-}
-.admin-link-btn {
-  background: var(--surface-2);
-  border: 1px solid var(--line);
-  color: var(--accent);
-  padding: 7px 14px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: all .2s;
-}
-.admin-link-btn:hover {
-  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  background: linear-gradient(90deg, color-mix(in srgb, #7c3aed 15%, var(--surface)), var(--surface));
+  border-color: color-mix(in srgb, #7c3aed 35%, var(--line));
 }
 
 </style>
@@ -898,16 +698,17 @@ td{font-size:10.5px}
 
     <!-- MIRROR ACTIVE ACCESS BANNER -->
     <div id="mirror-banner" class="mirror-banner" hidden>
-      <div class="mirror-banner-info">
-        <span class="mirror-banner-icon" id="mirror-banner-icon">🛡️</span>
-        <div class="mirror-banner-text">
-          <h4 id="mirror-proj-title">Consulta Exclusiva de Proyecto</h4>
-          <p id="mirror-proj-desc">Visual espejo restringida por clave criptográfica</p>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:24px" id="mirror-banner-icon">🛡️</span>
+        <div>
+          <h4 id="mirror-proj-title" style="margin:0;font-size:14px;font-weight:800;color:var(--ink)">Consulta Exclusiva de Proyecto</h4>
+          <p id="mirror-proj-desc" style="margin:0;font-size:11.5px;color:var(--muted)">Visual espejo restringida por clave criptográfica</p>
         </div>
       </div>
-      <div class="mirror-banner-actions">
-        <a href="index.html" class="admin-link-btn" title="Ir a la visual administradora del tablero">👑 Visual Administradora</a>
-        <button type="button" class="mirror-btn-logout" onclick="logoutMirror()" title="Cerrar la sesión actual y cambiar de clave">🚪 Cerrar Sesión</button>
+      <div style="display:flex;align-items:center;gap:8px">
+        <a href="index.html" class="live-pill" style="text-decoration:none;font-weight:600;color:var(--muted);padding:6px 12px">Vista Libre</a>
+        <a href="master.html" class="live-pill" style="text-decoration:none;font-weight:600;color:#7c3aed;padding:6px 12px">Master PMO</a>
+        <button type="button" onclick="logoutMirror()" style="background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2);padding:6px 12px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer">🚪 Cambiar Clave</button>
       </div>
     </div>
 
@@ -931,6 +732,11 @@ td{font-size:10.5px}
       <button type="button" class="theme-toggle" id="theme-btn" aria-label="Cambiar tema claro u oscuro">
         <span id="theme-icon">🌙</span> <span id="theme-text">Oscuro</span>
       </button>
+      <a href="consulta.html" class="live-pill mirror-link" style="text-decoration:none;font-weight:600;color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,transparent);gap:6px" title="Abrir portal de consulta protegida por clave (Visual Espejo para clientes)"><span style="font-size:12px">🛡️</span><span>Vista por Clave</span></a>
+      <a href="master.html" class="live-pill master-link" style="text-decoration:none;font-weight:600;color:#7c3aed;border-color:color-mix(in srgb,#7c3aed 35%,transparent);gap:6px" title="Abrir panel Master PMO"><span style="font-size:12px">👑</span><span>Master PMO</span></a>
+      
+      
+      
     </div>
   </header>
 
@@ -5058,7 +4864,7 @@ ensureFuncIndex();
 // VISUAL ESPEJO - GESTIÓN DE ACCESO POR KEY
 // ==========================================
 const PROJECT_HASHES = {
-    "4407a6ffe3f064b1572ada2e0f558b227349a9139cbf4a76ed2e811fb59f9079": { id: "MASTER", name: "Master PMO (Acceso Total al Portafolio)" },
+    "4407a6ffe3f064b1572ada2e0f558b227349a9139cbf4a76ed2e811fb59f9079": { id: "MASTER", name: "Master PMO (Dirección y Control Total)" },
     "809097deb16d8f6fab0fec99b52aa2ed30c19c1143e7f780e0dc82712fd84c7c": { id: "005", name: "005 - PROYECTO POSITIVA SGDEA 2026 - 3T" },
     "3433b12f71c1678926d76af9aba74ad20da181dd6421c116c89ddec5b054e2b6": { id: "POS", name: "416 - PROYECTO DE DESARROLLO Y SOPORTE CORE POSITIVA (Consolidado)" },
     "1ee119bb2c1f13251f4cd89e4e67de7dd6871b5cca46e82cbec349bbbf599961": { id: "355", name: "Positiva Core · Subproyecto 355" },
@@ -5078,17 +4884,8 @@ const PROJECT_HASHES = {
 
 function sha256Fallback(ascii) {
   function rightRotate(value, amount) { return (value>>>amount) | (value<<(32 - amount)); }
-  var mathPow = Math.pow;
-  var maxWord = mathPow(2, 32);
-  var lengthProperty = 'length';
-  var i, j;
-  var result = '';
-  var words = [];
-  var asciiBitLength = ascii[lengthProperty]*8;
-  var hash = [];
-  var k = [];
-  var primeCounter = 0;
-  var isComposite = {};
+  var mathPow = Math.pow; var maxWord = mathPow(2, 32); var lengthProperty = 'length';
+  var i, j, result = '', words = [], asciiBitLength = ascii[lengthProperty]*8, hash = [], k = [], primeCounter = 0, isComposite = {};
   for (var candidate = 2; primeCounter < 64; candidate++) {
     if (!isComposite[candidate]) {
       for (i = 0; i < 313; i += candidate) { isComposite[i] = candidate; }
@@ -5098,45 +4895,20 @@ function sha256Fallback(ascii) {
   }
   ascii += '\x80';
   while (ascii[lengthProperty]%64 - 56) ascii += '\x00';
-  for (i = 0; i < ascii[lengthProperty]; i++) {
-    j = ascii.charCodeAt(i);
-    if (j>>8) return;
-    words[i>>2] |= j << ((3 - i)%4)*8;
-  }
+  for (i = 0; i < ascii[lengthProperty]; i++) { j = ascii.charCodeAt(i); if (j>>8) return; words[i>>2] |= j << ((3 - i)%4)*8; }
   words[words[lengthProperty]] = ((asciiBitLength/maxWord)|0);
   words[words[lengthProperty]] = (asciiBitLength);
   for (j = 0; j < words[lengthProperty];) {
-    var w = words.slice(j, j += 16);
-    var oldHash = hash;
-    hash = hash.slice(0, 8);
+    var w = words.slice(j, j += 16), oldHash = hash; hash = hash.slice(0, 8);
     for (i = 0; i < 64; i++) {
-      var i2 = i + j;
-      var w15 = w[i - 15], w2 = w[i - 2];
-      var a = hash[0], e = hash[4];
-      var temp1 = hash[7]
-        + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25))
-        + ((e & hash[5]) ^ ((~e) & hash[6]))
-        + k[i]
-        + (w[i] = (i < 16) ? w[i] : (
-            w[i - 16]
-            + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15>>>3))
-            + w[i - 7]
-            + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2>>>10))
-          )|0
-        );
-      var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22))
-        + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
-      hash = [(temp1 + temp2)|0].concat(hash);
-      hash[4] = (hash[4] + temp1)|0;
+      var i2 = i + j, w15 = w[i - 15], w2 = w[i - 2], a = hash[0], e = hash[4];
+      var temp1 = hash[7] + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) + ((e & hash[5]) ^ ((~e) & hash[6])) + k[i] + (w[i] = (i < 16) ? w[i] : (w[i - 16] + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15>>>3)) + w[i - 7] + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2>>>10)))|0);
+      var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
+      hash = [(temp1 + temp2)|0].concat(hash); hash[4] = (hash[4] + temp1)|0;
     }
     for (i = 0; i < 8; i++) { hash[i] = (hash[i] + oldHash[i])|0; }
   }
-  for (i = 0; i < 8; i++) {
-    for (i2 = 3; i2 >= 0; i2--) {
-      var b = (hash[i]>>(i2*8))&255;
-      result += ((b < 16) ? 0 : '') + b.toString(16);
-    }
-  }
+  for (i = 0; i < 8; i++) { for (i2 = 3; i2 >= 0; i2--) { var b = (hash[i]>>(i2*8))&255; result += ((b < 16) ? 0 : '') + b.toString(16); } }
   return result;
 }
 
@@ -5146,7 +4918,7 @@ async function computeHash(str) {
     try {
       const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(clean));
       return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
-    } catch(e) { /* fallback */ }
+    } catch(e) {}
   }
   return sha256Fallback(clean);
 }
@@ -5154,21 +4926,14 @@ async function computeHash(str) {
 window.AUTH_PROJ = null;
 
 function toggleAuthEye() {
-  const inp = document.getElementById("auth-key");
-  const eye = document.getElementById("auth-eye");
+  const inp = document.getElementById("auth-key"), eye = document.getElementById("auth-eye");
   if (!inp || !eye) return;
-  if (inp.type === "password") {
-    inp.type = "text";
-    eye.textContent = "🙈";
-  } else {
-    inp.type = "password";
-    eye.textContent = "👁️";
-  }
+  if (inp.type === "password") { inp.type = "text"; eye.textContent = "🙈"; }
+  else { inp.type = "password"; eye.textContent = "👁️"; }
 }
 
 async function doAuth() {
-  const inp = document.getElementById("auth-key");
-  const err = document.getElementById("auth-err");
+  const inp = document.getElementById("auth-key"), err = document.getElementById("auth-err");
   if (!inp) return;
   const val = inp.value.trim();
   if (!val) return;
@@ -5176,19 +4941,10 @@ async function doAuth() {
   const match = PROJECT_HASHES[hash];
   if (match) {
     if (err) err.hidden = true;
-    sessionStorage.setItem("cmi_mirror_auth", JSON.stringify({
-      id: match.id,
-      name: match.name,
-      ts: Date.now()
-    }));
+    sessionStorage.setItem("cmi_mirror_auth", JSON.stringify({ id: match.id, name: match.name, ts: Date.now() }));
     applyAuth(match);
   } else {
-    if (err) {
-      err.hidden = false;
-      err.style.animation = "none";
-      void err.offsetWidth;
-      err.style.animation = "authShake .35s ease";
-    }
+    if (err) err.hidden = false;
     inp.focus();
   }
 }
@@ -5217,6 +4973,10 @@ function applyAuth(auth) {
       if (bannerDesc) bannerDesc.textContent = "Acceso Total a todos los proyectos del portafolio (Visual Espejo Desbloqueada)";
       if (bannerIcon) bannerIcon.textContent = "👑";
     }
+    // Mostrar todo normalmente
+    const vRes = document.getElementById("v-res");
+    if (vRes) vRes.style.display = "";
+    if (typeof show === "function") show("res");
   } else {
     if (banner) {
       banner.hidden = false;
@@ -5226,49 +4986,45 @@ function applyAuth(auth) {
       if (bannerIcon) bannerIcon.textContent = "🛡️";
     }
 
-    // Hide general portfolio views
-    const hideIds = ["tiles", "cash-cost", "flow", "sem-op", "pmo-search-box", "search-feedback", "t-res"];
-    hideIds.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.hidden = true;
-    });
+    // Ocultar permanentemente la vista de dirección general
+    const vRes = document.getElementById("v-res");
+    if (vRes) vRes.style.display = "none";
+    const tabNav = document.querySelector("nav.tabs");
+    if (tabNav) tabNav.style.display = "none";
 
-    // Filter project list in memory so other projects cannot be browsed
-    if (typeof P !== "undefined" && Array.isArray(P)) {
-      P = P.filter(p => p.id === auth.id || p.parent === auth.id);
-    }
-    if (typeof ALL !== "undefined" && Array.isArray(ALL)) {
-      ALL = ALL.filter(p => p.id === auth.id || p.parent === auth.id);
-    }
-    if (typeof FIN !== "undefined" && Array.isArray(FIN)) {
-      FIN = FIN.filter(p => p.id === auth.id);
-    }
-    if (typeof SUBS !== "undefined" && Array.isArray(SUBS)) {
-      SUBS = SUBS.filter(p => p.id === auth.id || p.parent === auth.id);
+    // Forzar visualización de la ficha de detalle
+    const vProj = document.getElementById("v-proj");
+    if (vProj) {
+      vProj.hidden = false;
+      vProj.style.display = "block";
     }
 
-    // Lock navigation to authorized project
-    const origOpenProj = window.openProj;
+    // Reemplazar el buscador/selector de proyectos por una tarjeta fija de proyecto autorizado
+    const pchips = document.getElementById("pchips");
+    if (pchips) {
+      pchips.innerHTML = `<div class="project-picker-redesign" style="grid-template-columns:1fr auto;align-items:center;padding:14px 20px;background:var(--surface);border:1px solid var(--accent);border-radius:14px;box-shadow:var(--shadow)">
+        <div>
+          <span class="ppr-label" style="color:var(--accent);font-weight:700">PROYECTO AUTORIZADO</span>
+          <h3 style="margin:4px 0 0;font-size:16px;color:var(--ink);font-weight:800">${auth.name}</h3>
+        </div>
+        <span class="tag" style="background:color-mix(in srgb,var(--accent) 15%,var(--surface));color:var(--accent);font-weight:700;font-size:12px;padding:6px 12px;border-radius:999px">Consulta Exclusiva</span>
+      </div>`;
+    }
+
+    // Bloquear cur al proyecto autorizado y renderizar su ficha
+    cur = auth.id;
+    if (typeof openProj === "function") {
+      openProj(auth.id, true);
+    }
+    if (typeof renderFicha === "function") {
+      renderFicha();
+    }
+
+    // Sobrescribir navegación para que no se pueda cambiar de proyecto
     window.openProj = function(id, stay) {
-      if (window.AUTH_PROJ !== "MASTER" && id !== window.AUTH_PROJ) {
-        id = window.AUTH_PROJ;
-      }
-      if (typeof origOpenProj === "function") {
-        origOpenProj(id, stay);
-      }
+      cur = auth.id;
+      if (typeof renderFicha === "function") renderFicha();
     };
-
-    setTimeout(() => {
-      if (typeof openProj === "function") {
-        openProj(auth.id);
-      }
-      if (typeof show === "function") {
-        show("proj");
-      }
-      if (typeof renderChips === "function") {
-        renderChips();
-      }
-    }, 60);
   }
 }
 
@@ -5285,7 +5041,7 @@ function initMirrorAuth() {
       sessionStorage.removeItem("cmi_mirror_auth");
     }
   }
-  // Not authenticated: show overlay
+  // No autenticado: mostrar pantalla de clave
   const overlay = document.getElementById("auth-overlay");
   if (overlay) {
     overlay.hidden = false;
@@ -5295,7 +5051,6 @@ function initMirrorAuth() {
   }
 }
 
-// Initialize mirror auth on DOM ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initMirrorAuth);
 } else {

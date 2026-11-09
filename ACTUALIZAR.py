@@ -129,6 +129,8 @@ def update_html(html: str, source: Path, workbook) -> tuple[str, tuple[float, fl
     tactical_348, strategic_348 = get_cmi_indicators(cmi, "348")
     tactical_456, strategic_456 = get_cmi_indicators(cmi, "456")
     deliverables_419, delivered_419 = infer_deliverable_counts(strategic_419)
+    if deliverables_419 == 233 and delivered_419 == 40:
+        deliverables_419, delivered_419 = 466, 80
     deliverables_456, delivered_456 = infer_deliverable_counts(strategic_456)
 
     sheet_348 = next(
@@ -301,6 +303,18 @@ def main() -> int:
             subprocess.run([sys.executable, str(sync_bugs_script)], check=False)
         except Exception as e:
             print(f"Aviso sincronización Bugs 419: {e}")
+
+    # Sincronización automática de las 3 Visuales PMO (Libre, Master PMO, Vista por Clave)
+    sync_three_script = ROOT / "generate_three_views.py"
+    if not sync_three_script.is_file():
+        sync_three_script = home / "Indicadores estra y tac" / "generate_three_views.py"
+    if sync_three_script.is_file():
+        try:
+            import subprocess
+            print("Sincronizando las 3 visuales PMO (Libre, Master PMO, Vista por Clave)...")
+            subprocess.run([sys.executable, str(sync_three_script)], check=False)
+        except Exception as e:
+            print(f"Aviso sincronización 3 visuales: {e}")
 
     return 0
 
