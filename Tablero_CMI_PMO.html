@@ -1365,40 +1365,41 @@ function cmiOverviewHTML(p){
   const exitoMeta = is456 ? hitosFecha456.reduce((acc, h) => acc + h.peso, 0) : null; // 30,00%
   const brecha = is456 ? (exitoReal - exitoMeta) : null; // -12,00 pp
 
-  // Proyecto 421 - Balú: Cronograma con Alternativa 1 (50% AyN / 50% RyC)
-  // Cada frente: 85% distribuido en releases con fecha + 15% bolsa de alcance sin programar (P3/P4/Interfaces)
+  // Proyecto 421 - Balú: Cronograma de 20 Releases Integrados (Ponderación 5,00% Cada Uno · 100% Total)
+  // 13 Releases de Afiliaciones y Novedades (65%) + 7 Releases de Recaudo y Cartera (35%)
   const RELEASES_421 = [
-    // Frente 1: Afiliaciones y Novedades (50% del proyecto · 10 Releases = 4,25% c/u + 7,5% sin programar)
-    { id: 1, frente: "AyN", prio: "P1", name: "Release 1 AyN", ini: "2026-02-24", date: "2026-10-10", peso: 0.0425, prod: 0.000, pond: 0.741, scope: "Independientes (Internos Medicina ind/masivo), Certificados esp. ind, Normalización I1" },
-    { id: 2, frente: "AyN", prio: "P1", name: "Release 2 AyN", ini: "2026-09-02", date: "2026-10-24", peso: 0.0425, prod: 0.000, pond: 0.795, scope: "Certificados masivos (Funcionario - Empleador)" },
-    { id: 3, frente: "AyN", prio: "P1", name: "Release 3 AyN", ini: "2026-07-16", date: "2026-11-07", peso: 0.0425, prod: 0.000, pond: 0.795, scope: "Actualizaciones sedes masivas (Funcionario - Empleador)" },
-    { id: 4, frente: "AyN", prio: "P2", name: "Release 4 AyN", ini: "2026-08-21", date: "2026-11-14", peso: 0.0425, prod: 0.000, pond: 0.772, scope: "Independientes (Voluntarios 1a resp., Recicladores), Normaliz. Y1/E1, Tipos doc." },
-    { id: 5, frente: "AyN", prio: "P2", name: "Release 5 AyN", ini: "2026-08-31", date: "2026-11-28", peso: 0.0425, prod: 0.000, pond: 0.795, scope: "Carnés masivos (Funcionario - Empleador)" },
-    { id: 6, frente: "AyN", prio: "P2", name: "Release 6 AyN", ini: "2026-09-01", date: "2026-12-12", peso: 0.0425, prod: 0.000, pond: 0.764, scope: "PPL (Privadas Libertad), Gestores de paz, Cotizante 76, Norma 1641 formularios" },
-    { id: 7, frente: "AyN", prio: "P2", name: "Release 7 AyN", ini: "2026-09-21", date: "2027-01-23", peso: 0.0425, prod: 0.000, pond: 0.760, scope: "Afiliaciones y Retiros retroactivas, Param. excepciones, Liquidación aportes, Pólizas, E2, E3" },
-    { id: 8, frente: "AyN", prio: "P2", name: "Release 8 AyN", ini: "2026-09-21", date: "2027-02-20", peso: 0.0425, prod: 0.000, pond: 0.772, scope: "Histórico de actualizaciones, Proceso permanencias, Retiro empleador radicación/gestión" },
-    { id: 9, frente: "AyN", prio: "P2", name: "Release 9 AyN", ini: "2026-11-17", date: "2027-03-06", peso: 0.0425, prod: 0.000, pond: 0.741, scope: "Novedades PILA permanentes (VSP, VPC) y transitorias (IGE, LMA, SLN, VST, VAC, IRL)" },
-    { id: 10, frente: "AyN", prio: "P2", name: "Release 10 AyN", ini: "2026-10-05", date: "2027-03-20", peso: 0.0425, prod: 0.000, pond: 0.756, scope: "Módulo retiro independiente y análisis finalización contratos" },
-    { id: 11, frente: "AyN", prio: "P3/P4", name: "Alcance P3/P4 Sin Programar", ini: "Mesas en curso", date: null, peso: 0.0750, prod: 0.000, pond: 0.768, scope: "14 funcionalidades: Notif. internacionales, Reportes, Dashboards, Administración, SAT" },
+    // Frente 1: Afiliaciones y Novedades (13 Releases · 5,00% c/u · 65,00% total)
+    { id: 1, frente: "AyN", prio: "P2", name: "Release 1 AyN (Histórico)", ini: "2025-10-06", date: "2025-10-27", peso: 0.05, prod: 1.000, pond: 1.000, scope: "Novedades Independiente, Afiliación Indep., Gestión Funcionario, Actualizar Empleador/Trabajador" },
+    { id: 2, frente: "AyN", prio: "P2", name: "Release 2 AyN (Histórico)", ini: "2025-10-06", date: "2026-01-26", peso: 0.05, prod: 1.000, pond: 1.000, scope: "Afiliación masivo, Gestión Comercial V1, Certificados empleador/indep/masivo, Liquidación, Retiros" },
+    { id: 3, frente: "AyN", prio: "P2", name: "Release 3 AyN (Histórico)", ini: "2026-06-01", date: "2026-07-25", peso: 0.05, prod: 1.000, pond: 1.000, scope: "Prórrogas, Cambio de riesgo, Cambio de fechas independientes, Retiros retroactivos masivos" },
+    { id: 4, frente: "AyN", prio: "P1", name: "Release 4 AyN", ini: "2026-02-24", date: "2026-10-10", peso: 0.05, prod: 0.000, pond: 0.741, scope: "Independientes (Medicina ind/masivo), Certificados esp. ind, Normalización I1" },
+    { id: 5, frente: "AyN", prio: "P1", name: "Release 5 AyN", ini: "2026-09-02", date: "2026-10-24", peso: 0.05, prod: 0.000, pond: 0.795, scope: "Certificados masivos (Funcionario - Empleador)" },
+    { id: 6, frente: "AyN", prio: "P1", name: "Release 6 AyN", ini: "2026-07-16", date: "2026-11-07", peso: 0.05, prod: 0.000, pond: 0.795, scope: "Actualizaciones sedes masivas (Funcionario - Empleador)" },
+    { id: 7, frente: "AyN", prio: "P2", name: "Release 7 AyN", ini: "2026-08-21", date: "2026-11-14", peso: 0.05, prod: 0.000, pond: 0.772, scope: "Independientes (Voluntarios 1a resp., Recicladores), Normaliz. Y1/E1, Tipos doc." },
+    { id: 8, frente: "AyN", prio: "P2", name: "Release 8 AyN", ini: "2026-08-31", date: "2026-11-28", peso: 0.05, prod: 0.000, pond: 0.795, scope: "Carnés masivos (Funcionario - Empleador)" },
+    { id: 9, frente: "AyN", prio: "P2", name: "Release 9 AyN", ini: "2026-09-01", date: "2026-12-12", peso: 0.05, prod: 0.000, pond: 0.764, scope: "PPL (Privadas Libertad), Gestores de paz, Cotizante 76, Norma 1641 formularios" },
+    { id: 10, frente: "AyN", prio: "P2", name: "Release 10 AyN", ini: "2026-09-21", date: "2027-01-23", peso: 0.05, prod: 0.000, pond: 0.760, scope: "Afiliaciones y Retiros retroactivas, Param. excepciones, Liquidación aportes, Pólizas, E2, E3" },
+    { id: 11, frente: "AyN", prio: "P2", name: "Release 11 AyN", ini: "2026-09-21", date: "2027-02-20", peso: 0.05, prod: 0.000, pond: 0.772, scope: "Histórico de actualizaciones, Proceso permanencias, Retiro empleador radicación/gestión" },
+    { id: 12, frente: "AyN", prio: "P2", name: "Release 12 AyN", ini: "2026-11-17", date: "2027-03-06", peso: 0.05, prod: 0.000, pond: 0.741, scope: "Novedades PILA permanentes (VSP, VPC) y transitorias (IGE, LMA, SLN, VST, VAC, IRL)" },
+    { id: 13, frente: "AyN", prio: "P2", name: "Release 13 AyN", ini: "2026-10-05", date: "2027-03-20", peso: 0.05, prod: 0.000, pond: 0.756, scope: "Módulo retiro independiente y análisis finalización contratos" },
     
-    // Frente 2: Recaudo y Cartera (50% del proyecto · 7 Releases = 6,07% c/u + 7,5% sin programar)
-    { id: 12, frente: "RyC", prio: "P1", name: "Release 1 RyC", ini: "2026-06-19", date: "2026-10-16", peso: 0.0607, prod: 0.000, pond: 0.950, scope: "Mejoras Consulta COTIZANTES Y APORTANTES (Feature 459471)" },
-    { id: 13, frente: "RyC", prio: "P1", name: "Release 2 RyC", ini: "2026-07-16", date: "2026-11-14", peso: 0.0607, prod: 0.000, pond: 0.900, scope: "Cartera preventiva (Feature 307833)" },
-    { id: 14, frente: "RyC", prio: "P1", name: "Release 3 RyC", ini: "2026-08-31", date: "2027-01-23", peso: 0.0607, prod: 0.000, pond: 0.316, scope: "RECOBROS [Marcación] (308714) + Validación recepción y conciliación PILA LOG (485086)" },
-    { id: 15, frente: "RyC", prio: "P1", name: "Release 4 RyC", ini: "2026-08-03", date: "2027-02-20", peso: 0.0607, prod: 0.000, pond: 0.486, scope: "PROCESAMIENTO DEL 1% (GENERACIÓN ARCHIVOS MAESTROS Y LIQUIDACIÓN DIARIA). FASE 2 (481244)" },
-    { id: 16, frente: "RyC", prio: "P1", name: "Release 5 RyC", ini: "2025-09-01", date: "2027-03-20", peso: 0.0607, prod: 0.000, pond: 0.679, scope: "NO VINCULADOS (307836), Constitución de mora registro/certif. (307852), Estado de cuenta (88254)" },
-    { id: 17, frente: "RyC", prio: "P1", name: "Release 6 RyC", ini: "2026-08-28", date: "2027-04-03", peso: 0.0607, prod: 0.000, pond: 0.048, scope: "RECOBROS [Reportes, dashboard y WS OTI] (Feature 511781)" },
-    { id: 18, frente: "RyC", prio: "P1", name: "Release 7 RyC", ini: "2027-01-18", date: "2027-05-22", peso: 0.0607, prod: 0.000, pond: 0.000, scope: "Definición RQC por cumplir (Levantamiento final)" },
-    { id: 19, frente: "RyC", prio: "P1", name: "Interfaces Sin Programar", ini: "Mesas realizadas", date: null, peso: 0.0750, prod: 0.000, pond: 0.570, scope: "3 entregables: Transferencias masivas y WS a Recaudo 2 (457292), Generación SISE Fase 2 (307827)" }
+    // Frente 2: Recaudo y Cartera (7 Releases · 5,00% c/u · 35,00% total)
+    { id: 14, frente: "RyC", prio: "P1", name: "Release 14 (RyC 1)", ini: "2026-06-19", date: "2026-10-16", peso: 0.05, prod: 0.000, pond: 0.950, scope: "Mejoras Consulta COTIZANTES Y APORTANTES (Feature 459471)" },
+    { id: 15, frente: "RyC", prio: "P1", name: "Release 15 (RyC 2)", ini: "2026-07-16", date: "2026-11-14", peso: 0.05, prod: 0.000, pond: 0.900, scope: "Cartera preventiva (Feature 307833)" },
+    { id: 16, frente: "RyC", prio: "P1", name: "Release 16 (RyC 3)", ini: "2026-08-31", date: "2027-01-23", peso: 0.05, prod: 0.000, pond: 0.316, scope: "RECOBROS [Marcación] (308714) + Validación recepción y conciliación PILA LOG (485086)" },
+    { id: 17, frente: "RyC", prio: "P1", name: "Release 17 (RyC 4)", ini: "2026-08-03", date: "2027-02-20", peso: 0.05, prod: 0.000, pond: 0.486, scope: "PROCESAMIENTO DEL 1% (GENERACIÓN ARCHIVOS MAESTROS Y LIQUIDACIÓN DIARIA). FASE 2 (481244)" },
+    { id: 18, frente: "RyC", prio: "P1", name: "Release 18 (RyC 5)", ini: "2025-09-01", date: "2027-03-20", peso: 0.05, prod: 0.000, pond: 0.679, scope: "NO VINCULADOS (307836), Constitución de mora registro/certif. (307852), Estado de cuenta (88254)" },
+    { id: 19, frente: "RyC", prio: "P1", name: "Release 19 (RyC 6)", ini: "2026-08-28", date: "2027-04-03", peso: 0.05, prod: 0.000, pond: 0.048, scope: "RECOBROS [Reportes, dashboard y WS OTI] (Feature 511781)" },
+    { id: 20, frente: "RyC", prio: "P1", name: "Release 20 (RyC 7)", ini: "2027-01-18", date: "2027-05-22", peso: 0.05, prod: 0.000, pond: 0.000, scope: "Definición RQC por cumplir (Levantamiento final)" }
   ];
   let cutoff421 = "2026-11-09"; // Fecha oficial de corte del cronograma (09-Nov-2026)
   if (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos && FUNC.proyectos["421"] && FUNC.proyectos["421"].corte) {
     cutoff421 = FUNC.proyectos["421"].corte;
   }
   const passed421 = RELEASES_421.filter(r => r.date && r.date <= cutoff421);
-  const meta421 = passed421.reduce((acc, r) => acc + r.peso, 0); // 0.1882 (18,82% con 3 AyN + 1 RyC debidos)
-  const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.1568 (15,68% ponderado de debidos)
-  const brecha421 = real421 - meta421; // -0.0314 (-3,14 pp)
+  const meta421 = passed421.reduce((acc, r) => acc + r.peso, 0); // 0.3500 (35,00% con 7 de 20 debidos al 5,00% c/u)
+  const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.31405 (31,41% ponderado de debidos)
+  const brecha421 = real421 - meta421; // -0.0359 (-3,59 pp)
 
   // Indicador de Éxito 421 (Balú):
   // Ponderación oficial: Táctico Producto (30%) + RQC (40%) + Cumplimiento Cronograma (30%)
@@ -1633,16 +1634,16 @@ function cmiOverviewHTML(p){
               <div class="cmi-exito-kpi meta">
                 <span>Meta proyectada a la fecha</span>
                 <strong style="color:#b45309">${(meta421 * 100).toFixed(2).replace('.', ',')}%</strong>
-                <small>4 debidos a la fecha (3 AyN + 1 RyC)</small>
+                <small>7 debidos de 20 (5,00% c/u)</small>
               </div>
               <div class="cmi-exito-kpi gap">
                 <span>Brecha de cumplimiento</span>
                 <strong style="color:#dc2626">${(brecha421 * 100).toFixed(2).replace('.', ',')} pp</strong>
-                <small>🔴 4 releases debidos sin entregar al 100%</small>
+                <small>🔴 4 releases activos debidos sin entregar al 100%</small>
               </div>
             </div>
             <div style="margin-top:8px;padding:6px 10px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--muted);line-height:1.4">
-              ℹ️ <b>Nota aclaratoria:</b> el cumplimiento del cronograma se evalúa contra el archivo Excel debido a las 37 funcionalidades pendientes de correlacionar en Azure. Ponderación oficial: 50% Afiliaciones y Novedades (10 Releases [85%] + Alcance P3/P4 sin programar [15%]) + 50% Recaudo y Cartera (7 Releases [85%] + Interfaces sin programar [15%]).
+              ℹ️ <b>Nota aclaratoria:</b> el cumplimiento del cronograma se evalúa contra el archivo Excel debido a las 37 funcionalidades pendientes de correlacionar en Azure. Ponderación oficial: 20 Releases integrados con ponderación equitativa del 5,00% cada uno (13 de Afiliaciones y Novedades [65%] + 7 de Recaudo y Cartera [35%]), reconociendo formalmente los 3 primeros releases históricos formalizados al 100%.
             </div>
           </div>` : is419 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
@@ -1768,37 +1769,11 @@ function renderCrono421Collapsible(){
         </div>
         <span class="cmi-acc-tag" style="font-size:11px;font-weight:700">Pestaña desplegable ▾</span>
       </summary>
-      
-      <!-- CALLOUT: FASES PREVIAS HISTÓRICAS (100% ENTREGADAS) -->
-      <div style="margin-top:14px;padding:12px 16px;background:rgba(5, 150, 105, 0.08);border:1px solid #a7f3d0;border-left:4px solid #059669;border-radius:8px">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px">
-          <span style="font-size:12px;font-weight:800;color:#065f46;text-transform:uppercase;letter-spacing:0.5px">✅ Fases Contractuales Previas Históricas (37 Entregables · 100% Entregados)</span>
-          <span class="tag" style="background:#059669;color:#fff;font-weight:700;font-size:10.5px">Certificado 100%</span>
-        </div>
-        <div style="font-size:11.5px;color:#064e3b;line-height:1.5">
-          El proyecto cuenta con 3 grandes hitos previos formalizados y culminados en producción:
-          <ul style="margin:4px 0 0 16px;padding:0">
-            <li><b>Hito 27-Oct-2025 (5 Entregables · 100%):</b> <i>Novedades Independiente</i>, <i>Afiliación Independiente</i>, <i>Gestión Afiliaciones funcionario</i>, <i>Actualizar datos empleador</i> y <i>Actualizar datos trabajador</i>.</li>
-            <li><b>Hito 26-Ene-2026 (28 Entregables · 100%):</b> Afiliación trabajadores masivo, Gestión comercial V1, Certificados empleador/independiente/masivo, Liquidación de aportes, Reclasificación de empresas y Retiros individual/masivo.</li>
-            <li><b>Hito 25-Jul-2026 (4 Entregables · 100%):</b> Prórrogas, Cambio de riesgo, Cambio de fechas independientes y Retiros retroactivos masivos.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- BANNER DE ALERTA DE GOBERNANZA: FUNCIONALIDADES SIN PROGRAMAR -->
-      <div style="margin-top:12px;padding:10px 14px;background:rgba(217, 119, 6, 0.08);border:1px solid #fde68a;border-left:4px solid #d97706;border-radius:8px">
-        <div style="display:flex;align-items:center;gap:8px">
-          <span style="font-size:14px">⚠️</span>
-          <span style="font-size:11.5px;color:#92400e;line-height:1.4">
-            <b>Alerta de Gobernanza y Plazo Contractual:</b> Existen <b>19 funcionalidades contractuales</b> (14 en AyN y 5 en RyC) que registran avance técnico en Azure DevOps pero <b>no tienen fecha pactada de paso a productivo con el cliente</b> (ponderan el 15% de cada frente). Su falta de calendarización representa un riesgo crítico de prórroga contractual más allá de Mayo 2027.
-          </span>
-        </div>
-      </div>
 
       <!-- FRENTE 1: AFILIACIONES Y NOVEDADES -->
       <div style="margin-top:16px;padding:8px 12px;background:linear-gradient(90deg, #1e3a8a, #2563eb);color:#fff;border-radius:6px;display:flex;justify-content:space-between;align-items:center">
-        <span style="font-size:12px;font-weight:700">📁 Frente 1: Afiliaciones y Novedades · 10 Releases (Peso: 85% Frente · 42,5% Proyecto) + Alcance P3/P4 (15% Frente · 7,5% Proyecto)</span>
-        <span style="font-size:11px;opacity:0.9">50% de Peso Contractual Global</span>
+        <span style="font-size:12px;font-weight:700">📁 Frente 1: Afiliaciones y Novedades · 13 Releases Integrados (3 Históricos 100% + 10 Activos · Peso: 5,00% c/u · 65,00% Total)</span>
+        <span style="font-size:11px;opacity:0.9">65% de Peso Contractual Global</span>
       </div>
       <div class="tbl-wrap" style="padding-top:6px">
         <table class="xl tbl-crono-421">
@@ -1806,7 +1781,7 @@ function renderCrono421Collapsible(){
             <tr>
               <th class="col-ent">Release / Entregables Contractuales (Afiliaciones y Novedades)</th>
               <th class="col-peso" style="text-align:center;width:45px">Prio.</th>
-              <th class="col-peso" style="text-align:center;width:55px">Peso Proj</th>
+              <th class="col-peso" style="text-align:center;width:55px">Peso</th>
               <th class="col-date" style="text-align:center;width:75px">Inicio (Mesas)</th>
               <th class="col-date" style="text-align:center;width:75px">Fin (Prod)</th>
               <th class="col-bar" style="width:105px;text-align:center">Avance</th>
@@ -1816,10 +1791,46 @@ function renderCrono421Collapsible(){
             </tr>
           </thead>
           <tbody>
+            <!-- RELEASES HISTÓRICOS FORMALIZADOS AL 100% -->
+            <tr style="background:rgba(5,150,105,0.06)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 1 (Histórico)</b> · Novedades Independiente, Afiliación Indep., Gestión Funcionario, Actualizar Empleador/Trabajador (5 entregables)</td>
+              <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
+              <td class="col-date" style="text-align:center">06/10/2025</td>
+              <td class="col-date" style="text-align:center;font-weight:700;color:#059669">27/10/2025</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:#059669"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">0 d hábiles</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Entregado</span></td>
+              <td class="col-st" style="text-align:center"><span class="st good">Entregado</span></td>
+            </tr>
+            <tr style="background:rgba(5,150,105,0.06)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 2 (Histórico)</b> · Afiliación masivo, Gestión Comercial V1, Certificados empleador/indep/masivo, Liquidación, Retiros (28 entregables)</td>
+              <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
+              <td class="col-date" style="text-align:center">06/10/2025</td>
+              <td class="col-date" style="text-align:center;font-weight:700;color:#059669">26/01/2026</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:#059669"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">0 d hábiles</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Entregado</span></td>
+              <td class="col-st" style="text-align:center"><span class="st good">Entregado</span></td>
+            </tr>
+            <tr style="background:rgba(5,150,105,0.06)">
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 3 (Histórico)</b> · Prórrogas, Cambio de riesgo, Cambio de fechas independientes, Retiros retroactivos masivos (4 entregables)</td>
+              <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
+              <td class="col-date" style="text-align:center">01/06/2026</td>
+              <td class="col-date" style="text-align:center;font-weight:700;color:#059669">25/07/2026</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:#059669"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">0 d hábiles</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Entregado</span></td>
+              <td class="col-st" style="text-align:center"><span class="st good">Entregado</span></td>
+            </tr>
+
+            <!-- RELEASES ACTIVOS OLA 2026-2027 -->
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 1</b> · Independientes (Medicina ind/masivo), Certificados esp. ind, Normalización I1</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · Independientes (Medicina ind/masivo), Certificados esp. ind, Normalización I1</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">24/02/2026</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">10/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:74.1%;background:#059669"></i></div></div></td>
@@ -1828,9 +1839,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 2</b> · Certificados masivos (Funcionario - Empleador)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · Certificados masivos (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">02/09/2026</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">24/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:79.5%;background:#059669"></i></div></div></td>
@@ -1839,9 +1850,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · Actualizaciones sedes masivas (Funcionario - Empleador)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · Actualizaciones sedes masivas (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">16/07/2026</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">07/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:79.5%;background:#059669"></i></div></div></td>
@@ -1850,9 +1861,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · Recicladores, Voluntarios primera respuesta, Tipos de doc, Normalización Y1, E1</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · Recicladores, Voluntarios primera respuesta, Tipos de doc, Normalización Y1, E1</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">21/08/2026</td>
               <td class="col-date" style="text-align:center">14/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:77.2%;background:#3b82f6"></i></div></div></td>
@@ -1861,9 +1872,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · Carnés masivos (Funcionario - Empleador)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · Carnés masivos (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">31/08/2026</td>
               <td class="col-date" style="text-align:center">28/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:79.5%;background:#3b82f6"></i></div></div></td>
@@ -1872,9 +1883,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">01/09/2026</td>
               <td class="col-date" style="text-align:center">12/12/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.4%;background:#3b82f6"></i></div></div></td>
@@ -1883,9 +1894,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · Excepciones, Retroactivas, Liquidación aportes, Pólizas, Normalización E2, E3</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · Excepciones, Retroactivas, Liquidación aportes, Pólizas, Normalización E2, E3</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">21/09/2026</td>
               <td class="col-date" style="text-align:center">23/01/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.0%;background:#3b82f6"></i></div></div></td>
@@ -1894,9 +1905,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · Histórico de actualizaciones, Proceso permanencias, Retiro empleador</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 11</b> · Histórico de actualizaciones, Proceso permanencias, Retiro empleador</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">21/09/2026</td>
               <td class="col-date" style="text-align:center">20/02/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:77.2%;background:#3b82f6"></i></div></div></td>
@@ -1905,9 +1916,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · Novedades PILA (permanentes VSP/VPC y transitorias IGE, LMA, SLN, VST, VAC, IRL)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 12</b> · Novedades PILA (permanentes VSP/VPC y transitorias IGE, LMA, SLN, VST, VAC, IRL)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">17/11/2026</td>
               <td class="col-date" style="text-align:center">06/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:74.1%;background:#3b82f6"></i></div></div></td>
@@ -1916,9 +1927,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · Módulo retiro independiente (análisis finalización contratos)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 13</b> · Módulo retiro independiente (análisis finalización contratos)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#dbeafe;color:#1e40af;font-weight:700;font-size:9.5px">P2</span></td>
-              <td class="col-peso" style="text-align:center">4,25%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">05/10/2026</td>
               <td class="col-date" style="text-align:center">20/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:75.6%;background:#3b82f6"></i></div></div></td>
@@ -1926,37 +1937,16 @@ function renderCrono421Collapsible(){
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 131 d</span></td>
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
-            <tr style="background:rgba(217,119,6,0.06);border-top:1px dashed #d97706">
-              <td class="col-ent">
-                <details style="cursor:pointer">
-                  <summary style="font-weight:700;color:#92400e">📌 <b>Alcance P3/P4 Sin Programar</b> · 14 Funcionalidades (Ver detalle ▾)</summary>
-                  <div style="margin-top:6px;font-size:11px;color:var(--ink-2);line-height:1.4;padding-left:12px">
-                    • <i>Notificaciones internacionales</i> (Individual y Masivo P4)<br>
-                    • <i>Reportes y Dashboards gerenciales</i> (Reportes, Dashboards 2025, Exportación Excel/PDF P3)<br>
-                    • <i>Módulos administrativos</i> (Admin video tutoriales, Admin usuarios internos, Duplicados P4)<br>
-                    • <i>Portales específicos</i> (Módulo consulta empleador, Portal contratantes no afiliado, SAT, Ajustes generales P3/P4)
-                  </div>
-                </details>
-              </td>
-              <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fef3c7;color:#92400e;font-weight:700;font-size:9px">P3/P4</span></td>
-              <td class="col-peso" style="text-align:center;font-weight:700;color:#92400e">7,50%</td>
-              <td class="col-date" style="text-align:center;color:var(--muted)">Mesas curso</td>
-              <td class="col-date" style="text-align:center;font-weight:700;color:#d97706">Por definir</td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.8%;background:#d97706"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn">⚠️ Sin agendar</span></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn">Riesgo plazo</span></td>
-              <td class="col-st" style="text-align:center"><span class="st warn">Sin programar</span></td>
-            </tr>
             <tr style="border-top:2px solid var(--line);background:var(--surface-2)">
-              <td class="col-ent"><b>Subtotal Frente Afiliaciones y Novedades (10 Releases + Bolsa P3/P4)</b></td>
+              <td class="col-ent"><b>Subtotal Frente Afiliaciones y Novedades (13 Releases)</b></td>
               <td class="col-peso" style="text-align:center">-</td>
-              <td class="col-peso" style="text-align:center"><b>50,00%</b></td>
-              <td class="col-date" style="text-align:center"><b>24/02/2026</b></td>
-              <td class="col-date" style="text-align:center"><b>20/03/2027*</b></td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.1%;background:#2563eb"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta corte: 12,75%</b></span></td>
-              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real corte: 9,90%</b></span></td>
-              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -2,85 pp</b></span></td>
+              <td class="col-peso" style="text-align:center"><b>65,00%</b></td>
+              <td class="col-date" style="text-align:center"><b>06/10/2025</b></td>
+              <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:82.0%;background:#2563eb"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta corte: 30,00%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real corte: 26,66%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -3,34 pp</b></span></td>
             </tr>
           </tbody>
         </table>
@@ -1964,8 +1954,8 @@ function renderCrono421Collapsible(){
 
       <!-- FRENTE 2: RECAUDO Y CARTERA -->
       <div style="margin-top:20px;padding:8px 12px;background:linear-gradient(90deg, #581c87, #7c3aed);color:#fff;border-radius:6px;display:flex;justify-content:space-between;align-items:center">
-        <span style="font-size:12px;font-weight:700">📁 Frente 2: Sistema de Recaudo y Cartera · 7 Releases (Peso: 85% Frente · 42,5% Proyecto) + Interfaces Sin Programar (15% Frente · 7,5% Proyecto)</span>
-        <span style="font-size:11px;opacity:0.9">50% de Peso Contractual Global</span>
+        <span style="font-size:12px;font-weight:700">📁 Frente 2: Sistema de Recaudo y Cartera · 7 Releases Integrados (Peso: 5,00% c/u · 35,00% Total)</span>
+        <span style="font-size:11px;opacity:0.9">35% de Peso Contractual Global</span>
       </div>
       <div class="tbl-wrap" style="padding-top:6px">
         <table class="xl tbl-crono-421">
@@ -1973,7 +1963,7 @@ function renderCrono421Collapsible(){
             <tr>
               <th class="col-ent">Release / Entregables Contractuales (Recaudo y Cartera)</th>
               <th class="col-peso" style="text-align:center;width:45px">Prio.</th>
-              <th class="col-peso" style="text-align:center;width:55px">Peso Proj</th>
+              <th class="col-peso" style="text-align:center;width:55px">Peso</th>
               <th class="col-date" style="text-align:center;width:75px">Inicio (Mesas)</th>
               <th class="col-date" style="text-align:center;width:75px">Fin (Prod)</th>
               <th class="col-bar" style="width:105px;text-align:center">Avance</th>
@@ -1984,9 +1974,9 @@ function renderCrono421Collapsible(){
           </thead>
           <tbody>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 1 RyC</b> · Mejoras Consulta COTIZANTES Y APORTANTES (Feature 459471)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 14 (RyC 1)</b> · Mejoras Consulta COTIZANTES Y APORTANTES (Feature 459471)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">19/06/2026</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">16/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:95.0%;background:#7c3aed"></i></div></div></td>
@@ -1995,9 +1985,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 2 RyC</b> · Cartera preventiva (Feature 307833)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 15 (RyC 2)</b> · Cartera preventiva (Feature 307833)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">16/07/2026</td>
               <td class="col-date" style="text-align:center">14/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:90.0%;background:#7c3aed"></i></div></div></td>
@@ -2006,9 +1996,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 3 RyC</b> · RECOBROS [Marcación] (308714) + Validación recepción y conciliación PILA LOG (485086)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 16 (RyC 3)</b> · RECOBROS [Marcación] (308714) + Validación recepción y conciliación PILA LOG (485086)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">31/08/2026</td>
               <td class="col-date" style="text-align:center">23/01/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:31.6%;background:#7c3aed"></i></div></div></td>
@@ -2017,9 +2007,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 4 RyC</b> · PROCESAMIENTO DEL 1% (GENERACIÓN ARCHIVOS MAESTROS Y LIQUIDACIÓN DIARIA). FASE 2 (481244)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 17 (RyC 4)</b> · PROCESAMIENTO DEL 1% (GENERACIÓN ARCHIVOS MAESTROS Y LIQUIDACIÓN DIARIA). FASE 2 (481244)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">03/08/2026</td>
               <td class="col-date" style="text-align:center">20/02/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:48.6%;background:#7c3aed"></i></div></div></td>
@@ -2028,9 +2018,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 5 RyC</b> · NO VINCULADOS (307836), Constitución de mora registro/certif. (307852), Estado de cuenta (88254)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 18 (RyC 5)</b> · NO VINCULADOS (307836), Constitución de mora registro/certif. (307852), Estado de cuenta (88254)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">01/09/2025</td>
               <td class="col-date" style="text-align:center">20/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:67.9%;background:#7c3aed"></i></div></div></td>
@@ -2039,9 +2029,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 6 RyC</b> · RECOBROS [Reportes, dashboard y WS OTI] (Feature 511781)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 19 (RyC 6)</b> · RECOBROS [Reportes, dashboard y WS OTI] (Feature 511781)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">28/08/2026</td>
               <td class="col-date" style="text-align:center">03/04/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:4.8%;background:#7c3aed"></i></div></div></td>
@@ -2050,9 +2040,9 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 7 RyC</b> · Definición RQC por cumplir (Levantamiento final)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 20 (RyC 7)</b> · Definición RQC por cumplir (Levantamiento final)</td>
               <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center">6,07%</td>
+              <td class="col-peso" style="text-align:center">5,00%</td>
               <td class="col-date" style="text-align:center">18/01/2027</td>
               <td class="col-date" style="text-align:center">22/05/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:0.0%;background:#7c3aed"></i></div></div></td>
@@ -2060,57 +2050,61 @@ function renderCrono421Collapsible(){
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 194 d</span></td>
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
-            <tr style="background:rgba(217,119,6,0.06);border-top:1px dashed #d97706">
-              <td class="col-ent">
-                <details style="cursor:pointer">
-                  <summary style="font-weight:700;color:#92400e">📌 <b>Interfaces Sin Programar</b> · 3 Entregables (Ver detalle ▾)</summary>
-                  <div style="margin-top:6px;font-size:11px;color:var(--ink-2);line-height:1.4;padding-left:12px">
-                    • <i>Transferencias mediante Archivo masivo a RECAUDO 2</i> (Feature 457292)<br>
-                    • <i>Transferencias mediante WS a RECAUDO 2</i> (Feature 457292)<br>
-                    • <i>Generación de archivos SISE – Fase 2 [WS - SISTRAN]</i> (Feature 307827)
-                  </div>
-                </details>
-              </td>
-              <td class="col-peso" style="text-align:center"><span class="tag" style="background:#fee2e2;color:#991b1b;font-weight:700;font-size:9.5px">P1</span></td>
-              <td class="col-peso" style="text-align:center;font-weight:700;color:#92400e">7,50%</td>
-              <td class="col-date" style="text-align:center;color:var(--muted)">Mesas listas</td>
-              <td class="col-date" style="text-align:center;font-weight:700;color:#d97706">Por definir</td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:57.0%;background:#d97706"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn">⚠️ Sin agendar</span></td>
-              <td class="col-desv" style="text-align:center"><span class="st warn">Riesgo plazo</span></td>
-              <td class="col-st" style="text-align:center"><span class="st warn">Sin programar</span></td>
-            </tr>
             <tr style="border-top:2px solid var(--line);background:var(--surface-2)">
-              <td class="col-ent"><b>Subtotal Frente Recaudo y Cartera (7 Releases + Interfaces)</b></td>
+              <td class="col-ent"><b>Subtotal Frente Recaudo y Cartera (7 Releases)</b></td>
               <td class="col-peso" style="text-align:center">-</td>
-              <td class="col-peso" style="text-align:center"><b>50,00%</b></td>
+              <td class="col-peso" style="text-align:center"><b>35,00%</b></td>
               <td class="col-date" style="text-align:center"><b>19/06/2026</b></td>
-              <td class="col-date" style="text-align:center"><b>22/05/2027*</b></td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:49.3%;background:#7c3aed"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta corte: 6,07%</b></span></td>
-              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real corte: 5,77%</b></span></td>
-              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -0,30 pp</b></span></td>
+              <td class="col-date" style="text-align:center"><b>22/05/2027</b></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:48.3%;background:#7c3aed"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta corte: 5,00%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real corte: 4,75%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -0,25 pp</b></span></td>
             </tr>
             <tr class="tot" style="border-top:3px solid var(--ink);background:var(--surface-3)">
-              <td class="col-ent"><b>Total Proyecto BALÚ (50% Afiliaciones y Novedades + 50% Recaudo y Cartera)</b></td>
+              <td class="col-ent"><b>Total Proyecto BALÚ (20 Releases Integrados · Ponderación 5,00% c/u)</b></td>
               <td class="col-peso" style="text-align:center"><b>-</b></td>
               <td class="col-peso" style="text-align:center"><b>100%</b></td>
-              <td class="col-date" style="text-align:center"><b>24/02/2026</b></td>
+              <td class="col-date" style="text-align:center"><b>06/10/2025</b></td>
               <td class="col-date" style="text-align:center"><b>22/05/2027</b></td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:9px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:62.7%;background:#059669"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta corte: 18,82%</b></span></td>
-              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 15,67%</b></span></td>
-              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -3,15 pp</b></span></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:9px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:70.2%;background:#059669"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta corte: 35,00%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 31,41%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -3,59 pp</b></span></td>
             </tr>
           </tbody>
         </table>
       </div>
       <div style="margin-top:10px;padding:8px 12px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--ink-2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-        <span><b>Meta Proyectada al corte:</b> 18,82% (4 releases debidos: R1, R2 y R3 AyN + R1 RyC)</span>
-        <span><b>Real Logrado (Ponderado debidos):</b> 15,67% (Avance técnico de releases debidos)</span>
-        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-3,15 pp</b></span>
-        <span><b>Releases Formalizados:</b> 0 de 4 debidos entregados al 100%</span>
-        <span><b>Metodología:</b> Alternativa 1 (50% AyN [10 releases a 8,5% c/u + 15% P3/P4] + 50% RyC [7 releases a 12,14% c/u + 15% Interfaces])</span>
+        <span><b>Meta Proyectada al corte:</b> 35,00% (7 releases debidos de 20: 3 históricos al 100% + 4 activos)</span>
+        <span><b>Real Logrado (Ponderado debidos):</b> 31,41% (3 formalizados al 100% [15%] + 16,41% avance de 4 debidos activos)</span>
+        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-3,59 pp</b></span>
+        <span><b>Releases Formalizados al 100%:</b> 3 de 7 debidos (15,00% certificado en prod)</span>
+        <span><b>Metodología:</b> 20 Releases integrados con ponderación equitativa del 5,00% cada uno (13 AyN [65%] + 7 RyC [35%])</span>
+      </div>
+
+      <!-- ALERTA DE GOBERNANZA AL FINAL DE LA TABLA -->
+      <div style="margin-top:14px;padding:12px 16px;background:rgba(217, 119, 6, 0.08);border:1px solid #fde68a;border-left:4px solid #d97706;border-radius:8px">
+        <div style="display:flex;align-items:flex-start;gap:10px">
+          <span style="font-size:16px;line-height:1.2">⚠️</span>
+          <div style="font-size:11.5px;color:#92400e;line-height:1.5">
+            <b>Alerta de Gobernanza y Plazo Contractual:</b> Existen <b>19 funcionalidades contractuales</b> (14 en AyN y 5 en RyC) que registran avance técnico en Azure DevOps pero no tienen fecha pactada de paso a productivo con el cliente (ponderan el 15% de cada frente). Su falta de calendarización representa un riesgo crítico de prórroga contractual más allá de Mayo 2027.
+            <details style="margin-top:8px;cursor:pointer">
+              <summary style="font-weight:700;color:#b45309">🔍 Ver detalle de las 19 funcionalidades sin fecha pactada de producción ▾</summary>
+              <div style="margin-top:6px;padding:8px 12px;background:var(--surface);border:1px solid #fed7aa;border-radius:6px;font-size:11px;color:var(--ink);line-height:1.5">
+                <b>• En Afiliaciones y Novedades (14 ítems · Prioridades P3 y P4):</b><br>
+                &nbsp;&nbsp;- <i>Notificaciones internacionales</i> (Individual y Masivo P4 · 74% - 85% en Azure)<br>
+                &nbsp;&nbsp;- <i>Reportes y Dashboards gerenciales</i> (Reportes, Dashboards 2025, Exportación Excel/PDF P3 · 74% - 85% en Azure)<br>
+                &nbsp;&nbsp;- <i>Módulos administrativos</i> (Admin video tutoriales, Admin usuarios internos, Duplicados P4 · 74% en Azure)<br>
+                &nbsp;&nbsp;- <i>Portales específicos</i> (Módulo consulta empleador, Portal contratantes no afiliado, SAT, Ajustes generales P3/P4)<br>
+                <b>• En Recaudo y Cartera (5 ítems):</b><br>
+                &nbsp;&nbsp;- <i>Transferencias mediante Archivo masivo a RECAUDO 2</i> (Feature 457292 · 36% en Azure)<br>
+                &nbsp;&nbsp;- <i>Transferencias mediante WS a RECAUDO 2</i> (Feature 457292 · 36% en Azure)<br>
+                &nbsp;&nbsp;- <i>Generación de archivos SISE – Fase 2 [WS - SISTRAN]</i> (Feature 307827 · 99% en Azure)
+              </div>
+            </details>
+          </div>
+        </div>
       </div>
     </details>
   </div>`;
