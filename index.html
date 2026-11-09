@@ -1365,27 +1365,33 @@ function cmiOverviewHTML(p){
   const exitoMeta = is456 ? hitosFecha456.reduce((acc, h) => acc + h.peso, 0) : null; // 30,00%
   const brecha = is456 ? (exitoReal - exitoMeta) : null; // -12,00 pp
 
-  // Proyecto 421 - Balú: Cronograma de 10 Releases (10% c/u) y RQC
+  // Proyecto 421 - Balú: Cronograma de 14 Releases (Ponderación 7,14% c/u · 10 AyN + 4 RyC) y RQC
   const RELEASES_421 = [
-    { id: 1, name: "Release 1", date: "2026-10-10", peso: 0.10, prod: 0.649, pond: 0.885, scope: "AyN: Independientes - Internos Medicina ind/masivo, Certificados especiales, Normalización I1" },
-    { id: 2, name: "Release 2", date: "2026-10-24", peso: 0.10, prod: 0.455, pond: 0.864, scope: "AyN: Certificados masivos (Funcionario - Empleador)" },
-    { id: 3, name: "Release 3", date: "2026-11-07", peso: 0.10, prod: 0.429, pond: 0.764, scope: "AyN: Actualizaciones sedes masivas (Funcionario - Empleador)" },
-    { id: 4, name: "Release 4", date: "2026-11-14", peso: 0.10, prod: 0.438, pond: 0.552, scope: "AyN: Recicladores, Voluntarios, Tipos de doc, Y1, E1 · RyC: Cartera preventiva, Consulta Cotizantes/Aportantes" },
-    { id: 5, name: "Release 5", date: "2026-11-28", peso: 0.10, prod: 0.500, pond: 0.664, scope: "AyN: Carnés masivos (Funcionario - Empleador)" },
-    { id: 6, name: "Release 6", date: "2026-12-12", peso: 0.10, prod: 0.235, pond: 0.809, scope: "AyN: PPL, Gestores de paz, Cotizante 76, Norma 1641" },
-    { id: 7, name: "Release 7", date: "2027-01-23", peso: 0.10, prod: 0.433, pond: 0.707, scope: "AyN: Excepciones, Retroactivas, Liquidación, Pólizas, E2, E3 · RyC: Recobros (Marcación/Reportes), Validación PILA LOG" },
-    { id: 8, name: "Release 8", date: "2027-02-20", peso: 0.10, prod: 0.250, pond: 0.431, scope: "AyN: Histórico actualizaciones, Permanencias, Retiro empleador · RyC: Procesamiento 1% Fase 2" },
-    { id: 9, name: "Release 9", date: "2027-03-06", peso: 0.10, prod: 1.000, pond: 1.000, scope: "AyN: Novedades PILA (permanentes VSP/VPC y transitorias)" },
-    { id: 10, name: "Release 10", date: "2027-03-20", peso: 0.10, prod: 0.625, pond: 0.825, scope: "AyN: Módulo retiro independiente · RyC: No Vinculados, Constitución de mora, Estado de cuenta" }
+    // Frente 1: Afiliaciones y Novedades (10 Releases · 7,14% c/u · 71,43% subtotal)
+    { id: 1, frente: "AyN", name: "Release 1", date: "2026-10-10", peso: 1/14, prod: 0.649, pond: 0.885, scope: "Independientes - Internos Medicina ind/masivo, Certificados especiales, Normalización I1" },
+    { id: 2, frente: "AyN", name: "Release 2", date: "2026-10-24", peso: 1/14, prod: 0.455, pond: 0.864, scope: "Certificados masivos (Funcionario - Empleador)" },
+    { id: 3, frente: "AyN", name: "Release 3", date: "2026-11-07", peso: 1/14, prod: 0.429, pond: 0.764, scope: "Actualizaciones sedes masivas (Funcionario - Empleador)" },
+    { id: 4, frente: "AyN", name: "Release 4", date: "2026-11-14", peso: 1/14, prod: 0.438, pond: 0.552, scope: "Recicladores, Voluntarios, Tipos de doc, Y1, E1" },
+    { id: 5, frente: "AyN", name: "Release 5", date: "2026-11-28", peso: 1/14, prod: 0.500, pond: 0.664, scope: "Carnés masivos (Funcionario - Empleador)" },
+    { id: 6, frente: "AyN", name: "Release 6", date: "2026-12-12", peso: 1/14, prod: 0.235, pond: 0.809, scope: "PPL, Gestores de paz, Cotizante 76, Norma 1641" },
+    { id: 7, frente: "AyN", name: "Release 7", date: "2027-01-23", peso: 1/14, prod: 0.433, pond: 0.707, scope: "Excepciones, Retroactivas, Liquidación, Pólizas, E2, E3" },
+    { id: 8, frente: "AyN", name: "Release 8", date: "2027-02-20", peso: 1/14, prod: 0.250, pond: 0.431, scope: "Histórico actualizaciones, Permanencias, Retiro empleador" },
+    { id: 9, frente: "AyN", name: "Release 9", date: "2027-03-06", peso: 1/14, prod: 1.000, pond: 1.000, scope: "Novedades PILA (permanentes y transitorias)" },
+    { id: 10, frente: "AyN", name: "Release 10", date: "2027-03-20", peso: 1/14, prod: 0.625, pond: 0.825, scope: "Modulo retiro independiente (análisis contratos)" },
+    // Frente 2: Recaudo y Cartera (4 Releases · 7,14% c/u · 28,57% subtotal)
+    { id: 11, frente: "RyC", name: "Release 1 RyC", date: "2026-11-14", peso: 1/14, prod: 0.800, pond: 0.925, scope: "Cartera preventiva (307833), Mejoras Consulta COTIZANTES Y APORTANTES (459471)" },
+    { id: 12, frente: "RyC", name: "Release 2 RyC", date: "2027-01-23", peso: 1/14, prod: 0.000, pond: 0.227, scope: "RECOBROS [Marcación] (308714), RECOBROS [Reportes] (511781), Validación PILA LOG (485086)" },
+    { id: 13, frente: "RyC", name: "Release 3 RyC", date: "2027-02-20", peso: 1/14, prod: 0.000, pond: 0.486, scope: "PROCESAMIENTO DEL 1% (GENERACIÓN ARCHIVOS MAESTROS Y LIQUIDACIÓN DIARIA). FASE 2 (481244)" },
+    { id: 14, frente: "RyC", name: "Release 4 RyC", date: "2027-03-20", peso: 1/14, prod: 0.350, pond: 0.684, scope: "NO VINCULADOS (307836), Constitución de mora (307852), Estado de cuenta (88254)" }
   ];
   let cutoff421 = "2026-11-09"; // Fecha oficial de corte del cronograma (09-Nov-2026)
   if (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos && FUNC.proyectos["421"] && FUNC.proyectos["421"].corte) {
     cutoff421 = FUNC.proyectos["421"].corte;
   }
   const passed421 = RELEASES_421.filter(r => r.date <= cutoff421);
-  const meta421 = passed421.reduce((acc, r) => acc + r.peso, 0); // 0.30 (30,00% con Releases 1, 2 y 3)
-  const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.2513 (25,13%)
-  const brecha421 = real421 - meta421; // -0.0487 (-4,87 pp)
+  const meta421 = passed421.reduce((acc, r) => acc + r.peso, 0); // 0.2143 (21,43% con Releases 1, 2 y 3 debidos al 7,14% c/u)
+  const real421 = passed421.reduce((acc, r) => acc + (r.peso * r.pond), 0); // 0.1795 (17,95%)
+  const brecha421 = real421 - meta421; // -0.0348 (-3,48 pp)
 
   // Indicador de Éxito 421 (Balú):
   // Ponderación oficial: Táctico Producto (30%) + RQC (40%) + Cumplimiento Cronograma (30%)
@@ -1620,16 +1626,16 @@ function cmiOverviewHTML(p){
               <div class="cmi-exito-kpi meta">
                 <span>Meta proyectada a la fecha</span>
                 <strong style="color:#b45309">${(meta421 * 100).toFixed(2).replace('.', ',')}%</strong>
-                <small>Releases 1, 2 y 3 (10% c/u)</small>
+                <small>3 de 14 debidos (7,14% c/u)</small>
               </div>
               <div class="cmi-exito-kpi gap">
                 <span>Brecha de cumplimiento</span>
                 <strong style="color:#dc2626">${(brecha421 * 100).toFixed(2).replace('.', ',')} pp</strong>
-                <small>🔴 Releases 1, 2 y 3 vencidos sin entregar al 100%</small>
+                <small>🔴 3 releases vencidos de AyN sin entregar al 100%</small>
               </div>
             </div>
             <div style="margin-top:8px;padding:6px 10px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--muted);line-height:1.4">
-              ℹ️ <b>Nota aclaratoria:</b> El cumplimiento del cronograma se evalúa contractualmente sobre los 10 Releases integrados (Afiliaciones y Novedades + Recaudo y Cartera) del archivo <code>Cronograma_BALU_2026_</code>, correlacionados contra Azure DevOps en la <i>Matriz de Correlación BALÚ 2026</i> (46 ítems entregables vs 68 features en Azure).
+              ℹ️ <b>Nota aclaratoria:</b> El cumplimiento del cronograma se evalúa contractualmente sobre los 14 Releases integrados (10 de Afiliaciones y Novedades + 4 de Recaudo y Cartera ponderados al 7,14% cada uno) del archivo <code>Cronograma_BALU_2026_</code>, correlacionados contra Azure DevOps en la <i>Matriz de Correlación BALÚ 2026</i>.
             </div>
           </div>` : is419 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
@@ -1751,15 +1757,21 @@ function renderCrono421Collapsible(){
     <details class="cmi-accordion" open>
       <summary style="padding:12px 16px;background:var(--surface);border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
         <div style="display:flex;align-items:center;gap:10px">
-          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación del Cronograma</h2>
+          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación del Cronograma · 14 Releases (Ponderación 7,14% Cada Release)</h2>
         </div>
         <span class="cmi-acc-tag" style="font-size:11px;font-weight:700">Pestaña desplegable ▾</span>
       </summary>
-      <div class="tbl-wrap" style="padding-top:10px">
+      
+      <!-- FRENTE 1: AFILIACIONES Y NOVEDADES -->
+      <div style="margin-top:14px;padding:6px 12px;background:linear-gradient(90deg, #1e3a8a, #2563eb);color:#fff;border-radius:6px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:12px;font-weight:700">📁 Frente 1: Afiliaciones y Novedades · 10 Releases (71,43% de Peso Contractual · 7,14% c/u)</span>
+        <span style="font-size:11px;opacity:0.9">10 Releases a Producción</span>
+      </div>
+      <div class="tbl-wrap" style="padding-top:6px">
         <table class="xl tbl-crono-421">
           <thead>
             <tr>
-              <th class="col-ent">Release / Entregables Contractuales</th>
+              <th class="col-ent">Release / Entregables Contractuales (Afiliaciones y Novedades)</th>
               <th class="col-peso" style="text-align:center">Peso</th>
               <th class="col-date" style="text-align:center">Cierre planeado</th>
               <th class="col-bar" style="width:110px;text-align:center">Avance</th>
@@ -1770,8 +1782,8 @@ function renderCrono421Collapsible(){
           </thead>
           <tbody>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 1</b> · AyN: Independientes (Internos Medicina ind/masivo), Certificados especiales, Normalización I1</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 1</b> · Independientes (Internos Medicina ind/masivo), Certificados especiales, Normalización I1</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">10/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:88.5%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st crit"><b>+18 d hábiles</b></span></td>
@@ -1779,8 +1791,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 2</b> · AyN: Certificados masivos (Funcionario - Empleador)</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 2</b> · Certificados masivos (Funcionario - Empleador)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">24/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:86.4%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st crit"><b>+9 d hábiles</b></span></td>
@@ -1788,8 +1800,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · AyN: Actualizaciones sedes masivas (Funcionario - Empleador)</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · Actualizaciones sedes masivas (Funcionario - Empleador)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">07/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.4%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st crit"><b>+1 d hábil</b></span></td>
@@ -1797,8 +1809,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · AyN: Recicladores, Voluntarios primera respuesta, Tipos de doc, Y1, E1 · RyC: Cartera preventiva, Consulta Cotizantes/Aportantes</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · Recicladores, Voluntarios primera respuesta, Tipos de doc, Normalización Y1, E1</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">14/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:55.2%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (4 d hábiles)</span></td>
@@ -1806,8 +1818,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · AyN: Carnés masivos (Funcionario - Empleador)</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · Carnés masivos (Funcionario - Empleador)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">28/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:66.4%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (14 d hábiles)</span></td>
@@ -1815,8 +1827,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · AyN: Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">12/12/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:80.9%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (23 d hábiles)</span></td>
@@ -1824,8 +1836,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · AyN: Excepciones, Retroactivas, Liquidación aportes, Pólizas, E2, E3 · RyC: Recobros (Marcación/Reportes), Validación PILA LOG</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · Excepciones, Retroactivas, Liquidación aportes, Pólizas, Normalización E2, E3</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">23/01/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:70.7%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (50 d hábiles)</span></td>
@@ -1833,8 +1845,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · AyN: Histórico de actualizaciones, Proceso permanencias, Retiro empleador · RyC: Procesamiento 1% Fase 2</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · Histórico de actualizaciones, Proceso permanencias, Retiro empleador</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">20/02/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:43.1%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (70 d hábiles)</span></td>
@@ -1842,8 +1854,8 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · AyN: Novedades PILA (permanentes VSP/VPC y transitorias)</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · Novedades PILA (permanentes VSP/VPC y transitorias IGE, LMA, SLN, VST, VAC, IRL)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">06/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (80 d hábiles)</span></td>
@@ -1851,32 +1863,109 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st good">Entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · AyN: Modulo retiro independiente (análisis finalización contratos) · RyC: No Vinculados, Constitución de mora, Estado de cuenta</td>
-              <td class="col-peso" style="text-align:center">10%</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · Módulo retiro independiente (análisis finalización contratos)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
               <td class="col-date" style="text-align:center">20/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:82.5%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (90 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 134 d</span></td>
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
-            <tr class="tot" style="border-top:2px solid var(--line);background:var(--surface-2)">
-              <td class="col-ent"><b>Total Cronograma BALÚ (10 Releases Integrados · Afiliaciones y Novedades + Recaudo y Cartera)</b></td>
+            <tr style="border-top:2px solid var(--line);background:var(--surface-2)">
+              <td class="col-ent"><b>Subtotal Frente Afiliaciones y Novedades (10 Releases)</b></td>
+              <td class="col-peso" style="text-align:center"><b>71,43%</b></td>
+              <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:75.01%;background:#2563eb"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta al corte: 21,43%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real corte: 17,95%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -3,48 pp</b></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FRENTE 2: RECAUDO Y CARTERA -->
+      <div style="margin-top:18px;padding:6px 12px;background:linear-gradient(90deg, #581c87, #7c3aed);color:#fff;border-radius:6px;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:12px;font-weight:700">📁 Frente 2: Sistema de Recaudo y Cartera · 4 Releases (28,57% de Peso Contractual · 7,14% c/u)</span>
+        <span style="font-size:11px;opacity:0.9">4 Releases a Producción</span>
+      </div>
+      <div class="tbl-wrap" style="padding-top:6px">
+        <table class="xl tbl-crono-421">
+          <thead>
+            <tr>
+              <th class="col-ent">Release / Entregables Contractuales (Recaudo y Cartera)</th>
+              <th class="col-peso" style="text-align:center">Peso</th>
+              <th class="col-date" style="text-align:center">Cierre planeado</th>
+              <th class="col-bar" style="width:110px;text-align:center">Avance</th>
+              <th class="col-desv" style="text-align:center">Desviación en días hábiles</th>
+              <th class="col-desv" style="text-align:center">Desviación calendario</th>
+              <th class="col-st" style="text-align:center">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 1 RyC</b> · Cartera preventiva (307833) · Mejoras Consulta COTIZANTES Y APORTANTES (459471)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
+              <td class="col-date" style="text-align:center">14/11/2026</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:92.5%;background:#7c3aed"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (4 d hábiles)</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Faltan 5 d</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 2 RyC</b> · RECOBROS [Marcación] (308714) · RECOBROS [Reportes] (511781) · Validación PILA LOG (485086)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
+              <td class="col-date" style="text-align:center">23/01/2027</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:22.7%;background:#7c3aed"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (50 d hábiles)</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Faltan 78 d</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 3 RyC</b> · PROCESAMIENTO DEL 1% (GENERACIÓN ARCHIVOS MAESTROS Y LIQUIDACIÓN DIARIA). FASE 2 (481244)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
+              <td class="col-date" style="text-align:center">20/02/2027</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:48.6%;background:#7c3aed"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (70 d hábiles)</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Faltan 106 d</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
+            </tr>
+            <tr>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 4 RyC</b> · NO VINCULADOS (307836) · Constitución de mora (307852) · Estado de cuenta (88254)</td>
+              <td class="col-peso" style="text-align:center">7,14%</td>
+              <td class="col-date" style="text-align:center">20/03/2027</td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:68.4%;background:#7c3aed"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (90 d hábiles)</span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good">Faltan 134 d</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
+            </tr>
+            <tr style="border-top:2px solid var(--line);background:var(--surface-2)">
+              <td class="col-ent"><b>Subtotal Frente Recaudo y Cartera (4 Releases)</b></td>
+              <td class="col-peso" style="text-align:center"><b>28,57%</b></td>
+              <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:58.03%;background:#7c3aed"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Meta al corte: 0,00%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real corte: 0,00%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st good"><b>Vigente</b></span></td>
+            </tr>
+            <tr class="tot" style="border-top:3px solid var(--ink);background:var(--surface-3)">
+              <td class="col-ent"><b>Total Proyecto BALÚ (14 Releases Integrados · 10 AyN + 4 RyC)</b></td>
               <td class="col-peso" style="text-align:center"><b>100%</b></td>
               <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
-              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:75.01%;background:#8a69c7"></i></div></div></td>
-              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta al corte: 30,00%</b></span></td>
-              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 25,13%</b></span></td>
-              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -4,87 pp</b></span></td>
+              <td class="col-bar"><div class="bars" style="width:100%"><div style="height:9px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:70.16%;background:#059669"></i></div></div></td>
+              <td class="col-desv" style="text-align:center"><span class="st crit"><b>Meta al corte: 21,43%</b></span></td>
+              <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 17,95%</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit"><b>Brecha: -3,48 pp</b></span></td>
             </tr>
           </tbody>
         </table>
       </div>
       <div style="margin-top:10px;padding:8px 12px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--ink-2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-        <span><b>Meta Proyectada al corte:</b> 30,00% (Releases 1, 2 y 3 debidos)</span>
-        <span><b>Real Logrado:</b> 25,13% (Ponderado de Releases)</span>
-        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-4,87 pp</b></span>
-        <span><b>Releases Formalizados:</b> 1 de 10 al 100% (Release 9)</span>
-        <span><b>Fuente de Medición:</b> Cronograma_BALU_2026_.xlsx (Afiliaciones y Novedades + Recaudo y Cartera)</span>
+        <span><b>Meta Proyectada al corte:</b> 21,43% (3 de 14 releases debidos: R1, R2 y R3 AyN)</span>
+        <span><b>Real Logrado (Hitos debidos):</b> 17,95% (Ponderado de Releases debidos)</span>
+        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-3,48 pp</b></span>
+        <span><b>Releases Formalizados:</b> 1 de 14 al 100% (Release 9 AyN)</span>
+        <span><b>Ponderación Metodológica:</b> 7,14% por cada release independiente del foco (10 AyN [71,43%] + 4 RyC [28,57%] = 100%)</span>
       </div>
     </details>
   </div>`;
