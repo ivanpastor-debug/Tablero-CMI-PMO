@@ -1,21 +1,21 @@
 {
   "codigo": "384",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_384_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_384_20261109.csv",
   "epics": [
     {
       "i": "83564",
       "t": "13 TES_TESORERIA",
-      "n_f": 67,
-      "n": 943,
+      "n_f": 68,
+      "n": 960,
       "term": 468,
-      "pct": 0.8633
+      "pct": 0.8503
     },
     {
       "i": "83562",
       "t": "01 NFI_NEGOCIOS FIDUCIARIOS",
-      "n_f": 30,
+      "n_f": 33,
       "n": 559,
       "term": 379,
       "pct": 0.9329
@@ -24,17 +24,17 @@
       "i": "88338",
       "t": "11 NOR_NORMATIVO",
       "n_f": 67,
-      "n": 368,
+      "n": 370,
       "term": 148,
-      "pct": 0.8234
+      "pct": 0.82
     },
     {
       "i": "83563",
       "t": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
       "n_f": 53,
-      "n": 332,
+      "n": 344,
       "term": 174,
-      "pct": 0.8976
+      "pct": 0.8733
     },
     {
       "i": "83566",
@@ -47,10 +47,10 @@
     {
       "i": "88337",
       "t": "10 TRI_TRIBUTARIO",
-      "n_f": 20,
-      "n": 287,
-      "term": 148,
-      "pct": 0.8916
+      "n_f": 18,
+      "n": 260,
+      "term": 121,
+      "pct": 0.8815
     },
     {
       "i": "88327",
@@ -64,9 +64,9 @@
       "i": "88336",
       "t": "09 CXP_CUENTAS POR PAGAR",
       "n_f": 20,
-      "n": 216,
+      "n": 221,
       "term": 85,
-      "pct": 0.8551
+      "pct": 0.8416
     },
     {
       "i": "466629",
@@ -80,9 +80,9 @@
       "i": "88334",
       "t": "05 CDE_CONTRATACIÓN DERIVADA",
       "n_f": 15,
-      "n": 175,
+      "n": 178,
       "term": 63,
-      "pct": 0.8686
+      "pct": 0.8573
     },
     {
       "i": "420816",
@@ -106,15 +106,15 @@
       "n_f": 12,
       "n": 160,
       "term": 62,
-      "pct": 0.8419
+      "pct": 0.8475
     },
     {
       "i": "459604",
       "t": "PDI_PORTAFOLIO_DE_INVERSIONES_V2",
       "n_f": 17,
       "n": 148,
-      "term": 33,
-      "pct": 0.8081
+      "term": 34,
+      "pct": 0.8095
     },
     {
       "i": "88328",
@@ -144,17 +144,17 @@
       "i": "88339",
       "t": "12 PRE_PRESUPUESTO",
       "n_f": 13,
-      "n": 99,
+      "n": 105,
       "term": 32,
-      "pct": 0.7586
+      "pct": 0.7352
     },
     {
       "i": "83561",
       "t": "20 SAR_SARLAFT",
       "n_f": 8,
-      "n": 76,
+      "n": 77,
       "term": 28,
-      "pct": 0.8658
+      "pct": 0.861
     },
     {
       "i": "88341",
@@ -168,9 +168,9 @@
       "i": "159753",
       "t": "27. PPA_PORTAL PAGOS",
       "n_f": 1,
-      "n": 45,
+      "n": 46,
       "term": 10,
-      "pct": 0.8244
+      "pct": 0.8304
     },
     {
       "i": "88343",
@@ -221,14 +221,6 @@
       "pct": 0.95
     },
     {
-      "i": "83560",
-      "t": "15 PDI_PORTAFOLIO DE INVERSIONES",
-      "n_f": 2,
-      "n": 7,
-      "term": 7,
-      "pct": 1.0
-    },
-    {
       "i": "319471",
       "t": "24 Parametrización",
       "n_f": 1,
@@ -253,20 +245,28 @@
       "pct": 0.9
     },
     {
+      "i": "560367",
+      "t": "NOM_NOMINA",
+      "n_f": 2,
+      "n": 6,
+      "term": 0,
+      "pct": 0.5
+    },
+    {
+      "i": "83560",
+      "t": "15 PDI_PORTAFOLIO DE INVERSIONES",
+      "n_f": 1,
+      "n": 4,
+      "term": 4,
+      "pct": 1.0
+    },
+    {
       "i": "159752",
       "t": "26. PFIC_Portal FIC'S",
       "n_f": 1,
       "n": 3,
       "term": 0,
       "pct": 0.8
-    },
-    {
-      "i": "560367",
-      "t": "NOM_NOMINA",
-      "n_f": 1,
-      "n": 3,
-      "term": 0,
-      "pct": 0.2
     },
     {
       "i": "159761",
@@ -292,10 +292,10 @@
       "e": "2. En Curso",
       "ep": "83562",
       "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
-      "n": 273,
-      "term": 199,
-      "pct": 0.9447,
-      "n_pct": 273
+      "n": 159,
+      "term": 119,
+      "pct": 0.9478,
+      "n_pct": 159
     },
     {
       "i": "202676",
@@ -325,10 +325,10 @@
       "e": "3. Entregado",
       "ep": "83564",
       "ept": "13 TES_TESORERIA",
-      "n": 77,
+      "n": 78,
       "term": 21,
-      "pct": 0.8545,
-      "n_pct": 77
+      "pct": 0.8462,
+      "n_pct": 78
     },
     {
       "i": "411321",
@@ -402,10 +402,10 @@
       "e": "3. Entregado",
       "ep": "88336",
       "ept": "09 CXP_CUENTAS POR PAGAR",
-      "n": 59,
+      "n": 64,
       "term": 23,
-      "pct": 0.8525,
-      "n_pct": 59
+      "pct": 0.8063,
+      "n_pct": 64
     },
     {
       "i": "411322",
@@ -415,7 +415,7 @@
       "ept": "10 TRI_TRIBUTARIO",
       "n": 57,
       "term": 19,
-      "pct": 0.8561,
+      "pct": 0.8614,
       "n_pct": 57
     },
     {
@@ -452,15 +452,37 @@
       "n_pct": 49
     },
     {
+      "i": "547953",
+      "t": "NFI_Crear Unidades de negocio",
+      "e": "1. En Planeacion",
+      "ep": "83562",
+      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
+      "n": 47,
+      "term": 32,
+      "pct": 0.9234,
+      "n_pct": 47
+    },
+    {
       "i": "337365",
       "t": "PPA_Portal de pagos",
       "e": "1. En Planeacion",
       "ep": "159753",
       "ept": "27. PPA_PORTAL PAGOS",
-      "n": 45,
+      "n": 46,
       "term": 10,
-      "pct": 0.8244,
-      "n_pct": 45
+      "pct": 0.8304,
+      "n_pct": 46
+    },
+    {
+      "i": "237615",
+      "t": "CDE_12_Registro_de_Contrato",
+      "e": "1. En Planeacion",
+      "ep": "88334",
+      "ept": "05 CDE_CONTRATACIÓN DERIVADA",
+      "n": 42,
+      "term": 4,
+      "pct": 0.8048,
+      "n_pct": 42
     },
     {
       "i": "430749",
@@ -474,14 +496,14 @@
       "n_pct": 42
     },
     {
-      "i": "237615",
-      "t": "CDE_12_Registro_de_Contrato",
+      "i": "245299",
+      "t": "CDE_13_Registro_Adiciones_Contractuales",
       "e": "1. En Planeacion",
       "ep": "88334",
       "ept": "05 CDE_CONTRATACIÓN DERIVADA",
       "n": 41,
-      "term": 4,
-      "pct": 0.8195,
+      "term": 6,
+      "pct": 0.8,
       "n_pct": 41
     },
     {
@@ -494,17 +516,6 @@
       "term": 0,
       "pct": 0.7561,
       "n_pct": 41
-    },
-    {
-      "i": "245299",
-      "t": "CDE_13_Registro_Adiciones_Contractuales",
-      "e": "1. En Planeacion",
-      "ep": "88334",
-      "ept": "05 CDE_CONTRATACIÓN DERIVADA",
-      "n": 39,
-      "term": 6,
-      "pct": 0.8308,
-      "n_pct": 39
     },
     {
       "i": "92848",
@@ -756,7 +767,7 @@
       "ept": "13 TES_TESORERIA",
       "n": 26,
       "term": 17,
-      "pct": 0.8731,
+      "pct": 0.8269,
       "n_pct": 26
     },
     {
@@ -790,6 +801,17 @@
       "n": 23,
       "term": 15,
       "pct": 0.8783,
+      "n_pct": 23
+    },
+    {
+      "i": "547955",
+      "t": "NFI_Polizas",
+      "e": "1. En Planeacion",
+      "ep": "83562",
+      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
+      "n": 23,
+      "term": 12,
+      "pct": 0.9043,
       "n_pct": 23
     },
     {
@@ -855,7 +877,7 @@
       "ept": "23 FYC_FACTURACION Y CARTERA",
       "n": 21,
       "term": 9,
-      "pct": 0.8429,
+      "pct": 0.8857,
       "n_pct": 21
     },
     {
@@ -958,6 +980,17 @@
       "n_pct": 19
     },
     {
+      "i": "547954",
+      "t": "NFI_Crear SubFideicomisos",
+      "e": "1. En Planeacion",
+      "ep": "83562",
+      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
+      "n": 19,
+      "term": 12,
+      "pct": 0.8947,
+      "n_pct": 19
+    },
+    {
       "i": "85737",
       "t": "NFI_Cargue Masivo Partícipes Fideicomisos",
       "e": "2. En Curso",
@@ -1002,17 +1035,6 @@
       "n_pct": 18
     },
     {
-      "i": "322195",
-      "t": "TRI_HU0028_Generación_Certificados",
-      "e": "3. Entregado",
-      "ep": "88337",
-      "ept": "10 TRI_TRIBUTARIO",
-      "n": 18,
-      "term": 14,
-      "pct": 0.9556,
-      "n_pct": 18
-    },
-    {
       "i": "83598",
       "t": "TES_Tipos_Recaudo",
       "e": "3. Entregado",
@@ -1032,6 +1054,28 @@
       "n": 17,
       "term": 14,
       "pct": 0.9647,
+      "n_pct": 17
+    },
+    {
+      "i": "92872",
+      "t": "TES_Registrar_Egresos",
+      "e": "2. En Curso",
+      "ep": "83564",
+      "ept": "13 TES_TESORERIA",
+      "n": 17,
+      "term": 10,
+      "pct": 0.8824,
+      "n_pct": 17
+    },
+    {
+      "i": "547959",
+      "t": "NFI_Garantias",
+      "e": "1. En Planeacion",
+      "ep": "83562",
+      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
+      "n": 17,
+      "term": 6,
+      "pct": 0.8706,
       "n_pct": 17
     },
     {
@@ -1079,17 +1123,6 @@
       "n_pct": 16
     },
     {
-      "i": "92872",
-      "t": "TES_Registrar_Egresos",
-      "e": "2. En Curso",
-      "ep": "83564",
-      "ept": "13 TES_TESORERIA",
-      "n": 16,
-      "term": 10,
-      "pct": 0.925,
-      "n_pct": 16
-    },
-    {
       "i": "95687",
       "t": "AUD_Auditoria de log de base de datos",
       "e": "2. En Curso",
@@ -1120,17 +1153,6 @@
       "n": 16,
       "term": 5,
       "pct": 0.8438,
-      "n_pct": 16
-    },
-    {
-      "i": "336248",
-      "t": "TRI_HU0008_Parametrización_Información_Exógena_Contable_Y_Condiciones_Exógena",
-      "e": "3. Entregado",
-      "ep": "88337",
-      "ept": "10 TRI_TRIBUTARIO",
-      "n": 16,
-      "term": 16,
-      "pct": 1.0,
       "n_pct": 16
     },
     {
@@ -1178,6 +1200,17 @@
       "n_pct": 15
     },
     {
+      "i": "551055",
+      "t": "NFI_Encargo general",
+      "e": "1. En Planeacion",
+      "ep": "83562",
+      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
+      "n": 15,
+      "term": 11,
+      "pct": 0.9467,
+      "n_pct": 15
+    },
+    {
       "i": "331837",
       "t": "Login",
       "e": "1. En Planeacion",
@@ -1196,8 +1229,30 @@
       "ept": "12 PRE_PRESUPUESTO",
       "n": 15,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.52,
       "n_pct": 15
+    },
+    {
+      "i": "561407",
+      "t": "Deterioro de caja",
+      "e": "1. En Planeacion",
+      "ep": "83564",
+      "ept": "13 TES_TESORERIA",
+      "n": 15,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 15
+    },
+    {
+      "i": "90035",
+      "t": "SAR_Consultas",
+      "e": "2. En Curso",
+      "ep": "83561",
+      "ept": "20 SAR_SARLAFT",
+      "n": 14,
+      "term": 5,
+      "pct": 0.8071,
+      "n_pct": 14
     },
     {
       "i": "263014",
@@ -1233,6 +1288,17 @@
       "n_pct": 14
     },
     {
+      "i": "322195",
+      "t": "TRI_HU0028_Generación_Certificados",
+      "e": "3. Entregado",
+      "ep": "88337",
+      "ept": "10 TRI_TRIBUTARIO",
+      "n": 14,
+      "term": 10,
+      "pct": 0.9429,
+      "n_pct": 14
+    },
+    {
       "i": "83603",
       "t": "CON_Centro_De_Costos",
       "e": "3. Entregado",
@@ -1241,17 +1307,6 @@
       "n": 13,
       "term": 8,
       "pct": 0.9231,
-      "n_pct": 13
-    },
-    {
-      "i": "90035",
-      "t": "SAR_Consultas",
-      "e": "2. En Curso",
-      "ep": "83561",
-      "ept": "20 SAR_SARLAFT",
-      "n": 13,
-      "term": 5,
-      "pct": 0.8308,
       "n_pct": 13
     },
     {
@@ -1450,6 +1505,17 @@
       "n": 12,
       "term": 11,
       "pct": 0.9833,
+      "n_pct": 12
+    },
+    {
+      "i": "547958",
+      "t": "NFI_Costeo del negocio",
+      "e": "1. En Planeacion",
+      "ep": "83562",
+      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
+      "n": 12,
+      "term": 7,
+      "pct": 0.9167,
       "n_pct": 12
     },
     {
@@ -1728,6 +1794,17 @@
       "n_pct": 10
     },
     {
+      "i": "103032",
+      "t": "FICS_Configuración de cargues masivos",
+      "e": "2. En Curso",
+      "ep": "83563",
+      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
+      "n": 10,
+      "term": 5,
+      "pct": 0.66,
+      "n_pct": 10
+    },
+    {
       "i": "258075",
       "t": "Cierre de facturación y cartera",
       "e": "2. En Curso",
@@ -1772,6 +1849,17 @@
       "n_pct": 10
     },
     {
+      "i": "378063",
+      "t": "NOR_certificados_saldo_de_recursos",
+      "e": "1. En Planeacion",
+      "ep": "88338",
+      "ept": "11 NOR_NORMATIVO",
+      "n": 10,
+      "term": 2,
+      "pct": 0.72,
+      "n_pct": 10
+    },
+    {
       "i": "420823",
       "t": "REP_Negocios fiduciarios",
       "e": "1. En Planeacion",
@@ -1791,17 +1879,6 @@
       "n": 10,
       "term": 0,
       "pct": 0.8,
-      "n_pct": 10
-    },
-    {
-      "i": "547953",
-      "t": "NFI_Crear Unidades de negocio",
-      "e": "1. En Planeacion",
-      "ep": "83562",
-      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
-      "n": 10,
-      "term": 0,
-      "pct": 0.74,
       "n_pct": 10
     },
     {
@@ -2069,6 +2146,17 @@
       "n_pct": 8
     },
     {
+      "i": "103042",
+      "t": "FICS_Aportes y retiros por cargues masivos",
+      "e": "2. En Curso",
+      "ep": "83563",
+      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
+      "n": 8,
+      "term": 1,
+      "pct": 0.6,
+      "n_pct": 8
+    },
+    {
       "i": "231634",
       "t": "CDE_05_Definición_cláusulas_contratos",
       "e": "1. En Planeacion",
@@ -2214,17 +2302,6 @@
     {
       "i": "378061",
       "t": "NOR_certificados_existencia_de_patrimonio",
-      "e": "1. En Planeacion",
-      "ep": "88338",
-      "ept": "11 NOR_NORMATIVO",
-      "n": 8,
-      "term": 2,
-      "pct": 0.85,
-      "n_pct": 8
-    },
-    {
-      "i": "378063",
-      "t": "NOR_certificados_saldo_de_recursos",
       "e": "1. En Planeacion",
       "ep": "88338",
       "ept": "11 NOR_NORMATIVO",
@@ -2564,6 +2641,17 @@
       "n_pct": 7
     },
     {
+      "i": "559704",
+      "t": "PRE_Consultas_Presupuestales",
+      "e": "1. En Planeacion",
+      "ep": "88339",
+      "ept": "12 PRE_PRESUPUESTO",
+      "n": 7,
+      "term": 0,
+      "pct": 0.2857,
+      "n_pct": 7
+    },
+    {
       "i": "82208",
       "t": "UAS_Gestión_De_Usuarios",
       "e": "2. En Curso",
@@ -2674,6 +2762,17 @@
       "n_pct": 6
     },
     {
+      "i": "103249",
+      "t": "FICS_Cargues masivos para cancelaciones",
+      "e": "2. En Curso",
+      "ep": "83563",
+      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
+      "n": 6,
+      "term": 2,
+      "pct": 0.6667,
+      "n_pct": 6
+    },
+    {
       "i": "228197",
       "t": "CDE_06_Documentos_Anexos",
       "e": "1. En Planeacion",
@@ -2737,17 +2836,6 @@
       "n": 6,
       "term": 4,
       "pct": 0.9333,
-      "n_pct": 6
-    },
-    {
-      "i": "103032",
-      "t": "FICS_Configuración de cargues masivos",
-      "e": "2. En Curso",
-      "ep": "83563",
-      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
-      "n": 6,
-      "term": 5,
-      "pct": 0.9667,
       "n_pct": 6
     },
     {
@@ -3191,17 +3279,6 @@
       "n_pct": 5
     },
     {
-      "i": "103042",
-      "t": "FICS_Aportes y retiros por cargues masivos",
-      "e": "2. En Curso",
-      "ep": "83563",
-      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
-      "n": 5,
-      "term": 1,
-      "pct": 0.84,
-      "n_pct": 5
-    },
-    {
       "i": "106031",
       "t": "FICS_Congelamiento y descongelamiento de recursos plan de inversión",
       "e": "1. En Planeacion",
@@ -3342,17 +3419,6 @@
       "n": 5,
       "term": 0,
       "pct": 0.8,
-      "n_pct": 5
-    },
-    {
-      "i": "332775",
-      "t": "TRI_HU0029_Equivalencias_Información_Exógena",
-      "e": "3. Entregado",
-      "ep": "88337",
-      "ept": "10 TRI_TRIBUTARIO",
-      "n": 5,
-      "term": 4,
-      "pct": 0.96,
       "n_pct": 5
     },
     {
@@ -3540,17 +3606,6 @@
       "n": 5,
       "term": 0,
       "pct": 0.2,
-      "n_pct": 5
-    },
-    {
-      "i": "547954",
-      "t": "NFI_Crear SubFideicomisos",
-      "e": "1. En Planeacion",
-      "ep": "83562",
-      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
-      "n": 5,
-      "term": 0,
-      "pct": 0.68,
       "n_pct": 5
     },
     {
@@ -3873,14 +3928,14 @@
       "n_pct": 4
     },
     {
-      "i": "103249",
-      "t": "FICS_Cargues masivos para cancelaciones",
+      "i": "97717",
+      "t": "FICS_Autorización cargue masivo operaciones monetarias",
       "e": "2. En Curso",
       "ep": "83563",
       "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
       "n": 4,
-      "term": 2,
-      "pct": 0.9,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 4
     },
     {
@@ -4055,8 +4110,8 @@
       "ep": "459604",
       "ept": "PDI_PORTAFOLIO_DE_INVERSIONES_V2",
       "n": 4,
-      "term": 0,
-      "pct": 0.8,
+      "term": 1,
+      "pct": 0.85,
       "n_pct": 4
     },
     {
@@ -4101,17 +4156,6 @@
       "n": 4,
       "term": 0,
       "pct": 0.65,
-      "n_pct": 4
-    },
-    {
-      "i": "547955",
-      "t": "NFI_Polizas",
-      "e": "1. En Planeacion",
-      "ep": "83562",
-      "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
-      "n": 4,
-      "term": 0,
-      "pct": 0.8,
       "n_pct": 4
     },
     {
@@ -4225,6 +4269,17 @@
       "n_pct": 3
     },
     {
+      "i": "103936",
+      "t": "FICS_Autorización Cargues masivos para cancelaciones",
+      "e": "1. En Planeacion",
+      "ep": "83563",
+      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
+      "n": 3,
+      "term": 0,
+      "pct": 0.6,
+      "n_pct": 3
+    },
+    {
       "i": "227511",
       "t": "PRE_Códigos_Movimiento",
       "e": "X. Removido",
@@ -4291,17 +4346,6 @@
       "n_pct": 3
     },
     {
-      "i": "134225",
-      "t": "PDI_Englobe de Títulos Renta Fija",
-      "e": "2. En Curso",
-      "ep": "83560",
-      "ept": "15 PDI_PORTAFOLIO DE INVERSIONES",
-      "n": 3,
-      "term": 3,
-      "pct": 1.0,
-      "n_pct": 3
-    },
-    {
       "i": "284511",
       "t": "CXP_22_Anulación_Orpa",
       "e": "1. En Planeacion",
@@ -4329,17 +4373,6 @@
       "e": "1. En Planeacion",
       "ep": "88329",
       "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 3,
-      "term": 3,
-      "pct": 1.0,
-      "n_pct": 3
-    },
-    {
-      "i": "322716",
-      "t": "TRI_HU0006_Consulta_Maestra_Tributaria",
-      "e": "3. Entregado",
-      "ep": "88337",
-      "ept": "10 TRI_TRIBUTARIO",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -4694,7 +4727,18 @@
       "ept": "NOM_NOMINA",
       "n": 3,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.5,
+      "n_pct": 3
+    },
+    {
+      "i": "560741",
+      "t": "Resoluciones_DIAN",
+      "e": "1. En Planeacion",
+      "ep": "560367",
+      "ept": "NOM_NOMINA",
+      "n": 3,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 3
     },
     {
@@ -4904,28 +4948,6 @@
       "n": 2,
       "term": 1,
       "pct": 0.9,
-      "n_pct": 2
-    },
-    {
-      "i": "97717",
-      "t": "FICS_Autorización cargue masivo operaciones monetarias",
-      "e": "2. En Curso",
-      "ep": "83563",
-      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
-      "n": 2,
-      "term": 0,
-      "pct": 0.8,
-      "n_pct": 2
-    },
-    {
-      "i": "103936",
-      "t": "FICS_Autorización Cargues masivos para cancelaciones",
-      "e": "1. En Planeacion",
-      "ep": "83563",
-      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
-      "n": 2,
-      "term": 0,
-      "pct": 0.8,
       "n_pct": 2
     },
     {
@@ -5457,6 +5479,17 @@
       "n_pct": 1
     },
     {
+      "i": "332775",
+      "t": "TRI_HU0029_Equivalencias_Información_Exógena",
+      "e": "3. Entregado",
+      "ep": "88337",
+      "ept": "10 TRI_TRIBUTARIO",
+      "n": 1,
+      "term": 0,
+      "pct": 0.8,
+      "n_pct": 1
+    },
+    {
       "i": "399834",
       "t": "TES_IMS_CSV_Consulta_de_Pagos",
       "e": "1. En Planeacion",
@@ -5729,17 +5762,6 @@
       "n": 1,
       "term": 0,
       "pct": 0.8,
-      "n_pct": 1
-    },
-    {
-      "i": "559704",
-      "t": "PRE_Consultas_Presupuestales",
-      "e": "1. En Planeacion",
-      "ep": "88339",
-      "ept": "12 PRE_PRESUPUESTO",
-      "n": 1,
-      "term": 0,
-      "pct": 0.2,
       "n_pct": 1
     },
     {
@@ -7841,7 +7863,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -9337,7 +9359,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jenny Patricia Portela"
     },
@@ -12824,7 +12846,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -13869,7 +13891,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -13979,7 +14001,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -17587,7 +17609,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -17598,7 +17620,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -18962,7 +18984,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19732,7 +19754,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19754,7 +19776,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19787,7 +19809,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19897,7 +19919,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19908,7 +19930,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19919,7 +19941,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -19930,7 +19952,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -20079,7 +20101,7 @@
     },
     {
       "i": "255018",
-      "t": "CDE_HU0013_P05/01_Adiciones_Contratos_Listado",
+      "t": "CDE_HU0013_P05/01_Adiciones_Contratos_Listado_V1",
       "e": "3. Entregado",
       "p": "QA",
       "a": 1,
@@ -22113,39 +22135,6 @@
       "r": "Herber Duvan Pinto Torres"
     },
     {
-      "i": "270248",
-      "t": "PDI_HU0055_P2/3_Registro_ Englobe_de_Títulos_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "134225",
-      "ep": "83560",
-      "r": "Alvis Valerio"
-    },
-    {
-      "i": "270249",
-      "t": "PDI_HU0055_Registro_ Englobe de Títulos _ Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "134225",
-      "ep": "83560",
-      "r": "Alvis Valerio"
-    },
-    {
-      "i": "270250",
-      "t": "PDI_HU0055_Registro_ Englobe de Títulos _Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "134225",
-      "ep": "83560",
-      "r": "Alvis Valerio"
-    },
-    {
       "i": "270266",
       "t": "CON_HU0049_P3/5_Programar_Diferidos_Editar_V2",
       "e": "X. Removido",
@@ -24154,7 +24143,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24165,7 +24154,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24176,7 +24165,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24187,7 +24176,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24198,7 +24187,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24396,7 +24385,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24407,7 +24396,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24418,7 +24407,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24429,7 +24418,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24440,7 +24429,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Cristian Camilo Posada Marin"
     },
@@ -24451,7 +24440,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24462,7 +24451,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24473,7 +24462,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Juan camilo Montoya"
     },
@@ -24484,7 +24473,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24495,7 +24484,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24506,7 +24495,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24517,7 +24506,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Daniel Santiago Gomez Peña"
     },
@@ -24528,7 +24517,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -24539,7 +24528,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -29923,50 +29912,6 @@
       "r": "Jhoan Camilo Copete Gonzalez"
     },
     {
-      "i": "322201",
-      "t": "TRI_HU0005_P1/6_Generación_Certificados_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322195",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "322245",
-      "t": "TRI_HU0005_P3/6_Generación_Certificados_Descargar_Excel_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322195",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "322302",
-      "t": "TRI_HU0005_P4/6_Generación_Certificados_Descargar_PDF_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322195",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "322721",
-      "t": "TRI_HU0006_P1/3_Consulta_Maestra_Impuestos_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322716",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
       "i": "322728",
       "t": "CON_HU0064_P1/3_Reporte_Libro_Diario_Crear_V2",
       "e": "4. Cerrado",
@@ -30284,17 +30229,6 @@
       "f": "261902",
       "ep": "88338",
       "r": "Yor Brillen Castaño Vargas"
-    },
-    {
-      "i": "324000",
-      "t": "TRI_HU0005_P6/6_Generación_Certificados_NF_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322195",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
     },
     {
       "i": "324233",
@@ -31287,17 +31221,6 @@
       "r": "Santiago Osorio Pulgarin"
     },
     {
-      "i": "329339",
-      "t": "TRI_HU0006_P3/3_Consulta_Maestra_Impuestos_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322716",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
       "i": "329458",
       "t": "CON_HU0052_P2/3_Balance_General_Comparativo_Descargar_PDF_V2",
       "e": "4. Cerrado",
@@ -31329,17 +31252,6 @@
       "f": "164973",
       "ep": "83566",
       "r": "Paula Andrea Ruiz Jiménez"
-    },
-    {
-      "i": "329482",
-      "t": "TRI_HU0006_P2/3_Consulta_Maestra_Impuestos_Descargar_Excel_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "322716",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
     },
     {
       "i": "329483",
@@ -31612,7 +31524,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -31623,7 +31535,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -31925,28 +31837,6 @@
       "r": "Jersson Alberto Salazar"
     },
     {
-      "i": "332778",
-      "t": "TRI_HU007_P1/4_Equivalencias_Informacion_Exogena_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "332775",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "332897",
-      "t": "TRI_HU007_P2/4_Equivalencias_Informacion_Exogena_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "332775",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
       "i": "333406",
       "t": "AYN_HU0001_notificaciones _Listado_V1",
       "e": "3. Entregado",
@@ -32000,28 +31890,6 @@
       "f": "114982",
       "ep": "83563",
       "r": "Martha Isabel Ángel Pardo"
-    },
-    {
-      "i": "334022",
-      "t": "TRI_HU007_P3/4_Equivalencias_Informacion_Exogena_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "332775",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "334028",
-      "t": "TRI_HU007_P4/4_Equivalencias_Informacion_Exogena_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "332775",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
     },
     {
       "i": "334032",
@@ -32462,182 +32330,6 @@
       "f": "98334",
       "ep": "83561",
       "r": "Daniela Garcia Orrego"
-    },
-    {
-      "i": "336249",
-      "t": "TRI_HU0008_P1/11_Parametrización_Información_Exogena_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336251",
-      "t": "TRI_HU0008_P2/11_Parametrización_Información_Exogena_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336253",
-      "t": "TRI_HU0008_P3/11_Parametrización_Información_Exogena_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336254",
-      "t": "TRI_HU0008_P4/11_Parametrización_Información_Exogena_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336255",
-      "t": "TRI_HU0008_P5/11_Parametrización_Información_Exogena_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336256",
-      "t": "TRI_HU0008_P6/11_Parametrización_Información_Exogena_Registro_Formato_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336257",
-      "t": "TRI_HU0008_P7/11_Parametrización_Información_Exogena_Registro_Formato_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336260",
-      "t": "TRI_HU0008_P8/11_Parametrización_Información_Exogena_Registro_Formato_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336261",
-      "t": "TRI_HU0008_P9/11_Parametrización_Información_Exogena_Columnas_Registro_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336263",
-      "t": "TRI_HU0008_P10/11_Parametrización_Información_Exogena_Columnas_Registro_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336264",
-      "t": "TRI_HU0008_P11/11_Parametrización_Información_Exogena_Columnas_Registro_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336265",
-      "t": "TRI_HU0008_P2_1/5_Parametrización_Información_Exogena_Condiciones_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336266",
-      "t": "TRI_HU0008_P2_2/5_Parametrización_Información_Exogena_Condiciones_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336267",
-      "t": "TRI_HU0008_P2_3/5_Parametrización_Información_Exogena_Condiciones_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336268",
-      "t": "TRI_HU0008_P2_4/5_Parametrización_Información_Exogena_Condiciones_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
-    },
-    {
-      "i": "336269",
-      "t": "TRI_HU0008_P2_5/5_Parametrización_Información_Exogena_Condiciones_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "336248",
-      "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
     },
     {
       "i": "336576",
@@ -35891,7 +35583,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -35902,7 +35594,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -36331,7 +36023,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -36342,7 +36034,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -36353,7 +36045,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -36364,7 +36056,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -37838,7 +37530,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -37871,7 +37563,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -37926,7 +37618,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -37937,7 +37629,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -38003,7 +37695,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -38014,7 +37706,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -38025,7 +37717,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -38058,7 +37750,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -38201,7 +37893,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -38212,7 +37904,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39323,7 +39015,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39334,7 +39026,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39345,7 +39037,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39422,7 +39114,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39433,7 +39125,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39708,7 +39400,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39719,7 +39411,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39730,7 +39422,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39752,7 +39444,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39774,7 +39466,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39785,7 +39477,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39796,7 +39488,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39807,7 +39499,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39818,7 +39510,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39829,7 +39521,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39840,7 +39532,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -39851,7 +39543,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -40063,17 +39755,6 @@
       "f": "237615",
       "ep": "88334",
       "r": "Paula Andrea Ruiz Jiménez"
-    },
-    {
-      "i": "395231",
-      "t": "TRI_HU0013_P5/5_Montos_Anuales_De_Pago_Importar_V2",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "100564",
-      "ep": "88337",
-      "r": "Angel Arturo Rosas Correa"
     },
     {
       "i": "395279",
@@ -40632,7 +40313,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -40643,7 +40324,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -40654,7 +40335,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -41259,7 +40940,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -43316,7 +42997,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -43327,7 +43008,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -43899,7 +43580,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -43921,7 +43602,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -43954,7 +43635,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -44075,7 +43756,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -44086,7 +43767,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -44097,7 +43778,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -44174,7 +43855,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -44185,7 +43866,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -54118,7 +53799,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -54921,7 +54602,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -54932,7 +54613,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -54965,7 +54646,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -54998,7 +54679,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -55009,7 +54690,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -55020,7 +54701,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -55350,7 +55031,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -55361,7 +55042,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -55504,7 +55185,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -55515,7 +55196,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -58199,7 +57880,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -58331,7 +58012,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "551055",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -58628,7 +58309,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -58749,7 +58430,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -58760,7 +58441,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547959",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -59266,7 +58947,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -59288,7 +58969,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -59310,7 +58991,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547958",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -60164,10 +59845,10 @@
     {
       "i": "492388",
       "t": "PDI_HU00141_Planilla_De_Vencimientos_Listado_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "478478",
       "ep": "459604",
       "r": "Jhon Alejandro Montes Bohorquez"
@@ -61378,7 +61059,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -61400,7 +61081,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -61796,7 +61477,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -62544,7 +62225,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -62610,7 +62291,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -63457,7 +63138,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -63468,7 +63149,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -63809,7 +63490,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.8,
-      "f": "85702",
+      "f": "547955",
       "ep": "83562",
       "r": "Juan David Gomez Gallego"
     },
@@ -64117,7 +63798,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -64128,7 +63809,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547954",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -64139,7 +63820,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -64150,7 +63831,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "85702",
+      "f": "547953",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
     },
@@ -64898,7 +64579,7 @@
       "p": "EXCLUIR",
       "a": 0,
       "v": null,
-      "f": "124058",
+      "f": "545561",
       "ep": "83564",
       "r": ""
     },
@@ -64909,7 +64590,7 @@
       "p": "EXCLUIR",
       "a": 0,
       "v": null,
-      "f": "124058",
+      "f": "545561",
       "ep": "83564",
       "r": "anyelo Gutierrez Correa"
     },
@@ -64964,7 +64645,7 @@
       "p": "EXCLUIR",
       "a": 0,
       "v": null,
-      "f": "124058",
+      "f": "545561",
       "ep": "83564",
       "r": ""
     },
@@ -66918,13 +66599,13 @@
     {
       "i": "530053",
       "t": "PPA_HU0015_NF_Portal_de_pagos_Auditoria_Log_De_Bases_De_Datos_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "337365",
       "ep": "159753",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Santiago Osorio Pulgarin"
     },
     {
       "i": "530060",
@@ -67611,10 +67292,10 @@
     {
       "i": "532711",
       "t": "CXP_HU0016_Solicitud_de_Pago_Portal_Pagos_Instrucciones_V1.1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "273719",
       "ep": "88336",
       "r": "Jonathan Orrego Montoya"
@@ -68667,10 +68348,10 @@
     {
       "i": "535791",
       "t": "TRI_HU0022_P22_Parametrización_Tributaria_Formularios_Editar_V1.1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "411322",
       "ep": "88337",
       "r": "Jonathan Orrego Montoya"
@@ -69074,24 +68755,24 @@
     {
       "i": "537719",
       "t": "TES_HU0074_Anulaciones_Movimiento_De_Tesorería_Listado_V4",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "139699",
       "ep": "83564",
-      "r": "Sebastian Benjumea Henao"
+      "r": "Paula Mendez"
     },
     {
       "i": "537739",
       "t": "TES_HU0074_Anulaciones_Movimiento_Tesorería_Anular_V4",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "139699",
       "ep": "83564",
-      "r": "Sebastian Benjumea Henao"
+      "r": "Paula Mendez"
     },
     {
       "i": "537757",
@@ -69234,7 +68915,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "538567",
@@ -69245,7 +68926,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "538568",
@@ -69256,7 +68937,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "538570",
@@ -69267,7 +68948,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "538576",
@@ -69278,7 +68959,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "538630",
@@ -69410,7 +69091,7 @@
       "v": 0.5,
       "f": "538873",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "539021",
@@ -69421,7 +69102,7 @@
       "v": 0.5,
       "f": "538873",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "539025",
@@ -69443,7 +69124,7 @@
       "v": 0.5,
       "f": "538873",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "539076",
@@ -69454,7 +69135,7 @@
       "v": 0.5,
       "f": "538873",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "539085",
@@ -69630,7 +69311,7 @@
       "v": 0.5,
       "f": "538873",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "539705",
@@ -69663,7 +69344,7 @@
       "v": 0.5,
       "f": "538875",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "539949",
@@ -69685,7 +69366,7 @@
       "v": 0.5,
       "f": "538875",
       "ep": "88339",
-      "r": "Carlos Andres Duque Arango"
+      "r": "Juan Esteban Montoya Molina"
     },
     {
       "i": "540059",
@@ -70163,13 +69844,13 @@
     {
       "i": "543168",
       "t": "TES_HU0074_Anulaciones_Movimientos_Anulados_Ver_V4",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "139699",
       "ep": "83564",
-      "r": "Sebastian Benjumea Henao"
+      "r": "Paula Mendez"
     },
     {
       "i": "543367",
@@ -70587,7 +70268,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "545310",
@@ -70598,7 +70279,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "545311",
@@ -70609,7 +70290,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "545312",
@@ -70620,7 +70301,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "545521",
@@ -71115,7 +70796,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "547153",
@@ -71126,7 +70807,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "547154",
@@ -71137,18 +70818,18 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "547155",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Comprobante_Contable_NF_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "547236",
@@ -71615,13 +71296,13 @@
     {
       "i": "548849",
       "t": "TES_HU0074_Anulaciones_Movimientos_Anulados_V4",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "139699",
       "ep": "83564",
-      "r": "Sebastian Benjumea Henao"
+      "r": "Paula Mendez"
     },
     {
       "i": "549065",
@@ -71890,35 +71571,35 @@
     {
       "i": "550725",
       "t": "FYC_HU0004_Generación_de_Factura_Crear_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "242264",
       "ep": "88344",
-      "r": "Nelson Uriel Sanchez Alvarez"
+      "r": "Oscar Andres Preciado Guevara"
     },
     {
       "i": "550741",
       "t": "FYC_HU0004_Generación_de_Factura_Facturar_Todas_V2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "242264",
       "ep": "88344",
-      "r": "Nelson Uriel Sanchez Alvarez"
+      "r": "Oscar Andres Preciado Guevara"
     },
     {
       "i": "550761",
       "t": "FYC_HU0004_Generación_de_Factura_Listado_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "242264",
       "ep": "88344",
-      "r": "Nelson Uriel Sanchez Alvarez"
+      "r": "Oscar Andres Preciado Guevara"
     },
     {
       "i": "550766",
@@ -72138,7 +71819,7 @@
       "v": 0.5,
       "f": "97651",
       "ep": "83564",
-      "r": "Andres Felipe Murillo Vargas"
+      "r": "Carlos Andres Marquez Rodriguez"
     },
     {
       "i": "551866",
@@ -72149,7 +71830,7 @@
       "v": 0.5,
       "f": "97651",
       "ep": "83564",
-      "r": "Andres Felipe Murillo Vargas"
+      "r": "Carlos Andres Marquez Rodriguez"
     },
     {
       "i": "552032",
@@ -72160,7 +71841,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Luis Alejandro Grajales Acevedo"
     },
     {
       "i": "552033",
@@ -72171,7 +71852,7 @@
       "v": 0.5,
       "f": "538565",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Santiago Meneses"
     },
     {
       "i": "552337",
@@ -72204,7 +71885,7 @@
       "v": 0.5,
       "f": "139699",
       "ep": "83564",
-      "r": "Sebastian Benjumea Henao"
+      "r": "Paula Mendez"
     },
     {
       "i": "552953",
@@ -72479,7 +72160,7 @@
       "v": 0.2,
       "f": "559371",
       "ep": "88339",
-      "r": "William Jefferson Ochoa Galán"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "559378",
@@ -72490,7 +72171,7 @@
       "v": 0.2,
       "f": "559371",
       "ep": "88339",
-      "r": "William Jefferson Ochoa Galán"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "559380",
@@ -72501,7 +72182,7 @@
       "v": 0.2,
       "f": "559371",
       "ep": "88339",
-      "r": "William Jefferson Ochoa Galán"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "559381",
@@ -72512,7 +72193,7 @@
       "v": 0.2,
       "f": "559371",
       "ep": "88339",
-      "r": "William Jefferson Ochoa Galán"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "559387",
@@ -72523,7 +72204,7 @@
       "v": 0.2,
       "f": "559371",
       "ep": "88339",
-      "r": "William Jefferson Ochoa Galán"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "559620",
@@ -72582,14 +72263,14 @@
     },
     {
       "i": "559885",
-      "t": "PRE_HU0039_P2/5_Consultas_Presupuestal_Crear_V1",
+      "t": "PRE_HU0040_P2/5_Consultas_Presupuestal_Crear_V1",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
       "f": "559704",
       "ep": "88339",
-      "r": "William Jefferson Ochoa Galán"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "560212",
@@ -72605,35 +72286,35 @@
     {
       "i": "560385",
       "t": "NOM_HU0001_Nómina_Electrónica_Listar_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "560315",
       "ep": "560367",
-      "r": "David Moscoso Guzman"
+      "r": "Andres Guerrero Guerrero"
     },
     {
       "i": "560386",
       "t": "NOM_HU0002_Nómina_Electrónica_Ver_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "560315",
       "ep": "560367",
-      "r": "David Moscoso Guzman"
+      "r": "Andres Guerrero Guerrero"
     },
     {
       "i": "560387",
       "t": "NOM_HU0003_Nómina_Electrónica_Descargar_Excel_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "560315",
       "ep": "560367",
-      "r": "David Moscoso Guzman"
+      "r": "Andres Guerrero Guerrero"
     },
     {
       "i": "560531",
@@ -72645,39 +72326,589 @@
       "f": "237175",
       "ep": "88334",
       "r": "Laura Alejandra Alarcon Amaya"
+    },
+    {
+      "i": "560687",
+      "t": "PPA_HU0018_Panel_principal_V2",
+      "e": "3. Entregado",
+      "p": "QA",
+      "a": 1,
+      "v": 0.8,
+      "f": "337365",
+      "ep": "159753",
+      "r": "Santiago Osorio Pulgarin"
+    },
+    {
+      "i": "560694",
+      "t": "CDE_HU0012_P02/01_Registro_de_Contrato_Datos_Básicos_Crear_V_2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "237615",
+      "ep": "88334",
+      "r": "Laura Alejandra Alarcon Amaya"
+    },
+    {
+      "i": "560746",
+      "t": "NOM_HU0004_Resoluciones_DIAN_Listar_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "560741",
+      "ep": "560367",
+      "r": "Andres Guerrero Guerrero"
+    },
+    {
+      "i": "560747",
+      "t": "NOM_HU0005_Resoluciones_DIAN_Ver_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "560741",
+      "ep": "560367",
+      "r": "Andres Guerrero Guerrero"
+    },
+    {
+      "i": "560748",
+      "t": "NOM_HU0006_Resoluciones_DIAN_Descargar_Excel_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "560741",
+      "ep": "560367",
+      "r": "Andres Guerrero Guerrero"
+    },
+    {
+      "i": "560803",
+      "t": "CXP_HU0016_P1/8_Solicitud_de_Pago_Listado_V4",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "560839",
+      "t": "6_Estructuras_Columnas_de_Registro_Crear_V4.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "85709",
+      "ep": "83564",
+      "r": "Daniel Lozada Calvo"
+    },
+    {
+      "i": "560849",
+      "t": "CXP_HU0016_P6/12_Solicitud_de_Pago_Instrucciones_Crear_V7",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "560887",
+      "t": "CXP_HU0016_P7/12_Solicitud_de_Pago_Anticipos/Descuentos_Crear_V7",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "560921",
+      "t": "CXP_HU0016_P5/8_Solicitud_de_Pago_Anticipos/Descuentos_Editar_V7",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "560969",
+      "t": "CXP_HU0016_NF_Solicitud_de_Pago_Liquidación_Tributaria_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "561018",
+      "t": "FIC_HU0055_Configuración_Cargues_Masivos_Operaciones_Monetarias_Crear_Plantilla_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103032",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561043",
+      "t": "FIC_HU0055_Configuración_Cargues_Masivos_Operaciones_Monetarias_Plantillas_Listado_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103032",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561063",
+      "t": "HU_0041_Consultas_Presupuestales_Proyeccciones_Listar_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "561064",
+      "t": "HU_0042_Consultas_Presupuestales_Proyecciones_Descargar_Excel_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "561065",
+      "t": "NOR_NFI_HU0057_P2/6_Generación_Certificados_de_saldo de recursos_Generar PDF_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "378063",
+      "ep": "88338",
+      "r": "Andres Fernando Mejia Jimenez"
+    },
+    {
+      "i": "561076",
+      "t": "CDE_HU0013_P01/01_Adiciones_Contratos_Datos_Básicos_Crear_V4",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "245299",
+      "ep": "88334",
+      "r": "Laura Alejandra Alarcon Amaya"
+    },
+    {
+      "i": "561083",
+      "t": "NOR_NFI_HU0057_P6/6_Generación_Certificados_de_saldo de recursos_Ver_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "378063",
+      "ep": "88338",
+      "r": "Andres Fernando Mejia Jimenez"
+    },
+    {
+      "i": "561097",
+      "t": "SAR_HU0020_NF_Notificacion_Resolucion_SARLAFT_Tesoreria_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "90035",
+      "ep": "83561",
+      "r": "Erick Duvan Estrada Paez"
+    },
+    {
+      "i": "561122",
+      "t": "CDE_HU0013_P05/01_Adiciones_Contratos_Listado_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "245299",
+      "ep": "88334",
+      "r": "Laura Alejandra Alarcon Amaya"
+    },
+    {
+      "i": "561161",
+      "t": "FIC_HU0055_Configuración_Cargues_Masivos_Operaciones_Monetarias_Plantillas_Editar_V1.6",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103032",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561178",
+      "t": "FIC_HU0055_Configuración_Cargues_Masivos_Operaciones_Monetarias_Plantillas_Descargar_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103032",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561219",
+      "t": "FIC_HU0056_Aportes_y_retiros_por_cargues_masivos_Listado_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103042",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561221",
+      "t": "FIC_HU0056_Aportes_Retiros_Por_Cargues_Masivos_Crear_V1.2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103042",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561229",
+      "t": "FIC_HU0056_Aportes_Retiros_Por_Cargues_Masivos_Descargar_detalle_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103042",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561235",
+      "t": "FIC_HU0057_Autorización_Cargue_Masivo_Para_Aportes_Retiros_Crear_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "97717",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561242",
+      "t": "FIC_HU0057_Autorización_cargue_masivo_para_aportes_retiros_Descargar_Excel_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "97717",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561256",
+      "t": "FIC_HU0058_Cargues_masivos_para_cancelaciones_Crear_V1.2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103249",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561261",
+      "t": "FIC_HU0058_Cargues_masivos_para_cancelaciones_Crear_Manual_V2.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103249",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561281",
+      "t": "FIC_HU0059_Autorización_Cargues_masivos_para_cancelaciones_Crear_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "103936",
+      "ep": "83563",
+      "r": "William Eduardo Salazar Orellana"
+    },
+    {
+      "i": "561327",
+      "t": "TES_HU0031_Egresos_Individuales_Detalle_Crear_V4.2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "92872",
+      "ep": "83564",
+      "r": "Laura Alejandra Alarcon Amaya"
+    },
+    {
+      "i": "561409",
+      "t": "TES_HU00140_P1/15_Presupuesto_Deterioro_De_Caja_Resumen_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561410",
+      "t": "TES_HU00140_P2/15_Presupuesto_Deterioro_De_Caja_Resumen_Descargar_Excel_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561411",
+      "t": "TES_HU00140_P3/15_Presupuesto_Deterioro_De_Caja_Resumen_Ver_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561412",
+      "t": "TES_HU00140_P4/15_Presupuesto_Deterioro_De_Caja_Resumen_Descargar_Comprobante_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561413",
+      "t": "TES_HU00140_P5/15_Presupuesto_Deterioro_De_Caja_Ejecuciones_Listado_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561414",
+      "t": "TES_HU00140_P6/15_Presupuesto_Deterioro_De_Caja_Ejecuciones_Crear_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561415",
+      "t": "TES_HU00140_P7/15_Presupuesto_Deterioro_De_Caja_Ejecuciones_Ver_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561416",
+      "t": "TES_HU00140_P8/15_Presupuesto_Deterioro_De_Caja_Parametrizar_Listado_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561417",
+      "t": "TES_HU00140_P9/15_Presupuesto_Deterioro_De_Caja_Parametrizar_Crear_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561418",
+      "t": "TES_HU00140_P10/15_Presupuesto_Deterioro_De_Caja_Parametrizar_Editar_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561420",
+      "t": "TES_HU00140_P11/15_Presupuesto_Deterioro_De_Caja_Parametrizar_Ver_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561421",
+      "t": "TES_HU00140_P12/15_Presupuesto_Deterioro_De_Caja_Contabilización_Listado_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561423",
+      "t": "TES_HU00140_P13/15_Presupuesto_Deterioro_De_Caja_Contabilización_Crear_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561424",
+      "t": "TES_HU00140_P14/15_Presupuesto_Deterioro_De_Caja_Contabilización_Editar_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561425",
+      "t": "TES_HU00140_P15/15_Presupuesto_Deterioro_De_Caja_Contabilización_Ver_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561407",
+      "ep": "83564",
+      "r": "Alvis Valerio"
+    },
+    {
+      "i": "561440",
+      "t": "PRE_HU0040_P1/5_Consultas_Presupuestales_Listado_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "561441",
+      "t": "PRE_HU0040_P3/5_Consultas_Presupuestales_Eliminar_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "561444",
+      "t": "PRE_HU0040_P4/5_Consultas_Presupuestales_Ver_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "561447",
+      "t": "PRE_HU0040_P5/5_Consultas_Presupuestales_Descargar_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
     }
   ],
   "kpi": {
-    "n_hu": 5986,
-    "n_hu_activas": 5148,
+    "n_hu": 6005,
+    "n_hu_activas": 5168,
     "hu_sin_feature": 19,
-    "n_feature": 592,
+    "n_feature": 594,
     "n_epic": 35,
-    "n_feature_con_hu": 496,
+    "n_feature_con_hu": 498,
     "feature_sin_hu": 96,
     "hu_omitidas": 0,
-    "pct_global": 0.8539,
-    "term_global": 2313,
+    "pct_global": 0.8476,
+    "term_global": 2284,
     "feature_sin_frente": 2,
     "hu_sin_frente": 7,
-    "feature_100_sin_cerrar": 97,
+    "feature_100_sin_cerrar": 94,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 7
   },
   "cmi": {
-    "tactico": 0.4851,
-    "estrategico": 0.2036,
-    "n": 496,
-    "d": 101,
+    "tactico": 0.4797,
+    "estrategico": 0.1968,
+    "n": 498,
+    "d": 98,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 496,
-    "feat_ent": 101,
+    "feat_total": 498,
+    "feat_ent": 98,
     "buckets": {
-      "100": 101,
+      "100": 98,
       "75": 0,
-      "50": 222,
-      "20": 143,
+      "50": 223,
+      "20": 147,
       "0": 30
     }
   }

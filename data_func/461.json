@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_461_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_461_20261109.csv",
   "epics": [
     {
       "i": "457548",
@@ -10,7 +10,7 @@
       "n_f": 7,
       "n": 32,
       "term": 0,
-      "pct": 0.5772
+      "pct": 0.5803
     },
     {
       "i": "467870",
@@ -70,7 +70,7 @@
       "ept": "Parametrización y Configuración",
       "n": 9,
       "term": 0,
-      "pct": 0.5633,
+      "pct": 0.5744,
       "n_pct": 9
     },
     {
@@ -628,13 +628,13 @@
     {
       "i": "471513",
       "t": "HU_ParRol_016_Edición e inactivación de roles",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "487170",
       "ep": "457548",
-      "r": "John Sebastian Rincon Pulido"
+      "r": "Osmar Peña González"
     },
     {
       "i": "474587",
@@ -2164,7 +2164,7 @@
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
     "hu_omitidas": 47,
-    "pct_global": 0.442,
+    "pct_global": 0.443,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

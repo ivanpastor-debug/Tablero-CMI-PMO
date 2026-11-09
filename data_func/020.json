@@ -1,24 +1,32 @@
 {
   "codigo": "020",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_020_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_020_20261109.csv",
   "epics": [
     {
       "i": "525431",
       "t": "OPERACIÓN",
       "n_f": 5,
       "n": 52,
-      "term": 34,
-      "pct": 0.8269
+      "term": 44,
+      "pct": 0.9115
     },
     {
       "i": "525428",
       "t": "SOPORTE",
       "n_f": 2,
       "n": 21,
-      "term": 16,
-      "pct": 0.8952
+      "term": 18,
+      "pct": 0.9286
+    },
+    {
+      "i": "561213",
+      "t": "POC",
+      "n_f": 1,
+      "n": 7,
+      "term": 7,
+      "pct": 1.0
     }
   ],
   "features": [
@@ -29,8 +37,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 17,
-      "term": 14,
-      "pct": 0.9294,
+      "term": 16,
+      "pct": 0.9529,
       "n_pct": 17
     },
     {
@@ -40,8 +48,8 @@
       "ep": "525428",
       "ept": "SOPORTE",
       "n": 17,
-      "term": 13,
-      "pct": 0.9176,
+      "term": 15,
+      "pct": 0.9588,
       "n_pct": 17
     },
     {
@@ -51,8 +59,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 14,
-      "term": 9,
-      "pct": 0.8,
+      "term": 12,
+      "pct": 0.9286,
       "n_pct": 14
     },
     {
@@ -62,8 +70,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 12,
-      "term": 8,
-      "pct": 0.8333,
+      "term": 10,
+      "pct": 0.8667,
       "n_pct": 12
     },
     {
@@ -73,8 +81,19 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 7,
-      "term": 2,
-      "pct": 0.6857,
+      "term": 4,
+      "pct": 0.8286,
+      "n_pct": 7
+    },
+    {
+      "i": "561218",
+      "t": "Comparativo SIARP vs Balu",
+      "e": "4. Cerrado",
+      "ep": "561213",
+      "ept": "POC",
+      "n": 7,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
@@ -95,15 +114,15 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 2,
-      "term": 1,
-      "pct": 0.6,
+      "term": 2,
+      "pct": 1.0,
       "n_pct": 2
     }
   ],
   "hus": [
     {
       "i": "515778",
-      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\r\nAJUSTES DE MAPEO Y TRAZABILIDAD",
+      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\nAJUSTES DE MAPEO Y TRAZABILIDAD",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -114,7 +133,7 @@
     },
     {
       "i": "515779",
-      "t": "HU_081_ID_020_MIGRACIÓN TABLEROS A LOOKER PRO EL TABLERO \r\nCIUDADES Y RAMOS",
+      "t": "HU_081_ID_020_MIGRACIÓN TABLEROS A LOOKER PRO EL TABLERO \nCIUDADES Y RAMOS",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -125,7 +144,7 @@
     },
     {
       "i": "515780",
-      "t": "HU_082_ID_020_REVISIÓN REGLA 202\r\nEMPRESAS ACTIVAS EN SIARP",
+      "t": "HU_082_ID_020_REVISIÓN REGLA 202\nEMPRESAS ACTIVAS EN SIARP",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -191,7 +210,7 @@
     },
     {
       "i": "518661",
-      "t": "HU_083_ID_020_AJUSTES GALENO\r\nREDISEÑO DEL PROMPT Y ARQUITECTURA DEL AUDITOR",
+      "t": "HU_083_ID_020_AJUSTES GALENO\nREDISEÑO DEL PROMPT Y ARQUITECTURA DEL AUDITOR",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -213,7 +232,7 @@
     },
     {
       "i": "518663",
-      "t": "HU_079_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\r\n\r\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)",
+      "t": "HU_079_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\n\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -235,7 +254,7 @@
     },
     {
       "i": "518665",
-      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\r\nAJUSTES DE MAPEO Y TRAZABILIDAD",
+      "t": "HU_080_ID_020_REVISIÓN MODELO SINIESTROS\nAJUSTES DE MAPEO Y TRAZABILIDAD",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -433,7 +452,7 @@
     },
     {
       "i": "530718",
-      "t": "HU_004_ID_020_CREACIÓN TABLERO DE ACTUALIZACIÓN DE TABLAS\r\nAVANCE 1",
+      "t": "HU_004_ID_020_CREACIÓN TABLERO DE ACTUALIZACIÓN DE TABLAS\nAVANCE 1",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -455,7 +474,7 @@
     },
     {
       "i": "530720",
-      "t": "HU_003_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\r\n\r\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
+      "t": "HU_003_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\n\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -477,7 +496,7 @@
     },
     {
       "i": "530722",
-      "t": "HU_002_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\r\n\r\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
+      "t": "HU_002_ID_020_PLAN DE TRABAJO PARA EL CIERRE DE LAS 27 BRECHAS IDENTIFICADAS EN FURAG\n\nESTRUCTURA ESTRATÉGICA, METODOLÓGICA Y DE GOBIERNO DEL PROCESO ESTADÍSTICO (14 BRECHAS)(7 YA CERRADAS)",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -521,7 +540,7 @@
     },
     {
       "i": "536047",
-      "t": "HU_003_ID_020_AJUSTES GALENO\r\nDESARROLLO TÉCNICO, ETL E INTEGRACIÓN ADK",
+      "t": "HU_003_ID_020_AJUSTES GALENO\nDESARROLLO TÉCNICO, ETL E INTEGRACIÓN ADK",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -565,7 +584,7 @@
     },
     {
       "i": "540183",
-      "t": "HU_010_ID_020_EXTRACCIONES COMPLETA - PROCESO DE EXTRACCIÓN PARA LA TABLA\r\nPREVISORAVIDA.MCB",
+      "t": "HU_010_ID_020_EXTRACCIONES COMPLETA - PROCESO DE EXTRACCIÓN PARA LA TABLA\nPREVISORAVIDA.MCB",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -687,10 +706,10 @@
     {
       "i": "546085",
       "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO DIMENSIONES MENSUALES",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527697",
       "ep": "525428",
       "r": "daniel.hernandez wimbu.co"
@@ -698,10 +717,10 @@
     {
       "i": "546086",
       "t": "HU_002_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – LA ELABORACIÓN DEL PLAN GENERAL DE OPERACIONES ESTADÍSTICAS",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -709,10 +728,10 @@
     {
       "i": "546087",
       "t": "HU_003_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – EL ENFOQUE DIFERENCIAL E INTERSECCIONAL EN LA PRODUCCIÓN ESTADÍSTICA",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527009",
       "ep": "525431",
       "r": "daniel.hernandez wimbu.co"
@@ -720,10 +739,10 @@
     {
       "i": "546088",
       "t": "HU_004_ID_020_REVISIÓN DATOS POBLACIÓN – SUCURSAL MODELO SCG",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -731,10 +750,10 @@
     {
       "i": "546089",
       "t": "HU_005_ID_020_AJUSTE PARÁMETROS – GASTOS ADMINISTRATIVOS MUSA",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -742,10 +761,10 @@
     {
       "i": "546090",
       "t": "HU_006_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO POBLACIÓN",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527697",
       "ep": "525428",
       "r": "jair.vargas wimbu.co"
@@ -753,10 +772,10 @@
     {
       "i": "546091",
       "t": "HU_007_ID_020_CIERRES MENSUALES – MODELO RECAUDO",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527006",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -764,10 +783,10 @@
     {
       "i": "546092",
       "t": "HU_008_ID_020_AJUSTES GALENO V2 Y POSORA V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527006",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -775,10 +794,10 @@
     {
       "i": "546093",
       "t": "HU_009_ID_020_REVISIÓN MODELO SEGMENTACIÓN MUSA – PESO ÚLTIMOS DOS AÑOS",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527008",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -786,10 +805,10 @@
     {
       "i": "546094",
       "t": "HU_010_ID_020_EXTRACCIONES COMPLETA – PA_MV_DEVOLUCIONES Y CAMPOS IG_PA_MV",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -797,10 +816,10 @@
     {
       "i": "546095",
       "t": "HU_011_ID_020_PROCESO DE CARGUE FRECUENTE – REPORTE CRYSTAL Y PV_HEADER",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -836,7 +855,7 @@
       "v": 0.5,
       "f": "527009",
       "ep": "525431",
-      "r": "daniel.hernandez wimbu.co"
+      "r": "jair.vargas wimbu.co"
     },
     {
       "i": "552964",
@@ -847,26 +866,26 @@
       "v": 0.5,
       "f": "527009",
       "ep": "525431",
-      "r": "daniel.hernandez wimbu.co"
+      "r": "jair.vargas wimbu.co"
     },
     {
       "i": "552969",
       "t": "HU_004_ID_020_GOBIERNO DE DATOS – ACTUALIZACIÓN GIMI, LINEAMIENTOS Y GOBIERNO DE LA IA",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527009",
       "ep": "525431",
-      "r": "daniel.hernandez wimbu.co"
+      "r": "jair.vargas wimbu.co"
     },
     {
       "i": "552974",
       "t": "HU_005_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO EXPUESTOS",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "527697",
       "ep": "525428",
       "r": "jair.vargas wimbu.co"
@@ -907,10 +926,10 @@
     {
       "i": "552994",
       "t": "HU_009_ID_020_EXTRACCIONES COMPLETA – PECONO_RESERVAS (SEG_AREAS, CARGO Y TIPO_CONTRATO)",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -940,46 +959,123 @@
     {
       "i": "553010",
       "t": "HU_012_ID_020_GESTIÓN Y COORDINACIÓN TÉCNICA",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "543997",
       "ep": "525431",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561458",
+      "t": "HU_001_ID_020_POC COMPARATIVO SIARP VS BALU – ENTENDIMIENTO DEL NEGOCIO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561459",
+      "t": "HU_002_ID_020_POC COMPARATIVO SIARP VS BALU – ENTENDIMIENTO DE LOS DATOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561460",
+      "t": "HU_003_ID_020_POC COMPARATIVO SIARP VS BALU – PREPARACIÓN DE LOS DATOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561461",
+      "t": "HU_004_ID_020_POC COMPARATIVO SIARP VS BALU – MODELADO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561462",
+      "t": "HU_005_ID_020_POC COMPARATIVO SIARP VS BALU – EVALUACIÓN",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561463",
+      "t": "HU_006_ID_020_POC COMPARATIVO SIARP VS BALU – DESPLIEGUE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
+      "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "561464",
+      "t": "HU_007_ID_020_POC COMPARATIVO SIARP VS BALU – REVISIÓN Y APROBACIÓN DOCUMENTAL",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "561218",
+      "ep": "561213",
       "r": "vladimir.silva wimbu.co"
     }
   ],
   "kpi": {
-    "n_hu": 77,
-    "n_hu_activas": 75,
+    "n_hu": 84,
+    "n_hu_activas": 82,
     "hu_sin_feature": 2,
-    "n_feature": 7,
-    "n_epic": 2,
-    "n_feature_con_hu": 7,
+    "n_feature": 8,
+    "n_epic": 3,
+    "n_feature_con_hu": 8,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8507,
-    "term_global": 52,
+    "pct_global": 0.9256,
+    "term_global": 71,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 0,
+    "feature_100_sin_cerrar": 1,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.3286,
-    "estrategico": 0.0,
-    "n": 7,
-    "d": 0,
+    "tactico": 0.5875,
+    "estrategico": 0.25,
+    "n": 8,
+    "d": 2,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 7,
-    "feat_ent": 0,
+    "feat_total": 8,
+    "feat_ent": 2,
     "buckets": {
-      "100": 0,
+      "100": 2,
       "75": 0,
-      "50": 3,
-      "20": 4,
+      "50": 5,
+      "20": 1,
       "0": 0
     }
   }

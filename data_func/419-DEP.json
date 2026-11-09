@@ -1,16 +1,16 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_419-DEP_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_419-DEP_20261109.csv",
   "epics": [
     {
       "i": "417341",
       "t": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n_f": 27,
-      "n": 219,
+      "n": 212,
       "term": 7,
-      "pct": 0.5838
+      "pct": 0.5967
     },
     {
       "i": "291675",
@@ -31,10 +31,10 @@
     {
       "i": "531917",
       "t": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n_f": 15,
-      "n": 96,
+      "n_f": 16,
+      "n": 108,
       "term": 0,
-      "pct": 0.4115
+      "pct": 0.4089
     },
     {
       "i": "407644",
@@ -136,15 +136,15 @@
       "n_pct": 26
     },
     {
-      "i": "433502",
-      "t": "419_PB_REFINAMIENTO",
-      "e": "3. Entregado",
-      "ep": "417341",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
-      "n": 23,
+      "i": "532401",
+      "t": "419_PB_REFINAMIENTO_SPRINT 8",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 21,
       "term": 0,
-      "pct": 0.533,
-      "n_pct": 23
+      "pct": 0.3695,
+      "n_pct": 21
     },
     {
       "i": "376222",
@@ -188,6 +188,17 @@
       "n": 16,
       "term": 3,
       "pct": 0.9188,
+      "n_pct": 16
+    },
+    {
+      "i": "433502",
+      "t": "419_PB_REFINAMIENTO",
+      "e": "3. Entregado",
+      "ep": "417341",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
+      "n": 16,
+      "term": 0,
+      "pct": 0.6813,
       "n_pct": 16
     },
     {
@@ -243,17 +254,6 @@
       "n": 12,
       "term": 0,
       "pct": 0.7,
-      "n_pct": 12
-    },
-    {
-      "i": "532401",
-      "t": "419_PB_REFINAMIENTO_SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 12,
-      "term": 0,
-      "pct": 0.45,
       "n_pct": 12
     },
     {
@@ -792,7 +792,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.4857,
+      "pct": 0.5143,
       "n_pct": 7
     },
     {
@@ -1111,7 +1111,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.26,
       "n_pct": 5
     },
     {
@@ -1216,12 +1216,12 @@
     {
       "i": "535037",
       "t": "PB_RECHAZO MANUAL PAGO CON ABONO A CUENTA - CENTRALIZADO",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.8,
       "n_pct": 4
     },
     {
@@ -1409,6 +1409,17 @@
       "n": 3,
       "term": 0,
       "pct": 0.5,
+      "n_pct": 3
+    },
+    {
+      "i": "561006",
+      "t": "PR_RECIBIR Y ALMACENAR PROCESO (CREACION SISTEMA PROCESAL)",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 3
     },
     {
@@ -10330,8 +10341,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -10583,8 +10594,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Carlos Andres Lopez"
     },
     {
@@ -11342,8 +11353,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.16,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Daniel Felipe Socha Hurtado"
     },
     {
@@ -11793,8 +11804,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11804,8 +11815,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11815,8 +11826,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11826,8 +11837,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "433502",
-      "ep": "417341",
+      "f": "532401",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -11947,8 +11958,8 @@
       "p": "QA",
       "a": 1,
       "v": 0.5,
-      "f": null,
-      "ep": null,
+      "f": "532401",
+      "ep": "531917",
       "r": "Viki Liseth Cruz Plaza"
     },
     {
@@ -11958,8 +11969,8 @@
       "p": "QA",
       "a": 1,
       "v": 0.5,
-      "f": null,
-      "ep": null,
+      "f": "532401",
+      "ep": "531917",
       "r": "Viki Liseth Cruz Plaza"
     },
     {
@@ -12537,10 +12548,10 @@
     {
       "i": "533064",
       "t": "419_PB_TEC001_Arquitectura_de_Datos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532770",
       "ep": "531917",
       "r": "Lina Maria Usme Marin"
@@ -12768,10 +12779,10 @@
     {
       "i": "535011",
       "t": "419_PB_HU001_Creacion_Solicitud_Pago_Centralizado",
-      "e": "6.1 Esperando Despliegue DEV-QA",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "535006",
       "ep": "531917",
       "r": "Paula Andrea Maldonado Pamplona"
@@ -12790,10 +12801,10 @@
     {
       "i": "535016",
       "t": "419_PB_HU003_Creacion_Solicitud_Reversion_Pago_Centralizado",
-      "e": "6.1 Esperando Despliegue DEV-QA",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "535006",
       "ep": "531917",
       "r": "Paula Andrea Maldonado Pamplona"
@@ -12823,24 +12834,24 @@
     {
       "i": "535044",
       "t": "419_PB_HU001_Consultar_y_Registrar_solicitud_reversion_manual_pago_abono_a_cuenta",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "535037",
       "ep": "531917",
-      "r": "Santiago Hernandez Saldarriga"
+      "r": "Juliana Andrea Arroyave Trujillo"
     },
     {
       "i": "535047",
       "t": "419_PB_HU002_Autorizar_o_rechazar_solicitud_de_reversión_manual_de_pago_con_abono_a_cuenta",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "535037",
       "ep": "531917",
-      "r": "Santiago Hernandez Saldarriga"
+      "r": "Juliana Andrea Arroyave Trujillo"
     },
     {
       "i": "535053",
@@ -13142,13 +13153,13 @@
     {
       "i": "540513",
       "t": "419_PB_TEC001_Arquitectura de Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "535037",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Juliana Andrea Arroyave Trujillo"
     },
     {
       "i": "540516",
@@ -13186,13 +13197,13 @@
     {
       "i": "540608",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "535037",
       "ep": "531917",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Juliana Andrea Arroyave Trujillo"
     },
     {
       "i": "542763",
@@ -13402,15 +13413,48 @@
       "f": "399896",
       "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "561017",
+      "t": "419_HU001_ Capturar_y_Consultar_Proceso_Con_Sistema_Procesal",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561006",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "561023",
+      "t": "419_HU002_Recibir_Proceso_Del_Sistema_Procesal",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561006",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "561026",
+      "t": "419_HU003_Crear_Proceso_En_PWT_II_Banco_y_Asociar_Cuenta_Judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "561006",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     }
   ],
   "kpi": {
-    "n_hu": 1052,
-    "n_hu_activas": 954,
-    "hu_sin_feature": 29,
-    "n_feature": 157,
+    "n_hu": 1055,
+    "n_hu_activas": 957,
+    "hu_sin_feature": 27,
+    "n_feature": 158,
     "n_epic": 12,
-    "n_feature_con_hu": 137,
+    "n_feature_con_hu": 138,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
     "pct_global": 0.7583,
@@ -13422,19 +13466,19 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.5189,
-    "estrategico": 0.3409,
-    "n": 132,
+    "tactico": 0.5165,
+    "estrategico": 0.3383,
+    "n": 133,
     "d": 45,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 132,
+    "feat_total": 133,
     "feat_ent": 45,
     "buckets": {
       "100": 45,
       "75": 0,
       "50": 29,
-      "20": 45,
+      "20": 46,
       "0": 13
     }
   }

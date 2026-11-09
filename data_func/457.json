@@ -1,16 +1,16 @@
 {
   "codigo": "457",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_457_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_457_20261109.csv",
   "epics": [
     {
       "i": "292522",
       "t": "Nuevas Funcionalidades- 2026",
-      "n_f": 3,
+      "n_f": 5,
       "n": 107,
       "term": 63,
-      "pct": 0.7716
+      "pct": 0.7744
     },
     {
       "i": "94588",
@@ -66,17 +66,6 @@
       "n_pct": 39
     },
     {
-      "i": "294898",
-      "t": "Portal Formación",
-      "e": "4. Cerrado",
-      "ep": "292522",
-      "ept": "Nuevas Funcionalidades- 2026",
-      "n": 39,
-      "term": 27,
-      "pct": 0.7859,
-      "n_pct": 39
-    },
-    {
       "i": "295069",
       "t": "Portal Clientes",
       "e": "2. En Curso",
@@ -84,7 +73,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 29,
       "term": 5,
-      "pct": 0.5883,
+      "pct": 0.5986,
       "n_pct": 29
     },
     {
@@ -97,6 +86,17 @@
       "term": 22,
       "pct": 1.0,
       "n_pct": 22
+    },
+    {
+      "i": "552608",
+      "t": "Portal General",
+      "e": "2. En Curso",
+      "ep": "292522",
+      "ept": "Nuevas Funcionalidades- 2026",
+      "n": 20,
+      "term": 8,
+      "pct": 0.5825,
+      "n_pct": 20
     },
     {
       "i": "94687",
@@ -132,11 +132,33 @@
       "n_pct": 10
     },
     {
+      "i": "294898",
+      "t": "Portal Formación",
+      "e": "4. Cerrado",
+      "ep": "292522",
+      "ept": "Nuevas Funcionalidades- 2026",
+      "n": 10,
+      "term": 10,
+      "pct": 1.0,
+      "n_pct": 10
+    },
+    {
       "i": "94675",
       "t": "Reportes_V1",
       "e": "4. Cerrado",
       "ep": "94578",
       "ept": "Portal Intermediarios",
+      "n": 9,
+      "term": 9,
+      "pct": 1.0,
+      "n_pct": 9
+    },
+    {
+      "i": "552606",
+      "t": "Portal de Qbrete",
+      "e": "4. Cerrado",
+      "ep": "292522",
+      "ept": "Nuevas Funcionalidades- 2026",
       "n": 9,
       "term": 9,
       "pct": 1.0,
@@ -2758,7 +2780,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -2857,7 +2879,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -2989,7 +3011,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3143,7 +3165,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3154,7 +3176,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3352,7 +3374,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3363,7 +3385,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3374,7 +3396,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3385,7 +3407,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3396,7 +3418,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3407,7 +3429,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3473,7 +3495,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552606",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3491,10 +3513,10 @@
     {
       "i": "437283",
       "t": "NPDC_HU0017_ Ofertas_de_Temporada_Rol_Adminsitrador",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3671,7 +3693,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3682,7 +3704,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3693,7 +3715,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3803,7 +3825,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3836,7 +3858,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3847,7 +3869,7 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3858,7 +3880,7 @@
       "p": "QA",
       "a": 1,
       "v": 0.5,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3869,7 +3891,7 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Wilmer Javier Castellanos Martinez"
     },
@@ -3880,7 +3902,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3891,7 +3913,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3902,7 +3924,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3913,7 +3935,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3924,7 +3946,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3935,7 +3957,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3946,7 +3968,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3957,7 +3979,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3968,7 +3990,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "294898",
+      "f": "552608",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
     },
@@ -3988,12 +4010,12 @@
     "n_hu": 305,
     "n_hu_activas": 283,
     "hu_sin_feature": 1,
-    "n_feature": 52,
+    "n_feature": 54,
     "n_epic": 6,
-    "n_feature_con_hu": 49,
+    "n_feature_con_hu": 51,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9119,
+    "pct_global": 0.9129,
     "term_global": 238,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4002,16 +4024,16 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.9408,
-    "estrategico": 0.9184,
-    "n": 49,
-    "d": 45,
+    "tactico": 0.9431,
+    "estrategico": 0.9216,
+    "n": 51,
+    "d": 47,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 49,
-    "feat_ent": 45,
+    "feat_total": 51,
+    "feat_ent": 47,
     "buckets": {
-      "100": 45,
+      "100": 47,
       "75": 0,
       "50": 1,
       "20": 3,

@@ -1,7 +1,7 @@
 {
   "codigo": "004",
   "corte": "2026-10-30",
-  "generado": "2026-11-06 13:48",
+  "generado": "2026-11-09 09:14",
   "archivo": "HU_004_20261030.csv",
   "epics": [
     {
@@ -15,10 +15,10 @@
     {
       "i": "422326",
       "t": "Deuda SGDEA",
-      "n_f": 9,
-      "n": 29,
-      "term": 1,
-      "pct": 0.5797
+      "n_f": 11,
+      "n": 36,
+      "term": 7,
+      "pct": 0.6419
     },
     {
       "i": "340099",
@@ -27,14 +27,6 @@
       "n": 12,
       "term": 0,
       "pct": 0.17
-    },
-    {
-      "i": "356042",
-      "t": "Correspondencia",
-      "n_f": 5,
-      "n": 8,
-      "term": 8,
-      "pct": 1.0
     },
     {
       "i": "341935",
@@ -53,6 +45,14 @@
       "pct": 0.17
     },
     {
+      "i": "356042",
+      "t": "Correspondencia",
+      "n_f": 3,
+      "n": 4,
+      "term": 4,
+      "pct": 1.0
+    },
+    {
       "i": "436284",
       "t": "QA",
       "n_f": 1,
@@ -67,14 +67,6 @@
       "n": 3,
       "term": 1,
       "pct": 0.4467
-    },
-    {
-      "i": "354186",
-      "t": "PRQRS",
-      "n_f": 2,
-      "n": 3,
-      "term": 2,
-      "pct": 0.7667
     },
     {
       "i": "354174",
@@ -251,11 +243,11 @@
       "n_pct": 6
     },
     {
-      "i": "359035",
-      "t": "Radicacion - Correspondencia",
+      "i": "540110",
+      "t": "Devoluciones y publicación",
       "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
+      "ep": "422326",
+      "ept": "Deuda SGDEA",
       "n": 4,
       "term": 4,
       "pct": 1.0,
@@ -293,6 +285,17 @@
       "term": 0,
       "pct": 0.485,
       "n_pct": 4
+    },
+    {
+      "i": "540011",
+      "t": "Clonación Consolidado",
+      "e": "1. En Planeacion",
+      "ep": "422326",
+      "ept": "Deuda SGDEA",
+      "n": 3,
+      "term": 2,
+      "pct": 0.7667,
+      "n_pct": 3
     },
     {
       "i": "422343",
@@ -361,14 +364,14 @@
       "n_pct": 3
     },
     {
-      "i": "371187",
-      "t": "Administración - PQRD",
+      "i": "359035",
+      "t": "Radicacion - Correspondencia",
       "e": "1. En Planeacion",
-      "ep": "354186",
-      "ept": "PRQRS",
+      "ep": "356042",
+      "ept": "Correspondencia",
       "n": 2,
-      "term": 1,
-      "pct": 0.65,
+      "term": 2,
+      "pct": 1.0,
       "n_pct": 2
     },
     {
@@ -460,28 +463,6 @@
       "n_pct": 1
     },
     {
-      "i": "370001",
-      "t": "Gestión - correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "370010",
-      "t": "Revisión - Correspondencia",
-      "e": "1. En Planeacion",
-      "ep": "356042",
-      "ept": "Correspondencia",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
       "i": "370013",
       "t": "Asignación - Correspondencia",
       "e": "1. En Planeacion",
@@ -520,17 +501,6 @@
       "e": "1. En Planeacion",
       "ep": "354210",
       "ept": "Medicina Laboral",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
-    },
-    {
-      "i": "371150",
-      "t": "Gestión - PQRD",
-      "e": "1. En Planeacion",
-      "ep": "354186",
-      "ept": "PRQRS",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -831,8 +801,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "370001",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -842,8 +812,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "370010",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -853,8 +823,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -864,8 +834,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "359035",
-      "ep": "356042",
+      "f": "540110",
+      "ep": "422326",
       "r": "Yhon Segura"
     },
     {
@@ -1095,8 +1065,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "371187",
-      "ep": "354186",
+      "f": "540011",
+      "ep": "422326",
       "r": ""
     },
     {
@@ -1106,8 +1076,8 @@
       "p": "EN PRODUCCIÓN",
       "a": 1,
       "v": 1.0,
-      "f": "371150",
-      "ep": "354186",
+      "f": "540011",
+      "ep": "422326",
       "r": ""
     },
     {
@@ -2789,8 +2759,8 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.3,
-      "f": "371187",
-      "ep": "354186",
+      "f": "540011",
+      "ep": "422326",
       "r": ""
     },
     {
@@ -3117,30 +3087,30 @@
     "n_hu": 223,
     "n_hu_activas": 169,
     "hu_sin_feature": 1,
-    "n_feature": 49,
-    "n_epic": 14,
-    "n_feature_con_hu": 43,
+    "n_feature": 47,
+    "n_epic": 13,
+    "n_feature_con_hu": 41,
     "feature_sin_hu": 6,
     "hu_omitidas": 0,
     "pct_global": 0.3217,
     "term_global": 14,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 8,
+    "feature_100_sin_cerrar": 6,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.2767,
-    "estrategico": 0.2093,
-    "n": 43,
-    "d": 9,
+    "tactico": 0.2415,
+    "estrategico": 0.1707,
+    "n": 41,
+    "d": 7,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 43,
-    "feat_ent": 9,
+    "feat_total": 41,
+    "feat_ent": 7,
     "buckets": {
-      "100": 9,
+      "100": 7,
       "75": 0,
       "50": 5,
       "20": 2,

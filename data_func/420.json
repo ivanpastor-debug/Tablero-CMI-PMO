@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_420_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_420_20261109.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
       "n": 180,
-      "term": 119,
-      "pct": 0.8889
+      "term": 121,
+      "pct": 0.8911
     },
     {
       "i": "357729",
@@ -131,8 +131,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 37,
-      "term": 25,
-      "pct": 0.8946,
+      "term": 27,
+      "pct": 0.9054,
       "n_pct": 37
     },
     {
@@ -6575,10 +6575,10 @@
     {
       "i": "494763",
       "t": "HU0046_Positiva_Modal_Asignar_Auditor_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377082",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6685,13 +6685,13 @@
     {
       "i": "496653",
       "t": "HU0184_Positiva_Historial_Asignación_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377082",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "496654",
@@ -7528,8 +7528,8 @@
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.935,
-    "term_global": 501,
+    "pct_global": 0.9357,
+    "term_global": 503,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 34,

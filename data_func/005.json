@@ -1,8 +1,8 @@
 {
   "codigo": "005",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_005_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_005_20261109.csv",
   "epics": [
     {
       "i": "578",
@@ -15,18 +15,18 @@
     {
       "i": "82",
       "t": "NP - Evolutivos",
-      "n_f": 12,
-      "n": 37,
+      "n_f": 13,
+      "n": 45,
       "term": 3,
-      "pct": 0.7075
+      "pct": 0.5968
     },
     {
       "i": "153",
       "t": "Deuda",
-      "n_f": 4,
-      "n": 23,
-      "term": 7,
-      "pct": 0.7333
+      "n_f": 5,
+      "n": 24,
+      "term": 8,
+      "pct": 0.7455
     },
     {
       "i": "568",
@@ -105,6 +105,17 @@
       "term": 0,
       "pct": 0.6,
       "n_pct": 12
+    },
+    {
+      "i": "86",
+      "t": "Integración con Directorio Activo",
+      "e": "3. Entregado",
+      "ep": "82",
+      "ept": "NP - Evolutivos",
+      "n": 8,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 8
     },
     {
       "i": "107",
@@ -239,17 +250,6 @@
       "n_pct": 1
     },
     {
-      "i": "86",
-      "t": "Integración con Directorio Activo",
-      "e": "3. Entregado",
-      "ep": "82",
-      "ept": "NP - Evolutivos",
-      "n": 1,
-      "term": 0,
-      "pct": 0.08,
-      "n_pct": 1
-    },
-    {
       "i": "96",
       "t": "Angente IA que realice informes de seguimiento de operaciones",
       "e": "New",
@@ -303,6 +303,28 @@
       "term": 0,
       "pct": 0.5,
       "n_pct": 1
+    },
+    {
+      "i": "2147",
+      "t": "Tutelas",
+      "e": "New",
+      "ep": "153",
+      "ept": "Deuda",
+      "n": 1,
+      "term": 1,
+      "pct": 1.0,
+      "n_pct": 1
+    },
+    {
+      "i": "87",
+      "t": "Nuevos servicios de consulta de documentos por parte de ALISSTA",
+      "e": "4. Cerrado",
+      "ep": "82",
+      "ept": "NP - Evolutivos",
+      "n": 1,
+      "term": 0,
+      "pct": null,
+      "n_pct": 0
     }
   ],
   "hus": [
@@ -1518,11 +1540,11 @@
     },
     {
       "i": "1628",
-      "t": "Integración con Directorio Activo",
-      "e": "1. Levantamiento",
+      "t": "HU-DA-01_Mostrar_el_ingreso_con_cuenta_corporativa_en_la_pantalla_de_inicio",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.08,
+      "v": 0.2,
       "f": "86",
       "ep": "82",
       "r": "Michael Alberto Joya Rojas"
@@ -1713,40 +1735,139 @@
       "f": "107",
       "ep": "82",
       "r": ""
+    },
+    {
+      "i": "2119",
+      "t": "HU_63_SGDEA_Escalamiento_de_Tutela_Gestionador_V2",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
+      "a": 1,
+      "v": 1.0,
+      "f": "2147",
+      "ep": "153",
+      "r": "Mery Rojas"
+    },
+    {
+      "i": "2170",
+      "t": "HU-DA-02_Autenticar_con_cuenta_corporativa_y_validar_la_identidad",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": "Michael Alberto Joya Rojas"
+    },
+    {
+      "i": "2172",
+      "t": "HU-DA-03_Identificar_al_usuario_por_vinculo_permanente_o_por_correo",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2180",
+      "t": "HU-DA-04_Confirmar_el_numero_de_documento_y_vincular_la_cuenta",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2184",
+      "t": "HU-DA-05_Bloquear_la_confirmacion_de_documento_tras_5_intentos_fallidos",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2187",
+      "t": "HU-DA-06_Crear_el_usuario_automaticamente_e_informar_la_cuenta_sin_acceso",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2188",
+      "t": "HU-DA-07_Habilitar_al_usuario_creado_por_cuenta_corporativa",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2189",
+      "t": "HU-DA-08_Mantener_permisos_equivalentes_y_la_vigencia_de_la_sesion_corporativa",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "86",
+      "ep": "82",
+      "r": ""
+    },
+    {
+      "i": "2223",
+      "t": "HU-GP-01_autenticacion_y_autorizacion_para_el_consumo_del_servicio",
+      "e": "New",
+      "p": "",
+      "a": 1,
+      "v": null,
+      "f": "87",
+      "ep": "82",
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 128,
-    "n_hu_activas": 127,
+    "n_hu": 137,
+    "n_hu_activas": 136,
     "hu_sin_feature": 1,
-    "n_feature": 22,
+    "n_feature": 24,
     "n_epic": 7,
-    "n_feature_con_hu": 22,
+    "n_feature_con_hu": 24,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.5689,
-    "term_global": 15,
+    "pct_global": 0.549,
+    "term_global": 16,
     "feature_sin_frente": 1,
     "hu_sin_frente": 1,
-    "feature_100_sin_cerrar": 5,
-    "feature_estado_ajeno": 17,
+    "feature_100_sin_cerrar": 6,
+    "feature_estado_ajeno": 18,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.2864,
-    "estrategico": 0.2273,
-    "n": 22,
-    "d": 5,
+    "tactico": 0.3042,
+    "estrategico": 0.25,
+    "n": 24,
+    "d": 6,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 22,
-    "feat_ent": 5,
+    "feat_total": 24,
+    "feat_ent": 6,
     "buckets": {
-      "100": 5,
+      "100": 6,
       "75": 0,
       "50": 1,
       "20": 4,
-      "0": 12
+      "0": 13
     }
   }
 }

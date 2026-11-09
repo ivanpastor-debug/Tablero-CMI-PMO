@@ -1,8 +1,8 @@
 {
   "codigo": "416",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_416_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_416_20261109.csv",
   "epics": [
     {
       "i": "345822",
@@ -10,7 +10,7 @@
       "n_f": 3,
       "n": 154,
       "term": 0,
-      "pct": 0.2523
+      "pct": 0.251
     },
     {
       "i": "345824",
@@ -63,7 +63,7 @@
       "ept": "416_Vida Individual",
       "n": 19,
       "term": 0,
-      "pct": 0.7089,
+      "pct": 0.6984,
       "n_pct": 19
     },
     {
@@ -101,6 +101,39 @@
     }
   ],
   "hus": [
+    {
+      "i": "346633",
+      "t": "416_VI_EMI_HU650_FORMULACIÓN PRODUCTOS COMERCIALIZADOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Andres Camilo Sierra Hormiga"
+    },
+    {
+      "i": "346631",
+      "t": "416_VI_EMI_HU345_FORMAS DE PAGO",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Andrés Stick Melo Figueroa"
+    },
+    {
+      "i": "346615",
+      "t": "416_VI_EMI_HU207_ESTUDIO TÉCNICO",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Andrés Stick Melo Figueroa"
+    },
     {
       "i": "346296",
       "t": "416_AP_EMI_HU193_CARGUE DE ASEGURADOS",
@@ -190,28 +223,6 @@
       "r": "Andrés Stick Melo Figueroa"
     },
     {
-      "i": "346615",
-      "t": "416_VI_EMI_HU207_ESTUDIO TÉCNICO",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Andrés Stick Melo Figueroa"
-    },
-    {
-      "i": "346631",
-      "t": "416_VI_EMI_HU345_FORMAS DE PAGO",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Andrés Stick Melo Figueroa"
-    },
-    {
       "i": "382005",
       "t": "416_AP_EMI_HU574_CARNÉ DE ASEGURADO",
       "e": "5. Backlog General",
@@ -234,17 +245,6 @@
       "r": "Angie Vanessa Guillen Yazo"
     },
     {
-      "i": "346632",
-      "t": "416_VI_EMI_HU555_BENEFICIARIOS",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Daniel Libardo Cubaque Hernandez"
-    },
-    {
       "i": "346622",
       "t": "416_VI_EMI_HU252_EDITAR DATOS DEL TOMADOR DE SOLICITUD DE PÓLIZA",
       "e": "8. Esperando Despliegue QA-UAT",
@@ -262,6 +262,17 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Daniel Libardo Cubaque Hernandez"
+    },
+    {
+      "i": "346632",
+      "t": "416_VI_EMI_HU555_BENEFICIARIOS",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
       "f": "346272",
       "ep": "345822",
       "r": "Daniel Libardo Cubaque Hernandez"
@@ -815,17 +826,6 @@
       "f": "346272",
       "ep": "345822",
       "r": "Lesly Geraldine Perilla Franco"
-    },
-    {
-      "i": "346633",
-      "t": "416_VI_EMI_HU650_FORMULACIÓN PRODUCTOS COMERCIALIZADOS",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
-      "f": "346272",
-      "ep": "345822",
-      "r": "María Alejandra Ramírez Zambrano"
     },
     {
       "i": "346612",
@@ -2850,7 +2850,7 @@
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.2535,
+    "pct_global": 0.2527,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

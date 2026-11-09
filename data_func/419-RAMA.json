@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-06",
-  "generado": "2026-11-06 13:48",
-  "archivo": "HU_419-RAMA_20261106.csv",
+  "corte": "2026-11-09",
+  "generado": "2026-11-09 09:14",
+  "archivo": "HU_419-RAMA_20261109.csv",
   "epics": [
     {
       "i": "373561",
@@ -24,9 +24,9 @@
       "i": "531912",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n_f": 13,
-      "n": 52,
+      "n": 53,
       "term": 0,
-      "pct": 0.2973
+      "pct": 0.2955
     },
     {
       "i": "399880",
@@ -64,9 +64,9 @@
       "i": "417388",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_7",
       "n_f": 3,
-      "n": 18,
+      "n": 17,
       "term": 0,
-      "pct": 0.7167
+      "pct": 0.7471
     },
     {
       "i": "360689",
@@ -409,17 +409,6 @@
       "n_pct": 5
     },
     {
-      "i": "421344",
-      "t": "419_PR_REFINAMIENTO",
-      "e": "3. Entregado",
-      "ep": "417388",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
-      "n": 5,
-      "term": 0,
-      "pct": 0.6,
-      "n_pct": 5
-    },
-    {
       "i": "532582",
       "t": "PR_TRASLADO MASIVO",
       "e": "1. En Planeacion",
@@ -505,6 +494,17 @@
       "n": 4,
       "term": 0,
       "pct": 0.875,
+      "n_pct": 4
+    },
+    {
+      "i": "421344",
+      "t": "419_PR_REFINAMIENTO",
+      "e": "3. Entregado",
+      "ep": "417388",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
+      "n": 4,
+      "term": 0,
+      "pct": 0.7,
       "n_pct": 4
     },
     {
@@ -651,6 +651,17 @@
       "n_pct": 3
     },
     {
+      "i": "532409",
+      "t": "419_PR_REFINAMIENTO SPRINT 8",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.1733,
+      "n_pct": 3
+    },
+    {
       "i": "517951",
       "t": "PR_PARAMETRIZACIÓN CUENTAS JUDICIALES SIN SISTEMA PROCESAL",
       "e": "2. En Curso",
@@ -725,17 +736,6 @@
       "n": 2,
       "term": 2,
       "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "532409",
-      "t": "419_PR_REFINAMIENTO SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 2,
-      "term": 0,
-      "pct": 0.16,
       "n_pct": 2
     },
     {
@@ -4047,8 +4047,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "421344",
-      "ep": "417388",
+      "f": "532409",
+      "ep": "531912",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
