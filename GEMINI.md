@@ -446,6 +446,8 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
 * **Arquitectura Visual Rediseñada (Mockup de Referencia `Tablero_CMI_PMO_redisenado_v2`):**
   - **Selector Avanzado de Proyectos (`.project-picker-redesign` en `#pchips`):**
     - Sustitución de los chips horizontales básicos por un componente de búsqueda rápida + menú desplegable estilizado (`#project-search-detail` y `#project-select-detail`).
+    - **Orden numérico estricto y jerarquía de componentes del 416:** Se ordenan todos los proyectos ascendentemente según su número de código (005 ➔ 020 ➔ 348 ➔ 384 ➔ 397 ➔ 416 ➔ 419 ➔ 421 ➔ 453 ➔ 456 ➔ 457 ➔ 461). Los componentes del proyecto **416 (Positiva Core)** se agrupan de forma subordinada directamente bajo su proyecto padre como `↳ 355 · Positiva Core` y `↳ 416 · Evolutivos`, eliminando la notación redundante "Subproyecto" tanto en el menú desplegable como en los botones segmentados de la ficha.
+    - **Sincronización reactiva de fecha de corte operativo:** Se actualizó la fecha oficial base a **04-Nov-2026** (corte vigente de los snapshots en `data_func.json`), integrando en `applyLiveFuncCmi` la actualización dinámica automática del encabezado `#hdr-corte-op` y de cada proyecto en `PROJ_DATES_META`.
     - Filtrado en vivo de proyectos y subproyectos por código, nombre o cliente.
     - Contador reactivo de elementos disponibles.
   - **Encabezado Integral del Detalle de Proyecto (`.project-detail-heading`):**
@@ -465,3 +467,684 @@ GitHub Pages detectará el commit y actualizará la web pública automáticament
   - Sincronización verificada en las 4 rutas espejo del sistema.
   - Publicación y despliegue en producción completado en GitHub Pages (`commit 2ca58c2`).
 
+---
+
+## 24. Registro de Corrección en Vistas Operativa y Financiera y Centrado Responsive (05-nov-2026)
+* **Diagnóstico de la Incidencia:**
+  - Al alternar entre la vista **Operativa** y la vista **Financiera** en la ficha de proyecto, o al cargar datos en vivo desde Azure DevOps (`fncLoad` / `fncChangeSub`), la interfaz no se renderizaba ni actualizaba correctamente.
+  - **Causa raíz técnica:** En la aplicación previa del rediseño v2, la función `updateTopOpTiles(cmi, subLabel)` no quedó definida en el JavaScript, provocando una excepción no capturada `ReferenceError: updateTopOpTiles is not defined` en tiempo de ejecución. Esto detenía el flujo del motor de JavaScript, bloqueando la alternancia entre vistas y el refresco reactivo de los componentes.
+  - Adicionalmente, el contenedor principal `.wrap` carecía de `margin: 0 auto;`, lo que generaba asimetría visual en pantallas panorámicas.
+* **Soluciones Implementadas:**
+  - **Restauración de `updateTopOpTiles`:** Se reintegró formalmente la función en el JavaScript con soporte para actualizar simultáneamente tanto los tiles operativos (`#op-tiles-top`) como las tarjetas Hero CMI superiores (`.cmi-hero-card`), contemplando la medición por Casos de Uso (453), Épicas/Frentes y Funcionalidades.
+  - **Refresco Reactivo de Tarjetas:** Se integró la invocación de `renderOpCards()` dentro de `applyLiveFuncCmi()` para garantizar que todas las tarjetas del portafolio se recalculen inmediatamente al cargar los snapshots de Azure DevOps.
+  - **Centrado y Adaptación Responsive:** Se corrigió `.wrap{max-width:1600px;margin:0 auto;padding:0 26px 36px}` para garantizar distribución y redimensionamiento perfectamente centrados en todas las resoluciones.
+* **Sincronización y Despliegue:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores).
+  - Sincronización exacta en las 4 rutas espejo verificada mediante SHA-256.
+  - Publicación y despliegue completado en GitHub Pages (`commit d3838dd`).
+
+---
+
+## 25. Registro de Restauración de Carga Asíncrona Azure DevOps y Despliegue Automático Operativo (05-nov-2026)
+* **Diagnóstico de la Incidencia:**
+  - La sección operativa de cada proyecto no se desplegaba al ingresar al detalle ni al pulsar "Operativa", mostrando mensajes de carga permanentes o pantallas en blanco.
+  - **Causa raíz técnica 1 (Funciones asíncronas ausentes):** Durante la refactorización se habían omitido las funciones críticas de carga asíncrona `ensureFuncIndex()` y `getJsonUrl(relPath)` (con soporte de fallback hacia GitHub Pages para entornos locales `file://`). Al invocarse al inicio o dentro de `renderFncSection(p)`, el navegador lanzaba `ReferenceError: ensureFuncIndex is not defined` y `ReferenceError: getJsonUrl is not defined`, bloqueando la descarga de `data_func.json` y el renderizado del árbol de Épicas, Funcionalidades y HUs.
+  - **Causa raíz técnica 2 (Estado inicial colapsado):** La variable `mode` iniciaba en `null`, por lo que al entrar a la ficha de cualquier proyecto la sección de detalle permanecía colapsada requiriendo un clic manual explícito.
+* **Soluciones Implementadas:**
+  - **Restauración de Infraestructura de Datos (`ensureFuncIndex` + `getJsonUrl`):** Se reincorporó `GITHUB_PAGES_BASE`, `getJsonUrl(relPath)`, `_funcInitPromise` y `ensureFuncIndex()`. Ahora `data_func.json` y `data_453_cpe.json` se descargan e hidratan fluidamente tanto en entornos web como locales.
+  - **Despliegue Operativo por Defecto (`mode = "op"`):** Se ajustó el valor por defecto de `mode` a `"op"` tanto en la inicialización como en `openProj()`. Al seleccionar cualquier proyecto en el desplegable numérico o desde las tarjetas, su desglose operativo (tiles, frentes, árboles de Azure, Casos de Uso en 453, bugs en 419 o escala en 456) se despliega inmediatamente de forma visible y completa.
+* **Sincronización y Despliegue:**
+  - Validación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Sincronización completa en las 4 rutas espejo verificada por SHA-256.
+  - Publicación y despliegue en producción completado en GitHub Pages (`commit 7cd9c34`).
+
+---
+
+## 26. Registro de Implementación de Indicador de Éxito y Pestaña Desplegable CMI para 456 (05-nov-2026)
+* **Lógica del Indicador de Éxito Contractual (Proyecto 456 - Aeronáutica Civil):**
+  - **Universo Contractual:** 6 entregables distribuidos en 3 fases (Fase I: 30%, Fase II Parte I: 40%, Fase II Parte II: 30%), totalizando el 100% del peso.
+  - **Éxito Real Entregado (18,00%):** Suma ponderada de los entregables recibidos formalmente al 100% por el cliente (*Entregable I Fase I: Propuesta metodológica e indicadores · Peso 18%*).
+  - **Meta Proyectada a la Fecha de Corte (30,00%):** Suma ponderada de entregables cuya fecha fin en el cronograma ajustado más reciente es menor o igual a la fecha de corte actual (Entregable I al 15/07/2026 [18%] + Entregable II al 23/09/2026 [12%]).
+  - **Brecha de Cumplimiento (-12,00 pp):** Diferencia entre lo ejecutado y lo comprometido a la fecha, originada en el *Entregable II de Fase I* (comprometido para el 23-Sep-2026 y que permanece al 50% en Gate 1).
+* **Arquitectura Visual Ejecutiva en la Ficha del Proyecto:**
+  - **Vista Inicial CMI (`.cmi-hero` con cuadrícula de 2 columnas `.grid-2`):**
+    - `01 · Indicador Estratégico`: **16,67%** (1 de 6 entregables al 100% formal).
+    - `02 · Indicador de Éxito`: **18,00%** (Ponderación entregada al 100% · Meta proyectada a la fecha: 30,00% · Píldora: `Brecha: -12 pp`).
+  - **Sección Desplegable Interactiva (`<details class="cmi-accordion">`):**
+    - Contiene la tarjeta destacada de `03 · Indicador Táctico` (**24,00%** bajo Escala CMI PMO).
+    - Cuadro compacto de **Conciliación de Indicador de Éxito** con KPIs comparativos: `Real Entregado` (**18,00%** · 1 formalizado), `Meta Proyectada a la fecha` (**30,00%**) y `Brecha de Cumplimiento` (**-12,00 pp** · Alerta Gate 1), suprimiendo tablas y callouts redundantes que ya se exhiben en la vista operativa.
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores).
+  - Sincronización en las 4 rutas espejo verificada por SHA-256.
+  - Publicación y despliegue en producción completado en GitHub Pages (`commit 1350db5`).
+
+---
+
+## 27. Registro de Reestructuración Operativa para 456: Estatus por Fase y Desviación del Cronograma (05-nov-2026)
+* **Reorganización Estructural (Paneles Apilados Verticalmente):**
+  - Se sustituyó la antigua distribución en dos columnas (`g-2`) por dos paneles secuenciales de ancho completo (`.tbl-wrap` en `.section.panel`), garantizando legibilidad total sin compresión horizontal.
+* **Panel 1: `Estatus por fase` (antes `Escala CMI por fase`):**
+  - **Columnas integradas:**
+    1. `Fase / Entregable Contractual`
+    2. `Peso` (18%, 12%, 20%, 12%, 8%, 30% · Total 100%)
+    3. `Cierre Proyectado` (fechas del último cronograma vigente: 15/07/2026, 23/09/2026, 19/11/2026, etc.)
+    4. `% Avance` (expresado numéricamente: 100%, 50%, 0%, 0%, 0%, 0% · Total Ponderado: 24,00%)
+    5. *(Visual de Escala CMI)* Columna gráfica sin encabezado de texto (`.col-bar` con barra coloreada según escala)
+    6. `Estado` (`100% Producción`, `50% >80% (Gate 1)`, `0% <50% (En curso)`, etc.)
+    7. `Desviación a la fecha` (días hábiles transcurridos a la fecha de corte `05-Nov-2026`: Entregable I con `0 d`, Entregable II con `+29 d hábiles`, demás en plazo con `0 d hábiles`).
+* **Panel 2: `Desviación del Cronograma`:**
+  - Ubicado inmediatamente debajo de `Estatus por fase`.
+  - Se retiró la leyenda y el subtítulo previo `(Línea Base vs 05-oct-2026)`.
+  - **Columnas normalizadas:**
+    1. `Fase / Entregable Contractual`
+    2. `Peso`
+    3. `Inicio` (fecha inicial del cronograma inicial base)
+    4. `Cierre planeado` (fecha de cierre del cronograma inicial base)
+    5. `Cierre reprogramado` (fecha de cierre del cronograma vigente o modificado)
+    6. `Ajuste en días hábiles` (diferencia en días hábiles entre Cierre Planeado y Cierre Reprogramado)
+    7. `Desviación` (días hábiles transcurridos entre fecha de cierre reprogramada y fecha actual)
+    8. `Estado` (solo `Estado`, sin `/ CMI`: `Entregado`, `En curso (Gate 1)`, `Pendiente`, `Cruza 2027`, `Desborde fiscal 2027`).
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores).
+  - Sincronización en las 4 rutas espejo verificada por SHA-256.
+  - Publicación y despliegue completado en GitHub Pages (`commit 64c207f`).
+
+---
+
+## 28. Registro de Generalización de la Arquitectura CMI de 2 Tarjetas y Desplegable Táctico/Éxito en Todo el Portafolio (05-nov-2026)
+* **Unificación de la Visual Superior en Todo el Portafolio (`cmiOverviewHTML`):**
+  - Se extendió a todos los proyectos del portafolio (005, 020, 348, 384, 397, POS, 355, 416, 419, 421, 453, 456, 457, 461) la estructura homogénea validada en 456:
+    1. **Encabezado Inicial (`.cmi-hero-grid.grid-2`):**
+       - **`01 · Indicador Estratégico`**: Particular de cada proyecto con su valor porcentual real, unidad correspondiente (Casos de Uso en 453, funcionalidades locales en 419, épicas/frentes en 005, 348, 384, 397, POS, 421, o entregables en 456) y píldora semafórica.
+       - **`02 · Indicador de Éxito`**:
+         - *En 456:* **`18,00%`** (Ponderación contractual entregada al 100% formal · Meta a la fecha: 30,00% · Brecha: -12 pp).
+         - *En los demás proyectos:* **`Por definir`** (Medición particular según fases y entregables de cada proyecto · Píldora: `Pendiente`).
+    2. **Acordeón Desplegable Interactivo (`<details class="cmi-accordion">`):**
+       - **`03 · Indicador Táctico`**: Particular de cada proyecto con su valor numérico exacto de avance funcional/escala CMI y el tamaño de su universo medible.
+       - **Caja de Conciliación de Indicador de Éxito:**
+         - *En 456:* Desglose concreto de `Real Entregado` (18,00%), `Meta Proyectada a la fecha` (30,00%) y `Brecha de Cumplimiento` (-12,00 pp · Alerta Gate 1).
+         - *En los demás proyectos:* Estructura homóloga preparada con los 3 bloques KPI (`Real Entregado`: Por definir, `Meta Proyectada`: Por definir, `Brecha`: — · Badge `En homologación PMO`), garantizando que cada proyecto mantenga sus datos individuales sin mezclar la distribución de 456.
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores).
+  - Sincronización en las 4 rutas espejo verificada por SHA-256.
+  - Publicación y despliegue completado en GitHub Pages (`commit d5843df`).
+
+
+---
+
+## 29. Registro de Integración de Triada de Control CMI, RQC y Cronograma de 10 Releases para Proyecto 421 - BALÚ (06-nov-2026)
+* **Triada de Control Multidimensional en el Acordeón Desplegable:**
+  - Se configuró para el proyecto 421 la arquitectura visual de 3 pilares ejecutivos dentro de `cmiOverviewHTML`:
+    1. **03 · Indicador Táctico (Peso: 30%):** **`35,00%`** (Aporte: **`10,50%`** · Medición oficial sobre 2 Frentes Contractuales en escala CMI PMO).
+    2. **📋 Cumplimiento RQC · Contrato (Peso: 40%):** **`49,37%`** (Aporte: **`19,75%`** · Cifra oficial del contrato: 311 cumplidos de 630 activos, descontando 283 removidos).
+    3. **⏱️ Cumplimiento Cronograma (Peso: 30%):** **`17,49%`** (Aporte: **`5,25%`** · Avance real técnico de HUs en Azure frente a Meta Proyectada al corte: **`20,00%`** correspondiente a los Releases 1 y 2 · Brecha de cumplimiento: **`-2,51 pp`** con 15 HUs en validación UAT).
+* **Fórmula Oficial del Indicador de Éxito (Tarjeta 02):**
+  - $$	ext{Éxito (421)} = (35,00\% 	imes 0,30) + (49,37\% 	imes 0,40) + (17,49\% 	imes 0,30) = 10,50\% + 19,75\% + 5,25\% = \mathbf{35,50\%}$$.
+  - Muestra en Hero Card 02: valor **`35,50%`**, subtítulo `Ponderado: Táctico (30%) · RQC (40%) · Cronograma (30%)` y píldora semafórica `En seguimiento`.
+* **Pestaña Desplegable de Desviación del Cronograma (`renderCrono421Collapsible`):**
+  - Acordeón interactivo `<details class="cmi-accordion" open>` con la tabla de los **10 Releases a Producción** (peso: 10,0% cada uno), con columnas homólogas a 456:
+    - Release 1 (10-Oct · 10% peso): Avance Azure `88,5%` (64,9% Prod) · Desviación: `+18 d hábiles` (`+27 d cal`) · Estado: `🔴 Vencido (15 UAT)`.
+    - Release 2 (24-Oct · 10% peso): Avance Azure `86,4%` (45,5% Prod) · Desviación: `+9 d hábiles` (`+13 d cal`) · Estado: `🔴 Vencido (9 UAT)`.
+    - Release 3 (07-Nov · 10% peso): Avance Azure `76,4%` (42,9% Prod) · Desviación: `0 d hábiles` (`-1 d cal`) · Estado: `🟡 Vence en 1 día`.
+    - Releases 4 a 10 (14-Nov a 20-Mar · 10% peso c/u): Estados `⚪ Futuro (En plazo)` con días a favor.
+    - Total consolidado: Peso `100%`, Avance Ponderado Global `75,01%` (50,1% en Prod), Meta Corte `20,00%`, Real `17,49%`, Brecha `-2,51 pp`.
+* **Archivo de Correlación Entregado en Carpeta Cronograma:**
+  - `Información Financiera/421- BALÚ/Cronograma/Correlacion_Cronograma_vs_Azure_421.xlsx` con 4 hojas: Resumen Ejecutivo, Avance Cronograma (Peso 10%), Correlación Cronograma - Azure, HUs Sin Correlacionar y Features Sin Correlacionar.
+* **Sincronización y Despliegue:**
+  - Validado con `ACTUALIZAR.py --dry-run` (0 errores). Sincronizado en 4 rutas espejo y publicado en GitHub Pages (`commit 6f78b3b`).
+
+---
+
+## 30. Protocolo de Disparo: Ajuste de Indicadores de 421 a Funcionalidades de Azure
+* **Frase Clave de Disparo (Únicamente cuando el usuario lo indique):**
+  `"Ajusta el indicador tactico y estratégico a funcionalidades del proyecto 421"`
+* **Acciones Inmediatas a Ejecutar:**
+  1. **Indicador Estratégico:** Conmutar de `0,00%` (0/2 frentes) a **`26,87%`** (18 de 67 funcionalidades al 100% en producción).
+  2. **Indicador Táctico:** Conmutar de `35,00%` (frentes) a **`53,43%`** (promedio aritmético de las 67 funcionalidades bajo la escala PMO: 18 en 100%, 32 en 50%, 9 en 20%, 8 en 0%).
+  3. **Recálculo del Indicador de Éxito:**
+     $$	ext{Éxito (421)} = (53,43\% 	imes 0,30) + (49,37\% 	imes 0,40) + (17,49\% 	imes 0,30) = 16,03\% + 19,75\% + 5,25\% = \mathbf{41,03\%}$$
+     - Tarjeta 02 pasará de **35,50%** a **41,03%**.
+     - Aporte táctico en el acordeón pasará de **10,50%** a **16,03%** con subtítulo `67 funcionalidades en universo · Escala CMI Oficial PMO`.
+  4. **Archivos a Actualizar y Sincronizar:**
+     - `enrich_func_cmi.py`
+     - `data_func/421.json` y `data_func.json`
+     - `Tablero_CMI_PMO.html` (array `P`, `PROJ_CALLOUT_META`, badge `Azure · 67 Func.`)
+     - Ejecutar `ACTUALIZAR.py --dry-run` para validar 0 errores.
+     - Sincronizar las 4 rutas espejo y desplegar automáticamente en GitHub Pages / Vercel con `git push origin main`.
+  5. **Script de Ejecución Inmediata Preparado:**
+     - `scratch/exec_ajuste_421_funcionalidades.py`
+
+
+---
+
+## 31. Registro de Retiro de Indicador de Avance Ponderado y Estado de Funcionalidades en Desglose Jerárquico Azure (06-nov-2026)
+* **Objetivo de la Depuración Metodológica:**
+  - Evitar discrepancias o confusiones entre los indicadores oficiales PMO CMI (Táctico y Estratégico) y los cálculos internos de desarrollo en Azure DevOps.
+* **Componentes Retirados de Todo el Portafolio en el Espacio `🗂 Funcionalidades por frente · qué HU componen cada una`:**
+  1. **Indicador de Avance Ponderado en Encabezado (`.fstrip`):**
+     - Se eliminó el bloque de métrica `${stat(fncPct(k.pct_global), "Avance ponderado", "#a855f7")}` de la barra superior.
+     - Quedan activos los 4 contadores objetivos: `Frentes`, `Funcionalidades`, `HU en producción` y `Al 100% sin cerrar`.
+  2. **Estado en Azure de cada Funcionalidad (`fncTd(1, "")`):**
+     - Se limpió el campo `Estado` en todas las filas de funcionalidades (`features`), eliminando estados ruidosos como `Active`, `Closed` y etiquetas de advertencia (`· al 100% sin cerrar`, `· removida con HU vivas`).
+     - La columna ahora se rotula `Estado / Etapa` y se reserva exclusivamente para mostrar la **Etapa real de cada Historia de Usuario (HU)** (`4. En Producción`, `3. Pruebas UAT`, `2. Pruebas QA`, `1. Desarrollo`, etc.).
+  3. **Depuración de Textos de Ayuda y Leyendas:**
+     - Se retiró la frase `· avance ponderado por etapa...` del texto explicativo superior de la tarjeta.
+* **Sincronización y Despliegue:**
+  - Validado con `ACTUALIZAR.py --dry-run` (0 errores).
+  - Sincronizado en las 4 rutas espejo y publicado en producción en GitHub Pages (`commit 4ea559b`).
+
+
+---
+
+## 32. Registro de Integración de Indicador de Éxito Escenario B.3 y Cronograma de 16 Sprints en Doble Momento para Proyecto 419 (Depósitos Judiciales) (06-nov-2026)
+* **Arquitectura del Indicador de Éxito Oficial (Proyecto 419 - Depósitos Judiciales):**
+  - Conforme a la definición del usuario, el indicador de éxito consolida dos dimensiones clave (Escenario B.3 Dual Integrado) sin incorporar el indicador táctico:
+    1. **📋 Funcionalidades Certificadas por Cliente (Peso: 40,0%):**
+       - Mide la totalidad de funcionalidades entregadas al cliente al 100% en producción sobre el universo completo de Features en Azure DevOps (sumando Banco Agrario y Rama Judicial).
+       - Universo: **219 Features** (BAC: 157, RAMA: 62).
+       - Features al 100% en producción: **63 Features** (BAC: 45, RAMA: 18) $\rightarrow$ **`28,77%`**.
+       - Aporte al Éxito: $28,77\% \times 0,40 = \mathbf{11,51\%}$.
+    2. **⏱️ Cumplimiento de Cronograma (Opción B.3 Dual Integrado - Peso: 60,0%):**
+       - Mide los 16 Sprints del cronograma contractual oficial (`Cronograma_PY_Depositos_Especiales_v3.xlsx`), asignando un peso equitativo de **6,25% a cada sprint** ($16 \times 6,25\% = 100\%$), bajo los **dos momentos metodológicos**:
+         - **Momento 1 · Linktic (Entrega Desarrollo a UAT):** HUs en State `8.2 Aprobación por Cliente UAT` y User History `08. Por aprobación del cliente`. Avance ejecutado: **`37,91%`** (Sprints 1 a 6 con 100% desarrollo entregado + Sprint 7 al 6,6%).
+         - **Momento 2 · Cliente (Certificación UAT Formal):** HUs en State `4. Cerrado` y User History `20. Aprobado por cliente`. Avance ejecutado: **`34,38%`** (Sprints 1 a 5 con 100% certificados en UAT + Sprint 6 al 50% en pruebas del cliente).
+         - **Real Promedio Dual B.3:** $(37,91\% + 34,38\%) / 2 = \mathbf{36,15\%}$.
+         - **Meta Proyectada al Corte (06-Nov-2026):** **`40,63%`** (Sprints 1 a 6 completos [37,50%] + 50% Sprint 7 [3,13%]).
+         - **Brecha de Cumplimiento:** **`-4,48 pp`** (Sprint 7 reprogramado a 07-Dic-2026 para entrega y 06-Ene-2027 para UAT).
+         - Aporte al Éxito: $36,15\% \times 0,60 = \mathbf{21,69\%}$.
+  - **Fórmula y Resultado Consolidado Tarjeta 02:**
+    $$\text{Éxito (419)} = (28,77\% \times 0,40) + (36,15\% \times 0,60) = 11,51\% + 21,69\% = \mathbf{33,20\%}$$
+    - Tarjeta 02 exhibe: valor **`33,20%`**, subtítulo `Ponderado: Funcionalidades 100% (40%) · Cronograma Dual B.3 (60%)` y píldora `En seguimiento`.
+* **Tarjetas Discriminadas en el Acordeón Desplegable (`cmiOverviewHTML`):**
+  - **03 · Indicador Táctico:** Mantiene el valor vigente de Vercel (**`11,96%`**), aclarando que no suma al éxito, y retirando leyendas/notas sobre el archivo local PMO para mantener la visual ejecutiva (`n funcionalidades en universo`).
+  - **Tarjeta Funcionalidades Certificadas por Cliente (Peso: 40%):** Valor **`28,77%`**, con detalle `63 de 219 funcionalidades en prod (BAC: 45 · RAMA: 18)` y badge de aporte `11,51%`.
+  - **Caja de Cumplimiento Cronograma Dual B.3 (Peso: 60%):** Aporte `21,69%`, con métricas de `Real Entregado (Dual)` (**`36,15%`**), `Meta Proyectada a la fecha` (**`40,63%`**), `Brecha de Cumplimiento` (**`-4,48 pp`** · Sprint 7 reprogramado) y detalle inferior de los dos momentos (Linktic 37,91% vs Cliente 34,38%).
+* **Pestaña Desplegable de Desviación del Cronograma (`renderCrono419Collapsible`):**
+  - Acordeón interactivo `<details class="cmi-accordion" open>` que visualiza los **16 Sprints en paralelo**:
+    - Columnas generales: `Sprint`, `Peso` (6,25%), `Épicas Azure (BAC / RAMA)`.
+    - Bloque **Momento 1 · Linktic** (verde azulado `#0f766e`): Fecha Plan/Reprog, Desviación en días hábiles (+21 d en Sp7), HUs UAT/Prod y Estado.
+    - Bloque **Momento 2 · Cliente** (azul `#0284c7`): Fecha Plan/Reprog, Desviación en días hábiles (+23 d en Sp7), HUs en Prod y Estado.
+    - Totales consolidados con semáforos, meta proyectada al corte (40,63%), promedio dual (36,15%), brecha (-4,48 pp) y mención de hito contractual final fijo (10-Sep-2027 en Sprint 16 UAT con 0 días de desviación).
+* **Entregables y Correlación:**
+  - Libro de trabajo completo generado en:
+    `Información Financiera/419 - Depósitos Judiciales/Cronograma/Correlacion_Cronograma_vs_Azure_419.xlsx`
+    con 5 hojas: *Resumen Ejecutivo 419*, *Correlación Sprints vs Azure*, *Features al 100%*, *Features en Curso o Pendientes* y *HUs por Sprint y Estado*.
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores de regex o de estructura).
+  - Sincronización en las 4 rutas espejo verificada por SHA-256.
+  - Publicación y despliegue completado en GitHub Pages (`commit 6895466`).
+
+
+---
+
+## 33. Registro de Ajuste de Indicadores de 421 a 56 Funcionalidades de Producto (06-nov-2026)
+* **Alcance Exclusivo de Producto en Proyecto 421 - BALÚ:**
+  - Atendiendo la directriz del usuario, se ajustaron los indicadores operativos (Táctico y Estratégico) a nivel de **Funcionalidades (Features)**, excluyendo estrictamente las funcionalidades que no corresponden a producto:
+    - **Épicas Excluidas:**
+      - *Funcionalidades Transversales* (10 Features en Azure: IDs 417232, 101755, 180126, 85105, 85107, 85104, 85109, 180688, 85108, 85119).
+      - *Automatización_QA Balu* (2 Features en Azure: IDs 417212, 417189).
+    - **Frentes de Cara a Producto Incluidos:**
+      - *Afiliaciones y Novedades:* **29 Features**.
+      - *Sistema de Recaudo y Cartera:* **27 Features**.
+    - **Total Universo de Producto:** **56 Funcionalidades**.
+* **Resultados de Indicadores CMI bajo Escala PMO:**
+  - **Distribución en Cubos CMI:**
+    - `100,00% (En Producción)`: **12 Features** (Afiliaciones: 5 · Recaudo: 7).
+    - `75,00% (En UAT Cliente)`: **0 Features**.
+    - `50,00% (En curso > 80%)`: **27 Features** (Afiliaciones: 15 · Recaudo: 12).
+    - `20,00% (En curso 50-80%)`: **9 Features** (Afiliaciones: 6 · Recaudo: 3).
+    - `0,00% (En curso < 50%)`: **8 Features** (Afiliaciones: 3 · Recaudo: 5).
+  - **Indicador Táctico:** **`48,75%`** ($[12 \times 1,0 + 27 \times 0,5 + 9 \times 0,2 + 8 \times 0] / 56 = 27,3 / 56$).
+  - **Indicador Estratégico:** **`21,43%`** ($12 / 56$ funcionalidades formalizadas al 100% en producción).
+* **Recálculo del Indicador de Éxito (Tarjeta 02):**
+  $$\text{Éxito (421)} = (48,75\% \times 0,30) + (49,37\% \times 0,40) + (17,49\% \times 0,30) = 14,63\% + 19,75\% + 5,25\% = \mathbf{39,62\%}$$
+  - Hero Card 02 exhibe: valor **`39,46%`** (subió de 35,50% a 39,46%), subtítulo `Ponderado: Táctico (30%) · RQC (40%) · Cronograma (30%)` y estado `En seguimiento`.
+  - Acordeón Desplegable: Tarjeta `03 · Indicador táctico` refleja **`48,75%`** con badge de aporte **`14,63%`** y leyenda inferior `56 funcionalidades en universo · Escala CMI Oficial PMO`.
+* **Identidad Visual y Portafolio:**
+  - Badge de origen: conmutado a `Azure · 56 Func.` con tooltip *"Medición oficial sobre 56 Funcionalidades de Producto (2 frentes de cara a producto: Afiliaciones y Recaudo)"*.
+  - Callout de tarjeta: `56 Funcionalidades de Producto (2 Frentes)` · `12 en prod. · 21,4% cerrado`.
+  - Filas resumen: subtítulos actualizados a `% Avance funcionalidades` y `% Cumplimiento funcionalidades`.
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores de regex).
+  - `data_func.json` y `data_func/421.json` enriquecidos y sincronizados.
+  - Sincronización en las 4 rutas espejo verificada y publicada en producción en GitHub Pages (`commit 6c1af56`).
+
+
+## 34. Registro de Conexión 005 Positiva SGDEA 3T, Medición CMI 453 por Focos y Corte al 06-Nov-2026 (06-nov-2026)
+* **Desconexión de 005 respecto a 004 y Conexión Directa a 005 Positiva SGDEA New (3T):**
+  - Se eliminó el mapeo preliminar que redirigía `005` hacia el dataset legado `004`.
+  - Se conectó directamente el tablero y pipeline de datos al proyecto activo **005 Positiva SGDEA New (3T)** (`HU_005_20261106.csv` / `005.json`):
+    - **6 Épicas Válidas en Azure DevOps:** *NP - Migración* (100%), *NP - Evolutivos* (70,75%), *Deuda* (73,33%), *Deuda Técnica y Contractual* (41,87%), *Épica de gestión* (sin avance), *Prueba* (sin avance).
+    - **Indicador Táctico:** **`23,33%`** ($[1 	imes 1,0 + 2 	imes 0,20 + 3 	imes 0,0] / 6 = 1,4 / 6$).
+    - **Indicador Estratégico:** **`16,67%`** ($1 / 6$ épicas al 100% en producción: *NP - Migración*).
+    - **Desglose Técnico Callout:** **22 Funcionalidades** en Azure (3T) · **5 en producción** (22,7% cerrado) · 128 HUs.
+* **Homologación de Medición CMI para 453 (Monitoreo CPE) sobre sus 4 Focos Contractuales:**
+  - En estricto apego a la directriz del usuario, los indicadores operativos de la PMO para el 453 se miden formalmente frente a sus **4 Focos**:
+    - **Indicador Estratégico:** Focos cerrados o entregados formalmente al 100% sobre total focos ($D / N$).
+      - Resultado: **`0,00%`** ($0 / 4$ focos cerrados).
+    - **Indicador Táctico:** Avance de cada foco evaluado bajo la **Escala CMI por entregable**:
+      - *Foco A (Agentes de monitoreo):* Avance real 86,69% (> 80%) $
+ightarrow$ Escala CMI = **50,00%** (0,50).
+      - *Foco B (Gestión analítica):* Avance real 17,50% (< 50%) $
+ightarrow$ Escala CMI = **0,00%** (0,00).
+      - *Foco C (Encuestas):* Avance real 12,00% (< 50%) $
+ightarrow$ Escala CMI = **0,00%** (0,00).
+      - *Foco D (Planes e indicadores):* Avance real 0,00% (< 50%) $
+ightarrow$ Escala CMI = **0,00%** (0,00).
+      - Promedio Aritmético: **`12,50%`** ($(0,50 + 0 + 0 + 0) / 4 = 0,50 / 4$).
+    - **Resolución de Visualización Integral de Focos en Árbol Interactivo:**
+      - Se corrigió `_cpeRamas` y `_cpeOrdenFocos` en el front-end para que los **4 focos (A, B, C, D)** siempre se inicialicen y visualicen como ramas independientes en la tabla jerárquica de Azure DevOps, evitando que los CUs sin HUs activas caigan erróneamente en `(sin foco)`.
+      - Foco A: 44 CUs · 322 HUs · 86,7% avance.
+      - Foco B: 1 CU · 0 HUs activas · 17,5% avance CU.
+      - Foco C: 31 CUs · 185 HUs · 12,0% avance.
+      - Foco D: 0 CUs · 0 HUs · Comprometido para 2026-12-30.
+    - **Identidad en Portafolio y Ficha:** Badge `Azure · 4 Focos`, subtítulos `% Avance focos` y `% Cumplimiento focos`, y banner CMI ajustado a medición por foco.
+* **Actualización del Portafolio al Corte Diario (06-Nov-2026):**
+  - Todos los snapshots de Azure DevOps actualizados a la fecha del día (`2026-11-06`): 005, 453, 421, 384, 355, 416, 419, 348, 397, 420, 457, 020, 461.
+  - Sincronización completa de `data_func.json`, carpeta `data_func/*.json` y `data_453_cpe.json`.
+  - Validación con `ACTUALIZAR.py --dry-run` exitosa (0 errores de regex, cumplimiento de Regla 4).
+  - Snapshot histórico preservado en `Histórico tablero/Tablero_CMI_PMO_20261106_141000.html`.
+  - Despliegue en producción completado en GitHub Pages (`commit abf6f88`).
+
+
+---
+
+## 35. Registro de Incorporación Oficial del Proyecto 420 (Pólizas de Salud) y Medición CMI (06-nov-2026)
+* **Incorporación en Portafolio y Datos Operativos:**
+  - Proyecto oficial: **420 - PROYECTO PÓLIZAS DE SALUD** (Positiva Compañía de Seguros · Pólizas de Salud).
+  - Integrado a la estructura operativa:
+    - Agregado en `FR` (12 Épicas operativas bajo la escala CMI PMO).
+    - Agregado al listado maestro de proyectos `P` con flag `opOnly: true`.
+    - Agregado en `VAL`, `PROJ_CALLOUT_META`, `META_PROJ` y los dos mapeos `keyMap` de Azure DevOps.
+  - Generado y sincronizado su dataset `data_func/420.json` y entrada en `data_func.json` a partir del snapshot `HU_420_20261106.csv`.
+* **Gobernanza y Resultados de Indicadores CMI:**
+  - **Universo de medición:** **12 Épicas** activas en Azure DevOps.
+  - **Indicador Estratégico:** **`25,00%`** (3 de 12 Épicas cerradas al 100% en producción).
+    - Épicas al 100%: *357080 Contingencia - Continuidad - Errores Integración*, *357556 Desarrollos internos*, *358841 Soportes*.
+  - **Indicador Táctico:** **`62,50%`** (Promedio ponderado bajo la escala CMI: 3 épicas al 100% [1,0] + 9 épicas en curso >80% [0,50]: $\frac{3 \times 1,0 + 9 \times 0,50}{12} = \frac{7,5}{12} = 62,50\%$).
+    - 9 épicas en rango 80–99% (Escala CMI = 50%): Cuentas médicas (88,9%), Usuarios (94,3%), Gestión red hospitalaria (99,2%), Transversales (91,4%), Atenciones Call Center (93,6%), Configuración (97,1%), Gestión Servicios Médicos (95,8%), Telemedicina MVP (88,0%), Perfil (96,0%).
+  - **Desglose Técnico Callout:**
+    - Badge: `Azure · 12 Épicas`.
+    - Callout: `57 Funcionalidades en Azure` · `35 en prod. · 61,4% cerrado` (617 HU totales, 602 activas, 501 en producción).
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores de regex, cumplimiento estricto de Regla 4).
+  - Sincronización completa en las 4 rutas espejo.
+  - Publicación y despliegue completado en GitHub Pages (`commit 6ba08a8`).
+
+
+---
+
+## 36. Registro de Definición del Indicador de Éxito de 453 (Monitoreo CPE) y Homologación V2 (06-nov-2026)
+* **Actualización Integral de la Escala de Avance (Homologación V2):**
+  - Se sincronizó la tabla de homologación oficial desde `Homologación estados Azure proyectos V2.xlsx` (hoja `453` en `C:\Users\IvanDarioPastorParra\Documents\Optimización y Control\tableros de proyectos\indicadores\Tablero Operativo\Arquitectura`):
+    - **Escala de Casos de Uso (Feature / `estados_453`):**
+      - `19. Entregado`: **100,0%** (29 CUs)
+      - `18. Despliegue QA a UAT`: **90,0%**
+      - `17. Ejecución pruebas QA`: **80,0%** (1 CU)
+      - `16. Ajustes desarrollo`: **40,0%** (corregido de 65% a 40% según V2)
+      - `15. En desarrollo`: **50,0%** (6 CUs)
+      - `13. Aprobado por cliente` / `09. Aprobado por cliente`: **20,0%**
+      - `12. Escenarios RNF en revisión` / `08. Escenarios en revisión cliente` / `08. Pdte aprobación`: **17,5%** (1 CU)
+      - `11. Escenarios RNF en refinamiento` / `07. Escenarios en refinamiento` / `07. QA-En refinamiento`: **13,5%**
+      - `10. Escenarios RNF registrados` / `06. Escenarios registrados` / `06. Rq-En refinamiento`: **15,0%**
+      - `09. En elaboración escenarios RNF` / `05. En elaboración Escenarios` / `05. QA-Co creación`: **12,5%** (25 CUs)
+      - `04. CU en revisión cliente` / `04. Rq-Co creación`: **10,0%**
+      - `03. CU en refinamiento`: **6,0%**
+      - `03. QA-Artefacto registrado` / `02. CU registrado en herramienta` / `02. Rq-Artefacto registrado`: **7,5%** (2 CUs)
+      - `01. En elaboración doc funcional`: **5,0%**
+      - `00. En levantamiento/entendimiento`: **2,5%** (8 CUs)
+      - `10. Transversal`: Excluido de medición (4 CUs)
+    - **Escala de Historias de Usuario (HU):**
+      - `10. En Producción`: **100,0%**
+      - `9. Esperando Despliegue UAT-PROD`: **95,0%**
+      - `8.2 Aprobación por cliente UAT`: **90,0%**
+      - `8.1 Pruebas UAT`: **85,0%**
+      - `8. Esperando despliegue de QA a UAT`: **80,0%**
+      - `7.2 Aprobación por Cliente a QA` / `Aprobación cliente a QA`: **72,5%** (actualizado de 85% a 72,5%)
+      - `7.1 Pruebas QA`: **65,0%** (actualizado de 60% a 65%)
+      - `7. Backlog QA`: **57,5%**
+      - `6.2 Ajustes Dev`: **45,0%**
+      - `6.1 Esperando despliegue Dev a QA`: **50,0%**
+      - `6. Desarrollo`: **40,0%**
+      - `5. Backlog general`: **30,0%**
+      - `4. Refinamiento`: **17,0%**
+      - `3. Aprobación de HU y artefactos`: **20,0%**
+      - `2. Elaboración HU` / `Elaboración de HU`: **15,0%** (actualizado de 12% a 15%)
+      - `1. Levantamiento`: **10,0%**
+      - `0. Pendiente Levantamiento`: **5,0%**
+      - `0.0 Transversal`: OMITIR (52 HUs)
+      - `x. Removido` / `Removido`: EXCLUIR (5 HUs)
+* **Medición Oficial del Indicador de Éxito para 453:**
+  - Siguiendo la metodología de 456, se pondera el peso asignado en cronograma a cada entregable (**4 Focos**) multiplicando por el porcentaje de avance promedio del campo `% de avance CU`:
+    1. **Foco A (Agentes de monitoreo):** Peso **40,00%** · 40 CUs medibles (29 entregados al 100%) · Avance CU: **82,38%** $\rightarrow$ Aporte: **`32,95%`** (Hito reprogramado: 24/10/2026, Vencido).
+    2. **Foco B (Gestión analítica):** Peso **30,00%** · 1 CU medible · Avance CU: **17,50%** $\rightarrow$ Aporte: **`5,25%`** (Hito reprogramado: 25/12/2026, En curso).
+    3. **Foco C (Encuestas):** Peso **15,00%** · 31 CUs medibles · Avance CU: **10,73%** $\rightarrow$ Aporte: **`1,61%`** (Hito reprogramado: 30/10/2026, Vencido).
+    4. **Foco D (Planes e indicadores):** Peso **15,00%** · 0 CUs medibles · Avance CU: **0,00%** $\rightarrow$ Aporte: **`0,00%`** (Hito: 30/12/2026, Sin iniciar).
+  - **Fórmula de Éxito Ponderado Total:**
+    $$\text{Éxito (453)} = (82,38\% \times 0,40) + (17,50\% \times 0,30) + (10,73\% \times 0,15) + (0,00\% \times 0,15) = 32,95\% + 5,25\% + 1,61\% + 0,00\% = \mathbf{39,81\%}$$
+  - **Meta Proyectada al corte (06-Nov-2026):** **`55,00%`** (Foco A [40%] + Foco C [15%] con fechas comprometidas cumplidas al corte).
+  - **Brecha de Cumplimiento:** **`-15,19 pp`** (Focos A y C con desviaciones en sus fechas reprogramadas).
+* **Componentes de Interfaz Actualizados:**
+  - **Hero Card 02 (Indicador de Éxito):** Muestra el valor oficial **`39,81%`**, subtítulo `Ponderado: Focos en Cronograma (100%) × % Avance CU` y píldora `En seguimiento`.
+  - **Acordeón Desplegable:** Integra el bloque ejecutivo de conciliación con Real (39,81%), Meta (55,00%), Brecha (-15,19 pp) y la tabla completa de los 4 Focos similar a `tbl-estatus-456`.
+  - **Ficha Operativa de 453 (`cpe453Card`):** Incorpora el panel superior *"⏱️ Desviación y Cumplimiento del Cronograma por Foco Contractual"* y actualiza el árbol interactivo de CUs y HUs con los porcentajes de la Homologación V2.
+  - **Callout de Tarjeta:** Actualizado a `4 Focos en Cronograma · 76 Casos de Uso` · `29 CUs al 100%` · `39,8% éxito · 12,5% táctico`.
+* **Sincronización y Despliegue:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores de regex, estricto apego a Regla 4).
+  - Sincronización completa en las 4 rutas espejo y archivos de datos `data_func.json` y `data_453_cpe.json`.
+  - Publicación y despliegue en producción completado en GitHub Pages (`commit 458e0ef`).
+
+---
+
+## 33. Registro de Pestaña Desplegable de Cronograma y Depuración Visual Ejecutiva en 453 (06-nov-2026)
+* **Redimensionamiento y Limpieza del Acordeón CMI (`cmiOverviewHTML`):**
+  - **Remoción de tabla interna:** Se eliminó la tabla estática incrustada dentro del acordeón `📊 Ver Indicador Táctico y Discriminado del Indicador de Éxito` para 453.
+  - **Alineación y Simetría:** Se removió la regla `grid-column: 1/-1` del contenedor `.cmi-exito-box`, permitiendo que la tarjeta de *⏱️ Cumplimiento Cronograma (Peso: 100%)* quede perfectamente redimensionada lado a lado con el *03 · Indicador táctico*, en cuadrícula armónica igual que en 421 y 419.
+  - **Métricas Visibles:** Muestra limpiamente los 3 KPIs de alto impacto: Real Entregado (**39,81%**), Meta a la fecha (**55,00%**) y Brecha de Cumplimiento (**-15,19 pp**), complementada con la franja inferior de aportes (Foco A: 32,95%, Foco B: 5,25%, Foco C: 1,61%, Foco D: 0,00%).
+* **Depuración del Encabezado en la Ficha de Casos de Uso (`cpe453Card`):**
+  - **Eliminación de narrativa repetitiva:** Se retiró el bloque de título y texto redundante (`🗂 453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026 · Casos de Uso y HUs...`).
+  - **Remoción de tabla duplicada:** Se quitó la tabla estática que se encontraba insertada dentro de la ficha de CUs, dejando la ficha directamente con el banner CMI oficial, las tarjetas estadísticas y el árbol interactivo de trabajo.
+* **Pestaña Desplegable de Cronograma Dedicada (`renderCrono453Collapsible`):**
+  - **Estructura Estándar:** Implementada la función `renderCrono453Collapsible()` con `<details class="cmi-accordion" open>`, encabezado con badge de Éxito Ponderado (39,81%), etiqueta de pestaña desplegable y tabla ejecutiva estilizada con clase `tbl-estatus-456`.
+  - **Posición Operativa Estratégica:** Se invoca en `renderOpBody` inmediatamente antes de la sección funcional de Azure (`renderFncSection`), brindando una jerarquía visual impecable: primero los Tiles superiores, segundo la Pestaña Desplegable de Cronograma de los 4 Focos, y tercero el árbol interactivo de Casos de Uso y HUs.
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores de regex, estricto cumplimiento de Regla 4).
+  - Sincronización completa en las 4 rutas espejo (`index.html`, `Tablero_CMI_PMO.html`, copia de usuario y copia de descargas).
+  - Publicación y despliegue en producción completado en GitHub Pages (`commit 0336fda`).
+
+---
+
+## 34. Registro de Corrección de Aislamiento de Desglose de Cronograma CPE 453 (06-nov-2026)
+* **Diagnóstico de Incidencia:**
+  - La tabla de cronograma contractual de los 4 Focos de CPE 453 se encontraba incrustada por duplicidad dentro de la función general `funcCard(cod)` bajo el encabezado *"🗂 Funcionalidades por frente · qué HU componen cada una"*, provocando que se renderizara indebidamente en todos los proyectos de Azure DevOps (005, POS, 355, 416, 384, 419, 421, 348, 397).
+* **Solución Implementada:**
+  - Se eliminó completamente el bloque de tabla de Focos de 453 de la función genérica `funcCard(cod)`.
+  - Dicha información quedó aislada y circunscrita **exclusivamente al proyecto CPE 453**, donde se visualiza mediante su pestaña colapsable dedicada `renderCrono453Collapsible()`.
+  - La sección *"🗂 Funcionalidades por frente · qué HU componen cada una"* de los demás proyectos recuperó su estructura limpia y nativa: selector de frentes, banner CMI con escala y árbol interactivo de Épicas, Funcionalidades y HUs.
+* **Sincronización y Validación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (0 errores de regex, apego a Regla 4).
+  - Sincronización en las 4 rutas espejo y publicación automática en GitHub Pages (`commit 4ac2e77`).
+
+---
+
+## 35. Registro de Transición Global de Indicadores Táctico y Estratégico a Funcionalidades (Features) con Excepción Oficial de Ramos en 416 (06-nov-2026)
+* **Gobernanza Operativa sobre Funcionalidades (Features):**
+  - Conforme a la directriz PMO, los **Indicadores Tácticos y Estratégicos** de los proyectos pasan a medirse oficialmente sobre las **Funcionalidades (Features)** activas de Azure DevOps (no sobre Épicas), evaluadas bajo la **Escala CMI por entregable**:
+    - `100,00%`: En producción o entregado formalmente (`pct >= 0.999`).
+    - `75,00%`: En UAT o aprobación del cliente.
+    - `50,00%`: En curso >80% (`pct > 0.80`).
+    - `20,00%`: En curso 50–80% (`pct >= 0.50`).
+    - `0,00%`: En curso <50% (`pct < 0.50`).
+  - **Indicador Táctico:** Promedio aritmético de los valores resultantes de la Escala CMI sobre las funcionalidades activas.
+  - **Indicador Estratégico:** Proporción de funcionalidades al 100% sobre el total de funcionalidades activas del proyecto ($rac{D}{N}$).
+* **Excepción Oficial Exclusiva para Proyecto 416 (Positiva Core Evolutivos):**
+  - Se mantiene la medición formal sobre sus **2 Épicas contractuales**, pero expresadas e identificadas en todos los componentes con la unidad oficial **Ramos**:
+    - **Total:** `2 Ramos` (*Vida Individual* y *Accidentes Personales*).
+    - **Indicador Táctico:** **29,00%**.
+    - **Indicador Estratégico:** **0,00%** (0 de 2 Ramos formalizados al 100%).
+    - Badge e identificación: `Azure · 2 Ramos` y etiquetas correspondientes (*% avance ramos*, *% cumplimiento ramos*).
+* **Consolidación del Portafolio de Proyectos Actualizado:**
+  - **005 (POSITIVA SGDEA 2026 - 3T):** 22 Funcionalidades (5 al 100%) $
+ightarrow$ Táctico: **28,64%** · Estratégico: **22,73%** (Badge: `Azure · 22 Func.`).
+  - **355 (Positiva Core 355):** 83 Funcionalidades activas (6 al 100%) $
+ightarrow$ Táctico: **27,35%** · Estratégico: **7,23%** (Badge: `Azure · 83 Func.`).
+  - **POS (Consolidado 355 + 416):** 85 Entregables (83 Func. + 2 Ramos, 6 entregados) $
+ightarrow$ Táctico: **27,39%** · Estratégico: **7,06%** (Badge: `Azure · 85 Entregables`).
+  - **384 (Core Fiduprevisora):** 496 Funcionalidades activas (101 al 100%) $
+ightarrow$ Táctico: **48,51%** · Estratégico: **20,36%** (Badge: `Azure · 496 Func.`).
+  - **348 (SGDEA Acueducto):** 115 Funcionalidades activas (27 al 100%) $
+ightarrow$ Táctico: **28,35%** · Estratégico: **23,48%** (Badge: `Azure · 115 Func.`).
+  - **420 (Pólizas de Salud):** 57 Funcionalidades activas (35 al 100%) $
+ightarrow$ Táctico: **74,39%** · Estratégico: **61,40%** (Badge: `Azure · 57 Func.`).
+  - **421 (Balú):** 56 Funcionalidades de Producto (12 al 100%) $
+ightarrow$ Táctico: **48,21%** · Estratégico: **21,43%** (Badge: `Azure · 56 Func.`).
+  - **457 (La Equidad):** 49 Funcionalidades (45 al 100%) $
+ightarrow$ Táctico: **94,08%** · Estratégico: **91,84%** (Badge: `Azure · 49 Func.`).
+  - **020 (Servicios de Analítica):** 7 Funcionalidades (0 al 100%) $
+ightarrow$ Táctico: **32,86%** · Estratégico: **0,00%** (Badge: `Azure · 7 Func.`).
+  - **461 (Cuentas Claras):** 32 Funcionalidades (0 al 100%) $
+ightarrow$ Táctico: **7,19%** · Estratégico: **0,00%** (Badge: `Azure · 32 Func.`).
+  - **Proyectos Especiales Preservados:**
+    - **419 (Depósitos Judiciales):** Archivo local 466 funcionalidades (80 entregadas $
+ightarrow$ 11,96% táctico, 17,17% estratégico).
+    - **453 (Monitoreo CPE):** 4 Focos en cronograma (12,50% táctico, 0,00% estratégico, 39,81% éxito ponderado).
+    - **456 (Aeronáutica Civil):** 6 Hitos contractuales en 3 fases (24,00% táctico, 16,67% estratégico).
+    - **397 (Core Andina):** 57 Épicas contractuales revisadas (97,06% táctico, 91,18% estratégico con 233 Features).
+* **Sincronización y Validación:**
+  - Script `enrich_func_cmi.py` actualizado para recalcular en base a Features y Ramos en 416.
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (**0 errores de regex**).
+  - Sincronización en las 4 rutas espejo y publicación automática en GitHub Pages (`commit 434d56a`).
+
+---
+
+## 36. Registro de Indicador Estratégico Vivo Redimensionable en Aeronáutica (456) y Eliminación de Duplicidades Visuales Operativas (09-nov-2026)
+* **Indicador Estratégico Vivo y Redimensionable a la Fecha en Aeronáutica Civil (Proyecto 456):**
+  - **Lógica de redimensionamiento contractual:**
+    - El denominador se redimensiona automáticamente conforme se cumpla la fecha contractual de entrega de los hitos ($N_{fecha}$, hitos con `date <= corte`).
+    - El numerador se alimenta conforme se formalicen entregas al 100% ($D_{real}$, hitos cumplidos formalmente).
+  - **Métricas al corte actual (`2026-11-09`):**
+    - Hitos debidos a la fecha ($N_{fecha}$): **2 hitos** (Entregable I y Entregable II de Fase I vencidos al 15-Jul y 23-Sep).
+    - Hitos entregados al 100% ($D_{real}$): **1 hito** (Entregable I formalizado).
+    - Hitos totales del contrato ($N_{total}$): **6 hitos**.
+    - **Indicador Estratégico Real a la fecha:** $\frac{1}{2} = \mathbf{50,00\%}$ (1 de 2 entregables debidos a la fecha).
+    - **Meta proyectada a la fecha:** $\mathbf{100,00\%}$ (2 de 2 entregables debidos formalizados).
+    - **Brecha de cumplimiento:** $\mathbf{-50,00\text{ pp}}$ (1 entregable con desfase en Gate 1).
+    - **Indicador de Éxito Ponderado Contractual:** Real **18,00%**, Meta **30,00%**, Brecha **-12,00 pp**.
+    - **Indicador Táctico:** **24,00%** (18% × 1.0 + 12% × 0.50).
+  - **Componentes CMI actualizados en la Ficha de 456:**
+    - **Hero Card `01 · Indicador estratégico`:** Valor principal `50,00%` con etiqueta inferior reactiva:
+      `1 de 2 entregables a la fecha (1 de 6 contrato) · Meta proyectada a la fecha: 100,00% | Brecha: -50,00 pp`.
+    - **Acordeón CMI (`📊 Ver Indicador Táctico y Discriminado del Indicador de Éxito`):**
+      - **⏱️ Conciliación Indicador Estratégico:** Píldoras con Real 50,00%, Meta 100,00% y Brecha -50,00 pp.
+      - **🎯 Conciliación Indicador de Éxito:** Píldoras con Real 18,00%, Meta 30,00% y Brecha -12,00 pp.
+    - **Tarjeta de Portafolio (`#sem-op`):** Refleja `50,00%` estratégico, callout `Contractual · 1/2 Hitos a la fecha` y subtítulo con avance de hitos y éxito ponderado.
+* **Eliminación de Duplicidades Visuales en Todo el Portafolio:**
+  - **Retiro de `#op-tiles-top` en `renderOpBody`:** Se eliminaron las tarjetas estáticas/redundantes superiores del cuerpo operativo en todos los proyectos del portafolio (que repetían el Indicador Táctico y Estratégico ya presentados en el CMI Hero).
+  - **Limpieza del Banner CMI en Desglose Funcional (`funcCard` y `cpe453Card`):** Se removió el bloque derecho de métricas numéricas duplicadas ("Indicador Táctico" e "Indicador Estratégico"), manteniendo intacto el encabezado de trazabilidad y los chips de Distribución en Escala (100%, 75%, 50%, 20%, 0%).
+* **Sincronización, Compatibilidad y Despliegue:**
+  - Validación con `ACTUALIZAR.py --dry-run` exitosa (**0 errores de regex**, Regla 4 estrictamente intacta).
+  - Sincronización completa en las 4 rutas espejo del sistema.
+  - Snapshot histórico guardado en `Histórico tablero/Tablero_CMI_PMO_20261109_085241.html`.
+  - Despliegue en producción completado en GitHub Pages (`commit 7cac637`).
+
+* **Ajuste y Clarificación de la Fórmula del Indicador Estratégico en 456:**
+  - El denominador permanece constante sobre el **universo contractual completo de 6 entregables** ($N_{total} = 6$).
+  - **Avance Real a la fecha:** $\frac{1}{6} = \mathbf{16,67\%}$ (1 entregable formalizado al 100%: Entregable I Fase I).
+  - **Meta Proyectada a la fecha:** $\frac{2}{6} = \mathbf{33,33\%}$ (2 entregables con fecha comprometida/reprogramada debida al corte: Entregables I y II al 15-Jul y 23-Sep).
+  - **Brecha de Cumplimiento:** $16,67\% - 33,33\% = \mathbf{-16,67\text{ pp}}$ (1 entregable pendiente con desfase en Gate 1).
+  - Visualización en CMI Hero: `1 de 6 entregables formalizados (16,67%) · Meta proyectada a la fecha: 33,33% (2/6 hitos) | Brecha: -16,67 pp`.
+  - Caja de Conciliación en Acordeón: Real 16,67%, Meta Proyectada 33,33%, Brecha -16,67 pp.
+
+* **Retiro de Aclaración Metodológica PMO en Proyecto 456:**
+  - Se removió el cuadro informativo secundario de "Aclaración Metodológica PMO" en la sección de funcionalidades del proyecto 456, manteniendo limpio el encabezado del proyecto sin redundancias.
+
+* **Integración de Meta Proyectada a la Fecha y Brecha en Indicador Táctico de Aeronáutica (456):**
+  - **Métrica Principal Preservada en Primer Nivel:** Se mantiene el avance real oficial de **24,00%** (18% × 100% Entregable I + 12% × 50% Entregable II).
+  - **Meta Proyectada a la fecha:** **30,00%** (Fase I debida al 23-Sep: 18% + 12% = 30%).
+  - **Brecha de Cumplimiento:** **-6,00 pp** (o 6,00% de desfase correspondiente al 50% restante del Entregable II en Gate 1).
+  - **Visualización en CMI Hero (`03 · Indicador táctico`):**
+    `Avance ponderado Fase I · Meta proyectada a la fecha: 30,00%` con píldora semafórica `Brecha: -6,00 pp`.
+  - **Visualización en Portafolio Primer Nivel (`#sem-op`):**
+    - Métrica táctica: **24,00%**.
+    - Subtítulo KPI: `Meta: 30,0% · Brecha: -6,0 pp`.
+    - Callout: `Táctico: 24,0% · Meta: 30,0% · Brecha: -6,0 pp`.
+  - **Caja de Conciliación en Acordeón CMI:** Añadida la sección `📊 Conciliación Indicador Táctico (Avance Ponderado)` con Real 24,00%, Meta Proyectada 30,00% y Brecha -6,00 pp.
+
+* **Ajuste Visual de la Ficha Táctica en Aeronáutica (456):**
+  - Se restauró la línea estándar en `cmi-bottom` con: `6 entregables en universo · Escala CMI Oficial PMO` y la píldora `Requiere atención`.
+  - Inmediatamente debajo, en el espacio blanco disponible, se ubicó una línea compacta y sutil (`font-size: 9.5px`) que en una sola línea presenta: `Meta proyectada a la fecha: 30,00%` junto a su píldora semafórica `Brecha: -6,00 pp`, logrando que toda la información se visualice sin saturar ni desplazar componentes.
+
+* **Conciliación Táctica Desplegable (+) y Limpieza de Fechas de Corte en 456:**
+  - **Subpestaña Desplegable en Tarjeta Táctica:** La conciliación detallada del Indicador Táctico (Real 24,00%, Meta 30,00%, Brecha -6,00 pp) se integró directamente como un acordeón interno interactivo (`+`/`−`) dentro de la tarjeta `03 · Indicador táctico`.
+  - **Restauración de la Visual Inicial del Acordeón CMI:** El cuerpo del acordeón vuelve a su cuadrícula original de 3 tarjetas lado a lado:
+    1. `03 · Indicador táctico` (con su subpestaña desplegable `+`).
+    2. `⏱️ Conciliación Indicador Estratégico (Hitos Contractuales)`.
+    3. `🎯 Conciliación Indicador de Éxito (Ponderación Contractual)`.
+  - **Retiro de Fechas de Corte en Encabezados:** Se retiraron las etiquetas estáticas de fecha de corte (`Corte al...`) en todas las cajas de conciliación, dado que la vigencia temporal se infiere directamente de la fecha de última actualización operativa y contractual del proyecto.
+
+* **Ajustes en Cronograma y Sección de Éxito de Balú (Proyecto 421):**
+  - **Título Limpio de Cronograma:** Se renombró la sección a `🗓️ Desviación del Cronograma` (retirando la extensión de los 10 releases).
+  - **Visualización de Avance Simplificada:** Se ocultó el porcentaje de texto numérico de avance en Azure, conservando visible la barra gráfica de avance ponderado (`col-bar`).
+  - **Columna de Estado Homologada:** Se ajustó la columna a `Estado` con valores binarios normativos:
+    - `Entregado` (verde) para funcionalidades/releases con 100% formalizado (Release 9).
+    - `No entregado` (rojo/amarillo) para funcionalidades/releases con avance menor al 100% (Releases 1 al 8 y 10).
+  - **Nota Aclaratoria en Cumplimiento Cronograma (Peso: 30%):** Se añadió en la caja de conciliación del Indicador de Éxito:
+    *«ℹ️ Nota aclaratoria: El cumplimiento del cronograma se evalúa contra el archivo Excel debido a las 37 funcionalidades pendientes de correlacionar en Azure.»*
+
+
+## 41. Registro de Actualización Operativa General desde Azure DevOps (09-nov-2026)
+
+- **Actualización Operativa General desde Azure DevOps (09-Nov-2026):**
+  - Repositorio fuente `tableros de proyectos` puesto al día mediante `git pull` con los snapshots al **09-nov-2026** generados por GitHub Actions.
+  - Sincronizados y recalculados los archivos `data_func.json`, carpeta `data_func/*.json` (16 proyectos) y `data_453_cpe.json` con `enrich_func_cmi.py`.
+  - Actualizaciones en indicadores y volumetría viva:
+    - **005 (Positiva SGDEA):** Táctico sube a **30,42%**, Estratégico a **25,00%** (6 de 24 funcionalidades en producción al 100%, +1 cerrada vs 5/22).
+    - **020 (Servicios de Analítica):** Táctico sube a **58,75%**, Estratégico a **25,00%** (2 de 8 funcionalidades en producción al 100%, +2 cerradas vs 0/7).
+    - **355 (Positiva Core 355):** Táctico en **27,02%**, Estratégico en **7,14%** (6 de 84 funcionalidades en producción al 100%).
+    - **POS (Consolidado Positiva Core):** Táctico en **27,07%**, Estratégico en **6,98%** (6 de 86 entregables en producción al 100%).
+    - **384 (Core Fiduprevisora):** Táctico en **47,97%**, Estratégico en **19,68%** (98 de 498 funcionalidades en producción al 100%).
+    - **457 (Portales Digitales La Equidad):** Táctico en **94,31%**, Estratégico en **92,16%** (47 de 51 funcionalidades en producción al 100%, +2 cerradas vs 45/49).
+    - **419 (Depósitos Judiciales):** Se mantiene la regla del maestro local (80 de 466 entregables · 17,17% est. / 11,96% tác.), con trazabilidad en Azure actualizada a **195 funcionalidades** (63 en producción · 32,3% cerrado).
+    - **348 (Acueducto), 397 (Andina), 416 (Ramos), 420 (Salud), 421 (Balú), 453 (CPE), 456 (Aeronáutica), 461 (CNE):** Mantienen sus valores estables al corte del 09-nov-2026 con HUs y Features sincronizadas.
+  - Actualizadas las fechas en el encabezado general (`Act. Operativa: 09-Nov-2026`) y en los metadatos de fuentes de cada proyecto (`PROJ_DATES_META` y `PROJ_CALLOUT_META`).
+  - Validación con `ACTUALIZAR.py --dry-run` exitosa (0 errores de regex).
+  - Sincronización en las 4 rutas espejo y publicación automática en producción vía GitHub Pages (`commit 85cdd4b`).
+
+
+## 42. Registro de Ajuste de Release 3 Vencido en Cronograma Balú 421 (09-nov-2026)
+
+- **Ajuste de Release 3 Vencido (07-Nov-2026) en Cronograma Balú (421):**
+  - **Causa identificada:** La variable `cutoff421` estaba fijada en `2026-11-06`, por lo que el Release 3 (cierre planeado `2026-11-07`) quedaba fuera del filtro de releases debidos a la fecha (`passed421`).
+  - **Corrección dinámica:** Se actualizó `cutoff421` al corte operativo actual (`2026-11-09`), enlazado dinámicamente con `FUNC.proyectos["421"].corte` para que los futuros cortes absorban automáticamente los hitos cumplidos o vencidos.
+  - **Redimensión del denominador (Meta Proyectada):** Pasa de **20,00%** (Releases 1 y 2) a **30,00%** (Releases 1, 2 y 3 debidos a la fecha, 10% c/u).
+  - **Recálculo de avance real y brecha:**
+    - Real Entregado en cronograma: sube a **25,13%** (R1 8,85% + R2 8,64% + R3 7,64%).
+    - Brecha de cumplimiento de cronograma: pasa de -2,51 pp a **-4,87 pp** (25,13% - 30,00%).
+    - Indicador de éxito 421: sube a **41,75%** (Táctico 30% [14,46%] + RQC 40% [19,75%] + Cronograma 30% [7,54%]).
+  - **Marcado semafórico en tabla de Desviación del Cronograma (`tbl-crono-421`):**
+    - Release 3 marcado como vencido/incumplido con semáforo crítico `st crit` (fondo rojo `rgba(239,68,68,0.05)`, fecha en rojo `#dc2626`, desviación `+1 d hábil` y `+2 d cal`, estado `No entregado` en rojo crítico).
+    - Release 4 ajustado a `Plazo a favor (4 d hábiles)` / `Faltan 5 d`.
+    - Fila total y resumen inferior sincronizados a Meta 30,00%, Real 25,13% y Brecha -4,87 pp.
+  - Publicado en producción en GitHub Pages (`commit de15219`).
+
+
+## 43. Registro de Conciliación de Cronograma Balú 421 con Cronograma_BALU_2026_ y Matriz de Correlación (09-nov-2026)
+
+- **Auditoría Exhaustiva de Cronograma_BALU_2026_.xlsx:**
+  - El nuevo libro oficial integra por primera vez los dos frentes funcionales del proyecto: **Afiliaciones y Novedades (AyN)** (838 filas) y **Sistema de Recaudo y Cartera (RyC)** (1.015 filas).
+  - La planeación de 10 Releases de despliegue a producción combina entregables de ambos frentes a partir de Release 4:
+    - **Release 1 (10/10/2026):** AyN (Independientes Internos Medicina ind/masivo, Certificados especiales, Normalización I1).
+    - **Release 2 (24/10/2026):** AyN (Certificados masivos Funcionario/Empleador).
+    - **Release 3 (07/11/2026):** AyN (Actualizaciones sedes masivas).
+    - **Release 4 (14/11/2026):** AyN (Recicladores, Voluntarios, Tipos doc, Y1, E1) + RyC (Cartera preventiva, Consulta Cotizantes/Aportantes).
+    - **Release 5 (28/11/2026):** AyN (Carnés masivos Funcionario/Empleador).
+    - **Release 6 (12/12/2026):** AyN (PPL, Gestores de paz, Cotizante 76, Norma 1641).
+    - **Release 7 (23/01/2027):** AyN (Excepciones, Retroactivas, Liquidación, Pólizas, E2, E3) + RyC (Recobros Marcación/Reportes, Validación PILA LOG).
+    - **Release 8 (20/02/2027):** AyN (Histórico actualizaciones, Permanencias, Retiro empleador) + RyC (Procesamiento 1% Fase 2).
+    - **Release 9 (06/03/2027):** AyN (Novedades PILA permanentes VSP/VPC y transitorias).
+    - **Release 10 (20/03/2027):** AyN (Módulo retiro independiente) + RyC (No Vinculados, Constitución de mora, Estado de cuenta).
+- **Generación de la Nueva Matriz de Correlación Oficial (Matriz_Correlacion_Cronograma_BALU_vs_Azure_2026.xlsx):**
+  - Ubicación física: Información Financiera\421- BALÚ\Cronograma\Matriz_Correlacion_Cronograma_BALU_vs_Azure_2026.xlsx (copiada también a Downloads\).
+  - Consta de 4 hojas analíticas estructuradas:
+    1. Resumen Ejecutivo: Métricas globales, triada CMI de Balú (Táctico 30% [48,21%], RQC 40% [49,37%], Cronograma 30% [25,13%], Indicador de Éxito 41,75%), resumen de correlación (46 ítems entregables vs 68 features en Azure) y estado de los 10 releases.
+    2. Releases vs Azure: Mapeo exhaustivo de los 46 ítems de cronograma contra ID de Feature en Azure, Título, Estado, % Avance y Observaciones de correlación.
+    3. Pendientes y Brechas: Detalle de 12 brechas críticas (bloqueos cliente, firmas pendientes, consultas normativas MinSalud/Positiva).
+    4. Features Azure DevOps: Censo completo de las 68 Features de Azure (56 de cara a producto + 12 transversales/QA).
+- **Actualización del Tablero CMI (Tablero_CMI_PMO.html):**
+  - Se actualizaron los alcances de RELEASES_421 para reflejar la integración de AyN y RyC.
+  - En 
+enderCrono421Collapsible() se actualizaron los textos de cada release detallando los entregables de ambos frentes y la fila total de 10 releases integrados.
+  - Se actualizó la nota aclaratoria:
+    *«ℹ️ Nota aclaratoria: El cumplimiento del cronograma se evalúa contractualmente sobre los 10 Releases integrados (Afiliaciones y Novedades + Recaudo y Cartera) del archivo Cronograma_BALU_2026_, correlacionados contra Azure DevOps en la Matriz de Correlación BALÚ 2026 (46 ítems entregables vs 68 features en Azure).»*
+- **Validación y Despliegue:**
+  - erify_integrity.py OK (764 backticks pares).
+  - ACTUALIZAR.py --dry-run OK (0 errores).
+  - Sincronización en las 4 rutas espejo completada.
+  - Respaldo creado en Histórico tablero/Tablero_CMI_PMO_20261109_120210.html.
+  - Publicación a producción en GitHub Pages (commit 9359cb0).
+
+
+## 44. Registro de Ponderación de 14 Releases al 7,14% y Desglose Visual AyN + RyC en Balú 421 (09-nov-2026)
+
+- **Regla de Ponderación Uniforme (7,14% por Release):**
+  - Se estructuró el universo contractual completo en **14 Releases a Producción** (100% / 14 = 7,142857% ~ **7,14% cada release**):
+    - **10 Releases en Afiliaciones y Novedades (AyN):** 71,43% de peso contractual del proyecto.
+    - **4 Releases en Sistema de Recaudo y Cartera (RyC):** 28,57% de peso contractual del proyecto.
+- **Hoja Exclusiva de Validación Manual del Equipo:**
+  - Se añadió la pestaña Features No Correlacionadas en Matriz_Correlacion_Cronograma_BALU_vs_Azure_2026.xlsx (en carpeta de proyecto y Downloads).
+  - Lista las **49 Features de Azure DevOps** que no están correlacionadas directamente en los 14 releases, clasificadas por diagnóstico preliminar (Transversales/QA: 12, Fase Previa/MVP Cerrado 100%: 11, Operativas activas sin release asignado: 26).
+  - Incluye columnas resaltadas en amarillo para el diligenciamiento manual del equipo (¿Aplica a Cronograma?, Release Sugerido, Frente Asignado, Justificación).
+- **Arquitectura Visual en Tablero (
+enderCrono421Collapsible):**
+  - Desglose en dos bloques independientes con la misma estructura tabular:
+    1. **Tabla 1 (AyN):** 10 Releases (7,14% c/u · Subtotal 71,43%), mostrando estado, avance, desviaciones en días hábiles y calendario, y fila subtotal.
+    2. **Tabla 2 (RyC):** 4 Releases (7,14% c/u · Subtotal 28,57%) en fechas 14-Nov, 23-Ene, 20-Feb y 20-Mar, con avance técnico de sus features (92,5%, 22,7%, 48,6%, 68,4%) y fila subtotal.
+    3. **Fila Total del Proyecto:** 14 Releases (100,00%), avance técnico global de 70,16%, Meta al corte de 21,43% (3 debidos de AyN), Real logrado de 17,95% y Brecha de cumplimiento de -3,48 pp.
+- **Impacto en Cumplimiento de Cronograma e Indicador de Éxito:**
+  - Denominador (Meta Proyectada): 3 de 14 releases debidos = **21,43%** (R1, R2 y R3 de AyN).
+  - Numerador (Real Alcanzado en hitos debidos): **17,95%** (R1 6,32% + R2 6,17% + R3 5,46%).
+  - Brecha de Cumplimiento: **-3,48 pp** (17,95% - 21,43%).
+  - Indicador de Éxito: **39,60%** (Táctico 30% [14,46%] + RQC 40% [19,75%] + Cronograma 30% [5,39%]).
+- **Sincronización y Publicación:**
+  - Verificación con erify_integrity.py OK y ACTUALIZAR.py --dry-run OK.
+  - Sincronización en las 4 rutas espejo y respaldo creado en Histórico tablero/Tablero_CMI_PMO_20261109_123037.html.
+  - Publicación a producción en GitHub Pages (commit b3ba2bd).
+
+
+## 45. Registro de Transición a 20 Releases Integrados (5,00% c/u), Incorporación de Fases Previas e Integración de Alerta de Gobernanza en BALÚ 421 (09-nov-2026)
+
+- **Transición Metodológica a 20 Releases Homogéneos (5,00% cada uno · 100% Total):**
+  - Se incorporaron formalmente las 3 fases contractuales previas históricas (37 entregables al 100%) como los Releases 1, 2 y 3 del proyecto:
+    - **Release 1 (Histórico AyN · 27-Oct-2025):** 5 entregables (`Novedades Independiente`, `Afiliación Indep.`, `Gestión Funcionario`, `Actualizar Empleador/Trabajador`) · 100% Entregado.
+    - **Release 2 (Histórico AyN · 26-Ene-2026):** 28 entregables (Masivos, Certificados, Liquidación, Reclasificación, Retiros) · 100% Entregado.
+    - **Release 3 (Histórico AyN · 25-Jul-2026):** 4 entregables (Prórrogas, Riesgos, Contratos indep., Retiros retroactivos) · 100% Entregado.
+  - El proyecto queda estructurado en **20 Releases Integrados**:
+    - **Frente 1: Afiliaciones y Novedades (13 Releases):** 65,00% de peso contractual (3 históricos al 100% + 10 activos con fecha).
+    - **Frente 2: Sistema de Recaudo y Cartera (7 Releases):** 35,00% de peso contractual (7 releases con fecha entre 16-Oct-2026 y 22-May-2027).
+- **Métricas de Cronograma e Indicador de Éxito Ponderado:**
+  - **Releases debidos al corte (09-Nov-2026):** 7 de 20 releases debidos (R1, R2, R3 históricos al 100% + R4, R5, R6 AyN + R14 RyC activos).
+  - **Meta Proyectada al Corte:** **35,00%** (7 debidos $\times$ 5,00%).
+  - **Real Logrado (Ponderado debidos):** **31,41%** (15,00% formalizado al 100% + 16,41% ponderado de los 4 debidos activos).
+  - **Brecha de Cumplimiento:** **-3,59 pp** (31,41% vs 35,00%).
+  - **Releases formalizados al 100%:** **3 de 7 debidos (15,00%)**.
+  - **Indicador de Éxito Ponderado BALÚ:** **43,63%** (Táctico 30% [14,46%] + RQC 40% [19,75%] + Cronograma 30% [9,42%]).
+- **Alerta de Gobernanza y Plazo Contractual al Final de la Tabla:**
+  - Se ubicó al final de la sección de cronograma el banner de advertencia ejecutiva:
+    `⚠️ Alerta de Gobernanza y Plazo Contractual: Existen 19 funcionalidades contractuales (14 en AyN y 5 en RyC) que registran avance técnico en Azure DevOps pero no tienen fecha pactada de paso a productivo con el cliente (ponderan el 15% de cada frente). Su falta de calendarización representa un riesgo crítico de prórroga contractual más allá de Mayo 2027.`
+  - Incluye acordeón interactivo para consultar las 19 funcionalidades sin fecha pactada.
+- **Sincronización y Publicación:**
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Sincronización en las 4 rutas espejo y respaldo creado en `Histórico tablero/`.
+  - Publicación a producción en GitHub Pages (commit `eba68b1`).
+
+---
+
+## 46. Registro de Ajuste Integral en Proyecto 419 (Depósitos Judiciales): Base Oficial de 466 Funcionalidades, Tabla Desviación de Cronograma, Mora de Revisión Cliente y Certificado con Acta (09-nov-2026)
+* **Homologación de Funcionalidades Certificadas por Cliente (Peso: 40%):**
+  - Se unificó el cálculo del componente de funcionalidades al denominador oficial contractual del proyecto: **466 funcionalidades** (en lugar de las 219 de Azure DevOps).
+  - Fórmula actualizada: `var1_419 = 80 / 466 = 17,17%` (80 certificadas por cliente sobre 466 totales).
+  - Aporte al Éxito del Portafolio: `17,17% × 40% = 6,87%` (antes 11,51%).
+  - Indicador de Éxito Ponderado 419: **28,55%** (Aporte Funcionalidades 6,87% + Aporte Cronograma Dual 21,69%).
+  - Tarjeta del discriminado actualizada: `📋 Funcionalidades Certificadas por Cliente (Peso: 40%)` con `80 de 466 funcionalidades certificadas por cliente`.
+* **Ajustes en la Sección "Desviación de Cronograma" (16 Sprints):**
+  1. **Nombre de la Sección:** Se simplificó a **`🗓️ Desviación de Cronograma`** (eliminando el subtítulo extenso en el encabezado).
+  2. **Encabezados Homologados:** Se cambió `HUs UAT/Prod` (Momento 1) y `HUs en Prod` (Momento 2) a **`Funcionalidades al 100%`**.
+  3. **Estado Momento 1 (Linktic):** Sprints 1 a 6 cambiados a **`🟢 Entregado`** (desarrollo culminado y puesto a disposición de UAT).
+  4. **Causa de Reprogramación en Sprint 7 (Momento 1):** El Sprint 7 tiene fecha reprogramada al `07/12/2026` con **`+21 d hábiles`** de desviación respecto a su línea base original (prevista para finales de octubre 2026) debido a ajustes de alcance y dependencias técnicas pendientes, registrando actualmente 6,6% de avance (15/229 HUs).
+  5. **Estado Momento 2 (Cliente):** Sprints 1 y 2 actualizados a **`🟢 Revisado`**.
+  6. **Cálculo de Desviación en Días Hábiles en Momento 2 (Mora de Revisión del Cliente al corte 09/11/2026):**
+     - **Sprint 5 (Plan: 26/06/2026):** **`+90 d hábiles`** de retraso en revisión y aprobación por parte del cliente.
+     - **Sprint 4 (Plan: 25/08/2026):** **`+52 d hábiles`** de retraso en revisión y aprobación por parte del cliente.
+     - **Sprint 3 (Plan: 26/08/2026):** **`+51 d hábiles`** de retraso en revisión y aprobación por parte del cliente.
+     - **Sprint 1 y 2 (Plan: 31/07/2026):** `0 d` (ya atendidos en estado `🟢 Revisado`).
+     - **Sprint 6 (Plan: 07/12/2026):** `0 d (En plazo)` (fecha posterior al corte oficial).
+     - **Sprint 7 (Plan: 06/01/2027):** `+23 d hábiles` (reprogramación acumulada por efecto de Momento 1).
+  7. **Nueva Columna "Certificado con Acta":**
+     - Sprints 1 y 2: **`🟡 En proceso`** (previamente certificados por cliente, pendiente formalización documental).
+     - Sprints 3 a 7: **`⚪ Pendiente`**.
+     - Sprints 8 a 16: **`⚪ Futuro`**.
+     - Fila Total: **`2 en proceso`**.
+* **Sincronización y Publicación:**
+  - Verificación exitosa de compatibilidad con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_152811.html`.
+  - Sincronización en las 4 rutas espejo y despliegue a producción en GitHub Pages (commit `0c2279a`).
