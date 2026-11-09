@@ -152,26 +152,7 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 0, '75': 0, '50': 0, '20': 0, '0': 2}
         }
 
-    # 5. 456: Innovación Aeronáutica Civil - Supervisión contractual (6 hitos: 1 al 100%, 1 al 50% -> 24% táctico, 16,67% estratégico)
-    if cod == '456':
-        hu_tot = sum((f.get('n', 0) or 0) for f in feats)
-        pct_az = round(sum((f.get('pct', 0) or 0) * (f.get('n', 0) or 0) for f in feats) / hu_tot, 4) if hu_tot else 0.0
-        return {
-            'tactico': 0.2400,
-            'estrategico': round(1 / 6, 4),
-            'n': 6,
-            'd': 1,
-            'u': 'entregables',
-            'isEpics': False,
-            'feat_total': feat_tot,
-            'feat_ent': feat_ent,
-            'epic_total': len(valid_epics),
-            'hu_total': hu_tot,
-            'pct_azure': pct_az,
-            'buckets': {'100': 1, '75': 0, '50': 1, '20': 0, '0': 4}
-        }
-
-    # 6. Cálculo general sobre FUNCIONALIDADES (Features) activas en Azure DevOps (005, 355, 384, 348, 420, 457, 020, 461, etc.)
+    # 5. Cálculo general sobre FUNCIONALIDADES (Features) activas en Azure DevOps (005, 355, 384, 348, 420, 456, 457, 020, 461, etc.)
     buckets = {1.0: 0, 0.75: 0, 0.5: 0, 0.2: 0, 0.0: 0}
     scores = []
     for f in feats:
@@ -334,15 +315,8 @@ def main():
                 cu['release'] = it_fechas[it_k]['release']
                 cu['fecha_entrega'] = it_fechas[it_k]['fecha']
 
-        # Medición oficial PMO para 453 frente a FOCOS:
-        # Indicador Estratégico: focos entregados o cerrados (al 100%) sobre total focos (4 focos: A, B, C, D)
-        # Indicador Táctico: avance de cada foco evaluado bajo la Escala CMI por entregable
+        # Medición oficial PMO para 453 sobre la totalidad de los CASOS DE USO (76 CUs)
         focos_list = cpe_data.get('focos', [])
-        n_focos = len(focos_list) if focos_list else 4
-        focos_scores = []
-        b_focos = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
-        d_focos = 0
-
         total_exito_cu = 0.0
         for f in focos_list:
             fk = f.get('k')
@@ -354,38 +328,44 @@ def main():
             f['aporte_cu'] = aporte_cu
             total_exito_cu += aporte_cu
 
-            pct_f = f.get('pct_cu')
-            if pct_f is None:
-                pct_f = f.get('pct')
-            sc = escala_pmo(pct_f)
-            f['escala_cmi'] = sc
-            focos_scores.append(sc)
-            if sc == 1.0:
-                b_focos['100'] += 1
-                d_focos += 1
-            elif sc == 0.75:
-                b_focos['75'] += 1
-            elif sc == 0.50:
-                b_focos['50'] += 1
-            elif sc == 0.20:
-                b_focos['20'] += 1
+        cu_scores = []
+        b_cus = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
+        d_cus = 0
+        n_cus = len(cus_list)
+        for cu in cus_list:
+            pct_val = cu.get('pct_cu')
+            if pct_val is not None:
+                sc = escala_pmo(pct_val, cu.get('ei', ''))
             else:
-                b_focos['0'] += 1
+                sc = 0.0
+            cu_scores.append(sc)
+            if sc == 1.0:
+                b_cus['100'] += 1
+                d_cus += 1
+            elif sc == 0.75:
+                b_cus['75'] += 1
+            elif sc == 0.50:
+                b_cus['50'] += 1
+            elif sc == 0.20:
+                b_cus['20'] += 1
+            else:
+                b_cus['0'] += 1
 
-        av_focos = round(sum(focos_scores) / n_focos, 4) if n_focos else 0.0
-        ent_focos = round(d_focos / n_focos, 4) if n_focos else 0.0
+        av_cus = round(sum(cu_scores) / n_cus, 4) if n_cus else 0.0
+        ent_cus = round(d_cus / n_cus, 4) if n_cus else 0.0
 
         cpe_data['cmi'] = {
-            'tactico': av_focos,
-            'estrategico': ent_focos,
+            'tactico': av_cus,
+            'estrategico': ent_cus,
             'exito': round(total_exito_cu, 4),
-            'n': n_focos,
-            'd': d_focos,
-            'u': 'focos',
-            'isFocos': True,
-            'feat_total': len(cus_list),
-            'feat_ent': sum(1 for c in cus_list if (c.get('pct_cu') or 0) >= 0.999 or c.get('ei') == '19. Entregado'),
-            'buckets': b_focos
+            'n': n_cus,
+            'd': d_cus,
+            'u': 'casos de uso',
+            'isFocos': False,
+            'isCus': True,
+            'feat_total': n_cus,
+            'feat_ent': d_cus,
+            'buckets': b_cus
         }
 
         # Mantener métricas complementarias de Casos de Uso en KPI
@@ -411,7 +391,7 @@ def main():
         with open(index_file, 'w', encoding='utf-8') as f:
             json.dump(index_data, f, ensure_ascii=False, indent=2)
 
-        print(f"[453 (Focos)] Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_focos}/{n_focos} Focos cerrados · {len(cus_list)} CUs)")
+        print(f"[453 (CUs)]   Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_cus}/{n_cus} CUs entregados)")
 
     # 5. Sincronizar espejos
     home = str(Path.home())

@@ -9946,21 +9946,22 @@
     "term_global": 7
   },
   "cmi": {
-    "tactico": 0.125,
-    "estrategico": 0.0,
+    "tactico": 0.4,
+    "estrategico": 0.3816,
     "exito": 0.4005,
-    "n": 4,
-    "d": 0,
-    "u": "focos",
-    "isFocos": true,
+    "n": 76,
+    "d": 29,
+    "u": "casos de uso",
+    "isFocos": false,
+    "isCus": true,
     "feat_total": 76,
     "feat_ent": 29,
     "buckets": {
-      "100": 0,
+      "100": 29,
       "75": 0,
-      "50": 1,
-      "20": 0,
-      "0": 3
+      "50": 0,
+      "20": 7,
+      "0": 40
     }
   }
 }

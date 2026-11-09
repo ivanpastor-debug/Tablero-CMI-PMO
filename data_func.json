@@ -479,23 +479,20 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.24,
-        "estrategico": 0.1667,
-        "n": 6,
-        "d": 1,
-        "u": "entregables",
+        "tactico": 0.15,
+        "estrategico": 0.0,
+        "n": 4,
+        "d": 0,
+        "u": "funcionalidades",
         "isEpics": false,
         "feat_total": 4,
         "feat_ent": 0,
-        "epic_total": 1,
-        "hu_total": 13,
-        "pct_azure": 0.4769,
         "buckets": {
-          "100": 1,
+          "100": 0,
           "75": 0,
-          "50": 1,
-          "20": 0,
-          "0": 4
+          "50": 0,
+          "20": 3,
+          "0": 1
         }
       }
     },
@@ -638,21 +635,22 @@
       "corte": "2026-11-09",
       "archivo": "453 CPE (Focos y Casos de Uso)",
       "cmi": {
-        "tactico": 0.125,
-        "estrategico": 0.0,
+        "tactico": 0.4,
+        "estrategico": 0.3816,
         "exito": 0.4005,
-        "n": 4,
-        "d": 0,
-        "u": "focos",
-        "isFocos": true,
+        "n": 76,
+        "d": 29,
+        "u": "casos de uso",
+        "isFocos": false,
+        "isCus": true,
         "feat_total": 76,
         "feat_ent": 29,
         "buckets": {
-          "100": 0,
+          "100": 29,
           "75": 0,
-          "50": 1,
-          "20": 0,
-          "0": 3
+          "50": 0,
+          "20": 7,
+          "0": 40
         }
       }
     }

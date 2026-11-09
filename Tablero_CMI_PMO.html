@@ -668,7 +668,7 @@ td{font-size:10.5px}
 
   <!-- ============ RESUMEN ============ -->
   <section id="v-res" role="tabpanel" aria-labelledby="t-res">
-    <div class="grid g-tiles" id="tiles" hidden></div>
+    <div class="grid g-tiles" id="tiles"></div>
 
     <div class="section grid g-sem">
       <div class="panel">
@@ -684,7 +684,7 @@ td{font-size:10.5px}
       </div>
     </div>
 
-    <div class="section grid g-2" id="cash-cost" hidden>
+    <div class="section grid g-2" id="cash-cost">
       <div class="panel">
         <div class="sec-h"><h2>Del contrato a la caja</h2><p>Proyectos con contrato cargado</p></div>
         <div class="legend" style="margin-bottom:12px">
@@ -773,7 +773,7 @@ const P=[
   hitosNote:"Implementación $25.644 M · 20% al entregar, 80% al certificar",
   hitos:[["SPI 1–4","Entregados a cliente",2751.5,2751.5,"Facturado"],["SPI 5","Entregados a cliente",412.7,275.2,"Parcial"],["SPI 6–8","Entregados a cliente",770.4,0,"Atrasada"],["SPI 1","Certificados por cliente",1100.6,1100.6,"Facturado"],["SPI 2–6","Certificados por cliente",2063.6,0,"Atrasada"]],
   diag:["crit","Se han certificado 17,17% de las funcionalidades (80 de 466): avance táctico CMI 11,96%. CPI forecast 0,52. El ICFF de 1,26 exige ser 25,79% más productivo que el plan para no romper el presupuesto."]},
- {id:"453",name:"453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026",sub:"MinEducación · Computadores para Educar (CPE)",op:{av:.1250,ent:0,n:4,d:0,u:"focos",isFocos:true,isAzure:true},
+ {id:"453",name:"453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026",sub:"MinEducación · Computadores para Educar (CPE)",op:{av:0.4000,ent:29/76,n:76,d:29,u:"casos de uso",isCus:true,isAzure:true,featTotal:76,featEnt:29},
   m:[[0,0,0],[0,0,0.8],[125.3,65.8,48.9],[149.1,74.5,111.0],[134.0,160.4,149.2],[134.0,174.3,164.5],[138.4,192.0,184.6],[140.1,196.1,197.3],[158.1,192.9,248.6],[143.5,161.2,231.1],[147.0,136.0,0],[176.5,142.4,0]],
   margin:{dir:[0,0,0],net:[0,0,0],gap:{f_p:[0,0],r_p:[0,0],r_f:[0,0]}},
    cpiP:0.1351634237,cpiF:0.1404987767,icff:7.932008588,avFin:0.125,ppto:1445.8,fcst:1502.8,
@@ -795,7 +795,7 @@ const P=[
   hitosNote:"Facturación mensual $4.219 M · se radica entre 2 y 7 semanas después de la fecha planeada",
   hitos:[["Ene","Plan 23 feb → real 13 abr",4219.5,4219.5,"Facturado · atrasado"],["Feb","Plan 23 mar → real 23 abr · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Mar","Plan 23 abr → real 21 may · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Abr","Plan 23 may → real 18 jun · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["May","Plan 23 jun → real 17 jul",4219.5,4219.5,"Facturado · atrasado"],["Jun","Plan 23 jul → real 5 ago",4219.5,4219.5,"Facturado · atrasado"],["Jul","Plan 23 ago",4219.5,0,"Pendiente"],["Ago","Plan 23 sep",4219.5,0,"Pendiente"]],
   diag:["warn","Mayor contrato del portafolio ($100.945 M): 34,36% facturado, 93,90% de lo facturado recaudado y costo ene–ago en 97,79% del forecast. Operativamente, ninguno de los 2 frentes contractuales está completo: Afiliaciones y Novedades en curso >80% (0,5) y Recaudo y Cartera entre 50–80% (0,2); avance CMI 35,00%. La facturación mensual se radica tarde y julio–agosto siguen pendientes. Con el avance CMI (35,00%) el CPI forecast es 0,71: cada peso gastado genera 0,71 de valor."]},
- {id:"456",name:"456 - PROYECTO INNOVACION AEREONAUTICA CIVIL",sub:"Aeronáutica Civil · Lab de Innovación",op:{av:0.24,ent:0.1666666667,n:6,d:1,u:"entregables"},
+ {id:"456",name:"456 - PROYECTO INNOVACION AEREONAUTICA CIVIL",sub:"Aeronáutica Civil · Lab de Innovación",op:{av:0.1500,ent:0.0000,n:4,d:0,u:"funcionalidades",isAzure:true,featTotal:4,featEnt:0},
   m:[[0,0,0],[0,0,0],[0,0,9.8],[54.8,33.1,25.0],[114.0,63.3,49.6],[256.3,60.0,59.2],[106.5,62.2,58.9],[60.8,76.2,70.7],[10.9,72.7,73.5],[10.9,75.2,76.6],[10.9,74.4,0],[10.9,199.9,0]],
   cpiP:0.3663,cpiF:0.4437,icff:1.6554,avFin:0.24,ppto:647.0,fcst:783.6,
   contrato:1581.6,factPlan:1882.1,fact:284.7,cumplFact:0.1513,recaudo:296.9,cumplRec:1.0,brechaRec:0.0,
@@ -1045,9 +1045,9 @@ const PROJ_CALLOUT_META = {
   "416": { tag: "Azure · 2 Ramos", title: "416 - PROYECTO DE DESARROLLO Y SOPORTE CORE POSITIVA", sub: "2 Ramos (Vida Individual y Accidentes Personales)", ent: "0 en prod.", pct: "0,0% cerrado", icon: "🗂" },
   "384": { tag: "Azure · 498 Func.", title: "384 - PROYECTO CORE FIDUPREVISORA", sub: "498 Funcionalidades en Azure", ent: "98 en prod.", pct: "19,7% cerrado", icon: "🗂" },
   "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES", sub: "195 Funcionalidades en Azure", ent: "63 en prod.", pct: "32,3% cerrado", icon: "🗂" },
-  "453": { tag: "Azure · 4 Focos", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "4 Focos en Cronograma · 76 Casos de Uso", ent: "29 CUs al 100%", pct: "39,8% éxito · 12,5% táctico", icon: "🎯" },
+  "453": { tag: "Azure · 76 CUs", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "76 Casos de Uso en Azure DevOps · 599 HUs atadas", ent: "29 CUs al 100%", pct: "39,8% éxito · 40,0% táctico", icon: "🎯" },
   "421": { tag: "Azure · 56 Func.", title: "421 - PROYECTO BALÚ", sub: "56 Funcionalidades de Producto (2 Frentes)", ent: "12 en prod.", pct: "21,4% cerrado", icon: "🗂" },
-  "456": { tag: "Contractual · 6 Hitos", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 de 6 hitos formalizados (Meta a la fecha: 2/6 · 33,3% · Brecha: -16,7 pp)", ent: "1/6 formalizado", pct: "Táctico: 24,0% · Meta: 30,0% · Brecha: -6,0 pp", icon: "⏱️" },
+  "456": { tag: "Azure · 4 Func.", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "4 Funcionalidades en Azure DevOps · 13 HUs atadas", ent: "0 en prod.", pct: "Táctico: 15,0% · Estratégico: 0,0%", icon: "🗂" },
   "348": { tag: "Azure · 115 Func.", title: "348 - PROYECTO SGDEA ACUEDUCTO", sub: "115 Funcionalidades en Azure", ent: "27 en prod.", pct: "23,5% cerrado", icon: "🗂" },
   "397": { tag: "Azure · 57 Épicas", title: "397 - PROYECTO CORE ANDINA", sub: "233 Funcionalidades en Azure", ent: "228 en prod.", pct: "97,9% cerrado", icon: "🗂" },
   "420": { tag: "Azure · 57 Func.", title: "420 - PROYECTO PÓLIZAS DE SALUD", sub: "57 Funcionalidades en Azure", ent: "35 en prod.", pct: "61,4% cerrado", icon: "🗂" },
@@ -1325,7 +1325,7 @@ function cmiOverviewHTML(p){
   const cls=v=>v==null||isNaN(v)?"na":v>=.7?"good":v>=.4?"warn":"crit";
   const state=v=>v==null||isNaN(v)?"Sin dato":v>=.7?"Favorable":v>=.4?"En seguimiento":"Requiere atención";
 
-  const is456 = (p.id === "456");
+  const is456 = false; // 456 se mide ahora sobre funcionalidades de Azure DevOps
   const is421 = (p.id === "421");
   const is419 = (p.id === "419");
   const is453 = (p.id === "453");
@@ -3804,7 +3804,7 @@ function applyLiveFuncCmi() {
             d: c.d,
             u: c.u || "épicas",
             cmi: c,
-            isAzure: p.id !== "419" && p.id !== "456"
+            isAzure: p.id !== "419"
           };
         }
       }
@@ -3842,10 +3842,10 @@ function applyLiveFuncCmi() {
       ent: c.estrategico,
       n: c.n,
       d: c.d,
-      u: c.u || "focos",
+      u: c.u || "casos de uso",
       cmi: c,
       isAzure: true,
-      isFocos: true
+      isCus: true
     };
   }
 
@@ -4247,7 +4247,7 @@ function funcCard(cod) {
         <div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="font-size:15px">🎯</span>
-            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":cod==="456"?"Supervisión Contractual (6 Hitos) + Captura Azure DevOps":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
             <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">${cod==="419"?"Archivo Local PMO":cod==="456"?"Contractual + Azure DevOps":"Azure DevOps en vivo"}</span>
           </div>
           <p class="hint" style="margin:3px 0 0 24px">
@@ -4666,11 +4666,11 @@ function cpe453Card(C) {
         <div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="font-size:15px">🎯</span>
-            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · Indicadores Táctico y Estratégico (Medición por Foco)</b>
-            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">4 Focos Contractuales</span>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · Indicadores Táctico y Estratégico (Medición por Casos de Uso)</b>
+            <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">76 Casos de Uso</span>
           </div>
           <p class="hint" style="margin:3px 0 0 24px">
-            Ponderación de <b>${cmi.n}</b> focos evaluados bajo la <b>Escala CMI por entregable</b> (${cmi.d} cerrados al 100%)
+            Ponderación de <b>${cmi.n}</b> Casos de Uso evaluados bajo la <b>Escala CMI por entregable</b> (${cmi.d} entregados al 100%)
           </p>
         </div>
         
@@ -4695,13 +4695,7 @@ function cpe453Card(C) {
       ${stat(pctHuG, "% Avance por HUs atadas", "#a855f7")}
       ${stat(k.hu_fuera_de_su_cu, "HU fuera de iteración CU", k.hu_fuera_de_su_cu ? "#f59e0b" : "#10b981")}
     </div>
-    <div class="rchips" style="margin:12px 0 6px">
-      <span class="rchip ${CPE_MODO === "eje" ? "on" : ""}" style="cursor:pointer" onclick="cpeModo('eje')">▶ Por ejecución</span>
-      <span class="rchip ${CPE_MODO === "com" ? "on" : ""}" style="cursor:pointer" onclick="cpeModo('com')">◆ Por compromiso</span>
-      <span class="hint" style="margin:0 0 0 6px;align-self:center">${CPE_MODO === "eje"
-      ? "cada HU cuenta en SU iteración — en qué se trabaja de verdad"
-      : "cada HU cuenta en la iteración de su caso de uso — qué se prometió"}</span>
-    </div>
+
     ${faltaHito ? `<div class="hint" style="color:#f59e0b;margin:6px 0 0 2px">⚠️ No hay archivo de hitos cargado: las iteraciones salen sin fecha comprometida.</div>` : ""}
     <div id="cpeBody" style="margin-top:10px">${cpeBodyHtml(C)}</div>
   </div>`;
