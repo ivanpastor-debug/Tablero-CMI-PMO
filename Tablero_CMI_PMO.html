@@ -1587,14 +1587,14 @@ function cmiOverviewHTML(p){
             <div class="cmi-kicker">03 · Indicador táctico</div>
             <div class="cmi-value">${pct(tactical)}</div>
             <div class="cmi-bottom">
-              ${is456 ? `
-              <span>Avance ponderado Fase I · Meta proyectada a la fecha: <b>30,00%</b></span>
-              <span class="cmi-pill warn">Brecha: -6,00 pp</span>
-              ` : `
               <span>${tactBottomText}</span>
               <span class="cmi-pill ${cls(tactical)}">${state(tactical)}</span>
-              `}
             </div>
+            ${is456 ? `
+            <div style="margin-top:6px;padding-top:6px;border-top:1px dashed #edf1f6;display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:9.5px;color:#7a899c">
+              <span>Meta proyectada a la fecha: <b style="color:#18395f">30,00%</b></span>
+              <span class="cmi-pill warn" style="font-size:9px;padding:2px 8px;font-weight:800">Brecha: -6,00 pp</span>
+            </div>` : ""}
           </article>
           ${is421 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
