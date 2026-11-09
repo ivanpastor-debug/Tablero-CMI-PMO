@@ -1423,3 +1423,27 @@ enderCrono421Collapsible):**
 * **Validación y Despliegue:**
   - `python ACTUALIZAR.py --dry-run` verificado con **0 errores**.
   - Desplegado en GitHub Pages y Vercel (`commit 2ad15b1`).
+
+
+---
+
+## 54. Registro de Ocultamiento de Métricas Consolidadas en Vista de Dirección y Entrega de Directorio Excel (09-nov-2026)
+
+* **Depuración de la "Vista de Dirección" (`#v-res`):**
+  - Conforme a la instrucción del usuario, se ocultaron las métricas y gráficos consolidados del portafolio en la Vista de Dirección:
+    - Ocultado `#tiles`: *Total valor contrato ($176.508 M)*, *Total facturado ($56.325 M)* y *Total recaudado ($49.541 M)*.
+    - Ocultado `#cash-cost`: Secciones *Del contrato a la caja* (`#flow`) y *Costo real 2026 vs forecast* (`#c-costport`).
+  - **Alcance resultante en "Vista de Dirección":** Muestra **únicamente las tarjetas/etiquetas de proyecto** (`#sem-op`), donde cada proyecto presenta de forma autónoma su propio indicador táctico y estratégico, desglose funcional Azure DevOps y su bloque financiero enriquecido (`finMini`: Contrato Sin/Con IVA, Facturado con % avance, Recaudado, CPI ppto/fcst).
+  - En **Master PMO (`master.html`)**, las métricas consolidadas se mantienen habilitadas para la Dirección General una vez validada la Master Key.
+
+* **Entrega de Directorio de Claves y Enlaces en Excel (`Directorio_Claves_y_Accesos_PMO.xlsx`):**
+  - Generado libro oficial con estilo corporativo PMO:
+    - **Hoja 1:** Directorio con las 3 URLs públicas activas en GitHub Pages/Vercel y las 16 claves criptográficas (Master Key PMO + 15 claves de proyectos).
+    - Disponible en:
+      1. `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Directorio_Claves_y_Accesos_PMO.xlsx`
+      2. `C:\Users\IvanDarioPastorParra\Downloads\Directorio_Claves_y_Accesos_PMO.xlsx`
+      3. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\Directorio_Claves_y_Accesos_PMO.xlsx`
+
+* **Sincronización y Despliegue:**
+  - `python ACTUALIZAR.py --dry-run` verificado con **0 errores**.
+  - Sincronizado en las 4 rutas espejo y publicado en producción en GitHub Pages y Vercel (`git push origin main`).
