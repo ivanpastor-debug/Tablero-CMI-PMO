@@ -1046,7 +1046,7 @@ const PROJ_CALLOUT_META = {
   "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES", sub: "194 Funcionalidades en Azure", ent: "63 en prod.", pct: "32,5% cerrado", icon: "🗂" },
   "453": { tag: "Azure · 4 Focos", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "4 Focos en Cronograma · 76 Casos de Uso", ent: "29 CUs al 100%", pct: "39,8% éxito · 12,5% táctico", icon: "🎯" },
   "421": { tag: "Azure · 56 Func.", title: "421 - PROYECTO BALÚ", sub: "56 Funcionalidades de Producto (2 Frentes)", ent: "12 en prod.", pct: "21,4% cerrado", icon: "🗂" },
-  "456": { tag: "Contractual · 6 Hitos", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 de 6 hitos formalizados (Meta a la fecha: 2/6 · 33,3%)", ent: "1/6 formalizado", pct: "16,7% real · Brecha: -16,7 pp", icon: "⏱️" },
+  "456": { tag: "Contractual · 6 Hitos", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 de 6 hitos formalizados (Meta a la fecha: 2/6 · 33,3% · Brecha: -16,7 pp)", ent: "1/6 formalizado", pct: "Táctico: 24,0% · Meta: 30,0% · Brecha: -6,0 pp", icon: "⏱️" },
   "348": { tag: "Azure · 115 Func.", title: "348 - PROYECTO SGDEA ACUEDUCTO", sub: "115 Funcionalidades en Azure", ent: "27 en prod.", pct: "23,5% cerrado", icon: "🗂" },
   "397": { tag: "Azure · 57 Épicas", title: "397 - PROYECTO CORE ANDINA", sub: "233 Funcionalidades en Azure", ent: "228 en prod.", pct: "97,9% cerrado", icon: "🗂" },
   "420": { tag: "Azure · 57 Func.", title: "420 - PROYECTO PÓLIZAS DE SALUD", sub: "57 Funcionalidades en Azure", ent: "35 en prod.", pct: "61,4% cerrado", icon: "🗂" },
@@ -1169,7 +1169,7 @@ function opCard(p,isSub){
   const isFrentes = (p.id !== "421" && (o.u === "frentes" || o.isEpics));
   const is419 = p.id === "419";
   const isFunc = p.id === "419" || p.id === "421" || o.u === "funcionalidades";
-  const subTac = isCU ? "% Avance casos de uso" : isHitos ? "% Avance entregables" : isFrentes ? "% Avance frentes" : isFunc ? "% Avance funcionalidades" : "% Avance épicas / frentes";
+  const subTac = isCU ? "% Avance casos de uso" : isHitos ? "Meta: 30,0% · Brecha: -6,0 pp" : isFrentes ? "% Avance frentes" : isFunc ? "% Avance funcionalidades" : "% Avance épicas / frentes";
   const subEst = isCU ? "% Cumplimiento casos de uso" : isHitos ? "% Cumplimiento entregables" : isFrentes ? "% Cumplimiento frentes" : isFunc ? "% Cumplimiento funcionalidades" : "% Cumplimiento épicas";
   const azTag = getBadgeTag(p, o);
   const callout = getProjCallout(p);
@@ -1434,6 +1434,29 @@ function cmiOverviewHTML(p){
   const exitoBoxHTML = is456 ? `
     <div class="cmi-exito-box" style="margin-top:0">
       <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="cmi-kicker">📊 Conciliación Indicador Táctico (Avance Ponderado)</span>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
+      </div>
+      <div class="cmi-exito-kpis" style="margin-bottom:0">
+        <div class="cmi-exito-kpi real">
+          <span>Real a la fecha</span>
+          <strong style="color:#059669">24,00%</strong>
+          <small>18% E1 (100%) + 12% E2 (50%)</small>
+        </div>
+        <div class="cmi-exito-kpi meta">
+          <span>Meta Proyectada a la fecha</span>
+          <strong style="color:#b45309">30,00%</strong>
+          <small>Fase I debida al 23-Sep (30%)</small>
+        </div>
+        <div class="cmi-exito-kpi gap">
+          <span>Brecha de Cumplimiento</span>
+          <strong style="color:#dc2626">-6,00 pp</strong>
+          <small>🔴 50% pendiente en Entregable II</small>
+        </div>
+      </div>
+    </div>
+    <div class="cmi-exito-box" style="margin-top:0">
+      <div style="display:flex;justify-content:space-between;align-items:center">
         <span class="cmi-kicker">⏱️ Conciliación Indicador Estratégico (Hitos Contractuales)</span>
         <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
       </div>
@@ -1564,8 +1587,13 @@ function cmiOverviewHTML(p){
             <div class="cmi-kicker">03 · Indicador táctico</div>
             <div class="cmi-value">${pct(tactical)}</div>
             <div class="cmi-bottom">
+              ${is456 ? `
+              <span>Avance ponderado Fase I · Meta proyectada a la fecha: <b>30,00%</b></span>
+              <span class="cmi-pill warn">Brecha: -6,00 pp</span>
+              ` : `
               <span>${tactBottomText}</span>
               <span class="cmi-pill ${cls(tactical)}">${state(tactical)}</span>
+              `}
             </div>
           </article>
           ${is421 ? `
