@@ -308,6 +308,7 @@ table.xl.tbl-crono-419 .col-m2-date{text-align:center;white-space:nowrap;width:7
 table.xl.tbl-crono-419 .col-m2-desv{text-align:center;white-space:nowrap;width:75px}
 table.xl.tbl-crono-419 .col-m2-hu{text-align:right;white-space:nowrap;width:75px}
 table.xl.tbl-crono-419 .col-m2-st{text-align:center;white-space:nowrap;width:75px}
+table.xl.tbl-crono-419 .col-acta{text-align:center;white-space:nowrap;width:95px}
 .cmi-hero-card.rqc:before{background:#8b5cf6}
 table.xl.tbl-crono-456{width:100%;min-width:0;font-size:11.5px}
 table.xl.tbl-crono-456 th{padding:6px 5px;font-size:10.5px;letter-spacing:0}
@@ -1335,13 +1336,13 @@ function cmiOverviewHTML(p){
   const brecha453 = exito453 - meta453; // -0.1519 (-15,19 pp)
 
   // Proyecto 419 - Depósitos Judiciales: Escenario B.3 (Funcionalidades 100% 40% + Cronograma Dual 60%)
-  const var1_419 = 63 / 219; // 28,77% (63 al 100% en producción de 219 features Azure)
+  const var1_419 = 80 / 466; // 17,17% (80 certificadas de 466 funcionalidades totales)
   const cronoM1_419 = 0.3791; // 37,91% Momento Linktic (Sprints 1 a 6 desarrollo entregado + Sprint 7 parcial)
   const cronoM2_419 = 0.3438; // 34,38% Momento Cliente (Sprints 1 a 5 certificados UAT + Sprint 6 en pruebas UAT)
   const realCrono419 = (cronoM1_419 + cronoM2_419) / 2; // 36,15% Promedio Dual B.3
   const metaCrono419 = 0.4063; // 40,63% Meta proyectada al corte 06-Nov (Sprints 1 a 6 + Desarr. Sprint 7)
   const brechaCrono419 = realCrono419 - metaCrono419; // -0.0448 (-4,48 pp)
-  const exito419 = (var1_419 * 0.40) + (realCrono419 * 0.60); // 33,20%
+  const exito419 = (var1_419 * 0.40) + (realCrono419 * 0.60); // 28,55% (Aporte Func: 6,87% + Aporte Crono: 21,69%)
 
   // Proyecto 456 - Aeronáutica Civil: Supervisión contractual viva con meta proyectada a la fecha reprogramada
   const HITOS_456 = [
@@ -1427,7 +1428,7 @@ function cmiOverviewHTML(p){
       <div class="cmi-kicker">02 · Indicador de éxito</div>
       <div class="cmi-value">${(exito419 * 100).toFixed(2).replace('.', ',')}%</div>
       <div class="cmi-bottom">
-        <span>Ponderado: <b>Funcionalidades 100% (40%)</b> · <b>Cronograma Dual B.3 (60%)</b></span>
+        <span>Ponderado: <b>Funcionalidades Certificadas (40%)</b> · <b>Cronograma Dual B.3 (60%)</b></span>
         <span class="cmi-pill ${cls(exito419)}">${state(exito419)}</span>
       </div>
     </article>` : is453 ? `
@@ -1650,7 +1651,7 @@ function cmiOverviewHTML(p){
             <div class="cmi-kicker" style="color:#0284c7">📋 Funcionalidades Certificadas por Cliente (Peso: 40%)</div>
             <div class="cmi-value" style="color:#0284c7">${(var1_419 * 100).toFixed(2).replace('.', ',')}%</div>
             <div class="cmi-bottom">
-              <span><b>63</b> de <b>219</b> funcionalidades en prod (BAC: 45 · RAMA: 18)</span>
+              <span><b>80</b> de <b>466</b> funcionalidades certificadas por cliente</span>
               <span class="cmi-pill" style="background:#e0f2fe;color:#0284c7;border:1px solid #bae6fd">Aporte: ${(var1_419 * 0.40 * 100).toFixed(2).replace('.', ',')}%</span>
             </div>
           </article>
@@ -2115,7 +2116,7 @@ function renderCrono419Collapsible(){
     <details class="cmi-accordion" open>
       <summary style="padding:12px 16px;background:var(--surface);border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
         <div style="display:flex;align-items:center;gap:10px">
-          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación del Cronograma · 16 Sprints (Momento Linktic vs Momento Cliente) · Peso: 6,25% cada uno</h2>
+          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación de Cronograma</h2>
         </div>
         <span class="cmi-acc-tag" style="font-size:11px;font-weight:700">Pestaña desplegable ▾</span>
       </summary>
@@ -2128,15 +2129,16 @@ function renderCrono419Collapsible(){
               <th rowspan="2" class="col-ep" style="vertical-align:middle">Épicas Azure (BAC / RAMA)</th>
               <th colspan="4" style="text-align:center;background:#0f766e;color:#fff;border-radius:4px 4px 0 0">MOMENTO 1 · LINKTIC (Entrega Desarrollo a UAT)</th>
               <th colspan="4" style="text-align:center;background:#0284c7;color:#fff;border-radius:4px 4px 0 0">MOMENTO 2 · CLIENTE (Certificación UAT Formal)</th>
+              <th rowspan="2" class="col-acta" style="vertical-align:middle;text-align:center;background:#0369a1;color:#fff">Certificado con Acta</th>
             </tr>
             <tr>
               <th class="col-m1-date">Fecha Plan</th>
               <th class="col-m1-desv">Desv. Hábiles</th>
-              <th class="col-m1-hu">HUs UAT/Prod</th>
+              <th class="col-m1-hu">Funcionalidades al 100%</th>
               <th class="col-m1-st">Estado</th>
               <th class="col-m2-date">Fecha Plan</th>
               <th class="col-m2-desv">Desv. Hábiles</th>
-              <th class="col-m2-hu">HUs en Prod</th>
+              <th class="col-m2-hu">Funcionalidades al 100%</th>
               <th class="col-m2-st">Estado</th>
             </tr>
           </thead>
@@ -2148,11 +2150,12 @@ function renderCrono419Collapsible(){
               <td class="col-m1-date">31/12/2025</td>
               <td class="col-m1-desv"><span class="st good">0 d</span></td>
               <td class="col-m1-hu">204 / 204 <small>(100%)</small></td>
-              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m1-st"><span class="st good">🟢 Entregado</span></td>
               <td class="col-m2-date">31/07/2026</td>
               <td class="col-m2-desv"><span class="st good">0 d</span></td>
               <td class="col-m2-hu">204 / 204 <small>(100%)</small></td>
-              <td class="col-m2-st"><span class="st good">🟢 Certificado</span></td>
+              <td class="col-m2-st"><span class="st good">🟢 Revisado</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st warn">🟡 En proceso</span></td>
             </tr>
             <tr style="background:rgba(16,185,129,0.04)">
               <td class="col-sp">Sprint 2</td>
@@ -2161,11 +2164,12 @@ function renderCrono419Collapsible(){
               <td class="col-m1-date">13/03/2026</td>
               <td class="col-m1-desv"><span class="st good">0 d</span></td>
               <td class="col-m1-hu">75 / 80 <small>(93,8%)</small></td>
-              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m1-st"><span class="st good">🟢 Entregado</span></td>
               <td class="col-m2-date">31/07/2026</td>
               <td class="col-m2-desv"><span class="st good">0 d</span></td>
               <td class="col-m2-hu">75 / 80 <small>(93,8%)</small></td>
-              <td class="col-m2-st"><span class="st good">🟢 Certificado</span></td>
+              <td class="col-m2-st"><span class="st good">🟢 Revisado</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st warn">🟡 En proceso</span></td>
             </tr>
             <tr style="background:rgba(16,185,129,0.04)">
               <td class="col-sp">Sprint 3</td>
@@ -2174,11 +2178,12 @@ function renderCrono419Collapsible(){
               <td class="col-m1-date">13/04/2026</td>
               <td class="col-m1-desv"><span class="st good">0 d</span></td>
               <td class="col-m1-hu">104 / 121 <small>(86,0%)</small></td>
-              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m1-st"><span class="st good">🟢 Entregado</span></td>
               <td class="col-m2-date">26/08/2026</td>
-              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-desv"><span class="st crit"><b>+51 d hábiles</b></span></td>
               <td class="col-m2-hu">23 / 121 <small>(19,0%)</small></td>
               <td class="col-m2-st"><span class="st warn">🟡 En UAT</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Pendiente</span></td>
             </tr>
             <tr style="background:rgba(16,185,129,0.04)">
               <td class="col-sp">Sprint 4</td>
@@ -2187,11 +2192,12 @@ function renderCrono419Collapsible(){
               <td class="col-m1-date">29/05/2026</td>
               <td class="col-m1-desv"><span class="st good">0 d</span></td>
               <td class="col-m1-hu">154 / 201 <small>(76,6%)</small></td>
-              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m1-st"><span class="st good">🟢 Entregado</span></td>
               <td class="col-m2-date">25/08/2026</td>
-              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-desv"><span class="st crit"><b>+52 d hábiles</b></span></td>
               <td class="col-m2-hu">67 / 201 <small>(33,3%)</small></td>
               <td class="col-m2-st"><span class="st warn">🟡 En UAT</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Pendiente</span></td>
             </tr>
             <tr style="background:rgba(16,185,129,0.04)">
               <td class="col-sp">Sprint 5</td>
@@ -2200,11 +2206,12 @@ function renderCrono419Collapsible(){
               <td class="col-m1-date">10/07/2026</td>
               <td class="col-m1-desv"><span class="st good">0 d</span></td>
               <td class="col-m1-hu">52 / 89 <small>(58,4%)</small></td>
-              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m1-st"><span class="st good">🟢 Entregado</span></td>
               <td class="col-m2-date">26/06/2026</td>
-              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-desv"><span class="st crit"><b>+90 d hábiles</b></span></td>
               <td class="col-m2-hu">13 / 89 <small>(14,6%)</small></td>
               <td class="col-m2-st"><span class="st warn">🟡 En UAT</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Pendiente</span></td>
             </tr>
             <tr style="background:rgba(56,189,248,0.05)">
               <td class="col-sp">Sprint 6</td>
@@ -2213,11 +2220,12 @@ function renderCrono419Collapsible(){
               <td class="col-m1-date">21/09/2026</td>
               <td class="col-m1-desv"><span class="st good">0 d</span></td>
               <td class="col-m1-hu">84 / 127 <small>(66,1%)</small></td>
-              <td class="col-m1-st"><span class="st good">🟢 Cumplido</span></td>
+              <td class="col-m1-st"><span class="st good">🟢 Entregado</span></td>
               <td class="col-m2-date">07/12/2026</td>
-              <td class="col-m2-desv"><span class="st good">0 d</span></td>
+              <td class="col-m2-desv"><span class="st good">0 d (En plazo)</span></td>
               <td class="col-m2-hu">12 / 127 <small>(9,4%)</small></td>
               <td class="col-m2-st"><span class="st info" style="background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd">🔵 En plazo UAT</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Pendiente</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.06)">
               <td class="col-sp">Sprint 7</td>
@@ -2231,6 +2239,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st crit"><b>+23 d hábiles</b></span></td>
               <td class="col-m2-hu">7 / 229 <small>(3,1%)</small></td>
               <td class="col-m2-st"><span class="st crit">🔴 Reprog.</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Pendiente</span></td>
             </tr>
             <tr style="background:rgba(245,158,11,0.04)">
               <td class="col-sp">Sprint 8</td>
@@ -2244,6 +2253,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+20 d hab</span></td>
               <td class="col-m2-hu">0 / 157 <small>(0%)</small></td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 9</td>
@@ -2257,6 +2267,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+17 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 10</td>
@@ -2270,6 +2281,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+19 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 11</td>
@@ -2283,6 +2295,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+13 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 12</td>
@@ -2296,6 +2309,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+13 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 13</td>
@@ -2309,6 +2323,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+12 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 14</td>
@@ -2322,6 +2337,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+10 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr>
               <td class="col-sp">Sprint 15</td>
@@ -2335,6 +2351,7 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st warn">+5 d hab</span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr style="background:rgba(16,185,129,0.04)">
               <td class="col-sp">Sprint 16</td>
@@ -2348,13 +2365,15 @@ function renderCrono419Collapsible(){
               <td class="col-m2-desv"><span class="st good"><b>0 d (Fijo)</b></span></td>
               <td class="col-m2-hu">—</td>
               <td class="col-m2-st"><span class="st good">🟢 En fecha</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st" style="color:var(--muted)">⚪ Futuro</span></td>
             </tr>
             <tr class="tot" style="background:var(--surface-2);font-weight:700">
               <td class="col-sp">TOTAL</td>
               <td class="col-p">100,0%</td>
               <td class="col-ep">Consolidado 16 Sprints</td>
               <td colspan="4" style="text-align:center"><span class="st" style="background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd"><b>Momento 1 Linktic: 37,91%</b> · Desv: +21 d hab</span></td>
-              <td colspan="4" style="text-align:center"><span class="st" style="background:#dcfce7;color:#15803d;border:1px solid #bbf7d0"><b>Momento 2 Cliente: 34,38%</b> · Desv: +23 d hab</span></td>
+              <td colspan="4" style="text-align:center"><span class="st" style="background:#dcfce7;color:#15803d;border:1px solid #bbf7d0"><b>Momento 2 Cliente: 34,38%</b> · Desv: +90 d hab max</span></td>
+              <td class="col-acta" style="text-align:center"><span class="st warn"><b>2 en proceso</b></span></td>
             </tr>
           </tbody>
         </table>
