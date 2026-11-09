@@ -794,7 +794,7 @@ const P=[
   hitosNote:"Facturación mensual $4.219 M · se radica entre 2 y 7 semanas después de la fecha planeada",
   hitos:[["Ene","Plan 23 feb → real 13 abr",4219.5,4219.5,"Facturado · atrasado"],["Feb","Plan 23 mar → real 23 abr · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Mar","Plan 23 abr → real 21 may · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Abr","Plan 23 may → real 18 jun · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["May","Plan 23 jun → real 17 jul",4219.5,4219.5,"Facturado · atrasado"],["Jun","Plan 23 jul → real 5 ago",4219.5,4219.5,"Facturado · atrasado"],["Jul","Plan 23 ago",4219.5,0,"Pendiente"],["Ago","Plan 23 sep",4219.5,0,"Pendiente"]],
   diag:["warn","Mayor contrato del portafolio ($100.945 M): 34,36% facturado, 93,90% de lo facturado recaudado y costo ene–ago en 97,79% del forecast. Operativamente, ninguno de los 2 frentes contractuales está completo: Afiliaciones y Novedades en curso >80% (0,5) y Recaudo y Cartera entre 50–80% (0,2); avance CMI 35,00%. La facturación mensual se radica tarde y julio–agosto siguen pendientes. Con el avance CMI (35,00%) el CPI forecast es 0,71: cada peso gastado genera 0,71 de valor."]},
- {id:"456",name:"456 - PROYECTO INNOVACION AEREONAUTICA CIVIL",sub:"Aeronáutica Civil · Lab de Innovación",op:{av:0.24,ent:0.1666666667,n:6,d:1,u:"entregables"},
+ {id:"456",name:"456 - PROYECTO INNOVACION AEREONAUTICA CIVIL",sub:"Aeronáutica Civil · Lab de Innovación",op:{av:0.24,ent:0.50,n:2,d:1,u:"entregables a la fecha",nTotal:6},
   m:[[0,0,0],[0,0,0],[0,0,9.8],[54.8,33.1,25.0],[114.0,63.3,49.6],[256.3,60.0,59.2],[106.5,62.2,58.9],[60.8,76.2,70.7],[10.9,72.7,73.5],[10.9,75.2,0],[10.9,74.4,0],[10.9,199.9,0]],
   cpiP:0.6529,cpiF:0.7907,icff:1.1662,avFin:0.35,ppto:647.0,fcst:783.6,
   contrato:1581.6,factPlan:1882.1,fact:284.7,cumplFact:0.1513,recaudo:296.9,cumplRec:1.0,brechaRec:0.0,
@@ -922,7 +922,7 @@ const VAL={
  "421":{src:"Azure DevOps · 56 Funcionalidades de Producto (2 frentes)",av:[true,"Promedio CMI de 56 funcionalidades de cara a producto."],ent:[true,"12 de 56 funcionalidades de producto al 100% formal en producción."]},
  "397":{src:"CMI!I49 = '397'!Q174 · K49 = K54/I54 (31/34 digitado)",av:[true,"AVERAGE de la escala de los 34 frentes = 97,06%"],ent:[true,"31 frentes en escala 1"]},
  "348":{src:"CMI!I49 = 25,29% · K49 = 17,65% (3/17)",av:[true,"Avance promedio ponderado de los 95 frentes con escala en '348-SGDEA Acueducto'"],ent:[true,"3 de 17 entregables contractuales completados al 100%"]},
- "456":{src:"CMI!C64 = 24,00% · E64 = 16,67% (1/6)",av:[true,"Avance ponderado según pesos contractuales de las 3 fases (18%×1 + 12%×0,5 = 24,00%)"],ent:[true,"1 de 6 entregables contractuales completado al 100% (Entregable I Fase I)"]},
+ "456":{src:"CMI!C64 = 24,00% · E64 = 50,00% (1/2 a la fecha · 1/6 contrato)",av:[true,"Avance ponderado según pesos contractuales de las 3 fases (18%×1 + 12%×0,5 = 24,00%)"],ent:[true,"1 de 2 entregables debidos a la fecha completado al 100% (Entregable I Fase I · 50,00% a la fecha · 1/6 contrato)"]},
   "420":{src:"Captura Directa Azure DevOps · 12 Épicas / 57 Funcionalidades",av:[true,"Promedio CMI de 12 épicas en Azure (62,50% · 3 al 100%, 9 al 50%)"],ent:[true,"3 de 12 épicas al 100% formal en producción (25,00%)"]}
 };
 const valState=p=>{const v=VAL[p.id];if(!v)return null;const a=[v.av[0],v.ent[0]];return a.includes("p")?"p":a.every(x=>x===true)?"ok":"rev"};
@@ -1046,7 +1046,7 @@ const PROJ_CALLOUT_META = {
   "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES", sub: "194 Funcionalidades en Azure", ent: "63 en prod.", pct: "32,5% cerrado", icon: "🗂" },
   "453": { tag: "Azure · 4 Focos", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "4 Focos en Cronograma · 76 Casos de Uso", ent: "29 CUs al 100%", pct: "39,8% éxito · 12,5% táctico", icon: "🎯" },
   "421": { tag: "Azure · 56 Func.", title: "421 - PROYECTO BALÚ", sub: "56 Funcionalidades de Producto (2 Frentes)", ent: "12 en prod.", pct: "21,4% cerrado", icon: "🗂" },
-  "456": { tag: "Contractual · 6 Hitos | Azure · 4 Func.", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 Épica · 4 Funcionalidades en Azure (16 HU)", ent: "0 en prod. · 1/6 hitos", pct: "12,0% av. HU · 16,7% hitos", icon: "🗂" },
+  "456": { tag: "Contractual · 1/2 Hitos a la fecha", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 de 2 hitos formalizados a la fecha (1/6 contrato)", ent: "1/2 a la fecha", pct: "50,0% a la fecha · 18,0% éxito", icon: "⏱️" },
   "348": { tag: "Azure · 115 Func.", title: "348 - PROYECTO SGDEA ACUEDUCTO", sub: "115 Funcionalidades en Azure", ent: "27 en prod.", pct: "23,5% cerrado", icon: "🗂" },
   "397": { tag: "Azure · 57 Épicas", title: "397 - PROYECTO CORE ANDINA", sub: "233 Funcionalidades en Azure", ent: "228 en prod.", pct: "97,9% cerrado", icon: "🗂" },
   "420": { tag: "Azure · 57 Func.", title: "420 - PROYECTO PÓLIZAS DE SALUD", sub: "57 Funcionalidades en Azure", ent: "35 en prod.", pct: "61,4% cerrado", icon: "🗂" },
@@ -1343,10 +1343,27 @@ function cmiOverviewHTML(p){
   const brechaCrono419 = realCrono419 - metaCrono419; // -0.0448 (-4,48 pp)
   const exito419 = (var1_419 * 0.40) + (realCrono419 * 0.60); // 33,20%
 
-  // Proyecto 456
-  const exitoReal = is456 ? 0.18 : null;
-  const exitoMeta = is456 ? 0.30 : null;
-  const brecha = is456 ? (exitoReal - exitoMeta) : null;
+  // Proyecto 456 - Aeronáutica Civil: Supervisión contractual viva con redimensionamiento a la fecha
+  const HITOS_456 = [
+    { id: 1, fase: "Fase I", name: "Entregable I · Propuesta metodológica e indicadores", peso: 0.18, date: "2026-07-15", prod: 1.0, gate: "Entregado" },
+    { id: 2, fase: "Fase I", name: "Entregable II · Transferencia metodológica y hoja de ruta", peso: 0.12, date: "2026-09-23", prod: 0.5, gate: "En curso (Gate 1)" },
+    { id: 3, fase: "Fase II-1", name: "Entregable I · Experimento testeo UX sobre 2 problemas (MVP 1)", peso: 0.20, date: "2026-11-19", prod: 0.0, gate: "En curso" },
+    { id: 4, fase: "Fase II-1", name: "Entregable II · Informes de resultados e informe entidad", peso: 0.12, date: "2026-12-04", prod: 0.0, gate: "Pendiente" },
+    { id: 5, fase: "Fase II-1", name: "Entregable III · Transferencia conocimiento y PMV", peso: 0.08, date: "2026-12-02", prod: 0.0, gate: "Pendiente" },
+    { id: 6, fase: "Fase II-2", name: "Entregable Único · Experimento 2 procesos objetivo", peso: 0.30, date: "2027-01-26", prod: 0.0, gate: "Pendiente" }
+  ];
+  const cutoff456 = "2026-11-09"; // Corte oficial
+  const hitosFecha456 = HITOS_456.filter(h => h.date <= cutoff456);
+  const nFecha456 = hitosFecha456.length; // 2 hitos vencidos / debidos a la fecha
+  const dReal456 = hitosFecha456.filter(h => h.prod >= 0.999).length; // 1 hito entregado al 100%
+  const nTotal456 = HITOS_456.length; // 6 hitos contrato
+  const stratReal456 = nFecha456 > 0 ? (dReal456 / nFecha456) : 0; // 50,00%
+  const stratMeta456 = 1.0; // 100,00% meta a la fecha
+  const stratBrecha456 = stratReal456 - stratMeta456; // -50,00 pp
+
+  const exitoReal = is456 ? HITOS_456.filter(h => h.prod >= 0.999).reduce((acc, h) => acc + h.peso, 0) : null; // 18,00%
+  const exitoMeta = is456 ? hitosFecha456.reduce((acc, h) => acc + h.peso, 0) : null; // 30,00%
+  const brecha = is456 ? (exitoReal - exitoMeta) : null; // -12,00 pp
 
   // Proyecto 421 - Balú: Cronograma de 10 Releases (10% c/u) y RQC
   const RELEASES_421 = [
@@ -1415,21 +1432,44 @@ function cmiOverviewHTML(p){
     </article>`;
 
   const exitoBoxHTML = is456 ? `
-    <div class="cmi-exito-box">
+    <div class="cmi-exito-box" style="margin-top:0">
       <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="cmi-kicker">Conciliación de Indicador de Éxito</span>
-        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 05-Nov-2026</span>
+        <span class="cmi-kicker">⏱️ Conciliación Indicador Estratégico (Hitos a la Fecha)</span>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
+      </div>
+      <div class="cmi-exito-kpis" style="margin-bottom:0">
+        <div class="cmi-exito-kpi real">
+          <span>Real a la fecha</span>
+          <strong style="color:#059669">${pct(stratReal456)}</strong>
+          <small>${dReal456} de ${nFecha456} hitos debidos (${dReal456}/${nTotal456} contrato)</small>
+        </div>
+        <div class="cmi-exito-kpi meta">
+          <span>Meta Proyectada a la fecha</span>
+          <strong style="color:#b45309">${pct(stratMeta456)}</strong>
+          <small>100% de hitos debidos a la fecha</small>
+        </div>
+        <div class="cmi-exito-kpi gap">
+          <span>Brecha de Cumplimiento</span>
+          <strong style="color:#dc2626">${nf2.format(stratBrecha456 * 100)} pp</strong>
+          <small>🔴 1 hito pendiente (Gate 1)</small>
+        </div>
+      </div>
+    </div>
+    <div class="cmi-exito-box" style="margin-top:0">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="cmi-kicker">🎯 Conciliación Indicador de Éxito (Ponderación Contractual)</span>
+        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
       </div>
       <div class="cmi-exito-kpis" style="margin-bottom:0">
         <div class="cmi-exito-kpi real">
           <span>Real Entregado</span>
           <strong style="color:#059669">${pct(exitoReal)}</strong>
-          <small>1 entregable formalizado</small>
+          <small>1 entregable formalizado (18%)</small>
         </div>
         <div class="cmi-exito-kpi meta">
           <span>Meta Proyectada a la fecha</span>
           <strong style="color:#b45309">${pct(exitoMeta)}</strong>
-          <small>Cronograma Ajustado (23-Sep)</small>
+          <small>Entregables I y II debidos (30%)</small>
         </div>
         <div class="cmi-exito-kpi gap">
           <span>Brecha de Cumplimiento</span>
@@ -1493,6 +1533,15 @@ function cmiOverviewHTML(p){
       <span class="tag">Vista CMI Oficial</span>
     </div>
     <div class="cmi-hero-grid grid-2">
+      ${is456 ? `
+      <article class="cmi-hero-card">
+        <div class="cmi-kicker">01 · Indicador estratégico</div>
+        <div class="cmi-value">${pct(stratReal456)}</div>
+        <div class="cmi-bottom">
+          <span><b>${dReal456}</b> de <b>${nFecha456}</b> entregables a la fecha (${dReal456} de ${nTotal456} contrato) · Meta proyectada a la fecha: <b>${pct(stratMeta456)}</b></span>
+          <span class="cmi-pill warn">Brecha: ${nf2.format(stratBrecha456 * 100)} pp</span>
+        </div>
+      </article>` : `
       <article class="cmi-hero-card">
         <div class="cmi-kicker">01 · Indicador estratégico</div>
         <div class="cmi-value">${pct(strategic)}</div>
@@ -1500,7 +1549,7 @@ function cmiOverviewHTML(p){
           <span>${stratBottomText}</span>
           <span class="cmi-pill ${cls(strategic)}">${state(strategic)}</span>
         </div>
-      </article>
+      </article>`}
       ${exitoCardHTML}
     </div>
 
@@ -2153,10 +2202,7 @@ function renderOpBody(p,g,el){
   const isRamos = p.id === "416" || o.u === "ramos" || o.isRamos;
   const isEpics = !isRamos && (o.u === "épicas" || o.u === "frentes" || (o.cmi && o.cmi.isEpics));
   const is419 = p.id === "419";
-  let h=`<div class="section grid g-tiles" id="op-tiles-top">
-    ${tileHTML(isCU ? "Indicador táctico · % avance casos de uso" : isRamos ? "Indicador táctico · % avance ramos" : isEpics ? "Indicador táctico · % avance épicas / frentes" : "Indicador táctico · % avance funcionalidad", pct(o.av), isCU ? `Medición por Estado Interno (${o.n} CUs medibles)` : isRamos ? `Medición CMI Oficial PMO (${o.n} Ramos)` : is419 ? `Medición archivo local PMO (${o.n} func)` : isEpics ? `Medición CMI Oficial PMO (${o.n} Épicas / Frentes)` : o.isAzure ? `Medición en vivo Azure DevOps (${o.n} func)` : "", band(o.av,.7,.4))}
-    ${tileHTML(isCU ? "Indicador estratégico · % cumplimiento casos de uso" : isRamos ? "Indicador estratégico · % cumplimiento ramos" : isEpics ? "Indicador estratégico · % cumplimiento épicas" : "Indicador estratégico · % cumplimiento entregables", pct(o.ent), isCU ? `<b>${o.d}</b> de <b>${o.n}</b> Casos de Uso entregados (100%)` : isRamos ? `<b>${o.d}</b> de <b>${o.n}</b> Ramos formalizados (100%)` : is419 ? `<b>${o.d}</b> de <b>${o.n}</b> funcionalidades entregadas (100%)` : isEpics ? `<b>${o.d}</b> de <b>${o.n}</b> Épicas entregadas formalmente (100%)` : o.isAzure ? `<b>${o.d}</b> de <b>${o.n}</b> ${o.u} al 100% en Azure` : `${o.d} de ${o.n} ${o.u} entregados`, band(o.ent,.7,.3))}
-  </div>`;
+  let h = "";
   if(p.opParts)h+=`<div class="section panel"><div class="sec-h"><h2>Consolidado 355 + 416</h2></div><div class="tbl-wrap"><table class="xl"><thead><tr><th>Subproyecto</th><th class="n">Entregables</th><th class="n">Entregados</th><th class="n">% avance funcionalidad</th><th class="n">% cumplimiento entregables</th></tr></thead><tbody>${p.opParts.map(x=>`<tr><td>${x.id}</td><td class="n">${x.op.n} <small style="color:var(--muted)">${x.op.u}</small></td><td class="n">${x.op.d}</td><td class="n">${pct(x.op.av)}</td><td class="n">${pct(x.op.ent)}</td></tr>`).join("")}<tr class="tot"><td>Total</td><td class="n">${p.op.n}</td><td class="n">${p.op.d}</td><td class="n">${pct(p.op.av)}</td><td class="n">${pct(p.op.ent)}</td></tr></tbody></table></div></div>`;
   
   if(p.id==="421"){
@@ -3935,19 +3981,7 @@ function funcCard(cod) {
             ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (80 certificados) con desglose en Azure de <b>${cmi.feat_total||194} funcionalidades</b>`:cod==="456"?`Medición contractual sobre <b>6 entregables</b> (1 al 100%, 1 al 50%) con captura en vivo de <b>${cmi.epic_total||1} épica</b>, <b>${cmi.feat_total||4} funcionalidades</b> y <b>${cmi.hu_total||16} HU</b> en Azure DevOps`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b>`}
           </p>
         </div>
-        <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
-          <div style="text-align:right">
-            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Táctico</span>
-            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.tactico,.7,.4)})">${pct(cmi.tactico)}</div>
-            <span class="hint" style="font-size:10px">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?"% avance épicas / frentes":"% avance funcionalidad"}</span>
-          </div>
-          <div style="width:1px;height:28px;background:var(--line)"></div>
-          <div style="text-align:left">
-            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Estratégico</span>
-            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.estrategico,.7,.3)})">${pct(cmi.estrategico)}</div>
-            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> ${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?"épicas al 100%":cod==="419"?"entregadas (100%)":"al 100%"}</span>
-          </div>
-        </div>
+        
       </div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
         <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Distribución de las ${cmi.n} ${cmi.u}:`:cod==="419"?"Distribución archivo local (466):":"Distribución en Escala:"}</span>
@@ -4366,19 +4400,7 @@ function cpe453Card(C) {
             Ponderación de <b>${cmi.n}</b> focos evaluados bajo la <b>Escala CMI por entregable</b> (${cmi.d} cerrados al 100%)
           </p>
         </div>
-        <div style="display:flex;gap:14px;align-items:center;background:var(--surface-2);padding:6px 12px;border-radius:10px;border:1px solid var(--line)">
-          <div style="text-align:right">
-            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Táctico</span>
-            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.tactico,.7,.4)})">${pct(cmi.tactico)}</div>
-            <span class="hint" style="font-size:10px">% avance focos</span>
-          </div>
-          <div style="width:1px;height:28px;background:var(--line)"></div>
-          <div style="text-align:left">
-            <span class="hint" style="font-size:10px;text-transform:uppercase;font-weight:700">Indicador Estratégico</span>
-            <div style="font-size:17px;font-weight:800;color:var(--${band(cmi.estrategico,.7,.3)})">${pct(cmi.estrategico)}</div>
-            <span class="hint" style="font-size:10px"><b>${cmi.d}</b> de <b>${cmi.n}</b> focos entregados</span>
-          </div>
-        </div>
+        
       </div>
       ${cmi.buckets ? `
       <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
