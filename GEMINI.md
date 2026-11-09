@@ -1148,3 +1148,80 @@ enderCrono421Collapsible):**
   - Verificación exitosa de compatibilidad con `python ACTUALIZAR.py --dry-run` (0 errores).
   - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_152811.html`.
   - Sincronización en las 4 rutas espejo y despliegue a producción en GitHub Pages (commit `0c2279a`).
+
+---
+
+## 47. Registro de Ajustes en 419 (Funcionalidades en Cronograma, Conciliación de Bugs visible y Retiro de Gráfica) y Actualización Financiera Portafolio a Octubre 2026 (09-nov-2026)
+
+* **Ajuste de Conteo de Funcionalidades en Cronograma 419:**
+  - Se sustituyeron las cifras de HUs por el conteo real de **Funcionalidades** (Features) asociadas a cada Sprint en Azure DevOps:
+    - **Sprint 1:** **42 Funcionalidades** en total (34 de Banco Agrario en Épica `291675` + 8 de Rama Judicial en Épica `360573`), con 42 entregadas en Momento 1 (100%) y 42 revisadas en Momento 2 (100%).
+    - **Sprint 2:** 25 Funcionalidades (18 entregadas M1 / 18 revisadas M2).
+    - **Sprint 3:** 16 Funcionalidades (16 entregadas M1 / 0 M2).
+    - **Sprint 4:** 23 Funcionalidades (23 entregadas M1 / 0 M2).
+    - **Sprint 5:** 11 Funcionalidades (11 entregadas M1 / 0 M2).
+    - **Sprint 6:** 15 Funcionalidades (15 entregadas M1 / 2 M2).
+    - **Sprint 7:** 30 Funcionalidades (0 entregadas M1 / 0 M2).
+    - **Sprint 8:** 28 Funcionalidades (0 entregadas M1 / 0 M2).
+  - Se ajustó el encabezado de las columnas tanto en Momento 1 como en Momento 2 a **`Funcionalidades`**.
+
+* **Reorganización de la Sección de Defectos (Bugs) y Conciliación 419:**
+  - **Tabla de Conciliación Visible Directamente:** La tabla `💵 Conciliación de bug´s con reportados por Cliente` queda visible inmediatamente al abrir el proyecto.
+  - **Encabezado Actualizado:** Se cambió `Total Facturado / Conciliado` a **`Total conciliado`**.
+  - **Columna Eliminada:** Se retiró la columna `Estado Comercial` de la tabla de conciliación.
+  - **Acordeón Desplegable para Gráfica y ANS:** La gráfica `🐛 Evolución Consolidada de Bugs 419 (DEP vs RAMA) y Tiempos de Respuesta vs ANS (3 Días)` y sus KPI tiles se ubicaron dentro de una pestaña desplegable interactiva (`<details class="cmi-accordion">`), permitiendo consultar el detalle sin sobrecargar la vista principal.
+  - **Retiro Definitivo de Gráfica de Entregas y Certificaciones:** Se eliminó la sección y contenedor de `#c-419` (`Entregas y certificaciones`), dado que la información oficial está consolidada en el desglose funcional vivo y en la tabla de cronograma.
+
+* **Actualización Financiera a Octubre 2026 (Libros `20261109`):**
+  - **Proyecto 419 (Depósitos Judiciales - `Indicadores_419_V11 20261109.xlsx`):**
+    - Facturación acumulada real: **$5.640,6 M Sin IVA / $6.712,3 M Con IVA** (19,80% avance).
+    - EVM Real acumulado: **$4.565,0 M** (Octubre: $460,3 M).
+    - Métricas: CPI ppto **0,4742**, CPI fcst **0,2743**, ICFF **1,5609**.
+  - **Proyecto 421 (BALÚ - `IndicadoresBalu 20261109.xlsx`):**
+    - Facturación acumulada real: **$38.071,8 M Sin IVA / $45.305,4 M Con IVA** (37,72% avance).
+    - EVM Real acumulado: **$13.863,3 M** (Octubre: $999,6 M).
+    - Métricas: CPI ppto **1,1874**, CPI fcst **0,8273**, ICFF **1,2412**.
+  - **Proyecto 453 (CPE - `Indicadores_CPE 20261109.xlsx`):**
+    - EVM Real acumulado: **$1.337,1 M** (Septiembre: $248,6 M, Octubre: $231,1 M).
+    - Métricas: CPI ppto **0,1352**, CPI fcst **0,1405**, ICFF **7,9320**.
+  - **Proyecto 456 (Aeronáutica Civil - `Indicadores456 20261109.xlsx`):**
+    - EVM Real acumulado: **$423,8 M** (Octubre: $76,6 M).
+    - Métricas: CPI ppto **0,3663**, CPI fcst **0,4437**, ICFF **1,6554**.
+
+* **Sincronización y Publicación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (**0 errores**, patrón `FR` intacto).
+  - Sincronización en las 4 rutas espejo completada.
+  - Publicación y despliegue en producción completado en GitHub Pages (`commit edb1abe`).
+
+---
+
+## 48. Registro de Visibilidad Financiera en Vercel, CMI de 456 sobre Features de Azure DevOps y Medición de 453 sobre 76 Casos de Uso (09-nov-2026)
+
+* **Activación de Visibilidad Financiera Ejecutiva en Vercel y Producción:**
+  - **Causa identificada:** Los contenedores `#tiles` (KPIs financieros del portafolio) y `#cash-cost` (Del contrato a la caja y Costo real 2026 vs forecast) contenían el atributo HTML `hidden`, impidiendo su despliegue en la Vista de Dirección tanto en Vercel como en entornos web y locales.
+  - **Solución implementada:** Se removió el atributo `hidden` de ambos contenedores (`<div class="grid g-tiles" id="tiles">` y `<div class="section grid g-2" id="cash-cost">`), dejando inmediatamente visibles:
+    1. Los 5 Tiles Financieros Ejecutivos del Portafolio: Total valor contrato, Total facturado, Recaudo efectivo, Costo real 2026 y Forecast 2026 (con conmutador Sin/Con IVA).
+    2. Las dos secciones financieras de Dirección: "Del contrato a la caja" (`#flow`) y "Costo real 2026 vs forecast" (`#c-costport`).
+
+* **Proyecto 456 (Aeronáutica Civil) · Medición sobre Funcionalidades de Azure DevOps:**
+  - Se desacopló la medición contractual hardcodeada de 6 hitos, calculando ahora los indicadores CMI directamente sobre las **4 Funcionalidades (Features)** activas en Azure DevOps (`545363`, `545458`, `545459`, `545460`):
+    - **Indicador Táctico:** **15,00%** (3 funcionalidades en escala 20% + 1 en escala 0% = 60% / 4).
+    - **Indicador Estratégico:** **0,00%** (0 de 4 funcionalidades formalizadas en producción).
+    - **Insignia y Callout:** Badge actualizado a `Azure · 4 Func.` y callout `4 Funcionalidades en Azure · 0 en prod. · 0,0% cerrado`.
+    - Hero cards CMI integradas al cálculo estándar por funcionalidades vivas.
+
+* **Proyecto 453 (Monitoreo CPE) · Medición sobre 76 Casos de Uso y Limpieza de Controles:**
+  - **Medición sobre la Totalidad de Casos de Uso:**
+    - Se eliminó el cálculo restringido a los 4 Focos, evaluando ahora la totalidad de los **76 Casos de Uso** del proyecto:
+      - **Indicador Táctico:** **40,00%** (29 CUs al 100% + 7 CUs al 20% + 40 CUs a 0% evaluados bajo la Escala CMI PMO).
+      - **Indicador Estratégico:** **38,16%** (**29 de 76 Casos de Uso** entregados al 100% en estado `19. Entregado`).
+      - **Insignia y Callout:** Badge actualizado a `Azure · 76 CUs` y callout `76 Casos de Uso en Azure · 29 en prod. · 38,2% cerrado`.
+  - **Depuración de Interfaz en Ficha Operativa:**
+    - Se renombró el banner a: `Insumo CMI Oficial PMO · Indicadores Táctico y Estratégico (Medición por Casos de Uso)` con tag `76 Casos de Uso`.
+    - Se retiraron por completo los botones interactivos de conmutación metodológica `▶ Por ejecución` / `◆ Por compromiso` y la nota explicativa *"cada HU cuenta en SU iteración — en qué se trabaja de verdad"*, garantizando una visual limpia y libre de ruidos metodológicos.
+
+* **Sincronización y Publicación:**
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_162542.html`.
+  - Sincronización completa en las 4 rutas espejo y archivos JSON (`data_func.json`, `data_453_cpe.json`).
+  - Publicación y despliegue en producción completado en GitHub Pages y Vercel (`commit 775d8c0`).
