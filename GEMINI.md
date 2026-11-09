@@ -1282,3 +1282,53 @@ enderCrono421Collapsible):**
   - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_164423.html`.
   - Sincronización en las 4 rutas espejo y archivos de datos.
   - Publicación y despliegue completado en GitHub Pages y Vercel (`commit 86fb741`).
+
+
+---
+
+## 51. Registro de Incorporación Financiera del Proyecto 020 (Positiva Servicios de Analítica) (09-nov-2026)
+
+* **Incorporación del Libro Oficial:**
+  - Se incorporó formalmente el libro `020 analitica 20261109.xlsx` (`Información Financiera\020- Analítica de datos\`).
+  - Proyecto **020 (020 - PROYECTO SERVICIOS DE ANALITICA)** pasa de estado `opOnly: true` a proyecto con seguimiento financiero pleno e ingresa formalmente a la lista `FIN`, sumando a los totales y gráficos ejecutivos del portafolio (`#tiles`, `#flow`, `#c-costport`).
+
+* **Dimensiones Financieras Habilitadas:**
+  1. **Contrato y Facturación:**
+     - **Valor Contrato Sin IVA:** **$1.936,5 M** (`$1.936.471.859`).
+     - **Valor Contrato Con IVA:** **$2.304,4 M** (`$2.304.401.512`).
+     - **Facturación Real Acumulada Sin IVA:** **$1.761,0 M** (`$1.761.025.200`) (**90,94%** de avance contractual sobre valor sin IVA).
+     - **Facturación Real Acumulada Con IVA:** **$1.821,7 M** (`$1.821.697.469`) (**79,05%** de avance contractual con IVA).
+     - **IVA Facturado Acumulado:** **$60,7 M** (`$60.672.269`).
+     - **Retenciones Acumuladas:** **$73,0 M** (`$73.002.210`).
+     - **Facturación Pendiente:** **$175,4 M** (Sin IVA) / **$482,7 M** (Con IVA).
+     - **Cumplimiento de Facturación:** **76,42%** (Brecha: -$543,4 M frente a la facturación planeada acumulada de $2.304,4 M).
+  2. **Recaudo:**
+     - **Recaudo Real Acumulado:** **$1.588,3 M** (`$1.588.328.466`).
+     - **Recaudo Esperado Neto:** **$1.748,7 M** (`$1.748.695.259`).
+     - **Pendiente de Recaudo:** **$160,4 M** (`$160.366.793`).
+     - **Cumplimiento de Recaudo:** **90,83%** (Brecha: -$160,4 M).
+  3. **Costos y EVM (Corte Octubre 2026):**
+     - **Presupuesto Original (PV ppto):** **$1.826,8 M** (`$1.826.755.950`).
+     - **Presupuesto Forecast (PV fcst):** **$1.625,1 M** (`$1.625.095.728`).
+     - **Costo Real Acumulado (AC):** **$1.136,1 M** (`$1.136.056.311`).
+     - **Avance Táctico:** **58,75%** (2 de 8 funcionalidades entregadas al 100%).
+     - **Valor Ganado (EV) PPTO:** **$1.073,2 M** (`$1.073.219.121`).
+     - **Valor Ganado (EV) FCST:** **$954,7 M** (`$954.743.740`).
+     - **CPI Escenario PPTO:** **0,94** (`0.9447`).
+     - **CPI Escenario FCST:** **0,84** (`0.8404`).
+     - **ICFF Escenario FCST:** **1,37** (`1.3708`).
+     - **Curva Mensual 2026:** Ene-Oct con costos reales ($55,6 M, $132,0 M, $131,9 M, $149,3 M, $136,6 M, $129,5 M, $89,8 M, $63,5 M, $106,8 M, $141,1 M) y proyecciones Nov ($184,3 M) y Dic ($124,7 M).
+  4. **Equipo de Trabajo (`team`):**
+     - Costo acumulado Ene-Oct: **$616,2 M** (14 HC, fuente: `020 analitica 20261109 · Indicadores Costo`).
+  5. **Hitos Contractuales (`hitos`):**
+     - 14 hitos en total: 12 de Operación e Infraestructura ($160,4 M c/u; Ene–Jun facturados al 100%, Jul–Dic pendientes) y 2 de Iniciativa 1 POC ($190,0 M c/u; Hito 1 facturado, Hito 2 pendiente).
+
+* **Metadata y Sincronización:**
+  - `PROJ_DATES_META["020"]` actualizado a `finDate: "09-Nov-2026"` y `finFile: "020 analitica 20261109.xlsx (Corte Oct-2026)"`.
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (**0 errores de regex**).
+  - Sincronización completa en las 4 rutas espejo:
+    1. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\index.html`
+    2. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\Tablero_CMI_PMO.html`
+    3. `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html`
+    4. `C:\Users\IvanDarioPastorParra\Downloads\Tablero_CMI_PMO.html`
+  - Publicación y despliegue a producción completado en GitHub Pages y Vercel (`commit ed4d1cb`).
