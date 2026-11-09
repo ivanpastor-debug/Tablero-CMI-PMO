@@ -1625,6 +1625,9 @@ function cmiOverviewHTML(p){
                 <small>🔴 15 HUs en validación UAT</small>
               </div>
             </div>
+            <div style="margin-top:8px;padding:6px 10px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--muted);line-height:1.4">
+              ℹ️ <b>Nota aclaratoria:</b> El cumplimiento del cronograma se evalúa contra el archivo Excel debido a las 37 funcionalidades pendientes de correlacionar en Azure.
+            </div>
           </div>` : is419 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
             <div class="cmi-kicker" style="color:#0284c7">📋 Funcionalidades Certificadas por Cliente (Peso: 40%)</div>
@@ -1745,7 +1748,7 @@ function renderCrono421Collapsible(){
     <details class="cmi-accordion" open>
       <summary style="padding:12px 16px;background:var(--surface);border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
         <div style="display:flex;align-items:center;gap:10px">
-          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación del Cronograma · 10 Releases A&N (Peso: 10,0% cada uno)</h2>
+          <h2 style="margin:0;font-size:16px;font-weight:700">🗓️ Desviación del Cronograma</h2>
         </div>
         <span class="cmi-acc-tag" style="font-size:11px;font-weight:700">Pestaña desplegable ▾</span>
       </summary>
@@ -1756,8 +1759,7 @@ function renderCrono421Collapsible(){
               <th class="col-ent">Release / Entregables Contractuales</th>
               <th class="col-peso" style="text-align:center">Peso</th>
               <th class="col-date" style="text-align:center">Cierre planeado</th>
-              <th class="col-pct" style="text-align:center">% Avance Azure</th>
-              <th class="col-bar" style="width:90px;text-align:center"></th>
+              <th class="col-bar" style="width:110px;text-align:center">Avance</th>
               <th class="col-desv" style="text-align:center">Desviación en días hábiles</th>
               <th class="col-desv" style="text-align:center">Desviación calendario</th>
               <th class="col-st" style="text-align:center">Estado</th>
@@ -1768,114 +1770,109 @@ function renderCrono421Collapsible(){
               <td class="col-ent">&nbsp;&nbsp;<b>Release 1</b> · Independientes (Internos Medicina ind/masivo), Certificados especiales, Normalización I1</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">10/10/2026</td>
-              <td class="col-pct" style="text-align:center;font-weight:700;color:#059669">88,5% <small style="color:var(--muted)">(64,9% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:88.5%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st crit"><b>+18 d hábiles</b></span></td>
               <td class="col-desv" style="text-align:center"><span class="st crit">+27 d cal</span></td>
-              <td class="col-st" style="text-align:center"><span class="st crit">Vencido (15 UAT)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
               <td class="col-ent">&nbsp;&nbsp;<b>Release 2</b> · Certificados masivos (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">24/10/2026</td>
-              <td class="col-pct" style="text-align:center;font-weight:700;color:#059669">86,4% <small style="color:var(--muted)">(45,5% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:86.4%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st crit"><b>+9 d hábiles</b></span></td>
               <td class="col-desv" style="text-align:center"><span class="st crit">+13 d cal</span></td>
-              <td class="col-st" style="text-align:center"><span class="st crit">Vencido (9 UAT)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(245,158,11,0.06)">
               <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · Actualizaciones sedes masivas (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#b45309">07/11/2026</td>
-              <td class="col-pct" style="text-align:center;font-weight:700;color:#b45309">76,4% <small style="color:var(--muted)">(42,9% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.4%;background:#f59e0b"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st warn"><b>0 d hábiles</b></span></td>
               <td class="col-desv" style="text-align:center"><span class="st warn">-1 d cal</span></td>
-              <td class="col-st" style="text-align:center"><span class="st warn">Vence en 1 día</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · Recicladores, Voluntarios primera respuesta, Tipos de doc, Y1, E1</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">14/11/2026</td>
-              <td class="col-pct" style="text-align:center;font-weight:700">55,2% <small style="color:var(--muted)">(43,8% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:55.2%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (5 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 8 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · Carnés masivos (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">28/11/2026</td>
-              <td class="col-pct" style="text-align:center;font-weight:700">66,4% <small style="color:var(--muted)">(50,0% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:66.4%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (14 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 22 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">12/12/2026</td>
-              <td class="col-pct" style="text-align:center;font-weight:700">80,9% <small style="color:var(--muted)">(23,5% Prod · 13 UAT)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:80.9%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (23 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 36 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · Excepciones, Retroactivas, Liquidación aportes, Pólizas, E2, E3</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">23/01/2027</td>
-              <td class="col-pct" style="text-align:center;font-weight:700">70,7% <small style="color:var(--muted)">(43,3% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:70.7%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (50 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 78 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · Histórico de actualizaciones, Proceso permanencias, Retiro empleador</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">20/02/2027</td>
-              <td class="col-pct" style="text-align:center;font-weight:700">43,1% <small style="color:var(--muted)">(25,0% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:43.1%;background:#3b82f6"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (70 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 106 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · Novedades PILA (permanentes VSP/VPC y transitorias)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">06/03/2027</td>
-              <td class="col-pct" style="text-align:center;font-weight:700;color:#059669">100,0% <small style="color:var(--muted)">(Base PILA cerrada)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (80 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 120 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st good">Entregado</span></td>
             </tr>
             <tr>
               <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · Modulo retiro independiente (análisis finalización contratos)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">20/03/2027</td>
-              <td class="col-pct" style="text-align:center;font-weight:700;color:#059669">82,5% <small style="color:var(--muted)">(62,5% Prod)</small></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:82.5%;background:#059669"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Plazo a favor (90 d hábiles)</span></td>
               <td class="col-desv" style="text-align:center"><span class="st good">Faltan 134 d</span></td>
-              <td class="col-st" style="text-align:center"><span class="st good">Futuro (En plazo)</span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr class="tot" style="border-top:2px solid var(--line);background:var(--surface-2)">
               <td class="col-ent"><b>Total Cronograma Afiliaciones y Novedades (10 Releases)</b></td>
               <td class="col-peso" style="text-align:center"><b>100%</b></td>
               <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
-              <td class="col-pct" style="text-align:center;font-weight:800;color:var(--ink)"><b>75,01%</b></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:75.01%;background:#8a69c7"></i></div></div></td>
               <td class="col-desv" style="text-align:center"><span class="st warn"><b>Meta al corte: 20,00%</b></span></td>
               <td class="col-desv" style="text-align:center"><span class="st good"><b>Real logrado: 17,49%</b></span></td>
-              <td class="col-st" style="text-align:center"><span class="st warn"><b>Brecha: -2,51 pp</b></span></td>
+              <td class="col-st" style="text-align:center"><span class="st warn"><b>1 de 10 Entregados</b></span></td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div style="margin-top:10px;padding:8px 12px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--ink-2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <span><b>Meta Proyectada al corte:</b> 20,00% (Releases 1 y 2 debidos)</span>
+        <span><b>Real Logrado:</b> 17,49% (Ponderado de Releases)</span>
+        <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-2,51 pp</b></span>
+        <span><b>Releases Formalizados:</b> 1 de 10 al 100% (Release 9)</span>
       </div>
     </details>
   </div>`;
