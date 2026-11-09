@@ -1225,3 +1225,37 @@ enderCrono421Collapsible):**
   - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_162542.html`.
   - Sincronización completa en las 4 rutas espejo y archivos JSON (`data_func.json`, `data_453_cpe.json`).
   - Publicación y despliegue en producción completado en GitHub Pages y Vercel (`commit 775d8c0`).
+
+---
+
+## 49. Registro de Ajuste Integral de Visualización Financiera al 09-Nov-2026 (Corte Octubre 2026) en 419, 421, 453 y 456 (09-nov-2026)
+
+* **Causa Raíz Identificada:**
+  - Aunque los números de EVM y las curvas `m` se habían actualizado a Octubre 2026, la interfaz gráfica mantenía ataduras visuales y constantes rígidas:
+    1. `const CUT=8`: Limitaba el cálculo acumulado (`ytd`) y el gráfico mensual SVG (`renderMonth`) a los primeros 8 meses (Ene–Ago), sombreando Septiembre y Octubre como "Proyección" y ocultando las barras reales de Octubre 2026.
+    2. Etiquetas hardcodeadas en `renderCost` y `renderFact`: Decían literalmente *"Información actualizada al 1 de octubre de 2026"*, *"Real ene–ago"* y *"Forecast ene–ago"*.
+    3. Metadatos de libros locales en `PROJ_DATES_META`: Apuntaban a archivos de fecha `20260929` y fecha de corte `01-Oct-2026`.
+    4. Encabezado principal del tablero: Mostraba `Act. Financiera: 01-Oct-2026 (Archivos locales)`.
+
+* **Soluciones Implementadas:**
+  - **Función Dinámica de Corte Real (`getProjCut`):** Se implementó `const getProjCut = p => { ... }` que evalúa dinámicamente hasta qué mes tiene ejecución real cada proyecto:
+    - Proyectos con libro a Octubre 2026 (419, 421, 453, 456): su corte dinámico es **mes 10 (Octubre)**, dibujando las barras reales de Septiembre y Octubre, y proyectando únicamente Noviembre y Diciembre.
+    - Proyectos con corte a Septiembre (348, 397): corte en mes 9.
+    - Proyectos con corte a Agosto (005, POS): corte en mes 8.
+  - **Actualización de Metadatos de Libros `20261109`:**
+    - Encabezado general: `Act. Financiera: 09-Nov-2026 (Corte mensual Octubre 2026 · Libros 09-Nov-2026)`.
+    - 419: `finDate: "09-Nov-2026"`, `finFile: "Indicadores_419_V11 20261109.xlsx · 419_Resumen 20261109.xlsx (Corte Oct-2026)"`.
+    - 421: `finDate: "09-Nov-2026"`, `finFile: "IndicadoresBalu 20261109.xlsx (Corte Oct-2026)"`.
+    - 453: `finDate: "09-Nov-2026"`, `finFile: "Indicadores_CPE 20261109.xlsx (Corte Oct-2026)"`.
+    - 456: `finDate: "09-Nov-2026"`, `finFile: "Indicadores456 20261109.xlsx (Corte Oct-2026)"`.
+  - **Textos Reactivos en Pestañas "Costos" y "Facturación":**
+    - Subtítulos dinámicos: *"Información actualizada al 09 de noviembre de 2026 (Corte mensual Octubre 2026)"*.
+    - Indicadores del gráfico mensual: `Real ene–oct` y `Forecast ene–oct`.
+    - Leyenda de proyección: `Millones COP · real cerrado ene–oct · nov–dic proyección`.
+  - **Actualización en Pestaña "Costo Personal" (`team`):**
+    - Fuentes actualizadas a los libros `20261109` y periodos ajustados a `Octubre 2026`.
+
+* **Sincronización y Publicación:**
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
+  - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_163716.html`.
+  - Sincronización en las 4 rutas espejo y despliegue a producción en GitHub Pages y Vercel (`commit b2c696c`).
