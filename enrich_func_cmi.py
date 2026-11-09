@@ -29,7 +29,8 @@ EI_453_MAP = {
     "10. transversal": (None, "TRANSVERSAL"),
     "13. aprobado por cliente": (0.20, "REQUERIMIENTOS"),
     "15. en desarrollo": (0.50, "DESARROLLO"),
-    "16. ajustes": (0.65, "DESARROLLO"),
+    "16. ajustes": (0.40, "DESARROLLO"),
+    "16. ajustes desarrollo": (0.40, "DESARROLLO"),
     "17. ejecución pruebas qa": (0.80, "QA"),
     "17. ejecución pruebas": (0.80, "QA"),
     "18. despliegue qa a uat": (0.90, "UAT"),
@@ -69,7 +70,7 @@ def calc_cmi_project(epics, features, cod):
     feat_tot = len(feats)
     feat_ent = sum(1 for f in feats if (f.get('pct') or 0) >= 0.999)
 
-    # 1. 397: Medición oficial acordada sobre 57 Épicas globales (52 al 100%)
+    # 1. 397: Medición oficial acordada sobre 57 Épicas globales (52 al 100%) con desglose de 233 Features
     if cod == '397':
         return {
             'tactico': 0.9706,
@@ -84,7 +85,6 @@ def calc_cmi_project(epics, features, cod):
         }
 
     # 2. 419: Depósitos Judiciales - Excepción PMO: mantener archivo local (80 entregadas / 466 entregables)
-    # Excluye la épica de seguimiento interno 419DPJ_EP_LT_Seguimiento_Transversal_Linktic y sus 5 funcionalidades
     if cod == '419':
         return {
             'tactico': 0.1195777351,
@@ -98,50 +98,61 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 80, '75': 0, '50': 40, '20': 18, '0': 328}
         }
 
-    # 3. 421: BALÚ Frentes contractuales: Afiliaciones y Novedades (0.5), Recaudo y Cartera (0.2)
+    # 3. 421: BALÚ - Medición oficial por Funcionalidades de Producto (2 frentes de cara a producto: Afiliaciones y Recaudo)
+    # Excluye funcionalidades atadas a 'Funcionalidades Transversales' y 'Automatización_QA Balu' que no corresponden a producto
     if cod == '421':
+        excluded_epics = ['funcionalidades transversales', 'automatización_qa balu', 'automatizacion_qa balu']
+        prod_feats = [
+            f for f in feats
+            if not any(ex in str(f.get('ept') or '').strip().lower() for ex in excluded_epics)
+        ]
+        b = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
+        vals = []
+        for f in prod_feats:
+            v = escala_pmo(f.get('pct', 0), f.get('e', ''))
+            vals.append(v)
+            if v == 1.0:
+                b['100'] += 1
+            elif v == 0.75:
+                b['75'] += 1
+            elif v == 0.50:
+                b['50'] += 1
+            elif v == 0.20:
+                b['20'] += 1
+            else:
+                b['0'] += 1
+        n_prod = len(prod_feats)  # 56
+        d_prod = b['100']  # 12
+        tact = round(sum(vals) / n_prod, 4) if n_prod else 0.0  # 0.4821
+        strat = round(d_prod / n_prod, 4) if n_prod else 0.0  # 0.2143
         return {
-            'tactico': 0.3500,
-            'estrategico': 0.0,
-            'n': 2,
-            'd': 0,
-            'u': 'frentes',
-            'isEpics': True,
-            'feat_total': feat_tot,
-            'feat_ent': feat_ent,
-            'buckets': {'100': 0, '75': 0, '50': 1, '20': 1, '0': 0}
+            'tactico': tact,
+            'estrategico': strat,
+            'n': n_prod,
+            'd': d_prod,
+            'u': 'funcionalidades',
+            'isEpics': False,
+            'feat_total': n_prod,
+            'feat_ent': d_prod,
+            'buckets': b
         }
 
-    # 4. 348: SGDEA Acueducto - 10 Épicas en Azure (1 al 100%: Assesment de Madurez)
-    if cod == '348':
-        return {
-            'tactico': 0.2529,
-            'estrategico': 0.1000,
-            'n': 10,
-            'd': 1,
-            'u': 'épicas',
-            'isEpics': True,
-            'feat_total': feat_tot,
-            'feat_ent': feat_ent,
-            'buckets': {'100': 1, '75': 0, '50': 2, '20': 4, '0': 3}
-        }
-
-    # 5. 416: Positiva Core 416 - 2 Épicas / Ramos (Vida Individual y Accidentes Personales)
+    # 4. 416: Positiva Core 416 - Excepción oficial: Manejar por Épicas pero nombradas como RAMOS
     if cod == '416':
         return {
             'tactico': 0.2900,
             'estrategico': 0.0,
             'n': 2,
             'd': 0,
-            'u': 'épicas',
+            'u': 'ramos',
             'isEpics': True,
+            'isRamos': True,
             'feat_total': feat_tot,
             'feat_ent': feat_ent,
             'buckets': {'100': 0, '75': 0, '50': 0, '20': 0, '0': 2}
         }
 
-    # 6. 456: Innovación Aeronáutica Civil - Supervisión contractual (6 hitos: 1 al 100%, 1 al 50% -> 24% táctico, 16,67% estratégico)
-    # integrada con captura directa de Azure DevOps (1 Épica, 4 Funcionalidades, 16 HUs)
+    # 5. 456: Innovación Aeronáutica Civil - Supervisión contractual (6 hitos: 1 al 100%, 1 al 50% -> 24% táctico, 16,67% estratégico)
     if cod == '456':
         hu_tot = sum((f.get('n', 0) or 0) for f in feats)
         pct_az = round(sum((f.get('pct', 0) or 0) * (f.get('n', 0) or 0) for f in feats) / hu_tot, 4) if hu_tot else 0.0
@@ -160,16 +171,16 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 1, '75': 0, '50': 1, '20': 0, '0': 4}
         }
 
-    # 6. Cálculo general sobre Épicas válidas en Azure DevOps (incluye 004, 355, 384, 419-DEP, 419-RAMA, 457, etc.)
+    # 6. Cálculo general sobre FUNCIONALIDADES (Features) activas en Azure DevOps (005, 355, 384, 348, 420, 457, 020, 461, etc.)
     buckets = {1.0: 0, 0.75: 0, 0.5: 0, 0.2: 0, 0.0: 0}
     scores = []
-    for e in valid_epics:
-        pct = e.get('pct', 0.0)
-        sc = escala_pmo(pct, e.get('e', ''))
+    for f in feats:
+        pct = f.get('pct', 0.0)
+        sc = escala_pmo(pct, f.get('e', ''))
         buckets[sc] += 1
         scores.append(sc)
 
-    n = len(valid_epics)
+    n = len(feats)
     d = buckets[1.0]
     av = sum(scores) / n if n else 0.0
     ent = d / n if n else 0.0
@@ -179,8 +190,8 @@ def calc_cmi_project(epics, features, cod):
         'estrategico': round(ent, 4),
         'n': n,
         'd': d,
-        'u': 'épicas',
-        'isEpics': True,
+        'u': 'funcionalidades',
+        'isEpics': False,
         'feat_total': feat_tot,
         'feat_ent': feat_ent,
         'buckets': {
@@ -191,7 +202,6 @@ def calc_cmi_project(epics, features, cod):
             '0': buckets[0.0]
         }
     }
-
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -324,11 +334,65 @@ def main():
                 cu['release'] = it_fechas[it_k]['release']
                 cu['fecha_entrega'] = it_fechas[it_k]['fecha']
 
+        # Medición oficial PMO para 453 frente a FOCOS:
+        # Indicador Estratégico: focos entregados o cerrados (al 100%) sobre total focos (4 focos: A, B, C, D)
+        # Indicador Táctico: avance de cada foco evaluado bajo la Escala CMI por entregable
+        focos_list = cpe_data.get('focos', [])
+        n_focos = len(focos_list) if focos_list else 4
+        focos_scores = []
+        b_focos = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
+        d_focos = 0
+
+        total_exito_cu = 0.0
+        for f in focos_list:
+            fk = f.get('k')
+            peso_str = (f.get('hito') or {}).get('peso', '0%')
+            peso_num = float(peso_str.replace('%', '')) / 100.0 if '%' in peso_str else float(f.get('peso') or 0.0)
+            f['peso_num'] = peso_num
+            pct_cu_val = f.get('pct_cu')
+            aporte_cu = round(peso_num * pct_cu_val, 4) if (pct_cu_val is not None) else 0.0
+            f['aporte_cu'] = aporte_cu
+            total_exito_cu += aporte_cu
+
+            pct_f = f.get('pct_cu')
+            if pct_f is None:
+                pct_f = f.get('pct')
+            sc = escala_pmo(pct_f)
+            f['escala_cmi'] = sc
+            focos_scores.append(sc)
+            if sc == 1.0:
+                b_focos['100'] += 1
+                d_focos += 1
+            elif sc == 0.75:
+                b_focos['75'] += 1
+            elif sc == 0.50:
+                b_focos['50'] += 1
+            elif sc == 0.20:
+                b_focos['20'] += 1
+            else:
+                b_focos['0'] += 1
+
+        av_focos = round(sum(focos_scores) / n_focos, 4) if n_focos else 0.0
+        ent_focos = round(d_focos / n_focos, 4) if n_focos else 0.0
+
+        cpe_data['cmi'] = {
+            'tactico': av_focos,
+            'estrategico': ent_focos,
+            'exito': round(total_exito_cu, 4),
+            'n': n_focos,
+            'd': d_focos,
+            'u': 'focos',
+            'isFocos': True,
+            'feat_total': len(cus_list),
+            'feat_ent': sum(1 for c in cus_list if (c.get('pct_cu') or 0) >= 0.999 or c.get('ei') == '19. Entregado'),
+            'buckets': b_focos
+        }
+
+        # Mantener métricas complementarias de Casos de Uso en KPI
         medibles = [c for c in cus_list if c.get('pct_cu') is not None]
         n_cu = len(medibles)
         d_cu = sum(1 for c in medibles if c.get('ei') == '19. Entregado' or c.get('pct_cu') >= 0.999)
         av_cu = round(sum(c['pct_cu'] for c in medibles) / n_cu, 4) if n_cu else 0.0
-        ent_cu = round(d_cu / n_cu, 4) if n_cu else 0.0
 
         k = cpe_data.setdefault('kpi', {})
         k['n_cu'] = len(cus_list)
@@ -336,25 +400,18 @@ def main():
         k['cu_entregados'] = d_cu
         k['pct_cu_global'] = av_cu
 
-        cpe_data['cmi'] = {
-            'tactico': av_cu,
-            'estrategico': ent_cu,
-            'n': n_cu,
-            'd': d_cu,
-            'u': 'casos de uso',
-            'buckets': {
-                '100': d_cu,
-                '75': sum(1 for c in medibles if 0.85 <= c['pct_cu'] < 0.999),
-                '50': sum(1 for c in medibles if 0.80 <= c['pct_cu'] < 0.85),
-                '20': sum(1 for c in medibles if 0.50 <= c['pct_cu'] < 0.80),
-                '0': sum(1 for c in medibles if c['pct_cu'] < 0.50)
-            }
-        }
-
         with open(cpe_file, 'w', encoding='utf-8') as f:
             json.dump(cpe_data, f, ensure_ascii=False, indent=2)
 
-        print(f"[453 (CU)] Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_cu}/{n_cu} Casos de Uso medibles de {len(cus_list)} totales)")
+        index_data.setdefault('proyectos', {})['453'] = {
+            'corte': cpe_data.get('corte', '2026-11-06'),
+            'archivo': '453 CPE (Focos y Casos de Uso)',
+            'cmi': cpe_data['cmi']
+        }
+        with open(index_file, 'w', encoding='utf-8') as f:
+            json.dump(index_data, f, ensure_ascii=False, indent=2)
+
+        print(f"[453 (Focos)] Táctico: {cpe_data['cmi']['tactico']*100:6.2f}% | Estratégico: {cpe_data['cmi']['estrategico']*100:6.2f}% ({d_focos}/{n_focos} Focos cerrados · {len(cus_list)} CUs)")
 
     # 5. Sincronizar espejos
     home = str(Path.home())
