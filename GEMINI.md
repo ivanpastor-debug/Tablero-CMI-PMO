@@ -1332,3 +1332,53 @@ enderCrono421Collapsible):**
     3. `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html`
     4. `C:\Users\IvanDarioPastorParra\Downloads\Tablero_CMI_PMO.html`
   - Publicación y despliegue a producción completado en GitHub Pages y Vercel (`commit ed4d1cb`).
+
+
+---
+
+## 52. Registro de Implementación de la Visual Espejo Protegida por Key y Master Key PMO (09-nov-2026)
+
+* **Respaldo Local Previo:**
+  - Copia de seguridad íntegra generada y guardada en `Histórico tablero/Tablero_CMI_PMO_20261109_171657.html`.
+
+* **Arquitectura de Doble Visual:**
+  1. **Visual Administradora (`index.html`):**
+     - Mantiene el 100% de la información operativa, estratégica y financiera del portafolio.
+     - Incorpora el botón ejecutivo en el header: `🛡️ Visual Espejo (Clientes)` que enlaza a `consulta.html`.
+  2. **Visual Espejo (`consulta.html`):**
+     - Portal de acceso seguro para clientes y líderes técnicos.
+     - Protegido mediante pantalla de autenticación con validación criptográfica **SHA-256 en el navegador** (`crypto.subtle`).
+     - Al ingresar la clave de un proyecto específico (ej. `DEP-419-JUDICIAL`):
+       - Oculta el portafolio consolidado, gráficos globales y datos de los demás proyectos.
+       - Aísla la memoria a ese proyecto y muestra directamente su ficha operativa CMI, Azure DevOps y finanzas específicas.
+       - Muestra el banner superior: `🛡️ Consulta Exclusiva: [Nombre Proyecto]` con botón `🚪 Cerrar Sesión`.
+       - Bloquea cualquier intento de navegación hacia proyectos no autorizados.
+     - Al ingresar la **Master Key PMO (`PMO-MASTER-2026*`)**:
+       - Desbloquea todos los proyectos y el portafolio completo en modo administrador (`👑 Modo Administrador PMO`).
+
+* **Directorio de Claves Predeterminadas (`DIRECTORIO_CLAVES_PMO.md`):**
+  - **Master Key PMO:** `PMO-MASTER-2026*`
+  - **005 (Positiva SGDEA):** `POS-005-SGDEA`
+  - **POS (Core Positiva Consolidado):** `POS-CORE-GLOBAL`
+  - **355 (Positiva Core 355):** `POS-355-CORE`
+  - **416 (Positiva Core 416):** `POS-416-CORE`
+  - **384 (Core Fiduprevisora):** `FIDU-384-CORE`
+  - **419 (Depósitos Judiciales):** `DEP-419-JUDICIAL`
+  - **421 (Balú):** `BALU-421-RECAUDO`
+  - **453 (Monitoreo CPE):** `CPE-453-MONITOR`
+  - **456 (Aeronáutica Civil):** `AERO-456-INNOV`
+  - **348 (SGDEA Acueducto):** `EAAB-348-SGDEA`
+  - **397 (Core Andina):** `ANDI-397-CORE`
+  - **457 (Portales La Equidad):** `EQUI-457-PORTAL`
+  - **020 (Analítica Positiva):** `POS-020-DATA`
+  - **461 (Cuentas Claras CNE):** `CNE-461-CUENTAS`
+  - **420 (Pólizas de Salud Positiva):** `POS-420-SALUD`
+
+* **Sincronización y Despliegue en Producción:**
+  - Archivos sincronizados en las 4 rutas espejo:
+    1. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\index.html` (Administradora)
+    2. `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\consulta.html` (Visual Espejo)
+    3. `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Tablero_CMI_PMO.html` y `consulta.html`
+    4. `C:\Users\IvanDarioPastorParra\Downloads\Tablero_CMI_PMO.html` y `consulta.html`
+  - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores de regex).
+  - Publicación a producción en GitHub Pages y Vercel.
