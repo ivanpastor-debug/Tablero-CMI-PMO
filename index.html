@@ -1434,31 +1434,7 @@ function cmiOverviewHTML(p){
   const exitoBoxHTML = is456 ? `
     <div class="cmi-exito-box" style="margin-top:0">
       <div style="display:flex;justify-content:space-between;align-items:center">
-        <span class="cmi-kicker">📊 Conciliación Indicador Táctico (Avance Ponderado)</span>
-        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
-      </div>
-      <div class="cmi-exito-kpis" style="margin-bottom:0">
-        <div class="cmi-exito-kpi real">
-          <span>Real a la fecha</span>
-          <strong style="color:#059669">24,00%</strong>
-          <small>18% E1 (100%) + 12% E2 (50%)</small>
-        </div>
-        <div class="cmi-exito-kpi meta">
-          <span>Meta Proyectada a la fecha</span>
-          <strong style="color:#b45309">30,00%</strong>
-          <small>Fase I debida al 23-Sep (30%)</small>
-        </div>
-        <div class="cmi-exito-kpi gap">
-          <span>Brecha de Cumplimiento</span>
-          <strong style="color:#dc2626">-6,00 pp</strong>
-          <small>🔴 50% pendiente en Entregable II</small>
-        </div>
-      </div>
-    </div>
-    <div class="cmi-exito-box" style="margin-top:0">
-      <div style="display:flex;justify-content:space-between;align-items:center">
         <span class="cmi-kicker">⏱️ Conciliación Indicador Estratégico (Hitos Contractuales)</span>
-        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
       </div>
       <div class="cmi-exito-kpis" style="margin-bottom:0">
         <div class="cmi-exito-kpi real">
@@ -1481,7 +1457,6 @@ function cmiOverviewHTML(p){
     <div class="cmi-exito-box" style="margin-top:0">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <span class="cmi-kicker">🎯 Conciliación Indicador de Éxito (Ponderación Contractual)</span>
-        <span class="tag" style="background:#fff3dc;color:#986316;border:1px solid #fed7aa;font-weight:700">Corte al 09-Nov-2026</span>
       </div>
       <div class="cmi-exito-kpis" style="margin-bottom:0">
         <div class="cmi-exito-kpi real">
@@ -1594,7 +1569,30 @@ function cmiOverviewHTML(p){
             <div style="margin-top:6px;padding-top:6px;border-top:1px dashed #edf1f6;display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:9.5px;color:#7a899c">
               <span>Meta proyectada a la fecha: <b style="color:#18395f">30,00%</b></span>
               <span class="cmi-pill warn" style="font-size:9px;padding:2px 8px;font-weight:800">Brecha: -6,00 pp</span>
-            </div>` : ""}
+            </div>
+            <details class="cmi-sub-acc" style="margin-top:8px;padding-top:6px;border-top:1px dashed #edf1f6" ontoggle="const t=this.querySelector('.cmi-sub-tag');if(t)t.textContent=this.open?'−':'+'">
+              <summary style="cursor:pointer;font-size:9.5px;font-weight:700;color:var(--ink-2);display:flex;align-items:center;justify-content:space-between;list-style:none;user-select:none" title="Desplegar discriminado de conciliación táctica">
+                <span style="display:flex;align-items:center;gap:5px"><i style="font-style:normal;color:var(--accent)">📊</i> Conciliación indicador táctico</span>
+                <span class="cmi-sub-tag" style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:4px;background:var(--surface-2);border:1px solid var(--line);font-size:12px;font-weight:800;color:var(--accent);line-height:1">+</span>
+              </summary>
+              <div class="cmi-exito-kpis" style="margin-top:8px;margin-bottom:0">
+                <div class="cmi-exito-kpi real">
+                  <span>Real a la fecha</span>
+                  <strong style="color:#059669">24,00%</strong>
+                  <small>18% E1 (100%) + 12% E2 (50%)</small>
+                </div>
+                <div class="cmi-exito-kpi meta">
+                  <span>Meta a la fecha</span>
+                  <strong style="color:#b45309">30,00%</strong>
+                  <small>Fase I debida al 23-Sep (30%)</small>
+                </div>
+                <div class="cmi-exito-kpi gap">
+                  <span>Brecha de Cumplimiento</span>
+                  <strong style="color:#dc2626">-6,00 pp</strong>
+                  <small>🔴 50% pendiente en Entregable II</small>
+                </div>
+              </div>
+            </details>` : ""}
           </article>
           ${is421 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
