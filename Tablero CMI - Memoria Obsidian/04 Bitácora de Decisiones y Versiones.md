@@ -237,3 +237,17 @@ ightarrow$ 11,96% táctico, 17,17% estratégico).
   - Actualizadas las fechas en el encabezado general (`Act. Operativa: 09-Nov-2026`) y en los metadatos de fuentes de cada proyecto (`PROJ_DATES_META` y `PROJ_CALLOUT_META`).
   - Validación con `ACTUALIZAR.py --dry-run` exitosa (0 errores de regex).
   - Sincronización en las 4 rutas espejo y publicación automática en producción vía GitHub Pages (`commit 85cdd4b`).
+
+- **Ajuste de Release 3 Vencido (07-Nov-2026) en Cronograma Balú (421):**
+  - **Causa identificada:** La variable `cutoff421` estaba fijada en `2026-11-06`, por lo que el Release 3 (cierre planeado `2026-11-07`) quedaba fuera del filtro de releases debidos a la fecha (`passed421`).
+  - **Corrección dinámica:** Se actualizó `cutoff421` al corte operativo actual (`2026-11-09`), enlazado dinámicamente con `FUNC.proyectos["421"].corte` para que los futuros cortes absorban automáticamente los hitos cumplidos o vencidos.
+  - **Redimensión del denominador (Meta Proyectada):** Pasa de **20,00%** (Releases 1 y 2) a **30,00%** (Releases 1, 2 y 3 debidos a la fecha, 10% c/u).
+  - **Recálculo de avance real y brecha:**
+    - Real Entregado en cronograma: sube a **25,13%** (R1 8,85% + R2 8,64% + R3 7,64%).
+    - Brecha de cumplimiento de cronograma: pasa de -2,51 pp a **-4,87 pp** (25,13% - 30,00%).
+    - Indicador de éxito 421: sube a **41,75%** (Táctico 30% [14,46%] + RQC 40% [19,75%] + Cronograma 30% [7,54%]).
+  - **Marcado semafórico en tabla de Desviación del Cronograma (`tbl-crono-421`):**
+    - Release 3 marcado como vencido/incumplido con semáforo crítico `st crit` (fondo rojo `rgba(239,68,68,0.05)`, fecha en rojo `#dc2626`, desviación `+1 d hábil` y `+2 d cal`, estado `No entregado` en rojo crítico).
+    - Release 4 ajustado a `Plazo a favor (4 d hábiles)` / `Faltan 5 d`.
+    - Fila total y resumen inferior sincronizados a Meta 30,00%, Real 25,13% y Brecha -4,87 pp.
+  - Publicado en producción en GitHub Pages (`commit de15219`).
