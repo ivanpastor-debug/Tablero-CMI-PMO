@@ -255,20 +255,23 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.15,
-    "estrategico": 0.0,
-    "n": 4,
-    "d": 0,
-    "u": "funcionalidades",
+    "tactico": 0.24,
+    "estrategico": 0.1667,
+    "n": 6,
+    "d": 1,
+    "u": "entregables",
     "isEpics": false,
     "feat_total": 4,
     "feat_ent": 0,
+    "epic_total": 1,
+    "hu_total": 13,
+    "pct_azure": 0.4769,
     "buckets": {
-      "100": 0,
+      "100": 1,
       "75": 0,
-      "50": 0,
-      "20": 3,
-      "0": 1
+      "50": 1,
+      "20": 0,
+      "0": 4
     }
   }
 }

@@ -801,7 +801,7 @@ const P=[
   hitosNote:"Facturación mensual $4.219 M · se radica entre 2 y 7 semanas después de la fecha planeada",
   hitos:[["Ene","Plan 23 feb → real 13 abr",4219.5,4219.5,"Facturado · atrasado"],["Feb","Plan 23 mar → real 23 abr · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Mar","Plan 23 abr → real 21 may · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["Abr","Plan 23 may → real 18 jun · ANS −$157 M",4219.5,4062.8,"96,29% · atrasado"],["May","Plan 23 jun → real 17 jul",4219.5,4219.5,"Facturado · atrasado"],["Jun","Plan 23 jul → real 5 ago",4219.5,4219.5,"Facturado · atrasado"],["Jul","Plan 23 ago",4219.5,0,"Pendiente"],["Ago","Plan 23 sep",4219.5,0,"Pendiente"]],
   diag:["warn","Mayor contrato del portafolio ($100.945 M): 34,36% facturado, 93,90% de lo facturado recaudado y costo ene–ago en 97,79% del forecast. Operativamente, ninguno de los 2 frentes contractuales está completo: Afiliaciones y Novedades en curso >80% (0,5) y Recaudo y Cartera entre 50–80% (0,2); avance CMI 35,00%. La facturación mensual se radica tarde y julio–agosto siguen pendientes. Con el avance CMI (35,00%) el CPI forecast es 0,71: cada peso gastado genera 0,71 de valor."]},
- {id:"456",name:"456 - PROYECTO INNOVACION AEREONAUTICA CIVIL",sub:"Aeronáutica Civil · Lab de Innovación",op:{av:0.1500,ent:0.0000,n:4,d:0,u:"funcionalidades",isAzure:true,featTotal:4,featEnt:0},
+ {id:"456",name:"456 - PROYECTO INNOVACION AEREONAUTICA CIVIL",sub:"Aeronáutica Civil · Lab de Innovación",op:{av:0.24,ent:0.1666666667,n:6,d:1,u:"entregables"},
   m:[[0,0,0],[0,0,0],[0,0,9.8],[54.8,33.1,25.0],[114.0,63.3,49.6],[256.3,60.0,59.2],[106.5,62.2,58.9],[60.8,76.2,70.7],[10.9,72.7,73.5],[10.9,75.2,76.6],[10.9,74.4,0],[10.9,199.9,0]],
   cpiP:0.3663,cpiF:0.4437,icff:1.6554,avFin:0.24,ppto:647.0,fcst:783.6,
   contrato:1581.6,factPlan:1882.1,fact:284.7,cumplFact:0.1513,recaudo:296.9,cumplRec:1.0,brechaRec:0.0,
@@ -1053,7 +1053,7 @@ const PROJ_CALLOUT_META = {
   "419": { tag: "Local · 466 Func.", title: "419- DEPOSITOS JUDICIALES", sub: "195 Funcionalidades en Azure", ent: "63 en prod.", pct: "32,3% cerrado", icon: "🗂" },
   "453": { tag: "Azure · 76 CUs", title: "453 - PROYECTO MONITOREO DE EQUIPOS CPE 2026", sub: "76 Casos de Uso en Azure DevOps · 599 HUs atadas", ent: "29 CUs al 100%", pct: "39,8% éxito · 40,0% táctico", icon: "🎯" },
   "421": { tag: "Azure · 56 Func.", title: "421 - PROYECTO BALÚ", sub: "56 Funcionalidades de Producto (2 Frentes)", ent: "12 en prod.", pct: "21,4% cerrado", icon: "🗂" },
-  "456": { tag: "Azure · 4 Func.", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "4 Funcionalidades en Azure DevOps · 13 HUs atadas", ent: "0 en prod.", pct: "Táctico: 15,0% · Estratégico: 0,0%", icon: "🗂" },
+  "456": { tag: "Contractual · 6 Hitos", title: "456 - PROYECTO INNOVACION AEREONAUTICA CIVIL", sub: "1 de 6 hitos formalizados (Meta a la fecha: 2/6 · 33,3% · Brecha: -16,7 pp)", ent: "1/6 formalizado", pct: "Táctico: 24,0% · Meta: 30,0% · Brecha: -6,0 pp", icon: "⏱️" },
   "348": { tag: "Azure · 115 Func.", title: "348 - PROYECTO SGDEA ACUEDUCTO", sub: "115 Funcionalidades en Azure", ent: "27 en prod.", pct: "23,5% cerrado", icon: "🗂" },
   "397": { tag: "Azure · 57 Épicas", title: "397 - PROYECTO CORE ANDINA", sub: "233 Funcionalidades en Azure", ent: "228 en prod.", pct: "97,9% cerrado", icon: "🗂" },
   "420": { tag: "Azure · 57 Func.", title: "420 - PROYECTO PÓLIZAS DE SALUD", sub: "57 Funcionalidades en Azure", ent: "35 en prod.", pct: "61,4% cerrado", icon: "🗂" },
@@ -1331,7 +1331,7 @@ function cmiOverviewHTML(p){
   const cls=v=>v==null||isNaN(v)?"na":v>=.7?"good":v>=.4?"warn":"crit";
   const state=v=>v==null||isNaN(v)?"Sin dato":v>=.7?"Favorable":v>=.4?"En seguimiento":"Requiere atención";
 
-  const is456 = false; // 456 se mide ahora sobre funcionalidades de Azure DevOps
+  const is456 = (p.id === "456");
   const is421 = (p.id === "421");
   const is419 = (p.id === "419");
   const is453 = (p.id === "453");
@@ -3815,7 +3815,7 @@ function applyLiveFuncCmi() {
             d: c.d,
             u: c.u || "épicas",
             cmi: c,
-            isAzure: p.id !== "419"
+            isAzure: p.id !== "419" && p.id !== "456"
           };
         }
       }
@@ -4258,11 +4258,11 @@ function funcCard(cod) {
         <div>
           <div style="display:flex;align-items:center;gap:8px">
             <span style="font-size:15px">🎯</span>
-            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
+            <b style="font-size:13px;color:var(--ink)">Insumo CMI Oficial PMO · ${cod==="419"?"Medición Archivo Local PMO (466 Entregables)":cod==="456"?"Supervisión Contractual (6 Hitos) + Captura Azure DevOps":(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Medición por Épicas / Frentes (${cmi.n} ${cmi.u})`:"Indicadores Táctico y Estratégico"}</b>
             <span class="tag" style="background:var(--surface-2);border:1px solid var(--line);font-size:10px;font-weight:700;color:var(--good)">${cod==="419"?"Archivo Local PMO":cod==="456"?"Contractual + Azure DevOps":"Azure DevOps en vivo"}</span>
           </div>
           <p class="hint" style="margin:3px 0 0 24px">
-            ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (80 certificados) con desglose en Azure de <b>${cmi.feat_total||194} funcionalidades</b>`:cod==="456"?`Medición contractual sobre <b>6 entregables</b> (1 al 100%, 1 al 50%) con captura en vivo de <b>${cmi.epic_total||1} épica</b>, <b>${cmi.feat_total||4} funcionalidades</b> y <b>${cmi.hu_total||16} HU</b> en Azure DevOps`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b>`}
+            ${cod==="419"?`Medición contractual sobre <b>466 entregables</b> (80 certificados) con desglose en Azure de <b>${cmi.feat_total||194} funcionalidades</b>`:cod==="456"?`Medición contractual sobre <b>6 entregables</b> (1 al 100%, 1 al 50%) con captura en vivo de <b>${cmi.epic_total||1} épica</b>, <b>${cmi.feat_total||4} funcionalidades</b> y <b>${cmi.hu_total||16} HU</b> en Azure DevOps`:(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Ponderación de <b>${cmi.n}</b> ${cmi.u} evaluadas bajo la <b>Escala CMI por entregable</b> con desglose de <b>${cmi.feat_total} funcionalidades</b> en Azure`:`Ponderación de <b>${cmi.n}</b> ${cmi.u||"funcionalidades"} evaluadas bajo la <b>Escala CMI por entregable</b> (${cmi.d} cerradas al 100%)`}
           </p>
         </div>
         
