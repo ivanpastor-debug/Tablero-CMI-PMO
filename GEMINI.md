@@ -1259,3 +1259,26 @@ enderCrono421Collapsible):**
   - Verificación exitosa con `python ACTUALIZAR.py --dry-run` (0 errores).
   - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_163716.html`.
   - Sincronización en las 4 rutas espejo y despliegue a producción en GitHub Pages y Vercel (`commit b2c696c`).
+
+---
+
+## 50. Registro de Restauración de Indicadores Operativos Contractuales en Proyecto 456 (Aeronáutica Civil) (09-nov-2026)
+
+* **Alcance de la Restauración:**
+  - Por solicitud del usuario, se restauraron los **indicadores operativos** del proyecto **456 (Aeronáutica Civil)** a su modelo previo de **Supervisión Contractual por Hitos**, conservando intacta toda la actualización de la información **Financiera** con corte a Octubre 2026 (`Indicadores456 20261109.xlsx`):
+    - **Indicador Táctico:** **24,00%** (avance ponderado según pesos contractuales de las 3 fases: 18% × 1 + 12% × 0,5).
+    - **Indicador Estratégico:** **16,67%** (**1 de 6 entregables** formalizados al 100% · Meta a la fecha: 2/6 · 33,33% · Brecha: -16,67 pp).
+    - **Indicador de Éxito Contractual:** **18,00%** (Meta al corte: 30,00% · Brecha: -12,00 pp).
+    - **Identidad Visual:**
+      - Insignia (badge): **`Contractual · 6 Hitos`**.
+      - Callout ejecutivo: `1 de 6 hitos formalizados (Meta a la fecha: 2/6 · 33,3% · Brecha: -16,7 pp) · Táctico: 24,0% · Meta: 30,0% · Brecha: -6,0 pp`.
+      - Ficha y Hero Cards CMI: Reactivadas las tarjetas de supervisión contractual viva con meta proyectada a la fecha reprogramada y brecha en pp.
+      - Banner de captura Azure DevOps en la ficha: `Supervisión Contractual (6 Hitos) + Captura Azure DevOps`.
+  - **Dimensión Financiera Preservada:**
+    - Se mantiene el libro oficial `Indicadores456 20261109.xlsx`, fecha `09-Nov-2026 (Corte Octubre 2026)`, corte dinámico `getProjCut` en mes 10 (Octubre), EVM acumulado ($423,8 M), CPI ppto 0,37 / fcst 0,44, ICFF 1,66 y desglose del equipo.
+
+* **Sincronización y Publicación:**
+  - Validación con `python ACTUALIZAR.py --dry-run` exitosa (**0 errores**).
+  - Respaldo generado en `Histórico tablero/Tablero_CMI_PMO_20261109_164423.html`.
+  - Sincronización en las 4 rutas espejo y archivos de datos.
+  - Publicación y despliegue completado en GitHub Pages y Vercel (`commit 86fb741`).
