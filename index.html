@@ -1367,16 +1367,16 @@ function cmiOverviewHTML(p){
 
   // Proyecto 421 - Balú: Cronograma de 10 Releases (10% c/u) y RQC
   const RELEASES_421 = [
-    { id: 1, name: "Release 1", date: "2026-10-10", peso: 0.10, prod: 0.649, pond: 0.885, scope: "Independientes - Internos Medicina, Certificados especiales, Normalización I1" },
-    { id: 2, name: "Release 2", date: "2026-10-24", peso: 0.10, prod: 0.455, pond: 0.864, scope: "Certificados masivos (Funcionario - Empleador)" },
-    { id: 3, name: "Release 3", date: "2026-11-07", peso: 0.10, prod: 0.429, pond: 0.764, scope: "Actualizaciones sedes masivas" },
-    { id: 4, name: "Release 4", date: "2026-11-14", peso: 0.10, prod: 0.438, pond: 0.552, scope: "Recicladores, Voluntarios, Tipos de doc, Y1, E1" },
-    { id: 5, name: "Release 5", date: "2026-11-28", peso: 0.10, prod: 0.500, pond: 0.664, scope: "Carnés masivos" },
-    { id: 6, name: "Release 6", date: "2026-12-12", peso: 0.10, prod: 0.235, pond: 0.809, scope: "PPL, Gestores de paz, Cotizante 76, Norma 1641" },
-    { id: 7, name: "Release 7", date: "2027-01-23", peso: 0.10, prod: 0.433, pond: 0.707, scope: "Excepciones, Retroactivas, Liquidación, Pólizas, E2, E3" },
-    { id: 8, name: "Release 8", date: "2027-02-20", peso: 0.10, prod: 0.250, pond: 0.431, scope: "Histórico actualizaciones, Permanencias, Retiro empleador" },
-    { id: 9, name: "Release 9", date: "2027-03-06", peso: 0.10, prod: 1.000, pond: 1.000, scope: "Novedades PILA (permanentes y transitorias)" },
-    { id: 10, name: "Release 10", date: "2027-03-20", peso: 0.10, prod: 0.625, pond: 0.825, scope: "Modulo retiro independiente (análisis contratos)" }
+    { id: 1, name: "Release 1", date: "2026-10-10", peso: 0.10, prod: 0.649, pond: 0.885, scope: "AyN: Independientes - Internos Medicina ind/masivo, Certificados especiales, Normalización I1" },
+    { id: 2, name: "Release 2", date: "2026-10-24", peso: 0.10, prod: 0.455, pond: 0.864, scope: "AyN: Certificados masivos (Funcionario - Empleador)" },
+    { id: 3, name: "Release 3", date: "2026-11-07", peso: 0.10, prod: 0.429, pond: 0.764, scope: "AyN: Actualizaciones sedes masivas (Funcionario - Empleador)" },
+    { id: 4, name: "Release 4", date: "2026-11-14", peso: 0.10, prod: 0.438, pond: 0.552, scope: "AyN: Recicladores, Voluntarios, Tipos de doc, Y1, E1 · RyC: Cartera preventiva, Consulta Cotizantes/Aportantes" },
+    { id: 5, name: "Release 5", date: "2026-11-28", peso: 0.10, prod: 0.500, pond: 0.664, scope: "AyN: Carnés masivos (Funcionario - Empleador)" },
+    { id: 6, name: "Release 6", date: "2026-12-12", peso: 0.10, prod: 0.235, pond: 0.809, scope: "AyN: PPL, Gestores de paz, Cotizante 76, Norma 1641" },
+    { id: 7, name: "Release 7", date: "2027-01-23", peso: 0.10, prod: 0.433, pond: 0.707, scope: "AyN: Excepciones, Retroactivas, Liquidación, Pólizas, E2, E3 · RyC: Recobros (Marcación/Reportes), Validación PILA LOG" },
+    { id: 8, name: "Release 8", date: "2027-02-20", peso: 0.10, prod: 0.250, pond: 0.431, scope: "AyN: Histórico actualizaciones, Permanencias, Retiro empleador · RyC: Procesamiento 1% Fase 2" },
+    { id: 9, name: "Release 9", date: "2027-03-06", peso: 0.10, prod: 1.000, pond: 1.000, scope: "AyN: Novedades PILA (permanentes VSP/VPC y transitorias)" },
+    { id: 10, name: "Release 10", date: "2027-03-20", peso: 0.10, prod: 0.625, pond: 0.825, scope: "AyN: Módulo retiro independiente · RyC: No Vinculados, Constitución de mora, Estado de cuenta" }
   ];
   let cutoff421 = "2026-11-09"; // Fecha oficial de corte del cronograma (09-Nov-2026)
   if (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos && FUNC.proyectos["421"] && FUNC.proyectos["421"].corte) {
@@ -1629,7 +1629,7 @@ function cmiOverviewHTML(p){
               </div>
             </div>
             <div style="margin-top:8px;padding:6px 10px;background:var(--surface-3);border-radius:6px;font-size:11px;color:var(--muted);line-height:1.4">
-              ℹ️ <b>Nota aclaratoria:</b> El cumplimiento del cronograma se evalúa contra el archivo Excel debido a las 37 funcionalidades pendientes de correlacionar en Azure.
+              ℹ️ <b>Nota aclaratoria:</b> El cumplimiento del cronograma se evalúa contractualmente sobre los 10 Releases integrados (Afiliaciones y Novedades + Recaudo y Cartera) del archivo <code>Cronograma_BALU_2026_</code>, correlacionados contra Azure DevOps en la <i>Matriz de Correlación BALÚ 2026</i> (46 ítems entregables vs 68 features en Azure).
             </div>
           </div>` : is419 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
@@ -1770,7 +1770,7 @@ function renderCrono421Collapsible(){
           </thead>
           <tbody>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 1</b> · Independientes (Internos Medicina ind/masivo), Certificados especiales, Normalización I1</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 1</b> · AyN: Independientes (Internos Medicina ind/masivo), Certificados especiales, Normalización I1</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">10/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:88.5%;background:#059669"></i></div></div></td>
@@ -1779,7 +1779,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 2</b> · Certificados masivos (Funcionario - Empleador)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 2</b> · AyN: Certificados masivos (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">24/10/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:86.4%;background:#059669"></i></div></div></td>
@@ -1788,7 +1788,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr style="background:rgba(239,68,68,0.05)">
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · Actualizaciones sedes masivas (Funcionario - Empleador)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 3</b> · AyN: Actualizaciones sedes masivas (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center;font-weight:700;color:#dc2626">07/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:76.4%;background:#059669"></i></div></div></td>
@@ -1797,7 +1797,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st crit">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · Recicladores, Voluntarios primera respuesta, Tipos de doc, Y1, E1</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 4</b> · AyN: Recicladores, Voluntarios primera respuesta, Tipos de doc, Y1, E1 · RyC: Cartera preventiva, Consulta Cotizantes/Aportantes</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">14/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:55.2%;background:#3b82f6"></i></div></div></td>
@@ -1806,7 +1806,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · Carnés masivos (Funcionario - Empleador)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 5</b> · AyN: Carnés masivos (Funcionario - Empleador)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">28/11/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:66.4%;background:#3b82f6"></i></div></div></td>
@@ -1815,7 +1815,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 6</b> · AyN: Personas Privadas de Libertad (PPL), Gestores de paz, Cotizante 76, Norma 1641</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">12/12/2026</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:80.9%;background:#3b82f6"></i></div></div></td>
@@ -1824,7 +1824,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · Excepciones, Retroactivas, Liquidación aportes, Pólizas, E2, E3</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 7</b> · AyN: Excepciones, Retroactivas, Liquidación aportes, Pólizas, E2, E3 · RyC: Recobros (Marcación/Reportes), Validación PILA LOG</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">23/01/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:70.7%;background:#3b82f6"></i></div></div></td>
@@ -1833,7 +1833,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · Histórico de actualizaciones, Proceso permanencias, Retiro empleador</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 8</b> · AyN: Histórico de actualizaciones, Proceso permanencias, Retiro empleador · RyC: Procesamiento 1% Fase 2</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">20/02/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:43.1%;background:#3b82f6"></i></div></div></td>
@@ -1842,7 +1842,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · Novedades PILA (permanentes VSP/VPC y transitorias)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 9</b> · AyN: Novedades PILA (permanentes VSP/VPC y transitorias)</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">06/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:100%;background:#059669"></i></div></div></td>
@@ -1851,7 +1851,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st good">Entregado</span></td>
             </tr>
             <tr>
-              <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · Modulo retiro independiente (análisis finalización contratos)</td>
+              <td class="col-ent">&nbsp;&nbsp;<b>Release 10</b> · AyN: Modulo retiro independiente (análisis finalización contratos) · RyC: No Vinculados, Constitución de mora, Estado de cuenta</td>
               <td class="col-peso" style="text-align:center">10%</td>
               <td class="col-date" style="text-align:center">20/03/2027</td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:7px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:82.5%;background:#059669"></i></div></div></td>
@@ -1860,7 +1860,7 @@ function renderCrono421Collapsible(){
               <td class="col-st" style="text-align:center"><span class="st warn">No entregado</span></td>
             </tr>
             <tr class="tot" style="border-top:2px solid var(--line);background:var(--surface-2)">
-              <td class="col-ent"><b>Total Cronograma Afiliaciones y Novedades (10 Releases)</b></td>
+              <td class="col-ent"><b>Total Cronograma BALÚ (10 Releases Integrados · Afiliaciones y Novedades + Recaudo y Cartera)</b></td>
               <td class="col-peso" style="text-align:center"><b>100%</b></td>
               <td class="col-date" style="text-align:center"><b>20/03/2027</b></td>
               <td class="col-bar"><div class="bars" style="width:100%"><div style="height:8px;background:var(--line);border-radius:4px;overflow:hidden"><i style="display:block;height:100%;width:75.01%;background:#8a69c7"></i></div></div></td>
@@ -1876,6 +1876,7 @@ function renderCrono421Collapsible(){
         <span><b>Real Logrado:</b> 25,13% (Ponderado de Releases)</span>
         <span><b>Brecha de Cumplimiento:</b> <b style="color:#dc2626">-4,87 pp</b></span>
         <span><b>Releases Formalizados:</b> 1 de 10 al 100% (Release 9)</span>
+        <span><b>Fuente de Medición:</b> Cronograma_BALU_2026_.xlsx (Afiliaciones y Novedades + Recaudo y Cartera)</span>
       </div>
     </details>
   </div>`;
