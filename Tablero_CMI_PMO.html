@@ -664,6 +664,8 @@ td{font-size:10.5px}
       
       
       
+      
+      
     </div>
   </header>
 
@@ -1357,6 +1359,13 @@ function cmiOverviewHTML(p){
   const is421 = (p.id === "421");
   const is419 = (p.id === "419");
   const is453 = (p.id === "453");
+  const is020 = (p.id === "020");
+
+  // Proyecto 020 - Analítica de Datos: Ponderación por Épicas Azure DevOps (Operación 35,58%, Soporte 47,93%, POC 16,49%)
+  // OPERACIÓN (52 HUs · 91,15% avance): Aporte 32,43%
+  // SOPORTE (21 HUs · 92,86% avance): Aporte 44,51%
+  // POC (7 HUs · 100,00% avance): Aporte 16,49%
+  const exito020 = 0.9343; // 93,43% Ponderado total
 
   // Proyecto 453 - Monitoreo CPE: Cronograma de 4 Focos ponderados con % de avance CU (similar a 456)
   const exito453 = 0.3981; // 39,81% Ponderado: Focos en Cronograma × % Avance CU
@@ -1436,7 +1445,15 @@ function cmiOverviewHTML(p){
   const rqc421 = 0.4937; // 311 / 630 cumplidos
   const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 41,75% (con Táctico 48,21% de 56 funcionalidades de cara a producto al 09-Nov-2026)
 
-  const exitoCardHTML = is456 ? `
+  const exitoCardHTML = is020 ? `
+    <article class="cmi-hero-card success">
+      <div class="cmi-kicker">02 · Indicador de éxito</div>
+      <div class="cmi-value">${(exito020 * 100).toFixed(2).replace('.', ',')}%</div>
+      <div class="cmi-bottom">
+        <span>Ponderado por Épicas: <b>Operación (35,58%)</b> · <b>Soporte (47,93%)</b> · <b>POC (16,49%)</b></span>
+        <span class="cmi-pill ${cls(exito020)}">${state(exito020)}</span>
+      </div>
+    </article>` : is456 ? `
     <article class="cmi-hero-card success">
       <div class="cmi-kicker">02 · Indicador de éxito</div>
       <div class="cmi-value">${pct(exitoReal)}</div>
