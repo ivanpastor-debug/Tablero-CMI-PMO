@@ -2929,7 +2929,7 @@ function evmCard(title,v){
   const [ac,pv,av,ev,cpi,icff]=v;
   const P=n=>"$ "+(n<0?"-":"")+nf0.format(Math.round(Math.abs(n)));
   const ib=x=>x<0?"na":x<=1.05?"good":x<=1.2?"warn":"crit";
-  return `<div class="panel cost-b"><div class="cb-h"><h2>${title}</h2><p>PV ${P(pv)} · % avance ${pct(av)}</p></div>
+  return `<div class="panel cost-b"><div class="cb-h"><h2>${title}</h2></div>
     <div class="evm-c">
       <div class="evm-v"><span class="cc-l">CPI · índice de desempeño del costo</span><strong class="tone-${cpiBand(cpi)}">${nf2.format(cpi)}</strong></div>
       <div class="evm-f"><div class="frac"><div><span>EV · Costo total ejecutado</span><b>${P(ev)}</b></div><i></i><div><span>AC · Costo real acumulado</span><b>${P(ac)}</b></div></div></div>
