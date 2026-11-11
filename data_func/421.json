@@ -14484,5 +14484,49 @@
       "20": 10,
       "0": 8
     }
+  },
+  "rqc": {
+    "corte": "2026-11-11",
+    "total": 913,
+    "removidos": 283,
+    "activos": 630,
+    "cumplidos": 305,
+    "cumplimiento": 0.4841,
+    "resumen": {
+      "CUMPLIDO": 305,
+      "EN PROCESO": 184,
+      "PENDIENTE INICIO": 141,
+      "REMOVIDO": 283
+    },
+    "por_componente": {
+      "AFILIACIONES Y NOVEDADES": {
+        "total": 508,
+        "removido": 151,
+        "cumplido": 205,
+        "activos": 357,
+        "cumplimiento": 0.5742
+      },
+      "EN BLANCO": {
+        "total": 11,
+        "removido": 11,
+        "cumplido": 0,
+        "activos": 0,
+        "cumplimiento": null
+      },
+      "GESTIÓN INTERNA": {
+        "total": 2,
+        "removido": 0,
+        "cumplido": 0,
+        "activos": 2,
+        "cumplimiento": 0.0
+      },
+      "RECAUDO Y CARTERA": {
+        "total": 392,
+        "removido": 121,
+        "cumplido": 100,
+        "activos": 271,
+        "cumplimiento": 0.369
+      }
+    }
   }
 }

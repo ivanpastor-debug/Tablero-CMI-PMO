@@ -38,6 +38,57 @@ EI_453_MAP = {
 }
 
 
+def hu_escala_item(h):
+    if not h or h.get('a') == 0:
+        return None
+    sg = str(h.get('p') or '').upper().strip()
+    st = str(h.get('e') or '').lower().strip()
+    v = h.get('v')
+
+    if st.startswith('x') or st == 'removido' or sg in ['EXCLUIR', 'OMITIR']:
+        return None
+
+    # 1. 100% - Terminado / En Producción
+    if (sg == "EN PRODUCCIÓN" or 
+        st.startswith("4. cerrado") or 
+        st.startswith("10. en producción") or 
+        st.startswith("10. en produccion") or
+        st.startswith("12 - en producción") or
+        st.startswith("12 - en produccion") or
+        st.startswith("20. aprobado") or
+        (v is not None and v >= 0.999)):
+        return 1.0
+
+    # 2. 75% - UAT del Cliente (En Pruebas / Aprobación UAT)
+    if (st.startswith("8.1") or 
+        st.startswith("8.2") or 
+        st.startswith("9. esperando") or 
+        "uat" in st or 
+        sg == "CLIENTE" or 
+        "UAT" in sg or 
+        "DESPLEGAR" in sg):
+        return 0.75
+
+    # 3. 50% - Pre-UAT / QA Concluido / Esperando QA-UAT / 3. Entregado
+    if (st.startswith("8. esperando despliegue qa-uat") or 
+        st.startswith("7.2") or 
+        st.startswith("3. entregado") or 
+        (v is not None and v >= 0.80)):
+        return 0.50
+
+    # 4. 20% - QA (Backlog QA y Pruebas QA en curso)
+    if (st.startswith("7.") or 
+        st.startswith("7 ") or 
+        st.startswith("6. backlog qa") or 
+        st.startswith("3. aseguramiento") or 
+        sg == "QA" or 
+        "qa" in st or 
+        (v is not None and v >= 0.50)):
+        return 0.20
+
+    # 5. 0% - Requerimientos y Desarrollo (No superan el 50%)
+    return 0.0
+
 def escala_pmo(pct, estado=''):
     if pct is None:
         return 0.0
@@ -53,7 +104,7 @@ def escala_pmo(pct, estado=''):
     return 0.0
 
 
-def calc_cmi_project(epics, features, cod):
+def calc_cmi_project(epics, features, cod, hus=None):
     valid_epics = [
         e for e in (epics or [])
         if e.get('i') != '_sin_frente'
@@ -85,6 +136,16 @@ def calc_cmi_project(epics, features, cod):
         }
 
     # 2. 419: Depósitos Judiciales - Excepción PMO: mantener archivo local (80 entregadas / 466 entregables)
+    if cod == '348':
+        target_epics = ['539569', '539200']
+        valid_epics = [e for e in (epics or []) if str(e.get('i') or '') in target_epics]
+        feats = [
+            f for f in (features or [])
+            if str(f.get('ep') or '') in target_epics and (f.get('n', 0) or 0) > 0
+        ]
+        feat_tot = len(feats)
+        feat_ent = sum(1 for f in feats if (f.get('pct') or 0) >= 0.999)
+
     if cod == '419':
         return {
             'tactico': 0.1195777351,
@@ -171,17 +232,42 @@ def calc_cmi_project(epics, features, cod):
             'buckets': {'100': 1, '75': 0, '50': 1, '20': 0, '0': 4}
         }
 
-    # 6. Cálculo general sobre FUNCIONALIDADES (Features) activas en Azure DevOps (005, 355, 384, 348, 420, 457, 020, 461, etc.)
-    buckets = {1.0: 0, 0.75: 0, 0.5: 0, 0.2: 0, 0.0: 0}
+
+    # 6. Cálculo general sobre FUNCIONALIDADES (Features) activas evaluando el promedio de sus HUs bajo la Escala Oficial PMO
+    hu_by_feat = {}
+    for h in (hus or []):
+        fid = h.get('f')
+        if fid:
+            hu_by_feat.setdefault(fid, []).append(h)
+
+    buckets = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
     scores = []
     for f in feats:
-        pct = f.get('pct', 0.0)
-        sc = escala_pmo(pct, f.get('e', ''))
-        buckets[sc] += 1
-        scores.append(sc)
+        f_hus = hu_by_feat.get(f.get('i'), [])
+        hu_scores = []
+        for h in f_hus:
+            sc = hu_escala_item(h)
+            if sc is not None:
+                hu_scores.append(sc)
+        if hu_scores:
+            avg_f = sum(hu_scores) / len(hu_scores)
+        else:
+            avg_f = escala_pmo(f.get('pct', 0.0), f.get('e', ''))
+
+        scores.append(avg_f)
+        if avg_f >= 0.999:
+            buckets['100'] += 1
+        elif avg_f >= 0.75:
+            buckets['75'] += 1
+        elif avg_f >= 0.50:
+            buckets['50'] += 1
+        elif avg_f >= 0.20:
+            buckets['20'] += 1
+        else:
+            buckets['0'] += 1
 
     n = len(feats)
-    d = buckets[1.0]
+    d = buckets['100']
     av = sum(scores) / n if n else 0.0
     ent = d / n if n else 0.0
 
@@ -193,14 +279,8 @@ def calc_cmi_project(epics, features, cod):
         'u': 'funcionalidades',
         'isEpics': False,
         'feat_total': feat_tot,
-        'feat_ent': feat_ent,
-        'buckets': {
-            '100': buckets[1.0],
-            '75': buckets[0.75],
-            '50': buckets[0.5],
-            '20': buckets[0.2],
-            '0': buckets[0.0]
-        }
+        'feat_ent': d,
+        'buckets': buckets
     }
 
 def main():
@@ -213,20 +293,43 @@ def main():
         print("No se encontró data_func.json en", base_dir)
         return
 
-    with open(index_file, 'r', encoding='utf-8') as f:
+    with open(index_file, 'r', encoding='utf-8-sig') as f:
         index_data = json.load(f)
 
     cmi_por_cod = {}
 
+    # 0. Cargar data_rqc.json si existe para Proyecto 421 (Balú)
+    rqc_file = os.path.join(base_dir, 'data_rqc.json')
+    rqc_421_block = None
+    if os.path.exists(rqc_file):
+        try:
+            with open(rqc_file, 'r', encoding='utf-8') as rf:
+                rqc_raw = json.load(rf)
+            rqc_421_block = {
+                'corte': rqc_raw.get('corte'),
+                'total': rqc_raw.get('total', 913),
+                'removidos': rqc_raw.get('removidos', 283),
+                'activos': rqc_raw.get('activos', 630),
+                'cumplidos': rqc_raw.get('cumplidos', 305),
+                'cumplimiento': rqc_raw.get('cumplimiento', 0.4841),
+                'resumen': rqc_raw.get('resumen', {}),
+                'por_componente': rqc_raw.get('por_componente', {}),
+            }
+            print(f"[RQC 421] Cumplimiento: {rqc_421_block['cumplimiento']*100:.2f}% ({rqc_421_block['cumplidos']}/{rqc_421_block['activos']} activos, {rqc_421_block['removidos']} removidos)")
+        except Exception as e:
+            print(f"Aviso lectura data_rqc.json: {e}")
+
     # 1. Procesar cada archivo individual de detalle de funcionalidades
     json_files = glob.glob(os.path.join(data_func_dir, '*.json'))
     for path in sorted(json_files):
-        with open(path, 'r', encoding='utf-8') as f:
+        with open(path, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
         cod = data.get('codigo') or os.path.splitext(os.path.basename(path))[0]
 
-        cmi = calc_cmi_project(data.get('epics', []), data.get('features', []), cod)
+        cmi = calc_cmi_project(data.get('epics', []), data.get('features', []), cod, data.get('hus', []))
         data['cmi'] = cmi
+        if cod == '421' and rqc_421_block:
+            data['rqc'] = rqc_421_block
         cmi_por_cod[cod] = cmi
 
         with open(path, 'w', encoding='utf-8') as f:
@@ -275,12 +378,15 @@ def main():
                 'cmi': cmi
             }
 
+    if rqc_421_block and '421' in index_data.get('proyectos', {}):
+        index_data['proyectos']['421']['rqc'] = rqc_421_block
+
     with open(index_file, 'w', encoding='utf-8') as f:
         json.dump(index_data, f, ensure_ascii=False, indent=2)
 
     # 4. Procesar y enriquecer 453 (Monitoreo CPE) con Casos de Uso y Fechas
     if os.path.exists(cpe_file):
-        with open(cpe_file, 'r', encoding='utf-8') as f:
+        with open(cpe_file, 'r', encoding='utf-8-sig') as f:
             cpe_data = json.load(f)
 
         # Aplicar homologación completa de estados_453 a cada Caso de Uso

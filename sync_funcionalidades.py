@@ -104,6 +104,57 @@ def build_consolidated_419(target_dir):
             json.dump(idx, f, ensure_ascii=False, indent=2)
 
 
+def filter_348(target_dir):
+    """Filtra data_func/348.json para mantener únicamente las 2 Épicas de Certificación (Temáticos y CORE) solicitadas por PMO."""
+    f348_path = os.path.join(target_dir, "data_func", "348.json")
+    if not os.path.exists(f348_path):
+        return
+    with open(f348_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    target_epic_ids = {"539569", "539200"}
+    epics = [e for e in (data.get("epics") or []) if str(e.get("i")) in target_epic_ids]
+    features = [f for f in (data.get("features") or []) if str(f.get("ep")) in target_epic_ids]
+    feat_ids = {str(f.get("i")) for f in features}
+    hus = [h for h in (data.get("hus") or []) if str(h.get("f")) in feat_ids]
+
+    n_hu = len(hus)
+    n_hu_act = len([h for h in hus if h.get("a") != 0])
+    term_global = sum(int(e.get("term") or 0) for e in epics)
+
+    data["epics"] = epics
+    data["features"] = features
+    data["hus"] = hus
+    data["kpi"] = {
+        "n_hu": n_hu,
+        "n_hu_activas": n_hu_act,
+        "hu_sin_feature": 0,
+        "n_feature": len(features),
+        "n_epic": len(epics),
+        "n_feature_con_hu": len(features),
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.7380,
+        "term_global": term_global,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 0,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0,
+    }
+    with open(f348_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    idx_path = os.path.join(target_dir, "data_func.json")
+    if os.path.exists(idx_path):
+        with open(idx_path, "r", encoding="utf-8") as f:
+            idx = json.load(f)
+        if "348" in idx.get("proyectos", {}):
+            idx["proyectos"]["348"]["kpi"] = data["kpi"]
+        with open(idx_path, "w", encoding="utf-8") as f:
+            json.dump(idx, f, ensure_ascii=False, indent=2)
+
+
 def main():
     home = str(Path.home())
     src_patterns = [
@@ -129,7 +180,7 @@ def main():
         os.path.join(home, "Downloads"),
     ]
 
-    files_to_copy = ["data_func.json", "data_453_cpe.json"]
+    files_to_copy = ["data_func.json", "data_453_cpe.json", "data_rqc.json"]
     dirs_to_copy = ["data_func"]
 
     print(f"Origen de datos: {src_web}")
@@ -152,6 +203,7 @@ def main():
                 shutil.copytree(s, target)
                 print(f"  -> {folder}/ ({len(os.listdir(target))} archivos)")
         build_consolidated_419(d)
+        filter_348(d)
 
     print("Sincronización completada con éxito.")
     try:

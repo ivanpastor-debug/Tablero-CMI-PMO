@@ -666,6 +666,8 @@ td{font-size:10.5px}
       
       
       
+      
+      
     </div>
   </header>
 
@@ -1441,8 +1443,17 @@ function cmiOverviewHTML(p){
 
   // Indicador de Éxito 421 (Balú):
   // Ponderación oficial: Táctico Producto (30%) + RQC (40%) + Cumplimiento Cronograma (30%)
-  const rqc421 = 0.4937; // 311 / 630 cumplidos
-  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30); // 41,75% (con Táctico 48,21% de 56 funcionalidades de cara a producto al 09-Nov-2026)
+  const rqcObj421 = (typeof FUNC !== "undefined" && FUNC && FUNC.proyectos && FUNC.proyectos["421"] && FUNC.proyectos["421"].rqc) || {
+    cumplimiento: 0.4841,
+    cumplidos: 305,
+    activos: 630,
+    removidos: 283
+  };
+  const rqc421 = (rqcObj421 && typeof rqcObj421.cumplimiento === "number") ? rqcObj421.cumplimiento : 0.4841;
+  const rqcCumplidos421 = (rqcObj421 && rqcObj421.cumplidos) || 305;
+  const rqcActivos421 = (rqcObj421 && rqcObj421.activos) || 630;
+  const rqcRemovidos421 = (rqcObj421 && rqcObj421.removidos) || 283;
+  const exito421 = (tactical * 0.30) + (rqc421 * 0.40) + (real421 * 0.30);
 
   const exitoCardHTML = is020 ? `
     <article class="cmi-hero-card success">
@@ -1660,9 +1671,9 @@ function cmiOverviewHTML(p){
           ${is421 ? `
           <article class="cmi-hero-card rqc" style="box-shadow:none">
             <div class="cmi-kicker" style="color:#7c3aed">📋 Cumplimiento RQC · Contrato (Peso: 40%)</div>
-            <div class="cmi-value" style="color:#7c3aed">49,37%</div>
+            <div class="cmi-value" style="color:#7c3aed">${(rqc421 * 100).toFixed(2).replace('.', ',')}%</div>
             <div class="cmi-bottom">
-              <span>311 / 630 RQC activos (descontando 283 removidos)</span>
+              <span>${rqcCumplidos421} / ${rqcActivos421} RQC activos (descontando ${rqcRemovidos421} removidos)</span>
               <span class="cmi-pill" style="background:#f3e8ff;color:#7c3aed;border:1px solid #d8b4fe">Aporte: ${(rqc421 * 0.40 * 100).toFixed(2).replace('.', ',')}%</span>
             </div>
           </article>
