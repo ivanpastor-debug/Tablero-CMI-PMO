@@ -751,6 +751,8 @@ td{font-size:10.5px}
       
       
       
+      
+      
     </div>
   </header>
 
@@ -889,7 +891,7 @@ const P=[
   team:{"hc": 49, "cost": 818.81, "period": "Enero 2025 - Octubre 2026", "src": "Indicadores_CPE 20261109 · Detalle Team", "roles": [["Desarrollo", 172.63, 6, 0.21083], ["Pruebas Qa", 146.26, 15, 0.178627], ["Requerimientos", 128.01, 5, 0.156339], ["Gestión De Proyectos", 85.18, 1, 0.104024], ["Gestión De Integral De Proyectos", 74.92, 1, 0.091498], ["Arquitectura", 48.22, 4, 0.058892], ["Data", 43.82, 3, 0.053516], ["Scrum Master", 40.22, 2, 0.049118], ["Lider Tecnico", 30.53, 1, 0.037283], ["Diseño Ux", 14.58, 1, 0.017803], ["Infraestructura Cloud", 12.25, 1, 0.014962], ["Datos", 5.79, 1, 0.007069], ["Directivos", 5.45, 1, 0.006652], ["Aprendiz Etapa Productiva", 4.45, 1, 0.005435], ["Transversales", 3.53, 3, 0.004312], ["Staff Fabrica", 1.96, 1, 0.002397], ["Aprendiz Etapa Lectiva", 0.77, 1, 0.000946], ["Sin Categoría", 0.24, 1, 0.000295]]},
   hitosNote:"Sin valor de contrato ni facturación cargados",hitos:[],
   diag:["crit","Costo real acumulado de $1.337,1 M frente a un presupuesto de $1.442,1 M y forecast de $1.547,8 M (EVM oficial con 40,00% de avance en 76 casos de uso / items): CPI forecast 0,46, CPI presupuesto 0,43 e ICFF 1,05. Sin contrato ni plan de facturación cargados en el libro oficial."]},
- {id:"421",name:"421 - PROYECTO BALÚ",sub:"Fiduprevisora · Afiliaciones y Recaudo",op:{av:0.4911,ent:13/56,n:56,d:13,u:"funcionalidades"},
+ {id:"421",name:"421 - PROYECTO BALÚ",sub:"Fiduprevisora · Afiliaciones y Recaudo",op:{av:0.7488,ent:13/56,n:56,d:13,u:"funcionalidades"},
   m:[[1588.5,3758.1,2111.8],[1588.5,1262.9,1236.4],[1588.5,1367.1,1267.0],[1588.5,1221.0,1190.4],[1588.5,1150.2,1120.6],[1588.5,1124.1,1144.7],[1688.6,1098.7,1188.0],[1688.6,1085.8,1063.2],[1688.6,1131.1,1062.0],[1693.9,1083.2,999.6],[1693.9,1061.5,0],[1743.9,2452.8,0]],
   cpiP:1.0513,cpiF:0.8839,icff:1.1393,avFin:0.4821,ppto:43014.7,fcst:36167.3,
   contrato:100945.3,factPlan:50633.9,fact:38071.8,cumplFact:.7519,recaudo:40346.3,cumplRec:.9635,brechaRec:-1526.7,
@@ -3892,7 +3894,7 @@ function escalaPmo(pct, estado) {
   return 0.0;
 }
 
-function calcCmiFromFeatures(feats) {
+function calcCmiFromFeatures(feats, hus) {
   if (!feats || !feats.length) return null;
   const fs = feats.filter(f => {
     if ((f.n || 0) <= 0) return false;
@@ -3903,26 +3905,58 @@ function calcCmiFromFeatures(feats) {
     return true;
   });
   if (!fs.length) return null;
-  const buckets = { "100": 0, "75": 0, "50": 0, "20": 0, "0": 0 };
-  fs.forEach(f => {
-    const sc = escalaPmo(f.pct, f.e);
-    if (sc >= 0.999) buckets["100"]++;
-    else if (sc >= 0.749) buckets["75"]++;
-    else if (sc >= 0.499) buckets["50"]++;
-    else if (sc >= 0.199) buckets["20"]++;
-    else buckets["0"]++;
+
+  const huByFeat = {};
+  (hus || []).forEach(h => {
+    if (h && h.f) {
+      huByFeat[h.f] = huByFeat[h.f] || [];
+      huByFeat[h.f].push(h);
+    }
   });
+
+  const huBuckets = { "100": 0, "75": 0, "50": 0, "20": 0, "0": 0 };
+  let totalHusEval = 0;
+  const scores = [];
+
+  fs.forEach(f => {
+    const fHus = huByFeat[f.i] || [];
+    let huScores = [];
+    fHus.forEach(h => {
+      const sc = huEscalaPmo(h);
+      if (sc !== null) {
+        totalHusEval++;
+        huScores.push(sc);
+        if (sc >= 0.999) huBuckets["100"]++;
+        else if (sc >= 0.749) huBuckets["75"]++;
+        else if (sc >= 0.499) huBuckets["50"]++;
+        else if (sc >= 0.199) huBuckets["20"]++;
+        else huBuckets["0"]++;
+      }
+    });
+
+    let avgF;
+    if (huScores.length) {
+      avgF = huScores.reduce((a, b) => a + b, 0) / huScores.length;
+    } else {
+      avgF = escalaPmo(f.pct, f.e);
+    }
+    scores.push(avgF);
+  });
+
   const n = fs.length;
-  const d = buckets["100"] || 0;
-  const av = (d * 1.0 + buckets["75"] * 0.75 + buckets["50"] * 0.50 + buckets["20"] * 0.20) / n;
-  const ent = d / n;
+  const d = scores.filter(s => s >= 0.999).length;
+  const av = n ? (scores.reduce((a, b) => a + b, 0) / n) : 0;
+  const ent = n ? (d / n) : 0;
+
   return {
     tactico: av,
     estrategico: ent,
     n,
     d,
     u: "funcionalidades",
-    buckets
+    hu_total: totalHusEval,
+    buckets: huBuckets,
+    hu_buckets: huBuckets
   };
 }
 
@@ -4125,7 +4159,7 @@ function fncLoad(cod) {
     .then(j => {
       FUNC_DET[cod] = j || { epics: [], features: [], hus: [], kpi: {} };
       if (j && j.features && !j.cmi) {
-        j.cmi = calcCmiFromFeatures(j.features);
+        j.cmi = calcCmiFromFeatures(j.features, j.hus);
       }
     })
     .catch(() => { FUNC_DET[cod] = { epics: [], features: [], hus: [], kpi: {} }; })
@@ -4183,7 +4217,7 @@ function fncChangeSub(cod) {
   if (c) c.innerHTML = funcCard(cod);
 
   const C = fncDet(cod) || (FUNC && FUNC.proyectos ? FUNC.proyectos[cod] : null);
-  const cmi = C ? (C.cmi || (C.features ? calcCmiFromFeatures(C.features) : null)) : null;
+  const cmi = C ? (C.cmi || (C.features ? calcCmiFromFeatures(C.features, C.hus) : null)) : null;
   if (cmi) {
     const lblMap = {
       "355": "355 Core Positiva",
@@ -4432,7 +4466,7 @@ function funcCard(cod) {
   fncLoad(cod);
   const k = M.kpi || {};
   const C = fncDet(cod);
-  const cmi = (C && C.cmi) ? C.cmi : (M && M.cmi) ? M.cmi : (C && C.features ? calcCmiFromFeatures(C.features) : null);
+  const cmi = (C && C.cmi) ? C.cmi : (M && M.cmi) ? M.cmi : (C && C.features ? calcCmiFromFeatures(C.features, C.hus) : null);
   const stat = (v, l, c) => `<div class="fst"><div class="fstv" style="color:${c}">${v}</div><div class="fstl">${l}</div></div>`;
 
   let subSelector = "";
@@ -4482,22 +4516,22 @@ function funcCard(cod) {
         
       </div>
       <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Distribución de las ${cmi.n} ${cmi.u}:`:cod==="419"?"Distribución archivo local (466):":"Distribución en Escala:"}</span>
+        <span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase">${(cmi.isEpics||cmi.u==="épicas"||cmi.u==="frentes")?`Distribución de las ${cmi.n} ${cmi.u}:`:cod==="419"?"Distribución archivo local (466):":`Distribución en Escala (${cmi.hu_total ? `${cmi.hu_total} HU activas` : `${cmi.n} ${cmi.u||"funcionalidades"}`}):`}</span>
         <div style="display:flex;gap:6px;flex-wrap:wrap;flex:1">
           <div style="background:color-mix(in srgb,var(--good) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--good) 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
-            <b style="color:var(--good)">100% ✓</b> ${cod==="419"?"Certificadas":"En prod"}: <b>${cmi.buckets["100"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["100"]/cmi.n)})</small>
+            <b style="color:var(--good)">100% ✓</b> ${cod==="419"?"Certificadas":"En prod"}: <b>${cmi.buckets["100"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["100"]/(cmi.hu_total||cmi.n))})</small>
           </div>
           <div style="background:color-mix(in srgb,#38bdf8 12%,var(--surface));border:1px solid color-mix(in srgb,#38bdf8 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
-            <b style="color:#0284c7">75%</b> En UAT: <b>${cmi.buckets["75"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["75"]/cmi.n)})</small>
+            <b style="color:#0284c7">75%</b> En UAT: <b>${cmi.buckets["75"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["75"]/(cmi.hu_total||cmi.n))})</small>
           </div>
           <div style="background:color-mix(in srgb,var(--warn) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 30%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
-            <b style="color:var(--warn)">50%</b> &gt;80%: <b>${cmi.buckets["50"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["50"]/cmi.n)})</small>
+            <b style="color:var(--warn)">50%</b> Pre-UAT / QA concl.: <b>${cmi.buckets["50"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["50"]/(cmi.hu_total||cmi.n))})</small>
           </div>
           <div style="background:color-mix(in srgb,var(--warn) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--warn) 20%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
-            <b style="color:var(--warn)">20%</b> 50–80%: <b>${cmi.buckets["20"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["20"]/cmi.n)})</small>
+            <b style="color:var(--warn)">20%</b> QA en curso: <b>${cmi.buckets["20"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["20"]/(cmi.hu_total||cmi.n))})</small>
           </div>
           <div style="background:color-mix(in srgb,var(--crit) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--crit) 25%,transparent);padding:3px 8px;border-radius:6px;font-size:11px">
-            <b style="color:var(--crit)">0%</b> &lt;50%: <b>${cmi.buckets["0"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["0"]/cmi.n)})</small>
+            <b style="color:var(--crit)">0%</b> Dev / Req: <b>${cmi.buckets["0"]}</b> <small style="color:var(--muted)">(${pct(cmi.buckets["0"]/(cmi.hu_total||cmi.n))})</small>
           </div>
         </div>
       </div>
