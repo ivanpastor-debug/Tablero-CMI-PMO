@@ -670,6 +670,8 @@ td{font-size:10.5px}
       
       
       
+      
+      
     </div>
   </header>
 
@@ -871,8 +873,14 @@ const P=[
 ,
  {id:"461",name:"461 - PROYECTO CUENTAS CLARAS",sub:"Consejo Nacional Electoral · Cuentas Claras 2.0",opOnly:true,finNote:"Proyecto incorporado mediante Captura Directa desde Azure DevOps (corte 03-nov-2026). El libro de seguimiento financiero aún no se encuentra cargado en la carpeta Información Financiera.",op:{av:0.1479,ent:0,n:32,d:0,u:"funcionalidades",isAzure:true,featTotal:32,featEnt:0},
   diag:["warn","Incorporado con captura directa desde Azure DevOps (corte 03-nov-2026): 3 de 7 épicas en rango 50–80% (Parametrización y Configuración 57,7%, Acceso e Identidad 67,7%, Transversales 80,0%, cada una al 20% en la escala CMI PMO) y 4 épicas en curso <50% (Gestión Electoral 31,9%, Finanzas 22,0%, Declaración Anual 21,0%, Rendición de Cuentas 17,9% -> 0% en la escala CMI). Avance táctico oficial 8,57%, avance estratégico 0,00% (0 de 7 épicas al 100%). Desglose técnico: 32 funcionalidades en Azure, 108 HU activas (43,41% de avance global). Pendiente cargue de libro financiero."]},
-  {id:"420",name:"420 - PROYECTO PÓLIZAS DE SALUD",sub:"Positiva Compañía de Seguros · Pólizas de Salud",opOnly:true,finNote:"Proyecto incorporado mediante Captura Directa desde Azure DevOps (corte 06-nov-2026). El libro de seguimiento financiero aún no se encuentra cargado en la carpeta Información Financiera.",op:{av:0.8673,ent:35/57,n:57,d:35,u:"funcionalidades",isAzure:true,featTotal:57,featEnt:35},
-   diag:["good","Incorporado con captura directa desde Azure DevOps (corte 06-nov-2026): 3 de 12 épicas formalmente al 100% en producción (Contingencia - Continuidad - Errores Integración, Desarrollos internos, Soportes) y 9 épicas en curso >80% (Cuentas médicas 88,9%, Usuarios 94,3%, Gestión red hospitalaría 99,2%, Transversales 91,4%, Atenciones Call Center 93,6%, Configuración 97,1%, Gestión Servicios Médicos 95,8%, Telemedicina MVP 88,0%, Perfil 96,0%, evaluadas al 50% en la escala CMI PMO). Avance táctico oficial 62,50%, avance estratégico 25,00% (3 de 12 épicas al 100%). Desglose técnico: 57 funcionalidades en Azure (35 cerradas en producción · 61,4%) y 501 de 602 HU activas en producción (avance global ponderado 93,50%). Pendiente cargue de libro financiero."]}
+  {id:"420",name:"420 - PROYECTO PÓLIZAS DE SALUD",sub:"Positiva Compañía de Seguros · Pólizas de Salud",op:{av:0.8673,ent:35/57,n:57,d:35,u:"funcionalidades",isAzure:true,featTotal:57,featEnt:35},
+   cpiP:0.4138,cpiF:0.4941,icff:-0.1757,avFin:0.8673,ppto:720.1,fcst:859.8,
+   contrato:null,factPlan:null,fact:null,cumplFact:null,recaudo:null,
+   m:[[0,79.9,109.5],[0,88.8,98.5],[0,96.7,111.2],[0,109.2,107.9],[0,89.2,109.2],[0,81.6,110.2],[0,88.1,81.1],[0,84.2,76.9],[0,90.3,102.7],[0,27.7,26.7],[0,18.8,0],[0,5.3,0]],
+   evm:{ppto:[1509045226,720058589,0.8673,624506814.2,0.4138423445,-0.1211069621],fcst:[1509045226,859784955,0.8673,745691491.5,0.4941478748,-0.1757283922]},
+   cx:{tot:[720.058589,859.784955,1509.045226],acu:[720.058589,835.712647,1509.045226],warn:["Presupuesto base corresponde al acumulado histórico 2025 ($720,1 M). El costo real acumulado alcanza $1.509,0 M con CPI FCST 0,49 e ICFF -0,18."]},
+   margin:{dir:[0.0,-0.5548,-0.5461],net:[0.0,-0.6123,-0.6027],gap:{f_p:[-55.48,-61.23],r_p:[-54.61,-60.27],r_f:[0.88,0.96]}},
+   diag:["good","Libro financiero oficial incorporado (Indicadores Costo, Margenes a corte 10-Nov-2026): Presupuesto base histórico de $720,1 M vs Forecast de $859,8 M y Costo Real de $1.509,0 M (CPI FCST 0,49 e ICFF -0,18). En el ámbito técnico de Azure DevOps: 35 de 57 funcionalidades cerradas en producción (61,4%)."]}
 ];
 let FIN=[];
 let SUBS=[];
@@ -2796,7 +2804,7 @@ if(p.id==="456"){
 
 function renderFinBody(p,el){
   if(!p.m){el.innerHTML=`<div class="section pending"><b>Sin libro financiero propio.</b> ${p.finNote||"Para activar facturación, recaudo, costos y equipo se necesita un libro con la estructura de <i>Indicadores Costo</i>, <i>Detalle Team</i>, <i>Indicadores Recaudo</i>, <i>Facturación</i> e <i>Hitos</i>."}</div>`;return}
-  const tabs=[["fact","Facturación / Recaudo","Estatus de facturación y recaudo"],["cost","Costos","Presupuesto, forecast, real e índices"],["team","Costo Personal",""],["margin","Márgenes","Márgenes directos y netos"]].filter(t=>!(t[0]==="fact"&&p.id==="453"));
+  const tabs=[["fact","Facturación / Recaudo","Estatus de facturación y recaudo"],["cost","Costos","Presupuesto, forecast, real e índices"],["team","Costo Personal",""],["margin","Márgenes","Márgenes directos y netos"]].filter(t=>!(t[0]==="fact"&&(p.id==="453"||p.id==="420")));
   if(!tabs.some(t=>t[0]===finTab))finTab=tabs[0][0];
   el.innerHTML=`<div class="section fin-tabs" role="tablist" aria-label="Detalle financiero">${tabs.map(([k,l,d])=>`<button role="tab" data-ft="${k}" aria-selected="${finTab===k}"><b>${l}</b>${d?`<small>${d}</small>`:""}</button>`).join("")}</div><div id="fin-body"></div>`;
   el.querySelectorAll("[data-ft]").forEach(b=>b.addEventListener("click",()=>{finTab=b.dataset.ft;saveUI();renderFinBody(p,el)}));
