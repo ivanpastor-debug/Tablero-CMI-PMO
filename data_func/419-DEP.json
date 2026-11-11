@@ -1,8 +1,8 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_419-DEP_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:09",
+  "archivo": "HU_419-DEP_20261111.csv",
   "epics": [
     {
       "i": "417341",
@@ -10,7 +10,7 @@
       "n_f": 27,
       "n": 212,
       "term": 7,
-      "pct": 0.5967
+      "pct": 0.6142
     },
     {
       "i": "291675",
@@ -25,16 +25,16 @@
       "t": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n_f": 16,
       "n": 148,
-      "term": 67,
-      "pct": 0.9115
+      "term": 112,
+      "pct": 0.9514
     },
     {
       "i": "531917",
       "t": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n_f": 16,
-      "n": 108,
-      "term": 0,
-      "pct": 0.4089
+      "n": 116,
+      "term": 3,
+      "pct": 0.4793
     },
     {
       "i": "407644",
@@ -49,16 +49,16 @@
       "t": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n_f": 9,
       "n": 64,
-      "term": 23,
-      "pct": 0.9359
+      "term": 57,
+      "pct": 0.9891
     },
     {
       "i": "319591",
       "t": "419_EP_BAC_ PRIORIZACIÓN_2",
       "n_f": 10,
       "n": 49,
-      "term": 46,
-      "pct": 0.9694
+      "term": 49,
+      "pct": 1.0
     },
     {
       "i": "399824",
@@ -72,9 +72,9 @@
       "i": "327682",
       "t": "419DPJ_EP_LT_Seguimiento_Transversal_Linktic",
       "n_f": 5,
-      "n": 32,
+      "n": 33,
       "term": 8,
-      "pct": 0.6906
+      "pct": 0.6848
     },
     {
       "i": "517451",
@@ -141,10 +141,10 @@
       "e": "1. En Planeacion",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 21,
-      "term": 0,
-      "pct": 0.3695,
-      "n_pct": 21
+      "n": 26,
+      "term": 3,
+      "pct": 0.4654,
+      "n_pct": 26
     },
     {
       "i": "376222",
@@ -163,10 +163,10 @@
       "e": "1. En Planeacion",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 17,
+      "n": 18,
       "term": 0,
-      "pct": 0.2176,
-      "n_pct": 17
+      "pct": 0.4833,
+      "n_pct": 18
     },
     {
       "i": "484565",
@@ -176,7 +176,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 17,
       "term": 0,
-      "pct": 0.4,
+      "pct": 0.6176,
       "n_pct": 17
     },
     {
@@ -186,8 +186,8 @@
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 16,
-      "term": 3,
-      "pct": 0.9188,
+      "term": 16,
+      "pct": 1.0,
       "n_pct": 16
     },
     {
@@ -208,8 +208,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 14,
-      "term": 3,
-      "pct": 0.9214,
+      "term": 14,
+      "pct": 1.0,
       "n_pct": 14
     },
     {
@@ -219,8 +219,8 @@
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 14,
-      "term": 3,
-      "pct": 0.9214,
+      "term": 14,
+      "pct": 1.0,
       "n_pct": 14
     },
     {
@@ -263,8 +263,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 11,
-      "term": 3,
-      "pct": 0.9273,
+      "term": 11,
+      "pct": 1.0,
       "n_pct": 11
     },
     {
@@ -307,8 +307,8 @@
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 10,
-      "term": 3,
-      "pct": 0.93,
+      "term": 10,
+      "pct": 1.0,
       "n_pct": 10
     },
     {
@@ -422,6 +422,17 @@
       "n_pct": 8
     },
     {
+      "i": "330490",
+      "t": "419_FT_LT_Seguimiento_Transversal_Equipo_de_QA_Linktic",
+      "e": "2. En Curso",
+      "ep": "327682",
+      "ept": "419DPJ_EP_LT_Seguimiento_Transversal_Linktic",
+      "n": 8,
+      "term": 2,
+      "pct": 0.625,
+      "n_pct": 8
+    },
+    {
       "i": "343785",
       "t": "419_FT_BAC_ADMINISTRACIÓN_ORDEN_DE_CONSTITUCIÓN_(AUTORIZACIÓN)_/_CREACIÓN_Y_EDICIÓN_V1",
       "e": "4. Cerrado",
@@ -461,8 +472,8 @@
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 8,
-      "term": 3,
-      "pct": 0.9375,
+      "term": 8,
+      "pct": 1.0,
       "n_pct": 8
     },
     {
@@ -598,17 +609,6 @@
       "n_pct": 7
     },
     {
-      "i": "330490",
-      "t": "419_FT_LT_Seguimiento_Transversal_Equipo_de_QA_Linktic",
-      "e": "2. En Curso",
-      "ep": "327682",
-      "ept": "419DPJ_EP_LT_Seguimiento_Transversal_Linktic",
-      "n": 7,
-      "term": 2,
-      "pct": 0.6429,
-      "n_pct": 7
-    },
-    {
       "i": "343776",
       "t": "419_FT_BAC_ACTUALIZACIÓN_DE_DATOS_DEL_CLIENTE_/_ACTUALIZACION_DATOS_DEL_TERCERO_V1 - R3",
       "e": "4. Cerrado",
@@ -626,8 +626,8 @@
       "ep": "319591",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_2",
       "n": 7,
-      "term": 4,
-      "pct": 0.7857,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
@@ -659,19 +659,19 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 7,
-      "term": 3,
-      "pct": 0.9429,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
       "i": "386648",
       "t": "419_FT_BAC_CONFIGURACION NOTIFICACIONES BAC",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 7,
-      "term": 3,
-      "pct": 0.9429,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
@@ -781,7 +781,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.5714,
       "n_pct": 7
     },
     {
@@ -793,6 +793,17 @@
       "n": 7,
       "term": 0,
       "pct": 0.5143,
+      "n_pct": 7
+    },
+    {
+      "i": "551785",
+      "t": "SP7_PB_ORDEN DE PAGO MASIVO POR ARCHIVO - ABONO A CUENTA (ACH) (CARGUE, VALIDACION, INGRESO, AUTORIZACIONES, RECHAZO)",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 7,
+      "term": 0,
+      "pct": 0.2429,
       "n_pct": 7
     },
     {
@@ -835,8 +846,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 6,
-      "term": 3,
-      "pct": 0.95,
+      "term": 6,
+      "pct": 1.0,
       "n_pct": 6
     },
     {
@@ -846,8 +857,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 6,
-      "term": 3,
-      "pct": 0.95,
+      "term": 6,
+      "pct": 1.0,
       "n_pct": 6
     },
     {
@@ -974,12 +985,12 @@
     {
       "i": "379730",
       "t": "419_FT_BAC_TRASLADO_DE_PROCESO_INDIVIDUAL",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 5,
-      "term": 3,
-      "pct": 0.84,
+      "term": 5,
+      "pct": 1.0,
       "n_pct": 5
     },
     {
@@ -989,8 +1000,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 5,
-      "term": 3,
-      "pct": 0.96,
+      "term": 5,
+      "pct": 1.0,
       "n_pct": 5
     },
     {
@@ -1000,8 +1011,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 5,
-      "term": 3,
-      "pct": 0.96,
+      "term": 5,
+      "pct": 1.0,
       "n_pct": 5
     },
     {
@@ -1022,8 +1033,8 @@
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 5,
-      "term": 3,
-      "pct": 0.8,
+      "term": 5,
+      "pct": 1.0,
       "n_pct": 5
     },
     {
@@ -1106,23 +1117,12 @@
     {
       "i": "532770",
       "t": "PB_CLAVE TRANSACCIONAL POR CONTINGENCIA (BIOMETRIA - COBIS)",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.26,
-      "n_pct": 5
-    },
-    {
-      "i": "551785",
-      "t": "SP7_PB_ORDEN DE PAGO MASIVO POR ARCHIVO - ABONO A CUENTA (ACH) (CARGUE, VALIDACION, INGRESO, AUTORIZACIONES, RECHAZO)",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 5,
-      "term": 0,
-      "pct": 0.2,
+      "pct": 0.44,
       "n_pct": 5
     },
     {
@@ -1165,8 +1165,8 @@
       "ep": "379729",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n": 4,
-      "term": 3,
-      "pct": 0.975,
+      "term": 4,
+      "pct": 1.0,
       "n_pct": 4
     },
     {
@@ -1286,8 +1286,8 @@
       "ep": "373564",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_3",
       "n": 3,
-      "term": 2,
-      "pct": 0.9667,
+      "term": 3,
+      "pct": 1.0,
       "n_pct": 3
     },
     {
@@ -1546,7 +1546,7 @@
     {
       "i": "342826",
       "t": "419_FT_BAC_AUTOR_PARAM_CLASES/CONCEPTOS_LIQUI_INT",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "319591",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_2",
       "n": 1,
@@ -2736,10 +2736,10 @@
     {
       "i": "327634",
       "t": "419_PB_HU001_Solicitud_Creación_Usuarios",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -2747,10 +2747,10 @@
     {
       "i": "327635",
       "t": "419_PB-HU002_Ver_Detalle_Solicitud_Usuario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -2758,10 +2758,10 @@
     {
       "i": "327636",
       "t": "419_PB_HU003_Gestion_Solicitud_Validar_Documentos",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -3803,10 +3803,10 @@
     {
       "i": "344482",
       "t": "419_PB_HU004_Gestion_Solicitud_Asignar_Rol",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -3825,10 +3825,10 @@
     {
       "i": "345190",
       "t": "419_PB_HU001_Atender_Solicitudes_Y_Novedades",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "356473",
       "ep": "319591",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -4001,10 +4001,10 @@
     {
       "i": "360057",
       "t": "419_PB_HU003_Devolver_Solicitudes_Novedades",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "356473",
       "ep": "319591",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -4056,10 +4056,10 @@
     {
       "i": "361412",
       "t": "419_PB_HU007_Administracion_Consulta_Usuario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -4166,10 +4166,10 @@
     {
       "i": "363624",
       "t": "419_PB_HU002_Rechazar_Solicitudes_Novedades",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "356473",
       "ep": "319591",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -4177,10 +4177,10 @@
     {
       "i": "363630",
       "t": "419_PB_HU008_Ver_Detalles_Consulta_Usuario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -4606,10 +4606,10 @@
     {
       "i": "374748",
       "t": "419_PB_HU002_Generar_Comprobante_Traslado_Proceso_Individual_V1",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "379730",
       "ep": "379729",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -4628,10 +4628,10 @@
     {
       "i": "374758",
       "t": "419_PB_HU001_Administracion_Parametro_Porcentaje_Tasa_IBR",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "374756",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -4639,10 +4639,10 @@
     {
       "i": "374762",
       "t": "419_PB_HU004_Consultar_Historico_Porcentaje_Tasas_Registradas",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "374756",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -4683,10 +4683,10 @@
     {
       "i": "376208",
       "t": "419_PB_HU002_Autorizar_Porcentaje_Tasa_IBR",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "374756",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -4694,10 +4694,10 @@
     {
       "i": "376259",
       "t": "419_PB_HU003_Rechazar_Porcentaje_Tasa_IBR",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "374756",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -4782,10 +4782,10 @@
     {
       "i": "376692",
       "t": "419_PB_HU001_Constitucion_Deposito_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376230",
       "ep": "373564",
       "r": "Carlos Alberto Valero Peña"
@@ -5079,10 +5079,10 @@
     {
       "i": "377631",
       "t": "419_PB_HU001_Generar_Certificado_Cuenta",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377357",
       "ep": "373564",
       "r": "Carlos Alberto Valero Peña"
@@ -5200,10 +5200,10 @@
     {
       "i": "379173",
       "t": "419_PB_HU002_Configurar_Certificado_Cuenta",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377357",
       "ep": "373564",
       "r": "Carlos Alberto Valero Peña"
@@ -5211,10 +5211,10 @@
     {
       "i": "379207",
       "t": "419_PB_HU005_Descarga_Historico_Porcentaje_Tasas",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "374756",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -5222,10 +5222,10 @@
     {
       "i": "379255",
       "t": "419_PB_HU001_Consulta_Dias_No_HabillesV1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376224",
       "ep": "373564",
       "r": "Carlos Alberto Valero Peña"
@@ -5299,10 +5299,10 @@
     {
       "i": "380511",
       "t": "419_PB_HU001_Trasladar_Proceso_Individual_V1",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "379730",
       "ep": "379729",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -5343,10 +5343,10 @@
     {
       "i": "381981",
       "t": "419_PB_HU001_Creacion__Cierre_Diario_Y_MensualV1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377360",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5354,10 +5354,10 @@
     {
       "i": "381995",
       "t": "419_PB_HU002_Excepcion_Cierre_Diario_Y_MensualV1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377360",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5376,10 +5376,10 @@
     {
       "i": "382074",
       "t": "419_PB_HU004_Consulta_Cierre_Diario_Y_MensualV1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377360",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5387,10 +5387,10 @@
     {
       "i": "382078",
       "t": "419_PB_HU005_Eliminar_Cierre_Diario_Y_MensualV1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377360",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5442,10 +5442,10 @@
     {
       "i": "382992",
       "t": "419_PB_HU002_Creación_Dias_No_HabillesV1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376224",
       "ep": "373564",
       "r": "Carlos Alberto Valero Peña"
@@ -5596,10 +5596,10 @@
     {
       "i": "383630",
       "t": "419_PB_HU005_Gestion_Usuario_Registrar_Firmas",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -5607,10 +5607,10 @@
     {
       "i": "383632",
       "t": "419_PB_HU006_Gestion_Usuario_Creación_Usuario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -5673,10 +5673,10 @@
     {
       "i": "383738",
       "t": "419_PB_HU001_Parametrización_Cuentas_Bancarias_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -5684,10 +5684,10 @@
     {
       "i": "383791",
       "t": "419_PB_HU002_Aprobar_Parametrización_Cuentas_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -5695,10 +5695,10 @@
     {
       "i": "383812",
       "t": "419_PB_HU003_Ver_Detalle_Cuentas_Bancarias_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -5706,10 +5706,10 @@
     {
       "i": "383815",
       "t": "419_PB_HU004_Actualizar_Cuentas_Bancarias_Parametrizadas_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -5717,10 +5717,10 @@
     {
       "i": "383821",
       "t": "419_PB_HU005_Aprobar_Actualización_Cuentas_Bancarias_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -5728,10 +5728,10 @@
     {
       "i": "383830",
       "t": "419_PB_HU006_Listar_Parametrización_Cuentas_Bancarias_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -5739,10 +5739,10 @@
     {
       "i": "383850",
       "t": "419_PB_HU007_Eliminar_Parametrización_Cuentas_Bancarias_Para_Prescripción_Portal_BAC",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -5849,10 +5849,10 @@
     {
       "i": "386457",
       "t": "419_PB_HU002_Modificacion_Documento_Tratamiento_De_Datos",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386399",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5860,10 +5860,10 @@
     {
       "i": "386458",
       "t": "419_PB_HU001_Consulta_Documentos_Tratamiento_de_Datos",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386399",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5871,10 +5871,10 @@
     {
       "i": "386460",
       "t": "419_PB_HU003_Descarga_Documento_Tratamiento_de_Datos",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386399",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5882,10 +5882,10 @@
     {
       "i": "386464",
       "t": "419_PB_HU002_Modificacion_Documento_Terminos_y_Condiciones",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386409",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5893,10 +5893,10 @@
     {
       "i": "386466",
       "t": "419_PB_HU001_Consulta_Documentos_Terminos_y_Condiciones",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386409",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5904,10 +5904,10 @@
     {
       "i": "386468",
       "t": "419_PB_HU003_Descarga_Documento_Terminos_Y_Condiciones",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386409",
       "ep": "373564",
       "r": "Viki Liseth Cruz Plaza"
@@ -5915,10 +5915,10 @@
     {
       "i": "386654",
       "t": "419_PB_HU001_Listar_Plantillas_Notificacion",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386648",
       "ep": "379729",
       "r": "Viki Liseth Cruz Plaza"
@@ -5948,10 +5948,10 @@
     {
       "i": "387104",
       "t": "419_PB_HU001_Listar_Tipos_Incidentes_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -5959,10 +5959,10 @@
     {
       "i": "387110",
       "t": "419_PB_HU003_Ver_Detalle_Incidente_Desde_Consulta_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -5970,10 +5970,10 @@
     {
       "i": "387112",
       "t": "419_PB_HU001_Generar_Reporte_Incidentes_V1",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "387113",
       "ep": "379729",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -5981,10 +5981,10 @@
     {
       "i": "387118",
       "t": "419_PB_HU002_Crear_Incidente_v1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -5992,10 +5992,10 @@
     {
       "i": "387120",
       "t": "419_PB_HU003_Modificar_Incidente_v1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6003,10 +6003,10 @@
     {
       "i": "387121",
       "t": "419_PB_HU004_Ver_Detalle_Incidente_v1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6014,10 +6014,10 @@
     {
       "i": "387223",
       "t": "419_PB_HU001_Chat_Virtual",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387221",
       "ep": "379729",
       "r": "Viki Liseth Cruz Plaza"
@@ -6036,10 +6036,10 @@
     {
       "i": "387999",
       "t": "419_PB_HU001_Parametrizar_Cuentas_Contables_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6047,10 +6047,10 @@
     {
       "i": "388148",
       "t": "419_PB_HU002_Modificar_Plantilla_Notificacion",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386648",
       "ep": "379729",
       "r": "Viki Liseth Cruz Plaza"
@@ -6058,10 +6058,10 @@
     {
       "i": "388149",
       "t": "419_PB_HU003_Ver_Detalle_Plantilla_Notificacion",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386648",
       "ep": "379729",
       "r": "Viki Liseth Cruz Plaza"
@@ -6069,10 +6069,10 @@
     {
       "i": "388150",
       "t": "419_PB_HU004_Activar/Desactivar_Plantilla_Notificacion",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "386648",
       "ep": "379729",
       "r": "Viki Liseth Cruz Plaza"
@@ -6124,10 +6124,10 @@
     {
       "i": "389161",
       "t": "419_PB_HU001_Registrar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6135,10 +6135,10 @@
     {
       "i": "389164",
       "t": "419_PB_HU002_Consultar_Incidentes_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6322,10 +6322,10 @@
     {
       "i": "392593",
       "t": "419_PB_HU002_Consultar_Cuentas_Contables_Parametrizadas",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6333,10 +6333,10 @@
     {
       "i": "392594",
       "t": "419_PB_HU003_Modificar_Cuentas_Contables_Parametrizadas",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6388,10 +6388,10 @@
     {
       "i": "393039",
       "t": "419_PB_HU005_Activar_Inactivar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6399,10 +6399,10 @@
     {
       "i": "393045",
       "t": "419_PB_HU006_Configurar_Prioridades_Incidentes_v1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6410,10 +6410,10 @@
     {
       "i": "393052",
       "t": "419_PB_HU007_Crear_Nueva_Prioridad_v1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387106",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6564,10 +6564,10 @@
     {
       "i": "394066",
       "t": "419_PB_HU004_Eliminar_Cuenta_Contable_Parametrizadas",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6575,10 +6575,10 @@
     {
       "i": "394074",
       "t": "419_PB_HU005_Crear_Concepto_Contable_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6586,10 +6586,10 @@
     {
       "i": "394079",
       "t": "419_PB_HU006_Consultar_Conceptos_Contables_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6597,10 +6597,10 @@
     {
       "i": "394083",
       "t": "419_PB_HU007_Modificar_Concepto_Contable_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6608,10 +6608,10 @@
     {
       "i": "394096",
       "t": "419_PB_HU008_Eliminar_Concepto_Contable_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6619,10 +6619,10 @@
     {
       "i": "394100",
       "t": "419_PB_HU009_Crear_Perfil_Contables_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6762,10 +6762,10 @@
     {
       "i": "396879",
       "t": "419_PB_HU004_Listar_Incidentes_Pendientes_Atención_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6773,10 +6773,10 @@
     {
       "i": "396882",
       "t": "419_PB_HU005_Ver_Detalle_Desde_Atención_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6784,10 +6784,10 @@
     {
       "i": "396885",
       "t": "419_PB_HU006_Atender_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6795,10 +6795,10 @@
     {
       "i": "396889",
       "t": "419_PB_HU007_Escalar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6806,10 +6806,10 @@
     {
       "i": "396892",
       "t": "419_PB_HU008_Congelar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6817,10 +6817,10 @@
     {
       "i": "396895",
       "t": "419_PB_HU009_Descongelar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6828,10 +6828,10 @@
     {
       "i": "396898",
       "t": "419_PB_HU010_Autoasignar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6839,10 +6839,10 @@
     {
       "i": "396902",
       "t": "419_PB_HU011_Reasignar_Incidente_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387111",
       "ep": "379729",
       "r": "Carlos Alberto Valero Peña"
@@ -6850,10 +6850,10 @@
     {
       "i": "396928",
       "t": "419_PB_HU002_Generar_Reporte_Solicitudes_v1",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "387113",
       "ep": "379729",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -6949,10 +6949,10 @@
     {
       "i": "398453",
       "t": "419_PB_HU010_Consultar_Perfiles_Contables_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6960,10 +6960,10 @@
     {
       "i": "398470",
       "t": "419_PB_HU011_Modificar_Perfil_Contable_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6971,10 +6971,10 @@
     {
       "i": "398472",
       "t": "419_PB_HU012_Eliminar_Perfil_Contable_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -6982,10 +6982,10 @@
     {
       "i": "398474",
       "t": "419_PB_HU013_Ver_Detalle_Perfil_Contable_DJ",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "387995",
       "ep": "379729",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -7048,13 +7048,13 @@
     {
       "i": "399899",
       "t": "419_PB_HU001_Solicitud_Ingreso_novedad_usuariosEntesCoactivos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "399921",
@@ -7125,10 +7125,10 @@
     {
       "i": "400265",
       "t": "419_PB_HU009_Descarga_Excel_Consulta_Usuario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -7136,10 +7136,10 @@
     {
       "i": "400266",
       "t": "419_PB_HU010_Descarga_PDF_Consulta_Usuario",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -7147,10 +7147,10 @@
     {
       "i": "400267",
       "t": "419_PB_HU011_Configuración_Solicitud_Creación_De_Usuarios",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "319595",
       "ep": "373564",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -7246,35 +7246,35 @@
     {
       "i": "402960",
       "t": "419_PB_HU002_Gestion_Novedad_Usuario_EntesCoactivos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "402963",
       "t": "419_PB_HU003_Gestion_Novedad_Usuario_AutorizacionEntesCoactivos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "402965",
       "t": "419_PB_HU004_Detalle_Novedad_Usuarios",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "402974",
@@ -7422,10 +7422,10 @@
     {
       "i": "403805",
       "t": "419_PB_HU008_Consultar_Cuentas_Bancarias_Parametrizadas_Para_Prescripción_Pendientes_De_Autorización",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377383",
       "ep": "373564",
       "r": "Juan Diego Rincon Franco"
@@ -7598,21 +7598,21 @@
     {
       "i": "407039",
       "t": "419_PB_HU005_ConfiguracionSolicitud_Etapas",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "407045",
       "t": "419_PB_HU006_ActualizarInformacionNovedadTransitoria.",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
       "r": "Yamile Andrea Carmona Osorio"
@@ -7620,46 +7620,46 @@
     {
       "i": "407048",
       "t": "419_PB_HU007_Solicitud_NovedadMasivaEstados_usuarios",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "407049",
       "t": "419_PB_HU008_Autorizacion_NovedadMasiva_Usuarios",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "407051",
       "t": "419_PB_HU009_GestionRevisionInformacion_NovedadMasiva_Usuarios",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "407054",
       "t": "419_PB_HU010_VerDetalle_NovedadMasiva_Usuario",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "407224",
@@ -10337,13 +10337,13 @@
     {
       "i": "483380",
       "t": "419_PB_HU003_Ajuste_Solicitud_Automatica_Creacion_Usuario_Tx",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "483383",
@@ -10425,10 +10425,10 @@
     {
       "i": "484569",
       "t": "419_PB_HU002_Levantamiento_Bloqueo_Preventivo_Automatico_Integracion-COBIS",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10436,10 +10436,10 @@
     {
       "i": "484570",
       "t": "419_PB_HU003_Pago_Por_Fraccionamiento_Integracion-COBIS",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10447,10 +10447,10 @@
     {
       "i": "484571",
       "t": "419_PB_HU004_Pago_Por_Conversion_Integracion-COBIS",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10586,17 +10586,6 @@
       "f": "399896",
       "ep": "531917",
       "r": "Ricardo Andres Guzman Guzman"
-    },
-    {
-      "i": "487099",
-      "t": "419_PB_TEC002_Arquitectura_Datos_Ajuste_Creación_Usuarios_Ente_Manual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "532401",
-      "ep": "531917",
-      "r": "Carlos Andres Lopez"
     },
     {
       "i": "487691",
@@ -10832,10 +10821,10 @@
     {
       "i": "492303",
       "t": "419_PB_HU005_Consulta_Deposito_Por_Beneficiario_Integracion_Cobis",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10843,10 +10832,10 @@
     {
       "i": "492305",
       "t": "419_PB_HU006_Consulta_Deposito_Judicial_Integracion_Cobis",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10854,10 +10843,10 @@
     {
       "i": "492334",
       "t": "419_PB_HU007_Consulta_Deposito_Arrendamiento_Integracion_Cobis",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10865,10 +10854,10 @@
     {
       "i": "492336",
       "t": "419_PB_HU008_Consulta_Deposito_Titulo_Valor_Integracion_Cobis",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -10920,10 +10909,10 @@
     {
       "i": "498158",
       "t": "419_PB_HU001_Integracion_Anulacion_Novedades_Operativas_COBIS_Portal",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11349,10 +11338,10 @@
     {
       "i": "507283",
       "t": "419_PB_TEC002_Arquitectura_De_Datos_Ajuste_Creación_Usuarios_Ente_Manual",
-      "e": "3.  Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
       "r": "Daniel Felipe Socha Hurtado"
@@ -11558,32 +11547,32 @@
     {
       "i": "513980",
       "t": "419_PB_HU012_Descargar_Plantilla_Inactivacion_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "513988",
       "t": "419_PB_HU013_Cargar_Archivo_Inactivacion_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "514063",
       "t": "419_PB_TEC002_Arquitectura de Tecnologica_Levantamiento_Bloqueo_Preventivo_Automatico_Integracion-COBIS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11591,10 +11580,10 @@
     {
       "i": "514566",
       "t": "419_PB_TEC003_Arquitectura de Tecnologica_Pago_Por_Fraccionamiento_Integracion-COBIS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11602,10 +11591,10 @@
     {
       "i": "514645",
       "t": "419_PB_TEC004_Arquitectura de Tecnologica_Pago_Por_Conversion_Integracion-COBIS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11646,10 +11635,10 @@
     {
       "i": "515465",
       "t": "419_PB_TEC001_Arquitectura de Tecnologica_Anulacion_Novedades_Operativas_COBIS_Portal",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11690,10 +11679,10 @@
     {
       "i": "516468",
       "t": "419_PB_TEC005_Arquitectura de Tecnologica_Consulta_Deposito_Por_Beneficiario_Integracion_Cobis",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11701,10 +11690,10 @@
     {
       "i": "516469",
       "t": "419_PB_TEC006_Arquitectura de Tecnologica_Consulta_Deposito_Judicial_Integracion_Cobis",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11712,10 +11701,10 @@
     {
       "i": "516471",
       "t": "419_PB_TEC007_Arquitectura de Tecnologica_Consulta_Deposito_Arrendamiento_Integracion_Cobis",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -11723,10 +11712,10 @@
     {
       "i": "516472",
       "t": "419_PB_TEC008_Arquitectura de Tecnologica_Consulta_Deposito_Titulo_Valor_Integracion_Cobis",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "484565",
       "ep": "417341",
       "r": "Santiago Torifa Manso"
@@ -12295,13 +12284,13 @@
     {
       "i": "532774",
       "t": "419_PB_HU001_Registrar_Contingencia_Validacion_Biometrica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "532777",
@@ -12317,13 +12306,13 @@
     {
       "i": "532778",
       "t": "419_PB_HU002_Recibir_Resultado_Validacion_Biometrica_Habilitar_Acceso_Clave_Transaccional",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "532780",
@@ -12339,13 +12328,13 @@
     {
       "i": "532782",
       "t": "419_PB_HU003_Consultar_Solicitudes_Contingencia_Enviadas",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "532787",
@@ -12416,57 +12405,57 @@
     {
       "i": "532813",
       "t": "419_PB_HU001_Crear_Parametrizacion_Pago_Nacional",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532809",
       "ep": "531917",
-      "r": "Fabio Alexander Ruiz Torrejano"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "532818",
       "t": "419_PB_HU002_Eliminar_Parametrizacion_Pago_Nacional",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532809",
       "ep": "531917",
-      "r": "Fabio Alexander Ruiz Torrejano"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "532825",
       "t": "419_PB_HU003_Autorizar_Solicitud_Pago_Nacional",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532809",
       "ep": "531917",
-      "r": "Fabio Alexander Ruiz Torrejano"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "532828",
       "t": "419_PB_HU004_Rechazar_Solicitud_Pago_Nacional",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532809",
       "ep": "531917",
-      "r": "Fabio Alexander Ruiz Torrejano"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "532833",
       "t": "419_PB_HU005_Consultar_Parametrizaciones_Pago_Nacional",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532809",
       "ep": "531917",
-      "r": "Fabio Alexander Ruiz Torrejano"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "532871",
@@ -12554,7 +12543,7 @@
       "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Lina Maria Usme Marin"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "533065",
@@ -13053,7 +13042,7 @@
     },
     {
       "i": "538482",
-      "t": "419_PB_AD_HU006_Seguimiento_Administrativo_QA_Sprint_7_V1",
+      "t": "419_PB_AD_HU007_Seguimiento_Administrativo_QA_Sprint_7_V1",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
@@ -13087,10 +13076,10 @@
     {
       "i": "539589",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "532401",
       "ep": "531917",
       "r": "Viki Liseth Cruz Plaza"
@@ -13098,10 +13087,10 @@
     {
       "i": "539592",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajustar_Ingreso_Apertura_Cuenta",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "532401",
       "ep": "531917",
       "r": "Viki Liseth Cruz Plaza"
@@ -13164,10 +13153,10 @@
     {
       "i": "540516",
       "t": "419_PB_TEC001_Arquitectura_Datos_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "532401",
       "ep": "531917",
       "r": "Viki Liseth Cruz Plaza"
@@ -13340,13 +13329,13 @@
     {
       "i": "551798",
       "t": "419_PB_CUE_CC_005_Ajuste_Creación_Usuarios_Ente_Manual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "551815",
@@ -13368,51 +13357,51 @@
       "v": 0.2,
       "f": "532770",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "553092",
       "t": "419_PB_HU006_Aplicar_Novedades_Programadas_Inactivacion_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "553352",
       "t": "419_PB_HU003_Gestion_InactivacionEstados_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "553368",
       "t": "419_PB_HU005_Resultado_Procesamiento_InactivacionEstados",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "553378",
       "t": "419_PB_HU004_Procesar_Registros_Inactivacion_UsuariosEntes",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "561017",
@@ -13446,40 +13435,150 @@
       "f": "561006",
       "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "562038",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "563026",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "399896",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "564043",
+      "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajuste_Creación_Usuarios_Ente_Manual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "564045",
+      "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajuste_Solicitud_Automatica_Creacion_Usuario_Tx",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "564096",
+      "t": "419_PB_TEC002_Arquitectura_de_Datos_Ajuste_Solicitud_Automatica_Creacion_Usuario_Tx",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Daniel Felipe Socha Hurtado"
+    },
+    {
+      "i": "564105",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos_Funcionalidades_Integración_de_Intercambio_de_Archivos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "564778",
+      "t": "419_PB_AD_HU008_Seguimiento_Administrativo_QA_Sprint_8_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "330490",
+      "ep": "327682",
+      "r": "Nathaly Sánchez Hincapié"
+    },
+    {
+      "i": "564974",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica_Plantillas_Notificacion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "564976",
+      "t": "419_PB_TEC001_Arquitectura_Datos_Plantillas_Notificacion",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Steven Florez Hernández"
+    },
+    {
+      "i": "565001",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Eduardo Tordecilla Paez"
     }
   ],
   "kpi": {
-    "n_hu": 1055,
-    "n_hu_activas": 957,
+    "n_hu": 1064,
+    "n_hu_activas": 966,
     "hu_sin_feature": 27,
     "n_feature": 158,
     "n_epic": 12,
     "n_feature_con_hu": 138,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7583,
-    "term_global": 346,
+    "pct_global": 0.7786,
+    "term_global": 431,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 1,
+    "feature_100_sin_cerrar": 0,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6321,
-    "estrategico": 0.3383,
+    "tactico": 0.6583,
+    "estrategico": 0.4662,
     "n": 133,
-    "d": 45,
+    "d": 62,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 133,
-    "feat_ent": 45,
+    "feat_ent": 62,
     "buckets": {
-      "100": 45,
-      "75": 26,
-      "50": 12,
-      "20": 34,
-      "0": 16
+      "100": 62,
+      "75": 12,
+      "50": 9,
+      "20": 36,
+      "0": 14
     }
   }
 }

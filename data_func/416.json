@@ -1,8 +1,8 @@
 {
   "codigo": "416",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_416_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:09",
+  "archivo": "HU_416_20261111.csv",
   "epics": [
     {
       "i": "345822",
@@ -10,7 +10,7 @@
       "n_f": 3,
       "n": 154,
       "term": 0,
-      "pct": 0.251
+      "pct": 0.2514
     },
     {
       "i": "345824",
@@ -18,7 +18,7 @@
       "n_f": 4,
       "n": 95,
       "term": 0,
-      "pct": 0.2553
+      "pct": 0.2563
     }
   ],
   "features": [
@@ -30,7 +30,7 @@
       "ept": "416_Vida Individual",
       "n": 131,
       "term": 0,
-      "pct": 0.1877,
+      "pct": 0.1885,
       "n_pct": 131
     },
     {
@@ -52,7 +52,7 @@
       "ept": "416_Accidentes Personales",
       "n": 36,
       "term": 0,
-      "pct": 0.2908,
+      "pct": 0.2936,
       "n_pct": 36
     },
     {
@@ -63,7 +63,7 @@
       "ept": "416_Vida Individual",
       "n": 19,
       "term": 0,
-      "pct": 0.6984,
+      "pct": 0.6958,
       "n_pct": 19
     },
     {
@@ -132,6 +132,17 @@
       "v": 0.8,
       "f": "346272",
       "ep": "345822",
+      "r": "Andrés Stick Melo Figueroa"
+    },
+    {
+      "i": "346293",
+      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "345655",
+      "ep": "345824",
       "r": "Andrés Stick Melo Figueroa"
     },
     {
@@ -454,17 +465,6 @@
       "r": "Ivan Camilo Pulido Ibarra"
     },
     {
-      "i": "346617",
-      "t": "416_VI_EMI_HU213_REASIGNACIÓN DE PÓLIZAS",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.6,
-      "f": "346272",
-      "ep": "345822",
-      "r": "JENIFER AYALA AGUILAR"
-    },
-    {
       "i": "346627",
       "t": "416_VI_EMI_HU272_CARÁTULA DE SOLICITUD DE PÓLIZAS",
       "e": "7.1 Pruebas QA",
@@ -485,17 +485,6 @@
       "f": "346274",
       "ep": "345822",
       "r": "Jhon Jardi Diaz Lora"
-    },
-    {
-      "i": "346654",
-      "t": "416_VI_NOV_HU447_SOLICITUD DE NOVEDAD",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
-      "f": "346274",
-      "ep": "345822",
-      "r": "Joan Steven Medina Beltran"
     },
     {
       "i": "434337",
@@ -544,10 +533,10 @@
     {
       "i": "346281",
       "t": "416_AP_EMI_HU187_DATOS GENERALES",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "345796",
       "ep": "345824",
       "r": "Jonathan Santiago Mora Lozano"
@@ -621,10 +610,10 @@
     {
       "i": "346626",
       "t": "416_VI_EMI_HU267_REPORTE DE PÓLIZAS EMITIDAS",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "346272",
       "ep": "345822",
       "r": "Jorge Luis Vargas Jimenez"
@@ -795,6 +784,28 @@
       "r": "Kevin Alexander Parra Alvarez"
     },
     {
+      "i": "346617",
+      "t": "416_VI_EMI_HU213_REASIGNACIÓN DE PÓLIZAS",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.45,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Kevin Alexander Parra Alvarez"
+    },
+    {
+      "i": "346614",
+      "t": "416_VI_EMI_HU198_CONSULTAR SOLICITUD DE PÓLIZA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Lesly Geraldine Perilla Franco"
+    },
+    {
       "i": "346300",
       "t": "416_AP_EMI_HU195_SINIESTRALIDADES EMISIÓN",
       "e": "8. Esperando Despliegue QA-UAT",
@@ -817,17 +828,6 @@
       "r": "Lesly Geraldine Perilla Franco"
     },
     {
-      "i": "346614",
-      "t": "416_VI_EMI_HU198_CONSULTAR SOLICITUD DE PÓLIZA",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "346272",
-      "ep": "345822",
-      "r": "Lesly Geraldine Perilla Franco"
-    },
-    {
       "i": "346612",
       "t": "416_VI_EMI_HU194_PRODUCTO",
       "e": "4. Refinamiento",
@@ -841,28 +841,6 @@
     {
       "i": "346346",
       "t": "416_AP_EMI_HU191_DATOS DEL TOMADOR",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Maria Alejandra Torrens Acosta"
-    },
-    {
-      "i": "346317",
-      "t": "416_AP_EMI_HU576_TIPO DE VIGENCIA ABIERTA",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "345796",
-      "ep": "345824",
-      "r": "Maria Alejandra Torrens Acosta"
-    },
-    {
-      "i": "346351",
-      "t": "416_AP_EMI_HU577_FACTURA POR ASEGURADO",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -1378,6 +1356,17 @@
       "r": "Omar Fernando Cantor Largo"
     },
     {
+      "i": "346317",
+      "t": "416_AP_EMI_HU576_TIPO DE VIGENCIA ABIERTA",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
       "i": "346335",
       "t": "416_AP_NOV_HU578_CONSULTA DE TOMADORES",
       "e": "5. Backlog General",
@@ -1396,6 +1385,17 @@
       "a": 1,
       "v": 0.2,
       "f": "345655",
+      "ep": "345824",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
+      "i": "346351",
+      "t": "416_AP_EMI_HU577_FACTURA POR ASEGURADO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "345796",
       "ep": "345824",
       "r": "Omar Fernando Cantor Largo"
     },
@@ -2445,6 +2445,17 @@
       "r": "Omar Fernando Cantor Largo"
     },
     {
+      "i": "388311",
+      "t": "416_VI_EMI_HU187_DATOS GENERALES",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "346272",
+      "ep": "345822",
+      "r": "Omar Fernando Cantor Largo"
+    },
+    {
       "i": "346655",
       "t": "416_VI_NOV_HU485_REPORTE DE MODIFICACIONES",
       "e": "5. Backlog General",
@@ -2463,17 +2474,6 @@
       "a": 1,
       "v": 0.2,
       "f": "346274",
-      "ep": "345822",
-      "r": "Omar Fernando Cantor Largo"
-    },
-    {
-      "i": "388311",
-      "t": "416_VI_EMI_HU187_DATOS GENERALES",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "346272",
       "ep": "345822",
       "r": "Omar Fernando Cantor Largo"
     },
@@ -2819,15 +2819,15 @@
       "r": "Yury Viviana Ocampo Baracaldo"
     },
     {
-      "i": "346293",
-      "t": "416_AP_EMI_HU192_DATOS DEL GRUPO ASEGURABLE",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "i": "346654",
+      "t": "416_VI_NOV_HU447_SOLICITUD DE NOVEDAD",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
-      "f": "345655",
-      "ep": "345824",
-      "r": "Zuleyne Astrid Vanegas Arevalo"
+      "v": 0.6,
+      "f": "346274",
+      "ep": "345822",
+      "r": "Zair Estevan Leon Gomez"
     },
     {
       "i": "556596",
@@ -2850,7 +2850,7 @@
     "n_feature_con_hu": 7,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.2527,
+    "pct_global": 0.2533,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

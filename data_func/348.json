@@ -1,53 +1,53 @@
 {
   "codigo": "348",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_348_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:10",
+  "archivo": "HU_348_20261111.csv",
   "epics": [
     {
       "i": "539569",
       "t": "Certificación Temáticos",
       "n_f": 9,
-      "n": 279,
-      "term": 141,
-      "pct": 0.5252
+      "n": 278,
+      "term": 163,
+      "pct": 0.7121
     },
     {
       "i": "539200",
       "t": "Certificación CORE",
       "n_f": 11,
       "n": 119,
-      "term": 85,
-      "pct": 0.7257
+      "term": 119,
+      "pct": 1.0
     }
   ],
   "features": [
     {
       "i": "540997",
       "t": "Sistec-GNET",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 64,
-      "term": 35,
-      "pct": 0.565,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 64
     },
     {
       "i": "540840",
       "t": "Sistec-EPNT",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 52,
-      "term": 52,
-      "pct": 1.0,
+      "term": 50,
+      "pct": 0.9808,
       "n_pct": 52
     },
     {
       "i": "540692",
       "t": "Gestión del Conocimiento",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 49,
@@ -58,56 +58,56 @@
     {
       "i": "541243",
       "t": "Acuerdos de gestión",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 40,
-      "term": 0,
-      "pct": 0.04,
+      "term": 40,
+      "pct": 1.0,
       "n_pct": 40
     },
     {
       "i": "539472",
       "t": "PQRSD",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 32,
-      "term": 19,
-      "pct": 0.61,
+      "term": 32,
+      "pct": 1.0,
       "n_pct": 32
     },
     {
       "i": "541364",
       "t": "Calidad y Procesos",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539569",
       "ept": "Certificación Temáticos",
-      "n": 32,
-      "term": 20,
-      "pct": 0.64,
-      "n_pct": 32
+      "n": 31,
+      "term": 31,
+      "pct": 1.0,
+      "n_pct": 31
     },
     {
       "i": "539347",
       "t": "Correspondencia",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 22,
-      "term": 8,
-      "pct": 0.3891,
+      "term": 22,
+      "pct": 1.0,
       "n_pct": 22
     },
     {
       "i": "539414",
       "t": "Transversal",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "539200",
       "ept": "Certificación CORE",
       "n": 19,
-      "term": 12,
-      "pct": 0.6463,
+      "term": 19,
+      "pct": 1.0,
       "n_pct": 19
     },
     {
@@ -150,8 +150,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 8,
-      "term": 0,
-      "pct": 0.04,
+      "term": 8,
+      "pct": 1.0,
       "n_pct": 8
     },
     {
@@ -830,10 +830,10 @@
     {
       "i": "539369",
       "t": "348_CORRESPONDENCIA_HU-CRP-008 - Distribución de solicitudes",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -841,10 +841,10 @@
     {
       "i": "539372",
       "t": "348_CORRESPONDENCIA_HU-CRP-009 - Impresión label de radicación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -852,10 +852,10 @@
     {
       "i": "539375",
       "t": "348_CORRESPONDENCIA_HU-CRP-010 - Reasignación de radicados de entrada a otras áreas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -863,10 +863,10 @@
     {
       "i": "539378",
       "t": "348_CORRESPONDENCIA_HU-CRP-011 - Reemplazo de documentos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -874,10 +874,10 @@
     {
       "i": "539381",
       "t": "348_CORRESPONDENCIA_HU-CRP-012 - Solicitar y realizar anulaciones",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -885,10 +885,10 @@
     {
       "i": "539384",
       "t": "348_CORRESPONDENCIA_HU-CRP-013 - Generar envío por correspondencia",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -896,10 +896,10 @@
     {
       "i": "539387",
       "t": "348_CORRESPONDENCIA_HU-CRP-014 - Realizar Devolución de envíos por correspondencia",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -907,10 +907,10 @@
     {
       "i": "539390",
       "t": "348_CORRESPONDENCIA_HU-CRP-015 - Avance Devolución de correspondencia",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -918,10 +918,10 @@
     {
       "i": "539393",
       "t": "348_CORRESPONDENCIA_HU-CRP-016 - Realizar Notificación Personal",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -929,10 +929,10 @@
     {
       "i": "539396",
       "t": "348_CORRESPONDENCIA_HU-CRP-017 - Generar sello de notificación personal",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -940,10 +940,10 @@
     {
       "i": "539399",
       "t": "348_CORRESPONDENCIA_HU-CRP-018 - Notificar por Aviso",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -951,10 +951,10 @@
     {
       "i": "539402",
       "t": "348_CORRESPONDENCIA_HU-CRP-019 - Consultar soportes de envío",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -973,10 +973,10 @@
     {
       "i": "539408",
       "t": "348_CORRESPONDENCIA_HU-CRP-021 - Radicar SDQS - Bogotá te escucha",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -984,10 +984,10 @@
     {
       "i": "539411",
       "t": "348_CORRESPONDENCIA_HU-CRP-022 - Transmitir SDQS - Bogotá te escucha",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539347",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1094,10 +1094,10 @@
     {
       "i": "539442",
       "t": "348_TRANSVERSAL_HU-TRV-010 - Administración de Usuarios",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1105,10 +1105,10 @@
     {
       "i": "539445",
       "t": "348_TRANSVERSAL_HU-TRV-011 - Administración CRUD Perfiles o Roles",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1116,10 +1116,10 @@
     {
       "i": "539448",
       "t": "348_TRANSVERSAL_HU-TRV-012 - Parametrización Días no Laborales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1160,10 +1160,10 @@
     {
       "i": "539460",
       "t": "348_TRANSVERSAL_HU-TRV-015 - Administración Tablas (campos)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1171,10 +1171,10 @@
     {
       "i": "539463",
       "t": "348_TRANSVERSAL_HU-TRV-016 - Parametrizar País, Departamento, Municipio_Ciudad",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1182,10 +1182,10 @@
     {
       "i": "539466",
       "t": "348_TRANSVERSAL_HU-TRV-017- Control de Acceso a Funcionalidades Según Licenciamiento SAP",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1193,10 +1193,10 @@
     {
       "i": "539469",
       "t": "348_TRANSVERSAL_HU-TRV-018-Reportes Gerenciales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539414",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1204,10 +1204,10 @@
     {
       "i": "539473",
       "t": "348_PQRS_HU 001 - Ingresar a la bandeja de tareas del SGDEA",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1215,10 +1215,10 @@
     {
       "i": "539476",
       "t": "348_PQRS_HU 002 - Ingresar a la PQRS o Solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1226,10 +1226,10 @@
     {
       "i": "539479",
       "t": "348_PQRS_HU 003 - Rechazar PQRS o solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1237,10 +1237,10 @@
     {
       "i": "539482",
       "t": "348_PQRS_HU 004 - Solicitar autorización para rechazo fuera de tiempo permitido",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1259,10 +1259,10 @@
     {
       "i": "539488",
       "t": "348_PQRS_HU 006 - Realizar Clasificación interna de una PQRS o solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1270,10 +1270,10 @@
     {
       "i": "539491",
       "t": "348_PQRS_HU 007 - Consulta automática de PQRS o solicitudes abiertas para la misma cuenta contrato",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1292,10 +1292,10 @@
     {
       "i": "539497",
       "t": "348_PQRS_HU 009 - Reasignar PQRS o solicitud a analista para su trámite",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jose Fernando Lozano Murcia"
@@ -1358,10 +1358,10 @@
     {
       "i": "539515",
       "t": "348_PQRS_HU 015 - Solicitar autorización para realizar transacción en SAP",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1369,10 +1369,10 @@
     {
       "i": "539518",
       "t": "348_PQRS_HU 016 - Aprobación de solicitud para ejecutar transacción en SAP",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1512,10 +1512,10 @@
     {
       "i": "539557",
       "t": "348_PQRS_HU 029 - Cierre de la Solicitud o PQRS y salida de la bandeja de tareas del usuario proyector",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1523,10 +1523,10 @@
     {
       "i": "539560",
       "t": "348_PQRS_HU 030 - Radicados con varias cuentas contrato y agregar o editar cuentas contrato en un radicado",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1534,10 +1534,10 @@
     {
       "i": "539563",
       "t": "348_PQRS_HU 031 - Reemplazo de vacaciones",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -1545,10 +1545,10 @@
     {
       "i": "539566",
       "t": "348_PQRS_HU 032 - Consultar en SGDEA Respuestas de avisos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "539472",
       "ep": "539200",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2600,7 +2600,7 @@
     },
     {
       "i": "540904",
-      "t": "Sistec-EPNT - HU-022 - Registrar plan de pruebas",
+      "t": "Sistec-EPNT - HU-022 - Registrar Análisis de viabilidad",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -2733,10 +2733,10 @@
     {
       "i": "540940",
       "t": "Sistec-EPNT - HU-034 - Elaborar presentación",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2777,10 +2777,10 @@
     {
       "i": "540952",
       "t": "Sistec-EPNT - HU-038 - Registrar socialización y anexar soportes",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2942,10 +2942,10 @@
     {
       "i": "540998",
       "t": "Sistec-GNET - HU-001 - Crear Solicitud",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2953,329 +2953,329 @@
     {
       "i": "541001",
       "t": "Sistec-GNET - HU-002 - Consultar Solicitudes",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541004",
       "t": "Sistec-GNET - HU-003 - Asignar Solicitud",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541007",
       "t": "Sistec-GNET - HU-004 - Asignar / Rechazar Asignación",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541010",
       "t": "Sistec-GNET - HU-005 - Consultar Directorio de Expertos y Páginas Amarillas",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541013",
       "t": "Sistec-GNET - HU-006 - Crear Planificación",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541016",
       "t": "Sistec-GNET - HU-007 - Editar Planificación",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541019",
       "t": "Sistec-GNET - HU-008 - Eliminar Planificación",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541022",
       "t": "Sistec-GNET - HU-009 - Cerrar Solicitud",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541025",
       "t": "Sistec-GNET - HU-010 - Asociar documentación a solicitud",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541028",
       "t": "Sistec-GNET - HU-011 - Programar mesa de trabajo",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541031",
       "t": "Sistec-GNET - HU-012 - Relacionar Líder a NT-ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541034",
       "t": "Sistec-GNET - HU-013 - Elaborar documento de anteproyecto",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541037",
       "t": "Sistec-GNET - HU-014 - Editar documento de anteproyecto",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541040",
       "t": "Sistec-GNET - HU-015 - Consultar - asociar NT-ET que afectan la solicitud",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "541043",
       "t": "Sistec-GNET - HU-016 - Registrar comentarios y observaciones",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541046",
       "t": "Sistec-GNET - HU-017 - Crear memorando de discusión",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541049",
       "t": "Sistec-GNET - HU-018 - Eliminar memorando de discusión",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541052",
       "t": "Sistec-GNET - HU-019 - Editar memorando de discusión",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541055",
       "t": "Sistec-GNET - HU-020 - Crear observaciones en anteproyecto y proyecto",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541058",
       "t": "Sistec-GNET - HU-021 - Generar lista de observaciones",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541061",
       "t": "Sistec-GNET - HU-022 - Generar acta de comité industrial",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541064",
       "t": "Sistec-GNET - HU-023 - Publicar NT-ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541067",
       "t": "Sistec-GNET - HU-024 - Buscar NT - ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541070",
       "t": "Sistec-GNET - HU-025 - Generar versionamiento NT-ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541073",
       "t": "Sistec-GNET - HU-026 - Poner marca de agua al cambiar estado",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541076",
       "t": "Sistec-GNET - HU-027 - Clasificar NT-ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541079",
       "t": "Sistec-GNET - HU-028 - Cargar información generada en medio físico",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541082",
       "t": "Sistec-GNET - HU-029 - Consultar NT-ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541085",
       "t": "Sistec-GNET - HU-030 - Bloquear edición de documentos",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
-      "r": "Yuly Andrea Rodriguez Vela"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541088",
       "t": "Sistec-GNET - HU-031 - Consultar manual de SISTEC",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3283,10 +3283,10 @@
     {
       "i": "541091",
       "t": "Sistec-GNET - HU-032 - Consultar instructivo de acceso al SISTEC",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3294,10 +3294,10 @@
     {
       "i": "541094",
       "t": "Sistec-GNET - HU-033 - Consultar catálogo de NT-ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3305,10 +3305,10 @@
     {
       "i": "541097",
       "t": "Sistec-GNET - HU-034 - Generar tablero de control",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3316,10 +3316,10 @@
     {
       "i": "541100",
       "t": "Sistec-GNET - HU-035 - Analizar contenido similar NT ET",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 1.0,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3327,10 +3327,10 @@
     {
       "i": "541103",
       "t": "Sistec-GNET - HU-036 - Consultar áreas que han dado respuesta en la etapa de discusión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3338,10 +3338,10 @@
     {
       "i": "541106",
       "t": "Sistec-GNET - HU-037 - Generar reporte por estado de intervención",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3349,10 +3349,10 @@
     {
       "i": "541109",
       "t": "Sistec-GNET - HU-038 - Generar reporte por listado de NT-ET por tema con código – título - versión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3360,10 +3360,10 @@
     {
       "i": "541112",
       "t": "Sistec-GNET - HU-039 - Exportar reporte a PDF",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3371,10 +3371,10 @@
     {
       "i": "541115",
       "t": "Sistec-GNET - HU-040 - Generar reporte de las consultas realizadas por usuario",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3382,10 +3382,10 @@
     {
       "i": "541118",
       "t": "Sistec-GNET - HU-041 - Generar reporte por actividad",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3393,10 +3393,10 @@
     {
       "i": "541121",
       "t": "Sistec-GNET - HU-042 - Generar reporte por año, mes, código",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3404,10 +3404,10 @@
     {
       "i": "541124",
       "t": "Sistec-GNET - HU-043 - Generar reporte descarga",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3415,10 +3415,10 @@
     {
       "i": "541127",
       "t": "Sistec-GNET - HU-044 - Generar reporte solicitudes",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3426,10 +3426,10 @@
     {
       "i": "541130",
       "t": "Sistec-GNET - HU-045 - Generar reporte a partir de los datos de la serie, sub-serie",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3437,10 +3437,10 @@
     {
       "i": "541133",
       "t": "Sistec-GNET - HU-046 - Generar reporte a partir de tipologías documentales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3448,10 +3448,10 @@
     {
       "i": "541136",
       "t": "Sistec-GNET - HU-047 - Generar reporte a partir de datos propios de la operación",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3459,10 +3459,10 @@
     {
       "i": "541139",
       "t": "Sistec-GNET - HU-048 - Listar documentos asociados a una NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3470,10 +3470,10 @@
     {
       "i": "541142",
       "t": "Sistec-GNET - HU-049 - Generar listado de términos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3481,10 +3481,10 @@
     {
       "i": "541145",
       "t": "Sistec-GNET - HU-050 - Generar listado de anexos por NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3492,10 +3492,10 @@
     {
       "i": "541148",
       "t": "Sistec-GNET - HU-051 - Generar listado de líderes y profesionales de apoyo de la NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3503,10 +3503,10 @@
     {
       "i": "541151",
       "t": "Sistec-GNET - HU-052 - Generar listado de eventos socialización NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3514,10 +3514,10 @@
     {
       "i": "541154",
       "t": "Sistec-GNET - HU-053 - Realizar solicitud - grupo de interés",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3525,10 +3525,10 @@
     {
       "i": "541157",
       "t": "Sistec-GNET - HU-054 - Descargar Norma Técnica - Especificación Técnica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3536,10 +3536,10 @@
     {
       "i": "541160",
       "t": "Sistec-GNET - HU-055 - Agrupar NT-ET por tema o subtema",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3547,10 +3547,10 @@
     {
       "i": "541163",
       "t": "Sistec-GNET - HU-056 - Diligenciar formato de apropiación del conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3558,10 +3558,10 @@
     {
       "i": "541166",
       "t": "Sistec-GNET - HU-057 - Publicar Acta de Comité Industrial",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3569,10 +3569,10 @@
     {
       "i": "541169",
       "t": "Sistec-GNET - HU-058 - Consultas Avanzadas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3580,10 +3580,10 @@
     {
       "i": "541172",
       "t": "Sistec-GNET - HU-059 - Administrar memorando de discusión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3591,10 +3591,10 @@
     {
       "i": "541175",
       "t": "Sistec-GNET - HU-060 - Consultar memorando de discusión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3602,10 +3602,10 @@
     {
       "i": "541178",
       "t": "Sistec-GNET - HU-061 - Gestionar las clasificaciones de las NT-ET",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3613,10 +3613,10 @@
     {
       "i": "541181",
       "t": "Sistec-GNET - HU-062 - Gestionar los Anexos subidos al sistema",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3624,10 +3624,10 @@
     {
       "i": "541184",
       "t": "Sistec-GNET - HU-063 - Asociar lista de chequeo a norma",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3635,10 +3635,10 @@
     {
       "i": "541187",
       "t": "Sistec-GNET - HU-001 - Verificar Solicitud",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.5,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3745,538 +3745,538 @@
     {
       "i": "541219",
       "t": "Historias Laborales - HU-001 - Radicar novedades (Autogestión, Dependencias, Historias Laborales)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541222",
       "t": "Historias Laborales - HU-002 - Radicar novedad (Nueva vinculación)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541225",
       "t": "Historias Laborales - HU-003 - Gestionar radicados (Autogestión, otras dependencias, nuevos funcionarios)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541228",
       "t": "Historias Laborales - HU-004 - Cargue masivo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541231",
       "t": "Historias Laborales - HU-005 - Aprobar Radicados",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541234",
       "t": "Historias Laborales - HU-006 - Realizar Reportes Historias Laborales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541237",
       "t": "Historias Laborales - HU-007 - Parametrizar lista de chequeo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541240",
       "t": "Historias Laborales - HU-008 - Parametrización lista tipo de recepción",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541218",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541244",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-001 - Registrar requerimiento funcional",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541247",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-002 - Consultar requerimiento funcional",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541250",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-003 - Editar requerimiento funcional",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541253",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-004 - Eliminar requerimiento funcional",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541256",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-005 - Parametrizar Acuerdos de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541259",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-006 - Cargar Plan Estratégico",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541262",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-007 - Consultar Plan Estratégico",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541265",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-008 - Crear Portada",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541268",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-009 - Consultar acuerdos de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541271",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-010 - Editar acuerdo de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541274",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-011 - Consultar registro histórico suscripción de acuerdos de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541277",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-012 - Solicitar Concertación y formalización_vinculo estratégico",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541280",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-013 - Registrar compromisos gerenciales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541283",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-014 - Editar compromisos gerenciales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541286",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-015 - Consultar compromisos gerenciales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541289",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-016 - Generar reporte para impresión - Indicadores",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541292",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-017 - Registrar plan de acción y cronograma",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541295",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-018 - Consultar plan de acción y cronograma",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541298",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-019 - Generar reporte para impresión - Compromisos Gerenciales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541301",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-020 - Generar reporte para impresión - Reportes Excel",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541304",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-021 - Registrar indicadores",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541307",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-022 - Consultar indicadores",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541310",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-023 - Generar reporte para impresión - Total Empresa",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541313",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-024 - Administración Indicadores",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541316",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-025 - Realizar seguimiento a acuerdos de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541319",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-026 - Histórico Acuerdos de Gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541322",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-027 - Registrar Autocontrol (Compromisos Gerenciales - Indicadores)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541325",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-028 - Registrar, Editar, Eliminar análisis",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541328",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-029 - Enviar análisis",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541331",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-030 - Registrar ajustes u observaciones al acuerdo de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541334",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-031 - Registrar monitoreo de Acuerdos de Gestión.",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541337",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-032 - Administrar compromisos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541340",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-033 - Generar Reporte de monitoreo de Acuerdos de Gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541343",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-034 - Elaborar informe de acuerdos de gestión",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541346",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-035 - Crear, editar, inactivar evaluación (Superior jerárquico - Par - S...",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541349",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-036 - Medición de la evaluación (Superior jerárquico - Par - Subalter...",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541352",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-037 - Parámetros Evaluadores",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541355",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-038 - Búsqueda Básica",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541358",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-039 - Búsqueda Avanzada",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541361",
       "t": "Acuerdos de gestión - 348_ACUERDOS_HU-040 - Reportes por indicadores",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541243",
       "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhostin Alexander Ladino Gonzalez"
     },
     {
       "i": "541365",
       "t": "Calidad y Procesos - HU-001 - Descargar plantilla o documento vigente.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4284,10 +4284,10 @@
     {
       "i": "541368",
       "t": "Calidad y Procesos - HU-002 - Crear Solicitud de creación, modificación o eliminación de documentos del SUG.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4295,10 +4295,10 @@
     {
       "i": "541371",
       "t": "Calidad y Procesos - HU-003 - Buscar y consultar solicitud de documentos.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4306,10 +4306,10 @@
     {
       "i": "541374",
       "t": "Calidad y Procesos - HU-004 - Modificar solicitud de documentos.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4317,10 +4317,10 @@
     {
       "i": "541377",
       "t": "Calidad y Procesos - HU-005 - Recibir Tarea para elaborar Plan de Análisis.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4328,10 +4328,10 @@
     {
       "i": "541380",
       "t": "Calidad y Procesos - HU-006 - Diseñar plan de análisis del documento.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4394,10 +4394,10 @@
     {
       "i": "541398",
       "t": "Calidad y Procesos - HU-012 - Confirmar reuniones de análisis.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4546,19 +4546,8 @@
       "r": "Jose Fernando Lozano Murcia"
     },
     {
-      "i": "541440",
-      "t": "Calidad y Procesos - HU-026 - Actualizar Listados Maestros (Individual y Masivo).docx",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "541364",
-      "ep": "539569",
-      "r": "Jose Fernando Lozano Murcia"
-    },
-    {
       "i": "541443",
-      "t": "Calidad y Procesos - HU-027 - Recibir documento para publicación externa.docx",
+      "t": "Calidad y Procesos - HU-026 - Recibir documento para publicación externa.docx",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -4569,63 +4558,63 @@
     },
     {
       "i": "541446",
-      "t": "Calidad y Procesos - HU-028- Solicitar publicación al área de Comunicaciones.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "Calidad y Procesos - HU-027- Solicitar publicación al área de Comunicaciones.docx",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "541449",
-      "t": "Calidad y Procesos - HU-029 - Recibir tarea de cargar soportes de divulgación.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "Calidad y Procesos - HU-028 - Recibir tarea de cargar soportes de divulgación.docx",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "541452",
-      "t": "Calidad y Procesos - HU-030 - Cargar soportes de divulgación.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "Calidad y Procesos - HU-029 - Cargar soportes de divulgación.docx",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "541455",
-      "t": "Calidad y Procesos - HU-031 - Generar reportes.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "Calidad y Procesos - HU-030 - Generar reportes.docx",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "541458",
-      "t": "Calidad y Procesos - HU-032 - Consultas Listado Maestro.docx",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "Calidad y Procesos - HU-031 - Consultas Listado Maestro.docx",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "541364",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
     }
   ],
   "kpi": {
-    "n_hu": 398,
-    "n_hu_activas": 398,
+    "n_hu": 397,
+    "n_hu_activas": 397,
     "hu_sin_feature": 0,
     "n_feature": 20,
     "n_epic": 2,
@@ -4633,28 +4622,28 @@
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
     "pct_global": 0.738,
-    "term_global": 226,
+    "term_global": 282,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 4,
+    "feature_100_sin_cerrar": 0,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.738,
-    "estrategico": 0.6,
+    "tactico": 0.9085,
+    "estrategico": 0.85,
     "n": 20,
-    "d": 12,
+    "d": 17,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 20,
-    "feat_ent": 12,
+    "feat_ent": 17,
     "buckets": {
-      "100": 12,
-      "75": 0,
-      "50": 4,
+      "100": 17,
+      "75": 1,
+      "50": 0,
       "20": 1,
-      "0": 3
+      "0": 1
     }
   }
 }

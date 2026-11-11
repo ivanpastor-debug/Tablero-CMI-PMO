@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_461_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:10",
+  "archivo": "HU_461_20261111.csv",
   "epics": [
     {
       "i": "457548",
@@ -10,7 +10,7 @@
       "n_f": 7,
       "n": 32,
       "term": 0,
-      "pct": 0.5803
+      "pct": 0.5834
     },
     {
       "i": "467870",
@@ -26,7 +26,7 @@
       "n_f": 5,
       "n": 18,
       "term": 0,
-      "pct": 0.6911
+      "pct": 0.7467
     },
     {
       "i": "487090",
@@ -34,7 +34,7 @@
       "n_f": 5,
       "n": 11,
       "term": 0,
-      "pct": 0.2111
+      "pct": 0.2
     },
     {
       "i": "487098",
@@ -58,7 +58,7 @@
       "n_f": 1,
       "n": 2,
       "term": 1,
-      "pct": 0.8
+      "pct": 0.925
     }
   ],
   "features": [
@@ -103,7 +103,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 6,
       "term": 0,
-      "pct": 0.7667,
+      "pct": 0.85,
       "n_pct": 6
     },
     {
@@ -114,7 +114,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 6,
       "term": 0,
-      "pct": 0.725,
+      "pct": 0.8083,
       "n_pct": 6
     },
     {
@@ -158,7 +158,7 @@
       "ept": "Parametrización y Configuración",
       "n": 4,
       "term": 0,
-      "pct": 0.7,
+      "pct": 0.725,
       "n_pct": 4
     },
     {
@@ -169,7 +169,7 @@
       "ept": "Finanzas y Contabilidad de Campaña",
       "n": 4,
       "term": 0,
-      "pct": 0.2333,
+      "pct": 0.2,
       "n_pct": 3
     },
     {
@@ -268,7 +268,7 @@
       "ept": "Transversales",
       "n": 2,
       "term": 1,
-      "pct": 0.8,
+      "pct": 0.925,
       "n_pct": 2
     },
     {
@@ -441,10 +441,10 @@
     {
       "i": "461310",
       "t": "HU_AccAut_004_Validación de Autenticación 2FA",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "436526",
       "ep": "435992",
       "r": "Osmar Peña González"
@@ -485,10 +485,10 @@
     {
       "i": "461752",
       "t": "HU_AccAut_003_Configuración inicial de 2FA",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "436526",
       "ep": "435992",
       "r": "Osmar Peña González"
@@ -507,10 +507,10 @@
     {
       "i": "466204",
       "t": "HU_AccOnb_009_Control de intentos autenticación",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "487224",
       "ep": "435992",
       "r": "John Sebastian Rincon Pulido"
@@ -518,10 +518,10 @@
     {
       "i": "467379",
       "t": "HU_ParMar_022_Administrar índices de actualización",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "457549",
       "ep": "457548",
       "r": "Nancy Natalie Valverde Morantes"
@@ -1046,10 +1046,10 @@
     {
       "i": "489949",
       "t": "HU_AccOnb_043_Wizard de onboarding",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "487224",
       "ep": "435992",
       "r": "Osmar Peña González"
@@ -1211,10 +1211,10 @@
     {
       "i": "497812",
       "t": "HU_FinApo_062_Registrar aportante con identificación tokenizada",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.2,
       "f": "487120",
       "ep": "487090",
       "r": "Felipe Andres Lopez"
@@ -1860,13 +1860,13 @@
     {
       "i": "533196",
       "t": "Protección anti-abuso del BFF: IP de cliente confiable y límite por IP",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "467408",
       "ep": "467406",
-      "r": "Felipe Andres Lopez"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "534810",
@@ -1987,7 +1987,7 @@
       "v": 0.3,
       "f": "487143",
       "ep": "467870",
-      "r": "Jose Luis Cortes Jerez"
+      "r": "Javier Felipe Vasquez Roldan"
     },
     {
       "i": "548242",
@@ -2164,7 +2164,7 @@
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
     "hu_omitidas": 47,
-    "pct_global": 0.443,
+    "pct_global": 0.4549,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -2173,7 +2173,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.1479,
+    "tactico": 0.1679,
     "estrategico": 0.0,
     "n": 32,
     "d": 0,
@@ -2183,9 +2183,9 @@
     "feat_ent": 0,
     "buckets": {
       "100": 0,
-      "75": 1,
-      "50": 2,
-      "20": 7,
+      "75": 3,
+      "50": 1,
+      "20": 6,
       "0": 22
     }
   }

@@ -1,7 +1,7 @@
 {
   "codigo": "004",
   "corte": "2026-10-30",
-  "generado": "2026-11-09 09:14",
+  "generado": "2026-11-11 09:09",
   "archivo": "HU_004_20261030.csv",
   "epics": [
     {
@@ -245,7 +245,7 @@
     {
       "i": "540110",
       "t": "Devoluciones y publicación",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "422326",
       "ept": "Deuda SGDEA",
       "n": 4,
@@ -289,7 +289,7 @@
     {
       "i": "540011",
       "t": "Clonación Consolidado",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "422326",
       "ept": "Deuda SGDEA",
       "n": 3,
@@ -300,7 +300,7 @@
     {
       "i": "422343",
       "t": "Tabla de retención documental",
-      "e": "2. En Curso",
+      "e": "4. Cerrado",
       "ep": "422326",
       "ept": "Deuda SGDEA",
       "n": 3,
@@ -311,7 +311,7 @@
     {
       "i": "422345",
       "t": "Expedientes",
-      "e": "2. En Curso",
+      "e": "4. Cerrado",
       "ep": "422326",
       "ept": "Deuda SGDEA",
       "n": 3,
@@ -322,7 +322,7 @@
     {
       "i": "422352",
       "t": "Retención y disposición",
-      "e": "2. En Curso",
+      "e": "4. Cerrado",
       "ep": "422326",
       "ept": "Deuda SGDEA",
       "n": 3,
@@ -333,7 +333,7 @@
     {
       "i": "371199",
       "t": "Cuenta de cobro",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "354174",
       "ept": "Facturación",
       "n": 3,
@@ -355,7 +355,7 @@
     {
       "i": "477015",
       "t": "Préstamos documentales",
-      "e": "2. En Curso",
+      "e": "4. Cerrado",
       "ep": "422326",
       "ept": "Deuda SGDEA",
       "n": 3,
@@ -366,7 +366,7 @@
     {
       "i": "359035",
       "t": "Radicacion - Correspondencia",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "356042",
       "ept": "Correspondencia",
       "n": 2,
@@ -388,7 +388,7 @@
     {
       "i": "125099",
       "t": "0. SGDEA",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "356040",
       "ept": "Transversal",
       "n": 1,
@@ -465,7 +465,7 @@
     {
       "i": "370013",
       "t": "Asignación - Correspondencia",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "356042",
       "ept": "Correspondencia",
       "n": 1,
@@ -476,7 +476,7 @@
     {
       "i": "364220",
       "t": "Administración - correspondencia",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "356042",
       "ept": "Correspondencia",
       "n": 1,
@@ -498,7 +498,7 @@
     {
       "i": "370976",
       "t": "Administración - Medicina laboral",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "354210",
       "ept": "Medicina Laboral",
       "n": 1,
@@ -564,7 +564,7 @@
     {
       "i": "370473",
       "t": "Gestión - Medicina laboral",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "354210",
       "ept": "Medicina Laboral",
       "n": 0,
@@ -575,7 +575,7 @@
     {
       "i": "370476",
       "t": "Aprobación - Medicina laboral",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "354210",
       "ept": "Medicina Laboral",
       "n": 0,
@@ -586,7 +586,7 @@
     {
       "i": "371148",
       "t": "Radicación - PQRD",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "354186",
       "ept": "PRQRS",
       "n": 0,
@@ -597,7 +597,7 @@
     {
       "i": "371152",
       "t": "Aprobación - PQRD",
-      "e": "1. En Planeacion",
+      "e": "4. Cerrado",
       "ep": "354186",
       "ept": "PRQRS",
       "n": 0,
@@ -3096,7 +3096,7 @@
     "term_global": 14,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 6,
+    "feature_100_sin_cerrar": 0,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },

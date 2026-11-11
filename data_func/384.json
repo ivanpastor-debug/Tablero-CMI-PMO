@@ -1,16 +1,16 @@
 {
   "codigo": "384",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_384_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:10",
+  "archivo": "HU_384_20261111.csv",
   "epics": [
     {
       "i": "83564",
       "t": "13 TES_TESORERIA",
       "n_f": 68,
-      "n": 960,
+      "n": 961,
       "term": 468,
-      "pct": 0.8503
+      "pct": 0.8537
     },
     {
       "i": "83562",
@@ -18,23 +18,23 @@
       "n_f": 33,
       "n": 559,
       "term": 379,
-      "pct": 0.9329
+      "pct": 0.934
     },
     {
       "i": "88338",
       "t": "11 NOR_NORMATIVO",
       "n_f": 67,
       "n": 370,
-      "term": 148,
-      "pct": 0.82
+      "term": 149,
+      "pct": 0.8222
     },
     {
       "i": "83563",
       "t": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
       "n_f": 53,
-      "n": 344,
+      "n": 345,
       "term": 174,
-      "pct": 0.8733
+      "pct": 0.8791
     },
     {
       "i": "83566",
@@ -48,9 +48,9 @@
       "i": "88337",
       "t": "10 TRI_TRIBUTARIO",
       "n_f": 18,
-      "n": 260,
-      "term": 121,
-      "pct": 0.8815
+      "n": 264,
+      "term": 124,
+      "pct": 0.8792
     },
     {
       "i": "88327",
@@ -58,15 +58,15 @@
       "n_f": 9,
       "n": 254,
       "term": 42,
-      "pct": 0.8295
+      "pct": 0.8331
     },
     {
       "i": "88336",
       "t": "09 CXP_CUENTAS POR PAGAR",
       "n_f": 20,
-      "n": 221,
-      "term": 85,
-      "pct": 0.8416
+      "n": 233,
+      "term": 84,
+      "pct": 0.8116
     },
     {
       "i": "466629",
@@ -82,7 +82,7 @@
       "n_f": 15,
       "n": 178,
       "term": 63,
-      "pct": 0.8573
+      "pct": 0.864
     },
     {
       "i": "420816",
@@ -90,7 +90,7 @@
       "n_f": 27,
       "n": 163,
       "term": 1,
-      "pct": 0.7387
+      "pct": 0.7405
     },
     {
       "i": "331836",
@@ -125,12 +125,12 @@
       "pct": 0.9418
     },
     {
-      "i": "88329",
-      "t": "03 ACF_ACTIVOS FIJOS",
-      "n_f": 17,
-      "n": 118,
-      "term": 103,
-      "pct": 0.9746
+      "i": "88339",
+      "t": "12 PRE_PRESUPUESTO",
+      "n_f": 13,
+      "n": 109,
+      "term": 32,
+      "pct": 0.8064
     },
     {
       "i": "83565",
@@ -139,14 +139,6 @@
       "n": 107,
       "term": 15,
       "pct": 0.7832
-    },
-    {
-      "i": "88339",
-      "t": "12 PRE_PRESUPUESTO",
-      "n_f": 13,
-      "n": 105,
-      "term": 32,
-      "pct": 0.7352
     },
     {
       "i": "83561",
@@ -162,7 +154,15 @@
       "n_f": 1,
       "n": 70,
       "term": 34,
-      "pct": 0.8886
+      "pct": 0.8971
+    },
+    {
+      "i": "88329",
+      "t": "03 ACF_ACTIVOS FIJOS",
+      "n_f": 13,
+      "n": 50,
+      "term": 30,
+      "pct": 0.86
     },
     {
       "i": "159753",
@@ -181,20 +181,20 @@
       "pct": 0.9143
     },
     {
+      "i": "88340",
+      "t": "14 CB_CONCILIACION BANCARIA",
+      "n_f": 5,
+      "n": 35,
+      "term": 0,
+      "pct": 0.6114
+    },
+    {
       "i": "88335",
       "t": "06 OBF_OBLIGACIONES FINANCIERAS",
       "n_f": 2,
       "n": 32,
       "term": 11,
       "pct": 0.8594
-    },
-    {
-      "i": "88340",
-      "t": "14 CB_CONCILIACION BANCARIA",
-      "n_f": 5,
-      "n": 28,
-      "term": 0,
-      "pct": 0.7143
     },
     {
       "i": "88331",
@@ -217,8 +217,8 @@
       "t": "17 UAS_USUARIOS",
       "n_f": 4,
       "n": 20,
-      "term": 15,
-      "pct": 0.95
+      "term": 18,
+      "pct": 0.98
     },
     {
       "i": "319471",
@@ -382,7 +382,7 @@
       "ept": "19 TER_TERCEROS",
       "n": 70,
       "term": 34,
-      "pct": 0.8886,
+      "pct": 0.8971,
       "n_pct": 70
     },
     {
@@ -402,10 +402,10 @@
       "e": "3. Entregado",
       "ep": "88336",
       "ept": "09 CXP_CUENTAS POR PAGAR",
-      "n": 64,
+      "n": 66,
       "term": 23,
-      "pct": 0.8063,
-      "n_pct": 64
+      "pct": 0.8015,
+      "n_pct": 66
     },
     {
       "i": "411322",
@@ -413,10 +413,10 @@
       "e": "1. En Planeacion",
       "ep": "88337",
       "ept": "10 TRI_TRIBUTARIO",
-      "n": 57,
-      "term": 19,
-      "pct": 0.8614,
-      "n_pct": 57
+      "n": 58,
+      "term": 20,
+      "pct": 0.8638,
+      "n_pct": 58
     },
     {
       "i": "83597",
@@ -426,7 +426,7 @@
       "ept": "13 TES_TESORERIA",
       "n": 55,
       "term": 37,
-      "pct": 0.8745,
+      "pct": 0.88,
       "n_pct": 55
     },
     {
@@ -481,7 +481,7 @@
       "ept": "05 CDE_CONTRATACIÓN DERIVADA",
       "n": 42,
       "term": 4,
-      "pct": 0.8048,
+      "pct": 0.8119,
       "n_pct": 42
     },
     {
@@ -503,7 +503,7 @@
       "ept": "05 CDE_CONTRATACIÓN DERIVADA",
       "n": 41,
       "term": 6,
-      "pct": 0.8,
+      "pct": 0.8146,
       "n_pct": 41
     },
     {
@@ -536,7 +536,7 @@
       "ept": "18 CLI_CLIENTES",
       "n": 38,
       "term": 10,
-      "pct": 0.8289,
+      "pct": 0.8526,
       "n_pct": 38
     },
     {
@@ -645,8 +645,8 @@
       "ep": "88337",
       "ept": "10 TRI_TRIBUTARIO",
       "n": 30,
-      "term": 5,
-      "pct": 0.8333,
+      "term": 7,
+      "pct": 0.8467,
       "n_pct": 30
     },
     {
@@ -658,6 +658,17 @@
       "n": 29,
       "term": 6,
       "pct": 0.8414,
+      "n_pct": 29
+    },
+    {
+      "i": "283452",
+      "t": "CXP_20_Autorización 2_Generación ORPA",
+      "e": "3. Entregado",
+      "ep": "88336",
+      "ept": "09 CXP_CUENTAS POR PAGAR",
+      "n": 29,
+      "term": 10,
+      "pct": 0.7448,
       "n_pct": 29
     },
     {
@@ -734,7 +745,7 @@
       "ept": "13 TES_TESORERIA",
       "n": 27,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.5556,
       "n_pct": 27
     },
     {
@@ -767,7 +778,7 @@
       "ept": "13 TES_TESORERIA",
       "n": 26,
       "term": 17,
-      "pct": 0.8269,
+      "pct": 0.8731,
       "n_pct": 26
     },
     {
@@ -812,39 +823,6 @@
       "n": 23,
       "term": 12,
       "pct": 0.9043,
-      "n_pct": 23
-    },
-    {
-      "i": "283452",
-      "t": "CXP_20_Autorización 2_Generación ORPA",
-      "e": "3. Entregado",
-      "ep": "88336",
-      "ept": "09 CXP_CUENTAS POR PAGAR",
-      "n": 23,
-      "term": 10,
-      "pct": 0.887,
-      "n_pct": 23
-    },
-    {
-      "i": "294150",
-      "t": "ACF_Compra_Activos_Fijos_Bienes",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 23,
-      "term": 17,
-      "pct": 0.9478,
-      "n_pct": 23
-    },
-    {
-      "i": "295017",
-      "t": "ACF_Registro_Activos_Fijos_Bienes",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 23,
-      "term": 18,
-      "pct": 0.9565,
       "n_pct": 23
     },
     {
@@ -969,6 +947,17 @@
       "n_pct": 20
     },
     {
+      "i": "278542",
+      "t": "CXP_21_Instrucciones_de_Pago",
+      "e": "1. En Planeacion",
+      "ep": "88336",
+      "ept": "09 CXP_CUENTAS POR PAGAR",
+      "n": 20,
+      "term": 12,
+      "pct": 0.83,
+      "n_pct": 20
+    },
+    {
       "i": "92866",
       "t": "TES_Consulta_Saldos_Cuenta_Bancaria_En_Línea",
       "e": "2. En Curso",
@@ -987,7 +976,7 @@
       "ept": "01 NFI_NEGOCIOS FIDUCIARIOS",
       "n": 19,
       "term": 12,
-      "pct": 0.8947,
+      "pct": 0.9263,
       "n_pct": 19
     },
     {
@@ -1101,14 +1090,25 @@
       "n_pct": 17
     },
     {
-      "i": "278542",
-      "t": "CXP_21_Instrucciones_de_Pago",
-      "e": "1. En Planeacion",
-      "ep": "88336",
-      "ept": "09 CXP_CUENTAS POR PAGAR",
+      "i": "322195",
+      "t": "TRI_HU0028_Generación_Certificados",
+      "e": "3. Entregado",
+      "ep": "88337",
+      "ept": "10 TRI_TRIBUTARIO",
       "n": 17,
-      "term": 12,
-      "pct": 0.9412,
+      "term": 10,
+      "pct": 0.8647,
+      "n_pct": 17
+    },
+    {
+      "i": "538565",
+      "t": "PRE_Documento_Presupuestal",
+      "e": "1. En Planeacion",
+      "ep": "88339",
+      "ept": "12 PRE_PRESUPUESTO",
+      "n": 17,
+      "term": 0,
+      "pct": 0.7471,
       "n_pct": 17
     },
     {
@@ -1142,17 +1142,6 @@
       "n": 16,
       "term": 7,
       "pct": 0.8875,
-      "n_pct": 16
-    },
-    {
-      "i": "279222",
-      "t": "CXP_HU0018_Liquidación_Tributaria",
-      "e": "3. Entregado",
-      "ep": "88336",
-      "ept": "09 CXP_CUENTAS POR PAGAR",
-      "n": 16,
-      "term": 5,
-      "pct": 0.8438,
       "n_pct": 16
     },
     {
@@ -1222,14 +1211,14 @@
       "n_pct": 15
     },
     {
-      "i": "538565",
-      "t": "PRE_Documento_Presupuestal",
-      "e": "1. En Planeacion",
-      "ep": "88339",
-      "ept": "12 PRE_PRESUPUESTO",
+      "i": "279222",
+      "t": "CXP_HU0018_Liquidación_Tributaria",
+      "e": "3. Entregado",
+      "ep": "88336",
+      "ept": "09 CXP_CUENTAS POR PAGAR",
       "n": 15,
-      "term": 0,
-      "pct": 0.52,
+      "term": 4,
+      "pct": 0.8533,
       "n_pct": 15
     },
     {
@@ -1288,17 +1277,6 @@
       "n_pct": 14
     },
     {
-      "i": "322195",
-      "t": "TRI_HU0028_Generación_Certificados",
-      "e": "3. Entregado",
-      "ep": "88337",
-      "ept": "10 TRI_TRIBUTARIO",
-      "n": 14,
-      "term": 10,
-      "pct": 0.9429,
-      "n_pct": 14
-    },
-    {
       "i": "83603",
       "t": "CON_Centro_De_Costos",
       "e": "3. Entregado",
@@ -1351,6 +1329,17 @@
       "n": 13,
       "term": 7,
       "pct": 0.8385,
+      "n_pct": 13
+    },
+    {
+      "i": "110332",
+      "t": "TES_Consulta_Grupo_Dispersión",
+      "e": "3. Entregado",
+      "ep": "83564",
+      "ept": "13 TES_TESORERIA",
+      "n": 13,
+      "term": 5,
+      "pct": 0.8308,
       "n_pct": 13
     },
     {
@@ -1431,6 +1420,17 @@
       "n_pct": 13
     },
     {
+      "i": "319694",
+      "t": "Conciliacion",
+      "e": "1. En Planeacion",
+      "ep": "88340",
+      "ept": "14 CB_CONCILIACION BANCARIA",
+      "n": 13,
+      "term": 0,
+      "pct": 0.5231,
+      "n_pct": 13
+    },
+    {
       "i": "426353",
       "t": "TES_Respuesta Banco (Nuevo)",
       "e": "1. En Planeacion",
@@ -1472,17 +1472,6 @@
       "n": 12,
       "term": 7,
       "pct": 0.9167,
-      "n_pct": 12
-    },
-    {
-      "i": "110332",
-      "t": "TES_Consulta_Grupo_Dispersión",
-      "e": "3. Entregado",
-      "ep": "83564",
-      "ept": "13 TES_TESORERIA",
-      "n": 12,
-      "term": 5,
-      "pct": 0.8833,
       "n_pct": 12
     },
     {
@@ -1549,6 +1538,17 @@
       "n": 12,
       "term": 1,
       "pct": 0.8167,
+      "n_pct": 12
+    },
+    {
+      "i": "514018",
+      "t": "PRE_Presupuesto_Inicial",
+      "e": "1. En Planeacion",
+      "ep": "88339",
+      "ept": "12 PRE_PRESUPUESTO",
+      "n": 12,
+      "term": 0,
+      "pct": 0.725,
       "n_pct": 12
     },
     {
@@ -1673,6 +1673,17 @@
       "n_pct": 11
     },
     {
+      "i": "284517",
+      "t": "CXP_26_Aplicar_Pagos_Programados",
+      "e": "1. En Planeacion",
+      "ep": "88336",
+      "ept": "09 CXP_CUENTAS POR PAGAR",
+      "n": 11,
+      "term": 1,
+      "pct": 0.6,
+      "n_pct": 11
+    },
+    {
       "i": "94078",
       "t": "CON_Desactualizar_Comprobantes_Cierre_Diario",
       "e": "2. En Curso",
@@ -1701,6 +1712,17 @@
       "ep": "88338",
       "ept": "11 NOR_NORMATIVO",
       "n": 11,
+      "term": 6,
+      "pct": 0.9091,
+      "n_pct": 11
+    },
+    {
+      "i": "294150",
+      "t": "ACF_Compra_Activos_Fijos_Bienes",
+      "e": "1. En Planeacion",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 11,
       "term": 5,
       "pct": 0.8909,
       "n_pct": 11
@@ -1724,7 +1746,7 @@
       "ept": "29 REP_REPORTEADOR",
       "n": 11,
       "term": 0,
-      "pct": 0.7455,
+      "pct": 0.7727,
       "n_pct": 11
     },
     {
@@ -1816,17 +1838,6 @@
       "n_pct": 10
     },
     {
-      "i": "284517",
-      "t": "CXP_26_Aplicar_Pagos_Programados",
-      "e": "1. En Planeacion",
-      "ep": "88336",
-      "ept": "09 CXP_CUENTAS POR PAGAR",
-      "n": 10,
-      "term": 1,
-      "pct": 0.64,
-      "n_pct": 10
-    },
-    {
       "i": "376914",
       "t": "NOR_Generación Certificados de Flujos de Recursos",
       "e": "1. En Planeacion",
@@ -1856,7 +1867,7 @@
       "ept": "11 NOR_NORMATIVO",
       "n": 10,
       "term": 2,
-      "pct": 0.72,
+      "pct": 0.78,
       "n_pct": 10
     },
     {
@@ -1865,17 +1876,6 @@
       "e": "1. En Planeacion",
       "ep": "420816",
       "ept": "29 REP_REPORTEADOR",
-      "n": 10,
-      "term": 0,
-      "pct": 0.8,
-      "n_pct": 10
-    },
-    {
-      "i": "514018",
-      "t": "PRE_Presupuesto_Inicial",
-      "e": "1. En Planeacion",
-      "ep": "88339",
-      "ept": "12 PRE_PRESUPUESTO",
       "n": 10,
       "term": 0,
       "pct": 0.8,
@@ -1912,6 +1912,39 @@
       "n": 9,
       "term": 8,
       "pct": 0.9778,
+      "n_pct": 9
+    },
+    {
+      "i": "103042",
+      "t": "FICS_Aportes y retiros por cargues masivos",
+      "e": "2. En Curso",
+      "ep": "83563",
+      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
+      "n": 9,
+      "term": 1,
+      "pct": 0.6889,
+      "n_pct": 9
+    },
+    {
+      "i": "295017",
+      "t": "ACF_Registro_Activos_Fijos_Bienes",
+      "e": "1. En Planeacion",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 9,
+      "term": 4,
+      "pct": 0.8889,
+      "n_pct": 9
+    },
+    {
+      "i": "329192",
+      "t": "Saldos bancarios",
+      "e": "1. En Planeacion",
+      "ep": "88340",
+      "ept": "14 CB_CONCILIACION BANCARIA",
+      "n": 9,
+      "term": 0,
+      "pct": 0.6,
       "n_pct": 9
     },
     {
@@ -2043,7 +2076,7 @@
       "ept": "13 TES_TESORERIA",
       "n": 8,
       "term": 3,
-      "pct": 0.8,
+      "pct": 0.875,
       "n_pct": 8
     },
     {
@@ -2146,17 +2179,6 @@
       "n_pct": 8
     },
     {
-      "i": "103042",
-      "t": "FICS_Aportes y retiros por cargues masivos",
-      "e": "2. En Curso",
-      "ep": "83563",
-      "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
-      "n": 8,
-      "term": 1,
-      "pct": 0.6,
-      "n_pct": 8
-    },
-    {
       "i": "231634",
       "t": "CDE_05_Definición_cláusulas_contratos",
       "e": "1. En Planeacion",
@@ -2175,7 +2197,7 @@
       "ept": "05 CDE_CONTRATACIÓN DERIVADA",
       "n": 8,
       "term": 5,
-      "pct": 0.85,
+      "pct": 0.8875,
       "n_pct": 8
     },
     {
@@ -2209,17 +2231,6 @@
       "n": 8,
       "term": 3,
       "pct": 0.8375,
-      "n_pct": 8
-    },
-    {
-      "i": "319694",
-      "t": "Conciliacion",
-      "e": "1. En Planeacion",
-      "ep": "88340",
-      "ept": "14 CB_CONCILIACION BANCARIA",
-      "n": 8,
-      "term": 0,
-      "pct": 0.725,
       "n_pct": 8
     },
     {
@@ -2361,8 +2372,8 @@
       "ep": "83555",
       "ept": "17 UAS_USUARIOS",
       "n": 8,
-      "term": 5,
-      "pct": 0.925,
+      "term": 8,
+      "pct": 1.0,
       "n_pct": 8
     },
     {
@@ -2509,25 +2520,14 @@
       "n_pct": 7
     },
     {
-      "i": "294436",
-      "t": "ACF_Venta_Activos_Fijos_Bienes",
+      "i": "284518",
+      "t": "CXP_27_Estado_Pagos",
       "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
+      "ep": "88336",
+      "ept": "09 CXP_CUENTAS POR PAGAR",
       "n": 7,
-      "term": 5,
-      "pct": 0.9429,
-      "n_pct": 7
-    },
-    {
-      "i": "310014",
-      "t": "ACF_Registro_Autorización_de_Novedades_Activos_Fijos_Bienes",
-      "e": "2. En Curso",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 7,
-      "term": 7,
-      "pct": 1.0,
+      "term": 0,
+      "pct": 0.7143,
       "n_pct": 7
     },
     {
@@ -2548,19 +2548,8 @@
       "ep": "88329",
       "ept": "03 ACF_ACTIVOS FIJOS",
       "n": 7,
-      "term": 6,
-      "pct": 0.9714,
-      "n_pct": 7
-    },
-    {
-      "i": "329192",
-      "t": "Saldos bancarios",
-      "e": "1. En Planeacion",
-      "ep": "88340",
-      "ept": "14 CB_CONCILIACION BANCARIA",
-      "n": 7,
-      "term": 0,
-      "pct": 0.7143,
+      "term": 1,
+      "pct": 0.4,
       "n_pct": 7
     },
     {
@@ -2648,7 +2637,7 @@
       "ept": "12 PRE_PRESUPUESTO",
       "n": 7,
       "term": 0,
-      "pct": 0.2857,
+      "pct": 0.5,
       "n_pct": 7
     },
     {
@@ -2769,7 +2758,7 @@
       "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
       "n": 6,
       "term": 2,
-      "pct": 0.6667,
+      "pct": 0.7667,
       "n_pct": 6
     },
     {
@@ -2855,50 +2844,6 @@
       "e": "2. En Curso",
       "ep": "83566",
       "ept": "08 CON_CONTABILIDAD",
-      "n": 6,
-      "term": 6,
-      "pct": 1.0,
-      "n_pct": 6
-    },
-    {
-      "i": "286850",
-      "t": "ACF_Configuración Tipos Y subtipos de Activos Fijos _ Bienes",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 6,
-      "term": 6,
-      "pct": 1.0,
-      "n_pct": 6
-    },
-    {
-      "i": "284518",
-      "t": "CXP_27_Estado_Pagos",
-      "e": "1. En Planeacion",
-      "ep": "88336",
-      "ept": "09 CXP_CUENTAS POR PAGAR",
-      "n": 6,
-      "term": 0,
-      "pct": 0.8,
-      "n_pct": 6
-    },
-    {
-      "i": "310871",
-      "t": "ACF_Englobe de activos y bienes",
-      "e": "2. En Curso",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 6,
-      "term": 6,
-      "pct": 1.0,
-      "n_pct": 6
-    },
-    {
-      "i": "311898",
-      "t": "ACF_Desenglobe_de_activos_y_bienes",
-      "e": "2. En Curso",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
       "n": 6,
       "term": 6,
       "pct": 1.0,
@@ -3088,7 +3033,7 @@
       "ept": "09 CXP_CUENTAS POR PAGAR",
       "n": 6,
       "term": 0,
-      "pct": 0.65,
+      "pct": 0.7,
       "n_pct": 6
     },
     {
@@ -3334,28 +3279,6 @@
       "n_pct": 5
     },
     {
-      "i": "286862",
-      "t": "ACF_Configuración Tipos de Novedades Activos fijos _Bienes",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 5,
-      "term": 5,
-      "pct": 1.0,
-      "n_pct": 5
-    },
-    {
-      "i": "293192",
-      "t": "ACF_Unidad_Generadora_De_Efectivo_UGE_V1",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 5,
-      "term": 5,
-      "pct": 1.0,
-      "n_pct": 5
-    },
-    {
       "i": "298719",
       "t": "CON_Autorizar_Comprobantes",
       "e": "4. Cerrado",
@@ -3386,17 +3309,6 @@
       "n": 5,
       "term": 5,
       "pct": 1.0,
-      "n_pct": 5
-    },
-    {
-      "i": "310081",
-      "t": "ACF_Depreciación_Activos_Fijos_Bienes",
-      "e": "2. En Curso",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 5,
-      "term": 4,
-      "pct": 0.96,
       "n_pct": 5
     },
     {
@@ -3495,7 +3407,7 @@
       "ept": "13 TES_TESORERIA",
       "n": 5,
       "term": 0,
-      "pct": 0.74,
+      "pct": 0.8,
       "n_pct": 5
     },
     {
@@ -3616,7 +3528,7 @@
       "ept": "12 PRE_PRESUPUESTO",
       "n": 5,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.8,
       "n_pct": 5
     },
     {
@@ -3638,7 +3550,7 @@
       "ept": "12 PRE_PRESUPUESTO",
       "n": 5,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.5,
       "n_pct": 5
     },
     {
@@ -3935,7 +3847,7 @@
       "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
       "n": 4,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.65,
       "n_pct": 4
     },
     {
@@ -3983,31 +3895,9 @@
       "n_pct": 4
     },
     {
-      "i": "294563",
-      "t": "ACF_Registro_Visitas_Activos_Fijos_Bienes",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 4,
-      "term": 4,
-      "pct": 1.0,
-      "n_pct": 4
-    },
-    {
-      "i": "309957",
-      "t": "ACF_Calculo_Deterioro",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 4,
-      "term": 4,
-      "pct": 1.0,
-      "n_pct": 4
-    },
-    {
-      "i": "311705",
-      "t": "ACF_Ubicaciones",
-      "e": "1. En Planeacion",
+      "i": "310014",
+      "t": "ACF_Registro_Autorización_de_Novedades_Activos_Fijos_Bienes",
+      "e": "2. En Curso",
       "ep": "88329",
       "ept": "03 ACF_ACTIVOS FIJOS",
       "n": 4,
@@ -4276,7 +4166,7 @@
       "ept": "16 FIC_FONDOS DE INVERSIÓN COLECTIVA",
       "n": 3,
       "term": 0,
-      "pct": 0.6,
+      "pct": 0.7,
       "n_pct": 3
     },
     {
@@ -4362,6 +4252,28 @@
       "e": "1. En Planeacion",
       "ep": "83566",
       "ept": "08 CON_CONTABILIDAD",
+      "n": 3,
+      "term": 3,
+      "pct": 1.0,
+      "n_pct": 3
+    },
+    {
+      "i": "310871",
+      "t": "ACF_Englobe de activos y bienes",
+      "e": "2. En Curso",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 3,
+      "term": 3,
+      "pct": 1.0,
+      "n_pct": 3
+    },
+    {
+      "i": "311898",
+      "t": "ACF_Desenglobe_de_activos_y_bienes",
+      "e": "2. En Curso",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -4742,17 +4654,6 @@
       "n_pct": 3
     },
     {
-      "i": "334799",
-      "t": "Parametrización UVT",
-      "e": "1. En Planeacion",
-      "ep": "88329",
-      "ept": "03 ACF_ACTIVOS FIJOS",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
       "i": "98525",
       "t": "NFI_Consultar Permisos Usuarios Negocios Fiduciarios",
       "e": "2. En Curso",
@@ -5006,6 +4907,17 @@
       "n_pct": 2
     },
     {
+      "i": "286850",
+      "t": "ACF_Configuración Tipos Y subtipos de Activos Fijos _ Bienes",
+      "e": "1. En Planeacion",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 2,
+      "term": 2,
+      "pct": 1.0,
+      "n_pct": 2
+    },
+    {
       "i": "403604",
       "t": "CDE_17_Notificaciones",
       "e": "1. En Planeacion",
@@ -5014,6 +4926,28 @@
       "n": 2,
       "term": 0,
       "pct": 0.8,
+      "n_pct": 2
+    },
+    {
+      "i": "309957",
+      "t": "ACF_Calculo_Deterioro",
+      "e": "1. En Planeacion",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 2,
+      "term": 2,
+      "pct": 1.0,
+      "n_pct": 2
+    },
+    {
+      "i": "310081",
+      "t": "ACF_Depreciación_Activos_Fijos_Bienes",
+      "e": "2. En Curso",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 2,
+      "term": 1,
+      "pct": 0.9,
       "n_pct": 2
     },
     {
@@ -5105,6 +5039,17 @@
       "n_pct": 2
     },
     {
+      "i": "294436",
+      "t": "ACF_Venta_Activos_Fijos_Bienes",
+      "e": "1. En Planeacion",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
+      "n": 2,
+      "term": 0,
+      "pct": 0.8,
+      "n_pct": 2
+    },
+    {
       "i": "479009",
       "t": "Tokens — la marca como paquete instalable",
       "e": "1. En Planeacion",
@@ -5189,7 +5134,7 @@
       "ept": "12 PRE_PRESUPUESTO",
       "n": 2,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.8,
       "n_pct": 2
     },
     {
@@ -5407,6 +5352,17 @@
       "e": "2. En Curso",
       "ep": "88337",
       "ept": "10 TRI_TRIBUTARIO",
+      "n": 1,
+      "term": 1,
+      "pct": 1.0,
+      "n_pct": 1
+    },
+    {
+      "i": "311705",
+      "t": "ACF_Ubicaciones",
+      "e": "1. En Planeacion",
+      "ep": "88329",
+      "ept": "03 ACF_ACTIVOS FIJOS",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -7173,28 +7129,6 @@
       "f": "246912",
       "ep": "83566",
       "r": "Danna Paola Riaño"
-    },
-    {
-      "i": "86758",
-      "t": "ACF_HU0017_P1/2_Parametrización_Listado_UVT_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "334799",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "86759",
-      "t": "ACF_HU0017_P2/2_Parametrización_UVT_Editar_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "334799",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "87460",
@@ -24698,17 +24632,6 @@
       "r": "Paula Andrea Ruiz Jiménez"
     },
     {
-      "i": "286870",
-      "t": "ACF_HU002_P1/5_Configuración_Tipos_De_Novedad_Activos_Fijos _Bienes_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286862",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "286872",
       "t": "CON_HU0025_P2/4_Validar_Comprobante_V2",
       "e": "4. Cerrado",
@@ -25699,61 +25622,6 @@
       "r": "Juan Jose Arredondo Buitrago"
     },
     {
-      "i": "293214",
-      "t": "ACF_HU004_P1/5_Unidad_Generadora_De_Efectivo_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "293192",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "293215",
-      "t": "ACF_HU004_P2/5_Unidad_Generadora_De_Efectivo_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "293192",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "293221",
-      "t": "ACF_HU004_P3/5_Unidad_Generadora_De_Efectivo_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "293192",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "293222",
-      "t": "ACF_HU004_P4/5_Unidad_Generadora_De_Efectivo_Activar/Inactivar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "293192",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "293225",
-      "t": "ACF_HU004_P5/5_Unidad_Generadora_De_Efectivo_Anular_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "293192",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "293312",
       "t": "TES_HU0065_Cargue_De_Red_Bancaria_Editar_V2",
       "e": "X. Removido",
@@ -25785,50 +25653,6 @@
       "f": "125906",
       "ep": "83564",
       "r": "Juan Jose Arredondo Buitrago"
-    },
-    {
-      "i": "293587",
-      "t": "ACF_HU002_P2/5_Configuración_Tipos_De_Novedad_Activos_Fijos _Bienes_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286862",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "293588",
-      "t": "ACF_HU002_P3/5_Configuración_Tipos_De_Novedad_Activos_Fijos _Bienes_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286862",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "293589",
-      "t": "ACF_HU002_P5/5_Configuración_Tipos_De_Novedad_Activos_Fijos _Bienes_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286862",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "294156",
-      "t": "ACF_HU005_P4/18_Compra_Activos_Fijos_Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "294306",
@@ -25864,28 +25688,6 @@
       "r": "Dayana Gomez Valencia"
     },
     {
-      "i": "294441",
-      "t": "ACF_HU006_P15/18_Venta_Activos_Fijos_Bienes_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294436",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "294444",
-      "t": "ACF_HU006_P17/18_Venta_Activos_Fijos_Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294436",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "294517",
       "t": "CON_HU0085_P1/2_Autorización_Comprobantes_V1",
       "e": "4. Cerrado",
@@ -25895,39 +25697,6 @@
       "f": "298719",
       "ep": "83566",
       "r": "Paula Andrea Ruiz Jiménez"
-    },
-    {
-      "i": "294564",
-      "t": "ACF_HU007_P1/4_Registro_Visitas_Activos_Fijos_Bienes_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294563",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "294566",
-      "t": "ACF_HU007_P2/4_Registro_Visitas_Activos_Fijos_Bienes_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294563",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "294567",
-      "t": "ACF_HU007_P3/4_Registro_Visitas_Activos_Fijos_Bienes_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294563",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "294611",
@@ -25961,17 +25730,6 @@
       "f": "242449",
       "ep": "83562",
       "r": "Jersson Alberto Salazar"
-    },
-    {
-      "i": "295308",
-      "t": "ACF_HU007_P4/4_Registro_Visitas_Activos_Fijos_Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294563",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "296514",
@@ -27602,17 +27360,6 @@
       "r": "Paula Andrea Ruiz Jiménez"
     },
     {
-      "i": "306777",
-      "t": "ACF_HU006_P16/18_Venta_Activos_Fijos_Bienes_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294436",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "307009",
       "t": "NFI_HU00174_Eliminar_Fideicomiso_Tercero_Eliminar_V1",
       "e": "4. Cerrado",
@@ -27668,17 +27415,6 @@
       "r": "Martha Isabel Ángel Pardo"
     },
     {
-      "i": "307358",
-      "t": "CXP_HU0018_P2/8_Liquidación_Tributaria_Editar_Liquidación_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "279222",
-      "ep": "88336",
-      "r": "Valentina Cardona Lara"
-    },
-    {
       "i": "307512",
       "t": "CON_HU0037_P1/9_Generar_Cierre_De_Periodo_Anual_Listado_V2",
       "e": "4. Cerrado",
@@ -27721,39 +27457,6 @@
       "f": "99562",
       "ep": "83566",
       "r": "Angel Arturo Rosas Correa"
-    },
-    {
-      "i": "307873",
-      "t": "ACF_HU008_P8/17_Registro_Activos_Fijos_Bienes_Información_De_Entrada_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "307875",
-      "t": "ACF_HU008_P9/17_Registro_Activos_Fijos_Bienes_Información_Contable_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "307876",
-      "t": "ACF_HU008_P10/17_Registro_Activos_Fijos_Bienes_Historial_De_Novedades_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "307981",
@@ -27866,28 +27569,6 @@
       "r": "Cristian Camilo Posada Marin"
     },
     {
-      "i": "308303",
-      "t": "ACF_HU008_P11/17_Registro_Activos_Fijos_Bienes_Historial_De_Depreciación_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "308325",
-      "t": "ACF_HU008_P2/17_Registro_Activos_Fijos_Bienes_Listado_Descargar_Excel_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "308336",
       "t": "RC_HU0001_P1/40_Rendición_De_Cuentas_Listado_V1",
       "e": "4. Cerrado",
@@ -27897,17 +27578,6 @@
       "f": "267135",
       "ep": "83565",
       "r": "Juan Jose Arredondo Buitrago"
-    },
-    {
-      "i": "308340",
-      "t": "ACF_HU008_P17/17_Registro_Activos_Fijos_Bienes_Pestaña_Documentos_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "308358",
@@ -28042,17 +27712,6 @@
       "r": "Jersson Alberto Salazar"
     },
     {
-      "i": "308435",
-      "t": "ACF_HU008_P12/17_Registro_Activos_Fijos_Bienes_Historial_De_Ubicaciones_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "308752",
       "t": "TES_NFHU00XX_P1/1_Servicio_Para_Crear_Movimientos_Tesorería_V1",
       "e": "4. Cerrado",
@@ -28086,17 +27745,6 @@
       "r": "Juan camilo Montoya"
     },
     {
-      "i": "309801",
-      "t": "ACF_HU008_P13/17_Registro_Activos_Fijos_Bienes_Descargar_PDF_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "309972",
       "t": "ACF_HU009_Calculo_Deterioro_Listar_V1",
       "e": "4. Cerrado",
@@ -28115,39 +27763,6 @@
       "a": 1,
       "v": 1.0,
       "f": "309957",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "310004",
-      "t": "ACF_HU009_Calculo Deterioro_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "309957",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "310012",
-      "t": "ACF_HU009_Calculo Deterioro_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "309957",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "310024",
-      "t": "ACF_HU0011_Registro_y_Autorización_de_Novedades_ActivosFijos_y_Bienes_Listar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310014",
       "ep": "88329",
       "r": "Juan camilo Montoya"
     },
@@ -28174,17 +27789,6 @@
       "r": "Juan camilo Montoya"
     },
     {
-      "i": "310056",
-      "t": "ACF_HU0011_Registro_y_Autorización_de_Novedades_ActivosFijos_y_Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310014",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "310060",
       "t": "ACF_HU0011_Registro_y_Autorización_de_Novedades_ActivosFijos_y_Bienes_Autoriza/Anular_V1",
       "e": "4. Cerrado",
@@ -28196,39 +27800,6 @@
       "r": "Juan camilo Montoya"
     },
     {
-      "i": "310092",
-      "t": "ACF_HU0015_P1/6_Depreciación_Activos_Fijos_Bienes_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310081",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "310097",
-      "t": "ACF_HU0015_P2/6_Depreciación_Activos_Fijos_Bienes_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310081",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "310098",
-      "t": "ACF_HU0015_P3/6_Depreciación_Activos_Fijos_Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310081",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "310099",
       "t": "ACF_HU0015_P4/6_Depreciación_Activos_Fijos_Bienes_Eliminar_V1",
       "e": "4. Cerrado",
@@ -28236,17 +27807,6 @@
       "a": 1,
       "v": 1.0,
       "f": "310081",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "310874",
-      "t": "ACF_HU0012_Englobe_Activos_Fijos_Bienes_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310871",
       "ep": "88329",
       "r": "Juan camilo Montoya"
     },
@@ -28271,17 +27831,6 @@
       "f": "242449",
       "ep": "83562",
       "r": "Jhoan Steven Gómez Padilla"
-    },
-    {
-      "i": "310904",
-      "t": "ACF_HU0012_Englobe_Activos_Fijos_Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310871",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "310911",
@@ -28326,17 +27875,6 @@
       "f": "99562",
       "ep": "83566",
       "r": "Angel Arturo Rosas Correa"
-    },
-    {
-      "i": "311191",
-      "t": "ACF_HU008_P6/17_Registro_Activos_Fijos_Bienes_Pestaña_Documentos_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "311329",
@@ -28394,85 +27932,8 @@
       "r": "Jersson Alberto Salazar"
     },
     {
-      "i": "311395",
-      "t": "ACF_HU008_P4/17_Registro_Activos_Fijos_Bienes_Pestaña_Documentos_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311405",
-      "t": "ACF_HU008_P15/17_Registro_Activos_Fijos_Bienes_Código_QR_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311409",
-      "t": "ACF_HU008_P14/17_Registro_Activos_Fijos_Bienes_Descargar_Excel_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311611",
-      "t": "ACF_HU002_P4/5_Configuración_Tipos_De_Novedad_Activos_Fijos _Bienes_Ver_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286862",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311709",
-      "t": "ACF_HU0010_P1/4_Ubicaciones_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "311705",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "311710",
       "t": "ACF_HU0010_P2/4_Ubicaciones_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "311705",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311712",
-      "t": "ACF_HU0010_P3/4_Ubicaciones_Editar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "311705",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311714",
-      "t": "ACF_HU0010_P4/4_Ubicaciones_Activa/Inactiva_V1",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -28493,52 +27954,8 @@
       "r": "Angel Arturo Rosas Correa"
     },
     {
-      "i": "311869",
-      "t": "ACF_HU005_P6/18_Compra_Activos_Fijos_Bienes_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311870",
-      "t": "ACF_HU006_P18/18_Venta_Activos_Fijos_Bienes_Eliminar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294436",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311903",
-      "t": "ACF_HU0013_P1/4_Desenglobe_Activos_Fijos_Bienes_Listado_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "311898",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "311905",
       "t": "ACF_HU0013_P2/4_Desenglobe de activos fijos y bienes_Crear_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "311898",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "311911",
-      "t": "ACF_HU0013_P1/4_Desenglobe de activos fijos y bienes_Ver_V1",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -28590,17 +28007,6 @@
       "f": "164701",
       "ep": "88328",
       "r": "Nathalia Herrera Castaño"
-    },
-    {
-      "i": "312385",
-      "t": "ACF_HU005_P7/18_Compra_Activos_Fijos_Bienes_Documentos_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "312468",
@@ -28691,28 +28097,6 @@
       "r": "Jersson Alberto Salazar"
     },
     {
-      "i": "313260",
-      "t": "ACF_HU0012_englobe_Activos_Fijos_Bienes_Cargar_Documento_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310871",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "313284",
-      "t": "ACF_HU0013_P4/4_Desenglobe_Activos_Fijos_Bienes_CargarDocumento_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "311898",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "313295",
       "t": "TES_HU0086_01/08_Respuesta_Bancos_Archivo_Filtro_V2",
       "e": "X. Removido",
@@ -28777,17 +28161,6 @@
       "f": "239656",
       "ep": "88344",
       "r": "Nathalia Herrera Castaño"
-    },
-    {
-      "i": "313604",
-      "t": "ACF_HU0011_Registro_y_Autorización_de_Novedades_ActivosFijos_y_Bienes_CargaDocumento_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "310014",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "313640",
@@ -28944,17 +28317,6 @@
       "r": "Juan Carlos Valero Moreno"
     },
     {
-      "i": "314276",
-      "t": "ACF_HU005_P8/18_Compra_Activos_Fijos_Bienes_Aprobar_V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "314624",
       "t": "CON_HU0029_P1/4_Desactualizar_Cierre_Diario_Listado_V2",
       "e": "4. Cerrado",
@@ -29052,28 +28414,6 @@
       "f": "314687",
       "ep": "88344",
       "r": "Nathalia Herrera Castaño"
-    },
-    {
-      "i": "314942",
-      "t": "ACF_HU005_P13/18_Compra_Activos_Fijos_Bienes_Orden_Compra_Eliminar_V1.",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "315071",
-      "t": "ACF_HU005_P14/18_Compra_Activos_Fijos_Bienes_Orden_Compra_Autorizar_V1.",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "315723",
@@ -29285,17 +28625,6 @@
       "r": "Nathalia Herrera Castaño"
     },
     {
-      "i": "317057",
-      "t": "ACF_HU005_P8/18_Compra_Activos_Fijos_Bienes_Documentos_Editar V1.",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "317138",
       "t": "NOR_HU00016_P1/3_Generación_Informe_19_FIC´s_Listado_V1",
       "e": "X. Removido",
@@ -29338,17 +28667,6 @@
       "f": "254919",
       "ep": "88344",
       "r": "Nathalia Herrera Castaño"
-    },
-    {
-      "i": "317474",
-      "t": "ACF_HU006_NF_P19_Venta_Activos_Fijos_Bienes_Crear_Facturacion y cartera V1",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294436",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "317582",
@@ -29747,63 +29065,8 @@
       "r": "Paula Andrea Ruiz Jiménez"
     },
     {
-      "i": "320531",
-      "t": "ACF_HU003_P2/6_Configuración_Contable_Por_Bien_Crear_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294025",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "320555",
       "t": "ACF_HU003_P1/6_Configuración_Contable_Por_Bien_Listado_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294025",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "320623",
-      "t": "ACF_HU003_P3/6_Configuración_Contable_Por_Bien_Editar_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294025",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "320671",
-      "t": "ACF_HU003_P4/6_Configuración_Contable_Por_Bien_Eliminar_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294025",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "320674",
-      "t": "ACF_HU003_P5/6_Configuración_Contable_Por_Bien_Ver_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294025",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "320675",
-      "t": "ACF_HU003_P6/6_Configuración_Contable_Por_Bien_Importar_V2",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -30396,17 +29659,6 @@
       "r": "Juan Jose Arredondo Buitrago"
     },
     {
-      "i": "324628",
-      "t": "ACF_HU001_P2/4_Configuración_Tipos_Activos_Fijos_Bienes_Crear_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286850",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "324631",
       "t": "TRI_HU0015_P06_Parte_1_Actividades_ICA_Editar_V1.5",
       "e": "4. Cerrado",
@@ -30416,39 +29668,6 @@
       "f": "259345",
       "ep": "88337",
       "r": "Jhoana Carolina Tuta Castro"
-    },
-    {
-      "i": "324636",
-      "t": "ACF_HU001_P3/4_Configuración_Tipos_Activos_Fijos_Bienes_Editar_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286850",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "324658",
-      "t": "ACF_HU001_P4/4_Configuración_Tipos_Activos_Fijos_Bienes_Ver_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286850",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "324728",
-      "t": "ACF_HU001_P1/4_Configuración_Tipos_Activos_Fijos_Bienes_Listado_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "286850",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "324937",
@@ -32088,17 +31307,6 @@
       "f": "254806",
       "ep": "88339",
       "r": "Cristian Camilo Posada Marin"
-    },
-    {
-      "i": "335271",
-      "t": "ACF_HU008_P1/17_Registro_Activos_Fijos_Bienes_Listado_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "335275",
@@ -34061,17 +33269,6 @@
     {
       "i": "346493",
       "t": "ACF_HU005_P11/18_Compra_Activos_Fijos_Bienes_Orden_Compra_Editar_V2.",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "346501",
-      "t": "ACF_HU005_P12/18_Compra_Activos_Fijos_Bienes_Orden_Compra_Ver_V2.",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -37128,28 +36325,6 @@
       "r": "Daniela Garcia Orrego"
     },
     {
-      "i": "379342",
-      "t": "ACF_HU005_P10/28_Compra_Activos_Fijos_Bienes_Exportar_excel _V1.",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "379345",
-      "t": "ACF_HU005_P11/28_Compra_Activos_Fijos_Bienes_Descargar_PDF_V1.",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
       "i": "379346",
       "t": "PFIC_HU0026_P6/11_Portal_FICs_Registrar_Persona_Jurídica_Accionistas_PersonaJuridica_V1",
       "e": "4. Cerrado",
@@ -37159,17 +36334,6 @@
       "f": "335828",
       "ep": "331836",
       "r": "Martha Isabel Ángel Pardo"
-    },
-    {
-      "i": "379406",
-      "t": "ACF_HU005_P1/28_Compra_Venta_Activos_Fijos_Bienes_Listado_V2",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
     },
     {
       "i": "379524",
@@ -37272,7 +36436,7 @@
     },
     {
       "i": "380163",
-      "t": "CXP_HU0026_P6/8_Aplicar_Pagos_Programados_NF_Fondos_V2",
+      "t": "CXP_HU0026_P5/8_Aplicar_Pagos_Programados_NF_Fondos_V3",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -37283,7 +36447,7 @@
     },
     {
       "i": "380165",
-      "t": "CXP_HU0026_P7/8_Aplicar_Pagos_Programados_NF_Presupuesto_V2",
+      "t": "CXP_HU0026_P6/8_Aplicar_Pagos_Programados_NF_Presupuesto_V3",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -37658,17 +36822,6 @@
     {
       "i": "385517",
       "t": "ACF_HU008_P5/17_Registro_Activos_Fijos_Bienes_Editar_V4",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "295017",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "385537",
-      "t": "ACF_HU008_P4/14_Registro_Activos_Fijos_Bienes_Ver_V3",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -38472,17 +37625,6 @@
     {
       "i": "389245",
       "t": "ACF_HU005_P3/28_Compra_Activos_Fijos_Bienes_Editar_V3",
-      "e": "4. Cerrado",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "294150",
-      "ep": "88329",
-      "r": "Juan camilo Montoya"
-    },
-    {
-      "i": "389251",
-      "t": "ACF_HU005_P6/28_Compra_Activos_Fijos_Bienes_Importar_V3",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -42980,17 +42122,6 @@
       "r": "Paula Andrea Ruiz Jiménez"
     },
     {
-      "i": "411910",
-      "t": "CON_HU0029_P3/4_Apertura_Contable_Ver_V3",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "94078",
-      "ep": "83566",
-      "r": "Danna Paola Riaño"
-    },
-    {
       "i": "411931",
       "t": "NFI_HU0098_Encargo_general_crear_V2.2",
       "e": "3. Entregado",
@@ -43483,7 +42614,7 @@
       "v": 0.8,
       "f": "95687",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "414080",
@@ -44290,14 +43421,14 @@
     },
     {
       "i": "420251",
-      "t": "TRI_HU0028_P6_Certificados_Tributarios_Descargar_Pdf_V1",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
+      "t": "TRI_HU0028_P1_Certificados_Tributarios_Listado_V3",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
       "f": "322195",
       "ep": "88337",
-      "r": "Jhoan Camilo Copete Gonzalez"
+      "r": "Andres Guerrero Guerrero"
     },
     {
       "i": "420393",
@@ -47349,13 +46480,13 @@
     {
       "i": "432149",
       "t": "TES_HU00105_P4/7_NF_Flujo_de_caja_Proyectado_Presupuesto_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "432129",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "432154",
@@ -56941,10 +56072,10 @@
     {
       "i": "481254",
       "t": "CB_HU001_P2/4_Extracto_Magnetico_Crear_V1.1",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
       "f": "318138",
       "ep": "88340",
       "r": "William Jefferson Ochoa Galán"
@@ -60450,10 +59581,10 @@
     {
       "i": "497713",
       "t": "TRI_HU0031_P14_Cierres_Tributarios_Calendario_Crear_V1.1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "429035",
       "ep": "88337",
       "r": "Jhoan Camilo Copete Gonzalez"
@@ -60461,10 +59592,10 @@
     {
       "i": "497731",
       "t": "TRI_HU0031_P15_Cierres_Tributarios_Calendario_Editar_V1.1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "429035",
       "ep": "88337",
       "r": "Jhoan Camilo Copete Gonzalez"
@@ -64163,7 +63294,7 @@
       "v": 0.5,
       "f": "90035",
       "ep": "83561",
-      "r": "Jose Manuel Murillo Sanchez"
+      "r": "Erick Duvan Estrada Paez"
     },
     {
       "i": "517098",
@@ -64278,13 +63409,13 @@
     {
       "i": "517136",
       "t": "REP_TER_HU0002_Reporte_de_terceros_por_calidad_multiplicidad_de_vínculos_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "423092",
       "ep": "420816",
-      "r": "Arturo Londoño Muñoz"
+      "r": "Juan Camilo Orozco Alzate"
     },
     {
       "i": "517137",
@@ -65685,23 +64816,12 @@
     },
     {
       "i": "525409",
-      "t": "CB_HU004_P2/6_Saldos_Crear_V1.2",
+      "t": "CB_HU004_P2/6_Saldos_Crear_V1.1",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
       "f": "329192",
-      "ep": "88340",
-      "r": "William Jefferson Ochoa Galán"
-    },
-    {
-      "i": "525433",
-      "t": "CB_HU002_P2/6_Conciliacion_Crear_V1.2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "318138",
       "ep": "88340",
       "r": "William Jefferson Ochoa Galán"
     },
@@ -65950,10 +65070,10 @@
     {
       "i": "527398",
       "t": "NOR_NFI_HU0022_P3/5_Generación_certificados_de_Liquidación_Generar_PDF_V3",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "343507",
       "ep": "88338",
       "r": "Jairo Alejandro Lopez Zapata"
@@ -66247,10 +65367,10 @@
     {
       "i": "528711",
       "t": "UAS_HU001_Creación_de_Roles_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "436110",
       "ep": "83555",
       "r": "Jhon Alejandro Montes Bohorquez"
@@ -66269,10 +65389,10 @@
     {
       "i": "528755",
       "t": "UAS_HU003_Ver_Roles_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "436110",
       "ep": "83555",
       "r": "Jhon Alejandro Montes Bohorquez"
@@ -66280,10 +65400,10 @@
     {
       "i": "528758",
       "t": "UAS_HU004_Editar_Roles_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "436110",
       "ep": "83555",
       "r": "Jhon Alejandro Montes Bohorquez"
@@ -67045,7 +66165,7 @@
       "v": 0.8,
       "f": "95687",
       "ep": "88343",
-      "r": "Valentina Cardona Lara"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "531080",
@@ -67056,7 +66176,7 @@
       "v": 0.8,
       "f": "95687",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "531223",
@@ -67067,7 +66187,7 @@
       "v": 0.8,
       "f": "95687",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "531254",
@@ -67237,13 +66357,13 @@
     {
       "i": "532290",
       "t": "CXP_HU0016_P2/12_Solicitud_de_Pago_Gestionar_Solicitudes_V2.1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "273719",
       "ep": "88336",
-      "r": "Jonathan Orrego Montoya"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "532307",
@@ -67292,13 +66412,13 @@
     {
       "i": "532711",
       "t": "CXP_HU0016_Solicitud_de_Pago_Portal_Pagos_Instrucciones_V1.1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "273719",
       "ep": "88336",
-      "r": "Jonathan Orrego Montoya"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "532830",
@@ -67600,13 +66720,13 @@
     {
       "i": "533340",
       "t": "CXP_HU0016_P1/8_Solicitud_de_Pago_Listado_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "273719",
       "ep": "88336",
-      "r": "Jonathan Orrego Montoya"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "533341",
@@ -67925,7 +67045,7 @@
       "v": 0.8,
       "f": "95684",
       "ep": "88343",
-      "r": "Valentina Cardona Lara"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "534250",
@@ -67936,7 +67056,7 @@
       "v": 0.8,
       "f": "95684",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "534251",
@@ -67947,7 +67067,7 @@
       "v": 0.8,
       "f": "95684",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "534252",
@@ -67958,7 +67078,7 @@
       "v": 0.8,
       "f": "95684",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "534253",
@@ -67969,7 +67089,7 @@
       "v": 0.8,
       "f": "95685",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "534254",
@@ -67980,7 +67100,7 @@
       "v": 0.8,
       "f": "95685",
       "ep": "88343",
-      "r": "Andres Camilo Gaitan"
+      "r": "Laura Sofia Maldonado Giraldo"
     },
     {
       "i": "534281",
@@ -68288,7 +67408,7 @@
       "v": 0.5,
       "f": "118813",
       "ep": "83563",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Nicol Steeven Gomez Marin"
     },
     {
       "i": "535633",
@@ -68348,13 +67468,13 @@
     {
       "i": "535791",
       "t": "TRI_HU0022_P22_Parametrización_Tributaria_Formularios_Editar_V1.1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "411322",
       "ep": "88337",
-      "r": "Jonathan Orrego Montoya"
+      "r": "Jhoan Camilo Copete Gonzalez"
     },
     {
       "i": "535796",
@@ -68755,24 +67875,24 @@
     {
       "i": "537719",
       "t": "TES_HU0074_Anulaciones_Movimiento_De_Tesorería_Listado_V4",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "139699",
       "ep": "83564",
-      "r": "Paula Mendez"
+      "r": "Cristhian Alexander Cano Correa"
     },
     {
       "i": "537739",
       "t": "TES_HU0074_Anulaciones_Movimiento_Tesorería_Anular_V4",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "139699",
       "ep": "83564",
-      "r": "Paula Mendez"
+      "r": "Cristhian Alexander Cano Correa"
     },
     {
       "i": "537757",
@@ -68865,35 +67985,35 @@
     {
       "i": "538012",
       "t": "CXP_HU0018_P5/8_Liquidación_Tributaria_Editar_Contabilidad_V4.2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "279222",
       "ep": "88336",
-      "r": "Jesús Rafael Soto Godoy"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "538264",
       "t": "CLI_HU001_Firmas_autorizadas_PJ_V2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "298570",
       "ep": "88327",
-      "r": "Juan Jose Gomez Fernandez"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "538275",
       "t": "CLI_HU001_Firmas_autorizadas_PN_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "298570",
       "ep": "88327",
-      "r": "Juan Jose Gomez Fernandez"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "538459",
@@ -68909,57 +68029,57 @@
     {
       "i": "538566",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Listado_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "538567",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Crear_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "538568",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Editar_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "538570",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Eliminar_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "538576",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Importar_CDP_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "538630",
@@ -69085,24 +68205,24 @@
     {
       "i": "538885",
       "t": "PRE_HU0037_Listado_Autorizaciones_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538873",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "539021",
       "t": "PRE_HU0037_Autorizar_Solicitudes_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538873",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "539025",
@@ -69118,24 +68238,24 @@
     {
       "i": "539048",
       "t": "PRE_HU0037_Rechazar_Solicitudes_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538873",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "539076",
       "t": "PRE_HU0037_Ver_Solicitudes_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538873",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "539085",
@@ -69305,13 +68425,13 @@
     {
       "i": "539697",
       "t": "PRE_HU0037_Eliminar_Solicitudes_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538873",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "539705",
@@ -69338,13 +68458,13 @@
     {
       "i": "539898",
       "t": "PRE_HU0038_Listado_Marcar_Autorizaciones_Submódulo_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538875",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "539949",
@@ -69360,13 +68480,13 @@
     {
       "i": "540008",
       "t": "PRE_HU0038_Editar_Autorizaciones_Submódulo_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538875",
       "ep": "88339",
-      "r": "Juan Esteban Montoya Molina"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "540059",
@@ -69844,13 +68964,13 @@
     {
       "i": "543168",
       "t": "TES_HU0074_Anulaciones_Movimientos_Anulados_Ver_V4",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "139699",
       "ep": "83564",
-      "r": "Paula Mendez"
+      "r": "Cristhian Alexander Cano Correa"
     },
     {
       "i": "543367",
@@ -70262,46 +69382,46 @@
     {
       "i": "545308",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_CDP_Generar_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "545310",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_CRP_Generar_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "545311",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_TES_Generar_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "545312",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_CDV_Generar_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "545521",
@@ -70400,7 +69520,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545901",
@@ -70411,7 +69531,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545902",
@@ -70422,7 +69542,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545903",
@@ -70433,7 +69553,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545904",
@@ -70444,7 +69564,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545905",
@@ -70455,7 +69575,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545906",
@@ -70466,7 +69586,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545907",
@@ -70477,7 +69597,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545908",
@@ -70488,7 +69608,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545909",
@@ -70499,7 +69619,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545910",
@@ -70510,7 +69630,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545911",
@@ -70521,7 +69641,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545912",
@@ -70532,7 +69652,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545913",
@@ -70543,7 +69663,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545914",
@@ -70554,7 +69674,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545915",
@@ -70565,7 +69685,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545916",
@@ -70576,7 +69696,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545917",
@@ -70587,7 +69707,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545918",
@@ -70598,7 +69718,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545919",
@@ -70609,7 +69729,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545920",
@@ -70620,7 +69740,7 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545921",
@@ -70631,40 +69751,40 @@
       "v": 0.5,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Nelson Uriel Sanchez Alvarez"
     },
     {
       "i": "545922",
       "t": "TES_HU130_NF_Monitoreo_Transaccional_Motor_Evaluacion_Reglas_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "545923",
       "t": "TES_HU130_NF_Monitoreo_Transaccional_Generacion_Caso_SARLAFT_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "545924",
       "t": "TES_HU130_NF_Monitoreo_Transaccional_Recepcion_Resolucion_SARLAFT_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "545925",
@@ -70680,24 +69800,24 @@
     {
       "i": "545926",
       "t": "TES_HU130_Monitoreo_Transaccional_NF_Interoperabilidad_Perfil_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "545927",
       "t": "TES_HU130_Monitoreo_Transaccional_NF_Seguridad_Auditoria_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "545561",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "546218",
@@ -70790,35 +69910,35 @@
     {
       "i": "547148",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Importar_CRP_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "547153",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Importar_TES_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "547154",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Importar_CDV_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "547155",
@@ -70961,7 +70081,7 @@
       "v": 0.5,
       "f": "415144",
       "ep": "88336",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Cristian Andres Ortiz Millan"
     },
     {
       "i": "547852",
@@ -70999,24 +70119,24 @@
     {
       "i": "547927",
       "t": "TER_HU0001_P1/8_Creacion_de_terceros_importar_PN_PJ_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "83559",
       "ep": "88341",
-      "r": "Cristhian Arboleda Castañeda"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "547933",
       "t": "TER_NF_HU000_Actualizacion_servicio_Responsabilidades_Fiscales_V2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "83559",
       "ep": "88341",
-      "r": "Cristhian Arboleda Castañeda"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "548008",
@@ -71296,35 +70416,35 @@
     {
       "i": "548849",
       "t": "TES_HU0074_Anulaciones_Movimientos_Anulados_V4",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "139699",
       "ep": "83564",
-      "r": "Paula Mendez"
+      "r": "Cristhian Alexander Cano Correa"
     },
     {
       "i": "549065",
       "t": "NFI_HU0001_Negocio_Fiduciario_Crear_Subfideicomiso_P1/5_V2.2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "547954",
       "ep": "83562",
-      "r": "Viviana Jacome Sanchez"
+      "r": "Jersson Alberto Salazar"
     },
     {
       "i": "549075",
       "t": "NFI_HU0002_Negocio_Fiduciario_Editar_Subfideicomiso_P1/5_V2.2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "547954",
       "ep": "83562",
-      "r": "Viviana Jacome Sanchez"
+      "r": "Jersson Alberto Salazar"
     },
     {
       "i": "549116",
@@ -71775,7 +70895,7 @@
       "v": 0.5,
       "f": "547953",
       "ep": "83562",
-      "r": "Yeison Alexis Velasco Trejos"
+      "r": "Brayan Alexis Villamizar Montañez"
     },
     {
       "i": "551505",
@@ -71786,7 +70906,7 @@
       "v": 0.5,
       "f": "547953",
       "ep": "83562",
-      "r": "Yeison Alexis Velasco Trejos"
+      "r": "Brayan Alexis Villamizar Montañez"
     },
     {
       "i": "551686",
@@ -71813,10 +70933,10 @@
     {
       "i": "551855",
       "t": "TES_HU0022_Comprobantes_Ingresos_Egresos_Reporte_Listado_V3.1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "97651",
       "ep": "83564",
       "r": "Carlos Andres Marquez Rodriguez"
@@ -71824,10 +70944,10 @@
     {
       "i": "551866",
       "t": "TES_HU0022_Comprobantes_Ingresos_Egresos_Reporte_Descargar_PDF_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "97651",
       "ep": "83564",
       "r": "Carlos Andres Marquez Rodriguez"
@@ -71835,24 +70955,24 @@
     {
       "i": "552032",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Ver_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Luis Alejandro Grajales Acevedo"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "552033",
       "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Excel_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "538565",
       "ep": "88339",
-      "r": "Santiago Meneses"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "552337",
@@ -71885,7 +71005,7 @@
       "v": 0.5,
       "f": "139699",
       "ep": "83564",
-      "r": "Paula Mendez"
+      "r": "Cristhian Alexander Cano Correa"
     },
     {
       "i": "552953",
@@ -71934,10 +71054,10 @@
     {
       "i": "553099",
       "t": "CLI_HU0000_P5/04_Clientes_Cambiar estado_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "298570",
       "ep": "88327",
       "r": "Alejandro Valencia Castañeda"
@@ -71945,13 +71065,13 @@
     {
       "i": "553109",
       "t": "CXP_HU0029_P3/3_Registro_Nota_Crédito_NF_V3",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "284520",
       "ep": "88336",
-      "r": "Cristian Andres Ortiz Millan"
+      "r": "Cristian Camilo Posada Marin"
     },
     {
       "i": "553110",
@@ -71962,7 +71082,7 @@
       "v": 0.5,
       "f": "284520",
       "ep": "88336",
-      "r": "Cristian Andres Ortiz Millan"
+      "r": "Jesús Rafael Soto Godoy"
     },
     {
       "i": "553111",
@@ -71973,7 +71093,7 @@
       "v": 0.5,
       "f": "284520",
       "ep": "88336",
-      "r": "Cristian Andres Ortiz Millan"
+      "r": "Jesús Rafael Soto Godoy"
     },
     {
       "i": "553112",
@@ -71984,7 +71104,7 @@
       "v": 0.5,
       "f": "284521",
       "ep": "88336",
-      "r": "Cristian Andres Ortiz Millan"
+      "r": "Jesús Rafael Soto Godoy"
     },
     {
       "i": "553136",
@@ -72105,7 +71225,7 @@
       "v": 0.5,
       "f": "331922",
       "ep": "331836",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Emanuel Aristazabal"
     },
     {
       "i": "557491",
@@ -72154,68 +71274,68 @@
     {
       "i": "559375",
       "t": "PRE_HU0039_P1/9_Adicion_Disminucion_Presupuestal_Listado_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "559371",
-      "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
-    },
-    {
-      "i": "559378",
-      "t": "PRE_HU0039_P2/9_Adicion_Disminucion_Presupuestal_Crear_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "559371",
-      "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
-    },
-    {
-      "i": "559380",
-      "t": "PRE_HU0039_P3/9_Adicion_Disminucion_Presupuestal_Editar_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "559371",
-      "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
-    },
-    {
-      "i": "559381",
-      "t": "PRE_HU0039_P5/9_Adicion_Disminucion_Presupuestal_Ver_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "559371",
-      "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
-    },
-    {
-      "i": "559387",
-      "t": "PRE_HU0039_P4/9_Adicion_Disminucion_Presupuestal_Eliminar_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "559371",
-      "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
-    },
-    {
-      "i": "559620",
-      "t": "TES_HUNF0004_Sucursales_Bancarias_Carga_Inicial_V2",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
+      "f": "559371",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "559378",
+      "t": "PRE_HU0039_P2/9_Adicion_Disminucion_Presupuestal_Crear_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559371",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "559380",
+      "t": "PRE_HU0039_P3/9_Adicion_Disminucion_Presupuestal_Editar_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559371",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "559381",
+      "t": "PRE_HU0039_P5/9_Adicion_Disminucion_Presupuestal_Ver_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559371",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "559387",
+      "t": "PRE_HU0039_P4/9_Adicion_Disminucion_Presupuestal_Eliminar_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559371",
+      "ep": "88339",
+      "r": "Daniel Felipe Herrera Zambrano"
+    },
+    {
+      "i": "559620",
+      "t": "TES_HUNF0004_Sucursales_Bancarias_Carga_Inicial_V2",
+      "e": "3. Entregado",
+      "p": "QA",
+      "a": 1,
+      "v": 0.8,
       "f": "83597",
       "ep": "83564",
-      "r": "Jhefferson Mauricio Toro Ortega"
+      "r": "Junior Ramírez Castaño"
     },
     {
       "i": "559659",
@@ -72264,13 +71384,13 @@
     {
       "i": "559885",
       "t": "PRE_HU0040_P2/5_Consultas_Presupuestal_Crear_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "559704",
       "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Carlos Andres Duque Arango"
     },
     {
       "i": "560212",
@@ -72292,7 +71412,7 @@
       "v": 0.5,
       "f": "560315",
       "ep": "560367",
-      "r": "Andres Guerrero Guerrero"
+      "r": "Jose Arsuza"
     },
     {
       "i": "560386",
@@ -72303,7 +71423,7 @@
       "v": 0.5,
       "f": "560315",
       "ep": "560367",
-      "r": "Andres Guerrero Guerrero"
+      "r": "Jose Arsuza"
     },
     {
       "i": "560387",
@@ -72314,18 +71434,18 @@
       "v": 0.5,
       "f": "560315",
       "ep": "560367",
-      "r": "Andres Guerrero Guerrero"
+      "r": "Jose Arsuza"
     },
     {
       "i": "560531",
       "t": "CDE_HU0011_P02/06_Proyectos_Asociar_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "237175",
       "ep": "88334",
-      "r": "Laura Alejandra Alarcon Amaya"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "560687",
@@ -72341,13 +71461,13 @@
     {
       "i": "560694",
       "t": "CDE_HU0012_P02/01_Registro_de_Contrato_Datos_Básicos_Crear_V_2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "237615",
       "ep": "88334",
-      "r": "Laura Alejandra Alarcon Amaya"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "560746",
@@ -72358,7 +71478,7 @@
       "v": 0.5,
       "f": "560741",
       "ep": "560367",
-      "r": "Andres Guerrero Guerrero"
+      "r": "Jose Arsuza"
     },
     {
       "i": "560747",
@@ -72369,7 +71489,7 @@
       "v": 0.5,
       "f": "560741",
       "ep": "560367",
-      "r": "Andres Guerrero Guerrero"
+      "r": "Jose Arsuza"
     },
     {
       "i": "560748",
@@ -72380,7 +71500,7 @@
       "v": 0.5,
       "f": "560741",
       "ep": "560367",
-      "r": "Andres Guerrero Guerrero"
+      "r": "Jose Arsuza"
     },
     {
       "i": "560803",
@@ -72479,7 +71599,7 @@
       "v": 0.5,
       "f": "559704",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Carlos Andres Duque Arango"
     },
     {
       "i": "561064",
@@ -72490,15 +71610,15 @@
       "v": 0.5,
       "f": "559704",
       "ep": "88339",
-      "r": "Daniel Felipe Herrera Zambrano"
+      "r": "Carlos Andres Duque Arango"
     },
     {
       "i": "561065",
       "t": "NOR_NFI_HU0057_P2/6_Generación_Certificados_de_saldo de recursos_Generar PDF_V3",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "378063",
       "ep": "88338",
       "r": "Andres Fernando Mejia Jimenez"
@@ -72506,21 +71626,21 @@
     {
       "i": "561076",
       "t": "CDE_HU0013_P01/01_Adiciones_Contratos_Datos_Básicos_Crear_V4",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "245299",
       "ep": "88334",
-      "r": "Laura Alejandra Alarcon Amaya"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561083",
       "t": "NOR_NFI_HU0057_P6/6_Generación_Certificados_de_saldo de recursos_Ver_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "378063",
       "ep": "88338",
       "r": "Andres Fernando Mejia Jimenez"
@@ -72539,13 +71659,13 @@
     {
       "i": "561122",
       "t": "CDE_HU0013_P05/01_Adiciones_Contratos_Listado_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "245299",
       "ep": "88334",
-      "r": "Laura Alejandra Alarcon Amaya"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561161",
@@ -72572,76 +71692,76 @@
     {
       "i": "561219",
       "t": "FIC_HU0056_Aportes_y_retiros_por_cargues_masivos_Listado_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "103042",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561221",
       "t": "FIC_HU0056_Aportes_Retiros_Por_Cargues_Masivos_Crear_V1.2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "103042",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561229",
       "t": "FIC_HU0056_Aportes_Retiros_Por_Cargues_Masivos_Descargar_detalle_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "103042",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561235",
       "t": "FIC_HU0057_Autorización_Cargue_Masivo_Para_Aportes_Retiros_Crear_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "97717",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561242",
       "t": "FIC_HU0057_Autorización_cargue_masivo_para_aportes_retiros_Descargar_Excel_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "97717",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561256",
       "t": "FIC_HU0058_Cargues_masivos_para_cancelaciones_Crear_V1.2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "103249",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561261",
       "t": "FIC_HU0058_Cargues_masivos_para_cancelaciones_Crear_Manual_V2.1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "103249",
       "ep": "83563",
       "r": "William Eduardo Salazar Orellana"
@@ -72649,13 +71769,13 @@
     {
       "i": "561281",
       "t": "FIC_HU0059_Autorización_Cargues_masivos_para_cancelaciones_Crear_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "103936",
       "ep": "83563",
-      "r": "William Eduardo Salazar Orellana"
+      "r": "Camilo Andrés Loaiza Bustamante"
     },
     {
       "i": "561327",
@@ -72670,7 +71790,7 @@
     },
     {
       "i": "561409",
-      "t": "TES_HU00140_P1/15_Presupuesto_Deterioro_De_Caja_Resumen_V1",
+      "t": "TES_HU00140_P1/15_Presupuesto_Deterioro_De_Caja_Resumen_Listado_V1",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -72836,80 +71956,454 @@
     {
       "i": "561440",
       "t": "PRE_HU0040_P1/5_Consultas_Presupuestales_Listado_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "559704",
       "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Carlos Andres Duque Arango"
     },
     {
       "i": "561441",
       "t": "PRE_HU0040_P3/5_Consultas_Presupuestales_Eliminar_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "559704",
       "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Carlos Andres Duque Arango"
     },
     {
       "i": "561444",
       "t": "PRE_HU0040_P4/5_Consultas_Presupuestales_Ver_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "559704",
       "ep": "88339",
-      "r": "Camilo Andrés Loaiza Bustamante"
+      "r": "Carlos Andres Duque Arango"
     },
     {
       "i": "561447",
       "t": "PRE_HU0040_P5/5_Consultas_Presupuestales_Descargar_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "559704",
+      "ep": "88339",
+      "r": "Carlos Andres Duque Arango"
+    },
+    {
+      "i": "562195",
+      "t": "PRE_HU0036_P5/5_Presupuesto_Inicial_Comprobante_Contable_NF_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "514018",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "562224",
+      "t": "PRE_HU0036_Traslados_Comprobante_Contable_NF_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "538565",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "563055",
+      "t": "CXP_HU0020-26_NF_Conexión_FIC_V1",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "559704",
+      "f": "283452",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563070",
+      "t": "CXP_HU0020-26_NF_Conexión_Presupuesto_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "283452",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563074",
+      "t": "CXP_HU0027_NF_Estados_Pago_Respuesta_Tesoreria_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "284518",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563079",
+      "t": "CXP_HU0020_NF_Tesoreria_Egreso_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "283452",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563083",
+      "t": "CXP_HU0026_P7/8_Aplicar_Pagos_Programados_NF_Tesorería_V4",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "284517",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563087",
+      "t": "CXP_HU0016_P6/8_Solicitud_de_Pago_Instrucciones_De_Pago_Editar_V7",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563092",
+      "t": "CXP_HU0016_P11/12_Solicitud_de_Pago_Instrucciones_Ver_V7",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "273719",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563096",
+      "t": "CXP_HU0021_P2/6_Instrucciones_De_Pago_Crear_V5",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "278542",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563100",
+      "t": "CXP_HU0021_P3/6_Instrucciones_De_Pago_Editar_V5",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "278542",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563104",
+      "t": "CXP_HU0021_P4/6_Instrucciones_De_Pago_Ver_V5",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "278542",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563109",
+      "t": "CXP_HU0020_P10/14_NF_Presupuesto_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "283452",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "563785",
+      "t": "TRI_HU0028_P2_Certificados_Tributarios_Crear_V3",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "322195",
+      "ep": "88337",
+      "r": "Andres Guerrero Guerrero"
+    },
+    {
+      "i": "563863",
+      "t": "TRI_HU0028_P3_Certificados_Tributarios_Editar_V3",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "322195",
+      "ep": "88337",
+      "r": "Andres Guerrero Guerrero"
+    },
+    {
+      "i": "564137",
+      "t": "CXP_HU0020_P01/14_ Autorización2_GeneraciónORPA_Pago_Giro_Listado_V5",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "283452",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "564143",
+      "t": "FIC_HU0056_Plantillas_Estandar_Cargues_Masivos_Descargar_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "103042",
+      "ep": "83563",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "564810",
+      "t": "PRE_HU0033_P2/10_Presupuesto_Inicial_Crear_Recursos_Ingreso_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "514018",
       "ep": "88339",
       "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "564817",
+      "t": "PRE_HU0036_P5/5_Documento_Presupuestal_Crear_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "538565",
+      "ep": "88339",
+      "r": "Camilo Andrés Loaiza Bustamante"
+    },
+    {
+      "i": "564889",
+      "t": "TRI_HU0022_P22_Parametrización_Tributaria_Formularios_Editar_V1.2",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "411322",
+      "ep": "88337",
+      "r": "Andres Guerrero Guerrero"
+    },
+    {
+      "i": "564895",
+      "t": "CXP_HU0020_P6/14_Generación_ORPA_Ver_V5",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "283452",
+      "ep": "88336",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "564924",
+      "t": "TES_HU0048_P1/5_Consulta_Grupo_Dispersión_Listado_V5",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "110332",
+      "ep": "83564",
+      "r": "Laura Alejandra Alarcon Amaya"
+    },
+    {
+      "i": "565230",
+      "t": "CB_HU002_P6/6_Conciliacion_Nota/Contable_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "319694",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
+    },
+    {
+      "i": "565310",
+      "t": "CB_HU004_P3/6_Saldos_Editar_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "329192",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
+    },
+    {
+      "i": "565323",
+      "t": "CB_HU004_P4/6_Saldos_Ver_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "329192",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
+    },
+    {
+      "i": "565339",
+      "t": "CB_HU004_P1/6_Saldos_Listado_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "319694",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
+    },
+    {
+      "i": "565341",
+      "t": "CB_HU002_P3/6_Conciliacion_Imprimir_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "319694",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
+    },
+    {
+      "i": "565342",
+      "t": "CB_HU002_P4/6_Conciliacion_Autorizar_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "319694",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
+    },
+    {
+      "i": "565343",
+      "t": "ACF_HU003_P1/6_Configuración_Contable_Por_Bien_Listado_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "294025",
+      "ep": "88329",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "565347",
+      "t": "ACF_HU003_P2/6_Configuración_Contable_Por_Bien_Crear_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "294025",
+      "ep": "88329",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "565351",
+      "t": "ACF_HU003_P3/6_Configuración_Contable_Por_Bien_Editar_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "294025",
+      "ep": "88329",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "565355",
+      "t": "ACF_HU003_P5/6_Configuración_Contable_Por_Bien_Ver_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "294025",
+      "ep": "88329",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "565359",
+      "t": "ACF_HU003_P6/6_Configuración_Contable_Por_Bien_Importar_V3",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "294025",
+      "ep": "88329",
+      "r": "Angel Arturo Rosas Correa"
+    },
+    {
+      "i": "565363",
+      "t": "CB_HU002_P5/6_Conciliacion_Eliminar_V1.1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "319694",
+      "ep": "88340",
+      "r": "William Jefferson Ochoa Galán"
     }
   ],
   "kpi": {
-    "n_hu": 6005,
-    "n_hu_activas": 5168,
+    "n_hu": 5963,
+    "n_hu_activas": 5129,
     "hu_sin_feature": 19,
-    "n_feature": 594,
+    "n_feature": 590,
     "n_epic": 35,
-    "n_feature_con_hu": 498,
+    "n_feature_con_hu": 494,
     "feature_sin_hu": 96,
     "hu_omitidas": 0,
-    "pct_global": 0.8476,
-    "term_global": 2284,
+    "pct_global": 0.8459,
+    "term_global": 2217,
     "feature_sin_frente": 2,
     "hu_sin_frente": 7,
-    "feature_100_sin_cerrar": 94,
+    "feature_100_sin_cerrar": 91,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 7
   },
   "cmi": {
-    "tactico": 0.6671,
-    "estrategico": 0.1968,
-    "n": 498,
-    "d": 98,
+    "tactico": 0.6639,
+    "estrategico": 0.1923,
+    "n": 494,
+    "d": 95,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 498,
-    "feat_ent": 98,
+    "feat_total": 494,
+    "feat_ent": 95,
     "buckets": {
-      "100": 98,
-      "75": 128,
-      "50": 195,
-      "20": 47,
-      "0": 30
+      "100": 95,
+      "75": 123,
+      "50": 199,
+      "20": 49,
+      "0": 28
     }
   }
 }

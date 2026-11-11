@@ -1,32 +1,32 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_419-RAMA_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:09",
+  "archivo": "HU_419-RAMA_20261111.csv",
   "epics": [
+    {
+      "i": "531912",
+      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n_f": 13,
+      "n": 59,
+      "term": 0,
+      "pct": 0.3644
+    },
     {
       "i": "373561",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n_f": 7,
       "n": 57,
-      "term": 0,
-      "pct": 0.8667
+      "term": 35,
+      "pct": 0.9544
     },
     {
       "i": "380257",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_4",
       "n_f": 7,
       "n": 53,
-      "term": 0,
-      "pct": 0.7679
-    },
-    {
-      "i": "531912",
-      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n_f": 13,
-      "n": 53,
-      "term": 0,
-      "pct": 0.2955
+      "term": 10,
+      "pct": 0.7925
     },
     {
       "i": "399880",
@@ -92,12 +92,12 @@
     {
       "i": "376188",
       "t": "419_FT_RAMA_ADMINISTRACION_DE_HORARIOS_RAMA",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "373561",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n": 13,
-      "term": 0,
-      "pct": 0.9,
+      "term": 13,
+      "pct": 1.0,
       "n_pct": 13
     },
     {
@@ -246,12 +246,12 @@
     {
       "i": "404870",
       "t": "SP4_PR_F5_CONFIGURACION NOTIFICACIONES RAMA - R4",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "373561",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n": 7,
-      "term": 0,
-      "pct": 0.8,
+      "term": 7,
+      "pct": 1.0,
       "n_pct": 7
     },
     {
@@ -273,7 +273,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.4714,
+      "pct": 0.5,
       "n_pct": 7
     },
     {
@@ -283,8 +283,8 @@
       "ep": "373561",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n": 6,
-      "term": 0,
-      "pct": 0.9,
+      "term": 6,
+      "pct": 1.0,
       "n_pct": 6
     },
     {
@@ -316,8 +316,8 @@
       "ep": "380257",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_4",
       "n": 6,
-      "term": 0,
-      "pct": 0.9,
+      "term": 6,
+      "pct": 1.0,
       "n_pct": 6
     },
     {
@@ -351,6 +351,17 @@
       "n": 6,
       "term": 0,
       "pct": 0.85,
+      "n_pct": 6
+    },
+    {
+      "i": "546349",
+      "t": "PR_SOLICITUD NOVEDADES DE CUENTA JUDICIAL",
+      "e": "1. En Planeacion",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 6,
+      "term": 0,
+      "pct": 0.1733,
       "n_pct": 6
     },
     {
@@ -389,23 +400,34 @@
     {
       "i": "376238",
       "t": "419_FT_RAMA_CONFIGURACION_DE_SOLICITUDES - R2",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "373561",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n": 5,
-      "term": 0,
-      "pct": 0.86,
+      "term": 5,
+      "pct": 1.0,
       "n_pct": 5
     },
     {
       "i": "401379",
       "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
+      "e": "2. En Curso",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.5,
+      "n_pct": 5
+    },
+    {
+      "i": "532409",
+      "t": "419_PR_REFINAMIENTO SPRINT 8",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.32,
+      "pct": 0.264,
       "n_pct": 5
     },
     {
@@ -420,14 +442,25 @@
       "n_pct": 5
     },
     {
-      "i": "546349",
-      "t": "PR_SOLICITUD NOVEDADES DE CUENTA JUDICIAL",
+      "i": "551692",
+      "t": "PR_RECIBIR Y ALMACENAR PROCESO (CREACION SISTEMA PROCESAL)",
+      "e": "2. En Curso",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.5,
+      "n_pct": 5
+    },
+    {
+      "i": "551764",
+      "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – MASIVO",
       "e": "1. En Planeacion",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.168,
+      "pct": 0.228,
       "n_pct": 5
     },
     {
@@ -455,23 +488,23 @@
     {
       "i": "377386",
       "t": "419_FT_RAMA_CERTIFICACIÓN DE CUENTA JUDICIAL",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "380257",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_4",
       "n": 4,
-      "term": 0,
-      "pct": 0.825,
+      "term": 4,
+      "pct": 1.0,
       "n_pct": 4
     },
     {
       "i": "389136",
       "t": "SP4_PR_F03_CHAT VIRTUAL RAMA - R4",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "373561",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_3",
       "n": 4,
-      "term": 0,
-      "pct": 0.75,
+      "term": 4,
+      "pct": 1.0,
       "n_pct": 4
     },
     {
@@ -521,12 +554,12 @@
     {
       "i": "532536",
       "t": "PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO INDIVIDUAL",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.35,
+      "pct": 0.5,
       "n_pct": 4
     },
     {
@@ -543,23 +576,12 @@
     {
       "i": "546422",
       "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – INDIVIDUAL",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.2,
-      "n_pct": 4
-    },
-    {
-      "i": "551692",
-      "t": "PR_RECIBIR Y ALMACENAR PROCESO (CREACION SISTEMA PROCESAL)",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 4,
-      "term": 0,
-      "pct": 0.275,
+      "pct": 0.5,
       "n_pct": 4
     },
     {
@@ -651,17 +673,6 @@
       "n_pct": 3
     },
     {
-      "i": "532409",
-      "t": "419_PR_REFINAMIENTO SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 3,
-      "term": 0,
-      "pct": 0.1733,
-      "n_pct": 3
-    },
-    {
       "i": "517951",
       "t": "PR_PARAMETRIZACIÓN CUENTAS JUDICIALES SIN SISTEMA PROCESAL",
       "e": "2. En Curso",
@@ -670,17 +681,6 @@
       "n": 3,
       "term": 0,
       "pct": 0.5,
-      "n_pct": 3
-    },
-    {
-      "i": "551764",
-      "t": "PR_MODIFICACIÓN O ACTUALIZACIÓN DE PROCESO – MASIVO",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 3,
-      "term": 0,
-      "pct": 0.2,
       "n_pct": 3
     },
     {
@@ -798,10 +798,10 @@
     {
       "i": "360591",
       "t": "419_PR_HU001_Consultar_dominios",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "360590",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -809,10 +809,10 @@
     {
       "i": "360592",
       "t": "419_PR_HU002_Ver_detalle_del_dominio",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "360590",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -820,10 +820,10 @@
     {
       "i": "360593",
       "t": "419_PR_HU003_Modificar_dominio",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "360590",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -831,10 +831,10 @@
     {
       "i": "360594",
       "t": "419_PR_HU004_Inactivar_Dominio",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "360590",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -842,10 +842,10 @@
     {
       "i": "360595",
       "t": "419_PR_TEC001_Arquitectura_tecnológica",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "360590",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -1326,10 +1326,10 @@
     {
       "i": "360719",
       "t": "419_PB_UX_HU007_Diseño UX/UI Rama ADMINISTRACIÓN DOMINIOS",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "360590",
       "ep": "373561",
       "r": "Ricardo Andres Guzman Guzman"
@@ -1744,10 +1744,10 @@
     {
       "i": "376328",
       "t": "419_PR_HU001_ Consultar_Horario_Portal",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -1755,10 +1755,10 @@
     {
       "i": "376333",
       "t": "419_PR_HU002_Crear_Horario_Portal",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -1777,10 +1777,10 @@
     {
       "i": "377217",
       "t": "419_PR_HU001_Configurar_Etapa_Solicitud_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376238",
       "ep": "373561",
       "r": "Angela Maria Valbuena Aponte"
@@ -1788,10 +1788,10 @@
     {
       "i": "377222",
       "t": "419_PR_HU002_Listar_Configuración_Etapas_Solicitud_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376238",
       "ep": "373561",
       "r": "Angela Maria Valbuena Aponte"
@@ -1799,10 +1799,10 @@
     {
       "i": "377228",
       "t": "419_PR_HU003_Ver_Detalle_Configuración_Etapa_V1",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376238",
       "ep": "373561",
       "r": "Angela Maria Valbuena Aponte"
@@ -1821,10 +1821,10 @@
     {
       "i": "377413",
       "t": "419_PR_HU001_Generar_Certificado_Cuenta",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "377386",
       "ep": "380257",
       "r": "Angela Maria Valbuena Aponte"
@@ -1865,10 +1865,10 @@
     {
       "i": "379273",
       "t": "419_PR_HU001_Listar_Mensajes_Generales",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376242",
       "ep": "380257",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -1876,10 +1876,10 @@
     {
       "i": "379278",
       "t": "419_PR_HU002_Editar_Mensaje",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376242",
       "ep": "380257",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -1887,10 +1887,10 @@
     {
       "i": "379296",
       "t": "419_PR_HU003_Ver_Detalle_Mensaje",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376242",
       "ep": "380257",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -1942,10 +1942,10 @@
     {
       "i": "381072",
       "t": "419_PB_UX_HU001_Diseño_UX/UI_SP3_RAMA_MENSAJES GENERALES",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376242",
       "ep": "380257",
       "r": "Ricardo Andres Guzman Guzman"
@@ -1953,10 +1953,10 @@
     {
       "i": "381138",
       "t": "419_PB_UX_HU003_Diseño UX/UI RAMA_CONFIGURACION_DE_SOLICITUDES",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "376238",
       "ep": "373561",
       "r": "Ricardo Andres Guzman Guzman"
@@ -1964,10 +1964,10 @@
     {
       "i": "381520",
       "t": "419_PR_HU003_Modificar_Horario_Portal",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -1975,10 +1975,10 @@
     {
       "i": "381523",
       "t": "419_PR_HU004_Eliminar_Horario_Portal",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -1986,10 +1986,10 @@
     {
       "i": "381524",
       "t": "419_PR_HU005_Crear_Horario_de_Excepción",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -1997,10 +1997,10 @@
     {
       "i": "381538",
       "t": "419_PR_HU006_Modificar_Horario_de_Excepción",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -2008,10 +2008,10 @@
     {
       "i": "381539",
       "t": "419_PR_HU007_Control_de_acceso_en_Horarios_de_Excepción",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -2019,10 +2019,10 @@
     {
       "i": "381543",
       "t": "419_PR_HU008_Listar_Horario_de_Excepción",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -2030,10 +2030,10 @@
     {
       "i": "381545",
       "t": "419_PR_HU009_Ver_detalle_Horario_de_Excepción",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -2041,10 +2041,10 @@
     {
       "i": "381546",
       "t": "419_PR_HU0010_Eliminar_Horario_de_Excepción",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Carlos Alberto Valero Peña"
@@ -2118,10 +2118,10 @@
     {
       "i": "382331",
       "t": "419_PB_UX_HU002_Diseño_UX/UI_SP3_RAMA_CERTIFICACIÓN DE CUENTA JUDICIAL",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377386",
       "ep": "380257",
       "r": "Ricardo Andres Guzman Guzman"
@@ -2206,10 +2206,10 @@
     {
       "i": "385580",
       "t": "419_PR_TEC002_Arquitectura de datos",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376242",
       "ep": "380257",
       "r": "Hellen Alejandra Rincon Soler"
@@ -2272,10 +2272,10 @@
     {
       "i": "387731",
       "t": "419_PR_TEC001_Arquitectura de datos",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -2294,10 +2294,10 @@
     {
       "i": "389139",
       "t": "419_PR_HU001_Chat_Virtual",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "389136",
       "ep": "373561",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -2481,10 +2481,10 @@
     {
       "i": "392418",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -2503,10 +2503,10 @@
     {
       "i": "393347",
       "t": "419_PB_UX_HU007_Diseño_UX/UI_SP3_RAMA_ADMINISTRACION_DE_HORARIOS_RAMA",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376188",
       "ep": "373561",
       "r": "Ricardo Andres Guzman Guzman"
@@ -2635,10 +2635,10 @@
     {
       "i": "396517",
       "t": "419_PR_TEC001_Arquitectura_Tecnologica",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.9,
+      "v": 1.0,
       "f": "376242",
       "ep": "380257",
       "r": "Hellen Alejandra Rincon Soler"
@@ -2646,10 +2646,10 @@
     {
       "i": "396861",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377386",
       "ep": "380257",
       "r": "Hellen Alejandra Rincon Soler"
@@ -2657,10 +2657,10 @@
     {
       "i": "396941",
       "t": "419_PR_TEC001_Arquitectura_de_datos",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377386",
       "ep": "380257",
       "r": "Hellen Alejandra Rincon Soler"
@@ -2866,32 +2866,32 @@
     {
       "i": "401391",
       "t": "419_PR_CFA_HU001_Comportamiento_Flujo_Autorizacion",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "401379",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Cristian Andres Marin Durango"
     },
     {
       "i": "401680",
       "t": "419_PR_CFR_HU002_Comportamiento_Flujo_Rechazo",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "401379",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Cristian Andres Marin Durango"
     },
     {
       "i": "401845",
       "t": "419_PR_TEC001_Arquitectura_de_Datos",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "376238",
       "ep": "373561",
       "r": "Carlos Andres Lopez"
@@ -3075,10 +3075,10 @@
     {
       "i": "404873",
       "t": "419_PR_HU001_Listar_Plantillas_Notificacion",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -3086,10 +3086,10 @@
     {
       "i": "404895",
       "t": "419_PR_HU002_Modificar_Plantilla_Notificacion",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -3097,10 +3097,10 @@
     {
       "i": "404900",
       "t": "419_PR_HU003_Ver_Detalle_Plantilla_Notificacion",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -3108,10 +3108,10 @@
     {
       "i": "404902",
       "t": "419_PR_HU004_Activar/Desactivar_Plantilla_Notificacion",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Sergio Alejandro Yepes Gallego"
@@ -3163,10 +3163,10 @@
     {
       "i": "407332",
       "t": "419_PR_TEC001_Arquitectura de datos",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "389136",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -3174,10 +3174,10 @@
     {
       "i": "407830",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "389136",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -3185,10 +3185,10 @@
     {
       "i": "408081",
       "t": "419_PR_TEC001_Arquitectura de datos",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -3284,10 +3284,10 @@
     {
       "i": "410091",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -3350,10 +3350,10 @@
     {
       "i": "412884",
       "t": "419_PB_UX_HU001_Diseño_UX/UI_SP4_RAMA_CHAT_VIRTUAL",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "389136",
       "ep": "373561",
       "r": "Hellen Alejandra Rincon Soler"
@@ -3427,13 +3427,13 @@
     {
       "i": "417198",
       "t": "419_PR_CFR_HU003_Generalidades",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "401379",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Cristian Andres Marin Durango"
     },
     {
       "i": "417205",
@@ -3471,10 +3471,10 @@
     {
       "i": "417944",
       "t": "419_PB_UX_HU003_Diseño_UX/UI_SP4_CONFIGURACION NOTIFICACIONES RAMA",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "404870",
       "ep": "373561",
       "r": "Ricardo Andres Guzman Guzman"
@@ -4137,7 +4137,7 @@
       "v": 0.5,
       "f": "517951",
       "ep": "531912",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "532374",
@@ -4192,7 +4192,7 @@
       "v": 0.5,
       "f": "532415",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532428",
@@ -4214,29 +4214,29 @@
       "v": 0.5,
       "f": "532415",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532560",
       "t": "419_PR_HU001_Asociar_Modificar_Asociación_Proceso_a_DJ",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532536",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Santiago Hernandez Saldarriga"
     },
     {
       "i": "532566",
       "t": "419_PR_HU002_Gestionar_Autorización_Asociación_del_Proceso_al_Depósito",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532536",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Santiago Hernandez Saldarriga"
     },
     {
       "i": "532574",
@@ -4368,7 +4368,7 @@
       "v": 0.5,
       "f": "532536",
       "ep": "531912",
-      "r": "Daniel Felipe Socha Hurtado"
+      "r": "Santiago Hernandez Saldarriga"
     },
     {
       "i": "546314",
@@ -4428,10 +4428,10 @@
     {
       "i": "546430",
       "t": "419_PR_H001_Consultar_proceso_para_Actualizacion.",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546422",
       "ep": "531912",
       "r": "Yuliana Delgado Osorio"
@@ -4439,10 +4439,10 @@
     {
       "i": "546436",
       "t": "419_PR_H002_Actualizar Partes del Proceso",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546422",
       "ep": "531912",
       "r": "Yuliana Delgado Osorio"
@@ -4456,7 +4456,7 @@
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "546459",
@@ -4467,7 +4467,7 @@
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "546461",
@@ -4478,7 +4478,7 @@
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "546483",
@@ -4489,7 +4489,7 @@
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "546486",
@@ -4500,7 +4500,7 @@
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "547686",
@@ -4522,7 +4522,7 @@
       "v": 0.5,
       "f": "517951",
       "ep": "531912",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "549994",
@@ -4533,7 +4533,7 @@
       "v": 0.5,
       "f": "517951",
       "ep": "531912",
-      "r": "Yuliana Delgado Osorio"
+      "r": "William Alexis Rodríguez castaño"
     },
     {
       "i": "550383",
@@ -4544,26 +4544,26 @@
       "v": 0.3,
       "f": "532415",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "550384",
       "t": "419_PR_TEC001_Arquitectura_de_Datos",
-      "e": "6. Desarrollo",
+      "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "550385",
       "t": "419_PR_TEC001_Arquitectura_de_Datos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546422",
       "ep": "531912",
       "r": "Yuliana Delgado Osorio"
@@ -4571,13 +4571,13 @@
     {
       "i": "550637",
       "t": "419_PB_TEC001_Arquitectura de Datos",
-      "e": "0. Pendiente Levantamiento",
+      "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.2,
       "f": "546349",
       "ep": "531912",
-      "r": "Steven Florez Hernández"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "551319",
@@ -4599,48 +4599,48 @@
       "v": 0.5,
       "f": "532415",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "551738",
       "t": "419_PR_RAP_HU001- Capturar_y_Consultar_proceso_con_sistema_procesal",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551692",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "551742",
       "t": "419_PR_RAP_HU002- Recibir_proceso_del_sistema_procesal",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551692",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "551763",
       "t": "419_PR_RAP_HU003 - Crear_proceso_en_PWT_II_Banco_y_asociar_cuenta_judicial",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551692",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "551766",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "546422",
       "ep": "531912",
       "r": "Yuliana Delgado Osorio"
@@ -4687,7 +4687,7 @@
       "v": 0.2,
       "f": "532409",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "552062",
@@ -4698,7 +4698,7 @@
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "552063",
@@ -4709,7 +4709,7 @@
       "v": 0.5,
       "f": "532536",
       "ep": "531912",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Santiago Hernandez Saldarriga"
     },
     {
       "i": "558651",
@@ -4720,20 +4720,86 @@
       "v": 0.5,
       "f": "551692",
       "ep": "531912",
+      "r": "Yuliana Delgado Osorio"
+    },
+    {
+      "i": "564086",
+      "t": "419_PR_TEC001_Arquitectura_de_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "551764",
+      "ep": "531912",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "564145",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos_Ajuste_Validacion_Codigo_Interno_Solicitud_Apertura_Cuenta",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "532409",
+      "ep": "531912",
+      "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "564198",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos_Ajuste_Solicitud_de_Creación_de_usuarios",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532409",
+      "ep": "531912",
       "r": "Daniel Felipe Socha Hurtado"
+    },
+    {
+      "i": "564588",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "551692",
+      "ep": "531912",
+      "r": "Yuliana Delgado Osorio"
+    },
+    {
+      "i": "564595",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "551764",
+      "ep": "531912",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "564928",
+      "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "546349",
+      "ep": "531912",
+      "r": "Yesica Johana Ospina Patiño"
     }
   ],
   "kpi": {
-    "n_hu": 360,
-    "n_hu_activas": 359,
+    "n_hu": 366,
+    "n_hu_activas": 365,
     "hu_sin_feature": 13,
     "n_feature": 62,
     "n_epic": 9,
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7568,
-    "term_global": 72,
+    "pct_global": 0.7776,
+    "term_global": 117,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 1,
@@ -4741,20 +4807,20 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.582,
-    "estrategico": 0.2903,
+    "tactico": 0.6351,
+    "estrategico": 0.4032,
     "n": 62,
-    "d": 18,
+    "d": 25,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 62,
-    "feat_ent": 18,
+    "feat_ent": 25,
     "buckets": {
-      "100": 18,
-      "75": 6,
-      "50": 17,
-      "20": 6,
-      "0": 15
+      "100": 25,
+      "75": 3,
+      "50": 14,
+      "20": 10,
+      "0": 10
     }
   }
 }

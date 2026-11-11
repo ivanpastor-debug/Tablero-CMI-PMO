@@ -1,24 +1,24 @@
 {
   "codigo": "020",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_020_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:10",
+  "archivo": "HU_020_20261111.csv",
   "epics": [
     {
       "i": "525431",
       "t": "OPERACIÓN",
       "n_f": 5,
-      "n": 52,
-      "term": 44,
-      "pct": 0.9115
+      "n": 59,
+      "term": 47,
+      "pct": 0.8831
     },
     {
       "i": "525428",
       "t": "SOPORTE",
       "n_f": 2,
-      "n": 21,
+      "n": 24,
       "term": 18,
-      "pct": 0.9286
+      "pct": 0.8625
     },
     {
       "i": "561213",
@@ -36,10 +36,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 17,
-      "term": 16,
-      "pct": 0.9529,
-      "n_pct": 17
+      "n": 20,
+      "term": 17,
+      "pct": 0.88,
+      "n_pct": 20
     },
     {
       "i": "527697",
@@ -47,10 +47,10 @@
       "e": "2. En Curso",
       "ep": "525428",
       "ept": "SOPORTE",
-      "n": 17,
+      "n": 20,
       "term": 15,
-      "pct": 0.9588,
-      "n_pct": 17
+      "pct": 0.845,
+      "n_pct": 20
     },
     {
       "i": "527008",
@@ -58,10 +58,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 14,
+      "n": 16,
       "term": 12,
-      "pct": 0.9286,
-      "n_pct": 14
+      "pct": 0.875,
+      "n_pct": 16
     },
     {
       "i": "527007",
@@ -69,10 +69,10 @@
       "e": "2. En Curso",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 12,
+      "n": 13,
       "term": 10,
-      "pct": 0.8667,
-      "n_pct": 12
+      "pct": 0.8615,
+      "n_pct": 13
     },
     {
       "i": "527009",
@@ -81,8 +81,8 @@
       "ep": "525431",
       "ept": "OPERACIÓN",
       "n": 7,
-      "term": 4,
-      "pct": 0.8286,
+      "term": 6,
+      "pct": 0.9714,
       "n_pct": 7
     },
     {
@@ -104,7 +104,7 @@
       "ept": "SOPORTE",
       "n": 4,
       "term": 3,
-      "pct": 0.8,
+      "pct": 0.95,
       "n_pct": 4
     },
     {
@@ -113,10 +113,10 @@
       "e": "1. En Planeacion",
       "ep": "525431",
       "ept": "OPERACIÓN",
-      "n": 2,
+      "n": 3,
       "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
+      "pct": 0.8333,
+      "n_pct": 3
     }
   ],
   "hus": [
@@ -849,10 +849,10 @@
     {
       "i": "552959",
       "t": "HU_002_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – PUBLICACIÓN DEL INVENTARIO DE REGISTROS ADMINISTRATIVOS",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "527009",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -860,10 +860,10 @@
     {
       "i": "552964",
       "t": "HU_003_ID_020_PLAN DE TRABAJO CIERRE 27 BRECHAS FURAG – PUBLICACIÓN DEL INVENTARIO DE OPERACIONES ESTADÍSTICAS",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "527009",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -893,10 +893,10 @@
     {
       "i": "552979",
       "t": "HU_006_ID_020_TABLERO DE ACTUALIZACIÓN DE TABLAS – INCLUSIÓN DE TODAS LAS TABLAS DE LA BODEGA",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -904,10 +904,10 @@
     {
       "i": "552984",
       "t": "HU_007_ID_020_CIERRES MENSUALES – INVENTARIO EMPRESAS, MUSA Y ALISSTA",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "527006",
       "ep": "525431",
       "r": "nicolas.barrera wimbu.co"
@@ -915,10 +915,10 @@
     {
       "i": "552989",
       "t": "HU_008_ID_020_NUEVAS REGLAS DE FRAUDE – CORTE OCTUBRE",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527695",
       "ep": "525428",
       "r": "nicolas.barrera wimbu.co"
@@ -937,10 +937,10 @@
     {
       "i": "553000",
       "t": "HU_010_ID_020_EJECUCIÓN CONTROLADA – CARGUE FRECUENTE PV_HEADER",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "527008",
       "ep": "525431",
       "r": "Camilo Linares Villegas"
@@ -1043,37 +1043,147 @@
       "f": "561218",
       "ep": "561213",
       "r": "vladimir.silva wimbu.co"
+    },
+    {
+      "i": "563802",
+      "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO IBNR",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527697",
+      "ep": "525428",
+      "r": "daniel.hernandez wimbu.co"
+    },
+    {
+      "i": "563808",
+      "t": "HU_002_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO INVENTARIO DE EMPRESAS",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527697",
+      "ep": "525428",
+      "r": "daniel.hernandez wimbu.co"
+    },
+    {
+      "i": "563814",
+      "t": "HU_003_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO SINIESTRALIDAD Y CONSTITUCIONES",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527697",
+      "ep": "525428",
+      "r": "jair.vargas wimbu.co"
+    },
+    {
+      "i": "563820",
+      "t": "HU_004_ID_020_AJUSTES FUENTES TABLERO MUSA – PARTICIONAMIENTO Y CLUSTERIZACIÓN",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527007",
+      "ep": "525431",
+      "r": "jair.vargas wimbu.co"
+    },
+    {
+      "i": "563826",
+      "t": "HU_005_ID_020_CIERRES MENSUALES – PARAMETRIZACIÓN DE LA FECHA DE CORTE",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527006",
+      "ep": "525431",
+      "r": "jair.vargas wimbu.co"
+    },
+    {
+      "i": "563832",
+      "t": "HU_006_ID_020_CIERRES MENSUALES – SCG POBLACIÓN, DIMENSIONES Y POBLACIÓN",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527006",
+      "ep": "525431",
+      "r": "nicolas.barrera wimbu.co"
+    },
+    {
+      "i": "563838",
+      "t": "HU_007_ID_020_AJUSTES AGENTES – PLAN DE TRABAJO RAMAZAI",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527006",
+      "ep": "525431",
+      "r": "nicolas.barrera wimbu.co"
+    },
+    {
+      "i": "563844",
+      "t": "HU_008_ID_020_EXTRACCIONES COMPLETA – PREVISORAVIDA (CONCEPTOS CIERRES, CTA_CB, CIERRE COBRANZAS Y COMISIONES)",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527008",
+      "ep": "525431",
+      "r": "Camilo Linares Villegas"
+    },
+    {
+      "i": "563850",
+      "t": "HU_009_ID_020_CREACIÓN PROCESO DELTA – TABLA MCB",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "527008",
+      "ep": "525431",
+      "r": "Camilo Linares Villegas"
+    },
+    {
+      "i": "563856",
+      "t": "HU_010_ID_020_GESTIÓN Y COORDINACIÓN TÉCNICA",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "543997",
+      "ep": "525431",
+      "r": "vladimir.silva wimbu.co"
     }
   ],
   "kpi": {
-    "n_hu": 84,
-    "n_hu_activas": 82,
+    "n_hu": 94,
+    "n_hu_activas": 92,
     "hu_sin_feature": 2,
     "n_feature": 8,
     "n_epic": 3,
     "n_feature_con_hu": 8,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9256,
-    "term_global": 71,
+    "pct_global": 0.8891,
+    "term_global": 74,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 1,
+    "feature_100_sin_cerrar": 0,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.8801,
-    "estrategico": 0.25,
+    "tactico": 0.849,
+    "estrategico": 0.125,
     "n": 8,
-    "d": 2,
+    "d": 1,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 8,
-    "feat_ent": 2,
+    "feat_ent": 1,
     "buckets": {
-      "100": 2,
-      "75": 5,
+      "100": 1,
+      "75": 6,
       "50": 1,
       "20": 0,
       "0": 0

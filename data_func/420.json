@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-09",
-  "generado": "2026-11-09 09:14",
-  "archivo": "HU_420_20261109.csv",
+  "corte": "2026-11-11",
+  "generado": "2026-11-11 09:10",
+  "archivo": "HU_420_20261111.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
-      "n": 180,
-      "term": 121,
-      "pct": 0.8911
+      "n": 187,
+      "term": 125,
+      "pct": 0.8759
     },
     {
       "i": "357729",
@@ -131,8 +131,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 37,
-      "term": 27,
-      "pct": 0.9054,
+      "term": 28,
+      "pct": 0.9189,
       "n_pct": 37
     },
     {
@@ -198,7 +198,7 @@
       "ept": "Cuentas médicas",
       "n": 19,
       "term": 14,
-      "pct": 0.9316,
+      "pct": 0.9474,
       "n_pct": 19
     },
     {
@@ -235,6 +235,17 @@
       "n_pct": 16
     },
     {
+      "i": "507072",
+      "t": "Reportes",
+      "e": "1. En Planeacion",
+      "ep": "357078",
+      "ept": "Cuentas médicas",
+      "n": 15,
+      "term": 0,
+      "pct": 0.72,
+      "n_pct": 15
+    },
+    {
       "i": "356684",
       "t": "Carga masiva de contingencia",
       "e": "1. En Planeacion",
@@ -255,17 +266,6 @@
       "term": 0,
       "pct": 0.4786,
       "n_pct": 14
-    },
-    {
-      "i": "507072",
-      "t": "Reportes",
-      "e": "1. En Planeacion",
-      "ep": "357078",
-      "ept": "Cuentas médicas",
-      "n": 13,
-      "term": 0,
-      "pct": 0.8,
-      "n_pct": 13
     },
     {
       "i": "356378",
@@ -334,6 +334,17 @@
       "n_pct": 11
     },
     {
+      "i": "468613",
+      "t": "Ajustes transversales cuentas médicas",
+      "e": "1. En Planeacion",
+      "ep": "357078",
+      "ept": "Cuentas médicas",
+      "n": 11,
+      "term": 6,
+      "pct": 0.8273,
+      "n_pct": 11
+    },
+    {
       "i": "410153",
       "t": "Roles",
       "e": "1. En Planeacion",
@@ -364,17 +375,6 @@
       "n": 10,
       "term": 10,
       "pct": 1.0,
-      "n_pct": 10
-    },
-    {
-      "i": "468613",
-      "t": "Ajustes transversales cuentas médicas",
-      "e": "1. En Planeacion",
-      "ep": "357078",
-      "ept": "Cuentas médicas",
-      "n": 10,
-      "term": 3,
-      "pct": 0.8,
       "n_pct": 10
     },
     {
@@ -554,6 +554,17 @@
       "n_pct": 5
     },
     {
+      "i": "543011",
+      "t": "Integración GAIA",
+      "e": "1. En Planeacion",
+      "ep": "357078",
+      "ept": "Cuentas médicas",
+      "n": 5,
+      "term": 0,
+      "pct": 0.32,
+      "n_pct": 5
+    },
+    {
       "i": "356373",
       "t": "Inicio",
       "e": "1. En Planeacion",
@@ -697,17 +708,6 @@
       "n_pct": 1
     },
     {
-      "i": "543011",
-      "t": "Integración GAIA",
-      "e": "1. En Planeacion",
-      "ep": "357078",
-      "ept": "Cuentas médicas",
-      "n": 1,
-      "term": 0,
-      "pct": 0.8,
-      "n_pct": 1
-    },
-    {
       "i": "550640",
       "t": "Integración ISARL",
       "e": "1. En Planeacion",
@@ -726,7 +726,7 @@
       "ept": "Cuentas médicas",
       "n": 1,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.5,
       "n_pct": 1
     }
   ],
@@ -3600,7 +3600,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Javier Francisco Rios Erazo"
     },
     {
       "i": "376910",
@@ -4678,7 +4678,7 @@
       "v": 0.8,
       "f": "377082",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "410503",
@@ -5074,7 +5074,7 @@
       "v": 0.8,
       "f": "358512",
       "ep": "357078",
-      "r": "Sebastian Bernal"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "423405",
@@ -5992,10 +5992,10 @@
     {
       "i": "471789",
       "t": "HU0009_Positiva_Modal_Reapertura_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377082",
       "ep": "357078",
       "r": "Sindy Mabel Lozada Ruiz"
@@ -6740,10 +6740,10 @@
     {
       "i": "498041",
       "t": "HU0189_Positiva_Ajustes_Transversales_Observaciones/Soportes_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "468613",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6784,10 +6784,10 @@
     {
       "i": "499561",
       "t": "HU0021_Positiva_Historial_Glosas_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "468613",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6828,10 +6828,10 @@
     {
       "i": "500399",
       "t": "HU0191_Positiva_Ajustes_Transversales_Escalamientos_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "468613",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -7301,13 +7301,13 @@
     {
       "i": "533597",
       "t": "HU0122_Positiva_Factura_Estado_Pendiente_Asignación_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "377082",
       "ep": "357078",
-      "r": "Alba Lucero Tangarife Camargo"
+      "r": "orlando perez"
     },
     {
       "i": "533599",
@@ -7351,7 +7351,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Javier Francisco Rios Erazo"
     },
     {
       "i": "536405",
@@ -7384,7 +7384,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Javier Francisco Rios Erazo"
     },
     {
       "i": "536411",
@@ -7395,7 +7395,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Javier Francisco Rios Erazo"
     },
     {
       "i": "536412",
@@ -7411,24 +7411,24 @@
     {
       "i": "543036",
       "t": "HU0223_Positiva_Envío_Documentos_TRD_SGDEA_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "543039",
-      "ep": "357078",
-      "r": "Alba Lucero Tangarife Camargo"
-    },
-    {
-      "i": "545617",
-      "t": "HU0018_Positiva_Conciliación_Cerrar_Conciliación_V2",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
+      "f": "543039",
+      "ep": "357078",
+      "r": "orlando perez"
+    },
+    {
+      "i": "545617",
+      "t": "HU0018_Positiva_Conciliación_Cerrar_Conciliación_V2",
+      "e": "3. Entregado",
+      "p": "QA",
+      "a": 1,
+      "v": 0.8,
       "f": "382413",
       "ep": "357078",
-      "r": "Juan Pablo Prada Ortiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "548102",
@@ -7517,19 +7517,96 @@
       "f": "383722",
       "ep": "356469",
       "r": "María Alejandra Velásquez Piedrahita"
+    },
+    {
+      "i": "561984",
+      "t": "HU0227_Positiva_Cuentas_Médicas_Transferencia_Radicacion_Rubro_GAIA_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "543011",
+      "ep": "357078",
+      "r": "Alba Lucero Tangarife Camargo"
+    },
+    {
+      "i": "561988",
+      "t": "HU0228_Positiva_Cuentas_Medicas_Transferencia_Auditoria_Glosas_Rubro_SIARP_GAIA_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "543011",
+      "ep": "357078",
+      "r": "Alba Lucero Tangarife Camargo"
+    },
+    {
+      "i": "561991",
+      "t": "HU0229_Positiva_Cuentas_Medicas_Transferencia_Conciliacion_Cierre_Glosas_SIARP_GAIA_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "543011",
+      "ep": "357078",
+      "r": "Alba Lucero Tangarife Camargo"
+    },
+    {
+      "i": "561994",
+      "t": "HU0230_Positiva_Cuentas_Medicas_Transferencia_Devoluciones_Facturas_SIARP_GAIA_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "543011",
+      "ep": "357078",
+      "r": "Alba Lucero Tangarife Camargo"
+    },
+    {
+      "i": "562017",
+      "t": "HU0226_Positiva_Componente_Herramientas_Accesibilidad_V1",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "468613",
+      "ep": "357078",
+      "r": "orlando perez"
+    },
+    {
+      "i": "562257",
+      "t": "HU0224_Positiva_Generacion_Archivos_Planos_Cartera_FTP_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "507072",
+      "ep": "357078",
+      "r": "Alba Lucero Tangarife Camargo"
+    },
+    {
+      "i": "562258",
+      "t": "HU0225_Positiva_Validacion_Consistencia_Inconsistencias_Cartera_V1",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "507072",
+      "ep": "357078",
+      "r": "Alba Lucero Tangarife Camargo"
     }
   ],
   "kpi": {
-    "n_hu": 617,
-    "n_hu_activas": 602,
+    "n_hu": 624,
+    "n_hu_activas": 609,
     "hu_sin_feature": 0,
     "n_feature": 57,
     "n_epic": 12,
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9357,
-    "term_global": 503,
+    "pct_global": 0.9305,
+    "term_global": 507,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 34,
@@ -7537,7 +7614,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.8673,
+    "tactico": 0.865,
     "estrategico": 0.614,
     "n": 57,
     "d": 35,
@@ -7548,8 +7625,8 @@
     "buckets": {
       "100": 35,
       "75": 12,
-      "50": 6,
-      "20": 1,
+      "50": 4,
+      "20": 3,
       "0": 3
     }
   }
