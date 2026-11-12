@@ -19,22 +19,6 @@
       "n": 409,
       "term": 189,
       "pct": 0.7707
-    },
-    {
-      "i": "83503",
-      "t": "Funcionalidades Transversales",
-      "n_f": 9,
-      "n": 124,
-      "term": 117,
-      "pct": 0.9665
-    },
-    {
-      "i": "417182",
-      "t": "Automatización_QA Balu",
-      "n_f": 2,
-      "n": 63,
-      "term": 60,
-      "pct": 0.9676
     }
   ],
   "features": [
@@ -48,17 +32,6 @@
       "term": 35,
       "pct": 0.7433,
       "n_pct": 92
-    },
-    {
-      "i": "417232",
-      "t": "Actividades Transversales",
-      "e": "1. En Planeacion",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 84,
-      "term": 79,
-      "pct": 0.9552,
-      "n_pct": 84
     },
     {
       "i": "88254",
@@ -81,17 +54,6 @@
       "term": 30,
       "pct": 0.9273,
       "n_pct": 40
-    },
-    {
-      "i": "417212",
-      "t": "Automatización BALÚ - Back - Front E2E",
-      "e": "1. En Planeacion",
-      "ep": "417182",
-      "ept": "Automatización_QA Balu",
-      "n": 47,
-      "term": 46,
-      "pct": 0.9851,
-      "n_pct": 47
     },
     {
       "i": "98062",
@@ -259,17 +221,6 @@
       "n_pct": 17
     },
     {
-      "i": "101755",
-      "t": "Estandarización de Funcionalidades y Campos",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 17,
-      "term": 16,
-      "pct": 0.9882,
-      "n_pct": 17
-    },
-    {
       "i": "84186",
       "t": "014_Independientes_Afiliados_Novedades_Web",
       "e": "2. En Curso",
@@ -311,17 +262,6 @@
       "n": 16,
       "term": 0,
       "pct": 0.2487,
-      "n_pct": 16
-    },
-    {
-      "i": "417189",
-      "t": "Automatización Front E2E",
-      "e": "1. En Planeacion",
-      "ep": "417182",
-      "ept": "Automatización_QA Balu",
-      "n": 16,
-      "term": 14,
-      "pct": 0.9163,
       "n_pct": 16
     },
     {
@@ -501,17 +441,6 @@
       "n_pct": 7
     },
     {
-      "i": "180126",
-      "t": "Actualizaciones y mejoras",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 7,
-      "term": 6,
-      "pct": 0.9714,
-      "n_pct": 7
-    },
-    {
       "i": "314185",
       "t": "013_Empleador_Afiliado_Reportes",
       "e": "2. En Curso",
@@ -542,17 +471,6 @@
       "n": 5,
       "term": 4,
       "pct": 0.9,
-      "n_pct": 5
-    },
-    {
-      "i": "85105",
-      "t": "Funcionalidad Opciones del Usuario",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 5,
-      "term": 5,
-      "pct": 1.0,
       "n_pct": 5
     },
     {
@@ -587,17 +505,6 @@
       "term": 2,
       "pct": 0.94,
       "n_pct": 5
-    },
-    {
-      "i": "85107",
-      "t": "Funcionalidad Recuperar Contraseña",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 4,
-      "term": 4,
-      "pct": 1.0,
-      "n_pct": 4
     },
     {
       "i": "85114",
@@ -644,44 +551,11 @@
       "n_pct": 3
     },
     {
-      "i": "85104",
-      "t": "Funcionalidad Ingreso de Usuario",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
       "i": "307821",
       "t": "002_Recaudo - Procesamiento Archivos LOG Bancario.",
       "e": "4. Cerrado",
       "ep": "83437",
       "ept": "Sistema de Recaudo y Cartera",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "85109",
-      "t": "Funcionalidad de Preguntas Frecuentes",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 2,
-      "term": 2,
-      "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "180688",
-      "t": "MVP 2 - Nuevas funcionalidades",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -708,17 +582,6 @@
       "term": 2,
       "pct": 1.0,
       "n_pct": 2
-    },
-    {
-      "i": "85108",
-      "t": "Funcionalidad Formulario Contáctenos",
-      "e": "2. En Curso",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 1,
-      "term": 1,
-      "pct": 1.0,
-      "n_pct": 1
     },
     {
       "i": "85123",
@@ -774,17 +637,6 @@
       "term": 1,
       "pct": 1.0,
       "n_pct": 1
-    },
-    {
-      "i": "85119",
-      "t": "Funcionalidad Administración Videos e Instructivos",
-      "e": "1. En Planeacion",
-      "ep": "83503",
-      "ept": "Funcionalidades Transversales",
-      "n": 0,
-      "term": 0,
-      "pct": null,
-      "n_pct": 0
     }
   ],
   "hus": [
@@ -877,17 +729,6 @@
       "r": "Paola Peña"
     },
     {
-      "i": "83868",
-      "t": "HU_01_Gal_Estandarización de campos \"Tipo de Documento\" y \"Número de Documento\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "84148",
       "t": "98062_HU011(CC1)_Gal_Generar_certificado_no_afiliado",
       "e": "10. En Producción",
@@ -965,39 +806,6 @@
       "r": "Miguel Angel Suarez Sanchez"
     },
     {
-      "i": "84863",
-      "t": "HU_02_GAL_Estandarización de campos \"Nombres y Apellidos\", \"Razón Social\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "84865",
-      "t": "HU_03_GAL_Estandarización de campo de \"Dirección\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cristian Camilo Rojas Ascencio"
-    },
-    {
-      "i": "84866",
-      "t": "HU_04_GAL_Estandarización de campos de \"Números de Teléfono\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "85079",
       "t": "307037_HU001_Preregistro_usuarios_bienvenida",
       "e": "10. En Producción",
@@ -1064,61 +872,6 @@
       "r": "Paola Peña"
     },
     {
-      "i": "86537",
-      "t": "HU_01_GAL_Ejecutar Inicio de Sesión",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85104",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86597",
-      "t": "HU_05_GAL_Estandarización de campo \"País\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86600",
-      "t": "HU_01_GAL_Ver perfil de usuario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86627",
-      "t": "HU_02_GAL_Cambiar contraseña para usuarios logeados",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86643",
-      "t": "HU_03_GAL_Cerrar sesión",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "86668",
       "t": "85834_HU013_WS_SAT_Parametrizacion_Sistema_de_Afiliacion_Transaccional",
       "e": "X. Removido",
@@ -1128,61 +881,6 @@
       "f": "85834",
       "ep": "83469",
       "r": "Cesar Ivan Espinosa Vanegas"
-    },
-    {
-      "i": "86685",
-      "t": "HU_01_GAL_Opción Olvidé contraseña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85107",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86686",
-      "t": "HU_02_GAL_Ingreso y validación Código de seguridad al Recuperar Contraseña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85107",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86687",
-      "t": "HU_12_GAL_Plantilla Envío de notificación código de seguridad",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Maria Fernanda Mendoza"
-    },
-    {
-      "i": "86688",
-      "t": "HU_04_GAL_Formulario para Ingreso de nueva contraseña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85107",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "86689",
-      "t": "HU_01_GAL_Diligenciamiento y almacenamiento de información del Formulario de contacto",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85108",
-      "ep": "83503",
-      "r": "Cesar Torrens"
     },
     {
       "i": "86908",
@@ -1471,17 +1169,6 @@
       "r": "Sergio Lara"
     },
     {
-      "i": "87639",
-      "t": "HU_18_GAL_Etiqueta en documentos tipo NIT",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Yiced Baracaldo"
-    },
-    {
       "i": "87752",
       "t": "98062_HU004_Gal_Plantilla_certificado_básico_de_afiliación_estudiante",
       "e": "10. En Producción",
@@ -1513,17 +1200,6 @@
       "f": "98062",
       "ep": "83469",
       "r": "Paola Peña"
-    },
-    {
-      "i": "88102",
-      "t": "HU_06_GAL_Estandarización de Grillas de consulta",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "David Alejandro García Cortes"
     },
     {
       "i": "88255",
@@ -1801,39 +1477,6 @@
       "r": "Cesar Torrens"
     },
     {
-      "i": "88699",
-      "t": "HU_13_GAL_Estandarización Interfaz de usuario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "88741",
-      "t": "HU_09_GAL_Estandarización de campo \"Sexo\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
-      "i": "88806",
-      "t": "HU_10_GAL_Estandarización de \"Correo electrónico\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "88816",
       "t": "85834_HU011_WS_Tipo_Documento",
       "e": "10. En Producción",
@@ -1856,17 +1499,6 @@
       "r": "Paola Peña"
     },
     {
-      "i": "90206",
-      "t": "HU_15_GAL_Estandarización validaciones de contraseña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Sergio Lara"
-    },
-    {
       "i": "90831",
       "t": "313337_HU007_Reglas_de_validación_en_los_tipos_y_números_de_documentos_afiliaciones_y_novedades",
       "e": "10. En Producción",
@@ -1875,17 +1507,6 @@
       "v": 1.0,
       "f": "313337",
       "ep": "83469",
-      "r": "Juan Jose Aviles Roa"
-    },
-    {
-      "i": "91002",
-      "t": "HU_16_GAL_Estandarización de campo \"Nacionalidad\"",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
       "r": "Juan Jose Aviles Roa"
     },
     {
@@ -1999,17 +1620,6 @@
       "r": "Victor Alejandro Moreno Gonzalez"
     },
     {
-      "i": "93257",
-      "t": "HU_02_GAL_Controlar Caducidad Inicio de Sesión",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85104",
-      "ep": "83503",
-      "r": "Juan Jose Aviles Roa"
-    },
-    {
       "i": "93286",
       "t": "85123_HU001_Visualizar Trazabilidad de la herramienta",
       "e": "10. En Producción",
@@ -2019,28 +1629,6 @@
       "f": "85123",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
-    },
-    {
-      "i": "93421",
-      "t": "HU_19_GAL_Aceptación del usuario externo para el envío de notificaciones",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Sergio Lara"
-    },
-    {
-      "i": "93427",
-      "t": "HU_20_GAL_Plantilla de Certificado autorización envío de notificaciones",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
     },
     {
       "i": "93693",
@@ -2131,17 +1719,6 @@
       "r": "Paola Peña"
     },
     {
-      "i": "94212",
-      "t": "HU_21_GAL_Visor de documentos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "94476",
       "t": "85834_HU007_WS_Ocupaciones",
       "e": "10. En Producción",
@@ -2228,17 +1805,6 @@
       "f": "85114",
       "ep": "83437",
       "r": "Paola Peña"
-    },
-    {
-      "i": "95000",
-      "t": "HU_22_GAL_Estandarización Firmas Certificadas para documentos generados en la ARL",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "95635",
@@ -2450,17 +2016,6 @@
       "r": "Cesar Ivan Espinosa Vanegas"
     },
     {
-      "i": "96138",
-      "t": "HU_23_GAL_Estandarización Firmas Digitales para documentos generados en la ARL",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
       "i": "97656",
       "t": "94067_HU001_Gal_Afiliación_trabajadores_individual_dependiente",
       "e": "10. En Producción",
@@ -2470,17 +2025,6 @@
       "f": "94067",
       "ep": "83469",
       "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "97911",
-      "t": "HU_04_GAL_Mantener Información diligenciada al actualizar la página del sistema ARL",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Cesar Torrens"
     },
     {
       "i": "97914",
@@ -2527,28 +2071,6 @@
       "r": "Andrés Álvarez Vergel"
     },
     {
-      "i": "98007",
-      "t": "HU_01_GAL_Parametrización para subir archivos tipo video y PDF",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "85119",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "98008",
-      "t": "* HU_01_GAL_Visualización de preguntas frecuentes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85109",
-      "ep": "83503",
-      "r": "Jesus Navas"
-    },
-    {
       "i": "98009",
       "t": "100219_HU001_Gal_Formulario_y_proceso_de_afiliación_trabajadores_masivos_dependientes_e_independientes",
       "e": "10. En Producción",
@@ -2558,50 +2080,6 @@
       "f": "100219",
       "ep": "83469",
       "r": "Cesar Torrens"
-    },
-    {
-      "i": "98010",
-      "t": "HU_07_GAL_Publicación videotutoriales usuarios externos",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "98011",
-      "t": "HU_08_GAL_Publicación videotutoriales Funcionarios",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "98012",
-      "t": "HU_09_GAL_Publicación de Instructivos Usuarios externos",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "98014",
-      "t": "HU_10_GAL_Publicación de Instructivos Funcionarios",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "85105",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
     },
     {
       "i": "98040",
@@ -2681,17 +2159,6 @@
       "r": "Paola Peña"
     },
     {
-      "i": "99020",
-      "t": "HU_05_GAL_Parametrizar Banner tipo Carrusel en el Home",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "85105",
-      "ep": "83503",
-      "r": "David Alejandro García Cortes"
-    },
-    {
       "i": "99142",
       "t": "314185_HU001_Gal_reportes_empleador",
       "e": "10. En Producción",
@@ -2712,28 +2179,6 @@
       "f": "98035",
       "ep": "83469",
       "r": "Daniel Bonalde"
-    },
-    {
-      "i": "100714",
-      "t": "HU_06_GAL_Visualización del Banner desde el Home",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85105",
-      "ep": "83503",
-      "r": "David Alejandro García Cortes"
-    },
-    {
-      "i": "100891",
-      "t": "* HU_02_GAL_Parametrizar preguntas frecuentes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85109",
-      "ep": "83503",
-      "r": "Jesus Navas"
     },
     {
       "i": "100895",
@@ -3396,17 +2841,6 @@
       "r": "Paula Gomez Cantor"
     },
     {
-      "i": "180101",
-      "t": "HU_1_GAL_Opción Actualización de datos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "180534",
       "t": "98058_HU003_aprobación_de_retiros_empleador_por_parte_del_funcionario",
       "e": "0. Pendiente Levantamiento",
@@ -3427,28 +2861,6 @@
       "f": "307799",
       "ep": "83437",
       "r": "Jhoan Stiven Montealegre Quitora"
-    },
-    {
-      "i": "180704",
-      "t": "HU_2_GAL_Estandarización en características de campos \"Fecha\" y \"Valor o Monto\" en la herramienta GAL",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "180705",
-      "t": "HU_5_GAL_Realizar el Ingreso del tipo y número de documento como dato de \"usuario\" en el Login",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Cesar Torrens"
     },
     {
       "i": "180707",
@@ -3803,17 +3215,6 @@
       "r": "Miguel Angel Suarez Sanchez"
     },
     {
-      "i": "195135",
-      "t": "HU_3_GAL_Definir tiempo en cambio de contraseña desde el administrador",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Cesar Torrens"
-    },
-    {
       "i": "196161",
       "t": "83504_HU005_asignación_contraseña_temporal_proceso_comercial",
       "e": "10. En Producción",
@@ -4076,17 +3477,6 @@
       "f": "307827",
       "ep": "83437",
       "r": "Miguel Angel Suarez Sanchez"
-    },
-    {
-      "i": "213885",
-      "t": "HU_4_GAL_Ingreso del correo electrónico como dato de \"usuario\" en el Login",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Paola Peña"
     },
     {
       "i": "213899",
@@ -4969,28 +4359,6 @@
       "r": "Harol Alberto Paez Hernandez"
     },
     {
-      "i": "260031",
-      "t": "HU_1_Gal_Parametrizar por back información cliente",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180688",
-      "ep": "83503",
-      "r": "Jesus Navas"
-    },
-    {
-      "i": "260183",
-      "t": "HU_2_Gal_Priorización mensajes automáticos al autenticarse",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "180688",
-      "ep": "83503",
-      "r": "Harol Alberto Paez Hernandez"
-    },
-    {
       "i": "260192",
       "t": "307827_HU011_Visualizar logs tras cargar Información de SISE en el Recaudo Diario - front",
       "e": "X. Removido",
@@ -5396,17 +4764,6 @@
       "f": "307826",
       "ep": "83437",
       "r": "Dayner Perez"
-    },
-    {
-      "i": "266388",
-      "t": "HU_6_GAL_Ajustes en Home",
-      "e": "X. Removido",
-      "p": "EXCLUIR",
-      "a": 0,
-      "v": null,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Yiced Baracaldo"
     },
     {
       "i": "266638",
@@ -6674,17 +6031,6 @@
       "r": "Jose Luis Monasterio Yeguez"
     },
     {
-      "i": "302238",
-      "t": "HU_3_Gal_soporte en linea",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180688",
-      "ep": "83503",
-      "r": "Yiced Baracaldo"
-    },
-    {
       "i": "302747",
       "t": "94067_HU004(CC2)_Gal_Ajuste_independiente_masivo",
       "e": "10. En Producción",
@@ -7774,17 +7120,6 @@
       "r": "Cesar Torrens"
     },
     {
-      "i": "406994",
-      "t": "85107_HU005_Mejora Olvido de contraseña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "85107",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
       "i": "407128",
       "t": "307799_HU014_Evitar duplicidad de planillas con validación ampliada de conciliación",
       "e": "10. En Producción",
@@ -7838,94 +7173,6 @@
       "f": "100219",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "410215",
-      "t": "HU-PR-001_Automatización del flujo de Pre-registro con validación en Registraduría",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "412613",
-      "t": "HU_001_Aplicación apoyo QA_Interfaz web básica",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "412623",
-      "t": "HU_002_Aplicación apoyo QA_Implementación lógica generación usuarios pre-registrados",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "412660",
-      "t": "HU_003_Aplicación apoyo QA_Implementación lógica generación usuarios funcionario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "412764",
-      "t": "HU_004_Aplicación apoyo QA_Implementación afiliación empleador mercantil",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "412777",
-      "t": "HU_005_Aplicación apoyo QA_Implementación afiliados a empleador existente",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "412786",
-      "t": "HU_006_Aplicación apoyo QA_Implementación afiliados a empleador nuevo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "412798",
-      "t": "HU_007_Aplicación apoyo QA_Documentación inicial",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
     },
     {
       "i": "413252",
@@ -8390,17 +7637,6 @@
       "r": "Cesar Torrens"
     },
     {
-      "i": "417270",
-      "t": "HU-PR-002_Afiliación de empleado en portal BALU (Positiva)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
       "i": "417720",
       "t": "100219_HU067_Gal_actualización_fechas_Cobertura_empleador_por_funcionario",
       "e": "10. En Producción",
@@ -8410,17 +7646,6 @@
       "f": "100219",
       "ep": "83469",
       "r": "Cesar Torrens"
-    },
-    {
-      "i": "417780",
-      "t": "Glosas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "419373",
@@ -8467,17 +7692,6 @@
       "r": "Paula Gomez Cantor"
     },
     {
-      "i": "420615",
-      "t": "HU_008_Aplicación apoyo QA_Implementación afiliación empleador domestico",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
       "i": "421543",
       "t": "100219_HU_090_Mensaje_al_descargar_certificados_por_funcionario",
       "e": "8.1. Pruebas UAT",
@@ -8487,28 +7701,6 @@
       "f": "100219",
       "ep": "83469",
       "r": "Yiced Baracaldo"
-    },
-    {
-      "i": "423752",
-      "t": "HU_009_Aplicación apoyo QA_Implementación afiliación independiente voluntario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "423754",
-      "t": "HU_010_Aplicación apoyo QA_Implementación afiliación prestador de servicios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
     },
     {
       "i": "424453",
@@ -8531,17 +7723,6 @@
       "f": "100219",
       "ep": "83469",
       "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "424532",
-      "t": "Hallazgos_Ambiente_QA_AyN y RC",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "424716",
@@ -8830,28 +8011,6 @@
       "r": "Cristian Camilo Rojas Ascencio"
     },
     {
-      "i": "431014",
-      "t": "HU_011_Aplicación apoyo QA_Implementación afiliación taxista",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "431015",
-      "t": "HU_012_Aplicación apoyo QA_Implementación afiliación concejal-edil",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
       "i": "431221",
       "t": "307837_HU013_Cargue_archivo_respuesta_Auto-descuentos_y_actualización_estado",
       "e": "BLOQUEADO",
@@ -8916,39 +8075,6 @@
       "f": "307839",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
-    },
-    {
-      "i": "431816",
-      "t": "HU-PR-003_Afiliación de Independientes en portal BALU (Positiva)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "431980",
-      "t": "Glosas - SP 51",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "432008",
-      "t": "Zendesk - SP 51",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "434062",
@@ -9666,61 +8792,6 @@
       "r": "Andrés Álvarez Vergel"
     },
     {
-      "i": "456306",
-      "t": "HU_013_Aplicación apoyo QA_Implementación multiafiliados independiente voluntario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "456307",
-      "t": "HU_014_Aplicación apoyo QA_Implementación multiafiliados independiente prestador de servicios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "456308",
-      "t": "HU_015_Aplicación apoyo QA_Implementación multiafiliados independiente taxista",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "456309",
-      "t": "HU_016_Aplicación apoyo QA_Implementación multiafiliados independiente concejal-edil",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "456528",
-      "t": "Glosas - SP 52",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
       "i": "456757",
       "t": "96139_HU013_Gal_Ajuste_notificación_individual_y_masivo_desplazamiento_trabajador_por_empleador_ - CC2",
       "e": "10. En Producción",
@@ -9729,17 +8800,6 @@
       "v": 1.0,
       "f": "96139",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "456877",
-      "t": "Zendesk - SP 52",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
       "r": "Jhon Fredy Torres Peña"
     },
     {
@@ -9774,39 +8834,6 @@
       "f": "434061",
       "ep": "83437",
       "r": "Cristian Camilo Rojas Ascencio"
-    },
-    {
-      "i": "457893",
-      "t": "HU-PR004_Automatización funcional (Playwright) de la segunda parte del flujo de afiliación de independientes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "457904",
-      "t": "HU-PR005_Implementar CI/CD en Azure DevOps para la ejecución automática de los tests del repositorio",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "457913",
-      "t": "HU-PR006_Automatización para la creación/carga de casos de prueba en Azure Test Plans",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
     },
     {
       "i": "458918",
@@ -10282,116 +9309,6 @@
       "r": "Harol Alberto Paez Hernandez"
     },
     {
-      "i": "464949",
-      "t": "HU-PR007_Automatización del flujo de actualización masiva de empleados dependientes (Contextualización)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "464961",
-      "t": "HU_001_E2E_Recaudo_Automatización_Flujo_Cargue_Planilla_TipoA_TipoI",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "465016",
-      "t": "Nivelación ambientes micros afiliaciones y transversal",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Emmanuel Camacho Orozco"
-    },
-    {
-      "i": "465088",
-      "t": "Seguridad prod- SP 52",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "465098",
-      "t": "Uat presentacion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
-      "i": "465127",
-      "t": "Glosas - SP 53",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "465131",
-      "t": "Zendesk - SP 53",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "465145",
-      "t": "Zendesk - SP 53 SCA",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
-      "i": "465163",
-      "t": "Zendesk - SP 53 CAGT",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "465667",
-      "t": "Actividades Arnold SP 53",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
       "i": "465859",
       "t": "459471_HU004_Consulta_Aportante_pantalla_filtros_grilla",
       "e": "10. En Producción",
@@ -10590,61 +9507,6 @@
       "r": "Harol Alberto Paez Hernandez"
     },
     {
-      "i": "473645",
-      "t": "Zendesk - SP 54",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "473655",
-      "t": "HU_002_E2E_Recaudo_Automatización_Flujo_Cargue_Log_Bancario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "473664",
-      "t": "Zendesk - SP 54",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "473668",
-      "t": "Glosas - SP 54",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "473676",
-      "t": "HU_003_E2E_Recaudo_Automatización_Flujo_Conciliación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
       "i": "473699",
       "t": "100219_HU111_Espacio_de_trabajo_funcionario_reclasificacion",
       "e": "8.2 Aprobación por Cliente UAT",
@@ -10656,28 +9518,6 @@
       "r": "Paula Gomez Cantor"
     },
     {
-      "i": "473978",
-      "t": "Nivelación ambientes micros afiliaciones y transversal - SP 54",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Emmanuel Camacho Orozco"
-    },
-    {
-      "i": "473998",
-      "t": "Zendesk - SP 54",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
       "i": "474019",
       "t": "Ajuste Generación - Generar Archivos de Constitución en Mora (CM) SFTP",
       "e": "X. Removido",
@@ -10687,17 +9527,6 @@
       "f": "307852",
       "ep": "83437",
       "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "474092",
-      "t": "HU-PR008_Automatización del flujo de actualización masiva de empleados Independientes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
     },
     {
       "i": "475170",
@@ -10942,72 +9771,6 @@
       "r": "Harol Alberto Paez Hernandez"
     },
     {
-      "i": "484956",
-      "t": "HU_004_E2E_Recaudo_Automatización_Flujo_Estados_SISE_Generación_Data",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "484967",
-      "t": "HU-PR009_Automatización del flujo de actualización masiva de empleados voluntarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "484986",
-      "t": "Glosas - SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "484993",
-      "t": "Zendesk - SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "484994",
-      "t": "Zendesk - SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "485309",
-      "t": "Ajustes de ANS y otros con gerencia",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
       "i": "485601",
       "t": "485086_HU001_Recepcion_SFTP_Otras_Administradoras",
       "e": "8. Esperando Despliegue QA-UAT",
@@ -11107,17 +9870,6 @@
       "r": "Yesid Sanabria Rey"
     },
     {
-      "i": "486233",
-      "t": "Zendesk - SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
       "i": "486754",
       "t": "434061_HU028_Adicionar plantilla segundo PDF del Correo electrónico tras ejecutar la radicación de solicitud de Devolución (Resumen datos de solicitud)",
       "e": "8.1. Pruebas UAT",
@@ -11127,72 +9879,6 @@
       "f": "434061",
       "ep": "83437",
       "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "487147",
-      "t": "Seguridad",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "487157",
-      "t": "Barrido codigo Infraestructura SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jaiber Antonio León García"
-    },
-    {
-      "i": "487159",
-      "t": "Barrido codigo Infraestructura SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Ricardo Andres Marin Pinilla"
-    },
-    {
-      "i": "487164",
-      "t": "Barrido codigo Infraestructura SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Javier Alfonso Santiago Salazar"
-    },
-    {
-      "i": "487169",
-      "t": "Barrido codigo Infraestructura SP 55",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "487207",
-      "t": "Comunicaciones entre RQ y QA",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "487282",
@@ -11248,17 +9934,6 @@
       "f": "437764",
       "ep": "83437",
       "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "489412",
-      "t": "HU_005_E2E_Recaudo_Automatización_Flujo_Estados_SISE_Consumo_EndPoints_Generación_Archivos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
     },
     {
       "i": "489414",
@@ -11580,83 +10255,6 @@
       "r": "Jhon Fredy Torres Peña"
     },
     {
-      "i": "492019",
-      "t": "HU_017_Aplicación apoyo QA_Desarrollo_Interfaz_Módulo_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "492020",
-      "t": "HU_018_Aplicación apoyo QA_Desarrollo_Interfaz_Modulo_Conciliacion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "492021",
-      "t": "HU_019_Aplicación apoyo QA_Desarrollo_Motor_Archivos_Ancho_Fijo_Módulo_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "492022",
-      "t": "HU_020_Aplicación apoyo QA_Desarrollo_Plantillas_Semilla_Módulo_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "492023",
-      "t": "HU_021_Aplicación apoyo QA_Desarrollo_Plantillas_Dependiente_Independiente_LogBancario_Módulo_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "492024",
-      "t": "HU_022_Aplicación apoyo QA_Desarrollo_Cargue_Planillas_LogBancario_Módulo_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "492025",
-      "t": "HU_023_Aplicación apoyo QA_Desarrollo_Conciliación_Módulo_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
       "i": "492725",
       "t": "314172_HU015_CC_Novedaes_Ingreso_PILA_Pagos",
       "e": "8.1. Pruebas UAT",
@@ -11688,50 +10286,6 @@
       "f": "313337",
       "ep": "83469",
       "r": "Santiago Piña Bustos"
-    },
-    {
-      "i": "494064",
-      "t": "Zendesk - SP 56",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "494066",
-      "t": "HU-PR010_Automatización del flujo de actualización masiva de empleados de Medicina Interna",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "494072",
-      "t": "SonarQube - SP 56",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "494433",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 56",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Carlos Andres Diaz De Felipe"
     },
     {
       "i": "494559",
@@ -11875,50 +10429,6 @@
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "495370",
-      "t": "Revision y modificacion de estilos en nuevo componente de calendiario transversal",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "495375",
-      "t": "Actualizacion de librerias y dependendencia proyecto  Balu front",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "495382",
-      "t": "Limpieza de issues en sonar",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "496762",
-      "t": "Ajustes de ANS y otros con gerencia - SP56",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
     },
     {
       "i": "497078",
@@ -12097,17 +10607,6 @@
       "r": "Luis Rosemberg Zambrano Guerrero"
     },
     {
-      "i": "502811",
-      "t": "SonarQube - SP 56",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
       "i": "505003",
       "t": "88254_HU049: F1 · EC-HU-V06 — Filtrar la consulta del estado de cuenta por cotizante",
       "e": "4. Refinamiento",
@@ -12117,83 +10616,6 @@
       "f": "88254",
       "ep": "83437",
       "r": "Erika Catherine Botero Quintero"
-    },
-    {
-      "i": "505480",
-      "t": "HU_001_Script_Pruebas_Carga_K6_Construir el flujo completo de pre-registro de usuario externo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "505481",
-      "t": "HU_002_Script_Pruebas_Carga_K6_Construir el escenario de carga del pre-registro y generar el set de usuarios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "505482",
-      "t": "HU_003_Script_Pruebas_Carga_K6_Construir la autenticacion, el manejo de sesion y los usuarios internos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "505483",
-      "t": "HU_004_Script_Pruebas_Carga_K6_Construir el escenario de carga de autenticacion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "505594",
-      "t": "SP 57- Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software (SonarQube)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "505634",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 57",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Carlos Andres Diaz De Felipe"
-    },
-    {
-      "i": "505638",
-      "t": "SP 57- Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software (SonarQube) -",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jaiber Antonio León García"
     },
     {
       "i": "505915",
@@ -12216,215 +10638,6 @@
       "f": "313434",
       "ep": "83469",
       "r": "Andres Mauricio Quintero Mejia"
-    },
-    {
-      "i": "506064",
-      "t": "HU_PR011_Adaptar el framework Hermes QA al proyecto Balu mediante un perfil",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "506145",
-      "t": "Actividades Javier Santiago Sprint 57",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Javier Alfonso Santiago Salazar"
-    },
-    {
-      "i": "506745",
-      "t": "Glosas - SP 57",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "506747",
-      "t": "Zendesk - SP 57",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "507596",
-      "t": "Creacion de componentes de graficos transversales",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "507648",
-      "t": "Modificacion sistema de diseño de la aplicacion Balu",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "507714",
-      "t": "101755_HU_24_CC1_Actualización del catálogo de tipos de documento de identificación, de sus longitudes y de sus caracteres permitidos",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "101755",
-      "ep": "83503",
-      "r": "Yesid Sanabria Rey"
-    },
-    {
-      "i": "508108",
-      "t": "Ajustes de gerencia y resolucion de procesos en produccion - SP57",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
-      "i": "508115",
-      "t": "Generación de pruebas de estres y para estados de cuenta",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Emmanuel Camacho Orozco"
-    },
-    {
-      "i": "508284",
-      "t": "casos de prueba y agilización de certificacion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Maralis Villadiego Gasabon"
-    },
-    {
-      "i": "508285",
-      "t": "Creacion de componentes de graficos transversales",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Sergio Lara"
-    },
-    {
-      "i": "508286",
-      "t": "Resolucion de Issues y SonarQube",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "508309",
-      "t": "HU_005_Script_Pruebas_Carga_K6_Construir los componentes comunes de afiliacion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "508311",
-      "t": "HU_006_Script_Pruebas_Carga_K6_Construir el flujo de afiliacion de independiente taxista",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "508312",
-      "t": "HU_007_Script_Pruebas_Carga_K6_Construir el flujo de afiliacion de independiente por prestacion de servicios",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "508313",
-      "t": "HU_008_Script_Pruebas_Carga_K6_Construir el flujo de afiliacion de independiente voluntario",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "508314",
-      "t": "HU_009_Script_Pruebas_Carga_K6_Construir el flujo de afiliacion de independiente concejal-edil",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "508316",
-      "t": "HU_010_Script_Pruebas_Carga_K6_Construir el flujo de afiliacion de empleador mercantil con su aprobacion",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "508317",
-      "t": "HU_011_Script_Pruebas_Carga_K6_Construir el flujo de afiliacion de empleador domestico",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
     },
     {
       "i": "510118",
@@ -12733,226 +10946,6 @@
       "f": "94067",
       "ep": "83469",
       "r": "Yiced Baracaldo"
-    },
-    {
-      "i": "514894",
-      "t": "HU_PR012_Adaptar el framework Hermes QA al proyecto Balu mediante un perfil (TestPLan - Certificación)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "515505",
-      "t": "HU_012_Script_Pruebas_Carga_K6_Desarrollo_Adminitrador_Distribuidor",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "515564",
-      "t": "Glosas - SP 58",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "515565",
-      "t": "Verificación de contenido de HUs de UAT y corrección de errores",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Ricardo Andres Marin Pinilla"
-    },
-    {
-      "i": "515566",
-      "t": "SP_58_Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software (SonarQube Y Glosas) y seguimientos",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "515568",
-      "t": "Acompañamiento y solucion de errores en UAT - Paola Peña",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Paola Peña"
-    },
-    {
-      "i": "515569",
-      "t": "verificacion de contenido de HUs de UAT y correccion de errores SP58",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jaiber Antonio León García"
-    },
-    {
-      "i": "515588",
-      "t": "SP_58_Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "515589",
-      "t": "Apoyo en revision HU UAT Jose Monasterio",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "515592",
-      "t": "Apoyo en revision HUs UAT Andres Alvarez",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "515818",
-      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
-      "i": "515822",
-      "t": "Actividades transversales recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Arnold Joan Brinez Tamara"
-    },
-    {
-      "i": "515826",
-      "t": "Acompañamiento QA y apoyo UAT",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Emmanuel Camacho Orozco"
-    },
-    {
-      "i": "515843",
-      "t": "Acompañamiento y apoyo UAT CP - JUAN ZEA",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "515845",
-      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
-      "i": "515849",
-      "t": "Apoyo en revision HUs Lina Ramirez",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Lina María Ramirez Martinez"
-    },
-    {
-      "i": "515855",
-      "t": "Soporte técnico y funcional a correcciones de aportes, QR y entregas a QA",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Javier Alfonso Santiago Salazar"
-    },
-    {
-      "i": "515887",
-      "t": "Apoyo en revision HUs UAT Sergio Lara",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Sergio Lara"
-    },
-    {
-      "i": "515966",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 58",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Carlos Andres Diaz De Felipe"
-    },
-    {
-      "i": "516043",
-      "t": "Acompañamiento y solucion de errores en UAT - Cesar torrens",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Cesar Torrens"
     },
     {
       "i": "518769",
@@ -13505,171 +11498,6 @@
       "r": "Jhon Fredy Torres Peña"
     },
     {
-      "i": "525295",
-      "t": "HU_024_Aplicación apoyo QA_Desarrollo_Implementación_Revisión Documental_Afiliaciones",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "526717",
-      "t": "Glosas - SP 59",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "526720",
-      "t": "SP_59_Plan Integral de Mejora de Calidad, Seguridad y Desarrollo de Software",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "526878",
-      "t": "SP_59_Glosas",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "César Alejandro Garcia Tous"
-    },
-    {
-      "i": "526886",
-      "t": "HU_025_Aplicación apoyo QA_Desarrollo_Implementación_Consultas_Empleados_Conciliación",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "527152",
-      "t": "Actividades transversales y apoyo - Juan Zea",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Juan Felipe Zea Sanchez"
-    },
-    {
-      "i": "527154",
-      "t": "Apoyo en revision HUs Lina Ramirez (Sprint 59)",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Lina María Ramirez Martinez"
-    },
-    {
-      "i": "527161",
-      "t": "HU Transversal – Javier Santiago – Acompañamiento técnico y soporte al equipo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Javier Alfonso Santiago Salazar"
-    },
-    {
-      "i": "527162",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 59",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Carlos Andres Diaz De Felipe"
-    },
-    {
-      "i": "527164",
-      "t": "Apoyo y revision de historias de Usuario UAT y correccion de errores",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Santiago Cardenas Amaya"
-    },
-    {
-      "i": "527167",
-      "t": "Apoyo en revision HUs UAT Y QA Jose Monasterio",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jose Luis Monasterio Yeguez"
-    },
-    {
-      "i": "527168",
-      "t": "Acompañamiento QA y apoyo UAT - SP 59",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Emmanuel Camacho Orozco"
-    },
-    {
-      "i": "527176",
-      "t": "Apoyo en revisión HUs UAT Y QA Andres Alvarez",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Andrés Álvarez Vergel"
-    },
-    {
-      "i": "527550",
-      "t": "Actividades transversales recaudo SP 59",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "527588",
-      "t": "HU_PR013_Protección del código fuente de QualtityLite para distribución al equipo QA",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
       "i": "530473",
       "t": "307836_HU012_Envío de Notificación de NO VINCULADO al Aportante",
       "e": "5. Backlog General",
@@ -13712,17 +11540,6 @@
       "f": "180577",
       "ep": "83469",
       "r": "Yesid Sanabria Rey"
-    },
-    {
-      "i": "534564",
-      "t": "180126_HU_005_Actualizaciones PDF Footer Consultas RYC",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.8,
-      "f": "180126",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "534594",
@@ -13802,50 +11619,6 @@
       "r": "Erika Catherine Botero Quintero"
     },
     {
-      "i": "537456",
-      "t": "SP_60_Remediación vulnerabilidades SOC Retest 14/10/2026 - Afiliaciones, Web, Transversal e Infra",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
-    },
-    {
-      "i": "537491",
-      "t": "HU_014_Planeación_Ejecución_Y_Generación_Reportes_Pruebas_Rendimiento_Carga_Estres_Balu",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "537497",
-      "t": "HU_013_Script_Pruebas_Carga_K6_Integrar_Servicios_Flujos_Recaudo",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "538824",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 60",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Carlos Andres Diaz De Felipe"
-    },
-    {
       "i": "539184",
       "t": "307836_HU004_CC1_Actualización en los nombres de los estados de No Vinculados (Tabla de resultado Pantalla principal, Detalle y Trazabilidad).",
       "e": "0. Pendiente Levantamiento",
@@ -13855,28 +11628,6 @@
       "f": "307836",
       "ep": "83437",
       "r": "Harol Alberto Paez Hernandez"
-    },
-    {
-      "i": "539617",
-      "t": "HU_PR014_Automatización de la regresión funcional (Playwright) de la Feature 307841 – Corrección de aportes",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "543674",
-      "t": "SP_60_Deuda técnica backend - Afiliaciones y Transversal (AS-IS 21/10/2026)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.04,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "545541",
@@ -13998,94 +11749,6 @@
       "f": "100219",
       "ep": "83469",
       "r": "Luis Rosemberg Zambrano Guerrero"
-    },
-    {
-      "i": "546287",
-      "t": "313463_HU014 - Registrar afiliación individual voluntario primera respuesta -  Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "546311",
-      "t": "313463_HU015 - Registrar afiliación masiva voluntarios primera respuesta - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "546321",
-      "t": "313463_HU016 - Registrar retiro individual voluntario primera respuesta - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "546346",
-      "t": "313463_HU017 - Registrar retiro masivo voluntario primera respuesta - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "546374",
-      "t": "313463_HU018 - Terminar automáticamente cobertura voluntario primera respuesta terminada fecha de afiliación - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "546394",
-      "t": "313463_HU019 - Actualizar de forma individual fecha fin de la afiliación del voluntario por la entidad autorizada - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "546414",
-      "t": "313463_HU020 - Inactivar y reactivar el indicador del voluntario de primera respuesta - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
-    },
-    {
-      "i": "547103",
-      "t": "313463_HU021 - Cambiar de forma masiva el estado del voluntario de primera respuesta - Empleador",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.08,
-      "f": null,
-      "ep": null,
-      "r": "Jerson Octavio Lopez Hernandez"
     },
     {
       "i": "548411",
@@ -14220,61 +11883,6 @@
       "r": "Alejandra Calderón Pérez"
     },
     {
-      "i": "551153",
-      "t": "HU_027_Aplicación apoyo QA_Desarrollo_Implementación_Modulo_Administracion_Roles",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "551159",
-      "t": "HU_026_Aplicación apoyo QA_Desarrollo_Implementación_Modulo_Login",
-      "e": "10. En Producción",
-      "p": "EN PRODUCCIÓN",
-      "a": 1,
-      "v": 1.0,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "551160",
-      "t": "HU_028_Aplicación apoyo QA_Desarrollo_Implementación_Seleccion_Dinamica_Ambientes",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417212",
-      "ep": "417182",
-      "r": "William Javier Granados Olarte"
-    },
-    {
-      "i": "551410",
-      "t": "HU_PR015_QA_Automatización de ejecución de pruebas – Feature 308714 Marcación de siniestros para recobro por mora",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
-      "i": "551616",
-      "t": "HU_PR016_QA_Marco de automatización de pruebas Balú (regresión y ejecución por entrega)",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.36,
-      "f": "417189",
-      "ep": "417182",
-      "r": "Andres Javier Sanchez Barrera"
-    },
-    {
       "i": "551864",
       "t": "Registro en Log Transaccional",
       "e": "0. Pendiente Levantamiento",
@@ -14350,17 +11958,6 @@
       "f": "84186",
       "ep": "83469",
       "r": "Yiced Baracaldo"
-    },
-    {
-      "i": "558603",
-      "t": "Zendesk – Nivel 3 Desarrollo - Sprint 61",
-      "e": "6. Desarrollo Backend",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "417232",
-      "ep": "83503",
-      "r": "Carlos Andres Diaz De Felipe"
     },
     {
       "i": "559890",
@@ -14452,19 +12049,19 @@
     }
   ],
   "kpi": {
-    "n_hu": 1242,
-    "n_hu_activas": 1062,
-    "hu_sin_feature": 8,
-    "n_feature": 68,
-    "n_epic": 4,
-    "n_feature_con_hu": 67,
-    "feature_sin_hu": 1,
-    "hu_omitidas": 0,
-    "pct_global": 0.8311,
-    "term_global": 646,
+    "n_hu": 1037,
+    "n_hu_activas": 867,
+    "hu_sin_feature": 0,
+    "n_feature": 56,
+    "n_epic": 2,
+    "n_feature_con_hu": 56,
+    "feature_sin_hu": 0,
+    "hu_omitidas": 170,
+    "pct_global": 0.8113,
+    "term_global": 469,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 9,
+    "feature_100_sin_cerrar": 3,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
