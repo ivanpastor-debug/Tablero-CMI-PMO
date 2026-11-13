@@ -142,13 +142,11 @@ def update_html(html: str, source: Path, workbook) -> tuple[str, tuple[float, fl
     fronts_348 = get_acueducto_fronts(sheet_348)
     deliverables_348, delivered_348 = infer_deliverable_counts(strategic_348)
 
+    # 348 se gobierna 100% desde Azure DevOps (data_func/348.json con las 2 épicas de certificación)
+    # Por regla estricta de negocio, no se sobreescribe FR["348"] con datos de consolidados antiguos.
     fr_match = FR_PATTERN.search(html)
     if fr_match is None:
         raise ValueError("No se encontró la sección FR del tablero")
-    fronts_by_project = json.loads(fr_match.group(1))
-    fronts_by_project["348"] = fronts_348
-    fr_replacement = "const FR=" + json.dumps(fronts_by_project, ensure_ascii=False, separators=(",", ":")) + ";\nconst BOOK416="
-    html = html[:fr_match.start()] + fr_replacement + html[fr_match.end():]
 
     html = replace_project_op(
         html,
@@ -315,6 +313,18 @@ def main() -> int:
             subprocess.run([sys.executable, str(sync_three_script)], check=False)
         except Exception as e:
             print(f"Aviso sincronización 3 visuales: {e}")
+
+    # Verificación final de integridad y arquitectura
+    verify_script = ROOT / "verify_cmi_architecture.py"
+    if verify_script.is_file():
+        try:
+            import subprocess
+            print("\nEjecutando auditoría de arquitectura e integridad...")
+            res = subprocess.run([sys.executable, str(verify_script)], check=False)
+            if res.returncode != 0:
+                print("ADVERTENCIA: La auditoría de arquitectura reportó observaciones.")
+        except Exception as e:
+            print(f"Aviso auditoría arquitectura: {e}")
 
     return 0
 
