@@ -227,6 +227,9 @@ if (document.readyState === "loading") {{
         "<title>Tablero de control estratégico PMO</title>",
         "<title>Master PMO · Tablero de Control Estratégico y Dirección</title>"
     )
+    # En Master PMO, desocultar tiles y cash-cost para que la dirección vea el consolidado
+    master_content = master_content.replace('id="tiles" hidden', 'id="tiles"')
+    master_content = master_content.replace('id="cash-cost" hidden', 'id="cash-cost"')
     master_content = master_content.replace("</style>", f"{master_css}\n</style>")
     master_content = re.sub(r"(<body[^>]*>)", r"\1\n" + master_html_modal, master_content, count=1)
     master_content = master_content.replace('<div class="wrap">', f'<div class="wrap">\n{master_banner}')
@@ -528,6 +531,7 @@ def sync_all_destinations():
         ("master.html", "master.html"),
         ("consulta.html", "consulta.html"),
         ("DIRECTORIO_CLAVES_PMO.md", "DIRECTORIO_CLAVES_PMO.md"),
+        ("Directorio_Claves_y_Accesos_PMO.xlsx", "Directorio_Claves_y_Accesos_PMO.xlsx"),
     ]
 
     print("\nSincronizando las 3 visuales a todos los destinos...")

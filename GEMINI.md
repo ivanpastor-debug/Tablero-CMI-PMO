@@ -1447,3 +1447,278 @@ enderCrono421Collapsible):**
 * **Sincronización y Despliegue:**
   - `python ACTUALIZAR.py --dry-run` verificado con **0 errores**.
   - Sincronizado en las 4 rutas espejo y publicado en producción en GitHub Pages y Vercel (`git push origin main`).
+
+
+---
+
+## 55. Registro de Ponderación Oficial del Cronograma en Proyecto 421 (Balú) con Funcionalidades No Comprometidas (09-nov-2026)
+
+* **Definición Metodológica de Ponderación Contractual Solicitada:**
+  - Conforme a la instrucción del usuario, se ajustó la estructura de pesos del proyecto **421 - Balú** para transparentar las 19 funcionalidades contractuales que no cuentan con fecha de paso a producción pactada:
+    1. **Funcionalidades No Comprometidas (Sin fecha de release pactada): 20,00% del proyecto**.
+       - **Frente 1: Afiliaciones y Novedades (AyN):** 14 funcionalidades (Prioridades P3 y P4) -> **10,00% de peso**.
+       - **Frente 2: Recaudo y Cartera (RyC):** 5 funcionalidades (Transferencias Masivo/WS y WS SISE Fase 2) -> **10,00% de peso**.
+    2. **20 Releases Calendarizados: 4,00% de peso cada uno (80,00% del proyecto)**.
+       - 13 Releases de AyN: $13 \times 4,00\% = \mathbf{52,00\%}$.
+       - 7 Releases de RyC: $7 \times 4,00\% = \mathbf{28,00\%}$.
+    3. **Total Proyecto Balú:** $52\% + 10\% + 28\% + 10\% = \mathbf{100,00\%}$.
+
+* **Métricas Oficiales al Corte del Cronograma (09-Nov-2026):**
+  - **Releases debidos a la fecha:** 7 releases de 20 (R1 a R6 de AyN + R14 de RyC).
+  - **Meta proyectada de releases debidos:** $7 \times 4,00\% = \mathbf{28,00\%}$ (ajustada desde 35,00%).
+  - **Real logrado de releases debidos (ponderado):** $\mathbf{25,12\%}$ (ajustado desde 31,41%):
+    - R1: 4,00% · R2: 4,00% · R3: 4,00% (12,00% certificado en producción).
+    - R4: 2,96% (74,1% técnico) · R5: 3,18% (79,5% técnico) · R6: 3,18% (79,5% técnico) · R14: 3,80% (95,0% técnico).
+  - **Brecha de cumplimiento del cronograma:** $25,12\% - 28,00\% = \mathbf{-2,88\text{ pp}}$ (antes -3,59 pp).
+  - **Indicador de Éxito Balú (421):**
+    $$\text{Éxito 421} = (48,21\% \times 30\%) + (49,37\% \times 40\%) + (25,12\% \times 30\%) = \mathbf{41,75\%}$$
+
+* **Modificaciones en la Interfaz y Ficha Operativa (`renderCrono421Collapsible`):**
+  - **Columna `Peso`:** Actualizada a `4,00%` en cada una de las 20 filas de releases calendarizados.
+  - **Filas de Funcionalidades No Comprometidas:**
+    - Fila destacada en ámbar antes del subtotal de AyN: *⚠️ Funcionalidades AyN Sin Fecha Pactada (14 ítems)* con peso **10,00%**, avance en Azure del 81,2%, desviación "Sin fecha pactada" y estado "No comprometido".
+    - Fila destacada en ámbar antes del subtotal de RyC: *⚠️ Funcionalidades RyC Sin Fecha Pactada (5 ítems)* con peso **10,00%**, avance en Azure del 53,4%, desviación "Sin fecha pactada" y estado "No comprometido".
+  - **Subtotales y Totales:**
+    - Subtotal AyN: **62,00%** (Meta corte: 24,00% · Real corte: 21,32% · Brecha: -2,68 pp).
+    - Subtotal RyC: **38,00%** (Meta corte: 4,00% · Real corte: 3,80% · Brecha: -0,20 pp).
+    - Total Proyecto: **100,00%** (Meta corte: 28,00% · Real logrado: 25,12% · Brecha: -2,88 pp).
+  - **Resumen inferior y Alerta de Gobernanza:** Detalla la distribución $80\% / 20\%$ y el desglose de los 19 ítems para gestión de prórrogas con el cliente.
+
+* **Sincronización de las Tres Visuales y Despliegue:**
+  - Ejecutado `python generate_three_views.py`, actualizando:
+    - `index.html` (Vista libre en producción)
+    - `master.html` (Master PMO)
+    - `consulta.html` (Visual Espejo protegida por clave)
+  - Validación con `python ACTUALIZAR.py --dry-run` con **0 errores**.
+  - Sincronización en las 4 rutas espejo y publicación automática en GitHub Pages (`commit 36ebfcb`).
+
+
+---
+
+## 56. Registro de Actualización de Nota Aclaratoria de Cumplimiento de Cronograma en Proyecto 421 (09-nov-2026)
+
+* **Texto Homologado Solicitado:**
+  - En la píldora de *Cumplimiento Cronograma (Peso: 30%)* del proyecto **421 - Balú**, se actualizó la nota aclaratoria inferior para reflejar exactamente el texto requerido:
+    > *ℹ️ **Nota aclaratoria:** el cumplimiento del cronograma se evalúa contra el archivo Excel suministrado por el proyecto debido a las 53 funcionalidades pendientes de correlacionar en Azure.*
+
+* **Sincronización en las Tres Visuales:**
+  - Propagado automáticamente vía `generate_three_views.py` a:
+    1. `index.html` (Vista libre en producción).
+    2. `master.html` (Master PMO).
+    3. `consulta.html` (Visual Espejo protegida por clave).
+    4. Copias espejo locales (`Downloads`, `Documents/PMO INDICADORES/CMI` e `Indicadores estra y tac`).
+
+* **Validación y Despliegue:**
+  - `python ACTUALIZAR.py --dry-run` verificado con **0 errores** (regex intacto).
+  - Cambios publicados en producción en GitHub Pages y Vercel (`commit dcbfb75`).
+
+
+---
+
+## 57. Registro de Generación de Excel Oficial de Funcionalidades Cerradas en Proyecto 419 (10-nov-2026)
+
+* **Entrega de Archivo Excel Oficial (`Funcionalidades_Cerradas_419_Depositos_y_Rama.xlsx`):**
+  - Se estructuró un libro corporativo de Excel con formato directivo PMO para transparentar las funcionalidades cerradas de **419-DEP (Depósitos Judiciales / BAC)** y **419-RAMA (Rama Judicial)**:
+    1. **Hoja 1 (`Resumen Ejecutivo`):** Tarjetas KPI y tablas comparativas por frente (DEP vs RAMA), análisis de HUs terminadas y matriz de cruce entre avance al 100% y estado formal en Azure.
+    2. **Hoja 2 (`100% Producción (63)`):** Relación de las **63 funcionalidades** cuyo avance técnico de HUs en producción es del 100,0% (**45** en Depósitos Judiciales y **18** en Rama Judicial). Incluye ID, Subproyecto, Épica, Title, Estado Actual, Etapa (HUs en producción), HUs activas, HUs terminadas y % Avance.
+    3. **Hoja 3 (`Estado 4. Cerrado (88)`):** Relación de las **88 funcionalidades** con estado de Work Item `4. Cerrado` en Azure DevOps (**66** en Depósitos Judiciales y **22** en Rama Judicial).
+    4. **Hoja 4 (`Consolidado Total (90)`):** Universo unificado de **90 funcionalidades únicas** clasificadas según criterio de cierre (100% en producción y cerrado, 100% en producción entregado, o cerrado con avance parcial).
+
+* **Ubicaciones del Archivo:**
+  - `C:\Users\IvanDarioPastorParra\Documents\PMO INDICADORES\CMI\Funcionalidades_Cerradas_419_Depositos_y_Rama.xlsx`
+  - `C:\Users\IvanDarioPastorParra\Downloads\Funcionalidades_Cerradas_419_Depositos_y_Rama.xlsx`
+  - `c:\Users\IvanDarioPastorParra\Indicadores estra y tac\Funcionalidades_Cerradas_419_Depositos_y_Rama.xlsx` (commiteado en `main`: `commit 2ed1501`).
+
+
+---
+
+## 58. Registro de Definición e Implementación del Indicador de Éxito en Proyecto 020 (10-nov-2026)
+
+* **Definición Metodológica por Épicas de Azure DevOps:**
+  - Conforme a la instrucción del usuario, se definió el **Indicador de Éxito** del proyecto **020 (Positiva Servicios de Analítica)** ponderando las tres épicas activas en Azure DevOps según los pesos asignados:
+    1. **OPERACIÓN (Infraestructura):** Peso **35,58%** · Avance real: **91,15%** (44/52 HUs terminadas · 5 features) $\rightarrow$ Aporte: **32,43%**.
+    2. **SOPORTE (Soporte y Mantenimiento):** Peso **47,93%** · Avance real: **92,86%** (18/21 HUs terminadas · 2 features) $\rightarrow$ Aporte: **44,51%**.
+    3. **POC (Iniciativa 1):** Peso **16,49%** · Avance real: **100,00%** (7/7 HUs terminadas · 1 feature) $\rightarrow$ Aporte: **16,49%**.
+  - **Indicador de Éxito Consolidado:**
+    $$\text{Éxito 020} = 32,43\% + 44,51\% + 16,49\% = \mathbf{93,43\%} \quad (\text{Semáforo: Sobresaliente 🟢})$$
+
+* **Presentación en la Interfaz (`cmiOverviewHTML`):**
+  - **Hero Card `02 · Indicador de éxito`:** Muestra el valor **93,43%**, subtítulo `Ponderado por Épicas: Operación (35,58%) · Soporte (47,93%) · POC (16,49%)` e insignia `Favorable` / `Sobresaliente`.
+  - **Sección de Conciliación de Indicador de Éxito:** Por instrucción del usuario, se mantuvo sin diligenciar por el momento (conserva el bloque estándar en homologación).
+
+* **Sincronización y Publicación:**
+  - Sincronizado en las tres visuales (`index.html`, `master.html`, `consulta.html`) mediante `generate_three_views.py`.
+  - Verificado con `python ACTUALIZAR.py --dry-run` (**0 errores de regex**).
+  - Desplegado a producción en GitHub Pages y Vercel (`commit 34a9925`).
+
+
+---
+
+## 59. Registro de Calibración de Escala Táctica CMI (Homologación V2) y Actualización Financiera Plurianual (10-nov-2026)
+
+* **Calibración Metodológica de la Escala Táctica CMI:**
+  - En base al libro maestro `Homologación estados Azure proyectos V2.xlsx` y tras la revisión exhaustiva del ciclo de vida del software, se refinó la función de homologación `huEscalaPmo`:
+    1. **Requerimientos / Levantamiento (0% a 20% en ponderación):** Computa al **0,00%** de la escala CMI PMO.
+    2. **Desarrollo (20% a 50% en ponderación):** Computa al **0,00%** de la escala CMI PMO (<50%), dado que el desarrollo culmina formalmente al alcanzar el 50% al desplegar a DEV/QA.
+    3. **QA / Calidad (50% a 80% en ponderación):** Computa formalmente al **20,00%** de la escala CMI PMO (inicia formalmente desde Backlog QA y cubre todas las pruebas de integración y funcionales de calidad).
+    4. **Pre-UAT / QA Concluido (80% a 85% en ponderación):** Computa al **50,00%** de la escala CMI PMO.
+    5. **UAT del Cliente / Certificación (85% a 95% en ponderación):** Computa al **75,00%** de la escala CMI PMO.
+    6. **Pase a Producción / Terminado (100% formal):** Computa al **100,00%** de la escala CMI PMO (y aporta al indicador estratégico).
+
+* **Gobernanza de Indicadores Tácticos y Estratégicos del Portafolio:**
+  - **004 (SGDEA 2024):** Táctico **29,60%** | Estratégico 17,07% (7/41)
+  - **005 (SGDEA 2026):** Táctico **32,56%** | Estratégico 25,00% (6/24)
+  - **020 (Analítica):** Táctico **88,01%** | Estratégico 25,00% (2/8)
+  - **348 (Acueducto):** Táctico **33,98%** | Estratégico 23,48% (27/115)
+  - **355 (Core Positiva ARL):** Táctico **48,98%** | Estratégico 7,14% (6/84)
+  - **384 (Core Fiduprevisora):** Táctico **66,71%** | Estratégico 19,68% (98/498)
+  - **397 (Core Andina):** Táctico **97,06%** | Estratégico 91,18% (52/57 épicas al 100% en prod.)
+  - **416 (Core Positiva Vida):** Táctico **29,00%** | Estratégico 0,00% (0/2 ramos)
+  - **POS (Consolidado Core Positiva):** Táctico **48,52%** | Estratégico 6,98% (6/86 entregables)
+  - **419 (Depósitos Judiciales):** Táctico consolidado maestro en **11,96% ~ 12,0%** (466 funcionalidades); variantes de Azure actualizadas en **63,21%** (DEP) y **58,20%** (RAMA).
+  - **420 (Pólizas de Salud):** Táctico **86,73%** | Estratégico 61,40% (35/57)
+  - **421 (Balú):** **🔒 CONGELADO / EXCLUIDO** por directriz del usuario en **48,21%** táctico y **21,43%** estratégico (12 de 56 funcionalidades).
+  - **453 (Monitoreo CPE):** Táctico **40,00%** | Estratégico 38,16% (29 de 76 casos de uso / items entregados al 100%).
+  - **456 (Aeronáutica):** Táctico **24,00%** | Estratégico 16,67% (1 de 6 hitos formalizados).
+  - **457 (Portal Web Previsora):** Táctico **96,03%** | Estratégico 92,16% (47/51)
+  - **461 (Facturación Electrónica):** Táctico **14,79%** | Estratégico 0,00% (0/32)
+
+* **Actualización Financiera Integral a Corte 09-Nov-2026:**
+  - **421 (Balú):** Incorporado `IndicadoresBalu 20261109.xlsx` con Presupuesto plurianual $59.367,5 M, Forecast $42.303,0 M, Costo real acumulado $19.725,9 M, CPI Ppto 1,4509, CPI Forecast 1,0339, ICFF 0,9702, Facturación con IVA $45.305,4 M, Recaudo real $40.346,3 M (96,35% de cumplimiento frente a esperado neto $41.873,0 M) y márgenes neto real 32,9% / directo real 48,1%.
+  - **453 (Monitoreo CPE):** Incorporado `Indicadores_CPE 20261109.xlsx` con Presupuesto $1.442,1 M, Forecast $1.547,8 M, Costo real acumulado $1.337,1 M, EVM oficial con avance táctico de 40,00% en 76 casos de uso / items: CPI Ppto 0,4314, CPI Forecast 0,4630, ICFF 1,0538, márgenes directo real -49,0% y neto real -73,9%.
+  - **456 (Aeronáutica Civil):** Incorporado `Indicadores456 20261109.xlsx` con Presupuesto $647,0 M, Forecast actualizado a $801,6 M, Costo real acumulado $424,0 M, CPI Ppto 0,3662, CPI Forecast 0,4537, ICFF 1,4820, Facturación con IVA $338,8 M, Recaudo neto al día en $296,9 M (100% cumplimiento) y curva de costos mensuales ajustada (Octubre $76,6 M, Noviembre $87,5 M, Diciembre $201,0 M).
+  - **419 (Depósitos Judiciales):** Incorporado `Indicadores_419_V11 20261109.xlsx` con Presupuesto $18.098,6 M, Forecast $10.471,2 M, Costo real acumulado $4.565,0 M, Facturación con IVA $6.712,3 M, Recaudo real acumulado $5.155,1 M (81,10% de cumplimiento sobre recaudo esperado neto de $6.356,4 M, pendiente $1.201,3 M) y márgenes neto real 0,7% / directo real 18,8%.
+  - **020 (Analítica de Datos):** Incorporado `020 analitica 20261109.xlsx` con Presupuesto $1.826,8 M, Forecast $1.625,1 M, Costo real acumulado $1.136,6 M. EVM recalculado sobre el avance táctico calibrado de 88,01%: CPI Presupuesto **1,4145** y CPI Forecast **1,2584**. Facturación con IVA $1.821,7 M y Recaudo acumulado de $1.588,3 M (90,83% de cumplimiento sobre esperado neto de $1.748,7 M).
+
+* **Generación del Archivo Excel Maestro de Alineación:**
+  - Archivo generado con formato corporativo PMO: `Alineacion_Gestion_CMI_PMO_20261110.xlsx` (en carpeta de trabajo y en Downloads), con 5 hojas estructuradas (`1. Escala Calibrada`, `2. Homologación Azure V2`, `3. Indicadores Portafolio`, `4. Financiero 09-Nov-2026`, `5. Bitácora de Gestión`).
+
+* **Sincronización y Despliegue:**
+  - Verificado con `python ACTUALIZAR.py --dry-run` (**0 errores de regex**).
+  - Sincronizado en las 4 rutas espejo maestras.
+  - Publicado y desplegado a producción en GitHub Pages (`commit ac77485`).
+
+---
+
+## 60. Registro de Ajuste Operativo y Funcional en 348 (SGDEA Acueducto) a Épicas de Certificación (11-nov-2026)
+
+* **Alcance Exclusivo Solicitado:**
+  - En la sección *🗂 Funcionalidades por frente · qué HU componen cada una*, el proyecto **348 (SGDEA Acueducto)** se filtró para contemplar **únicamente** las dos épicas contractuales de certificación:
+    1. **Certificación Temáticos** (Epic ID 539569): 9 funcionalidades, 279 Historias de Usuario (HUs).
+    2. **Certificación CORE** (Epic ID 539200): 11 funcionalidades, 119 Historias de Usuario (HUs).
+  - Todas las demás épicas (11 frentes) y sus 95 funcionalidades restantes quedaron excluidas de la vista operativa y del cálculo de los indicadores.
+
+* **Recalibración de Indicadores Táctico y Estratégico PMO:**
+  - **Total Funcionalidades Medidas:** **20 funcionalidades** (con 398 HUs en Azure DevOps).
+  - **Funcionalidades al 100% (Entregadas en Producción):** **12 funcionalidades**:
+    - *Certificación Temáticos (4):* Sistec-EPNT, Conceptos Jurídicos, Historias Clinicas Ocupacionales, Predial.
+    - *Certificación CORE (8):* Firmas, RYD, TRD, Archivo Fisico, Expedientes, Prestamos Documental, Comunicado Interno, Acto administrativo.
+  - **Distribución en Escala CMI PMO (Buckets):**
+    - 100% ✓ (En producción): **12 funcionalidades**
+    - 75% (En UAT cliente): **0 funcionalidades**
+    - 50% (En curso >80%): **4 funcionalidades** (Sistec-GNET, PQRSD, Calidad y Procesos, Transversal)
+    - 20% (En curso 50-80%): **1 funcionalidad** (Correspondencia)
+    - % (En curso <50%): **3 funcionalidades** (Gestión del Conocimiento, Acuerdos de gestión, Historias Laborales)
+  - **Indicador Táctico Recalculado:** **73,80%** (Promedio ponderado de avance CMI de las 20 funcionalidades).
+  - **Indicador Estratégico Recalculado:** **60,00%** (12 de 20 funcionalidades entregadas al 100% formal).
+
+* **Ajustes en Componentes y Tubería de Automatización:**
+  - data_func/348.json: Filtrado exclusivamente a las 2 épicas, 20 features y 398 HUs, con KPI y bloque cmi actualizados.
+  - data_func.json: Metadata de 348 sincronizada con 20 funcionalidades, 73,80% táctico y 60,00% estratégico.
+  - Tablero_CMI_PMO.html:
+    - P[348].op: {av:0.7380, ent:12/20, n:20, d:12, u:"funcionalidades", isAzure:true}.
+    - PROJ_CALLOUT_META["348"]: 	ag: "Azure · 20 Func.", sub: "20 Funcionalidades en Azure (2 Épicas de Certificación)", ent: "12 en prod.", pct: "60,0% cerrado".
+    - VAL["348"]: Aclaración técnica de las 20 funcionalidades bajo Certificación Temáticos y CORE.
+  - enrich_func_cmi.py y sync_funcionalidades.py: Incorporada la regla de negocio permanente ilter_348 para garantizar que cualquier futura sincronización desde Tableros preserve automáticamente el filtro a las 2 épicas de certificación.
+
+* **Sincronización y Despliegue:**
+  - Verificado con python ACTUALIZAR.py --dry-run (**0 errores de regex**).
+  - Sincronizado en las 4 rutas espejo maestras (Indicadores estra y tac/index.html, Indicadores estra y tac/Tablero_CMI_PMO.html, Documents/PMO INDICADORES/CMI/Tablero_CMI_PMO.html, Downloads/Tablero_CMI_PMO.html).
+  - Publicado y desplegado a producción en GitHub Pages (commit ea3265e).
+
+---
+
+## 61. Registro de Actualización Exclusiva de la Vista Operativa de 005 (Positiva SGDEA) a Corte 11-Nov-2026
+
+* **Captura Directa de Azure DevOps (11-Nov-2026):**
+  - Se incorporó la captura viva de Azure DevOps (HU_005_20261111.csv) para el proyecto **005 - PROYECTO POSITIVA SGDEA 2026 - 3T**.
+  - **Volumetría Operativa Actualizada:**
+    - **Funcionalidades:** Creció de 24 a **63 funcionalidades** (incorporación formal de frentes y funcionalidades cerradas en Deuda y Evolutivos).
+    - **Historias de Usuario (HUs):** Creció de 137 a **250 HUs** (153 HUs terminadas formalmente en producción).
+    - **Entregadas en Producción (100%):** Aumentó de 6 a **44 funcionalidades**.
+* **Recalibración de Indicadores PMO para 005:**
+  - **Indicador Táctico:** Se incrementó de 32,56% a **74,72%**.
+  - **Indicador Estratégico:** Se incrementó de 25,00% (6/24) a **69,84%** (44 / 63 funcionalidades al 100%).
+  - **Distribución en Buckets CMI:** 100%: 44 | 75%: 2 | 50%: 0 | 20%: 6 | 0%: 11.
+* **Preservación Estricta del Resto del Portafolio y de los Indicadores Financieros:**
+  - Siguiendo la instrucción estricta del usuario, **no se modificó ningún indicador financiero** de 005 ni del resto de proyectos, manteniendo intactos todos los libros contables, EVM, márgenes y facturación.
+  - El resto de proyectos del portafolio (348, 419, 453, 421, 397, 384, POS, 416, 355, 020, 456, 457, 461) no sufrieron alteración alguna.
+* **Componentes y Despliegue:**
+  - data_func/005.json y data_func.json actualizados al corte 2026-11-11.
+  - Tablero_CMI_PMO.html: P[005].op ({av: 0.7472, ent: 44/63, n: 63, d: 44}), callout Azure · 63 Func. (44 en prod. · 69,8% cerrado) y fecha operativa 11-Nov-2026.
+  - Sincronizado en las 4 rutas espejo maestras y publicado en GitHub Pages (commit ead5e94).
+
+
+---
+
+## 62. Registro de Certificación y Blindaje Permanente de 421 (Balú): Exclusión Estricta de Épicas Transversales y Automatización QA
+
+* **Regla de Gobernanza de Producto para Balú 421:**
+  - El alcance operativo y contractual de **421 - PROYECTO BALÚ** se mide única y exclusivamente sobre sus **2 Frentes de Producto de cara al cliente**:
+    1. **Afiliaciones y Novedades:** 29 funcionalidades de producto.
+    2. **Sistema de Recaudo y Cartera:** 27 funcionalidades de producto.
+    - **Total oficial de Producto:** **56 funcionalidades**.
+  - **Exclusión Estricta y Permanente:** Quedan 100% excluidas de cualquier cálculo, visualización, tabla jerárquica y descarga de datos las épicas:
+    - `Funcionalidades Transversales` (10 funcionalidades excluidas).
+    - `Automatización_QA Balu` / `Automatización QA Balu` (2 funcionalidades excluidas).
+
+* **Blindaje en la Tubería de Automatización y Datos:**
+  - **`sync_funcionalidades.py`:** Incorporada la función `filter_421(target_dir)` que se ejecuta automáticamente tras copiar desde Tableros, asegurando que `data_func/421.json` y `data_func.json` queden purgados a 2 épicas, 56 funcionalidades y sus 867 HUs activas.
+  - **`enrich_func_cmi.py`:** Filtra los frentes antes de calcular los CMI e inyecta el `kpi` depurado en `index_data['proyectos']['421']`.
+  - **`Tablero_CMI_PMO.html`:**
+    - `FR["421"]`: Ajustado a `[["Afiliaciones y Novedades",29,0.5],["Sistema de Recaudo y Cartera",27,0.2]]` (56 func en 2 frentes).
+    - `fncBody(C)`: Doble filtro en JavaScript para que la tabla interactiva ignore cualquier frente transversal o de automatización.
+    - `fncCsv(cod)`: Exportación CSV restringida exclusivamente a las 56 funcionalidades de producto.
+    - `PROJ_CALLOUT_META["421"]`: `Azure · 56 Func.` (13 en prod. · 23,2% cerrado).
+    - `P[421].op`: `{av: 0.7488, ent: 13/56, n: 56, d: 13, u: "funcionalidades"}`.
+
+* **Métricas Oficiales Certificadas al Corte:**
+  - **Indicador Táctico:** **74,88%** (Promedio del % táctico de las 56 funcionalidades de producto).
+  - **Indicador Estratégico:** **23,21%** (13 de 56 funcionalidades cerradas al 100%).
+  - **HUs Activas Evaluadas:** **867 HUs** (100% prod: 469 | 75% UAT: 185 | 50%: 0 | 20% QA: 60 | 0% Dev: 153).
+  - **RQC 421:** **48,41%** (305 / 630 activos cumplidos, 283 removidos).
+  - **Indicador de Éxito Balú:** **48,38%** (30% Táctico + 40% RQC + 30% Cronograma).
+
+
+---
+
+## 63. Registro de Blindaje y Auditoría Arquitectónica Integral, Limpieza de Reglas y Saneamiento del Repositorio (12-Nov-2026)
+
+* **Diagnóstico de Brechas y Causa Raíz de Desajustes:**
+  - Se identificó que scripts históricos (`ACTUALIZAR.py`) conservaban lógica rígida que intentaba sobreescribir frentes y métricas de proyectos certificados (como 348 con 95 frentes antiguos de octubre, o 419) a partir de libros consolidados obsoletos, compitiendo contra la tubería moderna de Azure DevOps.
+  - Se detectó acumulación de más de 10 scripts temporales de prueba (`check_*.py`, `test_run.py`, `inspect_*.py`, etc.) en la raíz del espacio de trabajo.
+  - En el repositorio GitHub Pages (`Indicadores estra y tac`) existían archivos `.xlsx` y cachés `__pycache__` ignorados que generaban desorden visual.
+
+* **Blindaje y Refactorización Arquitectónica:**
+  - **`verify_cmi_architecture.py` (Nuevo Guardián de Arquitectura):**
+    - Módulo de auditoría integral automatizado en 5 dimensiones:
+      1. *Integridad Estructural:* Declaración estricta de `const FR=...; const BOOK416=`, `let FIN=`, `PROJ_CALLOUT_META`, `BUGS_419_DATA`, `#sem-op`, `#fncBody`, `updateTopOpTiles`.
+      2. *Reglas de Negocio Certificadas:* Validación de métricas oficiales de 005 (63 func / 44 prod · 74,72% / 69,84%), 348 (20 func / 17 prod · 90,85% / 85,00%), 421 (56 func · 74,88% / 23,21%), 419 (466 func · 11,96% / 17,17%), 456 (2 columnas obligatorias) y 397 (57 épicas).
+      3. *Tubería JSON:* Integridad y consistencia de `data_func.json`, `data_453_cpe.json`, `data_rqc.json` y los JSON individuales de `data_func/`.
+      4. *Sincronía de Visuales:* Verificación MD5 estricta entre las 3 visuales (`index.html`, `master.html`, `consulta.html`) en el repositorio y en local.
+      5. *Limpieza de Espacio de Trabajo:* Asegura que no queden scripts de depuración en la raíz.
+  - **`ACTUALIZAR.py` Protegido:**
+    - Se eliminó la sobreescritura destructiva de `FR["348"]`, protegiendo la gobernanza de 348 desde Azure DevOps.
+    - Se incorporó la validación final mediante `verify_cmi_architecture.py`.
+  - **`actualizar_todo.py` Unificado:**
+    - Integra la auditoría de arquitectura como compuerta de paso obligatoria: si la auditoría detecta cualquier desalineación, se cancela automáticamente la publicación a producción (`git push`) para evitar desajustes en GitHub Pages.
+
+* **Limpieza Exhaustiva y Organización:**
+  - **Espacio de Trabajo PMO (`Documents/PMO INDICADORES/CMI`):**
+    - Todos los scripts de prueba (`check_diff_rf.py`, `check_dim.py`, `check_mockup_mode.py`, `check_modes.py`, `check_opcards.py`, `check_syntax.py`, `inspect_020_hus.py`, `inspect_348_target_epics.py`, `show_5_objs.py`, `test_run.py`, `temp_test.js`, `apply_financial_updates_all_projects.py`) fueron archivados ordenadamente en la carpeta `scratch/`.
+    - La raíz queda compuesta exclusivamente por los archivos y scripts maestros de producción.
+  - **Repositorio GitHub (`Indicadores estra y tac`):**
+    - Eliminadas las cachés `__pycache__` y los archivos `.xlsx` huérfanos que estaban en `.gitignore`.
+    - Repositorio con árbol de trabajo 100% limpio (`working tree clean`).
+  - **`REGLAS_DE_NEGOCIO_CMI.md`:**
+    - Matriz maestra actualizada al corte vigente con la totalidad de los 13 proyectos y sus casuísticas particulares.

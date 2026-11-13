@@ -135,7 +135,7 @@ def calc_cmi_project(epics, features, cod, hus=None):
             'buckets': {'100': 52, '75': 2, '50': 2, '20': 1, '0': 0}
         }
 
-    # 2. 419: Depósitos Judiciales - Excepción PMO: mantener archivo local (80 entregadas / 466 entregables)
+    # 2. 348 / 419: Excepciones
     if cod == '348':
         target_epics = ['539569', '539200']
         valid_epics = [e for e in (epics or []) if str(e.get('i') or '') in target_epics]
@@ -159,44 +159,14 @@ def calc_cmi_project(epics, features, cod, hus=None):
             'buckets': {'100': 80, '75': 0, '50': 40, '20': 18, '0': 328}
         }
 
-    # 3. 421: BALÚ - Medición oficial por Funcionalidades de Producto (2 frentes de cara a producto: Afiliaciones y Recaudo)
-    # Excluye funcionalidades atadas a 'Funcionalidades Transversales' y 'Automatización_QA Balu' que no corresponden a producto
+    # 3. 421: BALÚ - Filtrar frentes de producto (Afiliaciones y Recaudo; excluir Transversales y Automatización QA)
     if cod == '421':
         excluded_epics = ['funcionalidades transversales', 'automatización_qa balu', 'automatizacion_qa balu']
-        prod_feats = [
+        feats = [
             f for f in feats
             if not any(ex in str(f.get('ept') or '').strip().lower() for ex in excluded_epics)
         ]
-        b = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
-        vals = []
-        for f in prod_feats:
-            v = escala_pmo(f.get('pct', 0), f.get('e', ''))
-            vals.append(v)
-            if v == 1.0:
-                b['100'] += 1
-            elif v == 0.75:
-                b['75'] += 1
-            elif v == 0.50:
-                b['50'] += 1
-            elif v == 0.20:
-                b['20'] += 1
-            else:
-                b['0'] += 1
-        n_prod = len(prod_feats)  # 56
-        d_prod = b['100']  # 12
-        tact = round(sum(vals) / n_prod, 4) if n_prod else 0.0  # 0.4821
-        strat = round(d_prod / n_prod, 4) if n_prod else 0.0  # 0.2143
-        return {
-            'tactico': tact,
-            'estrategico': strat,
-            'n': n_prod,
-            'd': d_prod,
-            'u': 'funcionalidades',
-            'isEpics': False,
-            'feat_total': n_prod,
-            'feat_ent': d_prod,
-            'buckets': b
-        }
+        feat_tot = len(feats)
 
     # 4. 416: Positiva Core 416 - Excepción oficial: Manejar por Épicas pero nombradas como RAMOS
     if cod == '416':
@@ -232,42 +202,61 @@ def calc_cmi_project(epics, features, cod, hus=None):
             'buckets': {'100': 1, '75': 0, '50': 1, '20': 0, '0': 4}
         }
 
-
-    # 6. Cálculo general sobre FUNCIONALIDADES (Features) activas evaluando el promedio de sus HUs bajo la Escala Oficial PMO
+    # 6. Regla General PMO:
+    #    - Distribución en Escala PMO (buckets): se mide sobre las HISTORIAS DE USUARIO (HU) activas.
+    #    - % Táctico por Funcionalidad: promedio aritmético de las HU activas que la componen.
+    #    - Indicador Táctico del Proyecto: promedio aritmético del % Táctico de las funcionalidades.
+    #    - Indicador Estratégico: funcionalidades al 100% (en producción / táctico >= 0.999) / total funcionalidades.
     hu_by_feat = {}
     for h in (hus or []):
         fid = h.get('f')
         if fid:
             hu_by_feat.setdefault(fid, []).append(h)
 
-    buckets = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
+    hu_buckets = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
+    feat_buckets = {'100': 0, '75': 0, '50': 0, '20': 0, '0': 0}
+    total_hus_eval = 0
     scores = []
+
     for f in feats:
         f_hus = hu_by_feat.get(f.get('i'), [])
         hu_scores = []
         for h in f_hus:
             sc = hu_escala_item(h)
             if sc is not None:
+                total_hus_eval += 1
                 hu_scores.append(sc)
+                if sc == 1.0:
+                    hu_buckets['100'] += 1
+                elif sc == 0.75:
+                    hu_buckets['75'] += 1
+                elif sc == 0.50:
+                    hu_buckets['50'] += 1
+                elif sc == 0.20:
+                    hu_buckets['20'] += 1
+                else:
+                    hu_buckets['0'] += 1
+
         if hu_scores:
             avg_f = sum(hu_scores) / len(hu_scores)
         else:
             avg_f = escala_pmo(f.get('pct', 0.0), f.get('e', ''))
 
         scores.append(avg_f)
+
         if avg_f >= 0.999:
-            buckets['100'] += 1
+            feat_buckets['100'] += 1
         elif avg_f >= 0.75:
-            buckets['75'] += 1
+            feat_buckets['75'] += 1
         elif avg_f >= 0.50:
-            buckets['50'] += 1
+            feat_buckets['50'] += 1
         elif avg_f >= 0.20:
-            buckets['20'] += 1
+            feat_buckets['20'] += 1
         else:
-            buckets['0'] += 1
+            feat_buckets['0'] += 1
 
     n = len(feats)
-    d = buckets['100']
+    d = sum(1 for s in scores if s >= 0.999)
     av = sum(scores) / n if n else 0.0
     ent = d / n if n else 0.0
 
@@ -280,7 +269,10 @@ def calc_cmi_project(epics, features, cod, hus=None):
         'isEpics': False,
         'feat_total': feat_tot,
         'feat_ent': d,
-        'buckets': buckets
+        'hu_total': total_hus_eval,
+        'buckets': hu_buckets,
+        'hu_buckets': hu_buckets,
+        'feat_buckets': feat_buckets
     }
 
 def main():
@@ -325,6 +317,49 @@ def main():
         with open(path, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
         cod = data.get('codigo') or os.path.splitext(os.path.basename(path))[0]
+
+        if cod == '421':
+            excluded_epics = ["funcionalidades transversales", "automatización_qa balu", "automatizacion_qa balu"]
+            valid_epics = [
+                e for e in (data.get("epics") or [])
+                if not any(ex in str(e.get("t") or "").strip().lower() for ex in excluded_epics)
+            ]
+            valid_epic_ids = {str(e.get("i")) for e in valid_epics}
+            valid_features = [
+                f for f in (data.get("features") or [])
+                if str(f.get("ep")) in valid_epic_ids
+                and not any(ex in str(f.get("ept") or "").strip().lower() for ex in excluded_epics)
+            ]
+            valid_feat_ids = {str(f.get("i")) for f in valid_features}
+            valid_hus = [
+                h for h in (data.get("hus") or [])
+                if str(h.get("f")) in valid_feat_ids
+            ]
+
+            n_hu = len(valid_hus)
+            n_hu_act = len([h for h in valid_hus if h.get("a") != 0])
+            term_global = sum(1 for h in valid_hus if (h.get("p") == "EN PRODUCCIÓN" or (h.get("v") is not None and h.get("v") >= 0.999)))
+
+            data["epics"] = valid_epics
+            data["features"] = valid_features
+            data["hus"] = valid_hus
+            data["kpi"] = {
+                "n_hu": n_hu,
+                "n_hu_activas": n_hu_act,
+                "hu_sin_feature": 0,
+                "n_feature": len(valid_features),
+                "n_epic": len(valid_epics),
+                "n_feature_con_hu": sum(1 for f in valid_features if (f.get("n", 0) or 0) > 0),
+                "feature_sin_hu": sum(1 for f in valid_features if (f.get("n", 0) or 0) == 0),
+                "hu_omitidas": sum(1 for h in valid_hus if h.get("a") == 0),
+                "pct_global": round(sum((f.get("pct", 0) or 0) * (f.get("n", 0) or 0) for f in valid_features) / sum(f.get("n", 0) or 0 for f in valid_features), 4) if valid_features else 0.0,
+                "term_global": term_global,
+                "feature_sin_frente": 0,
+                "hu_sin_frente": 0,
+                "feature_100_sin_cerrar": sum(1 for f in valid_features if (f.get("pct") or 0) >= 0.999 and not str(f.get("e", "")).startswith("4")),
+                "feature_estado_ajeno": 0,
+                "feature_removido_con_hu": 0,
+            }
 
         cmi = calc_cmi_project(data.get('epics', []), data.get('features', []), cod, data.get('hus', []))
         data['cmi'] = cmi
@@ -380,6 +415,16 @@ def main():
 
     if rqc_421_block and '421' in index_data.get('proyectos', {}):
         index_data['proyectos']['421']['rqc'] = rqc_421_block
+
+    # Actualizar KPI de 421 en el índice con el alcance de producto certificado (56 func en 2 frentes)
+    if '421' in index_data.get('proyectos', {}):
+        f421_p = os.path.join(data_func_dir, '421.json')
+        if os.path.exists(f421_p):
+            with open(f421_p, 'r', encoding='utf-8') as rf:
+                d421 = json.load(rf)
+            if 'kpi' in d421:
+                index_data['proyectos']['421']['kpi'] = d421['kpi']
+                index_data['proyectos']['421']['archivo'] = "Azure DevOps · 56 Funcionalidades de Producto (2 Frentes)"
 
     with open(index_file, 'w', encoding='utf-8') as f:
         json.dump(index_data, f, ensure_ascii=False, indent=2)

@@ -106,7 +106,7 @@ def sync_mirrors(dry_run: bool = False) -> bool:
 
     # Sincronizar también scripts de sincronización/enriquecimiento al repositorio GitHub Pages
     # Sincronizar scripts de automatización al repositorio GitHub Pages
-    for sc in ("sync_funcionalidades.py", "enrich_func_cmi.py", "generate_three_views.py", "actualizar_todo.py", "ACTUALIZAR_TODO.bat", "GEMINI.md", "DIRECTORIO_CLAVES_PMO.md"):
+    for sc in ("sync_funcionalidades.py", "enrich_func_cmi.py", "generate_three_views.py", "actualizar_todo.py", "ACTUALIZAR_TODO.bat", "verify_cmi_architecture.py", "GEMINI.md", "REGLAS_DE_NEGOCIO_CMI.md", "DIRECTORIO_CLAVES_PMO.md"):
         s_file = DOCS_CMI / sc
         d_file = ROOT_REPO / sc
         if s_file.is_file() and ROOT_REPO.is_dir():
@@ -127,12 +127,22 @@ def sync_mirrors(dry_run: bool = False) -> bool:
     return True
 
 
+def run_architecture_audit() -> bool:
+    print_banner("Auditoría de Arquitectura, Integridad y Reglas de Negocio CMI")
+    verify_script = DOCS_CMI / "verify_cmi_architecture.py"
+    if not verify_script.is_file():
+        print(f"Aviso: No se encontró {verify_script}")
+        return True
+    res = subprocess.run([sys.executable, str(verify_script)], cwd=str(DOCS_CMI))
+    return res.returncode == 0
+
+
 def git_publish() -> bool:
     print_banner("4. Publicación en Producción (GitHub Pages)")
     try:
         subprocess.run(["git", "add", "."], cwd=str(ROOT_REPO), check=True)
         commit_res = subprocess.run(
-            ["git", "commit", "-m", "actualizacion integral CMI y Azure DevOps (corte 2026-10-26 + 457)"],
+            ["git", "commit", "-m", "Blindaje de arquitectura CMI, auditoria integral y limpieza de repositorio"],
             cwd=str(ROOT_REPO)
         )
         if commit_res.returncode == 0:
@@ -165,6 +175,13 @@ def main():
         ok = run_azure_sync(dry_run=args.dry_run) and ok
 
     ok = sync_mirrors(dry_run=args.dry_run) and ok
+
+    audit_ok = run_architecture_audit()
+    ok = audit_ok and ok
+
+    if not audit_ok and not args.dry_run:
+        print("\n[ALERTA CRÍTICA] La auditoría de arquitectura falló. Se cancela la publicación para evitar desajustes.")
+        return
 
     if args.push and not args.dry_run:
         ok = git_publish() and ok

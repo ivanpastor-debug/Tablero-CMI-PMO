@@ -39,15 +39,16 @@ Cada unidad de medición contractual es evaluada bajo los 5 cubos de la escala o
 
 | Proyecto | Unidad de Gobierno CMI | Indicador Táctico | Indicador Estratégico | Regla de Negocio Específica |
 | :--- | :---: | :---: | :---: | :--- |
-| **005** · Positiva SGDEA 2026 - 3T | **13 Épicas** | `26,15%` | `23,08%` (3/13) | Conexión directa a Azure DevOps. Desglose complementario de 41 funcionalidades (7 en producción). |
+| **005** · Positiva SGDEA 2026 - 3T | **63 Funcionalidades** | `74,72%` | `69,84%` (44/63) | **Captura Azure DevOps viva:** 63 funcionalidades, 250 HUs (153 terminadas en producción). Incorporación formal de deuda técnica y evolutivos cerrados. Preservación estricta de libros financieros. |
 | **POS** · Core Positiva (Consolidado) | **20 Épicas** | `23,90%` | `0,00%` (0/20) | Integra subproyecto 355 (18 épicas, avance `23,33%`) y subproyecto 416 (2 épicas, avance `29,00%`). Comparte libro financiero consolidado (carpeta 416). |
-| **384** · Core Fiduprevisora | **33 Épicas** | `42,42%` | `3,03%` (1/33) | Evaluado sobre las 33 épicas válidas de Azure DevOps con desglose técnico de >500 funcionalidades (90 en producción). |
+| **384** · Core Fiduprevisora | **33 Épicas** | `42,42%` | `3,03%` (1/33) | Evaluado sobre las 33 épicas válidas de Azure DevOps con soporte técnico de >500 funcionalidades (90 en producción). |
 | **419** · Depósitos Judiciales | **466 Funcionalidades** | `11,96%` | `17,17%` (80/466) | **Excepción Oficial PMO:** Se rige por el archivo maestro local PMO (80 certificadas de 466). **Exclusión estricta:** Se descarta la épica interna `▾ 419DPJ_EP_LT_Seguimiento_Transversal_Linktic` (`id: 327682`, 5 func.) por ser control interno. En paralelo visualiza 194 func. en Azure (DEP + RAMA) y auditoría de 1.836 bugs con ANS de 3 días y liquidación comercial. |
-| **453** · Monitoreo CPE 2026 | **71 Casos de Uso** | `47,85%` | `39,44%` (28/71) | **Medición Exclusiva por Casos de Uso:** Evalúa el campo Estado Interno `estados_453`. Excluye CUs en `10. Transversal`. Incorpora Focos (A, B, C, D) con Línea Base vs Reprogramada y releases por iteración. |
-| **456** · Innovación Aeronáutica | **6 Entregables Contractuales** | `24,00%` | `16,67%` (1/6) | **Supervisión Contractual en 3 Fases:** 6 hitos (1 al 100%, 1 al 50%). **Regla de Interfaz:** Ficha operativa en **dos columnas lado a lado (`g-2`)** (Columna 1: Escala CMI + Columna 2: Desviación del Cronograma) y debajo el árbol vivo de Azure (1 épica, 4 func., 16 HU). |
-| **348** · SGDEA Acueducto | **10 Épicas** | `25,29%` | `10,00%` (1/10) | 10 épicas contractuales (1 al 100%: *Assesment de Madurez*). Desglose técnico de 115 funcionalidades (26 en producción). |
-| **397** · Core Andina | **57 Épicas** | `97,06%` | `91,18%` (52/57) | Medición formal sobre 57 épicas (52 cerradas) con soporte de 233 funcionalidades (228 en producción · 97,9% cerrado). |
-| **421** · BALÚ | **2 Frentes** | `35,00%` | `0,00%` (0/2) | Medición contractual sobre *Afiliaciones y Novedades* (50%) y *Recaudo y Cartera* (20%). |
+| **420** · Pólizas de Salud | **12 Frentes** | `0,00%` | `0,00%` (0/12) | Incorporación formal de dimensión financiera completa (EVM, Costos, Nómina y Márgenes) según libro contable oficial `420 Indicadores FInancieros 20261110.xlsx`. |
+| **421** · BALÚ | **56 Funcionalidades de Producto** | `74,88%` | `23,21%` (13/56) | **Blindaje de Producto:** Evaluado exclusivamente sobre sus 2 Frentes de cara al cliente: *Afiliaciones y Novedades* (29 func.) y *Sistema de Recaudo y Cartera* (27 func.). **Exclusión permanente:** 10 func. de `Funcionalidades Transversales` y 2 func. de `Automatización QA`. Incorpora RQC Balú (48,41%) e Indicador de Éxito Balú (48,38%). |
+| **453** · Monitoreo CPE 2026 | **71 Casos de Uso** (45 medibles) | `47,85%` | `39,44%` (28/71) | **Medición Exclusiva por Casos de Uso:** Evalúa el campo Estado Interno `estados_453`. Excluye CUs en `10. Transversal`. Incorpora Focos (A, B, C, D) con fechas de Línea Base vs Reprogramada e hitos de release por iteración. |
+| **456** · Innovación Aeronáutica | **6 Entregables Contractuales** | `24,00%` | `16,67%` (1/6) | **Supervisión Contractual en 3 Fases:** 6 hitos (1 al 100%, 1 al 50%). **Regla de Interfaz Estricta:** Ficha operativa en **dos columnas lado a lado (`g-2`)** (Columna 1: Escala CMI `#fr-list` + Columna 2: Desviación del Cronograma `tbl-crono-456`) y debajo el árbol vivo de Azure (1 épica, 4 func., 16 HU). |
+| **348** · SGDEA Acueducto | **20 Funcionalidades** | `90,85%` | `85,00%` (17/20) | **Filtro Oficial PMO:** Restringido a las 2 Épicas de Certificación (*Certificación Temáticos* con 4 func. y *Certificación CORE* con 16 func.) con 397 HUs activas. Libro financiero oficial propio `Indicadores 348 20261110.xlsx`. |
+| **397** · Core Andina | **57 Épicas** | `97,06%` | `91,18%` (52/57) | Medición formal sobre 57 épicas (52 cerradas) con soporte técnico de 233 funcionalidades (228 en producción · 97,9% cerrado). |
 | **457** · Portales La Equidad | **5 Épicas** | `64,00%` | `40,00%` (2/5) | Ingesta por Captura Directa desde Azure DevOps (`opOnly: true`). 2 épicas al 100% (*Portal Formación* y *Portal Clientes*). |
 | **020** · Servicios de Analítica | **2 Épicas** | `50,00%` | `0,00%` (0/2) | Ingesta por Captura Directa desde Azure DevOps (`opOnly: true`). 2 épicas activas (*OPERACIÓN* al 86,98% y *SOPORTE* al 94,44% en Escala CMI 50%). |
 | **461** · Cuentas Claras CNE | **7 Épicas** | `8,57%` | `0,00%` (0/7) | Ingesta por Captura Directa desde Azure DevOps (`opOnly: true`). 3 épicas en Escala CMI 20% y 4 en 0%. Soporte de 32 features y 108 HU activas. |
@@ -135,3 +136,24 @@ En el marco de la supervisión integral de Depósitos Judiciales, el proyecto in
    * **Fecha Financiera:** Fecha oficial de los libros Excel financieros locales (ej. `01-Oct-2026` o `07-Oct-2026`).
 2. **Proyectos Solo Operativos (`opOnly: true`):**
    * Aquellos proyectos sin libro financiero cargado en `Información Financiera` (ej. 457, 020) muestran la nota aclaratoria `finNote` y no alteran los totales consolidados de facturación, costos ni caja del portafolio.
+
+---
+
+## 7. Reglas de Presentación Ejecutiva y Visualización UX/UI v2
+
+### 7.1. Trilogía de Indicadores CMI en Ficha de Proyecto (.cmi-hero)
+La vista superior de detalle de cada proyecto presenta el desempeño jerárquico bajo tres dimensiones estandarizadas:
+1. **01 · Indicador Estratégico:**
+   * Mide el porcentaje de cumplimiento formal de entregables completados al 100% y aceptados por el cliente (d/n).
+   * Presenta la relación cuantitativa (d de n al 100%) y la píldora semafórica de favorabilidad.
+2. **02 · Indicador de Éxito:**
+   * Reservado para la medición del beneficio, adopción o resultado de negocio particular de cada proyecto.
+   * Se inicializa en estado Por definir con estado Pendiente, preparatorio para la captura de métricas individuales de éxito por proyecto.
+3. **03 · Indicador Táctico:**
+   * Mide el avance promedio en la tubería de construcción evaluado bajo la escala CMI PMO (0%, 20%, 50%, 75% y 100%).
+   * Presenta el conteo del universo medible (n en universo) y la píldora semafórica de avance.
+
+### 7.2. Restricciones Negativas de Presentación y Sobriedad Ejecutiva
+* **Exclusión Estricta de Campos de Interpretación:** No se despliegan bloques explicativos de interpretación (.cmi-scale-note) al pie de las tarjetas, asegurando un diseño ágil, directo y libre de redundancia teórica.
+* **Exclusión de Textos Aclaratorios en Tarjetas:** No se incluyen bloques de texto discursivo (.cmi-description) al interior de las tarjetas hero, garantizando una lectura ejecutiva y cuantitativa sin justificaciones metodológicas.
+* **Selector Avanzado de Proyectos (.project-picker-redesign):** La navegación en la sección de detalle dispone de un menú desplegable ordenado numéricamente de menor a mayor (005 ➔ 020 ➔ 348 ➔ 384 ➔ 397 ➔ 416 ➔ 419 ➔ 421 ➔ 453 ➔ 456 ➔ 457 ➔ 461), agrupando a `↳ 355 · Positiva Core` y `↳ 416 · Evolutivos` directamente bajo el proyecto padre 416 (Positiva Core) sin notación redundante "Subproyecto", con buscador reactivo en vivo y conmutador segmentado de subproyectos.

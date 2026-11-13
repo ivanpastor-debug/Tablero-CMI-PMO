@@ -155,6 +155,71 @@ def filter_348(target_dir):
             json.dump(idx, f, ensure_ascii=False, indent=2)
 
 
+def filter_421(target_dir):
+    """Filtra data_func/421.json para excluir funcionalidades atadas a las épicas 'Funcionalidades Transversales'
+    y 'Automatización QA Balu', dejando únicamente los 2 Frentes de Producto (Afiliaciones y Novedades, Sistema de Recaudo y Cartera)."""
+    f421_path = os.path.join(target_dir, "data_func", "421.json")
+    if not os.path.exists(f421_path):
+        return
+    with open(f421_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    excluded_epics = ["funcionalidades transversales", "automatización_qa balu", "automatizacion_qa balu"]
+    valid_epics = [
+        e for e in (data.get("epics") or [])
+        if not any(ex in str(e.get("t") or "").strip().lower() for ex in excluded_epics)
+    ]
+    valid_epic_ids = {str(e.get("i")) for e in valid_epics}
+    valid_features = [
+        f for f in (data.get("features") or [])
+        if str(f.get("ep")) in valid_epic_ids
+        and not any(ex in str(f.get("ept") or "").strip().lower() for ex in excluded_epics)
+    ]
+    valid_feat_ids = {str(f.get("i")) for f in valid_features}
+    valid_hus = [
+        h for h in (data.get("hus") or [])
+        if str(h.get("f")) in valid_feat_ids
+    ]
+
+    n_hu = len(valid_hus)
+    n_hu_act = len([h for h in valid_hus if h.get("a") != 0])
+    term_global = sum(1 for h in valid_hus if (h.get("p") == "EN PRODUCCIÓN" or (h.get("v") is not None and h.get("v") >= 0.999)))
+
+    data["epics"] = valid_epics
+    data["features"] = valid_features
+    data["hus"] = valid_hus
+    data["kpi"] = {
+        "n_hu": n_hu,
+        "n_hu_activas": n_hu_act,
+        "hu_sin_feature": 0,
+        "n_feature": len(valid_features),
+        "n_epic": len(valid_epics),
+        "n_feature_con_hu": sum(1 for f in valid_features if (f.get("n", 0) or 0) > 0),
+        "feature_sin_hu": sum(1 for f in valid_features if (f.get("n", 0) or 0) == 0),
+        "hu_omitidas": sum(1 for h in valid_hus if h.get("a") == 0),
+        "pct_global": round(sum((f.get("pct", 0) or 0) * (f.get("n", 0) or 0) for f in valid_features) / sum(f.get("n", 0) or 0 for f in valid_features), 4) if valid_features else 0.0,
+        "term_global": term_global,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": sum(1 for f in valid_features if (f.get("pct") or 0) >= 0.999 and not str(f.get("e", "")).startswith("4")),
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0,
+    }
+
+    with open(f421_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    idx_path = os.path.join(target_dir, "data_func.json")
+    if os.path.exists(idx_path):
+        with open(idx_path, "r", encoding="utf-8") as f:
+            idx = json.load(f)
+        if "421" in idx.get("proyectos", {}):
+            idx["proyectos"]["421"]["kpi"] = data["kpi"]
+            idx["proyectos"]["421"]["archivo"] = "Azure DevOps · 56 Funcionalidades de Producto (2 Frentes)"
+        with open(idx_path, "w", encoding="utf-8") as f:
+            json.dump(idx, f, ensure_ascii=False, indent=2)
+
+
 def main():
     home = str(Path.home())
     src_patterns = [
@@ -204,6 +269,7 @@ def main():
                 print(f"  -> {folder}/ ({len(os.listdir(target))} archivos)")
         build_consolidated_419(d)
         filter_348(d)
+        filter_421(d)
 
     print("Sincronización completada con éxito.")
     try:
