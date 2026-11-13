@@ -1,16 +1,16 @@
 {
   "codigo": "461",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_461_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_461_20261113.csv",
   "epics": [
     {
       "i": "457548",
       "t": "Parametrización y Configuración",
       "n_f": 7,
-      "n": 32,
+      "n": 35,
       "term": 0,
-      "pct": 0.5834
+      "pct": 0.5549
     },
     {
       "i": "467870",
@@ -24,9 +24,17 @@
       "i": "435992",
       "t": "Acceso e Identidad (IAM)",
       "n_f": 5,
-      "n": 18,
+      "n": 22,
       "term": 0,
-      "pct": 0.7467
+      "pct": 0.6309
+    },
+    {
+      "i": "487098",
+      "t": "Declaración Anual de Patrimonio",
+      "n_f": 5,
+      "n": 15,
+      "term": 0,
+      "pct": 0.2093
     },
     {
       "i": "487090",
@@ -35,14 +43,6 @@
       "n": 11,
       "term": 0,
       "pct": 0.2
-    },
-    {
-      "i": "487098",
-      "t": "Declaración Anual de Patrimonio",
-      "n_f": 5,
-      "n": 11,
-      "term": 0,
-      "pct": 0.21
     },
     {
       "i": "487094",
@@ -68,10 +68,32 @@
       "e": "2. En Curso",
       "ep": "457548",
       "ept": "Parametrización y Configuración",
-      "n": 9,
+      "n": 12,
       "term": 0,
-      "pct": 0.5744,
-      "n_pct": 9
+      "pct": 0.4975,
+      "n_pct": 12
+    },
+    {
+      "i": "487224",
+      "t": "Onboarding y recuperación",
+      "e": "2. En Curso",
+      "ep": "435992",
+      "ept": "Acceso e Identidad (IAM)",
+      "n": 8,
+      "term": 0,
+      "pct": 0.6262,
+      "n_pct": 8
+    },
+    {
+      "i": "436526",
+      "t": "Autenticación, sesión y MFA",
+      "e": "2. En Curso",
+      "ep": "435992",
+      "ept": "Acceso e Identidad (IAM)",
+      "n": 7,
+      "term": 0,
+      "pct": 0.74,
+      "n_pct": 7
     },
     {
       "i": "487143",
@@ -96,28 +118,6 @@
       "n_pct": 7
     },
     {
-      "i": "436526",
-      "t": "Autenticación, sesión y MFA",
-      "e": "2. En Curso",
-      "ep": "435992",
-      "ept": "Acceso e Identidad (IAM)",
-      "n": 6,
-      "term": 0,
-      "pct": 0.85,
-      "n_pct": 6
-    },
-    {
-      "i": "487224",
-      "t": "Onboarding y recuperación",
-      "e": "2. En Curso",
-      "ep": "435992",
-      "ept": "Acceso e Identidad (IAM)",
-      "n": 6,
-      "term": 0,
-      "pct": 0.8083,
-      "n_pct": 6
-    },
-    {
       "i": "487149",
       "t": "Proceso electoral (apertura, topes/plazos y cierre)",
       "e": "2. En Curso",
@@ -126,6 +126,17 @@
       "n": 6,
       "term": 0,
       "pct": 0.45,
+      "n_pct": 6
+    },
+    {
+      "i": "565767",
+      "t": "Gestion Declaración Anual",
+      "e": "New",
+      "ep": "487098",
+      "ept": "Declaración Anual de Patrimonio",
+      "n": 6,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 6
     },
     {
@@ -147,8 +158,19 @@
       "ept": "Parametrización y Configuración",
       "n": 5,
       "term": 0,
-      "pct": 0.58,
+      "pct": 0.6,
       "n_pct": 5
+    },
+    {
+      "i": "487223",
+      "t": "Notificaciones IAM y auditoría de acceso",
+      "e": "2. En Curso",
+      "ep": "435992",
+      "ept": "Acceso e Identidad (IAM)",
+      "n": 4,
+      "term": 0,
+      "pct": 0.455,
+      "n_pct": 4
     },
     {
       "i": "457549",
@@ -158,7 +180,7 @@
       "ept": "Parametrización y Configuración",
       "n": 4,
       "term": 0,
-      "pct": 0.725,
+      "pct": 0.6875,
       "n_pct": 4
     },
     {
@@ -182,17 +204,6 @@
       "term": 0,
       "pct": 0.17,
       "n_pct": 4
-    },
-    {
-      "i": "487223",
-      "t": "Notificaciones IAM y auditoría de acceso",
-      "e": "2. En Curso",
-      "ep": "435992",
-      "ept": "Acceso e Identidad (IAM)",
-      "n": 3,
-      "term": 0,
-      "pct": 0.54,
-      "n_pct": 3
     },
     {
       "i": "484511",
@@ -338,28 +349,6 @@
       "n_pct": 2
     },
     {
-      "i": "487116",
-      "t": "Presentación y plazos (4 meses)",
-      "e": "2. En Curso",
-      "ep": "487098",
-      "ept": "Declaración Anual de Patrimonio",
-      "n": 2,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 2
-    },
-    {
-      "i": "487118",
-      "t": "Subsanación y verificación",
-      "e": "2. En Curso",
-      "ep": "487098",
-      "ept": "Declaración Anual de Patrimonio",
-      "n": 2,
-      "term": 0,
-      "pct": 0.185,
-      "n_pct": 2
-    },
-    {
       "i": "548331",
       "t": "Gestión de Agrupaciones",
       "e": "New",
@@ -368,6 +357,17 @@
       "n": 2,
       "term": 0,
       "pct": 0.3,
+      "n_pct": 2
+    },
+    {
+      "i": "487116",
+      "t": "Presentación y plazos (4 meses)",
+      "e": "2. En Curso",
+      "ep": "487098",
+      "ept": "Declaración Anual de Patrimonio",
+      "n": 2,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 2
     },
     {
@@ -672,13 +672,13 @@
     {
       "i": "479254",
       "t": "HU_ParMar_023_Gestionar vigencia-año",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.45,
       "f": "457549",
       "ep": "457548",
-      "r": "Nancy Natalie Valverde Morantes"
+      "r": "Jose Luis Cortes Jerez"
     },
     {
       "i": "479320",
@@ -722,7 +722,7 @@
       "v": 0.5,
       "f": "487170",
       "ep": "457548",
-      "r": "Javier Felipe Vasquez Roldan"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "480512",
@@ -793,13 +793,13 @@
     {
       "i": "482983",
       "t": "HU_ParPar_028_Parametrizar límites de aportes por fuente e individuales",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "484515",
       "ep": "457548",
-      "r": "John Sebastian Rincon Pulido"
+      "r": "Osmar Peña González"
     },
     {
       "i": "484249",
@@ -1486,24 +1486,24 @@
     {
       "i": "503832",
       "t": "HU_ParRol_087_Edición de Permisos",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "487170",
       "ep": "457548",
-      "r": "John Sebastian Rincon Pulido"
+      "r": "Osmar Peña González"
     },
     {
       "i": "503958",
       "t": "HU_ParRol_88_Inactivación de Permisos",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "487170",
       "ep": "457548",
-      "r": "John Sebastian Rincon Pulido"
+      "r": "Osmar Peña González"
     },
     {
       "i": "505597",
@@ -1562,7 +1562,7 @@
     },
     {
       "i": "512948",
-      "t": "HU_DecEst_090_Abrir declaración anual",
+      "t": "HU_DecEst_090_Parametrización de formularios",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -1606,7 +1606,7 @@
     },
     {
       "i": "513957",
-      "t": "HU_DecEst_091_Cargar Formulario 1B",
+      "t": "HU_DecEst_091_Abrir declaración anual",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -1617,51 +1617,51 @@
     },
     {
       "i": "513972",
-      "t": "HU_DecPre_092_Presentar declaración anual",
+      "t": "HU_DecGes_092_Continuidad de la declaración anual",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "487116",
+      "f": "565767",
       "ep": "487098",
       "r": "Laura Nathaly Fuentes Niño"
     },
     {
       "i": "514067",
-      "t": "HU_DecPre_093_Continuidad de la declaración anual",
+      "t": "HU_DecGes_093_Registrar patrimonio de la declaración anual",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "487116",
+      "f": "565767",
       "ep": "487098",
       "r": "Laura Nathaly Fuentes Niño"
     },
     {
       "i": "514191",
-      "t": "HU_DecSub_094_Requerimiento y subsanación anual",
-      "e": "4. Refinamiento",
+      "t": "HU_DecGes_094_Registrar ingresos",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
-      "f": "487118",
+      "v": 0.2,
+      "f": "565767",
       "ep": "487098",
       "r": "Alba Yaneth Pinto Pinto"
     },
     {
       "i": "514206",
-      "t": "HU_DecSub_095_Verificar umbrales de referencia",
+      "t": "HU_DecGes_095_Registrar gastos",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "487118",
+      "f": "565767",
       "ep": "487098",
       "r": "Alba Yaneth Pinto Pinto"
     },
     {
       "i": "514211",
-      "t": "HU_DecSus_096_Suscribir declaración anual",
+      "t": "HU_DecLib_096_Importar ingresos y gastos desde Excel",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -2153,27 +2153,192 @@
       "f": null,
       "ep": null,
       "r": "lizeth paola monsalve"
+    },
+    {
+      "i": "565744",
+      "t": "HU_ParRol_112_Matriz de compatibilidad de roles (pestaña \"Matriz\")",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "487170",
+      "ep": "457548",
+      "r": "Sebastian Ocampo Roa"
+    },
+    {
+      "i": "565745",
+      "t": "HU_ParRol_113_Consulta de compatibilidad de un rol específico (pestaña \"Por rol\")",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "487170",
+      "ep": "457548",
+      "r": "Sebastian Ocampo Roa"
+    },
+    {
+      "i": "565746",
+      "t": "HU_ParRol_114_Gestión de reglas de incompatibilidad de roles (pestaña \"Reglas\")",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "487170",
+      "ep": "457548",
+      "r": "Sebastian Ocampo Roa"
+    },
+    {
+      "i": "565747",
+      "t": "HU_AccNot_115_Plantilla de Correo Confirmación de cuenta activada",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "487223",
+      "ep": "435992",
+      "r": "Sebastian Ocampo Roa"
+    },
+    {
+      "i": "565770",
+      "t": "HU_DecGes_116_Generar borrador Formulario 1B",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565767",
+      "ep": "487098",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "565771",
+      "t": "HU_DecGes_117_Consultar reportes de ingresos y gastos",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565767",
+      "ep": "487098",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "565772",
+      "t": "HU_DecPre_118_Suscribir declaración anual",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "487116",
+      "ep": "487098",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "565773",
+      "t": "HU_DecPre_119_Presentar declaración anual",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "487116",
+      "ep": "487098",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "566702",
+      "t": "Sprint8 - UX",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "467408",
+      "ep": "467406",
+      "r": "Dario Alejandro Gomez Torres"
+    },
+    {
+      "i": "566934",
+      "t": "Sprint_9_Lizeth Monsalve",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": null,
+      "ep": null,
+      "r": "lizeth paola monsalve"
+    },
+    {
+      "i": "566961",
+      "t": "Sprint 9 - Mabel",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": null,
+      "ep": null,
+      "r": "Mabel Rocio Ramirez Bonilla"
+    },
+    {
+      "i": "567166",
+      "t": "HU_AccAut_120_Plantilla de correo Creación de cuenta / solicitud de activación",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": "436526",
+      "ep": "435992",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "567168",
+      "t": "HU_AccOnb_121_Plantilla Recuperación de contraseña",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": "487224",
+      "ep": "435992",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "567171",
+      "t": "HU_AccOnb_122_Plantilla de correo Confirmación de contraseña actualizada",
+      "e": "1. Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.08,
+      "f": "487224",
+      "ep": "435992",
+      "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "567173",
+      "t": "HU_AccOnb_123_Verificación de correo electrónico",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "487224",
+      "ep": "435992",
+      "r": "Laura Nathaly Fuentes Niño"
     }
   ],
   "kpi": {
-    "n_hu": 158,
-    "n_hu_activas": 108,
+    "n_hu": 173,
+    "n_hu_activas": 119,
     "hu_sin_feature": 0,
     "n_feature": 32,
     "n_epic": 7,
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
-    "hu_omitidas": 47,
-    "pct_global": 0.4549,
+    "hu_omitidas": 51,
+    "pct_global": 0.4291,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 0,
-    "feature_estado_ajeno": 1,
+    "feature_estado_ajeno": 2,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.1679,
+    "tactico": 0.1531,
     "estrategico": 0.0,
     "n": 32,
     "d": 0,
@@ -2181,26 +2346,26 @@
     "isEpics": false,
     "feat_total": 32,
     "feat_ent": 0,
-    "hu_total": 108,
+    "hu_total": 119,
     "buckets": {
       "100": 1,
       "75": 21,
       "50": 0,
-      "20": 30,
-      "0": 56
+      "20": 29,
+      "0": 68
     },
     "hu_buckets": {
       "100": 1,
       "75": 21,
       "50": 0,
-      "20": 30,
-      "0": 56
+      "20": 29,
+      "0": 68
     },
     "feat_buckets": {
       "100": 0,
-      "75": 3,
+      "75": 2,
       "50": 1,
-      "20": 6,
+      "20": 7,
       "0": 22
     }
   }

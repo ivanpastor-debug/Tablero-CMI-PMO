@@ -1,8 +1,8 @@
 {
   "codigo": "457",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_457_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_457_20261113.csv",
   "epics": [
     {
       "i": "292522",
@@ -10,7 +10,7 @@
       "n_f": 5,
       "n": 107,
       "term": 63,
-      "pct": 0.7744
+      "pct": 0.7776
     },
     {
       "i": "94588",
@@ -62,7 +62,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 39,
       "term": 31,
-      "pct": 0.8936,
+      "pct": 0.8962,
       "n_pct": 39
     },
     {
@@ -73,7 +73,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 29,
       "term": 5,
-      "pct": 0.5986,
+      "pct": 0.6034,
       "n_pct": 29
     },
     {
@@ -95,7 +95,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 20,
       "term": 8,
-      "pct": 0.5825,
+      "pct": 0.5875,
       "n_pct": 20
     },
     {
@@ -3315,10 +3315,10 @@
     {
       "i": "405939",
       "t": "NPDI_HU0030_Módulo_Circular 050_Submódulo_PNV",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "259028",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3733,13 +3733,13 @@
     {
       "i": "496652",
       "t": "NPDC_HU0011_Información_adicional_Administrador",
-      "e": "3.  Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.3,
       "f": "295069",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Julian Enrique Moreno Samudio"
     },
     {
       "i": "497369",
@@ -3887,8 +3887,8 @@
     {
       "i": "534076",
       "t": "NPDG_HU0030_Migrar_a_Bricks_las_páginas_del_bloque_Seguros",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "552608",
@@ -3898,13 +3898,13 @@
     {
       "i": "534077",
       "t": "NPDG_HU0031_Migrar_a_Bricks_las_páginas_del_bloque_La Equidad",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "552608",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Wilmer Javier Castellanos Martinez"
     },
     {
       "i": "534078",
@@ -4015,7 +4015,7 @@
     "n_feature_con_hu": 51,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9129,
+    "pct_global": 0.9141,
     "term_global": 238,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

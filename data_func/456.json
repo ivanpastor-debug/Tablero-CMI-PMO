@@ -1,8 +1,8 @@
 {
   "codigo": "456",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_456_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_456_20261113.csv",
   "epics": [
     {
       "i": "544970",
@@ -10,7 +10,7 @@
       "n_f": 4,
       "n": 13,
       "term": 0,
-      "pct": 0.6
+      "pct": 0.85
     }
   ],
   "features": [
@@ -22,7 +22,7 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 5,
       "term": 0,
-      "pct": 0.47,
+      "pct": 0.85,
       "n_pct": 5
     },
     {
@@ -33,7 +33,7 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 4,
       "term": 0,
-      "pct": 0.7125,
+      "pct": 0.85,
       "n_pct": 4
     },
     {
@@ -44,7 +44,7 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 2,
       "term": 0,
-      "pct": 0.725,
+      "pct": 0.85,
       "n_pct": 2
     },
     {
@@ -55,7 +55,7 @@
       "ept": "Memoria contractual consultable con IA",
       "n": 2,
       "term": 0,
-      "pct": 0.575,
+      "pct": 0.85,
       "n_pct": 2
     }
   ],
@@ -129,112 +129,112 @@
     {
       "i": "553021",
       "t": "HU003 - Desbloqueo de cuenta mediante código de verificación",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "545363",
       "ep": "544970",
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553022",
       "t": "HU007 - Versionado de documentos",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "545459",
       "ep": "544970",
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553023",
       "t": "HU008 - Creación de caso por proyecto IP/APP",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": null,
       "ep": null,
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553025",
       "t": "HU009 - Observaciones y réplicas del caso",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": null,
       "ep": null,
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553026",
       "t": "HU010 - Concepto y estados del caso hasta el cierre",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": null,
       "ep": null,
-      "r": "Simón Felipe Duarte Leon"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553027",
       "t": "HU011 - Primer ingreso: términos y condiciones, tour y verificación de contacto",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.3,
+      "v": 0.85,
       "f": "545363",
       "ep": "544970",
-      "r": "Cesar Andres Patiño Nieto"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553028",
       "t": "HU012 - Administración de roles, permisos y menú",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.3,
+      "v": 0.85,
       "f": "545458",
       "ep": "544970",
-      "r": "Cesar Andres Patiño Nieto"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553029",
       "t": "HU001-T - Cambio obligatorio de contraseña temporal o vencida",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.3,
+      "v": 0.85,
       "f": "545363",
       "ep": "544970",
-      "r": "Cesar Andres Patiño Nieto"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553030",
       "t": "HU002-T - Recuperación de contraseña olvidada con código de verificación",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.3,
+      "v": 0.85,
       "f": "545363",
       "ep": "544970",
-      "r": "Cesar Andres Patiño Nieto"
+      "r": "Jhonatan Figueroa Figueroa"
     },
     {
       "i": "553031",
       "t": "HU004-T - Búsqueda de documentos por categoría, nombre y fecha de carga",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "8.1. Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.3,
+      "v": 0.85,
       "f": "545460",
       "ep": "544970",
-      "r": "Cesar Andres Patiño Nieto"
+      "r": "Jhonatan Figueroa Figueroa"
     }
   ],
   "kpi": {
@@ -246,7 +246,7 @@
     "n_feature_con_hu": 4,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.6,
+    "pct_global": 0.85,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -265,7 +265,7 @@
     "feat_ent": 0,
     "epic_total": 1,
     "hu_total": 13,
-    "pct_azure": 0.6,
+    "pct_azure": 0.85,
     "buckets": {
       "100": 1,
       "75": 0,

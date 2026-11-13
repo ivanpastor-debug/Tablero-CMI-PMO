@@ -1,24 +1,32 @@
 {
   "codigo": "420",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_420_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_420_20261113.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
       "n": 187,
-      "term": 125,
-      "pct": 0.8759
+      "term": 131,
+      "pct": 0.8824
     },
     {
       "i": "357729",
       "t": "Usuarios",
       "n_f": 12,
-      "n": 99,
+      "n": 100,
       "term": 92,
-      "pct": 0.9434
+      "pct": 0.936
+    },
+    {
+      "i": "356469",
+      "t": "Transversales",
+      "n_f": 5,
+      "n": 72,
+      "term": 68,
+      "pct": 0.9597
     },
     {
       "i": "357079",
@@ -27,14 +35,6 @@
       "n": 71,
       "term": 68,
       "pct": 0.9915
-    },
-    {
-      "i": "356469",
-      "t": "Transversales",
-      "n_f": 5,
-      "n": 71,
-      "term": 63,
-      "pct": 0.9141
     },
     {
       "i": "357081",
@@ -131,8 +131,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 37,
-      "term": 28,
-      "pct": 0.9189,
+      "term": 29,
+      "pct": 0.9243,
       "n_pct": 37
     },
     {
@@ -163,10 +163,10 @@
       "e": "2. En Curso",
       "ep": "356469",
       "ept": "Transversales",
-      "n": 21,
+      "n": 22,
       "term": 20,
-      "pct": 0.9619,
-      "n_pct": 21
+      "pct": 0.9273,
+      "n_pct": 22
     },
     {
       "i": "358512",
@@ -175,8 +175,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 21,
-      "term": 16,
-      "pct": 0.9524,
+      "term": 17,
+      "pct": 0.9619,
       "n_pct": 21
     },
     {
@@ -268,6 +268,17 @@
       "n_pct": 14
     },
     {
+      "i": "375072",
+      "t": "Auditor médico",
+      "e": "1. En Planeacion",
+      "ep": "357729",
+      "ept": "Usuarios",
+      "n": 13,
+      "term": 12,
+      "pct": 0.9385,
+      "n_pct": 13
+    },
+    {
       "i": "356378",
       "t": "Centro de referencia",
       "e": "1. En Planeacion",
@@ -295,17 +306,6 @@
       "e": "1. En Planeacion",
       "ep": "357078",
       "ept": "Cuentas médicas",
-      "n": 12,
-      "term": 12,
-      "pct": 1.0,
-      "n_pct": 12
-    },
-    {
-      "i": "375072",
-      "t": "Auditor médico",
-      "e": "1. En Planeacion",
-      "ep": "357729",
-      "ept": "Usuarios",
       "n": 12,
       "term": 12,
       "pct": 1.0,
@@ -340,8 +340,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 11,
-      "term": 6,
-      "pct": 0.8273,
+      "term": 8,
+      "pct": 0.8636,
       "n_pct": 11
     },
     {
@@ -395,8 +395,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 9,
-      "term": 8,
-      "pct": 0.9778,
+      "term": 9,
+      "pct": 1.0,
       "n_pct": 9
     },
     {
@@ -505,8 +505,8 @@
       "ep": "356469",
       "ept": "Transversales",
       "n": 6,
-      "term": 0,
-      "pct": 0.25,
+      "term": 5,
+      "pct": 0.9167,
       "n_pct": 6
     },
     {
@@ -527,8 +527,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 6,
-      "term": 5,
-      "pct": 0.9667,
+      "term": 6,
+      "pct": 1.0,
       "n_pct": 6
     },
     {
@@ -5288,10 +5288,10 @@
     {
       "i": "430002",
       "t": "HU0016_Positiva_Escalar_Revisión_Médica_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377082",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5530,10 +5530,10 @@
     {
       "i": "459901",
       "t": "HU0142_Positiva_Modal_Devolución_Auditor_Ver_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "485413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5772,10 +5772,10 @@
     {
       "i": "466507",
       "t": "HU0746_Positiva_Radicación_Listado_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "358512",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6630,10 +6630,10 @@
     {
       "i": "494774",
       "t": "HU0182_Positiva_Notificaciones_Gestion_Devoluciones_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "474854",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6674,10 +6674,10 @@
     {
       "i": "494896",
       "t": "HU0183_Positiva_Ajustes_Transversales_Soportes_Ver_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "468613",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6817,10 +6817,10 @@
     {
       "i": "500383",
       "t": "HU0190_Positiva_Ajustes_Transversales_Sugerencia_Glosa_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "468613",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -7186,7 +7186,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Johan David Velasco Rios"
     },
     {
       "i": "525726",
@@ -7263,7 +7263,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "Francisco Jose Hernandez Cordero"
+      "r": "Brandon David Palacio Alvarez"
     },
     {
       "i": "531233",
@@ -7274,7 +7274,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "Francisco Jose Hernandez Cordero"
+      "r": "Brandon David Palacio Alvarez"
     },
     {
       "i": "531234",
@@ -7296,7 +7296,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Johan David Velasco Rios"
     },
     {
       "i": "533597",
@@ -7362,7 +7362,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Javier Francisco Rios Erazo"
     },
     {
       "i": "536406",
@@ -7373,7 +7373,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Javier Francisco Rios Erazo"
     },
     {
       "i": "536410",
@@ -7466,10 +7466,10 @@
     {
       "i": "550684",
       "t": "Actividades diarias Scrum Junio",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "383722",
       "ep": "356469",
       "r": "María Alejandra Velásquez Piedrahita"
@@ -7477,10 +7477,10 @@
     {
       "i": "550770",
       "t": "Actividades diarias Scrum Septiembre",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "383722",
       "ep": "356469",
       "r": "María Alejandra Velásquez Piedrahita"
@@ -7488,10 +7488,10 @@
     {
       "i": "551335",
       "t": "Actividades diarias Scrum Agosto",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "383722",
       "ep": "356469",
       "r": "María Alejandra Velásquez Piedrahita"
@@ -7499,10 +7499,10 @@
     {
       "i": "551339",
       "t": "Actividades diarias Scrum Mayo",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "383722",
       "ep": "356469",
       "r": "María Alejandra Velásquez Piedrahita"
@@ -7510,10 +7510,10 @@
     {
       "i": "551435",
       "t": "Actividades diarias Scrum Octubre",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "383722",
       "ep": "356469",
       "r": "María Alejandra Velásquez Piedrahita"
@@ -7594,55 +7594,77 @@
       "f": "507072",
       "ep": "357078",
       "r": "Alba Lucero Tangarife Camargo"
+    },
+    {
+      "i": "565899",
+      "t": "420_Seguimiento_Administrativo_Desarrollo_Sprint_79",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "356481",
+      "ep": "356469",
+      "r": "Tilson Fernandez"
+    },
+    {
+      "i": "566415",
+      "t": "HU0150_Positiva_Usuario_Auditor_Ajuste_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "375072",
+      "ep": "357729",
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 624,
-    "n_hu_activas": 609,
+    "n_hu": 626,
+    "n_hu_activas": 611,
     "hu_sin_feature": 0,
     "n_feature": 57,
     "n_epic": 12,
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9305,
-    "term_global": 507,
+    "pct_global": 0.9367,
+    "term_global": 518,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 34,
+    "feature_100_sin_cerrar": 35,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.865,
-    "estrategico": 0.614,
+    "tactico": 0.8822,
+    "estrategico": 0.6316,
     "n": 57,
-    "d": 35,
+    "d": 36,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 57,
-    "feat_ent": 35,
-    "hu_total": 609,
+    "feat_ent": 36,
+    "hu_total": 611,
     "buckets": {
-      "100": 507,
+      "100": 518,
       "75": 0,
-      "50": 56,
+      "50": 50,
       "20": 19,
-      "0": 27
+      "0": 24
     },
     "hu_buckets": {
-      "100": 507,
+      "100": 518,
       "75": 0,
-      "50": 56,
+      "50": 50,
       "20": 19,
-      "0": 27
+      "0": 24
     },
     "feat_buckets": {
-      "100": 35,
-      "75": 12,
-      "50": 4,
+      "100": 36,
+      "75": 13,
+      "50": 3,
       "20": 3,
-      "0": 3
+      "0": 2
     }
   }
 }

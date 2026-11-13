@@ -1,8 +1,8 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:09",
-  "archivo": "HU_419-DEP_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_419-DEP_20261113.csv",
   "epics": [
     {
       "i": "417341",
@@ -21,20 +21,20 @@
       "pct": 1.0
     },
     {
+      "i": "531917",
+      "t": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n_f": 23,
+      "n": 149,
+      "term": 3,
+      "pct": 0.4497
+    },
+    {
       "i": "379729",
       "t": "419_EP_BAC_ PRIORIZACIÓN_4",
       "n_f": 16,
       "n": 148,
       "term": 112,
       "pct": 0.9514
-    },
-    {
-      "i": "531917",
-      "t": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n_f": 16,
-      "n": 116,
-      "term": 3,
-      "pct": 0.4793
     },
     {
       "i": "407644",
@@ -114,6 +114,17 @@
       "n_pct": 33
     },
     {
+      "i": "532401",
+      "t": "419_PB_REFINAMIENTO_SPRINT 8",
+      "e": "2. En Curso",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 28,
+      "term": 3,
+      "pct": 0.5,
+      "n_pct": 28
+    },
+    {
       "i": "417343",
       "t": "419_FT_BAC_REFINAMIENTO SPRINT 5",
       "e": "3. Entregado",
@@ -136,17 +147,6 @@
       "n_pct": 26
     },
     {
-      "i": "532401",
-      "t": "419_PB_REFINAMIENTO_SPRINT 8",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 26,
-      "term": 3,
-      "pct": 0.4654,
-      "n_pct": 26
-    },
-    {
       "i": "376222",
       "t": "419_FT_BAC_PREGUNTAS_FRECUENTES_-_CHATBOT / PARAMETRIZACIÓN REGUNTAS FRECUENTES - R3",
       "e": "4. Cerrado",
@@ -160,12 +160,12 @@
     {
       "i": "399896",
       "t": "419_PB_GESTION DE NOVEDADES USUARIOS ENTES COACTIVOS",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 18,
       "term": 0,
-      "pct": 0.4833,
+      "pct": 0.5,
       "n_pct": 18
     },
     {
@@ -792,18 +792,18 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.5143,
+      "pct": 0.6571,
       "n_pct": 7
     },
     {
       "i": "551785",
       "t": "SP7_PB_ORDEN DE PAGO MASIVO POR ARCHIVO - ABONO A CUENTA (ACH) (CARGUE, VALIDACION, INGRESO, AUTORIZACIONES, RECHAZO)",
-      "e": "1. En Planeacion",
+      "e": "2. En Curso",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.2429,
+      "pct": 0.5,
       "n_pct": 7
     },
     {
@@ -935,7 +935,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 6,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.5167,
       "n_pct": 6
     },
     {
@@ -958,6 +958,17 @@
       "n": 6,
       "term": 0,
       "pct": 0.5,
+      "n_pct": 6
+    },
+    {
+      "i": "565805",
+      "t": "SP8_PB_F10_ACTUALIZACIÓN MASIVA ORDEN DE PAGO PERMANENTE",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 6,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 6
     },
     {
@@ -1122,7 +1133,40 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.44,
+      "pct": 0.5,
+      "n_pct": 5
+    },
+    {
+      "i": "565852",
+      "t": "SP8_PB_F12_PARAMETRIZACION ORDEN DE PAGO PERMANENTE CREACION Y ACTUALIZACION",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "566189",
+      "t": "419_PB_REFINAMIENTO_A",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "566210",
+      "t": "419_PB_REFINAMIENTO_B",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 5
     },
     {
@@ -1199,7 +1243,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.55,
       "n_pct": 4
     },
     {
@@ -1221,7 +1265,29 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.8,
+      "pct": 0.7,
+      "n_pct": 4
+    },
+    {
+      "i": "565781",
+      "t": "SP8_PB_F14_ORDEN DE PAGO PERMANENTE CONFIRMACION ELECTRONICA/PAGO PROCESO AUTOMÁTICO (ABON CAUSAL 108)",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 4
+    },
+    {
+      "i": "565796",
+      "t": "SP8_PB_F11_ACTUALIZACIÓN INDIVIDUAL ORDEN DE PAGO PERMANENTE",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 4
     },
     {
@@ -1412,8 +1478,8 @@
       "n_pct": 3
     },
     {
-      "i": "561006",
-      "t": "PR_RECIBIR Y ALMACENAR PROCESO (CREACION SISTEMA PROCESAL)",
+      "i": "565847",
+      "t": "SP8_PB_ORDEN DE PAGO PERMANENTE (CON Y SIN ABONO A CUENTA BENEFICIARIO)",
       "e": "1. En Planeacion",
       "ep": "531917",
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
@@ -1486,6 +1552,17 @@
       "n": 2,
       "term": 0,
       "pct": 0.5,
+      "n_pct": 2
+    },
+    {
+      "i": "565780",
+      "t": "SP8_PB_CONFIGURACIÓN SARLAFT",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 2,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 2
     },
     {
@@ -7615,7 +7692,7 @@
       "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Yamile Andrea Carmona Osorio"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "407048",
@@ -10552,7 +10629,7 @@
       "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Lina Maria Usme Marin"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "485883",
@@ -11789,35 +11866,35 @@
     {
       "i": "516719",
       "t": "419_PB_HU001_Ajustar_Listar_Plantillas_Notificacion",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "516720",
       "t": "419_PB_HU002_Ajustar_Modificar_Plantilla_Notificacion",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "516722",
       "t": "419_PB_HU003_Ajustar_Ver_Detalle_Plantilla_Notificacion",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "516834",
@@ -11943,8 +12020,8 @@
     {
       "i": "518017",
       "t": "419_PB_HU001_Ajuste_Marcacion_Sistema_Procesal_Apertura_Cuenta_Judicial",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
       "f": "532401",
@@ -11954,8 +12031,8 @@
     {
       "i": "518020",
       "t": "419_PB_HU002_Ajustar_Ingreso_Apertura_Cuenta",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
       "f": "532401",
@@ -12218,10 +12295,10 @@
     {
       "i": "532741",
       "t": "419_PB_HU001_Descargar_y_Carga_Plantilla_Asociación_modificación_proceso_DJ",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532733",
       "ep": "531917",
       "r": "Daniela Gonzalez Lopez"
@@ -12262,10 +12339,10 @@
     {
       "i": "532762",
       "t": "419_PB_HU001_Asociar_Modificar_Asociación_Proceso_a_DJ",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532757",
       "ep": "531917",
       "r": "Juliana Andrea Arroyave Trujillo"
@@ -12273,10 +12350,10 @@
     {
       "i": "532768",
       "t": "419_PB_HU002_Gestionar_Autorización_Asociación_del_Proceso_al_Depósito",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "532757",
       "ep": "531917",
       "r": "Juliana Andrea Arroyave Trujillo"
@@ -12290,7 +12367,7 @@
       "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Guillermo Peñaranda Hernandez"
     },
     {
       "i": "532777",
@@ -12312,7 +12389,7 @@
       "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Guillermo Peñaranda Hernandez"
     },
     {
       "i": "532780",
@@ -12334,7 +12411,7 @@
       "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Guillermo Peñaranda Hernandez"
     },
     {
       "i": "532787",
@@ -12543,7 +12620,7 @@
       "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Guillermo Peñaranda Hernandez"
     },
     {
       "i": "533065",
@@ -12768,65 +12845,65 @@
     {
       "i": "535011",
       "t": "419_PB_HU001_Creacion_Solicitud_Pago_Centralizado",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "535013",
       "t": "419_PB_HU002_Autorizacion_Solicitud_Pago_Centralizado",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "535016",
       "t": "419_PB_HU003_Creacion_Solicitud_Reversion_Pago_Centralizado",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "535020",
       "t": "419_PB_HU004_Autorizacion_Reversion_Pago_Centralizado",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7.1  Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "535024",
       "t": "419_PB_HU005_Comprobante_PagoCentralizado",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "535044",
       "t": "419_PB_HU001_Consultar_y_Registrar_solicitud_reversion_manual_pago_abono_a_cuenta",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "535037",
       "ep": "531917",
       "r": "Juliana Andrea Arroyave Trujillo"
@@ -12834,10 +12911,10 @@
     {
       "i": "535047",
       "t": "419_PB_HU002_Autorizar_o_rechazar_solicitud_de_reversión_manual_de_pago_con_abono_a_cuenta",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "535037",
       "ep": "531917",
       "r": "Juliana Andrea Arroyave Trujillo"
@@ -13010,13 +13087,13 @@
     {
       "i": "536436",
       "t": "419_TEC_001_Arquitectura_De_Datos",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.8,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "538322",
@@ -13175,13 +13252,13 @@
     {
       "i": "540595",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.8,
       "f": "535006",
       "ep": "531917",
-      "r": "Paula Andrea Maldonado Pamplona"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "540608",
@@ -13274,57 +13351,57 @@
     {
       "i": "551789",
       "t": "419_PB_HU001_Cargar_Archivo_Masivo_de_Ordenes_de_Pago",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551785",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "551791",
       "t": "419_PB_HU002_Autorizar_Rechazar_Cargue_Masivo_de_Ordenes_de_Pago",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551785",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "551793",
       "t": "419_PB_HU003_Procesar_y_Generar_Orden_de_Pago_Oficina",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551785",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "551794",
       "t": "419_PB_HU004_Procesar_y_Generar_Orden_de_Pago_Abono_a_Cuenta",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551785",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "551796",
       "t": "419_PB_HU005_Consulta_Registros_no_Procesados_de_Cargue_Masivo_de_Ordenes de Pago",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "551785",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "551798",
@@ -13351,13 +13428,13 @@
     {
       "i": "552545",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532770",
       "ep": "531917",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Guillermo Peñaranda Hernandez"
     },
     {
       "i": "553092",
@@ -13410,8 +13487,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "561006",
-      "ep": "531917",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -13421,8 +13498,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "561006",
-      "ep": "531917",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -13432,8 +13509,8 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "561006",
-      "ep": "531917",
+      "f": null,
+      "ep": null,
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -13450,13 +13527,13 @@
     {
       "i": "563026",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "399896",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nicolas Giraldo Arenas"
     },
     {
       "i": "564043",
@@ -13516,13 +13593,13 @@
     {
       "i": "564974",
       "t": "419_PB_TEC002_Arquitectura_Tecnologica_Plantillas_Notificacion",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "564976",
@@ -13533,30 +13610,426 @@
       "v": 0.5,
       "f": "532401",
       "ep": "531917",
-      "r": "Steven Florez Hernández"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "565001",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "551785",
+      "ep": "531917",
+      "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "565783",
+      "t": "419_PB_HU001_Identificar_Depósitos_Judiciales_OPP",
       "e": "1. En Planeacion",
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "551785",
+      "f": "565781",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565786",
+      "t": "419_PB_HU002_Generar_confirmación_electrónica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565781",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565791",
+      "t": "419_PB_HU003_Validar_Cuenta_Destino_Abono_a_cuenta",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565781",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565795",
+      "t": "419_PB_HU004_Abonar_a_Cuenta_y_Notificar_Pago_OPP",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565781",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565800",
+      "t": "419_PB_AIOPP_HU001_Consultar_Actualizacion_individual_Orden_De_Pago_Permanente",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565796",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565801",
+      "t": "419_PB_AIOPP_HU002_Ver_Detalle_Actualizacion_individual_Orden_De_Pago_Permanente",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565796",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565803",
+      "t": "419_PB_AIOPP_HU003_Modificar_Actualizacion_individual_Orden_De_Pago_Permanente",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565796",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565804",
+      "t": "419_PB_AIOPP_HU004_Autorizar_Actualización_Orden_De_Pago_Permanente",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565796",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565808",
+      "t": "419_PB_AM_OPP_HU001_Consultar_OPP_y_descargar_plantilla",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565805",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565810",
+      "t": "419_PB_AM_OPP_HU002_Cargar_archivo_actualizacion_masiva",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565805",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565811",
+      "t": "419_PB_AM_OPP_HU003_Autorizar_o_rechazar_cargue",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565805",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565812",
+      "t": "419_PB_AM_OPP_HU004_Procesar_registros_y_actualizar_OPP",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565805",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565813",
+      "t": "419_PB_AM_OPP_HU005_Validar_beneficiario_y_cuenta_de_abono",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565805",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565815",
+      "t": "419_PB_AM_OPP_HU006_Consultar_registros_no_procesados",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565805",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565843",
+      "t": "419_PB_HU001_Consultar_Configuración_SARLAFT",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565780",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565845",
+      "t": "419_PB_HU002_Activar_Inactivar_Configuración_SARLAFT",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565780",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565848",
+      "t": "419_PB_HU001_Registro_Ingreso_Individual_OPP",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565847",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565849",
+      "t": "419_PB_HU002_Autorizacion_Rechazo_OrdenPagoPermanente",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565847",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565851",
+      "t": "419_PB_HU003_Inactivacion_Automatica_OPP_Vigencia",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565847",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565855",
+      "t": "419_PB_HU001_Crear_Parametrización_de_Orden_de_Pago_Permanente (OPP)",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565852",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565858",
+      "t": "419_PB_HU002_Consultar_Parametrización_de_Orden_de_Pago_Permanente_(OPP)",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565852",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565863",
+      "t": "419_PB_HU003_Modificar_Parametrización_de_Orden_de_Pago_Permanente_(OPP)",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565852",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565866",
+      "t": "419_PB_HU004_Activar/Desactivar_Parametrización_de_Orden_de_Pago_Permanente_(OPP)",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565852",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "565868",
+      "t": "419_PB_HU005_Autorizar_parametrizaciones_de_orden_de_pago_permanente",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565852",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566192",
+      "t": "419_PB_Ajuste_Codigo_Interno_y_Procesos_Huerfanos_Apertura_Cuenta",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566195",
+      "t": "419_PB_Ajuste_Correo_Beneficiario_y_Parametria_Listas_Inhibitorias_Orden_Pago",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566198",
+      "t": "419_PB_Ajuste_Notificacion_Beneficiario_Abono_Cuenta",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566201",
+      "t": "419_PB_Ajuste_Numero_Expediente_Emision_Individual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566204",
+      "t": "419_PB_Refinamiento_Peticion_Emision_Masiva",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566211",
+      "t": "419_PB_Refinamiento_Inactivar_OPP_Al_Ejecutar_Traslado_Proceso",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566213",
+      "t": "419_PB_Refinamiento_Validación_SARLAFT_según_Configuración",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566219",
+      "t": "419_PB_Refinamiento_Alcance_Parametrización_Cuentas_Bancarias_para_Prescripción_Portal_BAC",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566221",
+      "t": "419_PB_Refinamiento_Ajuste_Creacion_Proceso_Individual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566224",
+      "t": "419_PB_Refinamiento_Ajuste_Actualizacion_Proceso_Individual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "566536",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica_Funcionalidades_Integración_de_Intercambio_de_Archivos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532401",
       "ep": "531917",
       "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "566726",
+      "t": "419_PB_TEC008_Arquitectura_de_Datos_Ajuste_Flujo_Autorizacion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "532401",
+      "ep": "531917",
+      "r": "Yesica Johana Ospina Patiño"
     }
   ],
   "kpi": {
-    "n_hu": 1064,
-    "n_hu_activas": 966,
-    "hu_sin_feature": 27,
-    "n_feature": 158,
+    "n_hu": 1100,
+    "n_hu_activas": 1002,
+    "hu_sin_feature": 30,
+    "n_feature": 165,
     "n_epic": 12,
-    "n_feature_con_hu": 138,
+    "n_feature_con_hu": 145,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7786,
+    "pct_global": 0.7626,
     "term_global": 431,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -13565,35 +14038,35 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6583,
-    "estrategico": 0.4662,
-    "n": 133,
+    "tactico": 0.6264,
+    "estrategico": 0.4429,
+    "n": 140,
     "d": 62,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 133,
+    "feat_total": 140,
     "feat_ent": 62,
-    "hu_total": 906,
+    "hu_total": 939,
     "buckets": {
       "100": 421,
       "75": 95,
-      "50": 20,
-      "20": 329,
-      "0": 41
+      "50": 19,
+      "20": 343,
+      "0": 61
     },
     "hu_buckets": {
       "100": 421,
       "75": 95,
-      "50": 20,
-      "20": 329,
-      "0": 41
+      "50": 19,
+      "20": 343,
+      "0": 61
     },
     "feat_buckets": {
       "100": 62,
       "75": 12,
-      "50": 9,
-      "20": 36,
-      "0": 14
+      "50": 8,
+      "20": 40,
+      "0": 18
     }
   }
 }

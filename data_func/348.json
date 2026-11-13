@@ -1,16 +1,16 @@
 {
   "codigo": "348",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_348_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_348_20261113.csv",
   "epics": [
     {
       "i": "539569",
       "t": "Certificación Temáticos",
       "n_f": 9,
       "n": 278,
-      "term": 163,
-      "pct": 0.7121
+      "term": 278,
+      "pct": 1.0
     },
     {
       "i": "539200",
@@ -29,8 +29,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 64,
-      "term": 0,
-      "pct": 0.5,
+      "term": 64,
+      "pct": 1.0,
       "n_pct": 64
     },
     {
@@ -40,8 +40,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 52,
-      "term": 50,
-      "pct": 0.9808,
+      "term": 52,
+      "pct": 1.0,
       "n_pct": 52
     },
     {
@@ -51,8 +51,8 @@
       "ep": "539569",
       "ept": "Certificación Temáticos",
       "n": 49,
-      "term": 0,
-      "pct": 0.04,
+      "term": 49,
+      "pct": 1.0,
       "n_pct": 49
     },
     {
@@ -1831,10 +1831,10 @@
     {
       "i": "540693",
       "t": "Gestión del Conocimiento - HU-001 - CRUD Crear formularios y encuestas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1842,10 +1842,10 @@
     {
       "i": "540696",
       "t": "Gestión del Conocimiento - HU-002 - Cargar respuestas de encuestas y formularios masivamente",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1853,10 +1853,10 @@
     {
       "i": "540699",
       "t": "Gestión del Conocimiento - HU-003 - Tabulación de resultados de las encuestas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1864,10 +1864,10 @@
     {
       "i": "540702",
       "t": "Gestión del Conocimiento - HU-004 - Generar informe de diagnóstico",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1875,10 +1875,10 @@
     {
       "i": "540705",
       "t": "Gestión del Conocimiento - HU-005 - Generar plan de acción de diagnóstico",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1886,10 +1886,10 @@
     {
       "i": "540708",
       "t": "Gestión del Conocimiento - HU-006 - Administrar convocatoria de sesión de transferencia de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1897,10 +1897,10 @@
     {
       "i": "540711",
       "t": "Gestión del Conocimiento - HU-007 - Administrar matriz de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1908,10 +1908,10 @@
     {
       "i": "540714",
       "t": "Gestión del Conocimiento - HU-008 - Diligenciar matriz de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1919,10 +1919,10 @@
     {
       "i": "540717",
       "t": "Gestión del Conocimiento - HU-009 - Administrar convocatoria propuestas I+D+I",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1930,10 +1930,10 @@
     {
       "i": "540720",
       "t": "Gestión del Conocimiento - HU-010 - Enviar a evaluar propuestas I+D+I",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1941,10 +1941,10 @@
     {
       "i": "540723",
       "t": "Gestión del Conocimiento - HU-011 - Generar lista de chequeo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1952,10 +1952,10 @@
     {
       "i": "540726",
       "t": "Gestión del Conocimiento - HU-012 - Diligenciar lista de chequeo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1963,10 +1963,10 @@
     {
       "i": "540729",
       "t": "Gestión del Conocimiento - HU-013 - Galería CRUD de contenido multimedia",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1974,10 +1974,10 @@
     {
       "i": "540732",
       "t": "Gestión del Conocimiento - HU-014 - Imprimir el contenido de una página",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1985,10 +1985,10 @@
     {
       "i": "540735",
       "t": "Gestión del Conocimiento - HU-015 - Compartir interactivo",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -1996,10 +1996,10 @@
     {
       "i": "540738",
       "t": "Gestión del Conocimiento - HU-016 - Formulario de creación de expertos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2007,10 +2007,10 @@
     {
       "i": "540741",
       "t": "Gestión del Conocimiento - HU-017 - Editar formulario de directorio de expertos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2018,10 +2018,10 @@
     {
       "i": "540744",
       "t": "Gestión del Conocimiento - HU-018 - Consultar directorio de expertos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2029,10 +2029,10 @@
     {
       "i": "540747",
       "t": "Gestión del Conocimiento - HU-019 - CRUD formulario de lecciones aprendidas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2040,10 +2040,10 @@
     {
       "i": "540750",
       "t": "Gestión del Conocimiento - HU-020 - CRUD formulario de conferencias magistrales",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2051,10 +2051,10 @@
     {
       "i": "540753",
       "t": "Gestión del Conocimiento - HU-021 - CRUD formato Foro",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2062,10 +2062,10 @@
     {
       "i": "540756",
       "t": "Gestión del Conocimiento - HU-022 - CRUD formato Wiki",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2073,10 +2073,10 @@
     {
       "i": "540759",
       "t": "Gestión del Conocimiento - HU-023 - Consultas avanzadas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2084,10 +2084,10 @@
     {
       "i": "540762",
       "t": "Gestión del Conocimiento - HU-024 - Reportes por serie, subseries, documentos y/o procesos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2095,10 +2095,10 @@
     {
       "i": "540765",
       "t": "Gestión del Conocimiento - HU-025 - Tráfico sitio, subsitios",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2106,10 +2106,10 @@
     {
       "i": "540768",
       "t": "Gestión del Conocimiento - HU-026 - CRUD Vínculos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2117,10 +2117,10 @@
     {
       "i": "540771",
       "t": "Gestión del Conocimiento - HU-027 - Administrar secciones, categorías, páginas y publicaciones",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2128,10 +2128,10 @@
     {
       "i": "540774",
       "t": "Gestión del Conocimiento - HU-028 - Consultar convocatoria de sesión de transferencia de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2139,10 +2139,10 @@
     {
       "i": "540777",
       "t": "Gestión del Conocimiento - HU-029 - Registrar convocatoria de sesión de transferencia de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2150,10 +2150,10 @@
     {
       "i": "540780",
       "t": "Gestión del Conocimiento - HU-030 - Editar convocatoria de sesión de transferencia de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2161,10 +2161,10 @@
     {
       "i": "540783",
       "t": "Gestión del Conocimiento - HU-031 - Eliminar convocatoria de sesión de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2172,10 +2172,10 @@
     {
       "i": "540786",
       "t": "Gestión del Conocimiento - HU-032 - Consultar matriz de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2183,10 +2183,10 @@
     {
       "i": "540789",
       "t": "Gestión del Conocimiento - HU-033 - Parametrizar matriz de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2194,10 +2194,10 @@
     {
       "i": "540792",
       "t": "Gestión del Conocimiento - HU-034 - Consulta de catálogo CITE",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2205,10 +2205,10 @@
     {
       "i": "540795",
       "t": "Gestión del Conocimiento - HU-035 - Eliminar matriz de conocimiento",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2216,10 +2216,10 @@
     {
       "i": "540798",
       "t": "Gestión del Conocimiento - HU-036 - CRUD Eliminar formularios y encuestas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2227,10 +2227,10 @@
     {
       "i": "540801",
       "t": "Gestión del Conocimiento - HU-037 - CRUD Actualizar formularios y encuestas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2238,10 +2238,10 @@
     {
       "i": "540804",
       "t": "Gestión del Conocimiento - HU-038 - CRUD Consultar formularios y encuestas",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2249,10 +2249,10 @@
     {
       "i": "540807",
       "t": "Gestión del Conocimiento - HU-039 - Registrar convocatoria propuestas I+D+I",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2260,10 +2260,10 @@
     {
       "i": "540810",
       "t": "Gestión del Conocimiento - HU-040 - Editar convocatoria propuestas I+D+I",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2271,10 +2271,10 @@
     {
       "i": "540813",
       "t": "Gestión del Conocimiento - HU-041 - Eliminar convocatoria propuestas I+D+I",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2282,10 +2282,10 @@
     {
       "i": "540816",
       "t": "Gestión del Conocimiento - HU-042 - Usuarios registrados - CITE",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2293,10 +2293,10 @@
     {
       "i": "540819",
       "t": "Gestión del Conocimiento - HU-043 - Registro nuevo usuario - CITE",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2304,10 +2304,10 @@
     {
       "i": "540822",
       "t": "Gestión del Conocimiento - HU-044 - Solicitar préstamo CITE",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2315,10 +2315,10 @@
     {
       "i": "540825",
       "t": "Gestión del Conocimiento - HU-045 - Solicitud de prórrogas (física o virtual)",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2326,10 +2326,10 @@
     {
       "i": "540828",
       "t": "Gestión del Conocimiento - HU-046 - Administrar colecciones, catálogos, índices y publicaciones",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2337,10 +2337,10 @@
     {
       "i": "540831",
       "t": "Gestión del Conocimiento - HU-047 - Comprar publicaciones en CITE",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2348,10 +2348,10 @@
     {
       "i": "540834",
       "t": "Gestión del Conocimiento - HU-048 - Realizar seguimiento de pedidos de documentos",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2359,10 +2359,10 @@
     {
       "i": "540837",
       "t": "Gestión del Conocimiento - HU-049 - Solicitar documento para consulta y entrega desde instalaciones de EAAB",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.04,
+      "v": 1.0,
       "f": "540692",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2733,10 +2733,10 @@
     {
       "i": "540940",
       "t": "Sistec-EPNT - HU-034 - Elaborar presentación",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2777,10 +2777,10 @@
     {
       "i": "540952",
       "t": "Sistec-EPNT - HU-038 - Registrar socialización y anexar soportes",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540840",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2942,10 +2942,10 @@
     {
       "i": "540998",
       "t": "Sistec-GNET - HU-001 - Crear Solicitud",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -2953,10 +2953,10 @@
     {
       "i": "541001",
       "t": "Sistec-GNET - HU-002 - Consultar Solicitudes",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2964,10 +2964,10 @@
     {
       "i": "541004",
       "t": "Sistec-GNET - HU-003 - Asignar Solicitud",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2975,10 +2975,10 @@
     {
       "i": "541007",
       "t": "Sistec-GNET - HU-004 - Asignar / Rechazar Asignación",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2986,10 +2986,10 @@
     {
       "i": "541010",
       "t": "Sistec-GNET - HU-005 - Consultar Directorio de Expertos y Páginas Amarillas",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -2997,10 +2997,10 @@
     {
       "i": "541013",
       "t": "Sistec-GNET - HU-006 - Crear Planificación",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3008,10 +3008,10 @@
     {
       "i": "541016",
       "t": "Sistec-GNET - HU-007 - Editar Planificación",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3019,10 +3019,10 @@
     {
       "i": "541019",
       "t": "Sistec-GNET - HU-008 - Eliminar Planificación",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3030,10 +3030,10 @@
     {
       "i": "541022",
       "t": "Sistec-GNET - HU-009 - Cerrar Solicitud",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3041,10 +3041,10 @@
     {
       "i": "541025",
       "t": "Sistec-GNET - HU-010 - Asociar documentación a solicitud",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3052,10 +3052,10 @@
     {
       "i": "541028",
       "t": "Sistec-GNET - HU-011 - Programar mesa de trabajo",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3063,10 +3063,10 @@
     {
       "i": "541031",
       "t": "Sistec-GNET - HU-012 - Relacionar Líder a NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3074,10 +3074,10 @@
     {
       "i": "541034",
       "t": "Sistec-GNET - HU-013 - Elaborar documento de anteproyecto",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3085,10 +3085,10 @@
     {
       "i": "541037",
       "t": "Sistec-GNET - HU-014 - Editar documento de anteproyecto",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3096,10 +3096,10 @@
     {
       "i": "541040",
       "t": "Sistec-GNET - HU-015 - Consultar - asociar NT-ET que afectan la solicitud",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jose Fernando Lozano Murcia"
@@ -3107,10 +3107,10 @@
     {
       "i": "541043",
       "t": "Sistec-GNET - HU-016 - Registrar comentarios y observaciones",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3118,10 +3118,10 @@
     {
       "i": "541046",
       "t": "Sistec-GNET - HU-017 - Crear memorando de discusión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3129,10 +3129,10 @@
     {
       "i": "541049",
       "t": "Sistec-GNET - HU-018 - Eliminar memorando de discusión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3140,10 +3140,10 @@
     {
       "i": "541052",
       "t": "Sistec-GNET - HU-019 - Editar memorando de discusión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3151,10 +3151,10 @@
     {
       "i": "541055",
       "t": "Sistec-GNET - HU-020 - Crear observaciones en anteproyecto y proyecto",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3162,10 +3162,10 @@
     {
       "i": "541058",
       "t": "Sistec-GNET - HU-021 - Generar lista de observaciones",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3173,10 +3173,10 @@
     {
       "i": "541061",
       "t": "Sistec-GNET - HU-022 - Generar acta de comité industrial",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3184,10 +3184,10 @@
     {
       "i": "541064",
       "t": "Sistec-GNET - HU-023 - Publicar NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3195,10 +3195,10 @@
     {
       "i": "541067",
       "t": "Sistec-GNET - HU-024 - Buscar NT - ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3206,10 +3206,10 @@
     {
       "i": "541070",
       "t": "Sistec-GNET - HU-025 - Generar versionamiento NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3217,10 +3217,10 @@
     {
       "i": "541073",
       "t": "Sistec-GNET - HU-026 - Poner marca de agua al cambiar estado",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3228,10 +3228,10 @@
     {
       "i": "541076",
       "t": "Sistec-GNET - HU-027 - Clasificar NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3239,10 +3239,10 @@
     {
       "i": "541079",
       "t": "Sistec-GNET - HU-028 - Cargar información generada en medio físico",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3250,10 +3250,10 @@
     {
       "i": "541082",
       "t": "Sistec-GNET - HU-029 - Consultar NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3261,10 +3261,10 @@
     {
       "i": "541085",
       "t": "Sistec-GNET - HU-030 - Bloquear edición de documentos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Jhostin Alexander Ladino Gonzalez"
@@ -3272,10 +3272,10 @@
     {
       "i": "541088",
       "t": "Sistec-GNET - HU-031 - Consultar manual de SISTEC",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3283,10 +3283,10 @@
     {
       "i": "541091",
       "t": "Sistec-GNET - HU-032 - Consultar instructivo de acceso al SISTEC",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3294,10 +3294,10 @@
     {
       "i": "541094",
       "t": "Sistec-GNET - HU-033 - Consultar catálogo de NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3305,10 +3305,10 @@
     {
       "i": "541097",
       "t": "Sistec-GNET - HU-034 - Generar tablero de control",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3316,10 +3316,10 @@
     {
       "i": "541100",
       "t": "Sistec-GNET - HU-035 - Analizar contenido similar NT ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3327,10 +3327,10 @@
     {
       "i": "541103",
       "t": "Sistec-GNET - HU-036 - Consultar áreas que han dado respuesta en la etapa de discusión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3338,10 +3338,10 @@
     {
       "i": "541106",
       "t": "Sistec-GNET - HU-037 - Generar reporte por estado de intervención",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3349,10 +3349,10 @@
     {
       "i": "541109",
       "t": "Sistec-GNET - HU-038 - Generar reporte por listado de NT-ET por tema con código – título - versión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3360,10 +3360,10 @@
     {
       "i": "541112",
       "t": "Sistec-GNET - HU-039 - Exportar reporte a PDF",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3371,10 +3371,10 @@
     {
       "i": "541115",
       "t": "Sistec-GNET - HU-040 - Generar reporte de las consultas realizadas por usuario",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3382,10 +3382,10 @@
     {
       "i": "541118",
       "t": "Sistec-GNET - HU-041 - Generar reporte por actividad",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3393,10 +3393,10 @@
     {
       "i": "541121",
       "t": "Sistec-GNET - HU-042 - Generar reporte por año, mes, código",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3404,10 +3404,10 @@
     {
       "i": "541124",
       "t": "Sistec-GNET - HU-043 - Generar reporte descarga",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3415,10 +3415,10 @@
     {
       "i": "541127",
       "t": "Sistec-GNET - HU-044 - Generar reporte solicitudes",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3426,10 +3426,10 @@
     {
       "i": "541130",
       "t": "Sistec-GNET - HU-045 - Generar reporte a partir de los datos de la serie, sub-serie",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3437,10 +3437,10 @@
     {
       "i": "541133",
       "t": "Sistec-GNET - HU-046 - Generar reporte a partir de tipologías documentales",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3448,10 +3448,10 @@
     {
       "i": "541136",
       "t": "Sistec-GNET - HU-047 - Generar reporte a partir de datos propios de la operación",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3459,10 +3459,10 @@
     {
       "i": "541139",
       "t": "Sistec-GNET - HU-048 - Listar documentos asociados a una NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3470,10 +3470,10 @@
     {
       "i": "541142",
       "t": "Sistec-GNET - HU-049 - Generar listado de términos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3481,10 +3481,10 @@
     {
       "i": "541145",
       "t": "Sistec-GNET - HU-050 - Generar listado de anexos por NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3492,10 +3492,10 @@
     {
       "i": "541148",
       "t": "Sistec-GNET - HU-051 - Generar listado de líderes y profesionales de apoyo de la NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3503,10 +3503,10 @@
     {
       "i": "541151",
       "t": "Sistec-GNET - HU-052 - Generar listado de eventos socialización NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3514,10 +3514,10 @@
     {
       "i": "541154",
       "t": "Sistec-GNET - HU-053 - Realizar solicitud - grupo de interés",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3525,10 +3525,10 @@
     {
       "i": "541157",
       "t": "Sistec-GNET - HU-054 - Descargar Norma Técnica - Especificación Técnica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3536,10 +3536,10 @@
     {
       "i": "541160",
       "t": "Sistec-GNET - HU-055 - Agrupar NT-ET por tema o subtema",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3547,10 +3547,10 @@
     {
       "i": "541163",
       "t": "Sistec-GNET - HU-056 - Diligenciar formato de apropiación del conocimiento",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3558,10 +3558,10 @@
     {
       "i": "541166",
       "t": "Sistec-GNET - HU-057 - Publicar Acta de Comité Industrial",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3569,10 +3569,10 @@
     {
       "i": "541169",
       "t": "Sistec-GNET - HU-058 - Consultas Avanzadas",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3580,10 +3580,10 @@
     {
       "i": "541172",
       "t": "Sistec-GNET - HU-059 - Administrar memorando de discusión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3591,10 +3591,10 @@
     {
       "i": "541175",
       "t": "Sistec-GNET - HU-060 - Consultar memorando de discusión",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3602,10 +3602,10 @@
     {
       "i": "541178",
       "t": "Sistec-GNET - HU-061 - Gestionar las clasificaciones de las NT-ET",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3613,10 +3613,10 @@
     {
       "i": "541181",
       "t": "Sistec-GNET - HU-062 - Gestionar los Anexos subidos al sistema",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3624,10 +3624,10 @@
     {
       "i": "541184",
       "t": "Sistec-GNET - HU-063 - Asociar lista de chequeo a norma",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -3635,10 +3635,10 @@
     {
       "i": "541187",
       "t": "Sistec-GNET - HU-001 - Verificar Solicitud",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "540997",
       "ep": "539569",
       "r": "Yuly Andrea Rodriguez Vela"
@@ -4622,7 +4622,7 @@
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
     "pct_global": 0.738,
-    "term_global": 282,
+    "term_global": 397,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 0,
@@ -4630,35 +4630,35 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.9085,
-    "estrategico": 0.85,
+    "tactico": 1.0,
+    "estrategico": 1.0,
     "n": 20,
-    "d": 17,
+    "d": 20,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 20,
-    "feat_ent": 17,
+    "feat_ent": 20,
     "hu_total": 397,
     "buckets": {
-      "100": 282,
+      "100": 397,
       "75": 0,
       "50": 0,
-      "20": 66,
-      "0": 49
+      "20": 0,
+      "0": 0
     },
     "hu_buckets": {
-      "100": 282,
+      "100": 397,
       "75": 0,
       "50": 0,
-      "20": 66,
-      "0": 49
+      "20": 0,
+      "0": 0
     },
     "feat_buckets": {
-      "100": 17,
-      "75": 1,
+      "100": 20,
+      "75": 0,
       "50": 0,
-      "20": 1,
-      "0": 1
+      "20": 0,
+      "0": 0
     }
   }
 }

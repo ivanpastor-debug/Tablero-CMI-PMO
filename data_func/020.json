@@ -1,8 +1,8 @@
 {
   "codigo": "020",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_020_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_020_20261113.csv",
   "epics": [
     {
       "i": "525431",
@@ -10,15 +10,15 @@
       "n_f": 5,
       "n": 59,
       "term": 47,
-      "pct": 0.8831
+      "pct": 0.8932
     },
     {
       "i": "525428",
       "t": "SOPORTE",
       "n_f": 2,
       "n": 24,
-      "term": 18,
-      "pct": 0.8625
+      "term": 19,
+      "pct": 0.9208
     },
     {
       "i": "561213",
@@ -38,7 +38,7 @@
       "ept": "OPERACIÓN",
       "n": 20,
       "term": 17,
-      "pct": 0.88,
+      "pct": 0.895,
       "n_pct": 20
     },
     {
@@ -48,8 +48,8 @@
       "ep": "525428",
       "ept": "SOPORTE",
       "n": 20,
-      "term": 15,
-      "pct": 0.845,
+      "term": 16,
+      "pct": 0.915,
       "n_pct": 20
     },
     {
@@ -71,7 +71,7 @@
       "ept": "OPERACIÓN",
       "n": 13,
       "term": 10,
-      "pct": 0.8615,
+      "pct": 0.8846,
       "n_pct": 13
     },
     {
@@ -838,10 +838,10 @@
     {
       "i": "552954",
       "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO SCG POBLACIÓN",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "527697",
       "ep": "525428",
       "r": "daniel.hernandez wimbu.co"
@@ -1047,10 +1047,10 @@
     {
       "i": "563802",
       "t": "HU_001_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO IBNR",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527697",
       "ep": "525428",
       "r": "daniel.hernandez wimbu.co"
@@ -1058,10 +1058,10 @@
     {
       "i": "563808",
       "t": "HU_002_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO INVENTARIO DE EMPRESAS",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527697",
       "ep": "525428",
       "r": "daniel.hernandez wimbu.co"
@@ -1069,10 +1069,10 @@
     {
       "i": "563814",
       "t": "HU_003_ID_020_PROCESO DE DOCUMENTACIÓN EN GIT – MODELO SINIESTRALIDAD Y CONSTITUCIONES",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527697",
       "ep": "525428",
       "r": "jair.vargas wimbu.co"
@@ -1080,10 +1080,10 @@
     {
       "i": "563820",
       "t": "HU_004_ID_020_AJUSTES FUENTES TABLERO MUSA – PARTICIONAMIENTO Y CLUSTERIZACIÓN",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527007",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -1091,10 +1091,10 @@
     {
       "i": "563826",
       "t": "HU_005_ID_020_CIERRES MENSUALES – PARAMETRIZACIÓN DE LA FECHA DE CORTE",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "527006",
       "ep": "525431",
       "r": "jair.vargas wimbu.co"
@@ -1164,8 +1164,8 @@
     "n_feature_con_hu": 8,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8891,
-    "term_global": 74,
+    "pct_global": 0.9109,
+    "term_global": 75,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 0,
@@ -1173,7 +1173,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.849,
+    "tactico": 0.8609,
     "estrategico": 0.125,
     "n": 8,
     "d": 1,
@@ -1183,18 +1183,18 @@
     "feat_ent": 1,
     "hu_total": 90,
     "buckets": {
-      "100": 72,
+      "100": 73,
       "75": 0,
       "50": 6,
-      "20": 2,
-      "0": 10
+      "20": 6,
+      "0": 5
     },
     "hu_buckets": {
-      "100": 72,
+      "100": 73,
       "75": 0,
       "50": 6,
-      "20": 2,
-      "0": 10
+      "20": 6,
+      "0": 5
     },
     "feat_buckets": {
       "100": 1,

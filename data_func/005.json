@@ -1,8 +1,8 @@
 {
   "codigo": "005",
-  "corte": "2026-11-11",
-  "generado": "2026-11-11 09:10",
-  "archivo": "HU_005_20261111.csv",
+  "corte": "2026-11-13",
+  "generado": "2026-11-13 08:35",
+  "archivo": "HU_005_20261113.csv",
   "epics": [
     {
       "i": "153",
@@ -10,7 +10,7 @@
       "n_f": 43,
       "n": 123,
       "term": 119,
-      "pct": 0.9926
+      "pct": 0.9934
     },
     {
       "i": "82",
@@ -18,37 +18,21 @@
       "n_f": 15,
       "n": 60,
       "term": 30,
-      "pct": 0.7621
+      "pct": 0.7604
     },
     {
       "i": "578",
       "t": "Deuda Técnica y Contractual",
       "n_f": 2,
       "n": 57,
-      "term": 4,
-      "pct": 0.4624
+      "term": 5,
+      "pct": 0.482
     },
     {
       "i": "568",
       "t": "Épica de gestión",
       "n_f": 1,
       "n": 6,
-      "term": 0,
-      "pct": null
-    },
-    {
-      "i": "79",
-      "t": "Prueba",
-      "n_f": 1,
-      "n": 1,
-      "term": 0,
-      "pct": null
-    },
-    {
-      "i": "_sin_frente",
-      "t": "(sin frente)",
-      "n_f": 1,
-      "n": 1,
       "term": 0,
       "pct": null
     }
@@ -62,7 +46,7 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.3933,
+      "pct": 0.4191,
       "n_pct": 33
     },
     {
@@ -72,8 +56,8 @@
       "ep": "578",
       "ept": "Deuda Técnica y Contractual",
       "n": 21,
-      "term": 3,
-      "pct": 0.5889,
+      "term": 4,
+      "pct": 0.5972,
       "n_pct": 18
     },
     {
@@ -451,17 +435,6 @@
       "n_pct": 2
     },
     {
-      "i": "80",
-      "t": "Prueba",
-      "e": "Removed",
-      "ep": "79",
-      "ept": "Prueba",
-      "n": 1,
-      "term": 0,
-      "pct": null,
-      "n_pct": 0
-    },
-    {
       "i": "125",
       "t": "Agente de extracción de información IA 2",
       "e": "New",
@@ -482,17 +455,6 @@
       "term": 1,
       "pct": 1.0,
       "n_pct": 1
-    },
-    {
-      "i": "576",
-      "t": "Prueba para ver campos obligatorios",
-      "e": "New",
-      "ep": "_sin_frente",
-      "ept": "(sin frente)",
-      "n": 1,
-      "term": 0,
-      "pct": null,
-      "n_pct": 0
     },
     {
       "i": "120",
@@ -557,7 +519,7 @@
       "ept": "NP - Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": 0.6,
+      "pct": 0.5,
       "n_pct": 1
     },
     {
@@ -590,7 +552,7 @@
       "ept": "Deuda",
       "n": 1,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.6,
       "n_pct": 1
     },
     {
@@ -749,17 +711,6 @@
     }
   ],
   "hus": [
-    {
-      "i": "81",
-      "t": "Prueba",
-      "e": "Removed",
-      "p": "",
-      "a": 1,
-      "v": null,
-      "f": "80",
-      "ep": "79",
-      "r": ""
-    },
     {
       "i": "117",
       "t": "HU-AYU-001 - Centro de Ayuda: consulta y descarga de manuales (PDF)",
@@ -1168,17 +1119,6 @@
       "r": "Dario Lopez"
     },
     {
-      "i": "577",
-      "t": "Prueba para ver campos obligatorios",
-      "e": "New",
-      "p": "",
-      "a": 1,
-      "v": null,
-      "f": "576",
-      "ep": "_sin_frente",
-      "r": "Jhonatan Rocha"
-    },
-    {
       "i": "580",
       "t": "Desacople por bandera de los endpoints de radicación",
       "e": "10. En Producción",
@@ -1258,10 +1198,10 @@
     {
       "i": "587",
       "t": "Inventario de jobs programados y mecanismos de caché",
-      "e": "8.1 Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "579",
       "ep": "578",
       "r": "Jhonatan Rocha"
@@ -1500,10 +1440,10 @@
     {
       "i": "610",
       "t": "C001-Anexo1-Técnico 5.7.10.",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1544,13 +1484,13 @@
     {
       "i": "614",
       "t": "C001-Anexo1-Técnico 5.8.4.",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.45,
       "f": "601",
       "ep": "578",
-      "r": "Josimar Bonilla"
+      "r": "Angie Hernandez"
     },
     {
       "i": "615",
@@ -1566,10 +1506,10 @@
     {
       "i": "616",
       "t": "C001-Anexo1-Técnico 5.9.4.",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1577,13 +1517,13 @@
     {
       "i": "617",
       "t": "C001-Anexo1-Técnico 5.9.5.",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Mery Rojas"
     },
     {
       "i": "618",
@@ -1599,13 +1539,13 @@
     {
       "i": "619",
       "t": "C001-Anexo1-Técnico 5.9.8.",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Jorge Barragan"
+      "r": "Angie Hernandez"
     },
     {
       "i": "620",
@@ -1643,13 +1583,13 @@
     {
       "i": "623",
       "t": "C001-Anexo1-Técnico 5.10.9.",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Jorge Barragan"
+      "r": "Angie Hernandez"
     },
     {
       "i": "624",
@@ -1928,7 +1868,7 @@
     },
     {
       "i": "1521",
-      "t": "Ejecución y seguimiento de actividades de Lider Funcional",
+      "t": "Gestion Lider funcional",
       "e": "New",
       "p": "",
       "a": 1,
@@ -1946,7 +1886,7 @@
       "v": null,
       "f": "1462",
       "ep": "568",
-      "r": "jhan.rivero 3tcapital.co"
+      "r": ""
     },
     {
       "i": "1609",
@@ -2072,10 +2012,10 @@
     {
       "i": "1994",
       "t": "Pago de comisión - Facturación Administrativa",
-      "e": "7.1 Pruebas QA",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.5,
       "f": "1993",
       "ep": "82",
       "r": "Angie Hernandez"
@@ -2424,10 +2364,10 @@
     {
       "i": "2269",
       "t": "348_ARCHIVO_HU-EXP-002 Gestionar expediente",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "2268",
       "ep": "153",
       "r": "Esteban Pallares"
@@ -3498,55 +3438,66 @@
       "f": "84",
       "ep": "82",
       "r": ""
+    },
+    {
+      "i": "3185",
+      "t": "Cargue de CUFEs por CSV a NumRot desde SGDEA (lotes de 10.000)",
+      "e": "7. Backlog QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.5,
+      "f": null,
+      "ep": null,
+      "r": "Angie Hernandez"
     }
   ],
   "kpi": {
-    "n_hu": 250,
-    "n_hu_activas": 249,
-    "hu_sin_feature": 1,
-    "n_feature": 63,
-    "n_epic": 6,
-    "n_feature_con_hu": 63,
+    "n_hu": 249,
+    "n_hu_activas": 248,
+    "hu_sin_feature": 2,
+    "n_feature": 61,
+    "n_epic": 4,
+    "n_feature_con_hu": 61,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8171,
-    "term_global": 153,
-    "feature_sin_frente": 1,
-    "hu_sin_frente": 1,
+    "pct_global": 0.8201,
+    "term_global": 154,
+    "feature_sin_frente": 0,
+    "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 5,
-    "feature_estado_ajeno": 18,
+    "feature_estado_ajeno": 16,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.7472,
-    "estrategico": 0.6984,
-    "n": 63,
+    "tactico": 0.7723,
+    "estrategico": 0.7213,
+    "n": 61,
     "d": 44,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 63,
+    "feat_total": 61,
     "feat_ent": 44,
-    "hu_total": 248,
+    "hu_total": 246,
     "buckets": {
-      "100": 153,
+      "100": 154,
       "75": 10,
       "50": 0,
       "20": 26,
-      "0": 59
+      "0": 56
     },
     "hu_buckets": {
-      "100": 153,
+      "100": 154,
       "75": 10,
       "50": 0,
       "20": 26,
-      "0": 59
+      "0": 56
     },
     "feat_buckets": {
       "100": 44,
       "75": 2,
       "50": 0,
       "20": 6,
-      "0": 11
+      "0": 9
     }
   }
 }
