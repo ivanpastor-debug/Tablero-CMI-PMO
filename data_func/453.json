@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:25",
-  "archivo": "snapshot HU + Feature (HU_453_20261113.csv)",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 15:56",
+  "archivo": "snapshot HU + Feature (HU_453_20261117.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -172,15 +172,15 @@
       "n": "Sprint III",
       "hito": null,
       "sem": "sin_hito",
-      "n_hu": 116,
+      "n_hu": 147,
       "term": 0,
-      "pct": 0.2044,
-      "pct_hu": 0.2044,
-      "n_pct": 116,
-      "n_cu": 13,
+      "pct": 0.1885,
+      "pct_hu": 0.1885,
+      "n_pct": 147,
+      "n_cu": 14,
       "term_cu": 0,
-      "pct_cu": 0.125,
-      "n_cu_pct": 13
+      "pct_cu": 0.1179,
+      "n_cu_pct": 14
     },
     {
       "k": "otra:sprint pedagogico",
@@ -207,10 +207,10 @@
       "pct": 0.9375,
       "pct_hu": 0.9375,
       "n_pct": 12,
-      "n_cu": 8,
+      "n_cu": 10,
       "term_cu": 0,
-      "pct_cu": 0.255,
-      "n_cu_pct": 5
+      "pct_cu": 0.1893,
+      "n_cu_pct": 7
     }
   ],
   "focos": [
@@ -225,20 +225,20 @@
         "nota": "Hito reprogramado al 24/10/2026 (base: 30/07/2026)"
       },
       "peso": 0.4,
-      "aporte": 0.3433,
+      "aporte": 0.3428,
       "sem": "en_curso",
-      "n_hu": 327,
+      "n_hu": 328,
       "term": 7,
-      "pct": 0.8583,
-      "pct_hu": 0.8583,
-      "n_pct": 327,
-      "n_hu_todas": 380,
-      "n_cu": 44,
-      "n_cu_medibles": 40,
+      "pct": 0.8569,
+      "pct_hu": 0.8569,
+      "n_pct": 328,
+      "n_hu_todas": 381,
+      "n_cu": 47,
+      "n_cu_medibles": 43,
       "term_cu": 29,
-      "pct_cu": 0.8238,
+      "pct_cu": 0.768,
       "peso_num": 0.4,
-      "aporte_cu": 0.3295
+      "aporte_cu": 0.3072
     },
     {
       "k": "B",
@@ -279,12 +279,12 @@
       "peso": 0.15,
       "aporte": 0.018,
       "sem": "en_curso",
-      "n_hu": 256,
+      "n_hu": 286,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 256,
-      "n_hu_todas": 260,
+      "n_pct": 286,
+      "n_hu_todas": 290,
       "n_cu": 32,
       "n_cu_medibles": 31,
       "term_cu": 0,
@@ -471,11 +471,11 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Julio Cesar Manosalva Campos",
-      "n": 14,
+      "n": 15,
       "term": 0,
-      "pct": 0.4929,
-      "pct_hu": 0.4929,
-      "n_pct": 14,
+      "pct": 0.4867,
+      "pct_hu": 0.4867,
+      "n_pct": 15,
       "its": [
         "otra:sprint iii"
       ],
@@ -1201,13 +1201,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 4,
+      "n": 5,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 4,
+      "n_pct": 5,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1224,13 +1225,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 9,
+      "n": 10,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 9,
+      "n_pct": 10,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1247,13 +1249,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 6,
+      "n": 7,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 6,
+      "n_pct": 7,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1270,13 +1273,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 8,
+      "n": 9,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 8,
+      "n_pct": 9,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1293,13 +1297,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 8,
+      "n": 9,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 8,
+      "n_pct": 9,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1316,13 +1321,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 14,
+      "n": 15,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 14,
+      "n_pct": 15,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1339,13 +1345,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 19,
+      "n": 20,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 19,
+      "n_pct": 20,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1362,13 +1369,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 8,
+      "n": 9,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 8,
+      "n_pct": 9,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1385,13 +1393,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 11,
+      "n": 12,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 11,
+      "n_pct": 12,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1408,13 +1417,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 8,
+      "n": 9,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 8,
+      "n_pct": 9,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1431,13 +1441,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 15,
+      "n": 16,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 15,
+      "n_pct": 16,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1454,13 +1465,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 15,
+      "n": 16,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 15,
+      "n_pct": 16,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1477,13 +1489,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 12,
+      "n": 13,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 12,
+      "n_pct": 13,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1500,13 +1513,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 10,
+      "n": 11,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 10,
+      "n_pct": 11,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1523,13 +1537,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 4,
+      "n": 5,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 4,
+      "n_pct": 5,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1546,13 +1561,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 6,
+      "n": 7,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 6,
+      "n_pct": 7,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1569,13 +1585,14 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 6,
+      "n": 7,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 6,
+      "n_pct": 7,
       "its": [
-        "otra:sprint ii"
+        "otra:sprint ii",
+        "otra:sprint iii"
       ],
       "fs": [
         "C"
@@ -1592,11 +1609,11 @@
       "it": "otra:sprint iii",
       "itn": "Sprint III",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 10,
+      "n": 11,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 10,
+      "n_pct": 11,
       "its": [
         "otra:sprint iii"
       ],
@@ -1615,11 +1632,11 @@
       "it": "otra:sprint iii",
       "itn": "Sprint III",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 7,
+      "n": 8,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 7,
+      "n_pct": 8,
       "its": [
         "otra:sprint iii"
       ],
@@ -1631,121 +1648,6 @@
     {
       "i": "539729",
       "t": "CU_SME_ENC_020_Descargar_Aplicacion_AWP",
-      "e": "2. En aprobacion",
-      "ei": "05. En elaboración Escenarios",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.125,
-      "it": "otra:sprint iii",
-      "itn": "Sprint III",
-      "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 5,
-      "term": 0,
-      "pct": 0.12,
-      "pct_hu": 0.12,
-      "n_pct": 5,
-      "its": [
-        "otra:sprint iii"
-      ],
-      "fs": [
-        "C"
-      ],
-      "fp": ""
-    },
-    {
-      "i": "502089",
-      "t": "CU_SME_ENC_021_Diligenciar_Encuesta_Offline",
-      "e": "2. En aprobacion",
-      "ei": "05. En elaboración Escenarios",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.125,
-      "it": "otra:sprint iii",
-      "itn": "Sprint III",
-      "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 9,
-      "term": 0,
-      "pct": 0.12,
-      "pct_hu": 0.12,
-      "n_pct": 9,
-      "its": [
-        "otra:sprint iii"
-      ],
-      "fs": [
-        "C"
-      ],
-      "fp": ""
-    },
-    {
-      "i": "502091",
-      "t": "CU_SME_ENC_022_Sincronizar_Respuestas_Offline",
-      "e": "2. En aprobacion",
-      "ei": "05. En elaboración Escenarios",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.125,
-      "it": "otra:sprint iii",
-      "itn": "Sprint III",
-      "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 7,
-      "term": 0,
-      "pct": 0.12,
-      "pct_hu": 0.12,
-      "n_pct": 7,
-      "its": [
-        "otra:sprint iii"
-      ],
-      "fs": [
-        "C"
-      ],
-      "fp": ""
-    },
-    {
-      "i": "539730",
-      "t": "CU_SME_ENC_023_Diligenciar_Aplicacion_Online_a_Nombre_de_un_Tercero",
-      "e": "2. En aprobacion",
-      "ei": "05. En elaboración Escenarios",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.125,
-      "it": "otra:sprint iii",
-      "itn": "Sprint III",
-      "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 3,
-      "term": 0,
-      "pct": 0.12,
-      "pct_hu": 0.12,
-      "n_pct": 3,
-      "its": [
-        "otra:sprint iii"
-      ],
-      "fs": [
-        "C"
-      ],
-      "fp": ""
-    },
-    {
-      "i": "539731",
-      "t": "CU_SME_ENC_024_Diligenciar_Aplicacion_Offline_a_Nombre_de_un_Tercero",
-      "e": "2. En aprobacion",
-      "ei": "05. En elaboración Escenarios",
-      "proc_cu": "REQUERIMIENTOS",
-      "pct_cu": 0.125,
-      "it": "otra:sprint iii",
-      "itn": "Sprint III",
-      "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 3,
-      "term": 0,
-      "pct": 0.12,
-      "pct_hu": 0.12,
-      "n_pct": 3,
-      "its": [
-        "otra:sprint iii"
-      ],
-      "fs": [
-        "C"
-      ],
-      "fp": ""
-    },
-    {
-      "i": "493611",
-      "t": "CU_SME_ENC_025_Consultar_Encuestas_Estadisticas",
       "e": "2. En aprobacion",
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
@@ -1767,8 +1669,8 @@
       "fp": ""
     },
     {
-      "i": "539732",
-      "t": "CU_SME_ENC_026_Consultar_Aplicaciones_con_sus_Respuestas",
+      "i": "502089",
+      "t": "CU_SME_ENC_021_Diligenciar_Encuesta_Offline",
       "e": "2. En aprobacion",
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
@@ -1776,11 +1678,11 @@
       "it": "otra:sprint iii",
       "itn": "Sprint III",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 9,
+      "n": 10,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 9,
+      "n_pct": 10,
       "its": [
         "otra:sprint iii"
       ],
@@ -1790,8 +1692,8 @@
       "fp": ""
     },
     {
-      "i": "502093",
-      "t": "CU_SME_ENC_027_Ver_Respuestas_de_Encuestas_Diligenciadas",
+      "i": "502091",
+      "t": "CU_SME_ENC_022_Sincronizar_Respuestas_Offline",
       "e": "2. En aprobacion",
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
@@ -1813,8 +1715,54 @@
       "fp": ""
     },
     {
-      "i": "502094",
-      "t": "CU_SME_ENC_028_Ver_Reporte_Monitoreo_Encuesta",
+      "i": "539730",
+      "t": "CU_SME_ENC_023_Diligenciar_Aplicacion_Online_a_Nombre_de_un_Tercero",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra",
+      "n": 4,
+      "term": 0,
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 4,
+      "its": [
+        "otra:sprint iii"
+      ],
+      "fs": [
+        "C"
+      ],
+      "fp": ""
+    },
+    {
+      "i": "539731",
+      "t": "CU_SME_ENC_024_Diligenciar_Aplicacion_Offline_a_Nombre_de_un_Tercero",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra",
+      "n": 4,
+      "term": 0,
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 4,
+      "its": [
+        "otra:sprint iii"
+      ],
+      "fs": [
+        "C"
+      ],
+      "fp": ""
+    },
+    {
+      "i": "493611",
+      "t": "CU_SME_ENC_025_Consultar_Encuestas_Estadisticas",
       "e": "2. En aprobacion",
       "ei": "05. En elaboración Escenarios",
       "proc_cu": "REQUERIMIENTOS",
@@ -1836,6 +1784,75 @@
       "fp": ""
     },
     {
+      "i": "539732",
+      "t": "CU_SME_ENC_026_Consultar_Aplicaciones_con_sus_Respuestas",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra",
+      "n": 10,
+      "term": 0,
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 10,
+      "its": [
+        "otra:sprint iii"
+      ],
+      "fs": [
+        "C"
+      ],
+      "fp": ""
+    },
+    {
+      "i": "502093",
+      "t": "CU_SME_ENC_027_Ver_Respuestas_de_Encuestas_Diligenciadas",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra",
+      "n": 9,
+      "term": 0,
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 9,
+      "its": [
+        "otra:sprint iii"
+      ],
+      "fs": [
+        "C"
+      ],
+      "fp": ""
+    },
+    {
+      "i": "502094",
+      "t": "CU_SME_ENC_028_Ver_Reporte_Monitoreo_Encuesta",
+      "e": "2. En aprobacion",
+      "ei": "05. En elaboración Escenarios",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.125,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra",
+      "n": 8,
+      "term": 0,
+      "pct": 0.12,
+      "pct_hu": 0.12,
+      "n_pct": 8,
+      "its": [
+        "otra:sprint iii"
+      ],
+      "fs": [
+        "C"
+      ],
+      "fp": ""
+    },
+    {
       "i": "539733",
       "t": "CU_SME_ENC_029_Consultar_Comparativo_de_Aplicaciones",
       "e": "2. En aprobacion",
@@ -1845,11 +1862,11 @@
       "it": "otra:sprint iii",
       "itn": "Sprint III",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 2,
+      "n": 3,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 2,
+      "n_pct": 3,
       "its": [
         "otra:sprint iii"
       ],
@@ -1868,11 +1885,11 @@
       "it": "otra:sprint iii",
       "itn": "Sprint III",
       "r": "Cristian Eduardo Lopez bocanegra",
-      "n": 17,
+      "n": 18,
       "term": 0,
       "pct": 0.12,
       "pct_hu": 0.12,
-      "n_pct": 17,
+      "n_pct": 18,
       "its": [
         "otra:sprint iii"
       ],
@@ -1933,6 +1950,69 @@
       "it": "__sin__",
       "itn": "Sin iteración",
       "r": "Andrés Hernandez",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "567659",
+      "t": "Documentación Ciberseguridad",
+      "e": "2. En Curso",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Marcela Navarro Muñoz",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "567565",
+      "t": "Documentación Infraestructura",
+      "e": "2. En Curso",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Marcela Navarro Muñoz",
+      "n": 0,
+      "term": 0,
+      "pct": null,
+      "pct_hu": null,
+      "n_pct": 0,
+      "its": [],
+      "fs": [
+        "A"
+      ],
+      "fp": "A"
+    },
+    {
+      "i": "567559",
+      "t": "Documentación de arquitectura",
+      "e": "2. En Curso",
+      "ei": "00. En levantamiento/entendimiento",
+      "proc_cu": "REQUERIMIENTOS",
+      "pct_cu": 0.025,
+      "it": "__sin__",
+      "itn": "Sin iteración",
+      "r": "Marcela Navarro Muñoz",
       "n": 0,
       "term": 0,
       "pct": null,
@@ -7052,7 +7132,7 @@
       "cu": "493606",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552417",
@@ -7065,7 +7145,7 @@
       "cu": "493606",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552418",
@@ -7078,7 +7158,7 @@
       "cu": "493606",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552419",
@@ -7091,7 +7171,7 @@
       "cu": "493606",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552420",
@@ -7104,7 +7184,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552421",
@@ -7117,7 +7197,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552422",
@@ -7130,7 +7210,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552423",
@@ -7143,7 +7223,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552424",
@@ -7156,7 +7236,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552425",
@@ -7169,7 +7249,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552426",
@@ -7182,7 +7262,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552427",
@@ -7195,7 +7275,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552428",
@@ -7208,7 +7288,7 @@
       "cu": "539713",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552430",
@@ -7221,7 +7301,7 @@
       "cu": "493693",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552431",
@@ -7234,7 +7314,7 @@
       "cu": "493693",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552432",
@@ -7247,7 +7327,7 @@
       "cu": "493693",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552433",
@@ -7260,7 +7340,7 @@
       "cu": "493693",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552434",
@@ -7273,7 +7353,7 @@
       "cu": "493693",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552435",
@@ -7286,7 +7366,7 @@
       "cu": "493693",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552436",
@@ -7299,7 +7379,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552437",
@@ -7312,7 +7392,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552438",
@@ -7325,7 +7405,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552439",
@@ -7338,7 +7418,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552440",
@@ -7351,7 +7431,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552442",
@@ -7364,7 +7444,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552443",
@@ -7377,7 +7457,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552444",
@@ -7390,7 +7470,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552445",
@@ -7403,7 +7483,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552446",
@@ -7416,7 +7496,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552447",
@@ -7429,7 +7509,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552448",
@@ -7442,7 +7522,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552449",
@@ -7455,7 +7535,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552451",
@@ -7468,7 +7548,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552452",
@@ -7481,7 +7561,7 @@
       "cu": "539716",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552453",
@@ -7494,7 +7574,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552454",
@@ -7507,7 +7587,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552455",
@@ -7520,7 +7600,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552457",
@@ -7533,7 +7613,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552458",
@@ -7546,7 +7626,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552459",
@@ -7559,7 +7639,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552460",
@@ -7572,7 +7652,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552461",
@@ -7585,7 +7665,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552462",
@@ -7598,7 +7678,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552463",
@@ -7611,7 +7691,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552464",
@@ -7624,7 +7704,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552465",
@@ -7637,7 +7717,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552467",
@@ -7650,7 +7730,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552468",
@@ -7663,7 +7743,7 @@
       "cu": "493696",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552469",
@@ -7676,7 +7756,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552470",
@@ -7689,7 +7769,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552471",
@@ -7702,7 +7782,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552472",
@@ -7715,7 +7795,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552473",
@@ -7728,7 +7808,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552474",
@@ -7741,7 +7821,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552475",
@@ -7754,7 +7834,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552476",
@@ -7767,7 +7847,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552479",
@@ -7780,7 +7860,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552480",
@@ -7793,7 +7873,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552481",
@@ -7806,7 +7886,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552482",
@@ -7819,7 +7899,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552484",
@@ -7832,7 +7912,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552485",
@@ -7845,7 +7925,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552486",
@@ -7858,7 +7938,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552487",
@@ -7871,7 +7951,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552488",
@@ -7884,7 +7964,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552489",
@@ -7897,7 +7977,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552491",
@@ -7910,7 +7990,7 @@
       "cu": "539717",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552492",
@@ -7923,7 +8003,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552493",
@@ -7936,7 +8016,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552494",
@@ -7949,7 +8029,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552495",
@@ -7962,7 +8042,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552496",
@@ -7975,7 +8055,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552497",
@@ -7988,7 +8068,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552498",
@@ -8001,7 +8081,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552499",
@@ -8014,7 +8094,7 @@
       "cu": "539719",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552500",
@@ -8027,7 +8107,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552501",
@@ -8040,7 +8120,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552502",
@@ -8053,7 +8133,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552503",
@@ -8066,7 +8146,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552504",
@@ -8079,7 +8159,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552505",
@@ -8092,7 +8172,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552506",
@@ -8105,7 +8185,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552507",
@@ -8118,7 +8198,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552508",
@@ -8131,7 +8211,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552509",
@@ -8144,7 +8224,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552510",
@@ -8157,7 +8237,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552511",
@@ -8170,7 +8250,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552512",
@@ -8183,7 +8263,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552513",
@@ -8196,7 +8276,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552514",
@@ -8209,7 +8289,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552515",
@@ -8222,7 +8302,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552516",
@@ -8235,7 +8315,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552517",
@@ -8248,7 +8328,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552518",
@@ -8261,7 +8341,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552519",
@@ -8274,7 +8354,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552520",
@@ -8287,7 +8367,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552521",
@@ -8300,7 +8380,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552522",
@@ -8313,7 +8393,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552523",
@@ -8326,7 +8406,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552524",
@@ -8339,7 +8419,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552525",
@@ -8352,7 +8432,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552527",
@@ -8365,7 +8445,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552528",
@@ -8378,7 +8458,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552529",
@@ -8391,7 +8471,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552530",
@@ -8404,7 +8484,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552531",
@@ -8417,7 +8497,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552532",
@@ -8430,7 +8510,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "552533",
@@ -8443,7 +8523,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "553118",
@@ -8456,7 +8536,7 @@
       "cu": "539714",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "553120",
@@ -8469,7 +8549,7 @@
       "cu": "539720",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "553122",
@@ -8482,7 +8562,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556226",
@@ -8495,7 +8575,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556229",
@@ -8508,7 +8588,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556230",
@@ -8521,7 +8601,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556231",
@@ -8534,7 +8614,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556232",
@@ -8547,7 +8627,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556233",
@@ -8560,7 +8640,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556234",
@@ -8573,7 +8653,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556235",
@@ -8586,7 +8666,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556236",
@@ -8599,7 +8679,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556237",
@@ -8612,7 +8692,7 @@
       "cu": "539724",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556238",
@@ -8625,7 +8705,7 @@
       "cu": "539725",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556239",
@@ -8638,7 +8718,7 @@
       "cu": "539725",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556240",
@@ -8651,7 +8731,7 @@
       "cu": "539725",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556241",
@@ -8664,7 +8744,7 @@
       "cu": "539725",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556242",
@@ -8677,7 +8757,7 @@
       "cu": "539726",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556243",
@@ -8690,7 +8770,7 @@
       "cu": "539726",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556244",
@@ -8703,7 +8783,7 @@
       "cu": "539726",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556245",
@@ -8716,7 +8796,7 @@
       "cu": "539726",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556246",
@@ -8729,7 +8809,7 @@
       "cu": "539726",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556247",
@@ -8742,7 +8822,7 @@
       "cu": "539726",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556248",
@@ -8755,7 +8835,7 @@
       "cu": "539727",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556249",
@@ -8768,7 +8848,7 @@
       "cu": "539727",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556250",
@@ -8781,7 +8861,7 @@
       "cu": "539727",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556251",
@@ -8794,7 +8874,7 @@
       "cu": "539727",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556252",
@@ -8807,7 +8887,7 @@
       "cu": "539727",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "556253",
@@ -8820,7 +8900,7 @@
       "cu": "539727",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558201",
@@ -8833,7 +8913,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558208",
@@ -8846,7 +8926,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558209",
@@ -8859,7 +8939,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558210",
@@ -8872,7 +8952,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558211",
@@ -8885,7 +8965,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558212",
@@ -8898,7 +8978,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558213",
@@ -8911,7 +8991,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558214",
@@ -8924,7 +9004,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558215",
@@ -8937,7 +9017,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558216",
@@ -8950,7 +9030,7 @@
       "cu": "539728",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558217",
@@ -8963,7 +9043,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558218",
@@ -8976,7 +9056,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558219",
@@ -8989,7 +9069,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558220",
@@ -9002,7 +9082,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558221",
@@ -9015,7 +9095,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558222",
@@ -9028,7 +9108,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558223",
@@ -9041,7 +9121,7 @@
       "cu": "502088",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558224",
@@ -9054,7 +9134,7 @@
       "cu": "539729",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558225",
@@ -9067,7 +9147,7 @@
       "cu": "539729",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558226",
@@ -9080,7 +9160,7 @@
       "cu": "539729",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558227",
@@ -9093,7 +9173,7 @@
       "cu": "539729",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "558228",
@@ -9106,7 +9186,7 @@
       "cu": "539729",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559757",
@@ -9119,7 +9199,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559759",
@@ -9132,7 +9212,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559760",
@@ -9145,7 +9225,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559761",
@@ -9158,7 +9238,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559763",
@@ -9171,7 +9251,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559765",
@@ -9184,7 +9264,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559766",
@@ -9197,7 +9277,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559767",
@@ -9210,7 +9290,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "559769",
@@ -9223,7 +9303,7 @@
       "cu": "502089",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560037",
@@ -9236,7 +9316,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560038",
@@ -9249,7 +9329,7 @@
       "cu": "539730",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560039",
@@ -9262,7 +9342,7 @@
       "cu": "539731",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560040",
@@ -9275,7 +9355,7 @@
       "cu": "493611",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560047",
@@ -9288,7 +9368,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560048",
@@ -9301,7 +9381,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560049",
@@ -9327,7 +9407,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560051",
@@ -9340,7 +9420,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560052",
@@ -9353,7 +9433,7 @@
       "cu": "539730",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560053",
@@ -9366,7 +9446,7 @@
       "cu": "539730",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560054",
@@ -9379,7 +9459,7 @@
       "cu": "539731",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560055",
@@ -9392,7 +9472,7 @@
       "cu": "493611",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560056",
@@ -9405,7 +9485,7 @@
       "cu": "493611",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560057",
@@ -9418,7 +9498,7 @@
       "cu": "493611",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560058",
@@ -9431,7 +9511,7 @@
       "cu": "493611",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "560059",
@@ -9444,7 +9524,7 @@
       "cu": "493611",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561767",
@@ -9457,7 +9537,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561768",
@@ -9470,7 +9550,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561769",
@@ -9483,7 +9563,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561770",
@@ -9509,7 +9589,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561775",
@@ -9522,7 +9602,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561776",
@@ -9535,7 +9615,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561777",
@@ -9548,7 +9628,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561778",
@@ -9561,7 +9641,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561779",
@@ -9574,7 +9654,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561780",
@@ -9587,7 +9667,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561781",
@@ -9600,7 +9680,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561782",
@@ -9613,7 +9693,7 @@
       "cu": "539732",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561783",
@@ -9626,7 +9706,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561784",
@@ -9639,7 +9719,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561785",
@@ -9652,7 +9732,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561786",
@@ -9665,7 +9745,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561787",
@@ -9678,7 +9758,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561788",
@@ -9691,7 +9771,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561789",
@@ -9704,7 +9784,7 @@
       "cu": "502093",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561790",
@@ -9717,7 +9797,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561791",
@@ -9730,7 +9810,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561792",
@@ -9743,7 +9823,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561793",
@@ -9756,7 +9836,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561794",
@@ -9769,7 +9849,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561795",
@@ -9795,7 +9875,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561797",
@@ -9808,7 +9888,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561798",
@@ -9821,7 +9901,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561799",
@@ -9834,7 +9914,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561800",
@@ -9847,7 +9927,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561801",
@@ -9860,7 +9940,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561802",
@@ -9873,7 +9953,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561803",
@@ -9886,7 +9966,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "561804",
@@ -9899,7 +9979,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "562813",
@@ -9977,7 +10057,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563927",
@@ -9990,7 +10070,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563928",
@@ -10003,7 +10083,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563929",
@@ -10016,7 +10096,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563930",
@@ -10029,7 +10109,7 @@
       "cu": "539723",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563932",
@@ -10042,7 +10122,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563933",
@@ -10055,7 +10135,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563934",
@@ -10068,7 +10148,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563935",
@@ -10081,7 +10161,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563936",
@@ -10094,7 +10174,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563937",
@@ -10107,7 +10187,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563938",
@@ -10120,7 +10200,7 @@
       "cu": "539734",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563951",
@@ -10133,7 +10213,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563952",
@@ -10146,7 +10226,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563953",
@@ -10159,7 +10239,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563954",
@@ -10172,7 +10252,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563955",
@@ -10185,7 +10265,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563956",
@@ -10198,7 +10278,7 @@
       "cu": "545822",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563961",
@@ -10211,7 +10291,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563962",
@@ -10224,7 +10304,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563964",
@@ -10237,7 +10317,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563965",
@@ -10250,7 +10330,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563966",
@@ -10263,7 +10343,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563967",
@@ -10276,7 +10356,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563968",
@@ -10289,7 +10369,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563969",
@@ -10302,7 +10382,7 @@
       "cu": "539721",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563971",
@@ -10315,7 +10395,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563972",
@@ -10328,7 +10408,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563974",
@@ -10341,7 +10421,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563975",
@@ -10354,7 +10434,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563976",
@@ -10367,7 +10447,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563977",
@@ -10380,7 +10460,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563978",
@@ -10393,7 +10473,7 @@
       "cu": "502096",
       "it": "otra:sprint ii",
       "itn": "Sprint II",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "563984",
@@ -10406,7 +10486,7 @@
       "cu": "502094",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "566305",
@@ -10419,7 +10499,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "566306",
@@ -10432,7 +10512,7 @@
       "cu": "502091",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
     },
     {
       "i": "566308",
@@ -10445,65 +10525,468 @@
       "cu": "539731",
       "it": "otra:sprint iii",
       "itn": "Sprint III",
-      "r": ""
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567731",
+      "t": "SME_ENC_001_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493606",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567732",
+      "t": "SME_ENC_002_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539713",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567733",
+      "t": "SME_ENC_003_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493693",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567734",
+      "t": "SME_ENC_004_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539714",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567735",
+      "t": "SME_ENC_005_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539716",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567736",
+      "t": "SME_ENC_006_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493696",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567737",
+      "t": "SME_ENC_007_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539717",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567738",
+      "t": "SME_ENC_008_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539719",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567739",
+      "t": "SME_ENC_009_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "545822",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567740",
+      "t": "SME_ENC_010_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539720",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567741",
+      "t": "SME_ENC_011_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539721",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567742",
+      "t": "SME_ENC_012_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502096",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567743",
+      "t": "SME_ENC_013_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539723",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567744",
+      "t": "SME_ENC_014_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539724",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567745",
+      "t": "SME_ENC_015_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539725",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567746",
+      "t": "SME_ENC_016_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539726",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567747",
+      "t": "SME_ENC_017_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539727",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567748",
+      "t": "SME_ENC_018_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539728",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567749",
+      "t": "SME_ENC_019_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502088",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567750",
+      "t": "SME_ENC_020_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539729",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567751",
+      "t": "SME_ENC_021_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502089",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567752",
+      "t": "SME_ENC_022_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502091",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567753",
+      "t": "SME_ENC_023_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539730",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567754",
+      "t": "SME_ENC_024_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539731",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567755",
+      "t": "SME_ENC_025_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "493611",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567756",
+      "t": "SME_ENC_026_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539732",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567757",
+      "t": "SME_ENC_027_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502093",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567758",
+      "t": "SME_ENC_028_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "502094",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567759",
+      "t": "SME_ENC_029_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539733",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "567760",
+      "t": "SME_ENC_030_NF_ScriptNoFuncional",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": "C",
+      "cu": "539734",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Cristian Eduardo Lopez bocanegra"
+    },
+    {
+      "i": "568291",
+      "t": "Desarrollo del proveedor de correo SES elegible por parámetro para el envío de notificaciones de alertas",
+      "e": "6.1 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.4,
+      "f": "A",
+      "cu": "456851",
+      "it": "otra:sprint iii",
+      "itn": "Sprint III",
+      "r": "Oscar Daniel Herrera Peñaloza"
     }
   ],
   "kpi": {
-    "n_cu": 76,
-    "n_cu_medibles": 72,
+    "n_cu": 79,
+    "n_cu_medibles": 75,
     "cu_entregados": 29,
-    "pct_cu_global": 0.5132,
-    "n_hu": 641,
-    "n_hu_activas": 583,
+    "pct_cu_global": 0.4937,
+    "n_hu": 672,
+    "n_hu_activas": 614,
     "hu_sin_cu": 9,
-    "hu_fuera_de_su_cu": 59,
+    "hu_fuera_de_su_cu": 77,
     "sin_iteracion": 12,
     "cu_aprobados": 31,
     "hu_omitidas": 52,
     "focos_activas": {
-      "A": 327,
-      "C": 256
+      "A": 328,
+      "C": 286
     },
     "focos_todas": {
-      "A": 380,
+      "A": 381,
       "B": 1,
-      "C": 260
+      "C": 290
     },
     "cus_activas": {
-      "A": 43,
+      "A": 46,
       "B": 1,
       "C": 31
     },
     "cus_todas": {
-      "A": 44,
+      "A": 47,
       "B": 2,
       "C": 32
     },
     "cu_sin_foco": 0,
     "cu_multi_foco": 1,
     "hu_sin_pct": 0,
-    "pct_global": 0.3613,
-    "pct_global_hu": 0.5341,
+    "pct_global": 0.3608,
+    "pct_global_hu": 0.5136,
     "avance_modo": "peso_foco",
     "term_global": 7
   },
   "cmi": {
-    "tactico": 0.4,
-    "estrategico": 0.3816,
-    "exito": 0.4005,
-    "n": 76,
+    "tactico": 0.3848,
+    "estrategico": 0.3671,
+    "exito": 0.3782,
+    "n": 79,
     "d": 29,
     "u": "casos de uso",
     "isFocos": false,
     "isCus": true,
-    "feat_total": 76,
+    "feat_total": 79,
     "feat_ent": 29,
     "buckets": {
       "100": 29,
       "75": 0,
       "50": 0,
       "20": 7,
-      "0": 40
+      "0": 43
     }
   }
 }

@@ -316,7 +316,9 @@ def main():
     for path in sorted(json_files):
         with open(path, 'r', encoding='utf-8-sig') as f:
             data = json.load(f)
-        cod = data.get('codigo') or os.path.splitext(os.path.basename(path))[0]
+        cod = data.get('codigo') or os.path.splitext(os.path.basename(path))[0]
+        if cod == '453':
+            continue
 
         if cod == '421':
             excluded_epics = ["funcionalidades transversales", "automatización_qa balu", "automatizacion_qa balu"]
@@ -551,6 +553,16 @@ def main():
         k['pct_cu_global'] = av_cu
 
         with open(cpe_file, 'w', encoding='utf-8') as f:
+            json.dump(cpe_data, f, ensure_ascii=False, indent=2)
+
+
+
+        # Guardar también como data_func/453.json para que esté presente en la carpeta correspondiente de proyectos
+
+        f453_in_data_func = os.path.join(data_func_dir, '453.json')
+
+        with open(f453_in_data_func, 'w', encoding='utf-8') as f:
+
             json.dump(cpe_data, f, ensure_ascii=False, indent=2)
 
         index_data.setdefault('proyectos', {})['453'] = {

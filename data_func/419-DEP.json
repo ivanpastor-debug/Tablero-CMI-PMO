@@ -1,16 +1,16 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_419-DEP_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_419-DEP_20261117.csv",
   "epics": [
     {
       "i": "417341",
       "t": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n_f": 27,
-      "n": 212,
+      "n": 211,
       "term": 7,
-      "pct": 0.6142
+      "pct": 0.6185
     },
     {
       "i": "291675",
@@ -24,9 +24,9 @@
       "i": "531917",
       "t": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n_f": 23,
-      "n": 149,
+      "n": 151,
       "term": 3,
-      "pct": 0.4497
+      "pct": 0.449
     },
     {
       "i": "379729",
@@ -169,17 +169,6 @@
       "n_pct": 18
     },
     {
-      "i": "484565",
-      "t": "419_PB_INTEGRACIONES",
-      "e": "3. Entregado",
-      "ep": "417341",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
-      "n": 17,
-      "term": 0,
-      "pct": 0.6176,
-      "n_pct": 17
-    },
-    {
       "i": "387995",
       "t": "419_FT_BAC_PARAMETRIZACION CONTABLE",
       "e": "4. Cerrado",
@@ -199,6 +188,17 @@
       "n": 16,
       "term": 0,
       "pct": 0.6813,
+      "n_pct": 16
+    },
+    {
+      "i": "484565",
+      "t": "419_PB_INTEGRACIONES",
+      "e": "3. Entregado",
+      "ep": "417341",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
+      "n": 16,
+      "term": 0,
+      "pct": 0.6188,
       "n_pct": 16
     },
     {
@@ -572,7 +572,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_7",
       "n": 8,
       "term": 0,
-      "pct": 0.5375,
+      "pct": 0.65,
       "n_pct": 8
     },
     {
@@ -972,6 +972,17 @@
       "n_pct": 6
     },
     {
+      "i": "565852",
+      "t": "SP8_PB_F12_PARAMETRIZACION ORDEN DE PAGO PERMANENTE CREACION Y ACTUALIZACION",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 6,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 6
+    },
+    {
       "i": "318932",
       "t": "419_FT_BAC_ADMINISTRACIÓN_DE_PERMISOS",
       "e": "4. Cerrado",
@@ -1137,17 +1148,6 @@
       "n_pct": 5
     },
     {
-      "i": "565852",
-      "t": "SP8_PB_F12_PARAMETRIZACION ORDEN DE PAGO PERMANENTE CREACION Y ACTUALIZACION",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 5,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 5
-    },
-    {
       "i": "566189",
       "t": "419_PB_REFINAMIENTO_A",
       "e": "1. En Planeacion",
@@ -1222,6 +1222,17 @@
       "n": 4,
       "term": 2,
       "pct": 0.95,
+      "n_pct": 4
+    },
+    {
+      "i": "535145",
+      "t": "PB_INTEGRACIONES",
+      "e": "3. Entregado",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.525,
       "n_pct": 4
     },
     {
@@ -1453,17 +1464,6 @@
       "n": 3,
       "term": 2,
       "pct": 0.9333,
-      "n_pct": 3
-    },
-    {
-      "i": "535145",
-      "t": "PB_INTEGRACIONES",
-      "e": "3. Entregado",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 3,
-      "term": 0,
-      "pct": 0.5,
       "n_pct": 3
     },
     {
@@ -9694,7 +9694,7 @@
       "v": 0.6,
       "f": "431084",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Julian Felipe Montoya Garcia"
     },
     {
       "i": "469771",
@@ -9804,7 +9804,7 @@
       "v": 0.6,
       "f": "431084",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Julian Felipe Montoya Garcia"
     },
     {
       "i": "472135",
@@ -10321,7 +10321,7 @@
       "v": 0.6,
       "f": "379733",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "481671",
@@ -10990,8 +10990,8 @@
       "p": "QA",
       "a": 1,
       "v": 0.6,
-      "f": "484565",
-      "ep": "417341",
+      "f": "535145",
+      "ep": "531917",
       "r": "Santiago Torifa Manso"
     },
     {
@@ -11542,7 +11542,7 @@
       "v": 0.6,
       "f": "379733",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "512414",
@@ -12174,24 +12174,24 @@
     {
       "i": "525735",
       "t": "419_PB_TEC001_Arquitectura_Tecnologica",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "517931",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "527005",
       "t": "419_PB_TEC002_Arquitectura_De_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "517931",
       "ep": "417341",
-      "r": "Nicolas Giraldo Arenas"
+      "r": "Sergio Alejandro Yepes Gallego"
     },
     {
       "i": "532413",
@@ -14018,18 +14018,29 @@
       "f": "532401",
       "ep": "531917",
       "r": "Yesica Johana Ospina Patiño"
+    },
+    {
+      "i": "567611",
+      "t": "419_PB_TEC001_Arquitectura_Tecnologica",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "565852",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     }
   ],
   "kpi": {
-    "n_hu": 1100,
-    "n_hu_activas": 1002,
+    "n_hu": 1101,
+    "n_hu_activas": 1003,
     "hu_sin_feature": 30,
     "n_feature": 165,
     "n_epic": 12,
     "n_feature_con_hu": 145,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7626,
+    "pct_global": 0.763,
     "term_global": 431,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -14038,7 +14049,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6264,
+    "tactico": 0.6271,
     "estrategico": 0.4429,
     "n": 140,
     "d": 62,
@@ -14046,27 +14057,27 @@
     "isEpics": false,
     "feat_total": 140,
     "feat_ent": 62,
-    "hu_total": 939,
+    "hu_total": 940,
     "buckets": {
       "100": 421,
       "75": 95,
-      "50": 19,
-      "20": 343,
+      "50": 21,
+      "20": 342,
       "0": 61
     },
     "hu_buckets": {
       "100": 421,
       "75": 95,
-      "50": 19,
-      "20": 343,
+      "50": 21,
+      "20": 342,
       "0": 61
     },
     "feat_buckets": {
       "100": 62,
       "75": 12,
       "50": 8,
-      "20": 40,
-      "0": 18
+      "20": 41,
+      "0": 17
     }
   }
 }

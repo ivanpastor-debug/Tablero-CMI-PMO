@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_419-RAMA_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_419-RAMA_20261117.csv",
   "epics": [
     {
       "i": "373561",
@@ -18,7 +18,7 @@
       "n_f": 13,
       "n": 57,
       "term": 0,
-      "pct": 0.4719
+      "pct": 0.493
     },
     {
       "i": "380257",
@@ -268,7 +268,7 @@
     {
       "i": "546446",
       "t": "419_PR_CREACIÓN PROCESOS – MASIVO",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 7,
@@ -543,12 +543,12 @@
     {
       "i": "532536",
       "t": "419_PR_ASOCIACION Y/O MODIFICACION DJ A PROCESO INDIVIDUAL",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.8,
       "n_pct": 4
     },
     {
@@ -4219,24 +4219,24 @@
     {
       "i": "532560",
       "t": "419_PR_HU001_Asociar_Modificar_Asociación_Proceso_a_DJ",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532536",
       "ep": "531912",
-      "r": "Santiago Hernandez Saldarriga"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "532566",
       "t": "419_PR_HU002_Gestionar_Autorización_Asociación_del_Proceso_al_Depósito",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532536",
       "ep": "531912",
-      "r": "Santiago Hernandez Saldarriga"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "532574",
@@ -4362,13 +4362,13 @@
     {
       "i": "546312",
       "t": "419_PB_TEC001_Arquitectura_De_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532536",
       "ep": "531912",
-      "r": "Santiago Hernandez Saldarriga"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "546314",
@@ -4390,7 +4390,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "546372",
@@ -4401,7 +4401,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "546375",
@@ -4412,7 +4412,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "546378",
@@ -4423,7 +4423,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "546430",
@@ -4450,57 +4450,57 @@
     {
       "i": "546449",
       "t": "419_PR_CMP_HU001_Cargue_del_archivo_masivo_de_numeros_de_procesos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "546459",
       "t": "419_PR_CMP_HU002_Autorización_del_cargue_masivo_numero_de_procesos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "546461",
       "t": "419_PR_CMP_HU003_Rechazo_cargue_masivo_numero_de_procesos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Steven Pino Gonzales"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "546483",
       "t": "419_PR_CMP_HU004_Procesamiento_del_archivo_cargue_masivo_de_numero_proceso",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Steven Pino Gonzales"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "546486",
       "t": "419_PR_CMP_HU005_Consulta_Resultado_Registro_no_validos_para_carga_masiva_procesos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Steven Pino Gonzales"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "547686",
@@ -4549,13 +4549,13 @@
     {
       "i": "550384",
       "t": "419_PR_TEC001_Arquitectura_de_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Steven Pino Gonzales"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "550385",
@@ -4577,7 +4577,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "551319",
@@ -4692,24 +4692,24 @@
     {
       "i": "552062",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "546446",
       "ep": "531912",
-      "r": "Steven Pino Gonzales"
+      "r": "Carlos Alberto Valero Peña"
     },
     {
       "i": "552063",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "532536",
       "ep": "531912",
-      "r": "Santiago Hernandez Saldarriga"
+      "r": "Jose Daniel Velasquez Gordon"
     },
     {
       "i": "558651",
@@ -4786,7 +4786,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     }
   ],
   "kpi": {
@@ -4798,7 +4798,7 @@
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7968,
+    "pct_global": 0.8001,
     "term_global": 117,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4807,7 +4807,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6501,
+    "tactico": 0.655,
     "estrategico": 0.4032,
     "n": 62,
     "d": 25,
@@ -4819,22 +4819,22 @@
     "buckets": {
       "100": 117,
       "75": 88,
-      "50": 58,
-      "20": 61,
+      "50": 62,
+      "20": 57,
       "0": 26
     },
     "hu_buckets": {
       "100": 117,
       "75": 88,
-      "50": 58,
-      "20": 61,
+      "50": 62,
+      "20": 57,
       "0": 26
     },
     "feat_buckets": {
       "100": 25,
       "75": 3,
-      "50": 15,
-      "20": 12,
+      "50": 16,
+      "20": 11,
       "0": 7
     }
   }

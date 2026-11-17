@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_420_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_420_20261117.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
       "n": 187,
-      "term": 131,
-      "pct": 0.8824
+      "term": 134,
+      "pct": 0.8856
     },
     {
       "i": "357729",
@@ -24,9 +24,9 @@
       "i": "356469",
       "t": "Transversales",
       "n_f": 5,
-      "n": 72,
-      "term": 68,
-      "pct": 0.9597
+      "n": 73,
+      "term": 69,
+      "pct": 0.9603
     },
     {
       "i": "357079",
@@ -152,10 +152,10 @@
       "e": "2. En Curso",
       "ep": "356469",
       "ept": "Transversales",
-      "n": 26,
-      "term": 25,
-      "pct": 0.9692,
-      "n_pct": 26
+      "n": 27,
+      "term": 26,
+      "pct": 0.9704,
+      "n_pct": 27
     },
     {
       "i": "356481",
@@ -241,8 +241,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 15,
-      "term": 0,
-      "pct": 0.72,
+      "term": 3,
+      "pct": 0.76,
       "n_pct": 15
     },
     {
@@ -6850,10 +6850,10 @@
     {
       "i": "502276",
       "t": "HU0193_Positiva_Crear_Reporte_Auditoría_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6883,10 +6883,10 @@
     {
       "i": "507075",
       "t": "HU0195_Positiva_Generación_Reporte_Auditoría_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6905,10 +6905,10 @@
     {
       "i": "507082",
       "t": "HU0197_Positiva_Generación_Reporte_Radicación_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -7455,10 +7455,10 @@
     {
       "i": "548614",
       "t": "420_Seguimiento_Administrativo_Equipo_de_QA_Sprint_78",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "356476",
       "ep": "356469",
       "r": "Tilson Fernandez"
@@ -7616,19 +7616,30 @@
       "f": "375072",
       "ep": "357729",
       "r": ""
+    },
+    {
+      "i": "568107",
+      "t": "420_Seguimiento_Administrativo_Equipo_de_QA_Sprint_79",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "356476",
+      "ep": "356469",
+      "r": "Tilson Fernandez"
     }
   ],
   "kpi": {
-    "n_hu": 626,
-    "n_hu_activas": 611,
+    "n_hu": 627,
+    "n_hu_activas": 612,
     "hu_sin_feature": 0,
     "n_feature": 57,
     "n_epic": 12,
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9367,
-    "term_global": 518,
+    "pct_global": 0.9377,
+    "term_global": 522,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 35,
@@ -7636,7 +7647,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.8822,
+    "tactico": 0.884,
     "estrategico": 0.6316,
     "n": 57,
     "d": 36,
@@ -7644,26 +7655,26 @@
     "isEpics": false,
     "feat_total": 57,
     "feat_ent": 36,
-    "hu_total": 611,
+    "hu_total": 612,
     "buckets": {
-      "100": 518,
+      "100": 522,
       "75": 0,
-      "50": 50,
+      "50": 47,
       "20": 19,
       "0": 24
     },
     "hu_buckets": {
-      "100": 518,
+      "100": 522,
       "75": 0,
-      "50": 50,
+      "50": 47,
       "20": 19,
       "0": 24
     },
     "feat_buckets": {
       "100": 36,
       "75": 13,
-      "50": 3,
-      "20": 3,
+      "50": 4,
+      "20": 2,
       "0": 2
     }
   }

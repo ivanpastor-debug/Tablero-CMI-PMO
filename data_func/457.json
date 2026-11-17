@@ -1,8 +1,8 @@
 {
   "codigo": "457",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_457_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_457_20261117.csv",
   "epics": [
     {
       "i": "292522",
@@ -10,7 +10,7 @@
       "n_f": 5,
       "n": 107,
       "term": 63,
-      "pct": 0.7776
+      "pct": 0.7789
     },
     {
       "i": "94588",
@@ -73,7 +73,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 29,
       "term": 5,
-      "pct": 0.6034,
+      "pct": 0.6083,
       "n_pct": 29
     },
     {
@@ -3744,13 +3744,13 @@
     {
       "i": "497369",
       "t": "NPDC_HU0015_Información_de_seguros_Rol_Administrador",
-      "e": "3.  Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.3,
       "f": "295069",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "497819",
@@ -4015,7 +4015,7 @@
     "n_feature_con_hu": 51,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9141,
+    "pct_global": 0.9146,
     "term_global": 238,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

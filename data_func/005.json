@@ -1,71 +1,79 @@
 {
   "codigo": "005",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_005_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_005_20261117.csv",
   "epics": [
     {
-      "i": "153",
-      "t": "Deuda",
-      "n_f": 43,
-      "n": 123,
+      "i": "2227",
+      "t": "Garantía - En producción",
+      "n_f": 41,
+      "n": 120,
       "term": 119,
-      "pct": 0.9934
+      "pct": 0.9958
     },
     {
       "i": "82",
-      "t": "NP - Evolutivos",
-      "n_f": 15,
-      "n": 60,
+      "t": "Evolutivos",
+      "n_f": 16,
+      "n": 61,
       "term": 30,
-      "pct": 0.7604
+      "pct": 0.7133
     },
     {
       "i": "578",
       "t": "Deuda Técnica y Contractual",
       "n_f": 2,
-      "n": 57,
+      "n": 56,
       "term": 5,
-      "pct": 0.482
+      "pct": 0.45
     },
     {
       "i": "568",
       "t": "Épica de gestión",
       "n_f": 1,
-      "n": 6,
+      "n": 7,
       "term": 0,
-      "pct": null
+      "pct": 0.5
+    },
+    {
+      "i": "153",
+      "t": "Deuda",
+      "n_f": 2,
+      "n": 2,
+      "term": 0,
+      "pct": 0.6
     }
   ],
   "features": [
     {
       "i": "601",
       "t": "Deuda Contractual",
-      "e": "New",
+      "e": "Active",
       "ep": "578",
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.4191,
-      "n_pct": 33
+      "pct": 0.3958,
+      "n_pct": 36
     },
     {
       "i": "579",
       "t": "Deuda Técnica",
-      "e": "New",
+      "e": "Active",
       "ep": "578",
       "ept": "Deuda Técnica y Contractual",
-      "n": 21,
+      "n": 20,
       "term": 4,
-      "pct": 0.5972,
-      "n_pct": 18
+      "pct": 0.5475,
+      "n_pct": 20
     },
     {
       "i": "87",
       "t": "Nuevos servicios de consulta de documentos por parte de ALISSTA",
       "e": "4. Cerrado",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 15,
       "term": 15,
       "pct": 1.0,
@@ -74,9 +82,9 @@
     {
       "i": "154",
       "t": "Plantillas",
-      "e": "2. En Curso",
-      "ep": "153",
-      "ept": "Deuda",
+      "e": "3. Entregado",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 14,
       "term": 14,
       "pct": 1.0,
@@ -87,18 +95,18 @@
       "t": "Reclasificacion de solicitudes",
       "e": "Active",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 13,
       "term": 12,
-      "pct": 1.0,
-      "n_pct": 12
+      "pct": 0.9231,
+      "n_pct": 13
     },
     {
       "i": "2464",
       "t": "Administración - correspondencia",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 10,
       "term": 10,
       "pct": 1.0,
@@ -108,8 +116,8 @@
       "i": "2854",
       "t": "Administración - PQRD",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 10,
       "term": 10,
       "pct": 1.0,
@@ -118,9 +126,9 @@
     {
       "i": "86",
       "t": "Integración con Directorio Activo",
-      "e": "3. Entregado",
+      "e": "2. En Curso",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 8,
       "term": 0,
       "pct": 0.5,
@@ -131,18 +139,29 @@
       "t": "Dashboard de Facturación",
       "e": "New",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 8,
       "term": 0,
       "pct": 0.3,
       "n_pct": 8
     },
     {
+      "i": "1462",
+      "t": "Épica de Gestión",
+      "e": "Active",
+      "ep": "568",
+      "ept": "Épica de gestión",
+      "n": 7,
+      "term": 0,
+      "pct": 0.5,
+      "n_pct": 7
+    },
+    {
       "i": "2340",
       "t": "Radicacion - Correspondencia",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 7,
       "term": 7,
       "pct": 1.0,
@@ -153,29 +172,18 @@
       "t": "Refactorización de interfaz e integración modulo de estados de PQRD",
       "e": "3. Entregado",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 6,
       "term": 0,
       "pct": 0.95,
       "n_pct": 6
     },
     {
-      "i": "1462",
-      "t": "Épica de Gestión",
-      "e": "New",
-      "ep": "568",
-      "ept": "Épica de gestión",
-      "n": 6,
-      "term": 0,
-      "pct": null,
-      "n_pct": 0
-    },
-    {
       "i": "2521",
       "t": "PQRD Transversales",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 5,
       "term": 5,
       "pct": 1.0,
@@ -185,8 +193,8 @@
       "i": "2600",
       "t": "Radicación - Entes de control",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 5,
       "term": 5,
       "pct": 1.0,
@@ -196,8 +204,8 @@
       "i": "793",
       "t": "Devoluciones y publicación",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 4,
       "term": 4,
       "pct": 1.0,
@@ -207,8 +215,8 @@
       "i": "2875",
       "t": "Facturación administrativa",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 4,
       "term": 4,
       "pct": 1.0,
@@ -218,8 +226,8 @@
       "i": "2905",
       "t": "Cuenta de cobro",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 4,
       "term": 4,
       "pct": 1.0,
@@ -229,8 +237,8 @@
       "i": "649",
       "t": "Clonación Consolidado",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -240,8 +248,8 @@
       "i": "2935",
       "t": "Asignación - Tutelas",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -251,8 +259,8 @@
       "i": "2945",
       "t": "Gestión - Tutelas",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -262,8 +270,8 @@
       "i": "3009",
       "t": "Tabla de retención documental",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -273,8 +281,8 @@
       "i": "3034",
       "t": "Expedientes",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -284,8 +292,8 @@
       "i": "3091",
       "t": "Retención y disposición",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -295,8 +303,8 @@
       "i": "3117",
       "t": "Préstamos documentales",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 3,
       "term": 3,
       "pct": 1.0,
@@ -305,31 +313,20 @@
     {
       "i": "116",
       "t": "Centro de Ayuda",
-      "e": "New",
-      "ep": "153",
-      "ept": "Deuda",
+      "e": "4. Cerrado",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
       "n_pct": 2
     },
     {
-      "i": "646",
-      "t": "Tareas y bugs Transversales",
-      "e": "New",
-      "ep": "153",
-      "ept": "Deuda",
-      "n": 2,
-      "term": 0,
-      "pct": null,
-      "n_pct": 0
-    },
-    {
       "i": "2549",
       "t": "Asignación - Correspondencia",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -339,8 +336,8 @@
       "i": "2622",
       "t": "Asignación - Entes de Control",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -350,8 +347,8 @@
       "i": "2637",
       "t": "Gestión - Entes de control",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -361,8 +358,8 @@
       "i": "2689",
       "t": "Gestión - Medicina laboral",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -372,8 +369,8 @@
       "i": "2774",
       "t": "Administración - Medicina laboral",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -383,8 +380,8 @@
       "i": "2786",
       "t": "Asignación - PQRD",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -394,8 +391,8 @@
       "i": "2804",
       "t": "Gestión - PQRD",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -405,8 +402,8 @@
       "i": "2902",
       "t": "Facturación - Manual",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -416,8 +413,8 @@
       "i": "2927",
       "t": "Radicación - Tutelas",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -427,8 +424,8 @@
       "i": "2976",
       "t": "Administración - Tutelas",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 2,
       "term": 2,
       "pct": 1.0,
@@ -439,7 +436,7 @@
       "t": "Agente de extracción de información IA 2",
       "e": "New",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
       "pct": 0.5,
@@ -450,10 +447,21 @@
       "t": "Nuevos campos reporte Tutelas",
       "e": "New",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 1,
       "pct": 1.0,
+      "n_pct": 1
+    },
+    {
+      "i": "646",
+      "t": "Bugs y Gestión Soporte - Zendesk",
+      "e": "Active",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
+      "n": 1,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 1
     },
     {
@@ -461,7 +469,7 @@
       "t": "Migración de carpetas - Reclamaciones de Vida",
       "e": "New",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -472,7 +480,7 @@
       "t": "Angente IA que realice informes de seguimiento de operaciones IA 1",
       "e": "New",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
       "pct": 0.08,
@@ -483,18 +491,18 @@
       "t": "Escalamiento Tutelas",
       "e": "New",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": null,
-      "n_pct": 0
+      "pct": 0.0,
+      "n_pct": 1
     },
     {
       "i": "115",
-      "t": "Proceso de Pagos en el Flujo de Facturacion, implementacion de subflujos",
-      "e": "New",
+      "t": "Proceso de Pagos en el Flujo de Facturación, implementación de subflujos",
+      "e": "2. En Curso",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
       "pct": 0.08,
@@ -503,9 +511,9 @@
     {
       "i": "1753",
       "t": "PQRD Expres Superfinanciera",
-      "e": "New",
+      "e": "2. En Curso",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
       "pct": 0.08,
@@ -516,7 +524,7 @@
       "t": "Pago de comisión - Facturación Administrativa",
       "e": "2. En Curso",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
       "pct": 0.5,
@@ -526,8 +534,8 @@
       "i": "2147",
       "t": "Tutelas",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -538,7 +546,7 @@
       "t": "Texto alerta flujo de intermediarios",
       "e": "4. Cerrado",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -570,8 +578,8 @@
       "i": "2331",
       "t": "0. SGDEA",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -581,8 +589,8 @@
       "i": "2530",
       "t": "Gestión - correspondencia",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -592,8 +600,8 @@
       "i": "2547",
       "t": "Revisión - Correspondencia",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -603,8 +611,8 @@
       "i": "2567",
       "t": "Aprobación - Correspondencia",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -614,8 +622,8 @@
       "i": "2651",
       "t": "Revisión - Entes de control",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -625,8 +633,8 @@
       "i": "2654",
       "t": "Aprobación - Entes de control",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -636,8 +644,8 @@
       "i": "2663",
       "t": "Radicación - Medina Laboral",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -647,8 +655,8 @@
       "i": "2677",
       "t": "Asignación - Medicina Laboral",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -658,8 +666,8 @@
       "i": "2735",
       "t": "Revisión -Medicina Laboral",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -669,8 +677,8 @@
       "i": "2743",
       "t": "Aprobación - Medicina laboral",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -680,8 +688,8 @@
       "i": "2847",
       "t": "Revisión - PQRD",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -691,8 +699,8 @@
       "i": "2964",
       "t": "Aprobación - Tutelas",
       "e": "4. Cerrado",
-      "ep": "153",
-      "ept": "Deuda",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
       "term": 1,
       "pct": 1.0,
@@ -703,11 +711,22 @@
       "t": "Devoluciones Físicas SIPOST",
       "e": "4. Cerrado",
       "ep": "82",
-      "ept": "NP - Evolutivos",
+      "ept": "Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": null,
-      "n_pct": 0
+      "pct": 0.0,
+      "n_pct": 1
+    },
+    {
+      "i": "3329",
+      "t": "Cargue de CUFEs por CSV a NumRot desde SGDEA (lotes de 10.000)",
+      "e": "2. En Curso",
+      "ep": "82",
+      "ept": "Evolutivos",
+      "n": 1,
+      "term": 0,
+      "pct": 0.17,
+      "n_pct": 1
     }
   ],
   "hus": [
@@ -719,7 +738,7 @@
       "a": 1,
       "v": 1.0,
       "f": "116",
-      "ep": "153",
+      "ep": "2227",
       "r": "Jose Fernando Lozano Murcia"
     },
     {
@@ -730,16 +749,16 @@
       "a": 1,
       "v": 1.0,
       "f": "116",
-      "ep": "153",
+      "ep": "2227",
       "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "134",
       "t": "HU Tareas transversales Dev",
       "e": "Active",
-      "p": "",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": null,
       "ep": null,
       "r": "jhan.rivero 3tcapital.co"
@@ -851,7 +870,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -862,7 +881,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -873,7 +892,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -884,7 +903,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -895,7 +914,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -906,7 +925,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -917,7 +936,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -928,7 +947,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -939,7 +958,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -950,7 +969,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -961,7 +980,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -972,7 +991,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -983,7 +1002,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -994,7 +1013,7 @@
       "a": 1,
       "v": 1.0,
       "f": "154",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -1006,7 +1025,7 @@
       "v": 0.5,
       "f": "125",
       "ep": "82",
-      "r": "Angie Hernandez"
+      "r": "Yuly Andrea Rodriguez Vela"
     },
     {
       "i": "180",
@@ -1220,13 +1239,13 @@
     {
       "i": "589",
       "t": "Sonar y quality gate con evidencia",
-      "e": "6. Desarrollo",
+      "e": "Active",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "579",
       "ep": "578",
-      "r": "Juan Vargas"
+      "r": "Brayan Correa"
     },
     {
       "i": "590",
@@ -1298,9 +1317,9 @@
       "i": "596",
       "t": "IA de radicación desde bandeja de correo: diagnóstico y corrección",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "579",
       "ep": "578",
       "r": "Kevin Pulido"
@@ -1314,14 +1333,14 @@
       "v": 0.5,
       "f": "579",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Jose Fernando Lozano Murcia"
     },
     {
       "i": "598",
       "t": "Células unipersonales: punto único de conocimiento",
       "e": "Removed",
-      "p": "",
-      "a": 1,
+      "p": "EXCLUIR",
+      "a": 0,
       "v": null,
       "f": "579",
       "ep": "578",
@@ -1331,9 +1350,9 @@
       "i": "599",
       "t": "Ajuste permisos por funcionalidad y flujo",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "579",
       "ep": "578",
       "r": "Jhostin Ladino"
@@ -1351,7 +1370,7 @@
     },
     {
       "i": "602",
-      "t": "C001-Anexo1-Técnico 3.2.1.8.",
+      "t": "C001-Anexo1-Técnico 3.2.1.8. Utilizar un Sistema de Gestión de Bases de Datos (DBMS) que cumpla con los estándares de la industria.",
       "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
@@ -1373,7 +1392,7 @@
     },
     {
       "i": "604",
-      "t": "C001-Anexo1-Técnico 5.1.19.",
+      "t": "C001-Anexo1-Técnico 5.1.19. Accesibilidad de la Solución para personas con discapacidad",
       "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
@@ -1384,7 +1403,7 @@
     },
     {
       "i": "605",
-      "t": "C001-Anexo1-Técnico 5.3.1.",
+      "t": "C001-Anexo1-Técnico 5.3.1. Pruebas de carga",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
@@ -1395,22 +1414,22 @@
     },
     {
       "i": "606",
-      "t": "C001-Anexo1-Técnico 5.3.6.",
+      "t": "C001-Anexo1-Técnico 5.3.6. Informar al usuario cuánto tiempo falta para finalizar una transacción de alto demanda de recursos",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Esteban Pallares"
     },
     {
       "i": "607",
       "t": "C001-Anexo1-Técnico 5.6.5.",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "601",
       "ep": "578",
       "r": "Davis Diaz Mestra"
@@ -1439,7 +1458,7 @@
     },
     {
       "i": "610",
-      "t": "C001-Anexo1-Técnico 5.7.10.",
+      "t": "C001-Anexo1-Técnico 5.7.10. Los administradores no deben poder deshabilitar los controles de autorización y acceso definidos para su tipo de usuario.",
       "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
@@ -1450,18 +1469,18 @@
     },
     {
       "i": "611",
-      "t": "C001-Anexo1-Técnico 5.7.13.",
+      "t": "C001-Anexo1-Técnico 5.7.13. Permitir parametrizar y clasificar que campos son sensibles de acuerdo con la ley 1581 de 2012. Ofuscación.",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "601",
       "ep": "578",
       "r": "Cristian Roa"
     },
     {
       "i": "612",
-      "t": "C001-Anexo1-Técnico 5.7.20.",
+      "t": "C001-Anexo1-Técnico 5.7.20. Permitir configurar el tamaño máximo de los archivos que gestiona la solución (p. ej., archivos de videos, audios, gráficos, documentos, archivos comprimidos).",
       "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
@@ -1472,7 +1491,7 @@
     },
     {
       "i": "613",
-      "t": "C001-Anexo1-Técnico 5.8.1.",
+      "t": "C001-Anexo1-Técnico 5.8.1. Tener mecanismos para controlar el tratamiento de datos personales de acuerdo con la Ley de protección de datos personales de Colombia.",
       "e": "1. Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -1483,18 +1502,18 @@
     },
     {
       "i": "614",
-      "t": "C001-Anexo1-Técnico 5.8.4.",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
+      "t": "C001-Anexo1-Técnico 5.8.4. Permitir mecanismos de rectificación, actualización o supresión de la información registrada en la Solución.",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.45,
+      "v": 0.17,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Jhostin Ladino"
     },
     {
       "i": "615",
-      "t": "C001-Anexo1-Técnico 5.9.3.",
+      "t": "C001-Anexo1-Técnico 5.9.3. Registrar los usuarios no autorizados que intenten acceder a la Solución.",
       "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
@@ -1505,18 +1524,18 @@
     },
     {
       "i": "616",
-      "t": "C001-Anexo1-Técnico 5.9.4.",
+      "t": "C001-Anexo1-Técnico 5.9.4. Registrar el nombre de usuario, la fecha, la hora y la dirección de la estación de trabajo para todos los intentos de inicio de sesión fallidos y exitosos.",
       "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.8,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "617",
-      "t": "C001-Anexo1-Técnico 5.9.5.",
+      "t": "C001-Anexo1-Técnico 5.9.5.  Registrar el nombre de usuario, la fecha, la hora, la dirección de la estación de trabajo y el método de finalización de la sesión de usuario.",
       "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
@@ -1527,40 +1546,40 @@
     },
     {
       "i": "618",
-      "t": "C001-Anexo1-Técnico 5.9.7.",
+      "t": "C001-Anexo1-Técnico 5.9.7. Realizar búsquedas del log de auditoria por diferentes criterios, el usuario podrá ordenar y filtrar el resultado de la búsqueda, así como poder exportar el resultado de la búsqueda en diferentes formatos",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Mery Rojas"
     },
     {
       "i": "619",
-      "t": "C001-Anexo1-Técnico 5.9.8.",
+      "t": "C001-Anexo1-Técnico 5.9.8. registrar todos los cambios en la información en el registro de control de auditoría; además debe soportar y aprobar auditorías automatizadas de software de escaneo de seguridad",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Mery Rojas"
     },
     {
       "i": "620",
-      "t": "C001-Anexo1-Técnico 5.9.10.",
+      "t": "C001-Anexo1-Técnico 5.9.10. El sistema y todos los componentes que le brindan soporte, deben contar con mecanismos de parametrización de auditoría",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Mery Rojas"
     },
     {
       "i": "621",
-      "t": "C001-Anexo1-Técnico 5.10.5.",
+      "t": "C001-Anexo1-Técnico 5.10.5. Garantizar la seguridad de los datos intercambiados y de la propia Solución en la integración con otros sistemas de información.",
       "e": "6.2 Ajustes DEV",
       "p": "DESARROLLO",
       "a": 1,
@@ -1571,36 +1590,36 @@
     },
     {
       "i": "622",
-      "t": "C001-Anexo1-Técnico 5.10.8.",
+      "t": "C001-Anexo1-Técnico 5.10.8. Administrar y controlar las excepciones en el proceso de consumo del servicio de integración y el paso de mensajes.",
       "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
       "v": 0.6,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Esteban Pallares"
     },
     {
       "i": "623",
-      "t": "C001-Anexo1-Técnico 5.10.9.",
+      "t": "C001-Anexo1-Técnico 5.10.9. mantener trazabilidad de los datos intercambiados y permitir la búsqueda de mensajes a partir de palabras clave del contenido)",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Mery Rojas"
     },
     {
       "i": "624",
-      "t": "C001-Anexo1-Técnico 5.10.10.",
+      "t": "C001-Anexo1-Técnico 5.10.10. Llevar un registro histórico del consumo de servicios de integración con estampa de tiempo del servidor.",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Esteban Pallares"
     },
     {
       "i": "625",
@@ -1639,9 +1658,9 @@
       "i": "628",
       "t": "C001-Anexo2-SGD 2.2.15.",
       "e": "Active",
-      "p": "",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
       "r": "Cristian Roa"
@@ -1725,7 +1744,7 @@
     },
     {
       "i": "636",
-      "t": "C005-Anexo-Técnico 1.8.8",
+      "t": "C005-Anexo-Técnico 1.8.8 Incluir en las pruebas escenarios de carga y estrés para asegurar el desempeño del sistema tras las modificaciones.",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
@@ -1737,23 +1756,23 @@
     {
       "i": "637",
       "t": "C005-Anexo-Técnico 2.cg.8",
-      "e": "6. Desarrollo",
+      "e": "Active",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
-      "r": "Brayan Correa"
+      "r": "Yadimir Molina"
     },
     {
       "i": "647",
       "t": "Tareas y Bugs transversales de Docum - Dev",
       "e": "Active",
-      "p": "",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
-      "f": "646",
-      "ep": "153",
+      "v": 0.5,
+      "f": "1462",
+      "ep": "568",
       "r": "jhan.rivero 3tcapital.co"
     },
     {
@@ -1764,7 +1783,7 @@
       "a": 1,
       "v": 1.0,
       "f": "649",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1775,7 +1794,7 @@
       "a": 1,
       "v": 1.0,
       "f": "649",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1786,7 +1805,7 @@
       "a": 1,
       "v": 1.0,
       "f": "649",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1797,7 +1816,7 @@
       "a": 1,
       "v": 1.0,
       "f": "793",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1808,7 +1827,7 @@
       "a": 1,
       "v": 1.0,
       "f": "793",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1819,7 +1838,7 @@
       "a": 1,
       "v": 1.0,
       "f": "793",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1830,7 +1849,7 @@
       "a": 1,
       "v": 1.0,
       "f": "793",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -1841,7 +1860,7 @@
       "a": 0,
       "v": null,
       "f": "646",
-      "ep": "153",
+      "ep": "2227",
       "r": "Juan Vargas"
     },
     {
@@ -1859,9 +1878,9 @@
       "i": "1463",
       "t": "Gestión Líder Tecnico",
       "e": "Active",
-      "p": "",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "1462",
       "ep": "568",
       "r": "Jhonatan Rocha"
@@ -1869,10 +1888,10 @@
     {
       "i": "1521",
       "t": "Gestion Lider funcional",
-      "e": "New",
-      "p": "",
+      "e": "Active",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "1462",
       "ep": "568",
       "r": "Rafael Realess"
@@ -1881,9 +1900,9 @@
       "i": "1570",
       "t": "Gestión Scrum Master",
       "e": "Active",
-      "p": "",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "1462",
       "ep": "568",
       "r": ""
@@ -1891,13 +1910,13 @@
     {
       "i": "1609",
       "t": "Bugs y Gestión Soporte - Zendesk",
-      "e": "New",
-      "p": "",
+      "e": "Active",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "646",
-      "ep": "153",
-      "r": ""
+      "ep": "2227",
+      "r": "Carlos Lozano"
     },
     {
       "i": "1628",
@@ -1936,9 +1955,9 @@
       "i": "1652",
       "t": "Escalamiento Tutelas",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "98",
       "ep": "82",
       "r": ""
@@ -1957,10 +1976,10 @@
     {
       "i": "1692",
       "t": "Gestión Ana Ortiz",
-      "e": "Resolved",
-      "p": "",
+      "e": "Active",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "1462",
       "ep": "568",
       "r": "Ana Maria Ortiz Alba"
@@ -1969,9 +1988,9 @@
       "i": "1693",
       "t": "Gestión John Garzón",
       "e": "Active",
-      "p": "",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "1462",
       "ep": "568",
       "r": "John Elicecer Garzon Maldonado"
@@ -1980,9 +1999,9 @@
       "i": "1748",
       "t": "HU-SGDEA-RCL-13 - Reportería",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "85",
       "ep": "82",
       "r": ""
@@ -2001,10 +2020,10 @@
     {
       "i": "1948",
       "t": "Gestión Angie Hernandez",
-      "e": "New",
-      "p": "",
+      "e": "Active",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": null,
+      "v": 0.5,
       "f": "1462",
       "ep": "568",
       "r": "Angie Hernandez"
@@ -2018,7 +2037,7 @@
       "v": 0.5,
       "f": "1993",
       "ep": "82",
-      "r": "Angie Hernandez"
+      "r": "Esteban Pallares"
     },
     {
       "i": "2004",
@@ -2105,7 +2124,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2147",
-      "ep": "153",
+      "ep": "2227",
       "r": "Mery Rojas"
     },
     {
@@ -2391,7 +2410,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2331",
-      "ep": "153",
+      "ep": "2227",
       "r": "Rafael Realess"
     },
     {
@@ -2402,7 +2421,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2413,7 +2432,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2424,7 +2443,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2435,7 +2454,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2446,7 +2465,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2457,7 +2476,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2468,7 +2487,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2340",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2479,7 +2498,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2490,7 +2509,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2501,7 +2520,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2512,7 +2531,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2523,7 +2542,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2534,7 +2553,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2545,7 +2564,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2556,7 +2575,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2567,7 +2586,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2578,7 +2597,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2464",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2589,7 +2608,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2521",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2600,7 +2619,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2521",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2611,7 +2630,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2521",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2622,7 +2641,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2521",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2633,7 +2652,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2521",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2644,7 +2663,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2530",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2655,7 +2674,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2547",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2666,7 +2685,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2549",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2677,7 +2696,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2549",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2688,7 +2707,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2567",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2699,7 +2718,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2600",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2710,7 +2729,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2600",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2721,7 +2740,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2600",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2732,7 +2751,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2600",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2743,7 +2762,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2600",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2754,7 +2773,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2622",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2765,7 +2784,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2622",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2776,7 +2795,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2637",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2787,7 +2806,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2637",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2798,7 +2817,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2651",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2809,7 +2828,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2654",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2820,7 +2839,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2663",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2831,7 +2850,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2677",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2842,7 +2861,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2689",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2853,7 +2872,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2689",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2864,7 +2883,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2735",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2875,7 +2894,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2743",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2886,7 +2905,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2774",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2897,7 +2916,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2774",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2908,7 +2927,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2786",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2919,7 +2938,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2786",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2930,7 +2949,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2804",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2941,7 +2960,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2804",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2952,7 +2971,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2847",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2963,7 +2982,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2974,7 +2993,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2985,7 +3004,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -2996,7 +3015,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3007,7 +3026,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3018,7 +3037,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3029,7 +3048,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3040,7 +3059,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3051,7 +3070,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3062,7 +3081,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2854",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3073,7 +3092,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2875",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3084,7 +3103,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2875",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3095,7 +3114,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2875",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3106,7 +3125,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2875",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3117,7 +3136,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2902",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3128,7 +3147,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2902",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3139,7 +3158,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2905",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3150,7 +3169,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2905",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3161,7 +3180,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2905",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3172,7 +3191,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2905",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3183,7 +3202,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2927",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3194,7 +3213,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2927",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3205,7 +3224,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2935",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3216,7 +3235,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2935",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3227,7 +3246,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2935",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3238,7 +3257,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2945",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3249,7 +3268,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2945",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3260,7 +3279,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2945",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3271,7 +3290,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2964",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3282,7 +3301,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2976",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3293,7 +3312,7 @@
       "a": 1,
       "v": 1.0,
       "f": "2976",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3304,7 +3323,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3009",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3315,7 +3334,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3009",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3326,7 +3345,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3009",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3337,7 +3356,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3034",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3348,7 +3367,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3034",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3359,7 +3378,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3034",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3370,7 +3389,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3091",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3381,7 +3400,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3091",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3392,7 +3411,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3091",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3403,7 +3422,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3117",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3414,7 +3433,7 @@
       "a": 1,
       "v": 1.0,
       "f": "3117",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
@@ -3425,16 +3444,16 @@
       "a": 1,
       "v": 1.0,
       "f": "3117",
-      "ep": "153",
+      "ep": "2227",
       "r": ""
     },
     {
       "i": "3166",
       "t": "Devoluciones Físicas SIPOST",
       "e": "New",
-      "p": "",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": null,
+      "v": 0.0,
       "f": "84",
       "ep": "82",
       "r": ""
@@ -3442,62 +3461,62 @@
     {
       "i": "3185",
       "t": "Cargue de CUFEs por CSV a NumRot desde SGDEA (lotes de 10.000)",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
-      "f": null,
-      "ep": null,
-      "r": "Angie Hernandez"
+      "v": 0.17,
+      "f": "3329",
+      "ep": "82",
+      "r": "Jhostin Ladino"
     }
   ],
   "kpi": {
     "n_hu": 249,
-    "n_hu_activas": 248,
-    "hu_sin_feature": 2,
-    "n_feature": 61,
-    "n_epic": 4,
-    "n_feature_con_hu": 61,
+    "n_hu_activas": 247,
+    "hu_sin_feature": 1,
+    "n_feature": 62,
+    "n_epic": 5,
+    "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8201,
+    "pct_global": 0.783,
     "term_global": 154,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 5,
-    "feature_estado_ajeno": 16,
+    "feature_100_sin_cerrar": 3,
+    "feature_estado_ajeno": 13,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.7723,
-    "estrategico": 0.7213,
-    "n": 61,
+    "tactico": 0.7669,
+    "estrategico": 0.7097,
+    "n": 62,
     "d": 44,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 61,
+    "feat_total": 62,
     "feat_ent": 44,
     "hu_total": 246,
     "buckets": {
       "100": 154,
       "75": 10,
       "50": 0,
-      "20": 26,
-      "0": 56
+      "20": 37,
+      "0": 45
     },
     "hu_buckets": {
       "100": 154,
       "75": 10,
       "50": 0,
-      "20": 26,
-      "0": 56
+      "20": 37,
+      "0": 45
     },
     "feat_buckets": {
       "100": 44,
       "75": 2,
       "50": 0,
-      "20": 6,
-      "0": 9
+      "20": 8,
+      "0": 8
     }
   }
 }

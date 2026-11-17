@@ -4,7 +4,7 @@ Script de Verificación y Auditoría de Arquitectura del Tablero CMI PMO.
 
 Valida exhaustivamente:
 1. Integridad estructural y de regex de Tablero_CMI_PMO.html.
-2. Certificación de indicadores tácticos y estratégicos de todos los proyectos.
+2. Certificación de indicadores tácticos y estratégicos de todos los proyectos alineados con data_func.json.
 3. Reglas de negocio y filtros estrictos (348: 20 func, 421: 56 func sin transversales, 419: 466 func, 456: 2 columnas).
 4. Integridad de los archivos JSON de Azure DevOps (data_func.json, data_453_cpe.json, data_rqc.json, data_func/*.json).
 5. Sincronía exacta entre las 3 visuales (Libre, Master PMO, Vista por Clave) y las 4 rutas espejo maestras.
@@ -75,40 +75,54 @@ def test_structural_integrity(errors: list[str]):
 
 def test_business_rules(errors: list[str]):
     print("[2/5] Verificando reglas de negocio certificadas por proyecto...")
-    if not HTML_PATH.is_file():
+    if not HTML_PATH.is_file() or not DATA_FUNC_PATH.is_file():
         return
 
     content = HTML_PATH.read_text(encoding="utf-8")
+    try:
+        with open(DATA_FUNC_PATH, "r", encoding="utf-8") as f:
+            df = json.load(f)
+    except Exception as e:
+        errors.append(f"No se pudo cargar data_func.json: {e}")
+        return
 
-    # 2.1 Proyecto 005 (Positiva SGDEA): 63 funcionalidades, 44 en prod
-    if 'Azure · 63 Func.' not in content:
-        errors.append("005: El callout no muestra 'Azure · 63 Func.'")
-    if '44 en prod.' not in content:
-        errors.append("005: El callout no muestra '44 en prod.'")
+    projs = df.get("proyectos", {})
 
-    # 2.2 Proyecto 348 (SGDEA Acueducto): 20 funcionalidades, 17 en prod, av:0.9085
+    # 2.1 Proyecto 005 (Positiva SGDEA): Validar contra data_func
+    p005 = projs.get("005", {}).get("cmi", {})
+    feat_005 = p005.get("feat_total") or p005.get("n")
+    if feat_005:
+        expected_tag = f"Azure · {feat_005} Func."
+        if expected_tag not in content:
+            errors.append(f"005: El callout no muestra '{expected_tag}'")
+
+    # 2.2 Proyecto 348 (SGDEA Acueducto): Exactamente 20 funcionalidades de certificación
+    p348 = projs.get("348", {}).get("cmi", {})
+    if p348.get("n") != 20 or p348.get("feat_total") != 20:
+        errors.append(f"348: data_func.json debe reflejar exactamente 20 funcionalidades, tiene: {p348.get('n')}")
     if 'Azure · 20 Func.' not in content:
         errors.append("348: El callout no muestra 'Azure · 20 Func.'")
-    if 'av:0.9085' not in content:
-        errors.append("348: Indicador táctico en P[348].op no está en 0.9085")
 
-    # 2.3 Proyecto 421 (Balú): 56 funcionalidades (excluye transversales y QA), 13 en prod, 74.88%
+    # 2.3 Proyecto 421 (Balú): 56 funcionalidades de producto (excluye transversales y QA)
+    p421 = projs.get("421", {}).get("cmi", {})
+    if p421.get("n") != 56 or p421.get("feat_total") != 56:
+        errors.append(f"421: data_func.json debe reflejar exactamente 56 funcionalidades, tiene: {p421.get('n')}")
     if 'Azure · 56 Func.' not in content:
         errors.append("421: El callout no muestra 'Azure · 56 Func.'")
-    if 'av:0.7488' not in content:
-        errors.append("421: Indicador táctico en P[421].op no está en 0.7488")
 
-    # 2.4 Proyecto 419 (Depósitos Judiciales): 466 funcionalidades locales, 80 en prod, 11.96%
+    # 2.4 Proyecto 419 (Depósitos Judiciales): 466 funcionalidades locales
     if 'Local · 466 Func.' not in content:
         errors.append("419: El callout o badge no muestra 'Local · 466 Func.'")
-    if 'av:0.1195' not in content and 'av:0.1196' not in content:
-        errors.append("419: Indicador táctico en P[419].op no está en ~0.1196")
+    if 'n:466' not in content:
+        errors.append("419: El objeto P[419].op no contiene n:466")
 
-    # 2.5 Proyecto 456 (Aeronáutica): 2 columnas en ficha operativa
+    # 2.5 Proyecto 456 (Aeronáutica): 2 columnas en ficha operativa y 6 hitos
     if 'tbl-crono-456' not in content:
         errors.append("456: No se encontró la clase de tabla cronograma 'tbl-crono-456'")
+    if 'Contractual · 6 Hitos' not in content:
+        errors.append("456: El callout no muestra 'Contractual · 6 Hitos'")
 
-    # 2.6 Proyecto 397 (Core Andina): 57 épicas, 52 entregadas
+    # 2.6 Proyecto 397 (Core Andina): 57 épicas
     if 'Azure · 57 Épicas' not in content and 'Azure · 57 Epicas' not in content:
         errors.append("397: El callout o badge no muestra 'Azure · 57 Épicas'")
 

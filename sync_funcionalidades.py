@@ -269,7 +269,12 @@ def main():
                 print(f"  -> {folder}/ ({len(os.listdir(target))} archivos)")
         build_consolidated_419(d)
         filter_348(d)
-        filter_421(d)
+        filter_421(d)
+        # Asegurar que data_func/453.json exista en la carpeta correspondiente replicando data_453_cpe.json
+        cpe_src = os.path.join(d, "data_453_cpe.json")
+        f453_dest = os.path.join(d, "data_func", "453.json")
+        if os.path.exists(cpe_src):
+            shutil.copy2(cpe_src, f453_dest)
 
     print("Sincronización completada con éxito.")
     try:

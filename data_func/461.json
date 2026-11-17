@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_461_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_461_20261117.csv",
   "epics": [
     {
       "i": "457548",
@@ -26,7 +26,7 @@
       "n_f": 5,
       "n": 22,
       "term": 0,
-      "pct": 0.6309
+      "pct": 0.6364
     },
     {
       "i": "487098",
@@ -34,7 +34,7 @@
       "n_f": 5,
       "n": 15,
       "term": 0,
-      "pct": 0.2093
+      "pct": 0.2193
     },
     {
       "i": "487090",
@@ -81,7 +81,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 8,
       "term": 0,
-      "pct": 0.6262,
+      "pct": 0.6412,
       "n_pct": 8
     },
     {
@@ -356,7 +356,7 @@
       "ept": "Declaración Anual de Patrimonio",
       "n": 2,
       "term": 0,
-      "pct": 0.3,
+      "pct": 0.375,
       "n_pct": 2
     },
     {
@@ -1870,7 +1870,7 @@
     },
     {
       "i": "534810",
-      "t": "Sprint7 - Ivan",
+      "t": "Sprint9 - Ivan",
       "e": "0.0 Transversal",
       "p": "OMITIR",
       "a": 0,
@@ -2036,10 +2036,10 @@
     {
       "i": "548342",
       "t": "HU_DecGes_106_Gestión individual de agrupaciones políticas declaración anual",
-      "e": "6. Desarrollo",
+      "e": "6.2 Ajustes DEV",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.45,
       "f": "548331",
       "ep": "487098",
       "r": "Elkin Johan Imbachí Sánchez"
@@ -2288,7 +2288,7 @@
     },
     {
       "i": "567168",
-      "t": "HU_AccOnb_121_Plantilla Recuperación de contraseña",
+      "t": "HU_AccOnb_121_Plantilla de correo Restablecimiento de contraseña",
       "e": "1. Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -2299,11 +2299,11 @@
     },
     {
       "i": "567171",
-      "t": "HU_AccOnb_122_Plantilla de correo Confirmación de contraseña actualizada",
-      "e": "1. Levantamiento",
+      "t": "HU_AccOnb_122_Plantilla de correo Notificación de actualización de contraseña",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.08,
+      "v": 0.2,
       "f": "487224",
       "ep": "435992",
       "r": "Laura Nathaly Fuentes Niño"
@@ -2318,18 +2318,51 @@
       "f": "487224",
       "ep": "435992",
       "r": "Laura Nathaly Fuentes Niño"
+    },
+    {
+      "i": "567772",
+      "t": "Sprint9 - UX",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "467408",
+      "ep": "467406",
+      "r": "Dario Alejandro Gomez Torres"
+    },
+    {
+      "i": "567776",
+      "t": "Sprint 9 - Sergio",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "467408",
+      "ep": "467406",
+      "r": "Sergio Senestrari Castro"
+    },
+    {
+      "i": "568639",
+      "t": "Sprint9 - Seguridad (Hamilton)",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "467408",
+      "ep": "467406",
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 173,
+    "n_hu": 176,
     "n_hu_activas": 119,
     "hu_sin_feature": 0,
     "n_feature": 32,
     "n_epic": 7,
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
-    "hu_omitidas": 51,
-    "pct_global": 0.4291,
+    "hu_omitidas": 54,
+    "pct_global": 0.4315,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

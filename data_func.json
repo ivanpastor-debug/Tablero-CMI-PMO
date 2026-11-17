@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-13 08:35",
+  "generado": "2026-11-17 16:04",
   "proyectos": {
     "004": {
       "corte": "2026-10-30",
@@ -55,27 +55,27 @@
       }
     },
     "384": {
-      "corte": "2026-11-13",
-      "archivo": "HU_384_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_384_20261117.csv",
       "kpi": {
-        "n_hu": 5954,
-        "n_hu_activas": 5135,
+        "n_hu": 5949,
+        "n_hu_activas": 5161,
         "hu_sin_feature": 19,
-        "n_feature": 588,
+        "n_feature": 585,
         "n_epic": 34,
         "n_feature_con_hu": 493,
-        "feature_sin_hu": 95,
+        "feature_sin_hu": 92,
         "hu_omitidas": 0,
-        "pct_global": 0.8528,
-        "term_global": 2298,
+        "pct_global": 0.8562,
+        "term_global": 2447,
         "feature_sin_frente": 2,
-        "hu_sin_frente": 7,
+        "hu_sin_frente": 8,
         "feature_100_sin_cerrar": 93,
         "feature_estado_ajeno": 0,
         "feature_removido_con_hu": 7
       },
       "cmi": {
-        "tactico": 0.67,
+        "tactico": 0.6738,
         "estrategico": 0.1968,
         "n": 493,
         "d": 97,
@@ -83,33 +83,33 @@
         "isEpics": false,
         "feat_total": 493,
         "feat_ent": 97,
-        "hu_total": 5116,
+        "hu_total": 5142,
         "buckets": {
-          "100": 2296,
+          "100": 2445,
           "75": 0,
-          "50": 2367,
-          "20": 279,
-          "0": 174
+          "50": 2228,
+          "20": 277,
+          "0": 192
         },
         "hu_buckets": {
-          "100": 2296,
+          "100": 2445,
           "75": 0,
-          "50": 2367,
-          "20": 279,
-          "0": 174
+          "50": 2228,
+          "20": 277,
+          "0": 192
         },
         "feat_buckets": {
           "100": 97,
-          "75": 126,
-          "50": 195,
-          "20": 48,
+          "75": 134,
+          "50": 188,
+          "20": 47,
           "0": 27
         }
       }
     },
     "397": {
-      "corte": "2026-11-13",
-      "archivo": "HU_397_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_397_20261117.csv",
       "kpi": {
         "n_hu": 228,
         "n_hu_activas": 228,
@@ -146,18 +146,18 @@
       }
     },
     "355": {
-      "corte": "2026-11-13",
-      "archivo": "HU_355_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_355_20261117.csv",
       "kpi": {
-        "n_hu": 1303,
-        "n_hu_activas": 1240,
-        "hu_sin_feature": 94,
-        "n_feature": 95,
+        "n_hu": 1334,
+        "n_hu_activas": 1281,
+        "hu_sin_feature": 95,
+        "n_feature": 93,
         "n_epic": 19,
-        "n_feature_con_hu": 94,
-        "feature_sin_hu": 1,
+        "n_feature_con_hu": 93,
+        "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.6508,
+        "pct_global": 0.6363,
         "term_global": 421,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -166,41 +166,41 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.4335,
-        "estrategico": 0.0638,
-        "n": 94,
+        "tactico": 0.4305,
+        "estrategico": 0.0645,
+        "n": 93,
         "d": 6,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 94,
+        "feat_total": 93,
         "feat_ent": 6,
-        "hu_total": 1146,
+        "hu_total": 1186,
         "buckets": {
           "100": 391,
-          "75": 249,
+          "75": 246,
           "50": 26,
-          "20": 63,
-          "0": 417
+          "20": 76,
+          "0": 447
         },
         "hu_buckets": {
           "100": 391,
-          "75": 249,
+          "75": 246,
           "50": 26,
-          "20": 63,
-          "0": 417
+          "20": 76,
+          "0": 447
         },
         "feat_buckets": {
           "100": 6,
-          "75": 18,
-          "50": 25,
-          "20": 16,
-          "0": 29
+          "75": 17,
+          "50": 24,
+          "20": 18,
+          "0": 28
         }
       }
     },
     "416": {
-      "corte": "2026-11-13",
-      "archivo": "HU_416_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_416_20261117.csv",
       "kpi": {
         "n_hu": 249,
         "n_hu_activas": 249,
@@ -210,7 +210,7 @@
         "n_feature_con_hu": 7,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.2541,
+        "pct_global": 0.2563,
         "term_global": 0,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -238,18 +238,18 @@
       }
     },
     "421": {
-      "corte": "2026-11-13",
+      "corte": "2026-11-17",
       "archivo": "Azure DevOps · 56 Funcionalidades de Producto (2 Frentes)",
       "kpi": {
-        "n_hu": 1039,
-        "n_hu_activas": 869,
+        "n_hu": 1042,
+        "n_hu_activas": 872,
         "hu_sin_feature": 0,
         "n_feature": 56,
         "n_epic": 2,
         "n_feature_con_hu": 56,
         "feature_sin_hu": 0,
         "hu_omitidas": 170,
-        "pct_global": 0.8146,
+        "pct_global": 0.8178,
         "term_global": 469,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -258,7 +258,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.7541,
+        "tactico": 0.7618,
         "estrategico": 0.2321,
         "n": 56,
         "d": 13,
@@ -266,49 +266,49 @@
         "isEpics": false,
         "feat_total": 56,
         "feat_ent": 13,
-        "hu_total": 869,
+        "hu_total": 872,
         "buckets": {
           "100": 469,
-          "75": 196,
+          "75": 209,
           "50": 0,
-          "20": 51,
-          "0": 153
+          "20": 48,
+          "0": 146
         },
         "hu_buckets": {
           "100": 469,
-          "75": 196,
+          "75": 209,
           "50": 0,
-          "20": 51,
-          "0": 153
+          "20": 48,
+          "0": 146
         },
         "feat_buckets": {
           "100": 13,
-          "75": 22,
-          "50": 12,
+          "75": 23,
+          "50": 11,
           "20": 5,
           "0": 4
         }
       },
       "rqc": {
-        "corte": "2026-11-13",
+        "corte": "2026-11-17",
         "total": 913,
         "removidos": 283,
         "activos": 630,
-        "cumplidos": 305,
-        "cumplimiento": 0.4841,
+        "cumplidos": 0,
+        "cumplimiento": 0.0,
         "resumen": {
-          "CUMPLIDO": 305,
-          "EN PROCESO": 184,
-          "PENDIENTE INICIO": 141,
+          "CUMPLIDO": 0,
+          "EN PROCESO": 232,
+          "PENDIENTE INICIO": 131,
           "REMOVIDO": 283
         },
         "por_componente": {
           "AFILIACIONES Y NOVEDADES": {
             "total": 508,
             "removido": 151,
-            "cumplido": 205,
+            "cumplido": 0,
             "activos": 357,
-            "cumplimiento": 0.5742
+            "cumplimiento": 0.0
           },
           "EN BLANCO": {
             "total": 11,
@@ -327,26 +327,26 @@
           "RECAUDO Y CARTERA": {
             "total": 392,
             "removido": 121,
-            "cumplido": 100,
+            "cumplido": 0,
             "activos": 271,
-            "cumplimiento": 0.369
+            "cumplimiento": 0.0
           }
         }
       }
     },
     "419-DEP": {
-      "corte": "2026-11-13",
-      "archivo": "HU_419-DEP_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_419-DEP_20261117.csv",
       "kpi": {
-        "n_hu": 1100,
-        "n_hu_activas": 1002,
+        "n_hu": 1101,
+        "n_hu_activas": 1003,
         "hu_sin_feature": 30,
         "n_feature": 165,
         "n_epic": 12,
         "n_feature_con_hu": 145,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7626,
+        "pct_global": 0.763,
         "term_global": 431,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -355,7 +355,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.6264,
+        "tactico": 0.6271,
         "estrategico": 0.4429,
         "n": 140,
         "d": 62,
@@ -363,33 +363,33 @@
         "isEpics": false,
         "feat_total": 140,
         "feat_ent": 62,
-        "hu_total": 939,
+        "hu_total": 940,
         "buckets": {
           "100": 421,
           "75": 95,
-          "50": 19,
-          "20": 343,
+          "50": 21,
+          "20": 342,
           "0": 61
         },
         "hu_buckets": {
           "100": 421,
           "75": 95,
-          "50": 19,
-          "20": 343,
+          "50": 21,
+          "20": 342,
           "0": 61
         },
         "feat_buckets": {
           "100": 62,
           "75": 12,
           "50": 8,
-          "20": 40,
-          "0": 18
+          "20": 41,
+          "0": 17
         }
       }
     },
     "419-RAMA": {
-      "corte": "2026-11-13",
-      "archivo": "HU_419-RAMA_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_419-RAMA_20261117.csv",
       "kpi": {
         "n_hu": 366,
         "n_hu_activas": 363,
@@ -399,7 +399,7 @@
         "n_feature_con_hu": 62,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.7968,
+        "pct_global": 0.8001,
         "term_global": 117,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -408,7 +408,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.6501,
+        "tactico": 0.655,
         "estrategico": 0.4032,
         "n": 62,
         "d": 25,
@@ -420,29 +420,29 @@
         "buckets": {
           "100": 117,
           "75": 88,
-          "50": 58,
-          "20": 61,
+          "50": 62,
+          "20": 57,
           "0": 26
         },
         "hu_buckets": {
           "100": 117,
           "75": 88,
-          "50": 58,
-          "20": 61,
+          "50": 62,
+          "20": 57,
           "0": 26
         },
         "feat_buckets": {
           "100": 25,
           "75": 3,
-          "50": 15,
-          "20": 12,
+          "50": 16,
+          "20": 11,
           "0": 7
         }
       }
     },
     "348": {
-      "corte": "2026-11-13",
-      "archivo": "HU_348_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_348_20261117.csv",
       "kpi": {
         "n_hu": 397,
         "n_hu_activas": 397,
@@ -494,52 +494,52 @@
       }
     },
     "020": {
-      "corte": "2026-11-13",
-      "archivo": "HU_020_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_020_20261117.csv",
       "kpi": {
-        "n_hu": 94,
-        "n_hu_activas": 92,
+        "n_hu": 102,
+        "n_hu_activas": 100,
         "hu_sin_feature": 2,
         "n_feature": 8,
         "n_epic": 3,
         "n_feature_con_hu": 8,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.9109,
-        "term_global": 75,
+        "pct_global": 0.903,
+        "term_global": 86,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
-        "feature_100_sin_cerrar": 0,
+        "feature_100_sin_cerrar": 1,
         "feature_estado_ajeno": 0,
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.8609,
-        "estrategico": 0.125,
+        "tactico": 0.8801,
+        "estrategico": 0.25,
         "n": 8,
-        "d": 1,
+        "d": 2,
         "u": "funcionalidades",
         "isEpics": false,
         "feat_total": 8,
-        "feat_ent": 1,
-        "hu_total": 90,
+        "feat_ent": 2,
+        "hu_total": 98,
         "buckets": {
-          "100": 73,
+          "100": 84,
           "75": 0,
-          "50": 6,
-          "20": 6,
-          "0": 5
+          "50": 1,
+          "20": 3,
+          "0": 10
         },
         "hu_buckets": {
-          "100": 73,
+          "100": 84,
           "75": 0,
-          "50": 6,
-          "20": 6,
-          "0": 5
+          "50": 1,
+          "20": 3,
+          "0": 10
         },
         "feat_buckets": {
-          "100": 1,
-          "75": 6,
+          "100": 2,
+          "75": 5,
           "50": 1,
           "20": 0,
           "0": 0
@@ -547,19 +547,19 @@
       }
     },
     "420": {
-      "corte": "2026-11-13",
-      "archivo": "HU_420_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_420_20261117.csv",
       "kpi": {
-        "n_hu": 626,
-        "n_hu_activas": 611,
+        "n_hu": 627,
+        "n_hu_activas": 612,
         "hu_sin_feature": 0,
         "n_feature": 57,
         "n_epic": 12,
         "n_feature_con_hu": 57,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.9367,
-        "term_global": 518,
+        "pct_global": 0.9377,
+        "term_global": 522,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
         "feature_100_sin_cerrar": 35,
@@ -567,7 +567,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.8822,
+        "tactico": 0.884,
         "estrategico": 0.6316,
         "n": 57,
         "d": 36,
@@ -575,33 +575,33 @@
         "isEpics": false,
         "feat_total": 57,
         "feat_ent": 36,
-        "hu_total": 611,
+        "hu_total": 612,
         "buckets": {
-          "100": 518,
+          "100": 522,
           "75": 0,
-          "50": 50,
+          "50": 47,
           "20": 19,
           "0": 24
         },
         "hu_buckets": {
-          "100": 518,
+          "100": 522,
           "75": 0,
-          "50": 50,
+          "50": 47,
           "20": 19,
           "0": 24
         },
         "feat_buckets": {
           "100": 36,
           "75": 13,
-          "50": 3,
-          "20": 3,
+          "50": 4,
+          "20": 2,
           "0": 2
         }
       }
     },
     "457": {
-      "corte": "2026-11-13",
-      "archivo": "HU_457_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_457_20261117.csv",
       "kpi": {
         "n_hu": 305,
         "n_hu_activas": 283,
@@ -611,7 +611,7 @@
         "n_feature_con_hu": 51,
         "feature_sin_hu": 3,
         "hu_omitidas": 0,
-        "pct_global": 0.9141,
+        "pct_global": 0.9146,
         "term_global": 238,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -653,8 +653,8 @@
       }
     },
     "456": {
-      "corte": "2026-11-13",
-      "archivo": "HU_456_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_456_20261117.csv",
       "kpi": {
         "n_hu": 16,
         "n_hu_activas": 16,
@@ -664,7 +664,7 @@
         "n_feature_con_hu": 4,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.85,
+        "pct_global": 0.95,
         "term_global": 0,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -683,7 +683,7 @@
         "feat_ent": 0,
         "epic_total": 1,
         "hu_total": 13,
-        "pct_azure": 0.85,
+        "pct_azure": 0.95,
         "buckets": {
           "100": 1,
           "75": 0,
@@ -694,71 +694,71 @@
       }
     },
     "005": {
-      "corte": "2026-11-13",
-      "archivo": "HU_005_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_005_20261117.csv",
       "kpi": {
         "n_hu": 249,
-        "n_hu_activas": 248,
-        "hu_sin_feature": 2,
-        "n_feature": 61,
-        "n_epic": 4,
-        "n_feature_con_hu": 61,
+        "n_hu_activas": 247,
+        "hu_sin_feature": 1,
+        "n_feature": 62,
+        "n_epic": 5,
+        "n_feature_con_hu": 62,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.8201,
+        "pct_global": 0.783,
         "term_global": 154,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
-        "feature_100_sin_cerrar": 5,
-        "feature_estado_ajeno": 16,
+        "feature_100_sin_cerrar": 3,
+        "feature_estado_ajeno": 13,
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.7723,
-        "estrategico": 0.7213,
-        "n": 61,
+        "tactico": 0.7669,
+        "estrategico": 0.7097,
+        "n": 62,
         "d": 44,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 61,
+        "feat_total": 62,
         "feat_ent": 44,
         "hu_total": 246,
         "buckets": {
           "100": 154,
           "75": 10,
           "50": 0,
-          "20": 26,
-          "0": 56
+          "20": 37,
+          "0": 45
         },
         "hu_buckets": {
           "100": 154,
           "75": 10,
           "50": 0,
-          "20": 26,
-          "0": 56
+          "20": 37,
+          "0": 45
         },
         "feat_buckets": {
           "100": 44,
           "75": 2,
           "50": 0,
-          "20": 6,
-          "0": 9
+          "20": 8,
+          "0": 8
         }
       }
     },
     "461": {
-      "corte": "2026-11-13",
-      "archivo": "HU_461_20261113.csv",
+      "corte": "2026-11-17",
+      "archivo": "HU_461_20261117.csv",
       "kpi": {
-        "n_hu": 173,
+        "n_hu": 176,
         "n_hu_activas": 119,
         "hu_sin_feature": 0,
         "n_feature": 32,
         "n_epic": 7,
         "n_feature_con_hu": 32,
         "feature_sin_hu": 0,
-        "hu_omitidas": 51,
-        "pct_global": 0.4291,
+        "hu_omitidas": 54,
+        "pct_global": 0.4315,
         "term_global": 1,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -799,19 +799,178 @@
         }
       }
     },
-    "419": {
-      "corte": "2026-11-13",
-      "archivo": "Consolidado 419 (DEP + RAMA · 2026-11-13)",
+    "407": {
+      "corte": "2026-11-17",
+      "archivo": "HU_407_20261117.csv",
       "kpi": {
-        "n_hu": 1466,
-        "n_hu_activas": 1365,
+        "n_hu": 699,
+        "n_hu_activas": 676,
+        "hu_sin_feature": 78,
+        "n_feature": 56,
+        "n_epic": 16,
+        "n_feature_con_hu": 52,
+        "feature_sin_hu": 4,
+        "hu_omitidas": 0,
+        "pct_global": 0.9302,
+        "term_global": 614,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 14,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.6508,
+        "estrategico": 0.5962,
+        "n": 52,
+        "d": 31,
+        "u": "funcionalidades",
+        "isEpics": false,
+        "feat_total": 52,
+        "feat_ent": 31,
+        "hu_total": 598,
+        "buckets": {
+          "100": 536,
+          "75": 0,
+          "50": 1,
+          "20": 6,
+          "0": 55
+        },
+        "hu_buckets": {
+          "100": 536,
+          "75": 0,
+          "50": 1,
+          "20": 6,
+          "0": 55
+        },
+        "feat_buckets": {
+          "100": 31,
+          "75": 0,
+          "50": 3,
+          "20": 3,
+          "0": 15
+        }
+      }
+    },
+    "414": {
+      "corte": "2026-11-17",
+      "archivo": "HU_414_20261117.csv",
+      "kpi": {
+        "n_hu": 600,
+        "n_hu_activas": 593,
+        "hu_sin_feature": 12,
+        "n_feature": 89,
+        "n_epic": 38,
+        "n_feature_con_hu": 88,
+        "feature_sin_hu": 1,
+        "hu_omitidas": 0,
+        "pct_global": 0.9321,
+        "term_global": 535,
+        "feature_sin_frente": 2,
+        "hu_sin_frente": 21,
+        "feature_100_sin_cerrar": 65,
+        "feature_estado_ajeno": 56,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.905,
+        "estrategico": 0.8295,
+        "n": 88,
+        "d": 73,
+        "u": "funcionalidades",
+        "isEpics": false,
+        "feat_total": 88,
+        "feat_ent": 73,
+        "hu_total": 581,
+        "buckets": {
+          "100": 523,
+          "75": 0,
+          "50": 2,
+          "20": 22,
+          "0": 34
+        },
+        "hu_buckets": {
+          "100": 523,
+          "75": 0,
+          "50": 2,
+          "20": 22,
+          "0": 34
+        },
+        "feat_buckets": {
+          "100": 73,
+          "75": 6,
+          "50": 2,
+          "20": 2,
+          "0": 5
+        }
+      }
+    },
+    "019": {
+      "corte": "2026-11-17",
+      "archivo": "HU_019_20261117.csv",
+      "kpi": {
+        "n_hu": 193,
+        "n_hu_activas": 175,
+        "hu_sin_feature": 34,
+        "n_feature": 13,
+        "n_epic": 9,
+        "n_feature_con_hu": 13,
+        "feature_sin_hu": 0,
+        "hu_omitidas": 0,
+        "pct_global": 0.6571,
+        "term_global": 35,
+        "feature_sin_frente": 0,
+        "hu_sin_frente": 0,
+        "feature_100_sin_cerrar": 3,
+        "feature_estado_ajeno": 0,
+        "feature_removido_con_hu": 0
+      },
+      "cmi": {
+        "tactico": 0.6113,
+        "estrategico": 0.3077,
+        "n": 13,
+        "d": 4,
+        "u": "funcionalidades",
+        "isEpics": false,
+        "feat_total": 13,
+        "feat_ent": 4,
+        "hu_total": 141,
+        "buckets": {
+          "100": 31,
+          "75": 44,
+          "50": 0,
+          "20": 5,
+          "0": 61
+        },
+        "hu_buckets": {
+          "100": 31,
+          "75": 44,
+          "50": 0,
+          "20": 5,
+          "0": 61
+        },
+        "feat_buckets": {
+          "100": 4,
+          "75": 3,
+          "50": 2,
+          "20": 2,
+          "0": 2
+        }
+      }
+    },
+    "419": {
+      "corte": "2026-11-17",
+      "archivo": "Consolidado 419 (DEP + RAMA · 2026-11-17)",
+      "kpi": {
+        "n_hu": 1467,
+        "n_hu_activas": 1366,
         "hu_sin_feature": 43,
         "n_feature": 227,
         "n_epic": 21,
         "n_feature_con_hu": 207,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7717,
+        "pct_global": 0.7729,
         "term_global": 548,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -838,46 +997,46 @@
       }
     },
     "POS": {
-      "corte": "2026-11-13",
+      "corte": "2026-11-17",
       "archivo": "Consolidado Positiva Core (355 + 416)",
       "cmi": {
-        "tactico": 0.4305,
-        "estrategico": 0.0625,
-        "n": 96,
+        "tactico": 0.4275,
+        "estrategico": 0.0632,
+        "n": 95,
         "d": 6,
         "u": "épicas",
         "isEpics": true,
-        "feat_total": 101,
+        "feat_total": 100,
         "feat_ent": 6,
         "buckets": {
           "100": 391,
-          "75": 249,
+          "75": 246,
           "50": 26,
-          "20": 63,
-          "0": 419
+          "20": 76,
+          "0": 449
         }
       }
     },
     "453": {
-      "corte": "2026-11-13",
+      "corte": "2026-11-17",
       "archivo": "453 CPE (Focos y Casos de Uso)",
       "cmi": {
-        "tactico": 0.4,
-        "estrategico": 0.3816,
-        "exito": 0.4005,
-        "n": 76,
+        "tactico": 0.3848,
+        "estrategico": 0.3671,
+        "exito": 0.3782,
+        "n": 79,
         "d": 29,
         "u": "casos de uso",
         "isFocos": false,
         "isCus": true,
-        "feat_total": 76,
+        "feat_total": 79,
         "feat_ent": 29,
         "buckets": {
           "100": 29,
           "75": 0,
           "50": 0,
           "20": 7,
-          "0": 40
+          "0": 43
         }
       }
     }

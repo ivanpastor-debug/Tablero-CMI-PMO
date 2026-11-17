@@ -1,8 +1,8 @@
 {
   "codigo": "456",
-  "corte": "2026-11-13",
-  "generado": "2026-11-13 08:35",
-  "archivo": "HU_456_20261113.csv",
+  "corte": "2026-11-17",
+  "generado": "2026-11-17 16:04",
+  "archivo": "HU_456_20261117.csv",
   "epics": [
     {
       "i": "544970",
@@ -10,52 +10,52 @@
       "n_f": 4,
       "n": 13,
       "term": 0,
-      "pct": 0.85
+      "pct": 0.95
     }
   ],
   "features": [
     {
       "i": "545363",
       "t": "Acceso y autenticación",
-      "e": "1. En Planeación",
+      "e": "4. Cerrado",
       "ep": "544970",
       "ept": "Memoria contractual consultable con IA",
       "n": 5,
       "term": 0,
-      "pct": 0.85,
+      "pct": 0.95,
       "n_pct": 5
     },
     {
       "i": "545458",
       "t": "Gestión de usuarios y roles",
-      "e": "1. En Planeación",
+      "e": "4. Cerrado",
       "ep": "544970",
       "ept": "Memoria contractual consultable con IA",
       "n": 4,
       "term": 0,
-      "pct": 0.85,
+      "pct": 0.95,
       "n_pct": 4
     },
     {
       "i": "545459",
       "t": "Gestión documental",
-      "e": "1. En Planeación",
+      "e": "4. Cerrado",
       "ep": "544970",
       "ept": "Memoria contractual consultable con IA",
       "n": 2,
       "term": 0,
-      "pct": 0.85,
+      "pct": 0.95,
       "n_pct": 2
     },
     {
       "i": "545460",
       "t": "Consulta y búsqueda con IA",
-      "e": "1. En Planeación",
+      "e": "4. Cerrado",
       "ep": "544970",
       "ept": "Memoria contractual consultable con IA",
       "n": 2,
       "term": 0,
-      "pct": 0.85,
+      "pct": 0.95,
       "n_pct": 2
     }
   ],
@@ -63,10 +63,10 @@
     {
       "i": "553015",
       "t": "HU001 - Autenticación de usuario",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545363",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -74,10 +74,10 @@
     {
       "i": "553016",
       "t": "HU004 - Gestión de usuarios: crear, desactivar, reactivar y asignar rol",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545458",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -85,10 +85,10 @@
     {
       "i": "553017",
       "t": "HU005 - Control de acceso por rol, categoría, módulo y grupo",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545458",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -96,10 +96,10 @@
     {
       "i": "553018",
       "t": "HU006 - Carga y organización de documentos por categoría",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545459",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -107,10 +107,10 @@
     {
       "i": "553019",
       "t": "HU003-T - Consulta al asistente de IA con respuestas citadas",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545460",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -118,10 +118,10 @@
     {
       "i": "553020",
       "t": "HU002 - Asignar rol a usuarios pendientes de rol",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545458",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -129,10 +129,10 @@
     {
       "i": "553021",
       "t": "HU003 - Desbloqueo de cuenta mediante código de verificación",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545363",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -140,10 +140,10 @@
     {
       "i": "553022",
       "t": "HU007 - Versionado de documentos",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545459",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -151,10 +151,10 @@
     {
       "i": "553023",
       "t": "HU008 - Creación de caso por proyecto IP/APP",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": null,
       "ep": null,
       "r": "Jhonatan Figueroa Figueroa"
@@ -162,10 +162,10 @@
     {
       "i": "553025",
       "t": "HU009 - Observaciones y réplicas del caso",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": null,
       "ep": null,
       "r": "Jhonatan Figueroa Figueroa"
@@ -173,10 +173,10 @@
     {
       "i": "553026",
       "t": "HU010 - Concepto y estados del caso hasta el cierre",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": null,
       "ep": null,
       "r": "Jhonatan Figueroa Figueroa"
@@ -184,10 +184,10 @@
     {
       "i": "553027",
       "t": "HU011 - Primer ingreso: términos y condiciones, tour y verificación de contacto",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545363",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -195,10 +195,10 @@
     {
       "i": "553028",
       "t": "HU012 - Administración de roles, permisos y menú",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545458",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -206,10 +206,10 @@
     {
       "i": "553029",
       "t": "HU001-T - Cambio obligatorio de contraseña temporal o vencida",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545363",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -217,10 +217,10 @@
     {
       "i": "553030",
       "t": "HU002-T - Recuperación de contraseña olvidada con código de verificación",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545363",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -228,10 +228,10 @@
     {
       "i": "553031",
       "t": "HU004-T - Búsqueda de documentos por categoría, nombre y fecha de carga",
-      "e": "8.1. Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "9. Esperando Despliegue UAT-PROD",
+      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 0.95,
       "f": "545460",
       "ep": "544970",
       "r": "Jhonatan Figueroa Figueroa"
@@ -246,7 +246,7 @@
     "n_feature_con_hu": 4,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.85,
+    "pct_global": 0.95,
     "term_global": 0,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -265,7 +265,7 @@
     "feat_ent": 0,
     "epic_total": 1,
     "hu_total": 13,
-    "pct_azure": 0.85,
+    "pct_azure": 0.95,
     "buckets": {
       "100": 1,
       "75": 0,
