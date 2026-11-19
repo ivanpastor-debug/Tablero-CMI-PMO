@@ -1,8 +1,8 @@
 {
   "codigo": "407",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_407_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:58",
+  "archivo": "HU_407_20261119.csv",
   "epics": [
     {
       "i": "188047",
@@ -24,9 +24,9 @@
       "i": "422214",
       "t": "Reportes",
       "n_f": 5,
-      "n": 16,
+      "n": 17,
       "term": 4,
-      "pct": 0.4375
+      "pct": 0.4941
     },
     {
       "i": "163592",
@@ -69,20 +69,20 @@
       "pct": 0.3286
     },
     {
+      "i": "429334",
+      "t": "Portal web",
+      "n_f": 2,
+      "n": 6,
+      "term": 0,
+      "pct": 0.3
+    },
+    {
       "i": "163593",
       "t": "Bolsa de horas Fiscalía",
       "n_f": 1,
       "n": 5,
       "term": 5,
       "pct": 1.0
-    },
-    {
-      "i": "429334",
-      "t": "Portal web",
-      "n_f": 2,
-      "n": 5,
-      "term": 0,
-      "pct": 0.32
     },
     {
       "i": "510781",
@@ -349,10 +349,10 @@
       "e": "1. En Planeacion",
       "ep": "422214",
       "ept": "Reportes",
-      "n": 4,
+      "n": 5,
       "term": 0,
       "pct": 0.2,
-      "n_pct": 4
+      "n_pct": 5
     },
     {
       "i": "429344",
@@ -360,10 +360,10 @@
       "e": "1. En Planeacion",
       "ep": "429334",
       "ept": "Portal web",
-      "n": 4,
+      "n": 5,
       "term": 0,
       "pct": 0.2,
-      "n_pct": 4
+      "n_pct": 5
     },
     {
       "i": "506823",
@@ -406,7 +406,7 @@
       "ept": "Reportes",
       "n": 4,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.5,
       "n_pct": 4
     },
     {
@@ -8356,28 +8356,28 @@
     {
       "i": "550594",
       "t": "HU791_FGN_Bienes Más (+)_Reporte_Proyección_Plan_Necesidades_Vista Listado Reporte_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "550569",
       "ep": "422214",
-      "r": "Angela Maria Guacheta Ibarra"
+      "r": "Doris Estefania Bohorquez Ruiz"
     },
     {
       "i": "551802",
       "t": "HU792_FGN_Bienes Más (+)_Reporte_Proyección_Plan_Necesidades_Vista Crear Reporte_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "550569",
       "ep": "422214",
-      "r": "Angela Maria Guacheta Ibarra"
+      "r": "Doris Estefania Bohorquez Ruiz"
     },
     {
       "i": "558428",
-      "t": "HU795_FGNV2_Reporte_Bien_Consumo__Solicitud_Dependencia_Solicitante_V2 + Revisión del Tercer correo Pendiente",
+      "t": "HU795_FGNV2_Reporte_Bien_Consumo__Solicitud_Dependencia_Solicitante_V2",
       "e": "4. Cerrado",
       "p": "EN PRODUCCIÓN",
       "a": 1,
@@ -8389,24 +8389,24 @@
     {
       "i": "558515",
       "t": "HU793_FGNV2_Bienes_Proyección_Plan_Necesidades_Generar_Excel_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "550569",
       "ep": "422214",
-      "r": "Angela Maria Guacheta Ibarra"
+      "r": "Doris Estefania Bohorquez Ruiz"
     },
     {
       "i": "558554",
       "t": "HU794_FGNV2_Bienes_Proyección_Plan_Necesidades_Generar_PDF_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "550569",
       "ep": "422214",
-      "r": "Angela Maria Guacheta Ibarra"
+      "r": "Doris Estefania Bohorquez Ruiz"
     },
     {
       "i": "559897",
@@ -8440,18 +8440,40 @@
       "f": "548872",
       "ep": "524219",
       "r": ""
+    },
+    {
+      "i": "568982",
+      "t": "HU797_FGNV2_Reporte_Transacciones__Solicitud_Añadir Columnas_Servidor_Dependencia_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "422232",
+      "ep": "422214",
+      "r": "Tilson Fernandez"
+    },
+    {
+      "i": "569243",
+      "t": "HU798_FGNV2_Portal Web_Solicitudes_Entrada_Descargar_Excel_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "429344",
+      "ep": "429334",
+      "r": "Tilson Fernandez"
     }
   ],
   "kpi": {
-    "n_hu": 699,
-    "n_hu_activas": 676,
+    "n_hu": 701,
+    "n_hu_activas": 678,
     "hu_sin_feature": 78,
     "n_feature": 56,
     "n_epic": 16,
     "n_feature_con_hu": 52,
     "feature_sin_hu": 4,
     "hu_omitidas": 0,
-    "pct_global": 0.9302,
+    "pct_global": 0.9298,
     "term_global": 614,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -8460,7 +8482,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6508,
+    "tactico": 0.6546,
     "estrategico": 0.5962,
     "n": 52,
     "d": 31,
@@ -8468,27 +8490,27 @@
     "isEpics": false,
     "feat_total": 52,
     "feat_ent": 31,
-    "hu_total": 598,
+    "hu_total": 600,
     "buckets": {
       "100": 536,
       "75": 0,
       "50": 1,
-      "20": 6,
-      "0": 55
+      "20": 10,
+      "0": 53
     },
     "hu_buckets": {
       "100": 536,
       "75": 0,
       "50": 1,
-      "20": 6,
-      "0": 55
+      "20": 10,
+      "0": 53
     },
     "feat_buckets": {
       "100": 31,
       "75": 0,
       "50": 3,
-      "20": 3,
-      "0": 15
+      "20": 4,
+      "0": 14
     }
   }
 }

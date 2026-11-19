@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_420_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:58",
+  "archivo": "HU_420_20261119.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
-      "n": 187,
-      "term": 134,
-      "pct": 0.8856
+      "n": 186,
+      "term": 137,
+      "pct": 0.8892
     },
     {
       "i": "357729",
@@ -131,8 +131,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 37,
-      "term": 29,
-      "pct": 0.9243,
+      "term": 30,
+      "pct": 0.9297,
       "n_pct": 37
     },
     {
@@ -191,17 +191,6 @@
       "n_pct": 19
     },
     {
-      "i": "382413",
-      "t": "Conciliación",
-      "e": "1. En Planeacion",
-      "ep": "357078",
-      "ept": "Cuentas médicas",
-      "n": 19,
-      "term": 14,
-      "pct": 0.9474,
-      "n_pct": 19
-    },
-    {
       "i": "357730",
       "t": "Cuentas médicas - Radicador de facturas",
       "e": "1. En Planeacion",
@@ -210,6 +199,17 @@
       "n": 18,
       "term": 11,
       "pct": 0.6889,
+      "n_pct": 18
+    },
+    {
+      "i": "382413",
+      "t": "Conciliación",
+      "e": "1. En Planeacion",
+      "ep": "357078",
+      "ept": "Cuentas médicas",
+      "n": 18,
+      "term": 14,
+      "pct": 0.9556,
       "n_pct": 18
     },
     {
@@ -241,8 +241,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 15,
-      "term": 3,
-      "pct": 0.76,
+      "term": 5,
+      "pct": 0.7867,
       "n_pct": 15
     },
     {
@@ -3374,10 +3374,10 @@
     {
       "i": "371510",
       "t": "HU0027_Positiva_Finalizar_Proceso_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377082",
       "ep": "357078",
       "r": "Sindy Mabel Lozada Ruiz"
@@ -4430,10 +4430,10 @@
     {
       "i": "404488",
       "t": "HU0066_Positiva_Conciliación_Responder_Glosa_Total_V2",
-      "e": "3. Entregado",
-      "p": "QA",
-      "a": 1,
-      "v": 0.8,
+      "e": "X. Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "382413",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6933,15 +6933,15 @@
       "v": 0.5,
       "f": "550640",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Francisco Jose Hernandez Cordero"
     },
     {
       "i": "507126",
       "t": "HU0200_Positiva_Reporte_Mes_FTP_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -7158,10 +7158,10 @@
     {
       "i": "525625",
       "t": "HU0208_Positiva_Listado_Reportes_FTP_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -7263,7 +7263,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "Brandon David Palacio Alvarez"
+      "r": "Johan David Velasco Rios"
     },
     {
       "i": "531233",
@@ -7274,7 +7274,7 @@
       "v": 0.5,
       "f": "531229",
       "ep": "357078",
-      "r": "Brandon David Palacio Alvarez"
+      "r": "Johan David Velasco Rios"
     },
     {
       "i": "531234",
@@ -7307,7 +7307,7 @@
       "v": 0.5,
       "f": "377082",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Francisco Jose Hernandez Cordero"
     },
     {
       "i": "533599",
@@ -7571,7 +7571,7 @@
       "v": 0.5,
       "f": "468613",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Jhon Sebastian Peña"
     },
     {
       "i": "562257",
@@ -7631,15 +7631,15 @@
   ],
   "kpi": {
     "n_hu": 627,
-    "n_hu_activas": 612,
+    "n_hu_activas": 611,
     "hu_sin_feature": 0,
     "n_feature": 57,
     "n_epic": 12,
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9377,
-    "term_global": 522,
+    "pct_global": 0.939,
+    "term_global": 525,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 35,
@@ -7647,7 +7647,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.884,
+    "tactico": 0.8858,
     "estrategico": 0.6316,
     "n": 57,
     "d": 36,
@@ -7655,18 +7655,18 @@
     "isEpics": false,
     "feat_total": 57,
     "feat_ent": 36,
-    "hu_total": 612,
+    "hu_total": 611,
     "buckets": {
-      "100": 522,
+      "100": 525,
       "75": 0,
-      "50": 47,
+      "50": 43,
       "20": 19,
       "0": 24
     },
     "hu_buckets": {
-      "100": 522,
+      "100": 525,
       "75": 0,
-      "50": 47,
+      "50": 43,
       "20": 19,
       "0": 24
     },

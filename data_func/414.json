@@ -1,8 +1,8 @@
 {
   "codigo": "414",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_414_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:59",
+  "archivo": "HU_414_20261119.csv",
   "epics": [
     {
       "i": "270309",
@@ -17,8 +17,8 @@
       "t": "Requerimientos Bolsa de Horas.",
       "n_f": 10,
       "n": 53,
-      "term": 50,
-      "pct": 0.9668
+      "term": 52,
+      "pct": 0.9819
     },
     {
       "i": "236255",
@@ -33,8 +33,8 @@
       "t": "Positiva Web 414",
       "n_f": 3,
       "n": 36,
-      "term": 29,
-      "pct": 0.8289
+      "term": 30,
+      "pct": 0.84
     },
     {
       "i": "460466",
@@ -114,7 +114,7 @@
       "n_f": 2,
       "n": 11,
       "term": 8,
-      "pct": 0.9273
+      "pct": 0.9455
     },
     {
       "i": "236349",
@@ -339,8 +339,8 @@
       "ep": "387417",
       "ept": "Positiva Web 414",
       "n": 21,
-      "term": 16,
-      "pct": 0.7981,
+      "term": 17,
+      "pct": 0.8171,
       "n_pct": 21
     },
     {
@@ -560,7 +560,7 @@
       "ept": "Red Positiva+Salud - Puntos de Atención",
       "n": 7,
       "term": 5,
-      "pct": 0.9143,
+      "pct": 0.9429,
       "n_pct": 7
     },
     {
@@ -669,8 +669,8 @@
       "ep": "308183",
       "ept": "Requerimientos Bolsa de Horas.",
       "n": 4,
-      "term": 2,
-      "pct": 0.8,
+      "term": 4,
+      "pct": 1.0,
       "n_pct": 4
     },
     {
@@ -7344,13 +7344,13 @@
     {
       "i": "511914",
       "t": "WEB_HU0040_ReconstrucciónMegamenú",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "387427",
       "ep": "387417",
-      "r": "Alix Fraile"
+      "r": ""
     },
     {
       "i": "520573",
@@ -7399,10 +7399,10 @@
     {
       "i": "525565",
       "t": "HU0006_ParametrizarBotonDescargaGuiaABC",
-      "e": "7.1  Pruebas QA",
+      "e": "3. Entregado",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "460510",
       "ep": "460474",
       "r": "Alix Fraile"
@@ -7586,24 +7586,24 @@
     {
       "i": "539123",
       "t": "HU_001_NOTI_Administración de noticias",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "423751",
       "ep": "308183",
-      "r": "Alix Fraile"
+      "r": ""
     },
     {
       "i": "539124",
       "t": "HU_002_NOTI_Sección de noticias en el sitio",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "423751",
       "ep": "308183",
-      "r": "Alix Fraile"
+      "r": ""
     },
     {
       "i": "549040",
@@ -7702,7 +7702,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549049",
@@ -7713,7 +7713,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549050",
@@ -7724,7 +7724,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549051",
@@ -7735,7 +7735,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549052",
@@ -7746,7 +7746,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549053",
@@ -7757,7 +7757,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549054",
@@ -7768,7 +7768,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "549055",
@@ -7779,7 +7779,7 @@
       "v": 0.2,
       "f": "549039",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "565830",
@@ -7790,7 +7790,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565831",
@@ -7801,7 +7801,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565832",
@@ -7812,7 +7812,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565833",
@@ -7823,7 +7823,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565834",
@@ -7834,7 +7834,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565835",
@@ -7845,7 +7845,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565836",
@@ -7856,7 +7856,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "565837",
@@ -7867,7 +7867,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565838",
@@ -7878,7 +7878,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     },
     {
       "i": "565839",
@@ -7889,7 +7889,7 @@
       "v": 0.2,
       "f": "565829",
       "ep": "536643",
-      "r": "Johan Esteban Benitez Bermúdez"
+      "r": "Fabian Camilo Peralta Gutierrez"
     }
   ],
   "kpi": {
@@ -7901,42 +7901,42 @@
     "n_feature_con_hu": 88,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.9321,
-    "term_global": 535,
+    "pct_global": 0.9345,
+    "term_global": 538,
     "feature_sin_frente": 2,
     "hu_sin_frente": 21,
-    "feature_100_sin_cerrar": 65,
+    "feature_100_sin_cerrar": 66,
     "feature_estado_ajeno": 56,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.905,
-    "estrategico": 0.8295,
+    "tactico": 0.9105,
+    "estrategico": 0.8409,
     "n": 88,
-    "d": 73,
+    "d": 74,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 88,
-    "feat_ent": 73,
+    "feat_ent": 74,
     "hu_total": 581,
     "buckets": {
-      "100": 523,
+      "100": 526,
       "75": 0,
-      "50": 2,
-      "20": 22,
+      "50": 3,
+      "20": 18,
       "0": 34
     },
     "hu_buckets": {
-      "100": 523,
+      "100": 526,
       "75": 0,
-      "50": 2,
-      "20": 22,
+      "50": 3,
+      "20": 18,
       "0": 34
     },
     "feat_buckets": {
-      "100": 73,
+      "100": 74,
       "75": 6,
-      "50": 2,
+      "50": 1,
       "20": 2,
       "0": 5
     }

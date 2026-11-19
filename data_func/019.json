@@ -1,8 +1,8 @@
 {
   "codigo": "019",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_019_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:59",
+  "archivo": "HU_019_20261119.csv",
   "epics": [
     {
       "i": "388889",
@@ -1838,7 +1838,7 @@
       "v": null,
       "f": "392763",
       "ep": "388889",
-      "r": "Janer Herrera"
+      "r": ""
     },
     {
       "i": "461416",
@@ -2305,10 +2305,10 @@
     {
       "i": "525887",
       "t": "HU363 CRM - Modificación de Tipo de Campo 'Tipo de Recibo' a Char y actualización de API CORE",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.85,
       "f": null,
       "ep": null,
       "r": "Angie Julieth Parra"
@@ -2356,7 +2356,7 @@
     "n_feature_con_hu": 13,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.6571,
+    "pct_global": 0.6594,
     "term_global": 35,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

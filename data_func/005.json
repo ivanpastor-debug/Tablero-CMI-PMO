@@ -1,8 +1,8 @@
 {
   "codigo": "005",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_005_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:58",
+  "archivo": "HU_005_20261119.csv",
   "epics": [
     {
       "i": "2227",
@@ -16,9 +16,9 @@
       "i": "82",
       "t": "Evolutivos",
       "n_f": 16,
-      "n": 61,
-      "term": 30,
-      "pct": 0.7133
+      "n": 64,
+      "term": 37,
+      "pct": 0.7002
     },
     {
       "i": "578",
@@ -26,7 +26,7 @@
       "n_f": 2,
       "n": 56,
       "term": 5,
-      "pct": 0.45
+      "pct": 0.4593
     },
     {
       "i": "568",
@@ -54,7 +54,7 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.3958,
+      "pct": 0.4075,
       "n_pct": 36
     },
     {
@@ -65,7 +65,7 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 20,
       "term": 4,
-      "pct": 0.5475,
+      "pct": 0.5525,
       "n_pct": 20
     },
     {
@@ -82,7 +82,7 @@
     {
       "i": "154",
       "t": "Plantillas",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "2227",
       "ept": "Garantía - En producción",
       "n": 14,
@@ -170,12 +170,12 @@
     {
       "i": "101",
       "t": "Refactorización de interfaz e integración modulo de estados de PQRD",
-      "e": "3. Entregado",
+      "e": "4. Cerrado",
       "ep": "82",
       "ept": "Evolutivos",
       "n": 6,
-      "term": 0,
-      "pct": 0.95,
+      "term": 6,
+      "pct": 1.0,
       "n_pct": 6
     },
     {
@@ -231,6 +231,17 @@
       "n": 4,
       "term": 4,
       "pct": 1.0,
+      "n_pct": 4
+    },
+    {
+      "i": "3329",
+      "t": "Cargue de CUFEs por CSV a NumRot desde SGDEA (lotes de 10.000)",
+      "e": "2. En Curso",
+      "ep": "82",
+      "ept": "Evolutivos",
+      "n": 4,
+      "term": 0,
+      "pct": 0.0425,
       "n_pct": 4
     },
     {
@@ -713,19 +724,8 @@
       "ep": "82",
       "ept": "Evolutivos",
       "n": 1,
-      "term": 0,
-      "pct": 0.0,
-      "n_pct": 1
-    },
-    {
-      "i": "3329",
-      "t": "Cargue de CUFEs por CSV a NumRot desde SGDEA (lotes de 10.000)",
-      "e": "2. En Curso",
-      "ep": "82",
-      "ept": "Evolutivos",
-      "n": 1,
-      "term": 0,
-      "pct": 0.17,
+      "term": 1,
+      "pct": 1.0,
       "n_pct": 1
     }
   ],
@@ -1030,10 +1030,10 @@
     {
       "i": "180",
       "t": "HU-PQRD-01 - Inicio del sistema de PQRD y aceptación de políticas",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "101",
       "ep": "82",
       "r": "Josimar Bonilla"
@@ -1041,10 +1041,10 @@
     {
       "i": "181",
       "t": "HU-PQRD-02 - Direccionamiento de PQRD anónima a la Procuraduría General de la Nación",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "101",
       "ep": "82",
       "r": "Josimar Bonilla"
@@ -1052,10 +1052,10 @@
     {
       "i": "182",
       "t": "HU-PQRD-03 - Radicación de PQRD ante Positiva",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "101",
       "ep": "82",
       "r": "Josimar Bonilla"
@@ -1063,10 +1063,10 @@
     {
       "i": "183",
       "t": "HU-PQRD-04 - Verificación de correo del solicitante mediante código (OTP)",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "101",
       "ep": "82",
       "r": "Josimar Bonilla"
@@ -1074,10 +1074,10 @@
     {
       "i": "184",
       "t": "HU-PQRD-05 - Confirmación de radicación y descarga de la solicitud",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "101",
       "ep": "82",
       "r": "Josimar Bonilla"
@@ -1085,10 +1085,10 @@
     {
       "i": "185",
       "t": "HU-PQRD-06 - Consulta del estado de la PQRD por número de radicado",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "101",
       "ep": "82",
       "r": "Josimar Bonilla"
@@ -1278,7 +1278,7 @@
       "v": 0.6,
       "f": "579",
       "ep": "578",
-      "r": "Jhonatan Rocha"
+      "r": "Carlos Cansina"
     },
     {
       "i": "593",
@@ -1327,10 +1327,10 @@
     {
       "i": "597",
       "t": "Guía de clasificación documental (tipo documental)",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "579",
       "ep": "578",
       "r": "Jose Fernando Lozano Murcia"
@@ -1459,10 +1459,10 @@
     {
       "i": "610",
       "t": "C001-Anexo1-Técnico 5.7.10. Los administradores no deben poder deshabilitar los controles de autorización y acceso definidos para su tipo de usuario.",
-      "e": "7.1 Pruebas QA",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.5,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1492,13 +1492,13 @@
     {
       "i": "613",
       "t": "C001-Anexo1-Técnico 5.8.1. Tener mecanismos para controlar el tratamiento de datos personales de acuerdo con la Ley de protección de datos personales de Colombia.",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.08,
+      "v": 0.3,
       "f": "601",
       "ep": "578",
-      "r": "Dario Lopez"
+      "r": "Brayan Correa"
     },
     {
       "i": "614",
@@ -1509,7 +1509,7 @@
       "v": 0.17,
       "f": "601",
       "ep": "578",
-      "r": "Jhostin Ladino"
+      "r": "Brayan Correa"
     },
     {
       "i": "615",
@@ -1536,10 +1536,10 @@
     {
       "i": "617",
       "t": "C001-Anexo1-Técnico 5.9.5.  Registrar el nombre de usuario, la fecha, la hora, la dirección de la estación de trabajo y el método de finalización de la sesión de usuario.",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1547,10 +1547,10 @@
     {
       "i": "618",
       "t": "C001-Anexo1-Técnico 5.9.7. Realizar búsquedas del log de auditoria por diferentes criterios, el usuario podrá ordenar y filtrar el resultado de la búsqueda, así como poder exportar el resultado de la búsqueda en diferentes formatos",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1905,7 +1905,7 @@
       "v": 0.5,
       "f": "1462",
       "ep": "568",
-      "r": ""
+      "r": "jhan.rivero 3tcapital.co"
     },
     {
       "i": "1609",
@@ -3450,13 +3450,13 @@
     {
       "i": "3166",
       "t": "Devoluciones Físicas SIPOST",
-      "e": "New",
-      "p": "REQUERIMIENTOS",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.0,
+      "v": 1.0,
       "f": "84",
       "ep": "82",
-      "r": ""
+      "r": "Michael Alberto Joya Rojas"
     },
     {
       "i": "3185",
@@ -3468,55 +3468,88 @@
       "f": "3329",
       "ep": "82",
       "r": "Jhostin Ladino"
+    },
+    {
+      "i": "3396",
+      "t": "Histórico de cargues",
+      "e": "New",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.0,
+      "f": "3329",
+      "ep": "82",
+      "r": "Juan Vargas"
+    },
+    {
+      "i": "3399",
+      "t": "Adjuntar archivo CUFE,s",
+      "e": "New",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.0,
+      "f": "3329",
+      "ep": "82",
+      "r": "Angie Hernandez"
+    },
+    {
+      "i": "3403",
+      "t": "Validar y enviar CUFEs",
+      "e": "New",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.0,
+      "f": "3329",
+      "ep": "82",
+      "r": "Angie Hernandez"
     }
   ],
   "kpi": {
-    "n_hu": 249,
-    "n_hu_activas": 247,
+    "n_hu": 252,
+    "n_hu_activas": 250,
     "hu_sin_feature": 1,
     "n_feature": 62,
     "n_epic": 5,
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.783,
-    "term_global": 154,
+    "pct_global": 0.7809,
+    "term_global": 161,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 3,
+    "feature_100_sin_cerrar": 2,
     "feature_estado_ajeno": 13,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.7669,
-    "estrategico": 0.7097,
+    "tactico": 0.7873,
+    "estrategico": 0.7419,
     "n": 62,
-    "d": 44,
+    "d": 46,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 62,
-    "feat_ent": 44,
-    "hu_total": 246,
+    "feat_ent": 46,
+    "hu_total": 249,
     "buckets": {
-      "100": 154,
-      "75": 10,
+      "100": 161,
+      "75": 5,
       "50": 0,
-      "20": 37,
-      "0": 45
+      "20": 36,
+      "0": 47
     },
     "hu_buckets": {
-      "100": 154,
-      "75": 10,
+      "100": 161,
+      "75": 5,
       "50": 0,
-      "20": 37,
-      "0": 45
+      "20": 36,
+      "0": 47
     },
     "feat_buckets": {
-      "100": 44,
-      "75": 2,
+      "100": 46,
+      "75": 1,
       "50": 0,
       "20": 8,
-      "0": 8
+      "0": 7
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "codigo": "457",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_457_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:58",
+  "archivo": "HU_457_20261119.csv",
   "epics": [
     {
       "i": "292522",
@@ -10,7 +10,7 @@
       "n_f": 5,
       "n": 107,
       "term": 63,
-      "pct": 0.7789
+      "pct": 0.7836
     },
     {
       "i": "94588",
@@ -73,7 +73,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 29,
       "term": 5,
-      "pct": 0.6083,
+      "pct": 0.6255,
       "n_pct": 29
     },
     {
@@ -3733,13 +3733,13 @@
     {
       "i": "496652",
       "t": "NPDC_HU0011_Información_adicional_Administrador",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.8,
       "f": "295069",
       "ep": "292522",
-      "r": "Julian Enrique Moreno Samudio"
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "497369",
@@ -4015,7 +4015,7 @@
     "n_feature_con_hu": 51,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9146,
+    "pct_global": 0.9164,
     "term_global": 238,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4024,7 +4024,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.9603,
+    "tactico": 0.9606,
     "estrategico": 0.9216,
     "n": 51,
     "d": 47,
@@ -4036,16 +4036,16 @@
     "buckets": {
       "100": 237,
       "75": 13,
-      "50": 0,
+      "50": 1,
       "20": 11,
-      "0": 21
+      "0": 20
     },
     "hu_buckets": {
       "100": 237,
       "75": 13,
-      "50": 0,
+      "50": 1,
       "20": 11,
-      "0": 21
+      "0": 20
     },
     "feat_buckets": {
       "100": 47,

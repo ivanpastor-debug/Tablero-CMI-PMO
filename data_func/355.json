@@ -1,8 +1,8 @@
 {
   "codigo": "355",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:03",
-  "archivo": "HU_355_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:58",
+  "archivo": "HU_355_20261119.csv",
   "epics": [
     {
       "i": "392936",
@@ -10,7 +10,7 @@
       "n_f": 12,
       "n": 463,
       "term": 193,
-      "pct": 0.6859
+      "pct": 0.6887
     },
     {
       "i": "297933",
@@ -26,7 +26,7 @@
       "n_f": 4,
       "n": 120,
       "term": 25,
-      "pct": 0.6311
+      "pct": 0.617
     },
     {
       "i": "559751",
@@ -34,7 +34,7 @@
       "n_f": 12,
       "n": 105,
       "term": 0,
-      "pct": 0.2143
+      "pct": 0.2243
     },
     {
       "i": "385866",
@@ -56,9 +56,9 @@
       "i": "225903",
       "t": "06. Exequias EX",
       "n_f": 4,
-      "n": 54,
+      "n": 53,
       "term": 3,
-      "pct": 0.3067
+      "pct": 0.3392
     },
     {
       "i": "387250",
@@ -66,15 +66,15 @@
       "n_f": 5,
       "n": 50,
       "term": 2,
-      "pct": 0.7046
+      "pct": 0.7026
     },
     {
       "i": "225902",
       "t": "05. Colectivos Vigilantes MCQA OK",
       "n_f": 4,
-      "n": 41,
+      "n": 42,
       "term": 0,
-      "pct": 0.2037
+      "pct": 0.2036
     },
     {
       "i": "117002",
@@ -119,10 +119,10 @@
     {
       "i": "388764",
       "t": "416_ Infra,  Soporte y Deuda CORE",
-      "n_f": 4,
-      "n": 7,
+      "n_f": 5,
+      "n": 8,
       "term": 1,
-      "pct": 0.3257
+      "pct": 0.3225
     },
     {
       "i": "390153",
@@ -155,6 +155,14 @@
       "n": 1,
       "term": 0,
       "pct": 0.8
+    },
+    {
+      "i": "345822",
+      "t": "416_Vida Individual",
+      "n_f": 1,
+      "n": 1,
+      "term": 0,
+      "pct": 0.6
     }
   ],
   "features": [
@@ -166,7 +174,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 150,
       "term": 73,
-      "pct": 0.6615,
+      "pct": 0.6624,
       "n_pct": 150
     },
     {
@@ -177,7 +185,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 74,
       "term": 35,
-      "pct": 0.8554,
+      "pct": 0.8682,
       "n_pct": 74
     },
     {
@@ -199,7 +207,7 @@
       "ept": "416_Transversales MCQA",
       "n": 53,
       "term": 14,
-      "pct": 0.6564,
+      "pct": 0.6347,
       "n_pct": 53
     },
     {
@@ -210,7 +218,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 46,
       "term": 21,
-      "pct": 0.588,
+      "pct": 0.583,
       "n_pct": 46
     },
     {
@@ -221,7 +229,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 44,
       "term": 19,
-      "pct": 0.6577,
+      "pct": 0.6555,
       "n_pct": 44
     },
     {
@@ -241,10 +249,10 @@
       "e": "1. En Planeacion",
       "ep": "225902",
       "ept": "05. Colectivos Vigilantes MCQA OK",
-      "n": 38,
+      "n": 39,
       "term": 0,
-      "pct": 0.1679,
-      "n_pct": 38
+      "pct": 0.1687,
+      "n_pct": 39
     },
     {
       "i": "393412",
@@ -254,7 +262,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 33,
       "term": 5,
-      "pct": 0.5836,
+      "pct": 0.5867,
       "n_pct": 33
     },
     {
@@ -265,7 +273,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 33,
       "term": 12,
-      "pct": 0.5861,
+      "pct": 0.6064,
       "n_pct": 33
     },
     {
@@ -274,10 +282,10 @@
       "e": "1. En Planeacion",
       "ep": "225903",
       "ept": "06. Exequias EX",
-      "n": 32,
+      "n": 31,
       "term": 0,
-      "pct": 0.2856,
-      "n_pct": 32
+      "pct": 0.3416,
+      "n_pct": 31
     },
     {
       "i": "297942",
@@ -298,7 +306,7 @@
       "ept": "416_Migración Salud",
       "n": 31,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.2032,
       "n_pct": 31
     },
     {
@@ -309,7 +317,7 @@
       "ept": "416_Transversales MCQA",
       "n": 30,
       "term": 11,
-      "pct": 0.5807,
+      "pct": 0.5607,
       "n_pct": 30
     },
     {
@@ -331,7 +339,7 @@
       "ept": "416_Transversales MCQA",
       "n": 24,
       "term": 0,
-      "pct": 0.63,
+      "pct": 0.6258,
       "n_pct": 24
     },
     {
@@ -408,7 +416,7 @@
       "ept": "416_Migración Salud",
       "n": 17,
       "term": 0,
-      "pct": 0.2765,
+      "pct": 0.3324,
       "n_pct": 17
     },
     {
@@ -441,7 +449,7 @@
       "ept": "06. Exequias EX",
       "n": 15,
       "term": 0,
-      "pct": 0.2173,
+      "pct": 0.2373,
       "n_pct": 15
     },
     {
@@ -452,7 +460,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 14,
       "term": 2,
-      "pct": 0.3829,
+      "pct": 0.3807,
       "n_pct": 14
     },
     {
@@ -463,7 +471,7 @@
       "ept": "416_Vida_Grupo y evolutivos MCQA",
       "n": 13,
       "term": 3,
-      "pct": 0.7731,
+      "pct": 0.7577,
       "n_pct": 13
     },
     {
@@ -474,7 +482,7 @@
       "ept": "416_Transversales MCQA",
       "n": 13,
       "term": 0,
-      "pct": 0.6462,
+      "pct": 0.6585,
       "n_pct": 13
     },
     {
@@ -485,7 +493,7 @@
       "ept": "416_Soporte y Deuda SALUD Fase 2",
       "n": 12,
       "term": 0,
-      "pct": 0.8083,
+      "pct": 0.8125,
       "n_pct": 12
     },
     {
@@ -859,7 +867,7 @@
       "ept": "06. Exequias EX",
       "n": 2,
       "term": 0,
-      "pct": 0.4,
+      "pct": 0.235,
       "n_pct": 2
     },
     {
@@ -881,7 +889,7 @@
       "ept": "416_Soporte y Deuda SALUD Fase 2",
       "n": 2,
       "term": 1,
-      "pct": 0.9,
+      "pct": 0.65,
       "n_pct": 2
     },
     {
@@ -892,7 +900,7 @@
       "ept": "416_Soporte y Deuda SALUD Fase 2",
       "n": 2,
       "term": 0,
-      "pct": 0.65,
+      "pct": 0.825,
       "n_pct": 2
     },
     {
@@ -1149,6 +1157,17 @@
       "n_pct": 1
     },
     {
+      "i": "346274",
+      "t": "416_VI_Novedades",
+      "e": "1. En Planeación",
+      "ep": "345822",
+      "ept": "416_Vida Individual",
+      "n": 1,
+      "term": 0,
+      "pct": 0.6,
+      "n_pct": 1
+    },
+    {
       "i": "493647",
       "t": "416 Actividades marco de trabajo",
       "e": "1. En Planeacion",
@@ -1179,6 +1198,17 @@
       "n": 1,
       "term": 0,
       "pct": 0.2,
+      "n_pct": 1
+    },
+    {
+      "i": "402211",
+      "t": "416 Infraestructura",
+      "e": "1. En Planeacion",
+      "ep": "388764",
+      "ept": "416_ Infra,  Soporte y Deuda CORE",
+      "n": 1,
+      "term": 0,
+      "pct": 0.3,
       "n_pct": 1
     }
   ],
@@ -1577,7 +1607,7 @@
       "v": 0.45,
       "f": "127260",
       "ep": "117002",
-      "r": "Maria Julieth Gonzalez Masmela"
+      "r": "Kevin Alexander Parra Alvarez"
     },
     {
       "i": "227509",
@@ -2198,10 +2228,10 @@
     {
       "i": "276493",
       "t": "416_EXE_EMI_HU193_Cargue de Asegurados_EXEQUIAS",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "226113",
       "ep": "225903",
       "r": "Cristian Camilo Hurtado Quevedo"
@@ -2237,7 +2267,7 @@
       "v": 0.2,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Juan Aguilar"
     },
     {
       "i": "276967",
@@ -2259,7 +2289,7 @@
       "v": 0.2,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Juan Aguilar"
     },
     {
       "i": "278515",
@@ -2270,7 +2300,7 @@
       "v": 0.5,
       "f": "226113",
       "ep": "225903",
-      "r": "Angie Vanessa Guillen Yazo"
+      "r": "Maria Alejandra Torrens Acosta"
     },
     {
       "i": "279036",
@@ -2303,18 +2333,18 @@
       "v": 0.2,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Juan Aguilar"
     },
     {
       "i": "281103",
       "t": "416_EXE_EMI_HU187_Datos generales del negocio_EXEQUIAS",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Ivan Camilo Pulido Ibarra"
     },
     {
       "i": "281370",
@@ -2330,13 +2360,13 @@
     {
       "i": "281461",
       "t": "416_EXE_EMI_HU272 Detalle campos de Carátula – Emisión y Novedades Exequias Individual",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.4,
+      "e": "Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": "226113",
       "ep": "225903",
-      "r": "Juan Aguilar"
+      "r": ""
     },
     {
       "i": "281484",
@@ -2413,7 +2443,7 @@
       "v": 0.8,
       "f": "226113",
       "ep": "225903",
-      "r": "Miguel Daniel Arturo Ariza Quintero"
+      "r": "Miriam Guerrero Infante"
     },
     {
       "i": "284611",
@@ -2424,18 +2454,18 @@
       "v": 0.5,
       "f": "226113",
       "ep": "225903",
-      "r": "Angie Vanessa Guillen Yazo"
+      "r": "Maria Alejandra Torrens Acosta"
     },
     {
       "i": "286629",
       "t": "416_EXE_EMI_HU282_Emision de Polizas_EXEQUIAS",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.45,
       "f": "226113",
       "ep": "225903",
-      "r": "Angie Vanessa Guillen Yazo"
+      "r": "Miguel Daniel Arturo Ariza Quintero"
     },
     {
       "i": "286676",
@@ -2462,10 +2492,10 @@
     {
       "i": "287361",
       "t": "416_EXE_EMI_HU198_Consultar Solicitudes de Polizas_EXEQUIAS",
-      "e": "6.1 Esperando Despliegue DEV-QA",
+      "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.8,
       "f": "226113",
       "ep": "225903",
       "r": "Juan Aguilar"
@@ -2479,7 +2509,7 @@
       "v": 0.2,
       "f": "226221",
       "ep": "225903",
-      "r": "Johan Andres Malagon Maldonado"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "288727",
@@ -2864,7 +2894,7 @@
       "v": 0.2,
       "f": "226113",
       "ep": "225903",
-      "r": "Johan Andres Malagon Maldonado"
+      "r": "Iván Augusto Reyes Roa"
     },
     {
       "i": "290815",
@@ -3034,10 +3064,10 @@
     {
       "i": "294503",
       "t": "416_EXE_N&M_HU293_Cambio de retorno Exequias",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "226221",
       "ep": "225903",
       "r": "Johan Andres Malagon Maldonado"
@@ -3144,13 +3174,13 @@
     {
       "i": "296620",
       "t": "416_EXE_N&M_HU563 Detalle de campos caratula Novedades con prima Exequias colectivo",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "226221",
       "ep": "225903",
-      "r": "Miguel Daniel Arturo Ariza Quintero"
+      "r": "Maria Julieth Gonzalez Masmela"
     },
     {
       "i": "297135",
@@ -4992,24 +5022,24 @@
     {
       "i": "314907",
       "t": "416_EXE_EMI_HU188_Coaseguros",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.6,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Ivan Camilo Pulido Ibarra"
     },
     {
       "i": "314954",
       "t": "416_EXE_EMI_HU272 Detalle campos de caratula_EXEQUIAS Individual",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "226113",
       "ep": "225903",
-      "r": "Juan Aguilar"
+      "r": "Maria Alejandra Ramirez Zambrano"
     },
     {
       "i": "314959",
@@ -5020,18 +5050,18 @@
       "v": 0.2,
       "f": "226113",
       "ep": "225903",
-      "r": "Miguel Daniel Arturo Ariza Quintero"
+      "r": "Andrés Stick Melo Figueroa"
     },
     {
       "i": "314998",
       "t": "416_EXE_EMI_HU251_Editar datos de licitación",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Miriam Guerrero Infante"
     },
     {
       "i": "315114",
@@ -5058,24 +5088,24 @@
     {
       "i": "320355",
       "t": "416_EXE_EMI_HU517 Estado de la Póliza",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.6,
       "f": "226113",
       "ep": "225903",
-      "r": "Juan Aguilar"
+      "r": "Maria Julieth Gonzalez Masmela"
     },
     {
       "i": "320409",
       "t": "416_EXE_EMI_HU271_Generacion de caratula",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "226113",
       "ep": "225903",
-      "r": "Juan Aguilar"
+      "r": "Maria Alejandra Ramirez Zambrano"
     },
     {
       "i": "321156",
@@ -5212,13 +5242,13 @@
     {
       "i": "334072",
       "t": "416_EXE_CIE_HU267 Reporte de Pólizas Emitidas Exequias",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.4,
+      "v": 0.17,
       "f": "226226",
       "ep": "225903",
-      "r": "Juan Aguilar"
+      "r": "Mauricio Vargas Gordillo"
     },
     {
       "i": "344139",
@@ -5278,13 +5308,13 @@
     {
       "i": "377578",
       "t": "416_EXE_N&M_HU309_Cambio de Tomador",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.4,
+      "v": 0.2,
       "f": "226221",
       "ep": "225903",
-      "r": "Juan Aguilar"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "380765",
@@ -6158,13 +6188,13 @@
     {
       "i": "388827",
       "t": "416_SALUD_SAP_HU616_Integración SAP Siniestros",
-      "e": "8. Esperando Despliegue QA-UAT",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.3,
       "f": "388826",
       "ep": "387250",
-      "r": "Diego Alejandro Ruiz Sanchez"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "392640",
@@ -6367,10 +6397,10 @@
     {
       "i": "392658",
       "t": "416_EV_VG_ NOV_ HU087 Facturar póliza",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "394146",
       "ep": "392936",
       "r": "Chrystian Arana"
@@ -6444,10 +6474,10 @@
     {
       "i": "393366",
       "t": "416_EV_VG_ EMI_CC_HU292_ CC_Autorizacion de Políticas - Modulo Emisión / Estudio técnico",
-      "e": "7.1 Pruebas QA",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.5,
       "f": "393363",
       "ep": "392936",
       "r": "Daniel Libardo Cubaque Hernandez"
@@ -7159,13 +7189,13 @@
     {
       "i": "394197",
       "t": "416_EV_VG_ NOV_ CC_HU728 Gestión integral de movimientos y facturación",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.17,
       "f": "394146",
       "ep": "392936",
-      "r": "Chrystian Arana"
+      "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "394205",
@@ -7456,10 +7486,10 @@
     {
       "i": "394274",
       "t": "416_VG_ EMI_HU187_CC_Datos Generales Solicitud de Póliza",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "394271",
       "ep": "392936",
       "r": "Daniel Libardo Cubaque Hernandez"
@@ -7467,10 +7497,10 @@
     {
       "i": "394275",
       "t": "416_VG_ EMI_CC_HU188_Coaseguro",
-      "e": "8.1 Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "394271",
       "ep": "392936",
       "r": "Andrés Stick Melo Figueroa"
@@ -7522,10 +7552,10 @@
     {
       "i": "394281",
       "t": "416_VG_ EMI_CC_HU193_Cargue de Asegurados",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "394271",
       "ep": "392936",
       "r": "Daniel Libardo Cubaque Hernandez"
@@ -7632,10 +7662,10 @@
     {
       "i": "394303",
       "t": "416_VG_ EMI_CC_HU249_Editar - Coaseguros",
-      "e": "8.1 Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "394271",
       "ep": "392936",
       "r": "Andrés Stick Melo Figueroa"
@@ -9359,13 +9389,13 @@
     {
       "i": "397832",
       "t": "416_TRAN_SAP_ HU842_12_CUENTAS POR COBRAR",
-      "e": "8.2 Aprobación por Cliente UAT",
-      "p": "CLIENTE",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.9,
+      "v": 0.3,
       "f": "400766",
       "ep": "397818",
-      "r": "Yonathan Leon Cortes"
+      "r": "Diego Alejandro Ruiz Sanchez"
     },
     {
       "i": "398026",
@@ -9469,10 +9499,10 @@
     {
       "i": "398859",
       "t": "416_EV_VG_ EMI_HU561_Anular Movimiento",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.2,
       "f": "393363",
       "ep": "392936",
       "r": "Omar Fernando Cantor Largo"
@@ -9667,13 +9697,13 @@
     {
       "i": "400817",
       "t": "416_TRAN_ REASE_HU330_Amortización del costo de contratos no proporcionales",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "400816",
       "ep": "397818",
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": "Angie Vanessa Guillen Yazo"
     },
     {
       "i": "400818",
@@ -9684,7 +9714,7 @@
       "v": 0.3,
       "f": "400816",
       "ep": "397818",
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": "Enyel Harold Ocampo Velsaquez"
     },
     {
       "i": "400819",
@@ -9711,13 +9741,13 @@
     {
       "i": "400822",
       "t": "416_TRAN_ REASE_HU334_Generación de formato 533 SFC",
-      "e": "8.1 Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.85,
+      "v": 0.3,
       "f": "400816",
       "ep": "397818",
-      "r": "JENIFER AYALA AGUILAR"
+      "r": "Gustavo Eduardo Ortiz Yate"
     },
     {
       "i": "400823",
@@ -9733,13 +9763,13 @@
     {
       "i": "400824",
       "t": "416_TRAN_REA_HU342_Administración generación de formato",
-      "e": "8. Esperando Despliegue QA-UAT",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.8,
+      "v": 0.3,
       "f": "400816",
       "ep": "397818",
-      "r": "Karen Sofia Contreras Alfonso"
+      "r": "Gustavo Eduardo Ortiz Yate"
     },
     {
       "i": "400825",
@@ -9777,13 +9807,13 @@
     {
       "i": "400828",
       "t": "416_TRAN_ REA_HU381_Reinstalamento de contratos",
-      "e": "8.1 Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.85,
+      "v": 0.3,
       "f": "400816",
       "ep": "397818",
-      "r": "JENIFER AYALA AGUILAR"
+      "r": "Enyel Harold Ocampo Velsaquez"
     },
     {
       "i": "400829",
@@ -9865,13 +9895,13 @@
     {
       "i": "405985",
       "t": "416_EV_VG_NOV_HU586_Cambio de aclaraciones",
-      "e": "6.1 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
-      "f": null,
-      "ep": null,
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "v": 0.6,
+      "f": "346274",
+      "ep": "345822",
+      "r": "JENIFER AYALA AGUILAR"
     },
     {
       "i": "405986",
@@ -9887,13 +9917,13 @@
     {
       "i": "406360",
       "t": "416_TRAN_ REASE_HU540_Distribución de Siniestros (proceso / reporte) (Manual)",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.45,
       "f": "400816",
       "ep": "397818",
-      "r": "Angie Vanessa Guillen Yazo"
+      "r": "Jhon Alexander Silva Campos"
     },
     {
       "i": "406361",
@@ -10360,10 +10390,10 @@
     {
       "i": "408002",
       "t": "416_TRAN_CIERRE_ HU691_Reporte de pólizas vigentes",
-      "e": "6.1 Esperando Despliegue DEV-QA",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.3,
       "f": "406653",
       "ep": "397818",
       "r": "Juan Aguilar"
@@ -10762,7 +10792,7 @@
       "v": 0.9,
       "f": "421326",
       "ep": "397818",
-      "r": "Cristhian Camilo Tejada Perdomo"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "420345",
@@ -10916,7 +10946,7 @@
       "v": 0.9,
       "f": "421326",
       "ep": "397818",
-      "r": "Cristhian Camilo Tejada Perdomo"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "422309",
@@ -11042,13 +11072,13 @@
     {
       "i": "459556",
       "t": "416_Salud_ CC_HU710_Eliminación de la palabra «ILIMITADO» de la columna «No. de eventos» en las coberturas indicadas — planes 1 al 5, ramo Salud",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "387253",
       "ep": "387250",
-      "r": "Juan Sebastian Ovallos Diaz"
+      "r": "Diego Humberto Puerta Villareal"
     },
     {
       "i": "472060",
@@ -11059,7 +11089,7 @@
       "v": 0.2,
       "f": "394146",
       "ep": "392936",
-      "r": "Andres Esteban Saldarriaga Ramirez"
+      "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "472063",
@@ -11108,10 +11138,10 @@
     {
       "i": "482088",
       "t": "416_REFAC_TRAN_ REASE_HU501_Gestionar Reaseguradores",
-      "e": "8.1 Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "400816",
       "ep": "397818",
       "r": "Karen Sofia Contreras Alfonso"
@@ -11141,10 +11171,10 @@
     {
       "i": "482544",
       "t": "416_REFACT_VG_ EMI__HU188_Coaseguro",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "394271",
       "ep": "392936",
       "r": "Andrés Stick Melo Figueroa"
@@ -11207,10 +11237,10 @@
     {
       "i": "482550",
       "t": "387_REFACT_REA_HU0500_Crear Reaseguradores",
-      "e": "8.1 Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "400816",
       "ep": "397818",
       "r": "Karen Sofia Contreras Alfonso"
@@ -11218,28 +11248,39 @@
     {
       "i": "482551",
       "t": "416_REFACT_TRAN_ REASE_HU502_Ver información Reaseguradores",
-      "e": "8.1 Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "400816",
       "ep": "397818",
-      "r": "JENIFER AYALA AGUILAR"
+      "r": "Karen Sofia Contreras Alfonso"
     },
     {
       "i": "482553",
       "t": "416_REFACT_TRAN_ REASE_EHU503_Editar Reaseguradores",
-      "e": "8.1 Pruebas UAT",
+      "e": "8.2 Aprobación por Cliente UAT",
       "p": "CLIENTE",
       "a": 1,
-      "v": 0.85,
+      "v": 0.9,
       "f": "400816",
       "ep": "397818",
-      "r": "JENIFER AYALA AGUILAR"
+      "r": "Karen Sofia Contreras Alfonso"
     },
     {
       "i": "482555",
       "t": "416_REFACT_TRAN_ REASE_HU518_Registrar Tasas",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "400816",
+      "ep": "397818",
+      "r": "Jhon Alexander Silva Campos"
+    },
+    {
+      "i": "482557",
+      "t": "416_REFACT_TRAN_ REASE_HU519_Gestionar Tasas",
       "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
@@ -11249,23 +11290,12 @@
       "r": "Jhoana Carolina Tuta Castro"
     },
     {
-      "i": "482557",
-      "t": "416_REFACT_TRAN_ REASE_HU519_Gestionar Tasas",
-      "e": "7. Backlog QA",
-      "p": "QA",
-      "a": 1,
-      "v": 0.5,
-      "f": "400816",
-      "ep": "397818",
-      "r": "Jhoana Carolina Tuta Castro"
-    },
-    {
       "i": "482558",
       "t": "416_REFACT_TRAN_ REASE_HU520_Ver información Tasas",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "400816",
       "ep": "397818",
       "r": "Jhoana Carolina Tuta Castro"
@@ -11284,13 +11314,13 @@
     {
       "i": "482560",
       "t": "416_REFACT_TRAN_ REASE_HU247_Parametrización de Contratos proporcionales",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.45,
       "f": "400816",
       "ep": "397818",
-      "r": "Angie Vanessa Guillen Yazo"
+      "r": "Jhon Alexander Silva Campos"
     },
     {
       "i": "482561",
@@ -11466,7 +11496,7 @@
       "v": 0.8,
       "f": "390186",
       "ep": "390153",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482583",
@@ -11636,13 +11666,13 @@
     {
       "i": "482605",
       "t": "416_REFACT_EV_VG_ RECA_CC_HU223_CC Ajuste front recaudo manual y adición de campos- Aplicacion de pagos manual",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.17,
       "f": "392950",
       "ep": "392936",
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "482606",
@@ -11658,10 +11688,10 @@
     {
       "i": "482609",
       "t": "416_REFACT_EV_VG_ RECA_HU265_Reporte de partidas por identificar",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "392950",
       "ep": "392936",
       "r": ""
@@ -11884,7 +11914,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482636",
@@ -11895,7 +11925,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482637",
@@ -11906,7 +11936,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482638",
@@ -11917,7 +11947,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482639",
@@ -11928,7 +11958,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482640",
@@ -11939,7 +11969,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482641",
@@ -11950,7 +11980,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482642",
@@ -11983,7 +12013,7 @@
       "v": 0.8,
       "f": "394216",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Andres Esteban Saldarriaga Ramirez"
     },
     {
       "i": "482647",
@@ -12120,10 +12150,10 @@
     {
       "i": "482659",
       "t": "416_REFACT_VG_ EMI_HU192_Datos del Grupo Asegurable",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "394271",
       "ep": "392936",
       "r": "Andrés Stick Melo Figueroa"
@@ -12170,7 +12200,7 @@
       "v": 0.8,
       "f": "394271",
       "ep": "392936",
-      "r": "Andrés Stick Melo Figueroa"
+      "r": "Kevin Alexander Parra Alvarez"
     },
     {
       "i": "482664",
@@ -12241,10 +12271,10 @@
     {
       "i": "482670",
       "t": "416_REFACT_VG_ EMI_HU253_Editar - Datos del Grupo Asegurable",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "394271",
       "ep": "392936",
       "r": "Andrés Stick Melo Figueroa"
@@ -12296,13 +12326,13 @@
     {
       "i": "482676",
       "t": "416_REFACT_VG_ EMI_HU267_Reporte de Pólizas emitidas",
-      "e": "6.2 Ajustes DEV",
+      "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.45,
+      "v": 0.8,
       "f": "394271",
       "ep": "392936",
-      "r": "Yury Viviana Ocampo Baracaldo"
+      "r": "Jorge Luis Vargas Jimenez"
     },
     {
       "i": "482677",
@@ -12439,35 +12469,35 @@
     {
       "i": "482691",
       "t": "416_REFACT_VG_ NOV_HU294_Cambio de sucursal",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.8,
+      "f": "394418",
+      "ep": "392936",
+      "r": "Yury Viviana Ocampo Baracaldo"
+    },
+    {
+      "i": "482693",
+      "t": "416_REFACT_VG_ NOV_HU295_Cambio y/o inclusión de intermediarios a la póliza",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.6,
+      "f": "394418",
+      "ep": "392936",
+      "r": "Zuleyne Astrid Vanegas Arevalo"
+    },
+    {
+      "i": "482694",
+      "t": "416_REFACT_VG_ NOV_HU300_Modificación de gastos",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "394418",
       "ep": "392936",
-      "r": "Diego Humberto Puerta Villareal"
-    },
-    {
-      "i": "482693",
-      "t": "416_REFACT_VG_ NOV_HU295_Cambio y/o inclusión de intermediarios a la póliza",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "394418",
-      "ep": "392936",
-      "r": "Yury Viviana Ocampo Baracaldo"
-    },
-    {
-      "i": "482694",
-      "t": "416_REFACT_VG_ NOV_HU300_Modificación de gastos",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
-      "f": "394418",
-      "ep": "392936",
-      "r": "Juan Sifontez"
+      "r": "Joan Steven Medina Beltran"
     },
     {
       "i": "482695",
@@ -12489,7 +12519,7 @@
       "v": 0.45,
       "f": "394418",
       "ep": "392936",
-      "r": "Miguel Daniel Arturo Ariza Quintero"
+      "r": "Andrés Stick Melo Figueroa"
     },
     {
       "i": "482697",
@@ -12505,10 +12535,10 @@
     {
       "i": "482698",
       "t": "416_REFACT_VG_ NOV_HU310_Inclusión o retiro de asegurados",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "394418",
       "ep": "392936",
       "r": "Jhon Jardi Diaz Lora"
@@ -12516,24 +12546,24 @@
     {
       "i": "482699",
       "t": "416_REFACT_VG_ NOV_HU311_Calificación de asegurados (registro de extraprima)",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.45,
+      "v": 0.17,
       "f": "394418",
       "ep": "392936",
-      "r": "Juan Sifontez"
+      "r": "Omar Fernando Cantor Largo"
     },
     {
       "i": "482700",
       "t": "416_REFACT_VG_ NOV_HU404_Cargue masivo de beneficiarios",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "394418",
       "ep": "392936",
-      "r": "Jonathan Santiago Mora Lozano"
+      "r": "Diego Humberto Puerta Villareal"
     },
     {
       "i": "482701",
@@ -12593,35 +12623,35 @@
     {
       "i": "482707",
       "t": "416_REFACT_VG_ SIN_HU176_Agregar solicitud reclamación Adjuntar archivos",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.17,
+      "f": "394516",
+      "ep": "392936",
+      "r": "Diego Fernando Gil Gomez"
+    },
+    {
+      "i": "482708",
+      "t": "416_REFACT_VG_ SIN_HU177_Editar siniestro perfil reclamante",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
+      "a": 1,
+      "v": 0.6,
+      "f": "394516",
+      "ep": "392936",
+      "r": "Cristhian Camilo Tejada Perdomo"
+    },
+    {
+      "i": "482709",
+      "t": "416_REFACT_VG_ SIN_HU178_Editar siniestro perfil intermediario",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
-    },
-    {
-      "i": "482708",
-      "t": "416_REFACT_VG_ SIN_HU177_Editar siniestro perfil reclamante",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.45,
-      "f": "394516",
-      "ep": "392936",
-      "r": "Jhojan Ferney Beltran Calderon"
-    },
-    {
-      "i": "482709",
-      "t": "416_REFACT_VG_ SIN_HU178_Editar siniestro perfil intermediario",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.45,
-      "f": "394516",
-      "ep": "392936",
-      "r": "Jhojan Ferney Beltran Calderon"
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "482710",
@@ -12670,10 +12700,10 @@
     {
       "i": "482714",
       "t": "416_REFACT_VG_ SIN_HU201_Agregar solicitud de reclamación informacion de la poliza_ Rol Tomador",
-      "e": "6.2 Ajustes DEV",
+      "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.45,
+      "v": 0.8,
       "f": "394516",
       "ep": "392936",
       "r": "Santiago Montero Garcia"
@@ -12681,13 +12711,13 @@
     {
       "i": "482715",
       "t": "416_REFACT_VG_ SIN_HU202_Agregar solicitud de reclamación informacion del evento _ Rol Reclamante, Siniestrado",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "394516",
       "ep": "392936",
-      "r": "Maria Alejandra Torrens Acosta"
+      "r": "Jose Manuel Martinez Mendez"
     },
     {
       "i": "482716",
@@ -12703,24 +12733,24 @@
     {
       "i": "482717",
       "t": "416_REFACT_VG_ SIN_HU204_Agregar solicitud de reclamación informacion del evento Rol Tomador",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.6,
+      "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482718",
       "t": "416_REFACT_VG_ SIN_HU205_Mantenimiento Verificacion de Derechos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.6,
+      "v": 0.17,
       "f": "394516",
       "ep": "392936",
-      "r": "Zair Estevan Leon Gomez"
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482719",
@@ -12736,21 +12766,21 @@
     {
       "i": "482720",
       "t": "416_REFACT_VG_ SIN_HU217_Agregar solicitud reclamación Exportar a excel siniestros consultados",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.1 Pruebas UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.85,
       "f": "394516",
       "ep": "392936",
-      "r": "Jhojan Ferney Beltran Calderon"
+      "r": "Miriam Guerrero Infante"
     },
     {
       "i": "482721",
       "t": "416_REFACT_VG_ SIN_HU227_Consulta siniestros_ reclamaciones Rol tomador",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "394516",
       "ep": "392936",
       "r": "Maria Alejandra Torrens Acosta"
@@ -12835,10 +12865,10 @@
     {
       "i": "482729",
       "t": "416_REFACT_VG_ SIN_HU317_Cargue de pruebas reclamante",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.17,
+      "v": 0.3,
       "f": "394516",
       "ep": "392936",
       "r": "Jhojan Ferney Beltran Calderon"
@@ -12940,7 +12970,7 @@
       "v": 0.3,
       "f": "394516",
       "ep": "392936",
-      "r": "Miguel Angel Ávila Orjuela"
+      "r": "Santiago Montero Garcia"
     },
     {
       "i": "482739",
@@ -12989,13 +13019,13 @@
     {
       "i": "482743",
       "t": "416_REFACT_VG_ SIN_HU383_Mejoras de Liquidacion",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482744",
@@ -13033,10 +13063,10 @@
     {
       "i": "482747",
       "t": "416_REFACT_VG_ SIN_HU439_Nueva funcionalidades en mantenimiento",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "394516",
       "ep": "392936",
       "r": "Jhojan Ferney Beltran Calderon"
@@ -13061,7 +13091,7 @@
       "v": 0.3,
       "f": "394516",
       "ep": "392936",
-      "r": "Jose Manuel Martinez Mendez"
+      "r": "Miguel Angel Ávila Orjuela"
     },
     {
       "i": "482750",
@@ -13083,7 +13113,7 @@
       "v": 0.3,
       "f": "394516",
       "ep": "392936",
-      "r": "Bairon Suarez"
+      "r": "Jhojan Ferney Beltran Calderon"
     },
     {
       "i": "482752",
@@ -13165,24 +13195,24 @@
     {
       "i": "482759",
       "t": "416_REFACT_VG_ SIN_HU470_Liquidar pago - Destinatarios",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482760",
       "t": "416_REFACT_VG_ SIN_HU471_Resumen de \"Liquidar Pagos\"",
-      "e": "4. Refinamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.17,
+      "v": 0.2,
       "f": "394516",
       "ep": "392936",
-      "r": ""
+      "r": "Diego Fernando Gil Gomez"
     },
     {
       "i": "482761",
@@ -13341,13 +13371,13 @@
     {
       "i": "482777",
       "t": "416_REFACT_VG_ RECA_HU215_Estructuras de Recaudo",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.2,
       "f": "396102",
       "ep": "392936",
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": ""
     },
     {
       "i": "482778",
@@ -13363,13 +13393,13 @@
     {
       "i": "482779",
       "t": "416_REFACT_VG_ RECA__HU223_Aplicación Manual",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.17,
       "f": "396102",
       "ep": "392936",
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "482780",
@@ -13572,13 +13602,13 @@
     {
       "i": "482799",
       "t": "416_REFACT_RECA_CC_HU093_Cargue de recaudos front",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.3,
+      "v": 0.2,
       "f": null,
       "ep": null,
-      "r": "Gustavo Eduardo Ortiz Yate"
+      "r": ""
     },
     {
       "i": "482801",
@@ -13605,10 +13635,10 @@
     {
       "i": "482805",
       "t": "416_REFACT_VG_ EMI_HU249_Editar - Coaseguros",
-      "e": "8. Esperando Despliegue QA-UAT",
-      "p": "DESARROLLO",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.8,
+      "v": 0.9,
       "f": "394271",
       "ep": "392936",
       "r": "Andrés Stick Melo Figueroa"
@@ -13748,13 +13778,13 @@
     {
       "i": "482844",
       "t": "416_REFACT_VG_ NOV_HU294_Cambio de sucursal",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
-      "a": 1,
-      "v": 0.3,
+      "e": "Removido",
+      "p": "EXCLUIR",
+      "a": 0,
+      "v": null,
       "f": null,
       "ep": null,
-      "r": "Juan Sebastian Gachancipa Avila"
+      "r": "Lesly Geraldine Perilla Franco"
     },
     {
       "i": "483595",
@@ -13781,13 +13811,13 @@
     {
       "i": "486681",
       "t": "416_REFAC_ TRAN_ REASE_HU246_Parametrización de Contratos no proporcionales",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "6.2 Ajustes DEV",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.45,
       "f": "400816",
       "ep": "397818",
-      "r": "Angie Vanessa Guillen Yazo"
+      "r": "Jhon Alexander Silva Campos"
     },
     {
       "i": "487607",
@@ -13979,21 +14009,21 @@
     {
       "i": "536527",
       "t": "355_VG_NOV_HU083_ENVIAR DOCUMENTOS A GESTOR DOCUMENTAL",
-      "e": "6.2 Ajustes DEV",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.45,
+      "v": 0.6,
       "f": null,
       "ep": null,
-      "r": "Andres Esteban Saldarriaga Ramirez"
+      "r": "Joan Steven Medina Beltran"
     },
     {
       "i": "545366",
       "t": "416_SIN_CC_HU632_HU634_Obligatoriedad de campos de la póliza (consulta GAIA / propuesta de pago)",
-      "e": "6.2 Ajustes DEV",
+      "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.45,
+      "v": 0.8,
       "f": "413168",
       "ep": "387250",
       "r": "Santiago Montero Garcia"
@@ -14007,7 +14037,7 @@
       "v": 0.3,
       "f": null,
       "ep": null,
-      "r": "Adelis Jose Trocoso"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "545928",
@@ -14073,7 +14103,7 @@
       "v": 0.2,
       "f": "394146",
       "ep": "392936",
-      "r": "Omar Fernando Cantor Largo"
+      "r": "Juan Sebastian Gachancipa Avila"
     },
     {
       "i": "553309",
@@ -14100,10 +14130,10 @@
     {
       "i": "560195",
       "t": "416_REFACT_SIN_HU183_Reclamaciones_ Anular reclamación/Siniestro",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": null,
       "ep": null,
       "r": "Santiago Montero Garcia"
@@ -14210,43 +14240,43 @@
     {
       "i": "565086",
       "t": "416_REFACT_SALUD_EMI_HU187_CC_187 Habilitación de condiciones particulares- Salud",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "559779",
       "ep": "559751",
-      "r": "Nicolás Antonio Salazar Alvarez"
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "565087",
       "t": "416_REFACT_SALUD_EMI_HU249_CC_HU249 Editar - Coaseguros",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "559779",
       "ep": "559751",
-      "r": "Nicolás Antonio Salazar Alvarez"
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "565088",
       "t": "416_REFACT_SALUD_EMI_HU188 Coaseguros - Habilitar control de cambios para salud",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "559779",
       "ep": "559751",
-      "r": "Nicolás Antonio Salazar Alvarez"
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "565089",
       "t": "416_REFACT_SALUD_HU725_Salud productos - Alcance CC",
-      "e": "6. Desarrollo",
+      "e": "6.2 Ajustes DEV",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.45,
       "f": "559779",
       "ep": "559751",
       "r": "Nicolás Antonio Salazar Alvarez"
@@ -14331,13 +14361,13 @@
     {
       "i": "565097",
       "t": "416_REFACT_SALUD_EMI_HU193_Cargue masivo de asegurados",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "559779",
       "ep": "559751",
-      "r": "Nicolás Antonio Salazar Alvarez"
+      "r": "Cristhian Camilo Tejada Perdomo"
     },
     {
       "i": "565098",
@@ -14414,7 +14444,7 @@
       "v": 0.3,
       "f": "559794",
       "ep": "559751",
-      "r": "Chrystian Arana"
+      "r": "Nicolás Antonio Salazar Alvarez"
     },
     {
       "i": "565107",
@@ -14551,10 +14581,10 @@
     {
       "i": "565119",
       "t": "416_REFACT_SALUD_HU558_Historico de novedades 728",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "559889",
       "ep": "559751",
       "r": "Jhon Jardi Diaz Lora"
@@ -15349,15 +15379,15 @@
       "v": 0.2,
       "f": "226113",
       "ep": "225903",
-      "r": "Cristian Camilo Hurtado Quevedo"
+      "r": "Juan Aguilar"
     },
     {
       "i": "567012",
       "t": "416_EXE_CIE_HU367_Reporte Producción",
-      "e": "6.1 Esperando Despliegue DEV-QA",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.4,
+      "v": 0.3,
       "f": "226226",
       "ep": "225903",
       "r": "Juan Aguilar"
@@ -15371,7 +15401,7 @@
       "v": 0.2,
       "f": "226221",
       "ep": "225903",
-      "r": "Iván Augusto Reyes Roa"
+      "r": "CRISTIAN CAMILO ORJUELA VARGAS"
     },
     {
       "i": "567099",
@@ -15640,10 +15670,10 @@
     {
       "i": "567915",
       "t": "416_REFACT_EV_VG_ SIN_HU741_Enlace pólizas administradas y no administradas con base de tomadores y emisión",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "393412",
       "ep": "392936",
       "r": "Santiago Montero Garcia"
@@ -15716,7 +15746,7 @@
     },
     {
       "i": "567949",
-      "t": "416_VG_ EMI_HU248_Editar - Datos generales",
+      "t": "416_CV_ EMI_HU248_Editar - Datos generales",
       "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -15849,25 +15879,47 @@
     {
       "i": "568312",
       "t": "416_REFACT_TRAN_SIN_HU854_Aprobación de comunicación de objeción por aprobador",
-      "e": "0. Pendiente Levantamiento",
+      "e": "5. Backlog General",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.04,
+      "v": 0.2,
       "f": "421326",
       "ep": "397818",
       "r": "Diego Fernando Gil Gomez"
+    },
+    {
+      "i": "568770",
+      "t": "416_CV_ EMI_HU189 Datos de Intermediación Solicitud de Póliza",
+      "e": "5. Backlog General",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "226068",
+      "ep": "225902",
+      "r": "Andrés Stick Melo Figueroa"
+    },
+    {
+      "i": "569131",
+      "t": "416_Actualización de Form Builder y adopción controlada en formularios del Core",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.3,
+      "f": "402211",
+      "ep": "388764",
+      "r": "Juan Pablo Gomez Cuervo"
     }
   ],
   "kpi": {
-    "n_hu": 1334,
+    "n_hu": 1336,
     "n_hu_activas": 1281,
-    "hu_sin_feature": 95,
-    "n_feature": 93,
-    "n_epic": 19,
-    "n_feature_con_hu": 93,
+    "hu_sin_feature": 93,
+    "n_feature": 95,
+    "n_epic": 20,
+    "n_feature_con_hu": 95,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.6363,
+    "pct_global": 0.6383,
     "term_global": 421,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -15876,25 +15928,25 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.4305,
-    "estrategico": 0.0645,
-    "n": 93,
+    "tactico": 0.4221,
+    "estrategico": 0.0632,
+    "n": 95,
     "d": 6,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 93,
+    "feat_total": 95,
     "feat_ent": 6,
-    "hu_total": 1186,
+    "hu_total": 1188,
     "buckets": {
       "100": 391,
-      "75": 246,
+      "75": 248,
       "50": 26,
       "20": 76,
       "0": 447
     },
     "hu_buckets": {
       "100": 391,
-      "75": 246,
+      "75": 248,
       "50": 26,
       "20": 76,
       "0": 447
@@ -15904,7 +15956,7 @@
       "75": 17,
       "50": 24,
       "20": 18,
-      "0": 28
+      "0": 30
     }
   }
 }

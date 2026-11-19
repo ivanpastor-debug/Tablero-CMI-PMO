@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-17",
-  "generado": "2026-11-17 16:04",
-  "archivo": "HU_419-RAMA_20261117.csv",
+  "corte": "2026-11-19",
+  "generado": "2026-11-19 08:58",
+  "archivo": "HU_419-RAMA_20261119.csv",
   "epics": [
     {
       "i": "373561",
@@ -18,7 +18,7 @@
       "n_f": 13,
       "n": 57,
       "term": 0,
-      "pct": 0.493
+      "pct": 0.5105
     },
     {
       "i": "380257",
@@ -273,7 +273,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 7,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.5714,
       "n_pct": 7
     },
     {
@@ -411,12 +411,12 @@
     {
       "i": "401379",
       "t": "419_FT_RAMA_FLUJO DE AUTORIZACION",
-      "e": "2. En Curso",
+      "e": "3. Entregado",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.68,
       "n_pct": 5
     },
     {
@@ -537,7 +537,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.6,
+      "pct": 0.5,
       "n_pct": 4
     },
     {
@@ -2866,24 +2866,24 @@
     {
       "i": "401391",
       "t": "419_PR_CFA_HU001_Comportamiento_Flujo_Autorizacion",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "401379",
       "ep": "531912",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "401680",
       "t": "419_PR_CFR_HU002_Comportamiento_Flujo_Rechazo",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "401379",
       "ep": "531912",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "401845",
@@ -3427,13 +3427,13 @@
     {
       "i": "417198",
       "t": "419_PR_CFR_HU003_Generalidades",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "401379",
       "ep": "531912",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "417205",
@@ -4186,10 +4186,10 @@
     {
       "i": "532418",
       "t": "419_PR_PROC_HU001_Crear_Proceso_Individual",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "532415",
       "ep": "531912",
       "r": "Juliana Andrea Arroyave Trujillo"
@@ -4208,10 +4208,10 @@
     {
       "i": "532447",
       "t": "419_PR_PROC_HU002_Consultar_Proceso_Individual",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "532415",
       "ep": "531912",
       "r": "Juliana Andrea Arroyave Trujillo"
@@ -4390,7 +4390,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Andres Camilo Ortiz Cogollo"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "546372",
@@ -4401,7 +4401,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Andres Camilo Ortiz Cogollo"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "546375",
@@ -4412,7 +4412,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Andres Camilo Ortiz Cogollo"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "546378",
@@ -4423,7 +4423,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Andres Camilo Ortiz Cogollo"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "546430",
@@ -4450,10 +4450,10 @@
     {
       "i": "546449",
       "t": "419_PR_CMP_HU001_Cargue_del_archivo_masivo_de_numeros_de_procesos",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "546446",
       "ep": "531912",
       "r": "Carlos Alberto Valero Peña"
@@ -4461,10 +4461,10 @@
     {
       "i": "546459",
       "t": "419_PR_CMP_HU002_Autorización_del_cargue_masivo_numero_de_procesos",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "546446",
       "ep": "531912",
       "r": "Carlos Alberto Valero Peña"
@@ -4472,10 +4472,10 @@
     {
       "i": "546461",
       "t": "419_PR_CMP_HU003_Rechazo_cargue_masivo_numero_de_procesos",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "546446",
       "ep": "531912",
       "r": "Carlos Alberto Valero Peña"
@@ -4483,10 +4483,10 @@
     {
       "i": "546483",
       "t": "419_PR_CMP_HU004_Procesamiento_del_archivo_cargue_masivo_de_numero_proceso",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "546446",
       "ep": "531912",
       "r": "Carlos Alberto Valero Peña"
@@ -4494,10 +4494,10 @@
     {
       "i": "546486",
       "t": "419_PR_CMP_HU005_Consulta_Resultado_Registro_no_validos_para_carga_masiva_procesos",
-      "e": "7. Backlog QA",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "546446",
       "ep": "531912",
       "r": "Carlos Alberto Valero Peña"
@@ -4577,7 +4577,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Andres Camilo Ortiz Cogollo"
+      "r": "Steven Pino Gonzales"
     },
     {
       "i": "551319",
@@ -4654,7 +4654,7 @@
       "v": 0.5,
       "f": "551764",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Dilan Alejandro Saavedra Melo"
     },
     {
       "i": "551775",
@@ -4665,7 +4665,7 @@
       "v": 0.5,
       "f": "551764",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Dilan Alejandro Saavedra Melo"
     },
     {
       "i": "551776",
@@ -4676,7 +4676,7 @@
       "v": 0.5,
       "f": "551764",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Dilan Alejandro Saavedra Melo"
     },
     {
       "i": "551780",
@@ -4731,7 +4731,7 @@
       "v": 0.5,
       "f": "551764",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Shaira Yuleicy Paya Causil"
     },
     {
       "i": "564145",
@@ -4775,7 +4775,7 @@
       "v": 0.5,
       "f": "551764",
       "ep": "531912",
-      "r": "Leonardo Castrillon Giraldo"
+      "r": "Shaira Yuleicy Paya Causil"
     },
     {
       "i": "564928",
@@ -4786,7 +4786,7 @@
       "v": 0.5,
       "f": "546349",
       "ep": "531912",
-      "r": "Andres Camilo Ortiz Cogollo"
+      "r": "Steven Pino Gonzales"
     }
   ],
   "kpi": {
@@ -4798,7 +4798,7 @@
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8001,
+    "pct_global": 0.8029,
     "term_global": 117,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4807,7 +4807,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.655,
+    "tactico": 0.6555,
     "estrategico": 0.4032,
     "n": 62,
     "d": 25,
@@ -4819,23 +4819,23 @@
     "buckets": {
       "100": 117,
       "75": 88,
-      "50": 62,
-      "20": 57,
+      "50": 63,
+      "20": 56,
       "0": 26
     },
     "hu_buckets": {
       "100": 117,
       "75": 88,
-      "50": 62,
-      "20": 57,
+      "50": 63,
+      "20": 56,
       "0": 26
     },
     "feat_buckets": {
       "100": 25,
       "75": 3,
       "50": 16,
-      "20": 11,
-      "0": 7
+      "20": 10,
+      "0": 8
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-17 16:04",
+  "generado": "2026-11-19 08:59",
   "proyectos": {
     "004": {
       "corte": "2026-10-30",
@@ -55,61 +55,61 @@
       }
     },
     "384": {
-      "corte": "2026-11-17",
-      "archivo": "HU_384_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_384_20261119.csv",
       "kpi": {
-        "n_hu": 5949,
-        "n_hu_activas": 5161,
+        "n_hu": 6017,
+        "n_hu_activas": 5221,
         "hu_sin_feature": 19,
-        "n_feature": 585,
+        "n_feature": 587,
         "n_epic": 34,
-        "n_feature_con_hu": 493,
+        "n_feature_con_hu": 495,
         "feature_sin_hu": 92,
         "hu_omitidas": 0,
-        "pct_global": 0.8562,
-        "term_global": 2447,
+        "pct_global": 0.8545,
+        "term_global": 2489,
         "feature_sin_frente": 2,
         "hu_sin_frente": 8,
-        "feature_100_sin_cerrar": 93,
+        "feature_100_sin_cerrar": 91,
         "feature_estado_ajeno": 0,
         "feature_removido_con_hu": 7
       },
       "cmi": {
-        "tactico": 0.6738,
-        "estrategico": 0.1968,
-        "n": 493,
-        "d": 97,
+        "tactico": 0.6718,
+        "estrategico": 0.1919,
+        "n": 495,
+        "d": 95,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 493,
-        "feat_ent": 97,
-        "hu_total": 5142,
+        "feat_total": 495,
+        "feat_ent": 95,
+        "hu_total": 5202,
         "buckets": {
-          "100": 2445,
+          "100": 2487,
           "75": 0,
-          "50": 2228,
+          "50": 2223,
           "20": 277,
-          "0": 192
+          "0": 215
         },
         "hu_buckets": {
-          "100": 2445,
+          "100": 2487,
           "75": 0,
-          "50": 2228,
+          "50": 2223,
           "20": 277,
-          "0": 192
+          "0": 215
         },
         "feat_buckets": {
-          "100": 97,
+          "100": 95,
           "75": 134,
-          "50": 188,
-          "20": 47,
-          "0": 27
+          "50": 191,
+          "20": 46,
+          "0": 29
         }
       }
     },
     "397": {
-      "corte": "2026-11-17",
-      "archivo": "HU_397_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_397_20261119.csv",
       "kpi": {
         "n_hu": 228,
         "n_hu_activas": 228,
@@ -146,18 +146,18 @@
       }
     },
     "355": {
-      "corte": "2026-11-17",
-      "archivo": "HU_355_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_355_20261119.csv",
       "kpi": {
-        "n_hu": 1334,
+        "n_hu": 1336,
         "n_hu_activas": 1281,
-        "hu_sin_feature": 95,
-        "n_feature": 93,
-        "n_epic": 19,
-        "n_feature_con_hu": 93,
+        "hu_sin_feature": 93,
+        "n_feature": 95,
+        "n_epic": 20,
+        "n_feature_con_hu": 95,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.6363,
+        "pct_global": 0.6383,
         "term_global": 421,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -166,25 +166,25 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.4305,
-        "estrategico": 0.0645,
-        "n": 93,
+        "tactico": 0.4221,
+        "estrategico": 0.0632,
+        "n": 95,
         "d": 6,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 93,
+        "feat_total": 95,
         "feat_ent": 6,
-        "hu_total": 1186,
+        "hu_total": 1188,
         "buckets": {
           "100": 391,
-          "75": 246,
+          "75": 248,
           "50": 26,
           "20": 76,
           "0": 447
         },
         "hu_buckets": {
           "100": 391,
-          "75": 246,
+          "75": 248,
           "50": 26,
           "20": 76,
           "0": 447
@@ -194,13 +194,13 @@
           "75": 17,
           "50": 24,
           "20": 18,
-          "0": 28
+          "0": 30
         }
       }
     },
     "416": {
-      "corte": "2026-11-17",
-      "archivo": "HU_416_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_416_20261119.csv",
       "kpi": {
         "n_hu": 249,
         "n_hu_activas": 249,
@@ -210,7 +210,7 @@
         "n_feature_con_hu": 7,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.2563,
+        "pct_global": 0.2632,
         "term_global": 0,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -238,18 +238,18 @@
       }
     },
     "421": {
-      "corte": "2026-11-17",
+      "corte": "2026-11-19",
       "archivo": "Azure DevOps · 56 Funcionalidades de Producto (2 Frentes)",
       "kpi": {
-        "n_hu": 1042,
-        "n_hu_activas": 872,
+        "n_hu": 1043,
+        "n_hu_activas": 873,
         "hu_sin_feature": 0,
         "n_feature": 56,
         "n_epic": 2,
         "n_feature_con_hu": 56,
         "feature_sin_hu": 0,
         "hu_omitidas": 170,
-        "pct_global": 0.8178,
+        "pct_global": 0.8211,
         "term_global": 469,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -258,7 +258,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.7618,
+        "tactico": 0.762,
         "estrategico": 0.2321,
         "n": 56,
         "d": 13,
@@ -266,20 +266,20 @@
         "isEpics": false,
         "feat_total": 56,
         "feat_ent": 13,
-        "hu_total": 872,
+        "hu_total": 873,
         "buckets": {
           "100": 469,
-          "75": 209,
+          "75": 211,
           "50": 0,
-          "20": 48,
-          "0": 146
+          "20": 45,
+          "0": 148
         },
         "hu_buckets": {
           "100": 469,
-          "75": 209,
+          "75": 211,
           "50": 0,
-          "20": 48,
-          "0": 146
+          "20": 45,
+          "0": 148
         },
         "feat_buckets": {
           "100": 13,
@@ -290,7 +290,7 @@
         }
       },
       "rqc": {
-        "corte": "2026-11-17",
+        "corte": "2026-11-19",
         "total": 913,
         "removidos": 283,
         "activos": 630,
@@ -298,7 +298,7 @@
         "cumplimiento": 0.0,
         "resumen": {
           "CUMPLIDO": 0,
-          "EN PROCESO": 232,
+          "EN PROCESO": 224,
           "PENDIENTE INICIO": 131,
           "REMOVIDO": 283
         },
@@ -335,18 +335,18 @@
       }
     },
     "419-DEP": {
-      "corte": "2026-11-17",
-      "archivo": "HU_419-DEP_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_419-DEP_20261119.csv",
       "kpi": {
-        "n_hu": 1101,
-        "n_hu_activas": 1003,
+        "n_hu": 1109,
+        "n_hu_activas": 1011,
         "hu_sin_feature": 30,
-        "n_feature": 165,
+        "n_feature": 168,
         "n_epic": 12,
-        "n_feature_con_hu": 145,
+        "n_feature_con_hu": 148,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.763,
+        "pct_global": 0.7577,
         "term_global": 431,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -355,41 +355,41 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.6271,
-        "estrategico": 0.4429,
-        "n": 140,
+        "tactico": 0.6142,
+        "estrategico": 0.4336,
+        "n": 143,
         "d": 62,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 140,
+        "feat_total": 143,
         "feat_ent": 62,
-        "hu_total": 940,
+        "hu_total": 948,
         "buckets": {
           "100": 421,
           "75": 95,
-          "50": 21,
-          "20": 342,
-          "0": 61
+          "50": 12,
+          "20": 357,
+          "0": 63
         },
         "hu_buckets": {
           "100": 421,
           "75": 95,
-          "50": 21,
-          "20": 342,
-          "0": 61
+          "50": 12,
+          "20": 357,
+          "0": 63
         },
         "feat_buckets": {
           "100": 62,
           "75": 12,
           "50": 8,
-          "20": 41,
+          "20": 44,
           "0": 17
         }
       }
     },
     "419-RAMA": {
-      "corte": "2026-11-17",
-      "archivo": "HU_419-RAMA_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_419-RAMA_20261119.csv",
       "kpi": {
         "n_hu": 366,
         "n_hu_activas": 363,
@@ -399,7 +399,7 @@
         "n_feature_con_hu": 62,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.8001,
+        "pct_global": 0.8029,
         "term_global": 117,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -408,7 +408,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.655,
+        "tactico": 0.6555,
         "estrategico": 0.4032,
         "n": 62,
         "d": 25,
@@ -420,29 +420,29 @@
         "buckets": {
           "100": 117,
           "75": 88,
-          "50": 62,
-          "20": 57,
+          "50": 63,
+          "20": 56,
           "0": 26
         },
         "hu_buckets": {
           "100": 117,
           "75": 88,
-          "50": 62,
-          "20": 57,
+          "50": 63,
+          "20": 56,
           "0": 26
         },
         "feat_buckets": {
           "100": 25,
           "75": 3,
           "50": 16,
-          "20": 11,
-          "0": 7
+          "20": 10,
+          "0": 8
         }
       }
     },
     "348": {
-      "corte": "2026-11-17",
-      "archivo": "HU_348_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_348_20261119.csv",
       "kpi": {
         "n_hu": 397,
         "n_hu_activas": 397,
@@ -494,8 +494,8 @@
       }
     },
     "020": {
-      "corte": "2026-11-17",
-      "archivo": "HU_020_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_020_20261119.csv",
       "kpi": {
         "n_hu": 102,
         "n_hu_activas": 100,
@@ -505,7 +505,7 @@
         "n_feature_con_hu": 8,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.903,
+        "pct_global": 0.912,
         "term_global": 86,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -514,7 +514,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.8801,
+        "tactico": 0.8892,
         "estrategico": 0.25,
         "n": 8,
         "d": 2,
@@ -526,16 +526,16 @@
         "buckets": {
           "100": 84,
           "75": 0,
-          "50": 1,
-          "20": 3,
-          "0": 10
+          "50": 2,
+          "20": 4,
+          "0": 8
         },
         "hu_buckets": {
           "100": 84,
           "75": 0,
-          "50": 1,
-          "20": 3,
-          "0": 10
+          "50": 2,
+          "20": 4,
+          "0": 8
         },
         "feat_buckets": {
           "100": 2,
@@ -547,19 +547,19 @@
       }
     },
     "420": {
-      "corte": "2026-11-17",
-      "archivo": "HU_420_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_420_20261119.csv",
       "kpi": {
         "n_hu": 627,
-        "n_hu_activas": 612,
+        "n_hu_activas": 611,
         "hu_sin_feature": 0,
         "n_feature": 57,
         "n_epic": 12,
         "n_feature_con_hu": 57,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.9377,
-        "term_global": 522,
+        "pct_global": 0.939,
+        "term_global": 525,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
         "feature_100_sin_cerrar": 35,
@@ -567,7 +567,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.884,
+        "tactico": 0.8858,
         "estrategico": 0.6316,
         "n": 57,
         "d": 36,
@@ -575,18 +575,18 @@
         "isEpics": false,
         "feat_total": 57,
         "feat_ent": 36,
-        "hu_total": 612,
+        "hu_total": 611,
         "buckets": {
-          "100": 522,
+          "100": 525,
           "75": 0,
-          "50": 47,
+          "50": 43,
           "20": 19,
           "0": 24
         },
         "hu_buckets": {
-          "100": 522,
+          "100": 525,
           "75": 0,
-          "50": 47,
+          "50": 43,
           "20": 19,
           "0": 24
         },
@@ -600,8 +600,8 @@
       }
     },
     "457": {
-      "corte": "2026-11-17",
-      "archivo": "HU_457_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_457_20261119.csv",
       "kpi": {
         "n_hu": 305,
         "n_hu_activas": 283,
@@ -611,7 +611,7 @@
         "n_feature_con_hu": 51,
         "feature_sin_hu": 3,
         "hu_omitidas": 0,
-        "pct_global": 0.9146,
+        "pct_global": 0.9164,
         "term_global": 238,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -620,7 +620,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.9603,
+        "tactico": 0.9606,
         "estrategico": 0.9216,
         "n": 51,
         "d": 47,
@@ -632,16 +632,16 @@
         "buckets": {
           "100": 237,
           "75": 13,
-          "50": 0,
+          "50": 1,
           "20": 11,
-          "0": 21
+          "0": 20
         },
         "hu_buckets": {
           "100": 237,
           "75": 13,
-          "50": 0,
+          "50": 1,
           "20": 11,
-          "0": 21
+          "0": 20
         },
         "feat_buckets": {
           "100": 47,
@@ -653,8 +653,8 @@
       }
     },
     "456": {
-      "corte": "2026-11-17",
-      "archivo": "HU_456_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_456_20261119.csv",
       "kpi": {
         "n_hu": 16,
         "n_hu_activas": 16,
@@ -694,71 +694,71 @@
       }
     },
     "005": {
-      "corte": "2026-11-17",
-      "archivo": "HU_005_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_005_20261119.csv",
       "kpi": {
-        "n_hu": 249,
-        "n_hu_activas": 247,
+        "n_hu": 252,
+        "n_hu_activas": 250,
         "hu_sin_feature": 1,
         "n_feature": 62,
         "n_epic": 5,
         "n_feature_con_hu": 62,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.783,
-        "term_global": 154,
+        "pct_global": 0.7809,
+        "term_global": 161,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
-        "feature_100_sin_cerrar": 3,
+        "feature_100_sin_cerrar": 2,
         "feature_estado_ajeno": 13,
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.7669,
-        "estrategico": 0.7097,
+        "tactico": 0.7873,
+        "estrategico": 0.7419,
         "n": 62,
-        "d": 44,
+        "d": 46,
         "u": "funcionalidades",
         "isEpics": false,
         "feat_total": 62,
-        "feat_ent": 44,
-        "hu_total": 246,
+        "feat_ent": 46,
+        "hu_total": 249,
         "buckets": {
-          "100": 154,
-          "75": 10,
+          "100": 161,
+          "75": 5,
           "50": 0,
-          "20": 37,
-          "0": 45
+          "20": 36,
+          "0": 47
         },
         "hu_buckets": {
-          "100": 154,
-          "75": 10,
+          "100": 161,
+          "75": 5,
           "50": 0,
-          "20": 37,
-          "0": 45
+          "20": 36,
+          "0": 47
         },
         "feat_buckets": {
-          "100": 44,
-          "75": 2,
+          "100": 46,
+          "75": 1,
           "50": 0,
           "20": 8,
-          "0": 8
+          "0": 7
         }
       }
     },
     "461": {
-      "corte": "2026-11-17",
-      "archivo": "HU_461_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_461_20261119.csv",
       "kpi": {
-        "n_hu": 176,
-        "n_hu_activas": 119,
+        "n_hu": 177,
+        "n_hu_activas": 120,
         "hu_sin_feature": 0,
         "n_feature": 32,
         "n_epic": 7,
         "n_feature_con_hu": 32,
         "feature_sin_hu": 0,
         "hu_omitidas": 54,
-        "pct_global": 0.4315,
+        "pct_global": 0.435,
         "term_global": 1,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -767,7 +767,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.1531,
+        "tactico": 0.1563,
         "estrategico": 0.0,
         "n": 32,
         "d": 0,
@@ -775,19 +775,19 @@
         "isEpics": false,
         "feat_total": 32,
         "feat_ent": 0,
-        "hu_total": 119,
+        "hu_total": 120,
         "buckets": {
           "100": 1,
           "75": 21,
           "50": 0,
-          "20": 29,
+          "20": 30,
           "0": 68
         },
         "hu_buckets": {
           "100": 1,
           "75": 21,
           "50": 0,
-          "20": 29,
+          "20": 30,
           "0": 68
         },
         "feat_buckets": {
@@ -800,18 +800,18 @@
       }
     },
     "407": {
-      "corte": "2026-11-17",
-      "archivo": "HU_407_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_407_20261119.csv",
       "kpi": {
-        "n_hu": 699,
-        "n_hu_activas": 676,
+        "n_hu": 701,
+        "n_hu_activas": 678,
         "hu_sin_feature": 78,
         "n_feature": 56,
         "n_epic": 16,
         "n_feature_con_hu": 52,
         "feature_sin_hu": 4,
         "hu_omitidas": 0,
-        "pct_global": 0.9302,
+        "pct_global": 0.9298,
         "term_global": 614,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -820,7 +820,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.6508,
+        "tactico": 0.6546,
         "estrategico": 0.5962,
         "n": 52,
         "d": 31,
@@ -828,33 +828,33 @@
         "isEpics": false,
         "feat_total": 52,
         "feat_ent": 31,
-        "hu_total": 598,
+        "hu_total": 600,
         "buckets": {
           "100": 536,
           "75": 0,
           "50": 1,
-          "20": 6,
-          "0": 55
+          "20": 10,
+          "0": 53
         },
         "hu_buckets": {
           "100": 536,
           "75": 0,
           "50": 1,
-          "20": 6,
-          "0": 55
+          "20": 10,
+          "0": 53
         },
         "feat_buckets": {
           "100": 31,
           "75": 0,
           "50": 3,
-          "20": 3,
-          "0": 15
+          "20": 4,
+          "0": 14
         }
       }
     },
     "414": {
-      "corte": "2026-11-17",
-      "archivo": "HU_414_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_414_20261119.csv",
       "kpi": {
         "n_hu": 600,
         "n_hu_activas": 593,
@@ -864,50 +864,50 @@
         "n_feature_con_hu": 88,
         "feature_sin_hu": 1,
         "hu_omitidas": 0,
-        "pct_global": 0.9321,
-        "term_global": 535,
+        "pct_global": 0.9345,
+        "term_global": 538,
         "feature_sin_frente": 2,
         "hu_sin_frente": 21,
-        "feature_100_sin_cerrar": 65,
+        "feature_100_sin_cerrar": 66,
         "feature_estado_ajeno": 56,
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.905,
-        "estrategico": 0.8295,
+        "tactico": 0.9105,
+        "estrategico": 0.8409,
         "n": 88,
-        "d": 73,
+        "d": 74,
         "u": "funcionalidades",
         "isEpics": false,
         "feat_total": 88,
-        "feat_ent": 73,
+        "feat_ent": 74,
         "hu_total": 581,
         "buckets": {
-          "100": 523,
+          "100": 526,
           "75": 0,
-          "50": 2,
-          "20": 22,
+          "50": 3,
+          "20": 18,
           "0": 34
         },
         "hu_buckets": {
-          "100": 523,
+          "100": 526,
           "75": 0,
-          "50": 2,
-          "20": 22,
+          "50": 3,
+          "20": 18,
           "0": 34
         },
         "feat_buckets": {
-          "100": 73,
+          "100": 74,
           "75": 6,
-          "50": 2,
+          "50": 1,
           "20": 2,
           "0": 5
         }
       }
     },
     "019": {
-      "corte": "2026-11-17",
-      "archivo": "HU_019_20261117.csv",
+      "corte": "2026-11-19",
+      "archivo": "HU_019_20261119.csv",
       "kpi": {
         "n_hu": 193,
         "n_hu_activas": 175,
@@ -917,7 +917,7 @@
         "n_feature_con_hu": 13,
         "feature_sin_hu": 0,
         "hu_omitidas": 0,
-        "pct_global": 0.6571,
+        "pct_global": 0.6594,
         "term_global": 35,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -959,18 +959,18 @@
       }
     },
     "419": {
-      "corte": "2026-11-17",
-      "archivo": "Consolidado 419 (DEP + RAMA · 2026-11-17)",
+      "corte": "2026-11-19",
+      "archivo": "Consolidado 419 (DEP + RAMA · 2026-11-19)",
       "kpi": {
-        "n_hu": 1467,
-        "n_hu_activas": 1366,
+        "n_hu": 1475,
+        "n_hu_activas": 1374,
         "hu_sin_feature": 43,
-        "n_feature": 227,
+        "n_feature": 230,
         "n_epic": 21,
-        "n_feature_con_hu": 207,
+        "n_feature_con_hu": 210,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7729,
+        "pct_global": 0.7696,
         "term_global": 548,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -985,7 +985,7 @@
         "d": 80,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 202,
+        "feat_total": 205,
         "feat_ent": 87,
         "buckets": {
           "100": 80,
@@ -997,20 +997,20 @@
       }
     },
     "POS": {
-      "corte": "2026-11-17",
+      "corte": "2026-11-19",
       "archivo": "Consolidado Positiva Core (355 + 416)",
       "cmi": {
-        "tactico": 0.4275,
-        "estrategico": 0.0632,
-        "n": 95,
+        "tactico": 0.4194,
+        "estrategico": 0.0619,
+        "n": 97,
         "d": 6,
         "u": "épicas",
         "isEpics": true,
-        "feat_total": 100,
+        "feat_total": 102,
         "feat_ent": 6,
         "buckets": {
           "100": 391,
-          "75": 246,
+          "75": 248,
           "50": 26,
           "20": 76,
           "0": 449
@@ -1018,12 +1018,12 @@
       }
     },
     "453": {
-      "corte": "2026-11-17",
+      "corte": "2026-11-19",
       "archivo": "453 CPE (Focos y Casos de Uso)",
       "cmi": {
         "tactico": 0.3848,
         "estrategico": 0.3671,
-        "exito": 0.3782,
+        "exito": 0.3783,
         "n": 79,
         "d": 29,
         "u": "casos de uso",
