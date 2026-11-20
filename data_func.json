@@ -294,10 +294,10 @@
         "total": 913,
         "removidos": 283,
         "activos": 630,
-        "cumplidos": 0,
-        "cumplimiento": 0.0,
+        "cumplidos": 275,
+        "cumplimiento": 0.4365,
         "resumen": {
-          "CUMPLIDO": 0,
+          "CUMPLIDO": 275,
           "EN PROCESO": 224,
           "PENDIENTE INICIO": 131,
           "REMOVIDO": 283
@@ -306,9 +306,9 @@
           "AFILIACIONES Y NOVEDADES": {
             "total": 508,
             "removido": 151,
-            "cumplido": 0,
+            "cumplido": 208,
             "activos": 357,
-            "cumplimiento": 0.0
+            "cumplimiento": 0.5826
           },
           "EN BLANCO": {
             "total": 11,
@@ -327,9 +327,9 @@
           "RECAUDO Y CARTERA": {
             "total": 392,
             "removido": 121,
-            "cumplido": 0,
+            "cumplido": 67,
             "activos": 271,
-            "cumplimiento": 0.0
+            "cumplimiento": 0.2472
           }
         }
       }
