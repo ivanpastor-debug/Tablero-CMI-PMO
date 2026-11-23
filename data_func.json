@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-23 09:12",
+  "generado": "2026-11-23 12:15",
   "proyectos": {
     "004": {
       "corte": "2026-10-30",
@@ -340,13 +340,13 @@
       "kpi": {
         "n_hu": 1126,
         "n_hu_activas": 1028,
-        "hu_sin_feature": 30,
-        "n_feature": 168,
+        "hu_sin_feature": 32,
+        "n_feature": 166,
         "n_epic": 12,
-        "n_feature_con_hu": 148,
+        "n_feature_con_hu": 146,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7603,
+        "pct_global": 0.7605,
         "term_global": 431,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -355,27 +355,27 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.6237,
-        "estrategico": 0.4336,
-        "n": 143,
+        "tactico": 0.6324,
+        "estrategico": 0.4397,
+        "n": 141,
         "d": 62,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 143,
+        "feat_total": 141,
         "feat_ent": 62,
-        "hu_total": 965,
+        "hu_total": 963,
         "buckets": {
           "100": 421,
-          "75": 95,
+          "75": 96,
           "50": 12,
-          "20": 400,
+          "20": 397,
           "0": 37
         },
         "hu_buckets": {
           "100": 421,
-          "75": 95,
+          "75": 96,
           "50": 12,
-          "20": 400,
+          "20": 397,
           "0": 37
         },
         "feat_buckets": {
@@ -383,7 +383,7 @@
           "75": 12,
           "50": 8,
           "20": 51,
-          "0": 10
+          "0": 8
         }
       }
     },
@@ -408,7 +408,7 @@
         "feature_removido_con_hu": 0
       },
       "cmi": {
-        "tactico": 0.6673,
+        "tactico": 0.6666,
         "estrategico": 0.4032,
         "n": 62,
         "d": 25,
@@ -964,13 +964,13 @@
       "kpi": {
         "n_hu": 1498,
         "n_hu_activas": 1397,
-        "hu_sin_feature": 43,
-        "n_feature": 230,
+        "hu_sin_feature": 45,
+        "n_feature": 228,
         "n_epic": 21,
-        "n_feature_con_hu": 210,
+        "n_feature_con_hu": 208,
         "feature_sin_hu": 20,
         "hu_omitidas": 0,
-        "pct_global": 0.7724,
+        "pct_global": 0.7725,
         "term_global": 548,
         "feature_sin_frente": 0,
         "hu_sin_frente": 0,
@@ -985,7 +985,7 @@
         "d": 80,
         "u": "funcionalidades",
         "isEpics": false,
-        "feat_total": 205,
+        "feat_total": 203,
         "feat_ent": 87,
         "buckets": {
           "100": 80,

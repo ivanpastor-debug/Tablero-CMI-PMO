@@ -1,16 +1,16 @@
 {
   "codigo": "419-RAMA",
   "corte": "2026-11-23",
-  "generado": "2026-11-23 09:12",
+  "generado": "2026-11-23 12:15",
   "archivo": "HU_419-RAMA_20261123.csv",
   "epics": [
     {
       "i": "531912",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n_f": 13,
-      "n": 63,
+      "n": 62,
       "term": 0,
-      "pct": 0.5381
+      "pct": 0.5387
     },
     {
       "i": "373561",
@@ -64,9 +64,9 @@
       "i": "417388",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_7",
       "n_f": 3,
-      "n": 17,
+      "n": 18,
       "term": 0,
-      "pct": 0.8176
+      "pct": 0.8
     },
     {
       "i": "360689",
@@ -431,14 +431,14 @@
       "n_pct": 5
     },
     {
-      "i": "532409",
-      "t": "419_PR_REFINAMIENTO SPRINT 8",
-      "e": "2. En Curso",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "i": "421344",
+      "t": "419_PR_REFINAMIENTO",
+      "e": "3. Entregado",
+      "ep": "417388",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
       "n": 5,
       "term": 0,
-      "pct": 0.46,
+      "pct": 0.66,
       "n_pct": 5
     },
     {
@@ -541,17 +541,6 @@
       "n_pct": 4
     },
     {
-      "i": "421344",
-      "t": "419_PR_REFINAMIENTO",
-      "e": "3. Entregado",
-      "ep": "417388",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
-      "n": 4,
-      "term": 0,
-      "pct": 0.7,
-      "n_pct": 4
-    },
-    {
       "i": "532415",
       "t": "419_PR_CREACIÓN PROCESOS – INDIVIDUAL",
       "e": "3. Entregado",
@@ -560,6 +549,17 @@
       "n": 4,
       "term": 0,
       "pct": 0.5,
+      "n_pct": 4
+    },
+    {
+      "i": "532409",
+      "t": "419_PR_REFINAMIENTO SPRINT 8",
+      "e": "2. En Curso",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.45,
       "n_pct": 4
     },
     {
@@ -4047,8 +4047,8 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
-      "f": "532409",
-      "ep": "531912",
+      "f": "421344",
+      "ep": "417388",
       "r": "Eduardo Tordecilla Paez"
     },
     {
@@ -4346,7 +4346,7 @@
       "v": 0.5,
       "f": "532627",
       "ep": "531912",
-      "r": "Nelson Boton"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "532634",
@@ -4357,7 +4357,7 @@
       "v": 0.5,
       "f": "532627",
       "ep": "531912",
-      "r": "Nelson Boton"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "546312",
@@ -4647,7 +4647,7 @@
     },
     {
       "i": "551773",
-      "t": "419_PR_H001_Cargar_Archivo_Actualizaciones_Partes_Proceso",
+      "t": "419_PR_HU001_Cargar_Archivo_Actualizaciones_Partes_Proceso",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
@@ -4658,7 +4658,7 @@
     },
     {
       "i": "551775",
-      "t": "419_PR_H002_Actualizar_Partes_Proceso_Masiva",
+      "t": "419_PR_HU002_Actualizar_Partes_Proceso_Masiva",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
@@ -4669,7 +4669,7 @@
     },
     {
       "i": "551776",
-      "t": "419_PR_H003_Consultar_Registros_No_procesados",
+      "t": "419_PR_HU003_Consultar_Registros_No_procesados",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
@@ -4819,7 +4819,7 @@
       "v": 0.5,
       "f": "532627",
       "ep": "531912",
-      "r": "Nelson Boton"
+      "r": "Yuliana Delgado Osorio"
     },
     {
       "i": "573082",
@@ -4852,7 +4852,7 @@
       "v": 0.5,
       "f": "532627",
       "ep": "531912",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Yuliana Delgado Osorio"
     }
   ],
   "kpi": {
@@ -4873,7 +4873,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6673,
+    "tactico": 0.6666,
     "estrategico": 0.4032,
     "n": 62,
     "d": 25,
