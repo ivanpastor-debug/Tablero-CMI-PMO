@@ -1,8 +1,8 @@
 {
   "codigo": "414",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:59",
-  "archivo": "HU_414_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_414_20261123.csv",
   "epics": [
     {
       "i": "270309",
@@ -32,9 +32,9 @@
       "i": "387417",
       "t": "Positiva Web 414",
       "n_f": 3,
-      "n": 36,
+      "n": 37,
       "term": 30,
-      "pct": 0.84
+      "pct": 0.8227
     },
     {
       "i": "460466",
@@ -45,20 +45,20 @@
       "pct": 0.6585
     },
     {
+      "i": "536643",
+      "t": "Administrador del Gestor Web + Listas inteligentes.",
+      "n_f": 3,
+      "n": 27,
+      "term": 0,
+      "pct": 0.3
+    },
+    {
       "i": "236314",
       "t": "3. Atención y servicio a la ciudadanía",
       "n_f": 1,
       "n": 26,
       "term": 26,
       "pct": 1.0
-    },
-    {
-      "i": "536643",
-      "t": "Administrador del Gestor Web + Listas inteligentes.",
-      "n_f": 3,
-      "n": 26,
-      "term": 0,
-      "pct": 0.2923
     },
     {
       "i": "296948",
@@ -338,10 +338,10 @@
       "e": "2. En Curso",
       "ep": "387417",
       "ept": "Positiva Web 414",
-      "n": 21,
+      "n": 22,
       "term": 17,
-      "pct": 0.8171,
-      "n_pct": 21
+      "pct": 0.7891,
+      "n_pct": 22
     },
     {
       "i": "305043",
@@ -472,7 +472,7 @@
       "ept": "Administrador del Gestor Web + Listas inteligentes.",
       "n": 10,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.23,
       "n_pct": 10
     },
     {
@@ -495,6 +495,17 @@
       "n": 9,
       "term": 0,
       "pct": 0.1422,
+      "n_pct": 9
+    },
+    {
+      "i": "549039",
+      "t": "Fase 2 — BIDO Gobernanza, matriz y seguimiento",
+      "e": "2. En Curso",
+      "ep": "536643",
+      "ept": "Administrador del Gestor Web + Listas inteligentes.",
+      "n": 9,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 9
     },
     {
@@ -539,17 +550,6 @@
       "n": 8,
       "term": 0,
       "pct": 0.5,
-      "n_pct": 8
-    },
-    {
-      "i": "549039",
-      "t": "Fase 2 — BIDO Gobernanza, matriz y seguimiento",
-      "e": "2. En Curso",
-      "ep": "536643",
-      "ept": "Administrador del Gestor Web + Listas inteligentes.",
-      "n": 8,
-      "term": 0,
-      "pct": 0.2,
       "n_pct": 8
     },
     {
@@ -7806,10 +7806,10 @@
     {
       "i": "565832",
       "t": "HU_003_GEWE_Configuración de periodicidades y avisos",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "565829",
       "ep": "536643",
       "r": "Fabian Camilo Peralta Gutierrez"
@@ -7890,18 +7890,40 @@
       "f": "565829",
       "ep": "536643",
       "r": "Fabian Camilo Peralta Gutierrez"
+    },
+    {
+      "i": "573050",
+      "t": "HU_009_BIDO_Roles, permisos y acceso por URL",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "549039",
+      "ep": "536643",
+      "r": "Joshua Aranza Cubides"
+    },
+    {
+      "i": "573088",
+      "t": "WEB_HU0041_RemediacionRetestCiberseguridadSOC",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "387427",
+      "ep": "387417",
+      "r": "Joshua Aranza Cubides"
     }
   ],
   "kpi": {
-    "n_hu": 600,
-    "n_hu_activas": 593,
+    "n_hu": 602,
+    "n_hu_activas": 595,
     "hu_sin_feature": 12,
     "n_feature": 89,
     "n_epic": 38,
     "n_feature_con_hu": 88,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.9345,
+    "pct_global": 0.9325,
     "term_global": 538,
     "feature_sin_frente": 2,
     "hu_sin_frente": 21,
@@ -7910,7 +7932,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.9105,
+    "tactico": 0.9103,
     "estrategico": 0.8409,
     "n": 88,
     "d": 74,
@@ -7918,20 +7940,20 @@
     "isEpics": false,
     "feat_total": 88,
     "feat_ent": 74,
-    "hu_total": 581,
+    "hu_total": 583,
     "buckets": {
       "100": 526,
       "75": 0,
       "50": 3,
-      "20": 18,
-      "0": 34
+      "20": 19,
+      "0": 35
     },
     "hu_buckets": {
       "100": 526,
       "75": 0,
       "50": 3,
-      "20": 18,
-      "0": 34
+      "20": 19,
+      "0": 35
     },
     "feat_buckets": {
       "100": 74,

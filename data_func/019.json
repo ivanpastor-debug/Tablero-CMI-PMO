@@ -1,8 +1,8 @@
 {
   "codigo": "019",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:59",
-  "archivo": "HU_019_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_019_20261123.csv",
   "epics": [
     {
       "i": "388889",
@@ -1689,10 +1689,10 @@
     {
       "i": "427836",
       "t": "HU310 - Consumo Servicio consulta y creacion ofertante (Interna)",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": null,
       "ep": null,
       "r": "Angie Julieth Parra"
@@ -2345,18 +2345,29 @@
       "f": "413566",
       "ep": "413565",
       "r": ""
+    },
+    {
+      "i": "571741",
+      "t": "HU371 CRM Autocompletado del Número de Factura Electrónica",
+      "e": "2. Elaboración HU",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.12,
+      "f": null,
+      "ep": null,
+      "r": "Angie Julieth Parra"
     }
   ],
   "kpi": {
-    "n_hu": 193,
-    "n_hu_activas": 175,
-    "hu_sin_feature": 34,
+    "n_hu": 194,
+    "n_hu_activas": 176,
+    "hu_sin_feature": 35,
     "n_feature": 13,
     "n_epic": 9,
     "n_feature_con_hu": 13,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.6594,
+    "pct_global": 0.6575,
     "term_global": 35,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,

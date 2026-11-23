@@ -1,16 +1,16 @@
 {
   "codigo": "005",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:58",
-  "archivo": "HU_005_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_005_20261123.csv",
   "epics": [
     {
       "i": "2227",
       "t": "Garantía - En producción",
-      "n_f": 41,
-      "n": 120,
+      "n_f": 42,
+      "n": 121,
       "term": 119,
-      "pct": 0.9958
+      "pct": 0.9876
     },
     {
       "i": "82",
@@ -18,15 +18,15 @@
       "n_f": 16,
       "n": 64,
       "term": 37,
-      "pct": 0.7002
+      "pct": 0.7083
     },
     {
       "i": "578",
       "t": "Deuda Técnica y Contractual",
       "n_f": 2,
       "n": 56,
-      "term": 5,
-      "pct": 0.4593
+      "term": 6,
+      "pct": 0.4834
     },
     {
       "i": "568",
@@ -54,7 +54,7 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.4075,
+      "pct": 0.4325,
       "n_pct": 36
     },
     {
@@ -64,8 +64,8 @@
       "ep": "578",
       "ept": "Deuda Técnica y Contractual",
       "n": 20,
-      "term": 4,
-      "pct": 0.5525,
+      "term": 5,
+      "pct": 0.575,
       "n_pct": 20
     },
     {
@@ -527,7 +527,7 @@
       "ept": "Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": 0.08,
+      "pct": 0.6,
       "n_pct": 1
     },
     {
@@ -726,6 +726,17 @@
       "n": 1,
       "term": 1,
       "pct": 1.0,
+      "n_pct": 1
+    },
+    {
+      "i": "3687",
+      "t": "Recertificación de flujos con Editor",
+      "e": "New",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
+      "n": 1,
+      "term": 0,
+      "pct": 0.0,
       "n_pct": 1
     }
   ],
@@ -1195,10 +1206,10 @@
     {
       "i": "585",
       "t": "Inventario de bases de datos por microservicio y consolidación",
-      "e": "9. Esperando Despliegue UAT-PROD",
-      "p": "PENDIENTE POR DESPLEGAR EN PRODUCCIÓN",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.95,
+      "v": 1.0,
       "f": "579",
       "ep": "578",
       "r": "Jhonatan Rocha"
@@ -1212,7 +1223,7 @@
       "v": 0.3,
       "f": "579",
       "ep": "578",
-      "r": "Yadimir Molina"
+      "r": "jhan.rivero 3tcapital.co"
     },
     {
       "i": "587",
@@ -1234,7 +1245,7 @@
       "v": 0.3,
       "f": "579",
       "ep": "578",
-      "r": "Yadimir Molina"
+      "r": "jhan.rivero 3tcapital.co"
     },
     {
       "i": "589",
@@ -1272,10 +1283,10 @@
     {
       "i": "592",
       "t": "Credenciales quemadas en BD, gestor de secretos y rotación",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.3,
       "f": "579",
       "ep": "578",
       "r": "Carlos Cansina"
@@ -1311,11 +1322,11 @@
       "v": 0.3,
       "f": "579",
       "ep": "578",
-      "r": "Yadimir Molina"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "596",
-      "t": "IA de radicación desde bandeja de correo: diagnóstico y corrección",
+      "t": "IA de radicación desde bandeja de correo: diagnóstico y corrección (Eliminar)",
       "e": "New",
       "p": "REQUERIMIENTOS",
       "a": 1,
@@ -1327,10 +1338,10 @@
     {
       "i": "597",
       "t": "Guía de clasificación documental (tipo documental)",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "579",
       "ep": "578",
       "r": "Jose Fernando Lozano Murcia"
@@ -1349,13 +1360,13 @@
     {
       "i": "599",
       "t": "Ajuste permisos por funcionalidad y flujo",
-      "e": "New",
-      "p": "REQUERIMIENTOS",
+      "e": "Active",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.0,
+      "v": 0.5,
       "f": "579",
       "ep": "578",
-      "r": "Jhostin Ladino"
+      "r": "Angie Hernandez"
     },
     {
       "i": "600",
@@ -1377,7 +1388,7 @@
       "v": 0.3,
       "f": "601",
       "ep": "578",
-      "r": "Bryan Chaves"
+      "r": "Dario Lopez"
     },
     {
       "i": "603",
@@ -1459,10 +1470,10 @@
     {
       "i": "610",
       "t": "C001-Anexo1-Técnico 5.7.10. Los administradores no deben poder deshabilitar los controles de autorización y acceso definidos para su tipo de usuario.",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1547,10 +1558,10 @@
     {
       "i": "618",
       "t": "C001-Anexo1-Técnico 5.9.7. Realizar búsquedas del log de auditoria por diferentes criterios, el usuario podrá ordenar y filtrar el resultado de la búsqueda, así como poder exportar el resultado de la búsqueda en diferentes formatos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1558,10 +1569,10 @@
     {
       "i": "619",
       "t": "C001-Anexo1-Técnico 5.9.8. registrar todos los cambios en la información en el registro de control de auditoría; además debe soportar y aprobar auditorías automatizadas de software de escaneo de seguridad",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -1602,10 +1613,10 @@
     {
       "i": "623",
       "t": "C001-Anexo1-Técnico 5.10.9. mantener trazabilidad de los datos intercambiados y permitir la búsqueda de mensajes a partir de palabras clave del contenido)",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
       "r": "Mery Rojas"
@@ -2008,14 +2019,14 @@
     },
     {
       "i": "1754",
-      "t": "Revisión requerimiento PQRD Express Superfinanciera",
-      "e": "1. Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "t": "Gestion  PQRSD Express",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.08,
+      "v": 0.6,
       "f": "1753",
       "ep": "82",
-      "r": "Jairo Tibaquira"
+      "r": "Angie Hernandez"
     },
     {
       "i": "1948",
@@ -3501,54 +3512,65 @@
       "f": "3329",
       "ep": "82",
       "r": "Angie Hernandez"
+    },
+    {
+      "i": "3688",
+      "t": "Recertificación de flujos con Editor",
+      "e": "New",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.0,
+      "f": "3687",
+      "ep": "2227",
+      "r": "Esteban Pallares"
     }
   ],
   "kpi": {
-    "n_hu": 252,
-    "n_hu_activas": 250,
+    "n_hu": 253,
+    "n_hu_activas": 251,
     "hu_sin_feature": 1,
-    "n_feature": 62,
+    "n_feature": 63,
     "n_epic": 5,
-    "n_feature_con_hu": 62,
+    "n_feature_con_hu": 63,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7809,
-    "term_global": 161,
+    "pct_global": 0.7853,
+    "term_global": 162,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 2,
-    "feature_estado_ajeno": 13,
+    "feature_estado_ajeno": 14,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.7873,
-    "estrategico": 0.7419,
-    "n": 62,
+    "tactico": 0.7793,
+    "estrategico": 0.7302,
+    "n": 63,
     "d": 46,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 62,
+    "feat_total": 63,
     "feat_ent": 46,
-    "hu_total": 249,
+    "hu_total": 250,
     "buckets": {
-      "100": 161,
-      "75": 5,
+      "100": 162,
+      "75": 8,
       "50": 0,
-      "20": 36,
+      "20": 33,
       "0": 47
     },
     "hu_buckets": {
-      "100": 161,
-      "75": 5,
+      "100": 162,
+      "75": 8,
       "50": 0,
-      "20": 36,
+      "20": 33,
       "0": 47
     },
     "feat_buckets": {
       "100": 46,
       "75": 1,
       "50": 0,
-      "20": 8,
+      "20": 9,
       "0": 7
     }
   }

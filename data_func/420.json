@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:58",
-  "archivo": "HU_420_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_420_20261123.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
-      "n": 186,
-      "term": 137,
-      "pct": 0.8892
+      "n": 188,
+      "term": 143,
+      "pct": 0.8963
     },
     {
       "i": "357729",
@@ -18,7 +18,7 @@
       "n_f": 12,
       "n": 100,
       "term": 92,
-      "pct": 0.936
+      "pct": 0.939
     },
     {
       "i": "356469",
@@ -130,10 +130,10 @@
       "e": "1. En Planeacion",
       "ep": "357078",
       "ept": "Cuentas médicas",
-      "n": 37,
-      "term": 30,
-      "pct": 0.9297,
-      "n_pct": 37
+      "n": 39,
+      "term": 31,
+      "pct": 0.9205,
+      "n_pct": 39
     },
     {
       "i": "358673",
@@ -175,8 +175,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 21,
-      "term": 17,
-      "pct": 0.9619,
+      "term": 21,
+      "pct": 1.0,
       "n_pct": 21
     },
     {
@@ -241,8 +241,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 15,
-      "term": 5,
-      "pct": 0.7867,
+      "term": 6,
+      "pct": 0.8,
       "n_pct": 15
     },
     {
@@ -264,7 +264,7 @@
       "ept": "Cuentas médicas",
       "n": 14,
       "term": 0,
-      "pct": 0.4786,
+      "pct": 0.5214,
       "n_pct": 14
     },
     {
@@ -275,7 +275,7 @@
       "ept": "Usuarios",
       "n": 13,
       "term": 12,
-      "pct": 0.9385,
+      "pct": 0.9615,
       "n_pct": 13
     },
     {
@@ -4661,10 +4661,10 @@
     {
       "i": "410500",
       "t": "HU0742_Positiva_Listado_Tablero_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "358512",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -4672,10 +4672,10 @@
     {
       "i": "410502",
       "t": "HU0045_Positiva_Listado_Gestión_Auditoria_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "377082",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -5068,10 +5068,10 @@
     {
       "i": "423311",
       "t": "HU0743_Positiva_Listado_Gestión_Facturas_V2",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "358512",
       "ep": "357078",
       "r": "Sindy Mabel Lozada Ruiz"
@@ -5761,13 +5761,13 @@
     {
       "i": "466506",
       "t": "HU0742_Positiva_Tablero_de_Control_V3",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "358512",
       "ep": "357078",
-      "r": "Sindy Mabel Lozada Ruiz"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "466507",
@@ -6432,10 +6432,10 @@
     {
       "i": "485516",
       "t": "HU0742_Positiva_Tablero_V4",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "358512",
       "ep": "357078",
       "r": "Sebastian Bernal"
@@ -6839,10 +6839,10 @@
     {
       "i": "502275",
       "t": "HU0192_Positiva_Listado_Reportes_Auditoría_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sindy Mabel Lozada Ruiz"
@@ -7180,13 +7180,13 @@
     {
       "i": "525724",
       "t": "HU0210_Positiva_Correo_Certificado_Listado_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Johan David Velasco Rios"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "525726",
@@ -7290,24 +7290,24 @@
     {
       "i": "531235",
       "t": "HU0216_Positiva_Correo_Certificado_Modal_Ver_trazabilidad_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Johan David Velasco Rios"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "533597",
       "t": "HU0122_Positiva_Factura_Estado_Pendiente_Asignación_V2",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "377082",
       "ep": "357078",
-      "r": "Francisco Jose Hernandez Cordero"
+      "r": "Sebastian Bernal"
     },
     {
       "i": "533599",
@@ -7609,13 +7609,13 @@
     {
       "i": "566415",
       "t": "HU0150_Positiva_Usuario_Auditor_Ajuste_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "375072",
       "ep": "357729",
-      "r": ""
+      "r": "orlando perez"
     },
     {
       "i": "568107",
@@ -7627,55 +7627,77 @@
       "f": "356476",
       "ep": "356469",
       "r": "Tilson Fernandez"
+    },
+    {
+      "i": "572370",
+      "t": "HU0027_Positiva_Finalizar_Proceso_V2",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "377082",
+      "ep": "357078",
+      "r": "orlando perez"
+    },
+    {
+      "i": "572378",
+      "t": "HU0006_Positiva_Ver_Detalle_Factura_V4",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "377082",
+      "ep": "357078",
+      "r": "orlando perez"
     }
   ],
   "kpi": {
-    "n_hu": 627,
-    "n_hu_activas": 611,
+    "n_hu": 629,
+    "n_hu_activas": 613,
     "hu_sin_feature": 0,
     "n_feature": 57,
     "n_epic": 12,
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.939,
-    "term_global": 525,
+    "pct_global": 0.9414,
+    "term_global": 531,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
-    "feature_100_sin_cerrar": 35,
+    "feature_100_sin_cerrar": 36,
     "feature_estado_ajeno": 0,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.8858,
-    "estrategico": 0.6316,
+    "tactico": 0.8888,
+    "estrategico": 0.6491,
     "n": 57,
-    "d": 36,
+    "d": 37,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 57,
-    "feat_ent": 36,
-    "hu_total": 611,
+    "feat_ent": 37,
+    "hu_total": 613,
     "buckets": {
-      "100": 525,
+      "100": 531,
       "75": 0,
-      "50": 43,
+      "50": 40,
       "20": 19,
-      "0": 24
+      "0": 23
     },
     "hu_buckets": {
-      "100": 525,
+      "100": 531,
       "75": 0,
-      "50": 43,
+      "50": 40,
       "20": 19,
-      "0": 24
+      "0": 23
     },
     "feat_buckets": {
-      "100": 36,
-      "75": 13,
+      "100": 37,
+      "75": 12,
       "50": 4,
-      "20": 2,
-      "0": 2
+      "20": 3,
+      "0": 1
     }
   }
 }

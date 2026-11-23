@@ -1,8 +1,8 @@
 {
   "codigo": "457",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:58",
-  "archivo": "HU_457_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_457_20261123.csv",
   "epics": [
     {
       "i": "292522",
@@ -10,7 +10,7 @@
       "n_f": 5,
       "n": 107,
       "term": 63,
-      "pct": 0.7836
+      "pct": 0.7858
     },
     {
       "i": "94588",
@@ -73,7 +73,7 @@
       "ept": "Nuevas Funcionalidades- 2026",
       "n": 29,
       "term": 5,
-      "pct": 0.6255,
+      "pct": 0.6338,
       "n_pct": 29
     },
     {
@@ -3601,13 +3601,13 @@
     {
       "i": "480727",
       "t": "NPDC_HU0010_Información_Adicional",
-      "e": "3.  Aprobación de HU y Artefactos",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.16,
+      "v": 0.5,
       "f": "295069",
       "ep": "292522",
-      "r": "Sergio Andres Rodriguez Toloza"
+      "r": "Julian Enrique Moreno Samudio"
     },
     {
       "i": "484694",
@@ -3733,10 +3733,10 @@
     {
       "i": "496652",
       "t": "NPDC_HU0011_Información_adicional_Administrador",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "295069",
       "ep": "292522",
       "r": "Sergio Andres Rodriguez Toloza"
@@ -3744,13 +3744,13 @@
     {
       "i": "497369",
       "t": "NPDC_HU0015_Información_de_seguros_Rol_Administrador",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "295069",
       "ep": "292522",
-      "r": "Fabian Camilo Peralta Gutierrez"
+      "r": "Sergio Andres Rodriguez Toloza"
     },
     {
       "i": "497819",
@@ -4015,7 +4015,7 @@
     "n_feature_con_hu": 51,
     "feature_sin_hu": 3,
     "hu_omitidas": 0,
-    "pct_global": 0.9164,
+    "pct_global": 0.9172,
     "term_global": 238,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4024,7 +4024,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.9606,
+    "tactico": 0.9607,
     "estrategico": 0.9216,
     "n": 51,
     "d": 47,
@@ -4036,16 +4036,16 @@
     "buckets": {
       "100": 237,
       "75": 13,
-      "50": 1,
-      "20": 11,
-      "0": 20
+      "50": 0,
+      "20": 14,
+      "0": 18
     },
     "hu_buckets": {
       "100": 237,
       "75": 13,
-      "50": 1,
-      "20": 11,
-      "0": 20
+      "50": 0,
+      "20": 14,
+      "0": 18
     },
     "feat_buckets": {
       "100": 47,

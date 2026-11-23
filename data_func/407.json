@@ -1,8 +1,8 @@
 {
   "codigo": "407",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:58",
-  "archivo": "HU_407_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_407_20261123.csv",
   "epics": [
     {
       "i": "188047",
@@ -18,7 +18,7 @@
       "n_f": 15,
       "n": 43,
       "term": 29,
-      "pct": 0.7395
+      "pct": 0.7674
     },
     {
       "i": "422214",
@@ -66,7 +66,7 @@
       "n_f": 1,
       "n": 7,
       "term": 0,
-      "pct": 0.3286
+      "pct": 0.5857
     },
     {
       "i": "429334",
@@ -74,7 +74,7 @@
       "n_f": 2,
       "n": 6,
       "term": 0,
-      "pct": 0.3
+      "pct": 0.5
     },
     {
       "i": "163593",
@@ -90,7 +90,7 @@
       "n_f": 2,
       "n": 5,
       "term": 3,
-      "pct": 0.68
+      "pct": 0.92
     },
     {
       "i": "495527",
@@ -98,7 +98,7 @@
       "n_f": 2,
       "n": 4,
       "term": 0,
-      "pct": 0.2
+      "pct": 0.5
     },
     {
       "i": "524219",
@@ -296,7 +296,7 @@
       "ept": "Movimientos y transacciones",
       "n": 9,
       "term": 2,
-      "pct": 0.3778,
+      "pct": 0.5111,
       "n_pct": 9
     },
     {
@@ -318,7 +318,7 @@
       "ept": "Contabilidad",
       "n": 7,
       "term": 0,
-      "pct": 0.3286,
+      "pct": 0.5857,
       "n_pct": 7
     },
     {
@@ -362,7 +362,7 @@
       "ept": "Portal web",
       "n": 5,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.44,
       "n_pct": 5
     },
     {
@@ -384,7 +384,7 @@
       "ept": "Inventario",
       "n": 4,
       "term": 2,
-      "pct": 0.6,
+      "pct": 0.9,
       "n_pct": 4
     },
     {
@@ -527,7 +527,7 @@
       "ept": "Activos fijos",
       "n": 2,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.8,
       "n_pct": 2
     },
     {
@@ -7982,10 +7982,10 @@
     {
       "i": "502908",
       "t": "HU767_FGN_Portal_Web_Solicitudes_Entrada_Crear Solicitud_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "429344",
       "ep": "429334",
       "r": "Angela Maria Guacheta Ibarra"
@@ -7993,10 +7993,10 @@
     {
       "i": "503210",
       "t": "HU768_FGN_Portal Web_Solicitudes_Entrada_Ver Solicitud_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "429344",
       "ep": "429334",
       "r": "Angela Maria Guacheta Ibarra"
@@ -8070,10 +8070,10 @@
     {
       "i": "510786",
       "t": "HU774_FGNV2_Activos_360_Bienes_Consumo_Ajustes_Transversales_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "510782",
       "ep": "510781",
       "r": "Nelson Ivan Montenegro Carranza"
@@ -8131,7 +8131,7 @@
       "v": 0.8,
       "f": "520841",
       "ep": "429334",
-      "r": "Nicolas Santiago Rivera Franco"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "524248",
@@ -8147,57 +8147,57 @@
     {
       "i": "525827",
       "t": "HU777_FGNV2_Grupo_transacciones_Crear_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "525793",
       "ep": "495527",
-      "r": "Nelson Ivan Montenegro Carranza"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "525839",
       "t": "HU778_FGNV2_Grupo_Activos_Grupo_Transacciones_Añadir_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "525793",
       "ep": "495527",
-      "r": "Nelson Ivan Montenegro Carranza"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "525847",
       "t": "HU779_FGNV2_Contabilidad_Documentos_Reglas_Grupo_Transaccion_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "435203",
       "ep": "435202",
-      "r": ""
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "525849",
       "t": "HU780_FGNV2_Contabilidad_Documentos_Reglas_Grupo_Transacción_Bienes_Consumo_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "435203",
       "ep": "435202",
-      "r": "Nelson Ivan Montenegro Carranza"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "525850",
       "t": "HU781_FGNV2_Contabilidad_Documentos_Permisos_Entradas_V1",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "435203",
       "ep": "435202",
-      "r": "Nelson Ivan Montenegro Carranza"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "525862",
@@ -8279,24 +8279,24 @@
     {
       "i": "534958",
       "t": "HU786_FGNV2_Bienes_Remesas_Bienes_Consumo_Configuración_Automática_Bodega_Destino_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "510782",
       "ep": "510781",
-      "r": "Angela Maria Guacheta Ibarra"
+      "r": "Karen lorena diaz segura"
     },
     {
       "i": "543466",
       "t": "HU787_FGNV2_Movimientos_Transacciones_Tipo_Movimiento_Disposición_Salida_Bienes_Salida Definitiva_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "463401",
       "ep": "405687",
-      "r": "Nelson Boton"
+      "r": "Angela Maria Guacheta Ibarra"
     },
     {
       "i": "545538",
@@ -8323,13 +8323,13 @@
     {
       "i": "547235",
       "t": "HU790_FGNV2_Movimientos_Transacciones_Tipo_Movimiento_Disposición_Salida_Bienes_Cancelación_Responsabilidad_V2",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.8,
       "f": "463401",
       "ep": "405687",
-      "r": "Nelson Boton"
+      "r": "Angela Maria Guacheta Ibarra"
     },
     {
       "i": "548470",
@@ -8473,7 +8473,7 @@
     "n_feature_con_hu": 52,
     "feature_sin_hu": 4,
     "hu_omitidas": 0,
-    "pct_global": 0.9298,
+    "pct_global": 0.9395,
     "term_global": 614,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -8482,7 +8482,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6546,
+    "tactico": 0.6792,
     "estrategico": 0.5962,
     "n": 52,
     "d": 31,
@@ -8494,23 +8494,23 @@
     "buckets": {
       "100": 536,
       "75": 0,
-      "50": 1,
+      "50": 12,
       "20": 10,
-      "0": 53
+      "0": 42
     },
     "hu_buckets": {
       "100": 536,
       "75": 0,
-      "50": 1,
+      "50": 12,
       "20": 10,
-      "0": 53
+      "0": 42
     },
     "feat_buckets": {
       "100": 31,
-      "75": 0,
+      "75": 1,
       "50": 3,
-      "20": 4,
-      "0": 14
+      "20": 6,
+      "0": 11
     }
   }
 }

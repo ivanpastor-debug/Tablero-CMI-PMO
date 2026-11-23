@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:51",
-  "archivo": "snapshot HU + Feature (HU_453_20261119.csv)",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:05",
+  "archivo": "snapshot HU + Feature (HU_453_20261123.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -369,7 +369,7 @@
     {
       "i": "557747",
       "t": "CU_SIMEE_INT_007_Cargar_Archivo_Libre",
-      "e": "1. En Planeación",
+      "e": "1. En Levantamiento",
       "ei": "00. En levantamiento/entendimiento",
       "proc_cu": "REQUERIMIENTOS",
       "pct_cu": 0.025,

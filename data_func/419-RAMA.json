@@ -1,9 +1,17 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:58",
-  "archivo": "HU_419-RAMA_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_419-RAMA_20261123.csv",
   "epics": [
+    {
+      "i": "531912",
+      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n_f": 13,
+      "n": 63,
+      "term": 0,
+      "pct": 0.5381
+    },
     {
       "i": "373561",
       "t": "419_EP_RAMA_ PRIORIZACIÓN_3",
@@ -11,14 +19,6 @@
       "n": 57,
       "term": 35,
       "pct": 0.9544
-    },
-    {
-      "i": "531912",
-      "t": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n_f": 13,
-      "n": 57,
-      "term": 0,
-      "pct": 0.5105
     },
     {
       "i": "380257",
@@ -66,7 +66,7 @@
       "n_f": 3,
       "n": 17,
       "term": 0,
-      "pct": 0.7471
+      "pct": 0.8176
     },
     {
       "i": "360689",
@@ -262,7 +262,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_7",
       "n": 7,
       "term": 0,
-      "pct": 0.6857,
+      "pct": 0.8571,
       "n_pct": 7
     },
     {
@@ -354,6 +354,17 @@
       "n_pct": 6
     },
     {
+      "i": "532582",
+      "t": "419_PR_TRASLADO MASIVO",
+      "e": "2. En Curso",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 6,
+      "term": 0,
+      "pct": 0.5,
+      "n_pct": 6
+    },
+    {
       "i": "546349",
       "t": "419_PR_SOLICITUD NOVEDADES DE CUENTA JUDICIAL",
       "e": "2. En Curso",
@@ -416,7 +427,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.68,
+      "pct": 0.5,
       "n_pct": 5
     },
     {
@@ -428,6 +439,17 @@
       "n": 5,
       "term": 0,
       "pct": 0.46,
+      "n_pct": 5
+    },
+    {
+      "i": "532569",
+      "t": "419_PR_TRASLADO INDIVIDUAL",
+      "e": "2. En Curso",
+      "ep": "531912",
+      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 5
     },
     {
@@ -552,14 +574,14 @@
       "n_pct": 4
     },
     {
-      "i": "532582",
-      "t": "419_PR_TRASLADO MASIVO",
-      "e": "1. En Planeacion",
+      "i": "532627",
+      "t": "419_PR_TRASLADO AUTOMÁTICO DE PROCESO - SISTEMAS PROCESALES",
+      "e": "2. En Curso",
       "ep": "531912",
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.5,
       "n_pct": 4
     },
     {
@@ -673,17 +695,6 @@
       "n_pct": 3
     },
     {
-      "i": "532569",
-      "t": "419_PR_TRASLADO INDIVIDUAL",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 3,
-      "term": 0,
-      "pct": 0.2,
-      "n_pct": 3
-    },
-    {
       "i": "360584",
       "t": "419_FT_RAMA_OLVIDO_DE_CONTRASEÑA_INGRESO - R1",
       "e": "4. Cerrado",
@@ -736,17 +747,6 @@
       "n": 2,
       "term": 2,
       "pct": 1.0,
-      "n_pct": 2
-    },
-    {
-      "i": "532627",
-      "t": "419_PR_TRASLADO AUTOMÁTICO DE PROCESO - SISTEMAS PROCESALES",
-      "e": "1. En Planeacion",
-      "ep": "531912",
-      "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
-      "n": 2,
-      "term": 0,
-      "pct": 0.2,
       "n_pct": 2
     },
     {
@@ -2866,10 +2866,10 @@
     {
       "i": "401391",
       "t": "419_PR_CFA_HU001_Comportamiento_Flujo_Autorizacion",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "401379",
       "ep": "531912",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -2877,10 +2877,10 @@
     {
       "i": "401680",
       "t": "419_PR_CFR_HU002_Comportamiento_Flujo_Rechazo",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "401379",
       "ep": "531912",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -3416,10 +3416,10 @@
     {
       "i": "416774",
       "t": "419_PR_HU001_Descargar_Plantilla_y_Cargar_Masivo_Archivo_Registrar_Orden_de_no_pago",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "416773",
       "ep": "417388",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -3427,10 +3427,10 @@
     {
       "i": "417198",
       "t": "419_PR_CFR_HU003_Generalidades",
-      "e": "3. Entregado",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.5,
       "f": "401379",
       "ep": "531912",
       "r": "Jhon Fredy Valencia Naranjo"
@@ -3449,10 +3449,10 @@
     {
       "i": "417542",
       "t": "419_PR_HU002_Consulta_Resultado_Registro_no_procesado_Registrar_Orden_de_no_pago",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "416773",
       "ep": "417388",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -3460,10 +3460,10 @@
     {
       "i": "417546",
       "t": "419_PR_HU003_Descargar_plantilla_y_cargar_archivo_para_levantamiento_masivo_LONP",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "416773",
       "ep": "417388",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -3845,10 +3845,10 @@
     {
       "i": "459331",
       "t": "419_PR_MRLONP_HU004_Colsulta_resultado_ registro_novalido_para_Levantamiento_Orden_de_no_pago_LONP",
-      "e": "7.1  Pruebas QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.9,
       "f": "416773",
       "ep": "417388",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -4241,35 +4241,35 @@
     {
       "i": "532574",
       "t": "419_PR_TP_HU001_Ingreso de solicitud de Traslado de Proceso Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532569",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532575",
       "t": "419_PR_TP_HU002_Gestionar_Autorización_rechazo_Traslado_Proceso_Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532569",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532577",
       "t": "419_PR_TP_HU003_Procesar_Registros_Traslado_Proceso_Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532569",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532580",
@@ -4285,46 +4285,46 @@
     {
       "i": "532588",
       "t": "419_PR_TPM_HU001_Descargar_y_cargar_archivo_Traslado_Procesos_Masivo",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532582",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532590",
       "t": "419_PR_TPM_HU002_Gestionar_Autorizacion_Rechazo_Traslado_Procesos_Masivo",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532582",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532591",
       "t": "419_PR_TPM_HU003_Procesar_Registros_Traslado_Procesos_Masivo",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532582",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532593",
       "t": "419_PR_TPM_HU004_Consultar_Resultado_Traslado_Procesos_Masivo",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532582",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "532596",
@@ -4340,24 +4340,24 @@
     {
       "i": "532630",
       "t": "419_PR_HU001_DetectarTraslado_ActualizarCódigoInterno_AsociarCuentaDestino",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532627",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nelson Boton"
     },
     {
       "i": "532634",
       "t": "419_PR_HU002_ConvertirDepósitosDelProcesoTrasladado_NotificarTraslado",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "532627",
       "ep": "531912",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Nelson Boton"
     },
     {
       "i": "546312",
@@ -4505,13 +4505,13 @@
     {
       "i": "547686",
       "t": "419_PB_TEC001_Arquitectura_De_Datos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "401379",
       "ep": "531912",
-      "r": "Daniel Felipe Socha Hurtado"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "549954",
@@ -4582,13 +4582,13 @@
     {
       "i": "551319",
       "t": "419_PR_TEC002_Arquitectura_Tecnologica",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
       "v": 0.5,
       "f": "401379",
       "ep": "531912",
-      "r": "Eduardo Tordecilla Paez"
+      "r": "Jhon Fredy Valencia Naranjo"
     },
     {
       "i": "551598",
@@ -4787,18 +4787,84 @@
       "f": "546349",
       "ep": "531912",
       "r": "Steven Pino Gonzales"
+    },
+    {
+      "i": "572526",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532569",
+      "ep": "531912",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "572527",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532582",
+      "ep": "531912",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "572528",
+      "t": "419_PB_TEC001_Arquitectura_de_Datos",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532627",
+      "ep": "531912",
+      "r": "Nelson Boton"
+    },
+    {
+      "i": "573082",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532569",
+      "ep": "531912",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "573233",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532582",
+      "ep": "531912",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "573902",
+      "t": "419_PB_TEC002_Arquitectura_Tecnologica",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
+      "a": 1,
+      "v": 0.5,
+      "f": "532627",
+      "ep": "531912",
+      "r": "Eduardo Tordecilla Paez"
     }
   ],
   "kpi": {
-    "n_hu": 366,
-    "n_hu_activas": 363,
+    "n_hu": 372,
+    "n_hu_activas": 369,
     "hu_sin_feature": 13,
     "n_feature": 62,
     "n_epic": 9,
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8029,
+    "pct_global": 0.8061,
     "term_global": 117,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4807,7 +4873,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6555,
+    "tactico": 0.6673,
     "estrategico": 0.4032,
     "n": 62,
     "d": 25,
@@ -4815,27 +4881,27 @@
     "isEpics": false,
     "feat_total": 62,
     "feat_ent": 25,
-    "hu_total": 350,
+    "hu_total": 356,
     "buckets": {
       "100": 117,
-      "75": 88,
-      "50": 63,
-      "20": 56,
-      "0": 26
+      "75": 92,
+      "50": 60,
+      "20": 70,
+      "0": 17
     },
     "hu_buckets": {
       "100": 117,
-      "75": 88,
-      "50": 63,
-      "20": 56,
-      "0": 26
+      "75": 92,
+      "50": 60,
+      "20": 70,
+      "0": 17
     },
     "feat_buckets": {
       "100": 25,
       "75": 3,
-      "50": 16,
-      "20": 10,
-      "0": 8
+      "50": 17,
+      "20": 12,
+      "0": 5
     }
   }
 }

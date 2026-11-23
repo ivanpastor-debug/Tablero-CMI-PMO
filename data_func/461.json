@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-19",
-  "generado": "2026-11-19 08:58",
-  "archivo": "HU_461_20261119.csv",
+  "corte": "2026-11-23",
+  "generado": "2026-11-23 09:12",
+  "archivo": "HU_461_20261123.csv",
   "epics": [
     {
       "i": "457548",
@@ -10,7 +10,7 @@
       "n_f": 7,
       "n": 35,
       "term": 0,
-      "pct": 0.5534
+      "pct": 0.5606
     },
     {
       "i": "467870",
@@ -34,7 +34,7 @@
       "n_f": 5,
       "n": 15,
       "term": 0,
-      "pct": 0.2493
+      "pct": 0.256
     },
     {
       "i": "487090",
@@ -70,7 +70,7 @@
       "ept": "Parametrización y Configuración",
       "n": 12,
       "term": 0,
-      "pct": 0.5058,
+      "pct": 0.5267,
       "n_pct": 12
     },
     {
@@ -345,7 +345,7 @@
       "ept": "Declaración Anual de Patrimonio",
       "n": 2,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.25,
       "n_pct": 2
     },
     {
@@ -1023,7 +1023,7 @@
     },
     {
       "i": "488751",
-      "t": "HU_GesCon_049_Asociar campaña bajo un proceso electoral",
+      "t": "HU_GesCon_049_Creacion de campañas por proceso en lote y tope",
       "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
@@ -1144,7 +1144,7 @@
     },
     {
       "i": "491713",
-      "t": "HU_GesCon_050_Asociar candidato a la campaña",
+      "t": "HU_GesCon_050_Listar y consultar campañas de la elección",
       "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
@@ -1360,7 +1360,7 @@
       "v": 0.17,
       "f": "487185",
       "ep": "487094",
-      "r": "Alba Yaneth Pinto Pinto"
+      "r": "Diana Marcela Guerrero Bustos"
     },
     {
       "i": "502621",
@@ -1486,10 +1486,10 @@
     {
       "i": "503832",
       "t": "HU_ParRol_087_Edición de Permisos",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "487170",
       "ep": "457548",
       "r": "Osmar Peña González"
@@ -1607,13 +1607,13 @@
     {
       "i": "513957",
       "t": "HU_DecEst_091_Abrir declaración anual",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.3,
       "f": "487111",
       "ep": "487098",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "Carlos Alberto Medina Contreras"
     },
     {
       "i": "513972",
@@ -2373,7 +2373,7 @@
     "n_feature_con_hu": 32,
     "feature_sin_hu": 0,
     "hu_omitidas": 54,
-    "pct_global": 0.435,
+    "pct_global": 0.4379,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -2382,7 +2382,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.1563,
+    "tactico": 0.1578,
     "estrategico": 0.0,
     "n": 32,
     "d": 0,
@@ -2393,16 +2393,16 @@
     "hu_total": 120,
     "buckets": {
       "100": 1,
-      "75": 21,
+      "75": 22,
       "50": 0,
-      "20": 30,
+      "20": 29,
       "0": 68
     },
     "hu_buckets": {
       "100": 1,
-      "75": 21,
+      "75": 22,
       "50": 0,
-      "20": 30,
+      "20": 29,
       "0": 68
     },
     "feat_buckets": {
