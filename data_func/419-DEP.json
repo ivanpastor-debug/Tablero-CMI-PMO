@@ -1,9 +1,17 @@
 {
   "codigo": "419-DEP",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 12:15",
-  "archivo": "HU_419-DEP_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:04",
+  "archivo": "HU_419-DEP_20261124.csv",
   "epics": [
+    {
+      "i": "531917",
+      "t": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n_f": 35,
+      "n": 221,
+      "term": 3,
+      "pct": 0.4271
+    },
     {
       "i": "417341",
       "t": "419_EP_BAC_ PRIORIZACIÓN_7",
@@ -19,14 +27,6 @@
       "n": 166,
       "term": 166,
       "pct": 1.0
-    },
-    {
-      "i": "531917",
-      "t": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n_f": 23,
-      "n": 163,
-      "term": 3,
-      "pct": 0.502
     },
     {
       "i": "379729",
@@ -83,14 +83,6 @@
       "n": 18,
       "term": 7,
       "pct": 0.6422
-    },
-    {
-      "i": "332460",
-      "t": "419DPJ_EP_BAC_ BACKLOG",
-      "n_f": 2,
-      "n": 9,
-      "term": 0,
-      "pct": 0.2
     },
     {
       "i": "321422",
@@ -154,7 +146,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 19,
       "term": 3,
-      "pct": 0.5105,
+      "pct": 0.5316,
       "n_pct": 19
     },
     {
@@ -176,7 +168,7 @@
       "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 18,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.5167,
       "n_pct": 18
     },
     {
@@ -235,6 +227,17 @@
       "n_pct": 14
     },
     {
+      "i": "566210",
+      "t": "419_PB_REFINAMIENTO C",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 14,
+      "term": 0,
+      "pct": 0.3357,
+      "n_pct": 14
+    },
+    {
       "i": "376228",
       "t": "419_FT_BAC_ADMINISTRACION_DE_HORARIOS_BANCO - R3",
       "e": "4. Cerrado",
@@ -257,6 +260,17 @@
       "n_pct": 12
     },
     {
+      "i": "566189",
+      "t": "419_PB_REFINAMIENTO B",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 12,
+      "term": 0,
+      "pct": 0.1983,
+      "n_pct": 12
+    },
+    {
       "i": "377383",
       "t": "419_FT_BAC_PARAMETRIZAR CUENTAS BANCARIAS - PRESCRIPCIÓN",
       "e": "4. Cerrado",
@@ -276,17 +290,6 @@
       "n": 11,
       "term": 3,
       "pct": 0.9273,
-      "n_pct": 11
-    },
-    {
-      "i": "566189",
-      "t": "419_PB_REFINAMIENTO B",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 11,
-      "term": 0,
-      "pct": 0.2527,
       "n_pct": 11
     },
     {
@@ -364,17 +367,6 @@
       "n": 10,
       "term": 0,
       "pct": 0.6,
-      "n_pct": 10
-    },
-    {
-      "i": "566210",
-      "t": "419_PB_REFINAMIENTO C",
-      "e": "1. En Planeacion",
-      "ep": "531917",
-      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
-      "n": 10,
-      "term": 0,
-      "pct": 0.304,
       "n_pct": 10
     },
     {
@@ -1027,6 +1019,17 @@
       "n_pct": 6
     },
     {
+      "i": "574583",
+      "t": "SP8_PB_F17_CONFIGURACION-BITACORA DE CIERRE",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 6,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 6
+    },
+    {
       "i": "318932",
       "t": "419_FT_BAC_ADMINISTRACIÓN_DE_PERMISOS",
       "e": "4. Cerrado",
@@ -1206,8 +1209,63 @@
       "i": "569012",
       "t": "SP8_PB_F20_GESTION CONVERSION CSJ-BAC INDIVIDUAL Y MASIVA",
       "e": "1. En Planeacion",
-      "ep": "332460",
-      "ept": "419DPJ_EP_BAC_ BACKLOG",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "574522",
+      "t": "SP8_PB_F3_PAGO CENTRALIZADO MASIVO",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "574555",
+      "t": "SP8_PB_F9_PRESCRIPCIÓN MASIVA - PARAMETRIZACIÓN DE CONDICIONES",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "574560",
+      "t": "SP8_PB_F16_CONVERSIÓN DE DEPÓSITOS ESPECIALES A JUDICIALES MASIVO",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "575167",
+      "t": "SP8_PB_F2_REPROCESO DE ARCHIVOS PLANOS",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 5,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 5
+    },
+    {
+      "i": "575250",
+      "t": "SP8_PB_F8_PROCESO DE INGRESO PRESCRIPCION MASIVA (CREACIÓN, VALIDACIONES, INGRESO, RECHAZO) POR CUENTA JUDICIAL, CENTRALIZADO BAC",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
       "pct": 0.2,
@@ -1272,8 +1330,8 @@
       "i": "535208",
       "t": "PB_TRASLADO DEPOSITOS JUDICIALES ENTRE OFICINA",
       "e": "1. En Planeacion",
-      "ep": "332460",
-      "ept": "419DPJ_EP_BAC_ BACKLOG",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
       "n": 4,
       "term": 0,
       "pct": 0.2,
@@ -1321,6 +1379,28 @@
       "n": 4,
       "term": 0,
       "pct": 0.5,
+      "n_pct": 4
+    },
+    {
+      "i": "575219",
+      "t": "SP8_PB_F6_REACTIVACIÓN DE PRESCRIPCIÓN MASIVA",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 4
+    },
+    {
+      "i": "575218",
+      "t": "SP8_PB_F7_EXCLUSIÓN DE PRESCRIPCIÓN MASIVA",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 4,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 4
     },
     {
@@ -1511,6 +1591,17 @@
       "n_pct": 3
     },
     {
+      "i": "574549",
+      "t": "SP8_PB_F15_CONVERSIÓN DE DEPÓSITOS ESPECIALES A JUDICIALES INDIVIDUAL",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 3,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 3
+    },
+    {
       "i": "321357",
       "t": "419_FT_BAC_ADMINISTRACIÓN_CIRCUITOS_JUDICIALES",
       "e": "4. Cerrado",
@@ -1574,6 +1665,17 @@
       "n": 2,
       "term": 0,
       "pct": 0.5,
+      "n_pct": 2
+    },
+    {
+      "i": "575182",
+      "t": "SP8_PB_F4_PAGO AUTOMÁTICO DE PRESCRIPCIÓN MASIVA",
+      "e": "1. En Planeacion",
+      "ep": "531917",
+      "ept": "419_EP_BAC_ PRIORIZACIÓN_8",
+      "n": 2,
+      "term": 0,
+      "pct": 0.2,
       "n_pct": 2
     },
     {
@@ -7136,10 +7238,10 @@
     {
       "i": "399899",
       "t": "419_PB_HU001_Solicitud_Ingreso_novedad_usuariosEntesCoactivos",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "399896",
       "ep": "531917",
       "r": "Julian Felipe Montoya Garcia"
@@ -12201,7 +12303,7 @@
       "a": 1,
       "v": 0.2,
       "f": "535208",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12223,7 +12325,7 @@
       "a": 1,
       "v": 0.2,
       "f": "535208",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12234,7 +12336,7 @@
       "a": 1,
       "v": 0.2,
       "f": "535208",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -12245,7 +12347,7 @@
       "a": 1,
       "v": 0.2,
       "f": "535208",
-      "ep": "332460",
+      "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
     },
     {
@@ -13109,10 +13211,10 @@
     {
       "i": "538323",
       "t": "419_PB_Ajuste_Consulta_Depositos_Especiales_Integracion_Cobis_Pago_Nacional",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "8.2 Aprobación por Cliente UAT",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.5,
+      "v": 0.9,
       "f": "532401",
       "ep": "531917",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -13830,7 +13932,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "565858",
@@ -13841,7 +13943,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "565863",
@@ -13852,7 +13954,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "565866",
@@ -13863,7 +13965,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "565868",
@@ -13874,7 +13976,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "566192",
@@ -13934,10 +14036,10 @@
     {
       "i": "566213",
       "t": "419_PB_Refinamiento_Validación_SARLAFT_según_Configuración",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "566210",
       "ep": "531917",
       "r": "Hellen Alejandra Rincon Soler"
@@ -13945,35 +14047,35 @@
     {
       "i": "566219",
       "t": "419_PB_Refinamiento_Alcance_Parametrización_Cuentas_Bancarias_para_Prescripción_Portal_BAC",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "566210",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "566221",
       "t": "419_PB_Refinamiento_Ajuste_Creacion_Proceso_Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "566210",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "566224",
       "t": "419_PB_Refinamiento_Ajuste_Actualizacion_Proceso_Individual",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "566210",
       "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "566536",
@@ -14006,7 +14108,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "569017",
@@ -14016,8 +14118,8 @@
       "a": 1,
       "v": 0.2,
       "f": "569012",
-      "ep": "332460",
-      "r": ""
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "569021",
@@ -14027,8 +14129,8 @@
       "a": 1,
       "v": 0.2,
       "f": "569012",
-      "ep": "332460",
-      "r": ""
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "569035",
@@ -14038,8 +14140,8 @@
       "a": 1,
       "v": 0.2,
       "f": "569012",
-      "ep": "332460",
-      "r": ""
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "569036",
@@ -14049,8 +14151,8 @@
       "a": 1,
       "v": 0.2,
       "f": "569012",
-      "ep": "332460",
-      "r": ""
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "569037",
@@ -14060,8 +14162,8 @@
       "a": 1,
       "v": 0.2,
       "f": "569012",
-      "ep": "332460",
-      "r": ""
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     },
     {
       "i": "570628",
@@ -14083,7 +14185,7 @@
       "v": 0.5,
       "f": "565852",
       "ep": "531917",
-      "r": "Yesica Johana Ospina Patiño"
+      "r": "Andres Camilo Ortiz Cogollo"
     },
     {
       "i": "571055",
@@ -14130,34 +14232,23 @@
       "r": "Yuliana Delgado Osorio"
     },
     {
-      "i": "571521",
-      "t": "419_PB_TEC001_Arquitectura_Tecnologica_Ajuste_Codigo_Interno_y_Procesos_Huerfanos_Apertura_Cuenta",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.04,
-      "f": "566189",
-      "ep": "531917",
-      "r": "Hellen Alejandra Rincon Soler"
-    },
-    {
       "i": "571681",
       "t": "419_PB_TEC02_Arquitectura_Datos_Ajuste_Codigo_Interno_y_Procesos_Huerfanos_Apertura_Cuenta",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "566189",
       "ep": "531917",
       "r": "Lina Maria Usme Marin"
     },
     {
       "i": "571703",
-      "t": "419_PB_TEC03_Arquitectura_Datos_Ajuste_Correo_Beneficiario_y_Parametria_Listas_Inhibitorias_Orden_Pag",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "t": "419_PB_TEC03_Arquitectura_Datos_Ajuste_Correo_Beneficiario_y_Parametria_Listas_Inhibitorias_Orden_Pago",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.2,
       "f": "566189",
       "ep": "531917",
       "r": "Lina Maria Usme Marin"
@@ -14209,46 +14300,46 @@
     {
       "i": "572044",
       "t": "419_PB_TEC002_Arquitectura_de_Datos_Validación_SARLAFT_según_Configuración",
-      "e": "2. En Curso",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.3,
       "f": "566210",
       "ep": "531917",
-      "r": "Daniel Felipe Socha Hurtado"
+      "r": "Eduardo Tordecilla Paez"
     },
     {
       "i": "572105",
       "t": "419_PB_TEC003_Arquitectura_de_Datos_Alcance_Parametrización_Cuentas_Bancarias_para_Prescripción_Portal_BAC",
-      "e": "0. Pendiente Levantamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.04,
+      "v": 0.3,
       "f": "566210",
       "ep": "531917",
-      "r": "Daniel Felipe Socha Hurtado"
+      "r": "Yesica Johana Ospina Patiño"
     },
     {
       "i": "572122",
       "t": "419_PB_TEC004_Arquitectura_de_Datos_Ajuste_Creacion_Proceso_Individual",
-      "e": "2. En Curso",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.3,
       "f": "566210",
       "ep": "531917",
-      "r": "Daniel Felipe Socha Hurtado"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "572141",
       "t": "419_PB_TEC005_Arquitectura_de_Datos_Ajuste_Actualizacion_Proceso_Individual",
-      "e": "2. En Curso",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.3,
       "f": "566210",
       "ep": "531917",
-      "r": "Daniel Felipe Socha Hurtado"
+      "r": "Leonardo Castrillon Giraldo"
     },
     {
       "i": "572364",
@@ -14315,18 +14406,568 @@
       "f": "565805",
       "ep": "531917",
       "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "574466",
+      "t": "419_PB_TEC001_Arquitectura_Tecnologica_PB_Refinamiento_Peticion_Emision_Masiva",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574468",
+      "t": "419_PB_TEC001_Arquitectura_Tecnologica_PB_Ajuste_Notificacion_Beneficiario_Abono_Cuenta",
+      "e": "0. Pendiente Levantamiento",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.04,
+      "f": "566189",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574529",
+      "t": "419_PB_HU001_Descargar_plantilla_pago_centralizado_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574522",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574535",
+      "t": "419_PB_HU002_Cargar_archivo_pago_centralizado_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574522",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574540",
+      "t": "419_PB_HU003_Gestionar_autorizacion_rechazo_pago_centralizado_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574522",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574544",
+      "t": "419_PB_HU004_Procesar_registros_pago_centralizado_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574522",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574547",
+      "t": "419_PB_HU005_Consultar_resultado_y_registros_no_procesados_pago_centralizado_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574522",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574552",
+      "t": "419_PB_CEJ_HU001_Consultar_Deposito_Especial_para_Conversion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574549",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574556",
+      "t": "419_PB_CEJ_HU002_Registrar_Conversion_Deposito_Especial_a_Judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574549",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574557",
+      "t": "419_PB_CEJ_HU003_Autorizar_y_Rechazar_Conversion_Deposito_Especial_a_Judicial",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574549",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574558",
+      "t": "419_PB_TEC006_Arquitectura_tecnologica_Alcance_Parametrización_Cuentas_Bancarias_para_Prescripción_Portal_BAC",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Yesica Johana Ospina Patiño"
+    },
+    {
+      "i": "574559",
+      "t": "419_PB_HU001_Consultar_Parametros_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574555",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574561",
+      "t": "419_PB_HU002_Ver_Detalle_Parametro_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574555",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574563",
+      "t": "419_PB_CDEM_HU001_Descargar_plantilla_conversion_depositos_especiales_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574560",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574565",
+      "t": "419_PB_PRE_HU003_Crear_Parametro_Condiciones_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574555",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574566",
+      "t": "419_PB_CDEM_HU002_Cargar_archivo_conversion_depositos_especiales_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574560",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574570",
+      "t": "419_PB_PRE_HU004_Modificar_Parametro_Condiciones_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574555",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574572",
+      "t": "419_PB_CDEM_HU003_Gestionar_autorizacion_rechazo_conversion_depositos_especiales_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574560",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574574",
+      "t": "419_PB_CDEM_HU004_Procesar_registros_conversion_depositos_especiales_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574560",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574579",
+      "t": "419_PB_CDEM_HU005_Consultar_resultado_y_registros_no_procesados_conversion_depositos_especiales_masivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574560",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574584",
+      "t": "419_PB_CB_HU001_Consultar_Bitácoras",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574583",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574586",
+      "t": "419_PB_CB_HU002_Crear_Bitácora",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574583",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574587",
+      "t": "419_PB_MB_HU003_Modificar_Bitácora",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574583",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574589",
+      "t": "419_PB_CFB_HU004_Consultar_Funcionalidades_Bitácora",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574583",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574592",
+      "t": "419_PB_AMFB_HU005_Agregar_Modificar_Funcionalidad_Bitácora",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574583",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574595",
+      "t": "419_PB_IFB_HU006_Activar_Inactivar_Funcionalidad_Bitácora",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574583",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574617",
+      "t": "419_PB_TEC007_Arquitectura_tecnologica_PB_Refinamiento_Validación_SARLAFT_según_Configuración",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Eduardo Tordecilla Paez"
+    },
+    {
+      "i": "574690",
+      "t": "419_PB_AD_PCP_HU005_Autorización_Rechazo_Parametro_Condiciones_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "574555",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "574827",
+      "t": "419_PB_TEC008_Arquitectura_tecnologica_PB_Refinamiento_Ajuste_Creacion_Proceso_Individual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "574834",
+      "t": "419_PB_TEC009_Arquitectura_tecnologica_PB_Refinamiento_Ajuste_Actualización_Proceso_Individual",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "566210",
+      "ep": "531917",
+      "r": "Leonardo Castrillon Giraldo"
+    },
+    {
+      "i": "575168",
+      "t": "419_PB_RAPL_HU001_Consultar_Archivos_Pendientes_Reproceso",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575167",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575172",
+      "t": "419_PB_RAPL_HU002_Agregar_Archivo_No_Listado",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575167",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575175",
+      "t": "419_PB_RAPL_HU003_Solicitar_Reproceso_Archivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575167",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575178",
+      "t": "419_PB_RAPL_HU004_Gestionar_Autorizacion_Reproceso_Archivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575167",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575181",
+      "t": "419_PB_RAPL_HU005_Procesar_Reproceso_Archivo",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575167",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575189",
+      "t": "419_PB_PAPM_HU001_Seleccionar_Validar_Ordenes_Pago_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575182",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575217",
+      "t": "419_PB_PAPM_HU002_Aplicar_Pago_Prescripcion_Confirmar_Orden",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575182",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575222",
+      "t": "419_PB_HU001_Consulta_depósito_Judicial_Prescrito_y_registro_de_la_solicitud_de_reactivación",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575219",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575229",
+      "t": "419_PB_HU002_Ver_detalle_Depósito_Judicial_Prescrito_Reactivacion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575219",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575230",
+      "t": "419_PB_HU001_Consultar_Orden_Pago_Prescripcion_por_Oficio",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575218",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575232",
+      "t": "419_PB_HU003_Autorizar_o_rechazar_solicitud_de_reactivación_Deposito_Judicial_prescripción",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575219",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575239",
+      "t": "419_PB_HU002_Excluir_y_Anular_Orden_Pago_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575218",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575240",
+      "t": "419_PB_HU004_Procesar_reactivación_depósito_Judicial_Prescrito",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575219",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575241",
+      "t": "419_PB_HU003_Prescribir_Depósitos_Judiciales_Orden_Pago_Prescripción",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575218",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575244",
+      "t": "419_PB_HU004_Autorizar_y_Rechazar_Orden_Pago_Prescripción",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575218",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575254",
+      "t": "419_PB_HU001_Identificar_Entidades_Cuentas_Judiciales_Parametrizadas",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575250",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575257",
+      "t": "419_PB_HU002_Seleccionar_Depositos_Judiciales_Candidatos_Prescripcion",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575250",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575280",
+      "t": "419_PB_HU003_Validar_Restricciones_ONP_BP_y_Notificar",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575250",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575285",
+      "t": "419_PB_IPM_HU004_Ingresar_Orden_Pago_Prescripcion_y_Marcar_Depositos_Judiciales",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575250",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
+    },
+    {
+      "i": "575287",
+      "t": "419_PB_HU005_Registrar_Bloqueo_Preventivo_Prescripcion_y_Notificar",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "575250",
+      "ep": "531917",
+      "r": "Hellen Alejandra Rincon Soler"
     }
   ],
   "kpi": {
-    "n_hu": 1126,
-    "n_hu_activas": 1028,
+    "n_hu": 1175,
+    "n_hu_activas": 1077,
     "hu_sin_feature": 32,
-    "n_feature": 166,
-    "n_epic": 12,
-    "n_feature_con_hu": 146,
+    "n_feature": 176,
+    "n_epic": 11,
+    "n_feature_con_hu": 156,
     "feature_sin_hu": 20,
     "hu_omitidas": 0,
-    "pct_global": 0.7605,
+    "pct_global": 0.7359,
     "term_global": 431,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -14335,35 +14976,35 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6324,
-    "estrategico": 0.4397,
-    "n": 141,
+    "tactico": 0.5905,
+    "estrategico": 0.4106,
+    "n": 151,
     "d": 62,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 141,
+    "feat_total": 151,
     "feat_ent": 62,
-    "hu_total": 963,
+    "hu_total": 1012,
     "buckets": {
       "100": 421,
-      "75": 96,
-      "50": 12,
-      "20": 397,
-      "0": 37
+      "75": 97,
+      "50": 13,
+      "20": 394,
+      "0": 87
     },
     "hu_buckets": {
       "100": 421,
-      "75": 96,
-      "50": 12,
-      "20": 397,
-      "0": 37
+      "75": 97,
+      "50": 13,
+      "20": 394,
+      "0": 87
     },
     "feat_buckets": {
       "100": 62,
       "75": 12,
       "50": 8,
       "20": 51,
-      "0": 8
+      "0": 18
     }
   }
 }

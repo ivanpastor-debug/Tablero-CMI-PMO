@@ -1,16 +1,16 @@
 {
   "codigo": "420",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:12",
-  "archivo": "HU_420_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:05",
+  "archivo": "HU_420_20261124.csv",
   "epics": [
     {
       "i": "357078",
       "t": "Cuentas médicas",
       "n_f": 14,
       "n": 188,
-      "term": 143,
-      "pct": 0.8963
+      "term": 148,
+      "pct": 0.916
     },
     {
       "i": "357729",
@@ -25,8 +25,8 @@
       "t": "Transversales",
       "n_f": 5,
       "n": 73,
-      "term": 69,
-      "pct": 0.9603
+      "term": 70,
+      "pct": 0.9712
     },
     {
       "i": "357079",
@@ -164,8 +164,8 @@
       "ep": "356469",
       "ept": "Transversales",
       "n": 22,
-      "term": 20,
-      "pct": 0.9273,
+      "term": 21,
+      "pct": 0.9636,
       "n_pct": 22
     },
     {
@@ -241,8 +241,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 15,
-      "term": 6,
-      "pct": 0.8,
+      "term": 8,
+      "pct": 0.8267,
       "n_pct": 15
     },
     {
@@ -263,8 +263,8 @@
       "ep": "357078",
       "ept": "Cuentas médicas",
       "n": 14,
-      "term": 0,
-      "pct": 0.5214,
+      "term": 3,
+      "pct": 0.7571,
       "n_pct": 14
     },
     {
@@ -3594,13 +3594,13 @@
     {
       "i": "376905",
       "t": "HU0044_Positiva_Correo_Certificado_Notificación_Glosa_Ratificada _V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "376910",
@@ -6894,10 +6894,10 @@
     {
       "i": "507079",
       "t": "HU0196_Positiva_Generación_Reporte_Conciliación_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sindy Mabel Lozada Ruiz"
@@ -7103,10 +7103,10 @@
     {
       "i": "521113",
       "t": "HU0203_Positiva_Reporte_Cuentas_IPS_V1",
-      "e": "3. Entregado",
-      "p": "QA",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.8,
+      "v": 1.0,
       "f": "507072",
       "ep": "357078",
       "r": "Sindy Mabel Lozada Ruiz"
@@ -7191,24 +7191,24 @@
     {
       "i": "525726",
       "t": "HU0211_Positiva_Correo_Certificado_Eventos_Envío_3T_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "528096",
       "t": "HU0212_Positiva_Correo_Certificado_Destinatario_Consulta_Proveedor_ISARL_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "529358",
@@ -7279,13 +7279,13 @@
     {
       "i": "531234",
       "t": "HU0215_Positiva_Correo_Certificado__Endpoints_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "531229",
       "ep": "357078",
-      "r": "orlando perez"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "531235",
@@ -7345,57 +7345,57 @@
     {
       "i": "536404",
       "t": "HU0217_Positiva_Correo_Certificado_Eventos_Notificaciones_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "536405",
       "t": "HU0218_Positiva_Correo_Certificado_Notificación_Glosa_Inicial_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "536406",
       "t": "HU0219_Positiva_Correo_Certificado_Notificación_Glosas_Pendientes_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "536410",
       "t": "HU0220_Positiva_Correo_Certificado_Notificación_Conciliación_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "536411",
       "t": "HU0221_Positiva_Correo_Certificado_Notificación_Devolución_V1",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "531229",
       "ep": "357078",
-      "r": "Javier Francisco Rios Erazo"
+      "r": "Sindy Mabel Lozada Ruiz"
     },
     {
       "i": "536412",
@@ -7433,10 +7433,10 @@
     {
       "i": "548102",
       "t": "420_Seguimiento_Administrativo_Desarrollo_Sprint_78",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "4. Cerrado",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.2,
+      "v": 1.0,
       "f": "356481",
       "ep": "356469",
       "r": "Tilson Fernandez"
@@ -7660,8 +7660,8 @@
     "n_feature_con_hu": 57,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.9414,
-    "term_global": 531,
+    "pct_global": 0.9488,
+    "term_global": 537,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 36,
@@ -7669,7 +7669,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.8888,
+    "tactico": 0.896,
     "estrategico": 0.6491,
     "n": 57,
     "d": 37,
@@ -7679,24 +7679,24 @@
     "feat_ent": 37,
     "hu_total": 613,
     "buckets": {
-      "100": 531,
+      "100": 537,
       "75": 0,
-      "50": 40,
-      "20": 19,
-      "0": 23
+      "50": 44,
+      "20": 10,
+      "0": 22
     },
     "hu_buckets": {
-      "100": 531,
+      "100": 537,
       "75": 0,
-      "50": 40,
-      "20": 19,
-      "0": 23
+      "50": 44,
+      "20": 10,
+      "0": 22
     },
     "feat_buckets": {
       "100": 37,
       "75": 12,
-      "50": 4,
-      "20": 3,
+      "50": 5,
+      "20": 2,
       "0": 1
     }
   }

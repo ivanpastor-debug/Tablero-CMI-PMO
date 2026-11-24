@@ -1,8 +1,8 @@
 {
   "codigo": "414",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:12",
-  "archivo": "HU_414_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:05",
+  "archivo": "HU_414_20261124.csv",
   "epics": [
     {
       "i": "270309",
@@ -34,7 +34,7 @@
       "n_f": 3,
       "n": 37,
       "term": 30,
-      "pct": 0.8227
+      "pct": 0.8308
     },
     {
       "i": "460466",
@@ -50,7 +50,7 @@
       "n_f": 3,
       "n": 27,
       "term": 0,
-      "pct": 0.3
+      "pct": 0.5222
     },
     {
       "i": "236314",
@@ -98,7 +98,7 @@
       "n_f": 3,
       "n": 14,
       "term": 11,
-      "pct": 0.8743
+      "pct": 0.9029
     },
     {
       "i": "236409",
@@ -340,7 +340,7 @@
       "ept": "Positiva Web 414",
       "n": 22,
       "term": 17,
-      "pct": 0.7891,
+      "pct": 0.8027,
       "n_pct": 22
     },
     {
@@ -472,7 +472,7 @@
       "ept": "Administrador del Gestor Web + Listas inteligentes.",
       "n": 10,
       "term": 0,
-      "pct": 0.23,
+      "pct": 0.32,
       "n_pct": 10
     },
     {
@@ -505,7 +505,7 @@
       "ept": "Administrador del Gestor Web + Listas inteligentes.",
       "n": 9,
       "term": 0,
-      "pct": 0.2,
+      "pct": 0.5,
       "n_pct": 9
     },
     {
@@ -549,7 +549,7 @@
       "ept": "Administrador del Gestor Web + Listas inteligentes.",
       "n": 8,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.8,
       "n_pct": 8
     },
     {
@@ -890,7 +890,7 @@
       "ept": "Aviso de Siniestros Flujo Completo",
       "n": 2,
       "term": 0,
-      "pct": 0.6,
+      "pct": 0.8,
       "n_pct": 2
     },
     {
@@ -7069,10 +7069,10 @@
     {
       "i": "481182",
       "t": "SINI_LOGIN_HU0002_DespliegueDesarrolloDEV",
-      "e": "7.1  Pruebas QA",
+      "e": "3. Entregado",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "481170",
       "ep": "460471",
       "r": "Alix Fraile"
@@ -7201,10 +7201,10 @@
     {
       "i": "485875",
       "t": "LOG_HU0002_IntegracionWSConsultaTomadorAsegurado",
-      "e": "7.1  Pruebas QA",
+      "e": "3. Entregado",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "481170",
       "ep": "460471",
       "r": "Alix Fraile"
@@ -7460,7 +7460,7 @@
       "v": 0.5,
       "f": "485525",
       "ep": "460466",
-      "r": "Fabian Camilo Peralta Gutierrez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "534426",
@@ -7471,7 +7471,7 @@
       "v": 0.5,
       "f": "485525",
       "ep": "460466",
-      "r": "Fabian Camilo Peralta Gutierrez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "534433",
@@ -7482,7 +7482,7 @@
       "v": 0.5,
       "f": "485525",
       "ep": "460466",
-      "r": "Fabian Camilo Peralta Gutierrez"
+      "r": "Joshua Aranza Cubides"
     },
     {
       "i": "535609",
@@ -7608,98 +7608,98 @@
     {
       "i": "549040",
       "t": "HU_001_DOCU_Acceso y roles",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549041",
       "t": "HU_002_DOCU_Versiones y formulario",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549042",
       "t": "HU_003_DOCU_Páginas y lista inteligente",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549043",
       "t": "HU_004_DOCU_Guardado e historial",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549044",
       "t": "HU_005_DOCU_Búsqueda y registro",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549045",
       "t": "HU_006_DOCU_Visibilidad y retiro",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549046",
       "t": "HU_007_DOCU_Documentos heredados",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "549038",
       "ep": "536643",
-      "r": "Joshua Aranza Cubides"
+      "r": "Alix Fraile"
     },
     {
       "i": "549047",
       "t": "HU_008_DOCU_Carga masiva",
+      "e": "3. Entregado",
+      "p": "QA",
+      "a": 1,
+      "v": 0.8,
+      "f": "549038",
+      "ep": "536643",
+      "r": "Alix Fraile"
+    },
+    {
+      "i": "549048",
+      "t": "HU_001_BIDO_Catálogo de áreas",
       "e": "2. En Curso",
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
-      "f": "549038",
-      "ep": "536643",
-      "r": "Joshua Aranza Cubides"
-    },
-    {
-      "i": "549048",
-      "t": "HU_001_BIDO_Catálogo de unidades",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
-      "a": 1,
-      "v": 0.2,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7707,10 +7707,10 @@
     {
       "i": "549049",
       "t": "HU_002_BIDO_Inventario de URL",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7718,10 +7718,10 @@
     {
       "i": "549050",
       "t": "HU_003_BIDO_Cascada por asignación",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7729,10 +7729,10 @@
     {
       "i": "549051",
       "t": "HU_004_BIDO_Matriz de seguimiento",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7740,10 +7740,10 @@
     {
       "i": "549052",
       "t": "HU_005_BIDO_Aranda e historial de la carga",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7751,10 +7751,10 @@
     {
       "i": "549053",
       "t": "HU_006_BIDO_Sin publicador asignado",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7762,10 +7762,10 @@
     {
       "i": "549054",
       "t": "HU_007_BIDO_Estados y resumen por URL",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7773,10 +7773,10 @@
     {
       "i": "549055",
       "t": "HU_008_BIDO_Historial de la Biblioteca de medios",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7784,10 +7784,10 @@
     {
       "i": "565830",
       "t": "HU_001_GEWE_Usuarios y acceso",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "565829",
       "ep": "536643",
       "r": "Fabian Camilo Peralta Gutierrez"
@@ -7850,10 +7850,10 @@
     {
       "i": "565836",
       "t": "HU_007_GEWE_Matriz de seguimiento",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "565829",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7883,10 +7883,10 @@
     {
       "i": "565839",
       "t": "HU_010_GEWE_Configuración de correos y listas",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "565829",
       "ep": "536643",
       "r": "Fabian Camilo Peralta Gutierrez"
@@ -7894,10 +7894,10 @@
     {
       "i": "573050",
       "t": "HU_009_BIDO_Roles, permisos y acceso por URL",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "549039",
       "ep": "536643",
       "r": "Joshua Aranza Cubides"
@@ -7905,10 +7905,10 @@
     {
       "i": "573088",
       "t": "WEB_HU0041_RemediacionRetestCiberseguridadSOC",
-      "e": "1. En Planeacion",
-      "p": "REQUERIMIENTOS",
+      "e": "2. En Curso",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "387427",
       "ep": "387417",
       "r": "Joshua Aranza Cubides"
@@ -7923,7 +7923,7 @@
     "n_feature_con_hu": 88,
     "feature_sin_hu": 1,
     "hu_omitidas": 0,
-    "pct_global": 0.9325,
+    "pct_global": 0.9438,
     "term_global": 538,
     "feature_sin_frente": 2,
     "hu_sin_frente": 21,
@@ -7932,7 +7932,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.9103,
+    "tactico": 0.9202,
     "estrategico": 0.8409,
     "n": 88,
     "d": 74,
@@ -7944,23 +7944,23 @@
     "buckets": {
       "100": 526,
       "75": 0,
-      "50": 3,
-      "20": 19,
-      "0": 35
+      "50": 13,
+      "20": 22,
+      "0": 22
     },
     "hu_buckets": {
       "100": 526,
       "75": 0,
-      "50": 3,
-      "20": 19,
-      "0": 35
+      "50": 13,
+      "20": 22,
+      "0": 22
     },
     "feat_buckets": {
       "100": 74,
       "75": 6,
-      "50": 1,
-      "20": 2,
-      "0": 5
+      "50": 3,
+      "20": 1,
+      "0": 4
     }
   }
 }

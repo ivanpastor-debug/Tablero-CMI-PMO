@@ -1,8 +1,8 @@
 {
   "codigo": "407",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:12",
-  "archivo": "HU_407_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:05",
+  "archivo": "HU_407_20261124.csv",
   "epics": [
     {
       "i": "188047",
@@ -16,9 +16,9 @@
       "i": "405687",
       "t": "Movimientos y transacciones",
       "n_f": 15,
-      "n": 43,
+      "n": 45,
       "term": 29,
-      "pct": 0.7674
+      "pct": 0.7422
     },
     {
       "i": "422214",
@@ -256,6 +256,17 @@
       "n_pct": 11
     },
     {
+      "i": "463401",
+      "t": "Ajustes transversales",
+      "e": "2. En Curso",
+      "ep": "405687",
+      "ept": "Movimientos y transacciones",
+      "n": 11,
+      "term": 2,
+      "pct": 0.4545,
+      "n_pct": 11
+    },
+    {
       "i": "416917",
       "t": "Formas de adquisición",
       "e": "1. En Planeacion",
@@ -286,17 +297,6 @@
       "n": 9,
       "term": 9,
       "pct": 1.0,
-      "n_pct": 9
-    },
-    {
-      "i": "463401",
-      "t": "Ajustes transversales",
-      "e": "2. En Curso",
-      "ep": "405687",
-      "ept": "Movimientos y transacciones",
-      "n": 9,
-      "term": 2,
-      "pct": 0.5111,
       "n_pct": 9
     },
     {
@@ -8462,18 +8462,40 @@
       "f": "429344",
       "ep": "429334",
       "r": "Tilson Fernandez"
+    },
+    {
+      "i": "574613",
+      "t": "HU799_FGNV2_Movimientos_Transacciones_Añadir_Dependencia_Solicitante_V2",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "463401",
+      "ep": "405687",
+      "r": ""
+    },
+    {
+      "i": "575281",
+      "t": "HU801_FGNV2_Movimientos_Transacciones_Finalizar_Transacciones_Salida_Directa_Bienes_Consumo_200_Registros",
+      "e": "1. En Planeacion",
+      "p": "REQUERIMIENTOS",
+      "a": 1,
+      "v": 0.2,
+      "f": "463401",
+      "ep": "405687",
+      "r": ""
     }
   ],
   "kpi": {
-    "n_hu": 701,
-    "n_hu_activas": 678,
+    "n_hu": 703,
+    "n_hu_activas": 680,
     "hu_sin_feature": 78,
     "n_feature": 56,
     "n_epic": 16,
     "n_feature_con_hu": 52,
     "feature_sin_hu": 4,
     "hu_omitidas": 0,
-    "pct_global": 0.9395,
+    "pct_global": 0.9374,
     "term_global": 614,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -8482,7 +8504,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6792,
+    "tactico": 0.678,
     "estrategico": 0.5962,
     "n": 52,
     "d": 31,
@@ -8490,20 +8512,20 @@
     "isEpics": false,
     "feat_total": 52,
     "feat_ent": 31,
-    "hu_total": 600,
+    "hu_total": 602,
     "buckets": {
       "100": 536,
       "75": 0,
       "50": 12,
       "20": 10,
-      "0": 42
+      "0": 44
     },
     "hu_buckets": {
       "100": 536,
       "75": 0,
       "50": 12,
       "20": 10,
-      "0": 42
+      "0": 44
     },
     "feat_buckets": {
       "100": 31,

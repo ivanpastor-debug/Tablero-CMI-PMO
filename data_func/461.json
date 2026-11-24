@@ -1,8 +1,8 @@
 {
   "codigo": "461",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:12",
-  "archivo": "HU_461_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:05",
+  "archivo": "HU_461_20261124.csv",
   "epics": [
     {
       "i": "457548",
@@ -10,7 +10,7 @@
       "n_f": 7,
       "n": 35,
       "term": 0,
-      "pct": 0.5606
+      "pct": 0.5677
     },
     {
       "i": "467870",
@@ -26,12 +26,12 @@
       "n_f": 5,
       "n": 23,
       "term": 0,
-      "pct": 0.6278
+      "pct": 0.693
     },
     {
       "i": "487098",
       "t": "Declaración Anual de Patrimonio",
-      "n_f": 5,
+      "n_f": 6,
       "n": 15,
       "term": 0,
       "pct": 0.256
@@ -81,7 +81,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 9,
       "term": 0,
-      "pct": 0.6056,
+      "pct": 0.7056,
       "n_pct": 9
     },
     {
@@ -92,7 +92,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 7,
       "term": 0,
-      "pct": 0.7571,
+      "pct": 0.8,
       "n_pct": 7
     },
     {
@@ -129,17 +129,6 @@
       "n_pct": 6
     },
     {
-      "i": "565767",
-      "t": "Gestion Declaración Anual",
-      "e": "New",
-      "ep": "487098",
-      "ept": "Declaración Anual de Patrimonio",
-      "n": 6,
-      "term": 0,
-      "pct": 0.2333,
-      "n_pct": 6
-    },
-    {
       "i": "487165",
       "t": "Gestión de usuarios",
       "e": "2. En Curso",
@@ -147,7 +136,7 @@
       "ept": "Parametrización y Configuración",
       "n": 5,
       "term": 0,
-      "pct": 0.7,
+      "pct": 0.75,
       "n_pct": 5
     },
     {
@@ -169,7 +158,7 @@
       "ept": "Acceso e Identidad (IAM)",
       "n": 4,
       "term": 0,
-      "pct": 0.455,
+      "pct": 0.53,
       "n_pct": 4
     },
     {
@@ -203,6 +192,17 @@
       "n": 4,
       "term": 0,
       "pct": 0.17,
+      "n_pct": 4
+    },
+    {
+      "i": "487116",
+      "t": "Presentación y plazos (4 meses)",
+      "e": "2. En Curso",
+      "ep": "487098",
+      "ept": "Declaración Anual de Patrimonio",
+      "n": 4,
+      "term": 0,
+      "pct": 0.25,
       "n_pct": 4
     },
     {
@@ -349,6 +349,17 @@
       "n_pct": 2
     },
     {
+      "i": "487118",
+      "t": "Subsanación y verificación",
+      "e": "2. En Curso",
+      "ep": "487098",
+      "ept": "Declaración Anual de Patrimonio",
+      "n": 2,
+      "term": 0,
+      "pct": 0.2,
+      "n_pct": 2
+    },
+    {
       "i": "548331",
       "t": "Gestión de Agrupaciones",
       "e": "New",
@@ -360,9 +371,9 @@
       "n_pct": 2
     },
     {
-      "i": "487116",
-      "t": "Presentación y plazos (4 meses)",
-      "e": "2. En Curso",
+      "i": "565767",
+      "t": "Gestion Declaración Anual",
+      "e": "New",
       "ep": "487098",
       "ept": "Declaración Anual de Patrimonio",
       "n": 2,
@@ -562,10 +573,10 @@
     {
       "i": "467612",
       "t": "HU_ParGes_011_Crear usuarios manualmente",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "7.2 Aprobación por Cliente a QA",
+      "p": "CLIENTE",
       "a": 1,
-      "v": 0.6,
+      "v": 0.85,
       "f": "487165",
       "ep": "457548",
       "r": "John Sebastian Rincon Pulido"
@@ -1024,10 +1035,10 @@
     {
       "i": "488751",
       "t": "HU_GesCon_049_Creacion de campañas por proceso en lote y tope",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.3,
       "f": "487144",
       "ep": "467870",
       "r": "Jose Luis Cortes Jerez"
@@ -1569,7 +1580,7 @@
       "v": 0.2,
       "f": "487111",
       "ep": "487098",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "513638",
@@ -1622,7 +1633,7 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.3,
-      "f": "565767",
+      "f": "487116",
       "ep": "487098",
       "r": "Carlos Alberto Medina Contreras"
     },
@@ -1633,7 +1644,7 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.3,
-      "f": "565767",
+      "f": "487116",
       "ep": "487098",
       "r": "Elkin Johan Imbachí Sánchez"
     },
@@ -1644,9 +1655,9 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "565767",
+      "f": "487118",
       "ep": "487098",
-      "r": "Alba Yaneth Pinto Pinto"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "514206",
@@ -1655,9 +1666,9 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.2,
-      "f": "565767",
+      "f": "487118",
       "ep": "487098",
-      "r": "Alba Yaneth Pinto Pinto"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "514211",
@@ -1668,7 +1679,7 @@
       "v": 0.2,
       "f": "487119",
       "ep": "487098",
-      "r": "Alba Yaneth Pinto Pinto"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "514231",
@@ -1679,7 +1690,7 @@
       "v": 0.17,
       "f": "487119",
       "ep": "487098",
-      "r": "Alba Yaneth Pinto Pinto"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "514232",
@@ -1690,7 +1701,7 @@
       "v": 0.17,
       "f": "487119",
       "ep": "487098",
-      "r": "Alba Yaneth Pinto Pinto"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "514892",
@@ -1875,8 +1886,8 @@
       "p": "OMITIR",
       "a": 0,
       "v": null,
-      "f": "467408",
-      "ep": "467406",
+      "f": null,
+      "ep": null,
       "r": "Ivan Dario Uribe Gonzalez"
     },
     {
@@ -2102,13 +2113,13 @@
     {
       "i": "551615",
       "t": "HU_GesCam_109 Ajuste del tope de la campaña con motivo",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.5,
       "f": "487144",
       "ep": "467870",
-      "r": "Javier Felipe Vasquez Roldan"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "551777",
@@ -2190,13 +2201,13 @@
     {
       "i": "565747",
       "t": "HU_AccNot_115_Plantilla de Correo Confirmación de cuenta activada",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "487223",
       "ep": "435992",
-      "r": "Sebastian Ocampo Roa"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "565770",
@@ -2207,7 +2218,7 @@
       "v": 0.2,
       "f": "565767",
       "ep": "487098",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "Alison Michell Rozo Castrillon"
     },
     {
       "i": "565771",
@@ -2218,7 +2229,7 @@
       "v": 0.2,
       "f": "565767",
       "ep": "487098",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "Alison Michell Rozo Castrillon"
     },
     {
       "i": "565772",
@@ -2229,7 +2240,7 @@
       "v": 0.2,
       "f": "487116",
       "ep": "487098",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "Ricardo Andres Prieto Callejas"
     },
     {
       "i": "565773",
@@ -2240,7 +2251,7 @@
       "v": 0.2,
       "f": "487116",
       "ep": "487098",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "Alison Michell Rozo Castrillon"
     },
     {
       "i": "566702",
@@ -2260,8 +2271,8 @@
       "p": "OMITIR",
       "a": 0,
       "v": null,
-      "f": "467408",
-      "ep": "467406",
+      "f": null,
+      "ep": null,
       "r": "lizeth paola monsalve"
     },
     {
@@ -2271,53 +2282,53 @@
       "p": "OMITIR",
       "a": 0,
       "v": null,
-      "f": "467408",
-      "ep": "467406",
+      "f": null,
+      "ep": null,
       "r": "Mabel Rocio Ramirez Bonilla"
     },
     {
       "i": "567166",
       "t": "HU_AccAut_120_Plantilla de correo Creación de cuenta",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "436526",
       "ep": "435992",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "567168",
       "t": "HU_AccOnb_121_Plantilla de correo Restablecimiento de contraseña",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "487224",
       "ep": "435992",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "567171",
       "t": "HU_AccOnb_122_Plantilla de correo Notificación de actualización de contraseña",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "487224",
       "ep": "435992",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "567173",
       "t": "HU_AccOnb_123_Plantilla de correo Verificación de correo electrónico",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.2,
+      "v": 0.5,
       "f": "487224",
       "ep": "435992",
-      "r": "Laura Nathaly Fuentes Niño"
+      "r": "John Sebastian Rincon Pulido"
     },
     {
       "i": "567772",
@@ -2368,12 +2379,12 @@
     "n_hu": 177,
     "n_hu_activas": 120,
     "hu_sin_feature": 0,
-    "n_feature": 32,
+    "n_feature": 33,
     "n_epic": 7,
-    "n_feature_con_hu": 32,
+    "n_feature_con_hu": 33,
     "feature_sin_hu": 0,
     "hu_omitidas": 54,
-    "pct_global": 0.4379,
+    "pct_global": 0.4529,
     "term_global": 1,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -2382,35 +2393,35 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.1578,
+    "tactico": 0.1607,
     "estrategico": 0.0,
-    "n": 32,
+    "n": 33,
     "d": 0,
     "u": "funcionalidades",
     "isEpics": false,
-    "feat_total": 32,
+    "feat_total": 33,
     "feat_ent": 0,
     "hu_total": 120,
     "buckets": {
       "100": 1,
-      "75": 22,
+      "75": 23,
       "50": 0,
-      "20": 29,
-      "0": 68
+      "20": 33,
+      "0": 63
     },
     "hu_buckets": {
       "100": 1,
-      "75": 22,
+      "75": 23,
       "50": 0,
-      "20": 29,
-      "0": 68
+      "20": 33,
+      "0": 63
     },
     "feat_buckets": {
       "100": 0,
       "75": 2,
-      "50": 1,
-      "20": 7,
-      "0": 22
+      "50": 3,
+      "20": 5,
+      "0": 23
     }
   }
 }

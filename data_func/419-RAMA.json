@@ -1,8 +1,8 @@
 {
   "codigo": "419-RAMA",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 12:15",
-  "archivo": "HU_419-RAMA_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:04",
+  "archivo": "HU_419-RAMA_20261124.csv",
   "epics": [
     {
       "i": "531912",
@@ -10,7 +10,7 @@
       "n_f": 13,
       "n": 62,
       "term": 0,
-      "pct": 0.5387
+      "pct": 0.55
     },
     {
       "i": "373561",
@@ -471,7 +471,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 5,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.68,
       "n_pct": 5
     },
     {
@@ -691,7 +691,7 @@
       "ept": "419_EP_RAMA_ PRIORIZACIÓN_8",
       "n": 3,
       "term": 0,
-      "pct": 0.8,
+      "pct": 0.7333,
       "n_pct": 3
     },
     {
@@ -4131,10 +4131,10 @@
     {
       "i": "517954",
       "t": "419_PR_HU001_Parametrizar_Cuentas_Judiciales_Sin_Sistema_Procesal",
-      "e": "3. Entregado",
+      "e": "7.1  Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.8,
+      "v": 0.6,
       "f": "517951",
       "ep": "531912",
       "r": "Johnatan Alonso Ospina Zapata"
@@ -4648,10 +4648,10 @@
     {
       "i": "551773",
       "t": "419_PR_HU001_Cargar_Archivo_Actualizaciones_Partes_Proceso",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "551764",
       "ep": "531912",
       "r": "Dilan Alejandro Saavedra Melo"
@@ -4659,10 +4659,10 @@
     {
       "i": "551775",
       "t": "419_PR_HU002_Actualizar_Partes_Proceso_Masiva",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "551764",
       "ep": "531912",
       "r": "Dilan Alejandro Saavedra Melo"
@@ -4670,10 +4670,10 @@
     {
       "i": "551776",
       "t": "419_PR_HU003_Consultar_Registros_No_procesados",
-      "e": "2. En Curso",
-      "p": "DESARROLLO",
+      "e": "3. Entregado",
+      "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.8,
       "f": "551764",
       "ep": "531912",
       "r": "Dilan Alejandro Saavedra Melo"
@@ -4864,7 +4864,7 @@
     "n_feature_con_hu": 62,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.8061,
+    "pct_global": 0.808,
     "term_global": 117,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -4873,7 +4873,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.6666,
+    "tactico": 0.6679,
     "estrategico": 0.4032,
     "n": 62,
     "d": 25,
@@ -4885,22 +4885,22 @@
     "buckets": {
       "100": 117,
       "75": 92,
-      "50": 60,
-      "20": 70,
+      "50": 62,
+      "20": 68,
       "0": 17
     },
     "hu_buckets": {
       "100": 117,
       "75": 92,
-      "50": 60,
-      "20": 70,
+      "50": 62,
+      "20": 68,
       "0": 17
     },
     "feat_buckets": {
       "100": 25,
       "75": 3,
-      "50": 17,
-      "20": 12,
+      "50": 16,
+      "20": 13,
       "0": 5
     }
   }

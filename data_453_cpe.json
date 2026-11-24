@@ -1,8 +1,8 @@
 {
   "codigo": "453",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:05",
-  "archivo": "snapshot HU + Feature (HU_453_20261123.csv)",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:08",
+  "archivo": "snapshot HU + Feature (HU_453_20261124.csv)",
   "hitos_epoca": "HITOS_453_20260909.csv",
   "hitos_epocas": [
     "HITOS_453_20260909.csv"
@@ -159,8 +159,8 @@
       "sem": "sin_hito",
       "n_hu": 172,
       "term": 0,
-      "pct": 0.1815,
-      "pct_hu": 0.1815,
+      "pct": 0.182,
+      "pct_hu": 0.182,
       "n_pct": 172,
       "n_cu": 22,
       "term_cu": 0,
@@ -281,10 +281,10 @@
       "sem": "en_curso",
       "n_hu": 295,
       "term": 0,
-      "pct": 0.1767,
-      "pct_hu": 0.1767,
+      "pct": 0.177,
+      "pct_hu": 0.177,
       "n_pct": 295,
-      "n_hu_todas": 299,
+      "n_hu_todas": 301,
       "n_cu": 32,
       "n_cu_medibles": 31,
       "term_cu": 0,
@@ -1323,8 +1323,8 @@
       "r": "Cristian Eduardo Lopez bocanegra",
       "n": 16,
       "term": 0,
-      "pct": 0.1781,
-      "pct_hu": 0.1781,
+      "pct": 0.1844,
+      "pct_hu": 0.1844,
       "n_pct": 16,
       "its": [
         "otra:sprint ii",
@@ -10998,10 +10998,10 @@
     {
       "i": "569606",
       "t": "[Front] CU_SME_ENC_006 · Actualizar encuesta",
-      "e": "6. Desarrollo",
+      "e": "6.1 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "C",
       "cu": "493696",
       "it": "otra:sprint ii",
@@ -11059,6 +11059,32 @@
       "it": "otra:sprint ii",
       "itn": "Sprint II",
       "r": "Michael Sterling Pantano"
+    },
+    {
+      "i": "574477",
+      "t": "HU del CU_SME_ENC_007, Agregar pregunta",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "C",
+      "cu": null,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Johan Sebastian Borda Borda"
+    },
+    {
+      "i": "574479",
+      "t": "HU del CU_SME_ENC_008, Agregar pregunta desde el banco de preguntas",
+      "e": "0.0 Transversal",
+      "p": "OMITIR",
+      "a": 0,
+      "v": null,
+      "f": "C",
+      "cu": null,
+      "it": "otra:sprint ii",
+      "itn": "Sprint II",
+      "r": "Johan Sebastian Borda Borda"
     }
   ],
   "kpi": {
@@ -11066,13 +11092,13 @@
     "n_cu_medibles": 75,
     "cu_entregados": 29,
     "pct_cu_global": 0.4938,
-    "n_hu": 682,
+    "n_hu": 684,
     "n_hu_activas": 623,
     "hu_sin_cu": 9,
     "hu_fuera_de_su_cu": 77,
     "sin_iteracion": 12,
     "cu_aprobados": 31,
-    "hu_omitidas": 53,
+    "hu_omitidas": 55,
     "focos_activas": {
       "A": 328,
       "C": 295
@@ -11080,7 +11106,7 @@
     "focos_todas": {
       "A": 382,
       "B": 1,
-      "C": 299
+      "C": 301
     },
     "cus_activas": {
       "A": 46,
@@ -11096,7 +11122,7 @@
     "cu_multi_foco": 1,
     "hu_sin_pct": 0,
     "pct_global": 0.3693,
-    "pct_global_hu": 0.5348,
+    "pct_global_hu": 0.5349,
     "avance_modo": "peso_foco",
     "term_global": 7
   },

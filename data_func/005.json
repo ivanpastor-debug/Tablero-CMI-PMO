@@ -1,16 +1,16 @@
 {
   "codigo": "005",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:12",
-  "archivo": "HU_005_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:05",
+  "archivo": "HU_005_20261124.csv",
   "epics": [
     {
       "i": "2227",
       "t": "Garantía - En producción",
-      "n_f": 42,
-      "n": 121,
-      "term": 119,
-      "pct": 0.9876
+      "n_f": 44,
+      "n": 124,
+      "term": 122,
+      "pct": 0.9919
     },
     {
       "i": "82",
@@ -18,31 +18,23 @@
       "n_f": 16,
       "n": 64,
       "term": 37,
-      "pct": 0.7083
+      "pct": 0.7298
     },
     {
       "i": "578",
       "t": "Deuda Técnica y Contractual",
       "n_f": 2,
       "n": 56,
-      "term": 6,
-      "pct": 0.4834
+      "term": 8,
+      "pct": 0.4855
     },
     {
       "i": "568",
       "t": "Épica de gestión",
       "n_f": 1,
-      "n": 7,
+      "n": 6,
       "term": 0,
       "pct": 0.5
-    },
-    {
-      "i": "153",
-      "t": "Deuda",
-      "n_f": 2,
-      "n": 2,
-      "term": 0,
-      "pct": 0.6
     }
   ],
   "features": [
@@ -54,7 +46,7 @@
       "ept": "Deuda Técnica y Contractual",
       "n": 36,
       "term": 1,
-      "pct": 0.4325,
+      "pct": 0.4233,
       "n_pct": 36
     },
     {
@@ -64,8 +56,8 @@
       "ep": "578",
       "ept": "Deuda Técnica y Contractual",
       "n": 20,
-      "term": 5,
-      "pct": 0.575,
+      "term": 7,
+      "pct": 0.5975,
       "n_pct": 20
     },
     {
@@ -98,7 +90,7 @@
       "ept": "Evolutivos",
       "n": 13,
       "term": 12,
-      "pct": 0.9231,
+      "pct": 0.9292,
       "n_pct": 13
     },
     {
@@ -146,17 +138,6 @@
       "n_pct": 8
     },
     {
-      "i": "1462",
-      "t": "Épica de Gestión",
-      "e": "Active",
-      "ep": "568",
-      "ept": "Épica de gestión",
-      "n": 7,
-      "term": 0,
-      "pct": 0.5,
-      "n_pct": 7
-    },
-    {
       "i": "2340",
       "t": "Radicacion - Correspondencia",
       "e": "4. Cerrado",
@@ -176,6 +157,17 @@
       "n": 6,
       "term": 6,
       "pct": 1.0,
+      "n_pct": 6
+    },
+    {
+      "i": "1462",
+      "t": "Épica de Gestión",
+      "e": "Active",
+      "ep": "568",
+      "ept": "Épica de gestión",
+      "n": 6,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 6
     },
     {
@@ -241,7 +233,7 @@
       "ept": "Evolutivos",
       "n": 4,
       "term": 0,
-      "pct": 0.0425,
+      "pct": 0.3675,
       "n_pct": 4
     },
     {
@@ -330,6 +322,17 @@
       "n": 2,
       "term": 2,
       "pct": 1.0,
+      "n_pct": 2
+    },
+    {
+      "i": "646",
+      "t": "Bugs y Gestión Soporte - Zendesk",
+      "e": "Active",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
+      "n": 2,
+      "term": 0,
+      "pct": 0.5,
       "n_pct": 2
     },
     {
@@ -465,17 +468,6 @@
       "n_pct": 1
     },
     {
-      "i": "646",
-      "t": "Bugs y Gestión Soporte - Zendesk",
-      "e": "Active",
-      "ep": "2227",
-      "ept": "Garantía - En producción",
-      "n": 1,
-      "term": 0,
-      "pct": 0.5,
-      "n_pct": 1
-    },
-    {
       "i": "120",
       "t": "Migración de carpetas - Reclamaciones de Vida",
       "e": "New",
@@ -527,7 +519,7 @@
       "ept": "Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": 0.6,
+      "pct": 0.5,
       "n_pct": 1
     },
     {
@@ -538,7 +530,7 @@
       "ept": "Evolutivos",
       "n": 1,
       "term": 0,
-      "pct": 0.5,
+      "pct": 0.6,
       "n_pct": 1
     },
     {
@@ -566,23 +558,23 @@
     {
       "i": "2268",
       "t": "348_ARCHIVO_HU-EXP-002 Gestionar expediente",
-      "e": "Active",
-      "ep": "153",
-      "ept": "Deuda",
+      "e": "4. Cerrado",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
-      "term": 0,
-      "pct": 0.6,
+      "term": 1,
+      "pct": 1.0,
       "n_pct": 1
     },
     {
       "i": "2270",
       "t": "348_ARCHIVO_HU_TRD_022 Inactivación serie subserie",
-      "e": "Active",
-      "ep": "153",
-      "ept": "Deuda",
+      "e": "4. Cerrado",
+      "ep": "2227",
+      "ept": "Garantía - En producción",
       "n": 1,
-      "term": 0,
-      "pct": 0.6,
+      "term": 1,
+      "pct": 1.0,
       "n_pct": 1
     },
     {
@@ -731,12 +723,12 @@
     {
       "i": "3687",
       "t": "Recertificación de flujos con Editor",
-      "e": "New",
+      "e": "4. Cerrado",
       "ep": "2227",
       "ept": "Garantía - En producción",
       "n": 1,
-      "term": 0,
-      "pct": 0.0,
+      "term": 1,
+      "pct": 1.0,
       "n_pct": 1
     }
   ],
@@ -1250,10 +1242,10 @@
     {
       "i": "589",
       "t": "Sonar y quality gate con evidencia",
-      "e": "Active",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.3,
       "f": "579",
       "ep": "578",
       "r": "Brayan Correa"
@@ -1344,7 +1336,7 @@
       "v": 0.8,
       "f": "579",
       "ep": "578",
-      "r": "Jose Fernando Lozano Murcia"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "598",
@@ -1360,21 +1352,21 @@
     {
       "i": "599",
       "t": "Ajuste permisos por funcionalidad y flujo",
-      "e": "Active",
-      "p": "DESARROLLO",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.5,
+      "v": 1.0,
       "f": "579",
       "ep": "578",
-      "r": "Angie Hernandez"
+      "r": "Jhostin Ladino"
     },
     {
       "i": "600",
       "t": "Revision y ajustes de hallasgos reportardos luego del pentesting realizado por el equipo de seguridad",
-      "e": "8.1 Pruebas UAT",
-      "p": "CLIENTE",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.85,
+      "v": 1.0,
       "f": "579",
       "ep": "578",
       "r": "Jorge Barragan"
@@ -1426,10 +1418,10 @@
     {
       "i": "606",
       "t": "C001-Anexo1-Técnico 5.3.6. Informar al usuario cuánto tiempo falta para finalizar una transacción de alto demanda de recursos",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
       "r": "Esteban Pallares"
@@ -1476,7 +1468,7 @@
       "v": 0.8,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "611",
@@ -1525,13 +1517,13 @@
     {
       "i": "615",
       "t": "C001-Anexo1-Técnico 5.9.3. Registrar los usuarios no autorizados que intenten acceder a la Solución.",
-      "e": "6. Desarrollo",
-      "p": "DESARROLLO",
+      "e": "7.1 Pruebas QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.3,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
-      "r": "Jorge Barragan"
+      "r": "Mery Rojas"
     },
     {
       "i": "616",
@@ -1553,7 +1545,7 @@
       "v": 0.8,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "618",
@@ -1564,7 +1556,7 @@
       "v": 0.8,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "619",
@@ -1575,18 +1567,18 @@
       "v": 0.8,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "620",
       "t": "C001-Anexo1-Técnico 5.9.10. El sistema y todos los componentes que le brindan soporte, deben contar con mecanismos de parametrización de auditoría",
-      "e": "7. Backlog QA",
-      "p": "QA",
+      "e": "4. Refinamiento",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.17,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhostin Ladino"
     },
     {
       "i": "621",
@@ -1613,21 +1605,21 @@
     {
       "i": "623",
       "t": "C001-Anexo1-Técnico 5.10.9. mantener trazabilidad de los datos intercambiados y permitir la búsqueda de mensajes a partir de palabras clave del contenido)",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "601",
       "ep": "578",
-      "r": "Mery Rojas"
+      "r": "Jhonatan Rocha"
     },
     {
       "i": "624",
       "t": "C001-Anexo1-Técnico 5.10.10. Llevar un registro histórico del consumo de servicios de integración con estampa de tiempo del servidor.",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "601",
       "ep": "578",
       "r": "Esteban Pallares"
@@ -1668,10 +1660,10 @@
     {
       "i": "628",
       "t": "C001-Anexo2-SGD 2.2.15.",
-      "e": "Active",
-      "p": "DESARROLLO",
+      "e": "New",
+      "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.5,
+      "v": 0.0,
       "f": "601",
       "ep": "578",
       "r": "Cristian Roa"
@@ -1751,7 +1743,7 @@
       "v": 0.3,
       "f": "601",
       "ep": "578",
-      "r": "Jorge Barragan"
+      "r": "Bryan Chaves"
     },
     {
       "i": "636",
@@ -1767,13 +1759,13 @@
     {
       "i": "637",
       "t": "C005-Anexo-Técnico 2.cg.8",
-      "e": "Active",
+      "e": "6. Desarrollo",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.5,
+      "v": 0.3,
       "f": "601",
       "ep": "578",
-      "r": "Yadimir Molina"
+      "r": "Brayan Correa"
     },
     {
       "i": "647",
@@ -1782,8 +1774,8 @@
       "p": "DESARROLLO",
       "a": 1,
       "v": 0.5,
-      "f": "1462",
-      "ep": "568",
+      "f": "646",
+      "ep": "2227",
       "r": "jhan.rivero 3tcapital.co"
     },
     {
@@ -1938,7 +1930,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": "Michael Alberto Joya Rojas"
+      "r": "Angie Hernandez"
     },
     {
       "i": "1637",
@@ -1949,7 +1941,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "1647",
@@ -1960,7 +1952,7 @@
       "v": 0.08,
       "f": "96",
       "ep": "82",
-      "r": ""
+      "r": "Jhostin Ladino"
     },
     {
       "i": "1652",
@@ -2009,21 +2001,21 @@
     {
       "i": "1748",
       "t": "HU-SGDEA-RCL-13 - Reportería",
-      "e": "New",
+      "e": "1. Levantamiento",
       "p": "REQUERIMIENTOS",
       "a": 1,
-      "v": 0.0,
+      "v": 0.08,
       "f": "85",
       "ep": "82",
-      "r": ""
+      "r": "Jairo Tibaquira"
     },
     {
       "i": "1754",
       "t": "Gestion  PQRSD Express",
-      "e": "7.1 Pruebas QA",
+      "e": "7. Backlog QA",
       "p": "QA",
       "a": 1,
-      "v": 0.6,
+      "v": 0.5,
       "f": "1753",
       "ep": "82",
       "r": "Angie Hernandez"
@@ -2042,10 +2034,10 @@
     {
       "i": "1994",
       "t": "Pago de comisión - Facturación Administrativa",
-      "e": "7. Backlog QA",
+      "e": "7.1 Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "1993",
       "ep": "82",
       "r": "Esteban Pallares"
@@ -2059,7 +2051,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2008",
@@ -2070,7 +2062,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2010",
@@ -2081,7 +2073,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2011",
@@ -2092,7 +2084,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2013",
@@ -2103,7 +2095,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2015",
@@ -2114,7 +2106,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2017",
@@ -2125,7 +2117,7 @@
       "v": 0.3,
       "f": "107",
       "ep": "82",
-      "r": ""
+      "r": "Andrés David Ramírez Albarracín"
     },
     {
       "i": "2119",
@@ -2147,7 +2139,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": "Michael Alberto Joya Rojas"
+      "r": "Angie Hernandez"
     },
     {
       "i": "2172",
@@ -2158,7 +2150,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": ""
+      "r": "Angie Hernandez"
     },
     {
       "i": "2180",
@@ -2169,7 +2161,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": ""
+      "r": "Angie Hernandez"
     },
     {
       "i": "2184",
@@ -2180,7 +2172,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": ""
+      "r": "Angie Hernandez"
     },
     {
       "i": "2187",
@@ -2191,7 +2183,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": ""
+      "r": "Angie Hernandez"
     },
     {
       "i": "2188",
@@ -2202,7 +2194,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": ""
+      "r": "Angie Hernandez"
     },
     {
       "i": "2189",
@@ -2213,7 +2205,7 @@
       "v": 0.5,
       "f": "86",
       "ep": "82",
-      "r": ""
+      "r": "Angie Hernandez"
     },
     {
       "i": "2223",
@@ -2394,23 +2386,23 @@
     {
       "i": "2269",
       "t": "348_ARCHIVO_HU-EXP-002 Gestionar expediente",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "2268",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
       "i": "2271",
       "t": "348_ARCHIVO_HU_TRD_022 Inactivación serie subserie",
-      "e": "7.1 Pruebas QA",
-      "p": "QA",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.6,
+      "v": 1.0,
       "f": "2270",
-      "ep": "153",
+      "ep": "2227",
       "r": "Esteban Pallares"
     },
     {
@@ -3482,33 +3474,33 @@
     },
     {
       "i": "3396",
-      "t": "Histórico de cargues",
-      "e": "New",
-      "p": "REQUERIMIENTOS",
+      "t": "HU-CUFE-03_Historico_de_cargues",
+      "e": "6. Desarrollo",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.0,
+      "v": 0.3,
       "f": "3329",
       "ep": "82",
-      "r": "Juan Vargas"
+      "r": "Angie Hernandez"
     },
     {
       "i": "3399",
-      "t": "Adjuntar archivo CUFE,s",
-      "e": "New",
-      "p": "REQUERIMIENTOS",
+      "t": "HU-CUFE-01_Adjuntar_archivo_CUFEs",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.0,
+      "v": 0.5,
       "f": "3329",
       "ep": "82",
       "r": "Angie Hernandez"
     },
     {
       "i": "3403",
-      "t": "Validar y enviar CUFEs",
-      "e": "New",
-      "p": "REQUERIMIENTOS",
+      "t": "HU-CUFE-02_Validar_y_enviar_CUFEs",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.0,
+      "v": 0.5,
       "f": "3329",
       "ep": "82",
       "r": "Angie Hernandez"
@@ -3516,10 +3508,10 @@
     {
       "i": "3688",
       "t": "Recertificación de flujos con Editor",
-      "e": "New",
-      "p": "REQUERIMIENTOS",
+      "e": "10. En Producción",
+      "p": "EN PRODUCCIÓN",
       "a": 1,
-      "v": 0.0,
+      "v": 1.0,
       "f": "3687",
       "ep": "2227",
       "r": "Esteban Pallares"
@@ -3530,48 +3522,48 @@
     "n_hu_activas": 251,
     "hu_sin_feature": 1,
     "n_feature": 63,
-    "n_epic": 5,
+    "n_epic": 4,
     "n_feature_con_hu": 63,
     "feature_sin_hu": 0,
     "hu_omitidas": 0,
-    "pct_global": 0.7853,
-    "term_global": 162,
+    "pct_global": 0.7984,
+    "term_global": 167,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
     "feature_100_sin_cerrar": 2,
-    "feature_estado_ajeno": 14,
+    "feature_estado_ajeno": 11,
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.7793,
-    "estrategico": 0.7302,
+    "tactico": 0.8229,
+    "estrategico": 0.7778,
     "n": 63,
-    "d": 46,
+    "d": 49,
     "u": "funcionalidades",
     "isEpics": false,
     "feat_total": 63,
-    "feat_ent": 46,
+    "feat_ent": 49,
     "hu_total": 250,
     "buckets": {
-      "100": 162,
+      "100": 167,
       "75": 8,
       "50": 0,
-      "20": 33,
+      "20": 28,
       "0": 47
     },
     "hu_buckets": {
-      "100": 162,
+      "100": 167,
       "75": 8,
       "50": 0,
-      "20": 33,
+      "20": 28,
       "0": 47
     },
     "feat_buckets": {
-      "100": 46,
+      "100": 49,
       "75": 1,
       "50": 0,
-      "20": 9,
-      "0": 7
+      "20": 7,
+      "0": 6
     }
   }
 }

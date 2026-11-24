@@ -1,8 +1,8 @@
 {
   "codigo": "421",
-  "corte": "2026-11-23",
-  "generado": "2026-11-23 09:11",
-  "archivo": "HU_421_20261123.csv",
+  "corte": "2026-11-24",
+  "generado": "2026-11-24 11:04",
+  "archivo": "HU_421_20261124.csv",
   "epics": [
     {
       "i": "83469",
@@ -10,7 +10,7 @@
       "n_f": 29,
       "n": 458,
       "term": 280,
-      "pct": 0.856
+      "pct": 0.8614
     },
     {
       "i": "83437",
@@ -18,7 +18,7 @@
       "n_f": 27,
       "n": 414,
       "term": 189,
-      "pct": 0.784
+      "pct": 0.7868
     }
   ],
   "features": [
@@ -28,10 +28,10 @@
       "e": "2. En Curso",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 91,
+      "n": 89,
       "term": 35,
-      "pct": 0.7813,
-      "n_pct": 91
+      "pct": 0.7908,
+      "n_pct": 89
     },
     {
       "i": "88254",
@@ -50,10 +50,10 @@
       "e": "1. En Planeacion",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 57,
+      "n": 56,
       "term": 30,
-      "pct": 0.9127,
-      "n_pct": 41
+      "pct": 0.9267,
+      "n_pct": 40
     },
     {
       "i": "98062",
@@ -63,7 +63,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 42,
       "term": 27,
-      "pct": 0.8321,
+      "pct": 0.8393,
       "n_pct": 42
     },
     {
@@ -74,7 +74,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 37,
       "term": 13,
-      "pct": 0.7328,
+      "pct": 0.7356,
       "n_pct": 36
     },
     {
@@ -83,10 +83,10 @@
       "e": "3. Entregado",
       "ep": "83469",
       "ept": "Afiliaciones y Novedades",
-      "n": 34,
+      "n": 32,
       "term": 23,
-      "pct": 0.8668,
-      "n_pct": 34
+      "pct": 0.8922,
+      "n_pct": 32
     },
     {
       "i": "85834",
@@ -107,7 +107,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 30,
       "term": 14,
-      "pct": 0.765,
+      "pct": 0.787,
       "n_pct": 30
     },
     {
@@ -118,8 +118,19 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 24,
       "term": 0,
-      "pct": 0.5771,
+      "pct": 0.5996,
       "n_pct": 24
+    },
+    {
+      "i": "313434",
+      "t": "003_Afiliaciones - Afiliación -  Empleadores",
+      "e": "3. Entregado",
+      "ep": "83469",
+      "ept": "Afiliaciones y Novedades",
+      "n": 23,
+      "term": 12,
+      "pct": 0.8374,
+      "n_pct": 23
     },
     {
       "i": "307833",
@@ -173,7 +184,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 20,
       "term": 0,
-      "pct": 0.286,
+      "pct": 0.289,
       "n_pct": 20
     },
     {
@@ -197,17 +208,6 @@
       "term": 16,
       "pct": 0.9842,
       "n_pct": 19
-    },
-    {
-      "i": "313434",
-      "t": "003_Afiliaciones - Afiliación -  Empleadores",
-      "e": "3. Entregado",
-      "ep": "83469",
-      "ept": "Afiliaciones y Novedades",
-      "n": 18,
-      "term": 12,
-      "pct": 0.9094,
-      "n_pct": 18
     },
     {
       "i": "434061",
@@ -239,7 +239,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 17,
       "term": 12,
-      "pct": 0.7647,
+      "pct": 0.7876,
       "n_pct": 17
     },
     {
@@ -272,7 +272,7 @@
       "ept": "Afiliaciones y Novedades",
       "n": 15,
       "term": 7,
-      "pct": 0.7753,
+      "pct": 0.782,
       "n_pct": 15
     },
     {
@@ -349,7 +349,7 @@
       "ept": "Sistema de Recaudo y Cartera",
       "n": 10,
       "term": 0,
-      "pct": 0.427,
+      "pct": 0.467,
       "n_pct": 10
     },
     {
@@ -9161,7 +9161,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "313337",
+      "f": "313434",
       "ep": "83469",
       "r": "Andres Mauricio Quintero Mejia"
     },
@@ -9172,7 +9172,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "100219",
+      "f": "313434",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -9194,7 +9194,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "100219",
+      "f": "313434",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -9216,7 +9216,7 @@
       "p": "REQUERIMIENTOS",
       "a": 1,
       "v": 0.17,
-      "f": "96139",
+      "f": "313434",
       "ep": "83469",
       "r": "Jerson Octavio Lopez Hernandez"
     },
@@ -9245,10 +9245,10 @@
     {
       "i": "461915",
       "t": "457292_HU009_Gestionar y reprocesar los registros rechazados o fallidos de la transferencia a Recaudo2",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.4,
       "f": "457292",
       "ep": "83437",
       "r": "Santiago Cardenas Amaya"
@@ -9256,10 +9256,10 @@
     {
       "i": "461919",
       "t": "457292_HU010_Controlar la completitud y el cuadre de la transferencia a Recaudo2",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.3 Esperando Despliegue DEV-QA",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.4,
       "f": "457292",
       "ep": "83437",
       "r": "Santiago Cardenas Amaya"
@@ -9828,21 +9828,21 @@
     {
       "i": "485614",
       "t": "485086_HU006_Conciliacion_Automatica_Estado_Conciliado",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "485086",
       "ep": "83437",
-      "r": "Carlos Andres Romero Benitez"
+      "r": "Yesid Sanabria Rey"
     },
     {
       "i": "485616",
       "t": "485086_HU007_Log_Ejecucion_Descargable_Excel",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "485086",
       "ep": "83437",
       "r": "Maralis Villadiego Gasabon"
@@ -10514,7 +10514,7 @@
       "p": "CLIENTE",
       "a": 1,
       "v": 0.85,
-      "f": "96139",
+      "f": "313434",
       "ep": "83469",
       "r": "Andres Mauricio Quintero Mejia"
     },
@@ -10708,21 +10708,21 @@
     {
       "i": "510155",
       "t": "98062_HU_025_Formulario_afiliacion_Dependiente",
-      "e": "7.1. Pruebas QA",
-      "p": "QA",
+      "e": "8. Esperando Despliegue QA-UAT",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.6,
+      "v": 0.8,
       "f": "98062",
       "ep": "83469",
-      "r": "Nain Grande Ortiz"
+      "r": "Jhon Fredy Torres Peña"
     },
     {
       "i": "510157",
       "t": "98062_HU_026_Formulario_afiliacion_Independiente_723",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "98062",
       "ep": "83469",
       "r": "Nain Grande Ortiz"
@@ -10818,10 +10818,10 @@
     {
       "i": "510316",
       "t": "100219_HU127_Identificación del contratante, actualización del tipo de documento y ruta de normalización",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "100219",
       "ep": "83469",
       "r": "Nestor Camilo Camacho García"
@@ -11368,10 +11368,10 @@
     {
       "i": "524741",
       "t": "485086_HU011_Identificar_Poliza_Sucursal_Registros_Conciliados",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "485086",
       "ep": "83437",
       "r": "Carlos Andres Romero Benitez"
@@ -11434,10 +11434,10 @@
     {
       "i": "524754",
       "t": "485086_HU017_Generar_Archivo_SISE_Cargue",
-      "e": "6.2 Desarrollo Frontend",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.36,
+      "v": 0.5,
       "f": "485086",
       "ep": "83437",
       "r": "Andrés Álvarez Vergel"
@@ -11676,10 +11676,10 @@
     {
       "i": "545764",
       "t": "98035_HU008_Consulta General: novedades del empleador y del trabajador (listado, filtros y detalle)",
-      "e": "7. Backlog QA",
+      "e": "7.1. Pruebas QA",
       "p": "QA",
       "a": 1,
-      "v": 0.5,
+      "v": 0.6,
       "f": "98035",
       "ep": "83469",
       "r": "Maria Victoria Martins Souza"
@@ -11731,13 +11731,13 @@
     {
       "i": "546213",
       "t": "313436_HU008 Diligenciamiento integral del formulario de afiliación individual",
-      "e": "6. Desarrollo Backend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "100219",
       "ep": "83469",
-      "r": "Paola Peña"
+      "r": "sofia sepulveda"
     },
     {
       "i": "546244",
@@ -11907,10 +11907,10 @@
     {
       "i": "552594",
       "t": "84186_HU0011_Acceso a la actualización de datos contratante",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "84186",
       "ep": "83469",
       "r": "Jose Luis Monasterio Yeguez"
@@ -11918,10 +11918,10 @@
     {
       "i": "556282",
       "t": "84186_HU0012_Consultar los datos del contratante del contrato",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "84186",
       "ep": "83469",
       "r": "Jose Luis Monasterio Yeguez"
@@ -11940,10 +11940,10 @@
     {
       "i": "556290",
       "t": "84186_HU0014_Guardar la actualización del contratante de mi contrato.",
-      "e": "5. Backlog General",
-      "p": "REQUERIMIENTOS",
+      "e": "6.1 Backlog Frontend",
+      "p": "DESARROLLO",
       "a": 1,
-      "v": 0.2,
+      "v": 0.33,
       "f": "84186",
       "ep": "83469",
       "r": "Jose Luis Monasterio Yeguez"
@@ -11962,10 +11962,10 @@
     {
       "i": "559890",
       "t": "313436_HU001 Acceso, selección y descarga de plantilla para afiliación masiva de recicladores de oficio",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
+      "v": 0.5,
       "f": "313436",
       "ep": "83469",
       "r": "Luis Rosemberg Zambrano Guerrero"
@@ -11973,13 +11973,13 @@
     {
       "i": "559900",
       "t": "313436_HU002 Cargue y validación estructural del archivo Excel para afiliación masiva de recicladores de oficio",
-      "e": "4. Refinamiento",
-      "p": "REQUERIMIENTOS",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.17,
+      "v": 0.5,
       "f": "313436",
       "ep": "83469",
-      "r": "Luis Rosemberg Zambrano Guerrero"
+      "r": "Cesar Torrens"
     },
     {
       "i": "559907",
@@ -12028,10 +12028,10 @@
     {
       "i": "560296",
       "t": "96139_HU_21_CC1_Descargar_certificados_individual_masivo_empleador_trabajador",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "96139",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12039,10 +12039,10 @@
     {
       "i": "560303",
       "t": "100219_HU_101_CC1_Descargar_certificados_individual_masivo_empleador y trabajador_por_funcionario",
-      "e": "6.3 Esperando Despliegue DEV-QA",
-      "p": "DESARROLLO",
+      "e": "7. Backlog QA",
+      "p": "QA",
       "a": 1,
-      "v": 0.4,
+      "v": 0.5,
       "f": "100219",
       "ep": "83469",
       "r": "Ricardo Andres Marin Pinilla"
@@ -12050,10 +12050,10 @@
     {
       "i": "565740",
       "t": "307852_Parte2_02c_HU41_F1b_Ajustar_Notificaciones_Internas_Seleccion_Multiple_Y_Alertas_Georreferenciacion",
-      "e": "6. Desarrollo Backend",
+      "e": "6.3 Esperando Despliegue DEV-QA",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.4,
       "f": "307852",
       "ep": "83437",
       "r": "Emmanuel Camacho Orozco"
@@ -12072,13 +12072,13 @@
     {
       "i": "568244",
       "t": "308714_HU018_B2_Evaluar_Afiliaciones_del_Siniestro",
-      "e": "6. Desarrollo Backend",
+      "e": "6.2 Desarrollo Frontend",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.36,
       "f": "308714",
       "ep": "83437",
-      "r": "Javier Alfonso Santiago Salazar"
+      "r": "Andrés Álvarez Vergel"
     },
     {
       "i": "568247",
@@ -12105,13 +12105,13 @@
     {
       "i": "569247",
       "t": "313337_HU_51_Habilitación del manejo de subempresas para la Gobernación de Cundinamarca (NIT 899.999.114)",
-      "e": "6. Desarrollo Backend",
+      "e": "8. Esperando Despliegue QA-UAT",
       "p": "DESARROLLO",
       "a": 1,
-      "v": 0.3,
+      "v": 0.8,
       "f": "313337",
       "ep": "83469",
-      "r": "Jhon Fredy Torres Peña"
+      "r": "Yesid Sanabria Rey"
     }
   ],
   "kpi": {
@@ -12123,7 +12123,7 @@
     "n_feature_con_hu": 56,
     "feature_sin_hu": 0,
     "hu_omitidas": 171,
-    "pct_global": 0.8243,
+    "pct_global": 0.8285,
     "term_global": 469,
     "feature_sin_frente": 0,
     "hu_sin_frente": 0,
@@ -12132,7 +12132,7 @@
     "feature_removido_con_hu": 0
   },
   "cmi": {
-    "tactico": 0.7631,
+    "tactico": 0.7642,
     "estrategico": 0.2321,
     "n": 56,
     "d": 13,
@@ -12143,17 +12143,17 @@
     "hu_total": 872,
     "buckets": {
       "100": 469,
-      "75": 213,
+      "75": 216,
       "50": 0,
-      "20": 46,
-      "0": 144
+      "20": 51,
+      "0": 136
     },
     "hu_buckets": {
       "100": 469,
-      "75": 213,
+      "75": 216,
       "50": 0,
-      "20": 46,
-      "0": 144
+      "20": 51,
+      "0": 136
     },
     "feat_buckets": {
       "100": 13,
